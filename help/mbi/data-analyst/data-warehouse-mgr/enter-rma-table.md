@@ -1,0 +1,66 @@
+---
+title: enterprise_rma Table
+description: Découvrez comment analyser les informations sur une requête de retour spécifique.
+exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
+source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 0%
+
+---
+
+# enterprise_rma Table
+
+Chaque ligne du `enterprise_rma` table (souvent appelée `magento_rma` dans Commerce 2.x, mais le nom peut être personnalisé) contient des informations sur une requête de retour spécifique.
+
+>[!NOTE]
+>
+>Ce tableau est fourni avec votre compte Commerce uniquement si vous êtes un `Enterprise Edition` ou `Enterprise Cloud Edition` client.
+
+## Colonnes natives communes
+
+| **Nom de la colonne** | **Description** |
+|---|---|
+| `entity\_id` | Identifiant unique du tableau. Chaque `entity\_id` représente une requête de retour. |
+| `date\_requested` | Date à laquelle le retour a été demandé. |
+| `status` | État du retour. Les valeurs comprennent &quot;reçu&quot;, &quot;en attente&quot;, &quot;autorisé&quot;, entre autres. |
+| `order\_id` | Clé étrangère associée à la variable `sales\_flat\_order` table. |
+| `customer\_id` | Clé étrangère associée à la variable `customer\_entity` table. |
+
+{style=&quot;table-layout:auto&quot;}
+
+## Colonnes calculées courantes
+
+| **Nom de la colonne** | **Description** |
+|---|---|
+| `Order's created\_at` | Il s’agit de la date de la commande d’origine. Vous pouvez l’utiliser pour obtenir le temps entre la commande et la demande de retour. |
+| `Customer's order number` | Il s’agit du numéro de commande du client associé à la commande d’origine. |
+| `Seconds between order's created\_at and return's date\_requested` | Nombre de secondes entre la date de commande et la demande de retour. |
+| `Return's total value` | Il s’agit du montant monétaire total qui est renvoyé. Il s’agira de la somme du montant de retour individuel de chaque élément de retour. |
+
+{style=&quot;table-layout:auto&quot;}
+
+## Mesures courantes
+
+| **Nom de la mesure** | **Description** | **Construction** |
+|---|---|---|
+| `Number of returns` | Nombre de retours demandés. | `Operation` column : `entity id`<br>`Operation`: `Count`<br>`Timestamp` Colonne : `date requested` |
+| `Total returned amount` | Montant monétaire total renvoyé. | `Operation `Colonne : `Return's total value`<br>`Operation`: Somme<br>`Timestamp` Colonne : date demandée |
+| `Average returned amount` | Montant monétaire moyen renvoyé. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Colonne : `date requested` |
+| `Average time to return` | Temps moyen entre le retour de la commande. | `Operation` Colonne : Secondes entre la date de création de la commande et la date de retour demandée<br>`Operation`: `Average`<br>`Timestamp` Colonne : `date requested` |
+
+{style=&quot;table-layout:auto&quot;}
+
+## Connexions à d’autres tableaux
+
+`sale_flat_order`
+
+* Création de colonnes jointes pour segmenter et filtrer selon des attributs de niveau commande sur le `enterprise_rma` via la jointure suivante :
+   * Commerce 1.x : `enterprise_rma.order_id` (nombreux) => `sales_flat_order.entity_id` (1)
+   * Commerce 2.x : `magento_rma.order_id` (nombreux) => `sales_order.entity_id` (1)
+
+`enterprise_rma_item_entity`
+
+* Créez des colonnes multiples-à-une telles que `Return's total value` sur le `enterprise_rma` via la jointure suivante :
+   * Commerce 1.x : `enterprise_rma_item_entity.rma_entity_id` (nombreux) => `enterprise_rma.entity_id` (1)
+   * Commerce 2.x : `magento_rma_item_entity.rma_entity_id ` (nombreux) => `magento_rma.entity_id` (1)
