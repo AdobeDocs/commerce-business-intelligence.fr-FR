@@ -2,9 +2,9 @@
 title: Données Facebook Ads attendues
 description: Découvrez un bref aperçu des tables que nous vous recommandons de synchroniser avec votre entrepôt de données
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -60,4 +60,4 @@ Ce tableau contient les mêmes informations que la variable `facebook_ads_insigh
 ## Associé
 
 * [Connexion [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

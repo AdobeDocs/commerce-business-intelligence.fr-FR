@@ -2,9 +2,9 @@
 title: Connexion des Google Analytics
 description: Découvrez comment connecter des Google Analytics à [!DNL MBI].
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,7 @@ Pour identifier les [!DNL Google Analytics] Identifiant du profil :
 
 ## En rapport :
 
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Connexion [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analyse de l’activité du site web et des taux de conversion des clients](../../analysis/web-act-cust-conversion.md)
 * [Suivi des données d’acquisition utilisateur à l’aide de [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)
-* [Suivi des données de l’appareil utilisateur et du navigateur à l’aide de [!DNL Google Analytics] cookies](https://support.magento.com/hc/en-us/articles/360016732911)

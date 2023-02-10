@@ -2,9 +2,9 @@
 title: Réduction du temps de cycle de mise à jour
 description: Découvrez comment réduire la durée de votre cycle de mise à jour.
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ Outre la réévaluation des fréquences de contrôle, des méthodes de réplicat
 
 ## Remplissage
 
-Si le temps de mise à jour semble encore lent, même après la mise en oeuvre de ces recommandations, [contactez notre équipe d’assistance](../guide-overview.md).
+Si le temps de mise à jour semble encore lent, même après la mise en oeuvre de ces recommandations, [contactez notre équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

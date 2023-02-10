@@ -2,10 +2,10 @@
 title: Analyse du comportement d’achat des clients
 description: Découvrez comment analyser le comportement de rachat des clients.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -46,9 +46,9 @@ En gardant à l’esprit les mesures ci-dessus, examinons un exemple de produits
 
 | **Nom du produit** | **Probabilité de répétition de l’ordre** | **Nombre moyen de commandes pendant la durée de vie** | **Chiffre d’affaires moyen de la durée de vie** | **Temps moyen jusqu’à la commande suivante** |
 |-----|-----|-----|-----|-----|
-| Petit-déjeuner | 94,98 % | 7,92 | 549,82 $ | 57,01 jours |
-| Capsules de café | 93,82 % | 8,68 | 479,98 $ | 63,48 jours |
-| Les fèves de café | 41,92 % | 6,07 | 99,82 $ | 27,31 jours |
+| Petit-déjeuner | 94.98% | 7.92 | $549.82 | 57,01 jours |
+| Capsules de café | 93.82% | 8.68 | $479.98 | 63,48 jours |
+| Les fèves de café | 41.92% | 6.07 | $99.82 | 27,31 jours |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -80,4 +80,4 @@ Outre l’analyse du comportement de réachat de vos clients, vous pouvez égale
 
 Une fois que vous avez identifié les raisons de l’attrition, vous pouvez utiliser votre analyse pour créer une `reactivation` campaign. Grâce à ces données, vous pouvez identifier les utilisateurs devenus inactifs, la durée écoulée depuis leur dernière visite, leur dernier achat, etc. Vous pourrez ainsi prendre des décisions pratiques qui inciteront vos clients à revenir.
 
-Pour obtenir de l’aide sur l’analyse, [support technique](../../guide-overview.md).
+Pour obtenir de l’aide sur l’analyse, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

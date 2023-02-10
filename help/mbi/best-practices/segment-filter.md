@@ -2,9 +2,9 @@
 title: Dimensions de données recommandées pour la segmentation et le filtrage
 description: Découvrez les bonnes pratiques de segmentation et de filtrage.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Ce type d’analyse est ce que les marketeurs des sociétés Fortune 1000 font t
 
 La première étape pour segmenter vos mesures selon les dimensions ci-dessus consiste à vous assurer que vous effectuez le suivi de ces données dans votre base de données. S’il n’est pas suivi, rencontrez votre équipe technique et trouvez un moyen de commencer à suivre ces données.
 
-Une fois que nous avons confirmé que les données sont suivies dans votre base de données, [contactez notre équipe d’assistance](../guide-overview.md) pour pousser les dimensions vers vos [!DNL MBI] mesures et graphiques ou utilisez simplement notre outil de gestion des champs pour effectuer le suivi de ces champs dans [!DNL MBI].
+Une fois que nous avons confirmé que les données sont suivies dans votre base de données, [contactez notre équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour pousser les dimensions vers vos [!DNL MBI] mesures et graphiques ou utilisez simplement notre outil de gestion des champs pour effectuer le suivi de ces champs dans [!DNL MBI].
 
 ## Associé
 

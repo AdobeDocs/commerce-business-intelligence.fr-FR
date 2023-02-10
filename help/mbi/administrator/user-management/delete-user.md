@@ -2,9 +2,9 @@
 title: Suppression ou réactivation d’un utilisateur
 description: Découvrez comment supprimer une [!DNL MBI] utilisateur.
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,5 +24,5 @@ Vous pouvez réactiver l’utilisateur en créant un nouvel utilisateur avec la 
 Si vous n’avez besoin que des tableaux de bord de cet utilisateur transmis dans un autre compte d’utilisateur, procédez comme suit :
 
 1. Utilisez l’adresse électronique de l’utilisateur supprimé pour créer une [!DNL MBI] utilisateur.
-1. [Notifier l’assistance](../../guide-overview.md) après avoir créé l’utilisateur. Le support transférera les tableaux de bord dans votre compte.
+1. [Notifier l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) après avoir créé l’utilisateur. Le support transférera les tableaux de bord dans votre compte.
 1. Une fois que l’assistance vous a informé du transfert, vous pouvez supprimer à nouveau l’utilisateur.

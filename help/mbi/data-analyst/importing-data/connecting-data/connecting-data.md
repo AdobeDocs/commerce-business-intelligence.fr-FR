@@ -2,9 +2,9 @@
 title: Connexion à vos données
 description: Découvrez comment parcourir les tables disponibles pour la synchronisation dans Data Warehouse Manager.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,6 @@ Pour ajouter une intégration, cliquez sur **[!UICONTROL Manage Data** > **Conne
 * [Consolidation des tableaux](../../../best-practices/consolidating-your-tables.md)
 * [Limitation de l’accès à votre base de données](../../../administrator/account-management/restrict-db-access.md)
 
-**Vous ne voyez pas une intégration que vous souhaitez ?** Certaines intégrations doivent être activées pour qu’elles soient visibles dans votre compte. Si vous recherchez quelque chose, par exemple : [!DNL Facebook] - mais il n&#39;est pas répertorié, [envoi d’un ticket d’assistance](../../../guide-overview.md).
+**Vous ne voyez pas une intégration que vous souhaitez ?** Certaines intégrations doivent être activées pour qu’elles soient visibles dans votre compte. Si vous recherchez quelque chose, par exemple : [!DNL Facebook] - mais il n&#39;est pas répertorié, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 **Si un état d’erreur s’affiche pour une intégration**, ne paniquez pas - consultez la [Section de dépannage](https://support.magento.com/hc/en-us/sections/360003078151) pour obtenir de l’aide.

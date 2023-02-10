@@ -2,9 +2,9 @@
 title: Rapports du centre d’aide pour Zendesk
 description: Découvrez les canaux de référence les plus précieux.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cette option n’est disponible que pour les clients qui se trouvent sur la variable `Pro` planifiez et utilisez la nouvelle architecture. Vous êtes sur la [nouvelle architecture](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) si vous disposez de la variable `Data Warehouse Views` section disponible après sélection `Manage Data` dans la barre d’outils principale.
+>Cette option n’est disponible que pour les clients qui se trouvent sur la variable `Pro` planifiez et utilisez la nouvelle architecture. Vous utilisez la nouvelle architecture si vous avez le `Data Warehouse Views` section disponible après sélection `Manage Data` dans la barre d’outils principale.
 
 Consolidation de votre [!DNL Zendesk] les données de votre base de données transactionnelle sont un excellent moyen de mieux comprendre comment vos clients interagissent avec vos équipes de vente ou de succès client et quel type de clients utilisent votre plateforme d’assistance. Dans cet article, nous montrons comment configurer un tableau de bord pour obtenir des rapports granulaires sur votre [!DNL Zendesk] les performances et l’association avec vos clients transactionnels.
 
@@ -196,7 +196,7 @@ Avant de commencer, vous souhaiterez connecter votre [[!DNL Zendesk]](../integra
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** table
@@ -221,7 +221,7 @@ Avant de commencer, vous souhaiterez connecter votre [[!DNL Zendesk]](../integra
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** table
    * Sélectionnez une définition : `Joined Column`

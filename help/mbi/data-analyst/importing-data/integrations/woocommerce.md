@@ -2,9 +2,9 @@
 title: Connexion à WooCommerce
 description: Découvrez les performances de votre entreprise ou recherchez vos sources et canaux d’acquisition les plus précieux.
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
@@ -23,5 +23,5 @@ Le [!DNL WooCommerce] La base de données est basée sur `MySQL`, vous pouvez la
 
 ## En rapport :
 
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Dimensions de données recommandées pour la segmentation et le filtrage](../../../best-practices/segment-filter.md)

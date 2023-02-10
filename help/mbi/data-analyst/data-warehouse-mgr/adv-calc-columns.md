@@ -2,10 +2,10 @@
 title: Types de colonne calculés avancés
 description: Découvrez les principes de base de la plupart des cas d’utilisation des colonnes, mais vous souhaiterez peut-être que les colonnes calculées soient un peu plus complexes que ce que le Gestionnaire de Data Warehouse peut créer.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 4%
 
 ---
 
@@ -119,8 +119,8 @@ Voici un exemple :
 
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
-| `1` | 2015-01-01 00:00:00 | 30 | 33,57 |
-| `2` | 2015-01-02 00:00:00 | 50 | 55,93 |
+| `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
+| `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -159,7 +159,7 @@ Pour créer ce type de colonne calculée, vous devez savoir :
 
 Ne vous inquiétez pas. Ce n&#39;est pas parce qu&#39;il n&#39;est pas répertorié ici que ce n&#39;est pas possible. Notre équipe d’analystes Data Warehouse vous a parlé.
 
-Pour définir une nouvelle colonne calculée, [envoi d’un ticket d’assistance](../../guide-overview.md) avec des détails précis sur ce que vous souhaitez créer.
+Pour définir une nouvelle colonne calculée, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) avec des détails précis sur ce que vous souhaitez créer.
 
 ## Documentation connexe
 

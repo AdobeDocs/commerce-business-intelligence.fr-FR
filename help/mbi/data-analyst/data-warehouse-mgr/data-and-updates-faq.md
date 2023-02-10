@@ -2,9 +2,9 @@
 title: Informations sur les données et les mises à jour
 description: Découvrez comment vérifier le statut de votre cycle de mise à jour.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ Absolument ! Si une mise à jour est en cours, un lien apparaît sur la variable
 
 ## Pourquoi[!DNL Google ECommerce]données différentes de ma base de données ? {#ecommdatabase}
 
-Incohérences entre les [!DNL Google Analytics] et votre base de données peut apparaître pour plusieurs raisons. Le suivi n’étant pas correctement activé, les utilisateurs qui visitent incognito et les événements de clic ne fonctionnent pas correctement sont quelques exemples. Si vos recettes et commandes ne semblent pas exactes, [utiliser cet article ;](https://support.magento.com/hc/en-us/articles/360016505232) pour diagnostiquer le problème.
+Incohérences entre les [!DNL Google Analytics] et votre base de données peut apparaître pour plusieurs raisons. Le suivi n’étant pas correctement activé, les utilisateurs qui visitent incognito et les événements de clic ne fonctionnent pas correctement sont quelques exemples. Si vos recettes et commandes ne semblent pas exactes, [utiliser cet article ;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) pour diagnostiquer le problème.
 
 ## Comment résoudre un problème d’incohérence des données ? {#datadiscrepancy}
 
-Nous savons que voir des données incohérentes peut être une expérience frustrante. Essayez d’utiliser notre [Liste de contrôle des écarts de données](https://support.magento.com/hc/en-us/articles/360016731271) ou [Tutoriel sur les exportations de données](https://support.magento.com/hc/en-us/articles/360016730631) pour diagnostiquer le problème. Si vous êtes toujours en panne, [support technique](../../guide-overview.md).
+Nous savons que voir des données incohérentes peut être une expérience frustrante. Essayez d’utiliser notre [Liste de contrôle des écarts de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) ou [Tutoriel sur les exportations de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) pour diagnostiquer le problème. Si vous êtes toujours en panne, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

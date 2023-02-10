@@ -2,16 +2,16 @@
 title: table du guillemet_élément
 description: Découvrez comment utiliser la table quote_élément .
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # Guillemet_élément Table
 
-Le `quote_item` tableau (`sales_flat_quote_item` on [!DNL Magento] 1) contient des enregistrements sur chaque article ajouté à un panier, que le panier ait été abandonné ou converti en achat. Chaque ligne représente un article de panier. En raison de la taille potentielle de ce tableau, nous vous recommandons de supprimer régulièrement les enregistrements si certains critères sont respectés, par exemple s’il existe des paniers non convertis de plus de 60 jours.
+Le `quote_item` tableau (`sales_flat_quote_item` sur M1) 1) contient des enregistrements sur chaque article ajouté à un panier, que le panier ait été abandonné ou converti en achat. Chaque ligne représente un article de panier. En raison de la taille potentielle de ce tableau, nous vous recommandons de supprimer régulièrement les enregistrements si certains critères sont respectés, par exemple s’il existe des paniers non convertis de plus de 60 jours.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Le `quote_item` tableau (`sales_flat_quote_item` on [!DNL Magento] 1) contient 
 
 `quote_item`
 
-* Rejoindre à `quote_item` pour créer de nouvelles colonnes qui associent les détails du SKU configurable parent ou du bundle au produit simple. Notez que vous devrez [support technique](../../guide-overview.md) pour plus d’informations sur la configuration de ces calculs, si vous créez dans Data Warehouse manager.
+* Rejoindre à `quote_item` pour créer de nouvelles colonnes qui associent les détails du SKU configurable parent ou du bundle au produit simple. Notez que vous devrez [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour plus d’informations sur la configuration de ces calculs, si vous créez dans Data Warehouse manager.
    * Chemin : `quote_item.parent_item_id` (nombreux) => `quote_item.item_id` (1)
 
 `store`

@@ -2,9 +2,9 @@
 title: Ajouter/modifier un nouvel utilisateur
 description: Découvrez comment ajouter une nouvelle [!DNL MBI] et comment mettre à jour votre nom d’utilisateur ou votre mot de passe.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
    >Pour afficher, ajouter ou modifier les informations de facturation de votre compte, vous devez disposer des `Billing` autorisations. [Les autorisations sont définies utilisateur par utilisateur.](../../administrator/user-management/user-management.md) lors de la création des comptes utilisateur. Si vous avez besoin de `Billing` autorisations, contactez l’administrateur de votre compte.
 
 1. Cliquez sur **[!UICONTROL Save]**.
-1. Le nouvel utilisateur recevra un courrier électronique contenant les informations de connexion et de mot de passe.
+
+Le nouvel utilisateur recevra un courrier électronique contenant les informations de connexion et de mot de passe.
 
 >[!NOTE]
 >
@@ -37,4 +38,4 @@ Si vous devez renvoyer l’invitation au nouvel utilisateur, sur la page [page d
 
 >[!IMPORTANT]
 >
->Chaque compte a un nombre contractuel de licences, ou de sièges. Si vous atteignez votre limite ou souhaitez en savoir plus, [envoi d’un ticket d’assistance](../../guide-overview.md).
+>Chaque compte a un nombre contractuel de licences, ou de sièges. Si vous atteignez votre limite ou souhaitez en savoir plus, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

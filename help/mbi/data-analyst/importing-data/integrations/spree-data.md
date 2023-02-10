@@ -2,9 +2,9 @@
 title: Données de diffusion prévues
 description: Explorez les principaux tableaux de données que vous pouvez importer à partir de Spree dans votre [!DNL MBI] compte .
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dans cet article, nous explorons les principaux tableaux de données à partir d
 | `Users` | Le `users` le tableau comprend les détails du compte des clients enregistrés, y compris l’adresse électronique, le nom et la date d’enregistrement de la personne. Vous pouvez ainsi analyser différents segments de clients et leurs comportements d’achat. |
 | [`Orders`](https://guides.spreecommerce.org/developer/orders.html#overview) | Le `orders` sert de base à toutes vos mesures au niveau de la commande. Vous trouverez ici tous les détails de commande des achats de votre [!DNL Spree] magasin, y compris `completed\_at` (horodatage de la commande), `user\_id` (ID de l’utilisateur enregistré qui a passé la commande). Si la commande a été effectuée par un utilisateur enregistré, la variable `user\_id` renvoie au `users` pour permettre l’analyse du comportement d’achat des utilisateurs. |
 | `Line items` | Le `line\_items` est un enfant de l’un des `orders` table ou `subscriptions`. Elle enregistre les détails d’élément de ligne d’une commande ou d’un abonnement. Pour les commandes comportant plusieurs produits, chaque produit aura sa propre ligne de données dans ce tableau, y compris une `product\_id` qui vous permet de l’associer à la variable `Products` table. |
-| [`Products`](https://guides.spreecommerce.com/developer/products.html#overview) | Le `products` Le tableau enregistre tous les détails du produit pour un article vendable dans votre catalogue Spree. Vous pouvez ainsi segmenter les mesures au niveau de l’élément de ligne par attributs de produit. |
+| `Products` | Le `products` Le tableau enregistre tous les détails du produit pour un article vendable dans votre catalogue Spree. Vous pouvez ainsi segmenter les mesures au niveau de l’élément de ligne par attributs de produit. |
 | `Subscriptions` | Si vous avez une [!DNL Spree] extension abonnements, l’extension `subscriptions` contient les informations de chaque abonnement individuel, y compris `created\_at` (la date de début), `cancelled\_at` (date d’annulation d’un abonnement), et la variable `interval` de l’abonnement. |
 
 {style=&quot;table-layout:auto&quot;}
@@ -28,4 +28,4 @@ Dans cet article, nous explorons les principaux tableaux de données à partir d
 ## En rapport :
 
 * [Connexion [!DNL Spree]](../integrations/spree.md)
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

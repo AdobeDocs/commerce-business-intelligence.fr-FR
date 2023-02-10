@@ -2,9 +2,9 @@
 title: Créer une analyse qualitative des cohortes
 description: Découvrez ce qu’est une cohorte qualitative, pourquoi vous pourriez être intéressé par la création de cette analyse et comment la créer dans [!DNL MBI].
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Cependant, si vous souhaitez analyser le comportement des cohortes de plusieurs 
 
 Création d’un `qualitative cohort` dans le rapport `Report Builder` demande à notre équipe d’analystes de créer des [colonnes calculées avancées](../data-warehouse-mgr/creating-calculated-columns.md) sur les tables nécessaires.
 
-Pour les créer, envoyez une [ticket de support](../../guide-overview.md) (et reportez-vous à cet article !). Voici ce que nous devons savoir :
+Pour les créer, envoyez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (et reportez-vous à cet article !). Voici ce que nous devons savoir :
 
 * Le `metric` vous souhaitez exécuter l’analyse des cohortes avec et avec le tableau qu’elle utilise (par exemple : `Revenue`, reposant sur la variable `orders` ).
 

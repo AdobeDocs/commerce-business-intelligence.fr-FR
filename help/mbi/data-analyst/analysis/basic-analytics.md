@@ -2,9 +2,9 @@
 title: Comprendre et créer des analyses de base
 description: Découvrez comment comprendre et créer des analyses de base.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3153'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Si certains de ces calculs n’existent pas actuellement dans votre base de donn
 
 **Acceptez-vous les commandes des invités ?**
 
-*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez notre [équipe d&#39;assistance](https://support.magento.com/hc/en-us/articles/360016503692) pour vous assurer que vos analyses client comprennent tous les clients.*
+*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez notre [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour vous assurer que vos analyses client comprennent tous les clients.*
 
 *Vous ne savez pas si vous acceptez les commandes des invités ? Voir [cette rubrique](../data-warehouse-mgr/guest-orders.md) pour en savoir plus !*
 
@@ -58,7 +58,7 @@ Dans ce tableau, chaque ligne représente un ordre. Les colonnes de ce tableau c
 * **[!UICONTROL Created_at]**: Date à laquelle la commande a été créée ou placée.
 * **[!UICONTROL Customer_email]**: Adresse électronique du client qui a passé la commande. Il peut également s’agir de l’identifiant unique du client.
 * **[!UICONTROL Customer's lifetime number of orders]**: Une copie de la colonne portant le même nom sur votre `Customers` table.
-* **[!UICONTROL Customer's order number]**: Numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous observez est la première commande d’un client, cette colonne est &quot;1&quot; ; mais, s’il s’agissait de la 15e commande du client, cette colonne indique &quot;15&quot; pour cette commande. Si cette dimension n’existe pas sur votre `Customers` , demandez à notre [équipe d&#39;assistance](https://support.magento.com/hc/en-us/articles/360016503692) pour vous aider à le construire.
+* **[!UICONTROL Customer's order number]**: Numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous observez est la première commande d’un client, cette colonne est &quot;1&quot; ; mais, s’il s’agissait de la 15e commande du client, cette colonne indique &quot;15&quot; pour cette commande. Si cette dimension n’existe pas sur votre `Customers` , demandez à notre [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour vous aider à le construire.
 * **[!UICONTROL Customer's order number (previous-current)]**: Une concaténation de deux valeurs dans la variable **[!UICONTROL Customer's order number]** colonne . Il est utilisé dans un exemple de rapport ci-dessous pour afficher le temps écoulé entre deux commandes. Par exemple, l’intervalle entre la date de première commande d’un client et sa date de deuxième commande est représenté sous la forme &quot;1-2&quot; avec ce calcul.
 * **[!UICONTROL Coupon_code]**: Indique le ou les bons utilisés pour chaque commande.
 * **[!UICONTROL Seconds since previous order]**: Durée (en secondes) entre les commandes d’un client.
@@ -86,7 +86,7 @@ Ce tableau permet de gérer vos informations d’abonnement, telles que l’ID d
 
 ## Tableau des dépenses marketing
 
-Lorsque vous analysez vos dépenses marketing, vous pouvez inclure [!DNL Facebook], [!DNL Google AdWords]ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez notre [Équipe des services](https://business.adobe.com/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
+Lorsque vous analysez vos dépenses marketing, vous pouvez inclure [!DNL Facebook], [!DNL Google AdWords]ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez notre [Équipe Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
 
 **Dimensions**
 
@@ -535,7 +535,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 >[!NOTE]
 >
->Vous pouvez appeler la formule &quot;ROI&quot; et masquer toutes les mesures. Vous pouvez, en outre, ajuster les filtres dans les mesures afin d’analyser d’autres sources et supports. En outre, extrayez [cet article](../analysis/roi-ad-camp.md) pour plus d’informations sur CAC, LTV et le retour sur investissement.
+>Vous pouvez appeler la formule &quot;ROI&quot; et masquer toutes les mesures. Vous pouvez, en outre, ajuster les filtres dans les mesures afin d’analyser d’autres sources et supports. En outre, extrayez [cette rubrique](../analysis/roi-ad-camp.md) pour plus d’informations sur CAC, LTV et le retour sur investissement.
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 

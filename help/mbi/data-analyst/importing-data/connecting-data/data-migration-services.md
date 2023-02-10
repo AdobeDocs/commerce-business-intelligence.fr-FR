@@ -2,7 +2,7 @@
 title: Services de migration de données
 description: Découvrez tout ce dont vous avez besoin pour envoyer une requête et commencer la migration.
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Migration des données
 
-La migration vers une nouvelle base de données, un nouveau serveur ou une nouvelle base de données de rapports n’a pas à être stressante. Notre **[!DNL Magento Services - Analytics]** l’équipe d’ offre de l’aide en matière de migration - nous faisons tout le travail nécessaire pour que vous n’ayez pas à le faire.
+La migration vers une nouvelle base de données, un nouveau serveur ou une nouvelle base de données de rapports n’a pas à être stressante. Notre **[!DNL Adobe Commerce Services - Analytics]** l’équipe d’ offre de l’aide en matière de migration - nous faisons tout le travail nécessaire pour que vous n’ayez pas à le faire.
 
 Pour garantir une transition aussi fluide que possible, nous vous demandons d’être aussi détaillé que possible lors de l’envoi de votre demande de migration. Dans cet article, vous trouverez tout ce dont vous avez besoin pour envoyer une demande et commencer la migration. Nous fournir une image complète de vos besoins vous garantira que votre projet est correctement ciblé et que l’estimation est exacte.
 

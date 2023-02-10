@@ -2,9 +2,9 @@
 title: Augmentation du retour sur investissement sur vos campagnes publicitaires
 description: Découvrez quelques différentes méthodes d’évaluation des performances de votre campagne.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Effectuez-vous des publicités spécifiques à un produit ? Si tel est le cas, v
 >
 >Nous partons du principe que tous les coûts de campagne ont été exclusivement utilisés pour générer des achats de produits spécifiques. En supposant que tous les coûts aient été dépensés pour générer des achats, le retour sur investissement qui en résulte tient compte du scénario le plus défavorable (coût par achat le plus élevé), afin que vous soyez certain que votre retour sur investissement réel est supérieur à ce calcul. Exemple : En supposant que vous ayez dépensé 20 € pour une campagne qui a généré 10 nouveaux utilisateurs et 10 achats, le coût réel par achat est de 1 €, mais en supposant que tous les coûts ont été engagés pour acquérir de nouveaux utilisateurs, le coût par achat est de 2 €.)*
 
-Avant de commencer, [envoi d’un ticket d’assistance](../../guide-overview.md) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
+Avant de commencer, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
 
 * Source de la commande (si vous effectuez uniquement le suivi de la source de référence au niveau de l’utilisateur, rejoignez la source de l’utilisateur)
 * Campagne de la commande (si vous effectuez uniquement le suivi de la source de référence au niveau de l’utilisateur, rejoignez la campagne de l’utilisateur)

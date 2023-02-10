@@ -2,9 +2,9 @@
 title: Filtrage à l’échelle du tableau de bord
 description: Découvrez comment apporter des modifications en masse à tous les rapports d’un tableau de bord spécifique.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Pour analyser les performances d’un magasin spécifique, cliquez sur l’icôn
 
 >[!NOTE]
 >
->Un filtre de magasin est activé ou désactivé pour l’ensemble d’un [!DNL MBI] compte . Si un tableau de bord contient des rapports qui ne sont pas affectés par le filtre, tels que des rapports qui ne sont créés sur aucune donnée de commerce, ces rapports ne sont pas mis à jour lorsque le filtre de magasin est appliqué. Vous pouvez [support technique](../../guide-overview.md) si vous pensez qu’un rapport doit être mis à jour en fonction de la sélection du magasin ou si vous pensez que votre filtre de magasin de comptes est désactivé par erreur.
+>Un filtre de magasin est activé ou désactivé pour l’ensemble d’un [!DNL MBI] compte . Si un tableau de bord contient des rapports qui ne sont pas affectés par le filtre, tels que des rapports qui ne sont créés sur aucune donnée de commerce, ces rapports ne sont pas mis à jour lorsque le filtre de magasin est appliqué. Vous pouvez [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) si vous pensez qu’un rapport doit être mis à jour en fonction de la sélection du magasin ou si vous pensez que votre filtre de magasin de comptes est désactivé par erreur.
 
 Lorsque vous sélectionnez un magasin dans la variable `Store Filter`, le filtre conserve votre sélection lorsque vous naviguez entre les tableaux de bord. Le fait de conserver votre sélection vous permet d’afficher partout les données de votre magasin sélectionné jusqu’à ce que vous sélectionniez `All Stores`.
 

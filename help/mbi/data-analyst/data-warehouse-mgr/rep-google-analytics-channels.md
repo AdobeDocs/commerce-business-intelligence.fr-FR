@@ -21,7 +21,7 @@ Création de segments personnalisés pour observer les performances de différen
 
 Bien que ces compartiments puissent vous aider à comprendre d’où provient votre trafic, ces données ne sont pas réellement balisées par canal, mais par une combinaison de source et de support. Comme Google envoie des informations sur les canaux en tant que deux points de données distincts, les regroupements de canaux ne s’affichent pas automatiquement dans [!DNL MBI].
 
-## Quels sont les groupements de canaux par défaut ? Comment sont-elles créées ?
+## Quels sont les groupements de canaux par défaut ? Comment sont-ils créés ?
 
 Par défaut, Google vous configure avec 8 canaux différents. Examinons les règles qui déterminent leur mode de création :
 

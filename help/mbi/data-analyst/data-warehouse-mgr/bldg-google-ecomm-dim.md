@@ -83,7 +83,7 @@ Dans cet exemple, nous créons le **Première commande du client [!DNL Google An
 1. Dans la liste des tableaux du Data Warehouse, cliquez sur le tableau (dans notre cas, `customers`) qui contient les informations sur vos clients.
 1. Cliquez sur **[!UICONTROL Create a Column]**.
 1. Attribuez un nom à la colonne.
-1. Pour cet exemple, nous sélectionnons le `is MAX` à partir de la définition [liste déroulante de définitions](../../data-analyst/data-warehouse-mgr/calc-column-types.md). Le `is MIN` La définition peut également fonctionner si elle est appliquée à une colonne de texte avec une seule valeur possible. L&#39;important est de s&#39;assurer que les filtres adéquats sont définis, ce que nous faisons plus tard.
+1. Dans cet exemple, nous sélectionnons le `is MAX` à partir de la définition [liste déroulante de définitions](../../data-analyst/data-warehouse-mgr/calc-column-types.md). Le `is MIN` La définition peut également fonctionner si elle est appliquée à une colonne de texte avec une seule valeur possible. L&#39;important est de s&#39;assurer que les filtres adéquats sont définis, ce que nous faisons plus tard.
 1. Cliquez sur le bouton **[!UICONTROL Select a table and column]** et sélectionnez l’option `orders` , puis le `Order's [!DNL Google Analytics] source` colonne .
 1. Cliquez sur **[!UICONTROL Save]**.
 1. Une fois que vous êtes revenu dans le schéma de la table, cliquez sur le bouton `Options` menu déroulant, puis `Filters`.

@@ -2,9 +2,9 @@
 title: Analyse de la décroissance et de la perte de clientèle des répétitions
 description: Découvrez et comprenez l’écart de temps entre les commandes et le moment où les clients sont censés se produire.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Après avoir créé l’analyse ci-dessus et déterminé un seuil de perte de cl
 
 Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Vous voulez en savoir plus ? Consultez ce tutoriel pour découvrir le comportement d’achat de durée de vie des cohortes de clients en fonction de produits spécifiques qu’ils ont achetés.
 
-Cette bonne pratique est fournie par [!DNL MBI] Data Analysis Services (DAS). Nous sommes impatients de répondre à toutes vos questions spécifiques ! [Contacter le support technique](../../guide-overview.md) pour plus d’informations.
+Cette bonne pratique est fournie par [!DNL MBI] Data Analysis Services (DAS). Nous sommes impatients de répondre à toutes vos questions spécifiques ! [Contacter le support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour plus d’informations.
 
 ### Associé
 

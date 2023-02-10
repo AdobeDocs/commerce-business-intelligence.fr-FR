@@ -2,9 +2,9 @@
 title: ROI marketing
 description: Découvrez comment configurer un tableau de bord qui effectuera le suivi de votre analyse de canal, y compris le retour sur investissement dans l’agrégat et par campagne.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -295,7 +295,7 @@ Colonnes à créer
 
    [!UICONTROL Chart Type]: `Table`
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](../../guide-overview.md).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Associé
 

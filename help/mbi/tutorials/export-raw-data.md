@@ -2,16 +2,16 @@
 title: Exporter les données brutes
 description: Découvrez comment exporter des enregistrements de votre [!DNL MBI] Data Warehouse pour examiner de plus près ce qui alimente votre tableau de bord.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # Exporter les données brutes
 
-À l’aide des exportations de données brutes, vous pouvez exporter des enregistrements de votre [!DNL MBI] Data Warehouse pour examiner de plus près ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider. [Identifier les incohérences entre les données](https://support.magento.com/hc/en-us/articles/360016730631).
+À l’aide des exportations de données brutes, vous pouvez exporter des enregistrements de votre [!DNL MBI] Data Warehouse pour examiner de plus près ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider. [Identifier les incohérences entre les données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 Les exportations de données brutes permettent d’accéder à des colonnes et dimensions supplémentaires générées par la normalisation et la pré-agrégation des mesures pertinentes. Par exemple : `User's first order date` est une dimension que vous pouvez exporter pour chaque utilisateur dans . [!DNL MBI], bien qu’il puisse ne pas être disponible dans votre base de données.
 

@@ -2,9 +2,9 @@
 title: table sales_order
 description: Découvrez comment utiliser la table sales_order.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 73373924b7adaffabf643b65bd290ce2d9408574
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Ce tableau comprend toutes les commandes client, que cette commande ait été ou
 | `customer_group_id` | Clé étrangère associée à la variable `customer_group` table. Rejoindre à `customer_group.customer_group_id` pour déterminer le groupe de clients associé à la commande |
 | `customer_id` | `Foreign key` associé à la propriété `customer_entity` , si le client est enregistré. Rejoindre à `customer_entity.entity_id` pour déterminer les attributs du client associés à la commande. Si la commande a été passée par le biais de l’extraction d’invité, ce champ sera `NULL` |
 | `entity_id` (PK) | Identifiant unique de la table, généralement utilisé dans les jointures à d’autres tables dans l’instance Commerce. |
-| `increment_id` | Identifiant unique d’une commande, communément appelé `order_id` dans Magento. Le `increment_id` est le plus souvent utilisé pour les jointures à des sources externes, telles que [!DNL Google Ecommerce] |
+| `increment_id` | Identifiant unique d’une commande, communément appelé `order_id` dans Adobe Commerce. Le `increment_id` est le plus souvent utilisé pour les jointures à des sources externes, telles que [!DNL Google Ecommerce] |
 | `shipping_address_id` | Clé étrangère associée à la variable `sales_order_address` table. Rejoindre à `sales_order_address.entity_id` pour déterminer les détails de l’adresse de livraison associés à la commande |
 | `status` | État de la commande. Peut renvoyer des valeurs telles que &quot;complete&quot;, &quot;processing&quot;, &quot;cancelled&quot;, &quot;refinancé&quot;, ainsi que tout état personnalisé implémenté sur l’instance Commerce. Sujet aux modifications lorsque la commande est traitée |
 | `store_id` | `Foreign key` associé à la propriété `store` table. Rejoindre à `store`.`store_id` pour déterminer quelle vue de magasin Commerce est associée à la commande |

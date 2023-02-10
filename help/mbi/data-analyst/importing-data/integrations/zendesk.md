@@ -2,9 +2,9 @@
 title: Connexion à Zendesk
 description: Découvrez comment consolider les rapports de votre service d’assistance dans [!DNL MBI].
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -52,4 +52,4 @@ Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navig
 ## En rapport :
 
 * [Valeur attendue [!DNL Zendesk] data](../integrations/exp-zendesk-data.md)
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

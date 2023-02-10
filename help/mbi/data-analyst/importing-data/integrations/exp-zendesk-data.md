@@ -2,9 +2,9 @@
 title: Données Zendesk attendues
 description: Découvrez les principaux tableaux de données que vous pouvez importer depuis Zendesk dans MBI, y compris des liens vers une documentation supplémentaire sur les données Zendesk.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Dans cet article, nous explorons les principaux tableaux de données à partir d
 ## Associé
 
 * [Connexion à Zendesk](../integrations/zendesk.md)
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

@@ -2,9 +2,9 @@
 title: Rapport Probabilité des commandes répétées
 description: Découvrez et comprenez le rapport Probabilité des commandes répétées .
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Si nous devions ajouter un filtre qui utilise une dimension différente de toute
 
 Dans certains cas, nous pouvons changer de `order-specific` dans une `user-specific` dimension à ajouter en tant que filtre dans `Repeat Order Probability` graphique. Dans ce cas, nous renvoyons l’attribut de commande de la première commande ou de la dernière commande d’un utilisateur (par exemple, le nom de la région de première commande de l’utilisateur).
 
-Si vous souhaitez créer une telle dimension, [support technique](../../guide-overview.md).
+Si vous souhaitez créer une telle dimension, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## Comparaison de la probabilité de répétition des commandes avec différents attributs
 

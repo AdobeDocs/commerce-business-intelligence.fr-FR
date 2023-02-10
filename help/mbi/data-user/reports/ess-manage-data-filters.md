@@ -2,9 +2,9 @@
 title: Création d’ensembles de filtres pour les mesures
 description: Découvrez comment créer des visionneuses de filtres enregistrées et les appliquer aux mesures.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Si vous avez plusieurs mesures dans [!DNL MBI] qui doivent être filtrées de la même manière (par exemple, filtrer les commandes de test), vous pouvez créer des visionneuses de filtres enregistrées et les appliquer aux mesures. Cela vous permet de gagner du temps, car vous n’avez pas à ajouter de filtres individuels lors de la création ou de la modification d’une mesure.
 
-Voir notre [vidéo de formation](https://support.magento.com/hc/en-us/articles/360016730151) pour en savoir plus.
+Voir notre [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) pour en savoir plus.
 
 >[!NOTE]
 >

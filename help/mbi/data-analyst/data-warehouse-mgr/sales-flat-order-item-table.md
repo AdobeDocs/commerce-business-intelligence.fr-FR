@@ -2,16 +2,16 @@
 title: table sales_order_item
 description: Découvrez comment utiliser la table sales_order_item .
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: c0892aa046c80f90561b4a178525ef9ed05b435a
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # `sales_order_item` Tableau
 
-Le `sales_order_item` tableau (`sales_flat_order_item` on [!DNL Magento] 1) contient des enregistrements de tous les produits achetés dans une commande. Chaque ligne représente une `sku` inclus dans une commande. La quantité d’unités achetées pour un `sku` est le plus souvent représenté par la variable `qty_ordered` champ .
+Le `sales_order_item` tableau (`sales_flat_order_item` sur M1 1) contient des enregistrements de tous les produits achetés dans une commande. Chaque ligne représente une `sku` inclus dans une commande. La quantité d’unités achetées pour un `sku` est le plus souvent représenté par la variable `qty_ordered` champ .
 
 ## Types de produits
 
@@ -82,7 +82,7 @@ Il est donc possible de créer des rapports sur les ventes de produits, soit au 
 
 `sales_order_item`
 
-* Rejoindre à `sales_order_item` pour créer de nouvelles colonnes qui associent les détails du SKU configurable parent ou du bundle au produit simple. Notez que vous devrez [support technique](../../guide-overview.md) pour plus d’informations sur la configuration de ces calculs, si vous créez dans Data Warehouse manager.
+* Rejoindre à `sales_order_item` pour créer de nouvelles colonnes qui associent les détails du SKU configurable parent ou du bundle au produit simple. Notez que vous devrez [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour plus d’informations sur la configuration de ces calculs, si vous créez dans Data Warehouse manager.
    * Chemin : `sales_order_item.parent_item_id` (nombreux) => `sales_order_item.item_id` (1)
 
 `store`

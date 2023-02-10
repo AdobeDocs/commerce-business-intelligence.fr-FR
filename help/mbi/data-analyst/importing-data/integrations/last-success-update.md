@@ -2,9 +2,9 @@
 title: Présentation des résultats entre la base de données et SQL Editor
 description: Découvrez comment comprendre les résultats entre la base de données et l’éditeur SQL.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ Le dernier point de données pour une intégration particulière est déterminé
 Pour vérifier l’actualisation des données de *tables spécifiques*, nous vous recommandons de créer rapidement une [Rapport SQL](../../dev-reports/sql-rpt-bldr.md) qui effectue une `MAX(timestamp)` sur la table la plus importante de votre compte. Comparaison de cet horodatage au `Last Data Point` indique si le problème a affecté l’intégralité du compte ou un sous-ensemble des tables. Nous vous recommandons de le faire pour trois à quatre tables importantes, généralement utilisées.
 
 - Si la variable `MAX(timestamp)` sont plus récentes que `Last Data Point Received`, cela signifie qu’un sous-ensemble des tables a été affecté, mais que le cycle de mise à jour global du compte est stable.
-- Si la variable `MAX(timestamp)` est égale ou antérieure à `Last Data Point Received`, cela signifie que le cycle de mise à jour du compte a été affecté. Dans ce cas, [envoi d’un ticket d’assistance](../../../guide-overview.md).
+- Si la variable `MAX(timestamp)` est égale ou antérieure à `Last Data Point Received`, cela signifie que le cycle de mise à jour du compte a été affecté. Dans ce cas, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

@@ -2,9 +2,9 @@
 title: Optimisation de vos requêtes SQL
 description: Découvrez comment optimiser vos requêtes SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Le Report Builder SQL vous permet de lancer des requêtes et d’effectuer une itération sur ces requêtes à un moment donné. Cela s’avère utile lorsque vous devez modifier une requête sans avoir à attendre la fin d’un cycle de mise à jour avant de réaliser une colonne ou un rapport que vous avez créé qui doit être mis à jour.
 
-Avant l&#39;exécution d&#39;une requête, [[!DNL MBI] estime son coût](https://support.magento.com/hc/en-us/articles/360016730391). Le coût prend en compte le temps et le nombre de ressources nécessaires pour exécuter une requête. Si ce coût est jugé trop élevé ou si le nombre de lignes retournées dépasse les limites, la requête ne s’exécutera pas. Nous avons dressé une liste des recommandations pour interroger votre entrepôt de données, afin de vous assurer que vous écrivez les requêtes les plus simples possible.
+Avant l&#39;exécution d&#39;une requête, [[!DNL MBI] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Le coût prend en compte le temps et le nombre de ressources nécessaires pour exécuter une requête. Si ce coût est jugé trop élevé ou si le nombre de lignes retournées dépasse les limites, la requête ne s’exécutera pas. Nous avons dressé une liste des recommandations pour interroger votre entrepôt de données, afin de vous assurer que vous écrivez les requêtes les plus simples possible.
 
 ## Utilisation de l’option SELECT (Sélectionner) ou Sélectionner toutes les colonnes
 

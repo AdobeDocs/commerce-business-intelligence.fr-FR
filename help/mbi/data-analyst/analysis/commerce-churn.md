@@ -5,7 +5,7 @@ exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -102,9 +102,9 @@ Vous trouverez ci-dessous quelques conversions mensuelles > secondes courantes, 
 
 | **Mois** | **Secondes** |
 |---|---|
-| 3 | 7 776 000 |
-| 6 | 15 552 000 |
-| 9 | 23 328 000 |
-| 12 | 31 104 000 |
+| 3 | 7,776,000 |
+| 6 | 15,552,000 |
+| 9 | 23,328,000 |
+| 12 | 31,104,000 |
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’exemple de tableau de bord ci-dessus.

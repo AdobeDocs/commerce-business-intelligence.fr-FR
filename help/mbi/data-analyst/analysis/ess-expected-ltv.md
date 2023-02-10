@@ -2,9 +2,9 @@
 title: Analyse de base de la valeur de durée de vie attendue (LTV)
 description: Découvrez comment créer des analyses pour comprendre la valeur de durée de vie de vos clients actuels et prévoir comment la valeur de durée de vie augmentera avec plus de commandes.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ Une fois la mesure créée, vous pouvez **création d’un tableau de bord** en 
 * C’est là que nous créons et ajoutons tous les rapports.
 
 ## Création de rapports
-
-* Si ce n’est pas déjà fait, extrayez [cette vidéo](https://fast.wistia.net/embed/iframe/24zz7wmjrt) à propos de l’utilisation de la **[!UICONTROL Visual Report Builder] pour créer des graphiques, des tableaux et des valeurs scalaires.
 
 >[!NOTE]
 >

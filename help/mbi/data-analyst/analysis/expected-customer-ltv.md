@@ -2,9 +2,9 @@
 title: Analyse de la valeur de durée de vie attendue (LTV) pour Pro
 description: Découvrez comment configurer un tableau de bord qui vous aidera à comprendre la croissance des valeurs de durée de vie des clients et la valeur de durée de vie attendue de vos clients.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -153,4 +153,4 @@ Autres détails du graphique
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’image en haut de la page.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](../../guide-overview.md).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

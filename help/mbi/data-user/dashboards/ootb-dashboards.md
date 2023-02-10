@@ -2,9 +2,9 @@
 title: Tableaux de bord inclus
 description: Découvrez comment vérifier l’intégrité des mesures essentielles telles que les recettes de durée de vie des utilisateurs, le nombre d’achats répétés, etc., ce qui crée des bases solides pour l’exploration future.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Dans le cadre de nos services, nous offrons des services de commerce électroniq
 >
 >La disponibilité de certains tableaux de bord dépend de votre jeu de données.
 
-Si vous avez des questions ou si vous souhaitez ajouter un module à votre compte, envoyez une [ticket de support](../../guide-overview.md) pour obtenir de l’aide.
+Si vous avez des questions ou si vous souhaitez ajouter un module à votre compte, envoyez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour obtenir de l’aide.
 
 ## Présentation exécutive
 

@@ -2,9 +2,9 @@
 title: Vérification de l’état du cycle de mise à jour
 description: Découvrez comment vérifier l’état du cycle de mise à jour.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Lorsque vous vous connectez à [!DNL MBI] tableau de bord, vous pouvez vérifier
 
 ## Pourquoi dois-je vérifier l’état du cycle de mise à jour ?
 
-Il est utile de vérifier le cycle de mise à jour du statut lorsque vous contrôlez les données de votre [!DNL MBI] compte . Si vous voyez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), par exemple, les ventes quotidiennes dans [!DNL MBI] ne correspondent pas à ce que vous voyez sur votre plateforme d’e-commerce ou dans votre [[!DNL Google] recettes liées au commerce électronique](https://support.magento.com/hc/en-us/articles/360016505232) vous pouvez vérifier le dernier point de données pour voir si le problème sera résolu une fois une mise à jour terminée.
+Il est utile de vérifier le cycle de mise à jour du statut lorsque vous contrôlez les données de votre [!DNL MBI] compte . Si vous voyez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), par exemple, les ventes quotidiennes dans [!DNL MBI] ne correspondent pas à ce que vous voyez sur votre plateforme d’e-commerce ou dans votre [[!DNL Google] recettes liées au commerce électronique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) vous pouvez vérifier le dernier point de données pour voir si le problème sera résolu une fois une mise à jour terminée.
 
 ## [!UICONTROL Read-Only] et [!UICONTROL Standard]** Utilisateurs
 

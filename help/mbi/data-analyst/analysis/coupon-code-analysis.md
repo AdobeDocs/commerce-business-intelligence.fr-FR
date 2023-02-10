@@ -2,9 +2,9 @@
 title: Performances des coupons
 description: Découvrez comment analyser les performances de vos coupons.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Colonnes à créer, quelle que soit la stratégie de commandes d’invités :
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: Cas lorsque `A` est nul alors `No coupon` else `Coupon` end
 
 
@@ -44,7 +44,7 @@ Colonnes à créer, quelle que soit la stratégie de commandes d’invités :
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
    * [!UICONTROL Datatype]: Chaîne
-   * [!UICONTROL Calculation]: `concat(A,' - ',B)`
+   * [!UICONTROL Calculation]:: `concat(A,' - ',B)`
 
 
 * **Nombre de commandes avec ce coupon**
@@ -80,20 +80,20 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **Cas où A=&#39;Coupon&#39; alors &#39;Client d&#39;acquisition de coupon&#39; else &#39;Client d&#39;acquisition de coupon&#39;**
    * **Pourcentage des commandes du client avec coupon**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
-      * [!UICONTROL Datatype]: `Decimal`
+      * [!UICONTROL Datatype]:: `Decimal`
       * [!UICONTROL Calculation]: **cas où A est nul ou B est nul ou B=0 alors nul autre fin A/B**
    * **Utilisation des coupons du client**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **Cas où A est nul puis nul lorsque A=0 alors &quot;Coupon jamais utilisé&quot; lorsque A&lt;0.5 alors &quot;Prix le plus souvent plein&quot; quand A=0.5 puis &quot;50/50&quot; quand A=1 puis &quot;Coupons seulement&quot; quand A>0.5 puis &quot;Coupon principalement&quot; else &quot;Indéfini&quot;**
 
 
@@ -127,7 +127,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **Cas où A=&#39;Coupon&#39; alors &#39;Client d&#39;acquisition de coupon&#39; else &#39;Client d&#39;acquisition de coupon&#39;**
 
 
@@ -136,7 +136,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * [!UICONTROL Datatype]: `Decimal`
+   * [!UICONTROL Datatype]:: `Decimal`
    * [!UICONTROL Calculation]: **cas où A est nul ou B est nul ou B=0 alors nul autre fin A/B**
 
 
@@ -144,7 +144,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **Cas où A est nul puis nul lorsque A=0 alors &quot;Coupon jamais utilisé&quot; lorsque A&lt;0.5 alors &quot;Prix le plus souvent plein&quot; quand A=0.5 puis &quot;50/50&quot; quand A=1 puis &quot;Coupons seulement&quot; quand A>0.5 puis &quot;Coupon principalement&quot; else &quot;Indéfini&quot;**
 
 
@@ -512,4 +512,4 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’image en haut de la page.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](../../guide-overview.md).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

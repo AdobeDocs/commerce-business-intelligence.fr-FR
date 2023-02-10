@@ -2,9 +2,9 @@
 title: Activez votre [!DNL MBI] Compte pour les abonnements On-Premise
 description: En savoir plus sur l’activation de [!DNL MBI] Compte pour les abonnements On-Premise.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Pour activer [!DNL MBI] pour les abonnements on-premise, commencez par créer un
 
 1. Créez votre [!DNL MBI] Compte.
 
-   - Accédez à [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - Accédez à [Connexion au compte Adobe Commerce](https://account.magento.com/customer/account/login)
 
    - Accédez à **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -25,7 +25,7 @@ Pour activer [!DNL MBI] pour les abonnements on-premise, commencez par créer un
 
    ![](../assets/create-account-2.png)
 
-   - Accédez à votre boîte de réception et vérifiez votre adresse électronique. Si vous n’avez pas reçu d’e-mail, [support technique](../guide-overview.md).
+   - Accédez à votre boîte de réception et vérifiez votre adresse électronique. Si vous n’avez pas reçu d’e-mail, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
    - Créez votre mot de passe.
 

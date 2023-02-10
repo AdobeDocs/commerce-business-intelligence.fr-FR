@@ -2,9 +2,9 @@
 title: Connexion à Adobe Analytics
 description: Découvrez comment rassembler le point de mire du parcours client de bout en bout de la [!DNL Adobe Analytics] et l’accent eCommerce sur lequel vous vous fiez [!DNL MBI].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Le [!DNL Adobe Analytics] intégration pour [!DNL MBI] vous permet de rassembler
 
 Plus précisément, la [!DNL Adobe Analytics] intégration pour [!DNL MBI] fournit des fonctionnalités permettant aux commerçants de commencer à combiner leurs jeux de données Commerce et Analytics.
 - Créer une connexion à partir de votre [!DNL Adobe Analytics] compte dans [!DNL MBI].
-- Sélectionnez jusqu’à 25 mesures et dimensions d’une suite de rapports à répliquer dans votre [!DNL MBI] entrepôt de données.
+- Sélectionnez jusqu’à 25 mesures et dimensions dans une suite de rapports à répliquer dans votre [!DNL MBI] entrepôt de données.
 - Utiliser toutes les normes [!DNL MBI] fonctionnalité permettant de transformer, de rejoindre et de créer des rapports sur les produits répliqués. [!DNL Adobe Analytics] data.
 
 ## Conditions préalables à la connexion

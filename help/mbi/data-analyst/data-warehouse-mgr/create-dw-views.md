@@ -5,7 +5,7 @@ exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '1111'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -58,9 +58,9 @@ Regardons de plus près l&#39;un des exemples mentionnés plus haut dans cet art
 |--- |--- |--- |--- |--- |--- |
 | 1 | eee | 60 | 2017-05-05 00:00:00 | 2000 | 10.2 |
 | 2 | ggg | 40 | 2017-05-23 00:00:00 | 900 | 4.6 |
-| 3 | aaa | 22 | 2017-06-12 00:00:00 | 400 | 2,5 |
+| 3 | aaa | 22 | 2017-06-12 00:00:00 | 400 | 2.5 |
 | 4 | eee | 350 | 2017-06-30 00:00:00 | 14500 | 35 |
-| 5 | fff | 280 | 2017-07-10 00:00:00 | 10200 | 28,5 |
+| 5 | fff | 280 | 2017-07-10 00:00:00 | 10200 | 28.5 |
 
 `Ad source: Facebook`
 
@@ -71,10 +71,10 @@ Regardons de plus près l&#39;un des exemples mentionnés plus haut dans cet art
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
 | 1 | aaa | 25 | 2017-05-01 00:00:00 | 1200 | 5 |
-| 2 | jj | 12 | 2017-05-15 00:00:00 | 800 | 2,5 |
+| 2 | jj | 12 | 2017-05-15 00:00:00 | 800 | 2.5 |
 | 3 | aaa | 40 | 2017-05-22 00:00:00 | 2000 | 7 |
-| 4 | aaa | 110 | 2017-06-08 00:00:00 | 6 000 | 10 |
-| 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1,2 |
+| 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
+| 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
 Pour créer une seule table de dépenses publicitaires contenant les deux [!DNL Facebook] et [!DNL AdWords] campagnes, nous devrons écrire une requête SQL et utiliser l’ `UNION ALL` fonction . A `UNION ALL` est généralement utilisée pour combiner plusieurs requêtes SQL distinctes tout en ajoutant les résultats de chaque requête à une seule sortie.
 
@@ -120,14 +120,14 @@ Enregistrer la requête ci-dessus en tant que `Data Warehouse View` crée un tab
 |--- |--- |--- |--- |--- |--- |--- |
 | **1** | [!DNL Facebook] | 2017-05-01 00:00:00 | aaa | 5 | 1200 | 25 |
 | **1** | [!DNL Google AdWords] | 2017-05-05 00:00:00 | eee | 10.2 | 2000 | 60 |
-| **2** | [!DNL Facebook] | 2017-05-15 00:00:00 | jj | 2,5 | 800 | 12 |
+| **2** | [!DNL Facebook] | 2017-05-15 00:00:00 | jj | 2.5 | 800 | 12 |
 | **2** | [!DNL Google AdWords] | 2017-05-23 00:00:00 | ggg | 4.6 | 900 | 40 |
 | **3** | [!DNL Facebook] | 2017-05-22 00:00:00 | aaa | 7 | 2000 | 40 |
-| **3** | [!DNL Google AdWords] | 2017-06-12 00:00:00 | aaa | 2,5 | 400 | 22 |
-| **4** | [!DNL Facebook] | 2017-06-08 00:00:00 | aaa | 10 | 6 000 | 110 |
+| **3** | [!DNL Google AdWords] | 2017-06-12 00:00:00 | aaa | 2.5 | 400 | 22 |
+| **4** | [!DNL Facebook] | 2017-06-08 00:00:00 | aaa | 10 | 6000 | 110 |
 | **4** | [!DNL Google AdWords] | 2017-06-30 00:00:00 | eee | 35 | 14500 | 350 |
-| **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1,2 | 300 | 5 |
-| **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28,5 | 10200 | 280 |
+| **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
+| **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
 Plutôt que de créer un ensemble distinct de mesures marketing pour chaque source publicitaire, vous pouvez désormais créer un seul ensemble de mesures à l’aide du tableau ci-dessus pour capturer toutes vos publicités.
 

@@ -2,9 +2,9 @@
 title: Connexion à Salesforce
 description: Découvrez comment les données Salesforce permettent une gamme d’analyses, depuis les pistes de notation et d’optimisation jusqu’à vos objectifs en termes d’opportunités converties.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,4 @@ C&#39;est tout ! Une fois vos informations d’identification validées, [!DNL S
 Si vous êtes un peu plus féru de technologie, la variable [[!DNL Salesforce] Documentation API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) peut s’avérer utile pour en savoir plus sur la façon dont Salesforce est intégré à [!DNL MBI].
 
 * [Valeur attendue [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

@@ -2,9 +2,9 @@
 title: Connexion aux adwords Google
 description: Découvrez comment mesurer le retour sur investissement de la campagne en associant le coût de la publicité et la valeur de durée de vie du client (CLV) des utilisateurs acquis de vos campagnes.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ Vous pouvez avoir plusieurs sites Web connectés à un seul [!DNL Google Analyti
 
 ## Associé
 
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Suivi de la source de référence de commande via [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Suivi de la source de référence des utilisateurs dans votre base de données](../../analysis/google-track-user-acq.md)
-* [Suivi des données utilisateur, navigateur et système d’exploitation dans votre base de données](https://support.magento.com/hc/en-us/articles/360016732911)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux](../../analysis/most-value-source-channel.md)
 * [Augmentation du retour sur investissement de vos campagnes publicitaires](../../analysis/roi-ad-camp.md)
 * [Comment [!DNL Google Analytics] Fonctionnement de l’attribution UTM ?](../../analysis/utm-attributes.md)

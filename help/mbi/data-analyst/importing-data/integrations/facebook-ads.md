@@ -2,9 +2,9 @@
 title: Connexion à Facebook Ads
 description: Découvrez comment analyser vos données de dépenses publicitaires et voir si votre argent est dépensé efficacement.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ Vous allez suivre une série d’étapes pour autoriser [!DNL MBI] pour accéder
 
 ## que va-t-il se passer ensuite ? {#next}
 
-Assurez-vous que vous effectuez le suivi [!DNL Facebook] campagnes dans [!DNL Google Analytics] en fonction de [tutoriel](https://www.facebook.com/business/google-analytics). Cela permet de s’assurer que la variable `utm\_campaign` champ dans [!DNL Google Analytics] est correctement renseigné pour la variable [!DNL Facebook] campagnes.
+Assurez-vous que vous effectuez le suivi [!DNL Facebook] campagnes dans [!DNL Google Analytics]. Cela permet de s’assurer que la variable `utm\_campaign` champ dans [!DNL Google Analytics] est correctement renseigné pour la variable [!DNL Facebook] campagnes.
 
 ## Associé
 
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Connectez-vous à [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Suivi de la source de référence de commande via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Suivi de la source de référence des utilisateurs dans votre base de données](../../analysis/google-track-user-acq.md)

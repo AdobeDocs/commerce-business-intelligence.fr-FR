@@ -2,9 +2,9 @@
 title: Utiliser les options d’heure dans le Report Builder visuel
 description: Découvrez comment analyser les données de votre rapport pour une période spécifique.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Maintenant, nous pouvons voir à quel point chaque mois a eu un impact l&#39;ann
 
 ## Comparaison de la même mesure sur différentes périodes {#difftimerange}
 
-Cet exemple utilise une dimension personnalisée appelée `Day number of the month`. Si vous souhaitez créer ce rapport et que vous ne disposez pas déjà de cette dimension dans votre Data Warehouse, [support technique](../guide-overview.md) pour obtenir de l’aide.
+Cet exemple utilise une dimension personnalisée appelée `Day number of the month`. Si vous souhaitez créer ce rapport et que vous ne disposez pas déjà de cette dimension dans votre Data Warehouse, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour obtenir de l’aide.
 
 Les deux exemples les plus courants dans cette catégorie sont (1) la comparaison des mesures de croissance (recettes d’une année à l’autre ou d’un mois à l’autre) et (2) une meilleure compréhension des tendances récentes de ventes d’inventaire ou d’article.
 
@@ -143,4 +143,3 @@ Cet exemple montre que les niveaux d’inventaire actuels étaient bien position
 
 Étant donné que vos clients se comportent différemment au fil du temps, vous pouvez vous attendre à voir les écarts de données lors d’analyses. La définition d’options de temps personnalisées vous permet de créer rapidement des analyses complexes, ce qui vous permet de prendre des décisions basées sur les données qui tiennent compte des tendances historiques.
 
-Voir notre [vidéo de formation](https://support.magento.com/hc/en-us/articles/360016730071-Training-Video-Time-Options-in-the-Visual-Report-Builder) pour en savoir plus.

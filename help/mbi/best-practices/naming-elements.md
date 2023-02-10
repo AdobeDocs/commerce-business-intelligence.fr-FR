@@ -2,7 +2,7 @@
 title: Nommer les rapports et les éléments dans l’IMS
 description: Découvrez les bonnes pratiques pour nommer les rapports et les éléments dans [!DNL MBI].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -101,4 +101,4 @@ Recettes (expédié\_at) Recettes (créé\_at)
 
 ## Remplissage {#wrapup}
 
-L’établissement précoce de conventions de style et d’appellation vous aidera à configurer votre réussite dans votre [!DNL MBI] compte . Rappelez-vous des trois C : clarté, cohérence et crédibilité.
+L’établissement précoce de conventions de style et d’appellation vous aidera à configurer votre réussite dans votre [!DNL MBI] compte . Souvenez-vous des trois C : clarté, cohérence et crédibilité.

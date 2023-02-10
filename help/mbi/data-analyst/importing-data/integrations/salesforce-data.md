@@ -2,9 +2,9 @@
 title: Données Salesforce attendues
 description: Découvrez les objets pris en charge et non pris en charge dans les données Salesforce.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >La structure (colonnes) de chaque tableau dépend des champs contenus dans l’objet.
 
-Pour obtenir une liste des objets mis à la disposition de votre entreprise, reportez-vous à la section [!DNL Salesforce] [Obtention d’une documentation de liste d’objets](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). Une fois que vous disposez d’une liste d’objets, extrayez le [Diagramme de relation d’entité (ERD)](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_erd_majors.htm) de [!DNL Salesforce] documentation pour découvrir comment les entités se connectent entre elles.
+Pour obtenir une liste des objets mis à la disposition de votre entreprise, reportez-vous à la section [!DNL Salesforce] [Obtention d’une documentation de liste d’objets](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). Une fois que vous disposez d’une liste d’objets, extrayez le [Diagramme de relation d’entité (ERD)](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) de [!DNL Salesforce] documentation pour découvrir comment les entités se connectent entre elles.
 
 ## Objets non pris en charge
 
@@ -48,4 +48,4 @@ Pour obtenir une liste des objets mis à la disposition de votre entreprise, rep
 ## En rapport :
 
 * [Connexion [!DNL Salesforce]](../integrations/salesforce.md)
-* [Réauthentification des intégrations](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

@@ -2,9 +2,9 @@
 title: Déverglacer votre [!DNL MBI] Compte
 description: Découvrez comment nettoyer votre [!DNL MBI] compte .
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---

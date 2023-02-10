@@ -2,9 +2,9 @@
 title: Utilisation du Report Builder SQL
 description: Découvrez comment contrôler les données et les mesures à l’aide du Report Builder SQL afin de comparer les résultats aux données de votre base de données locale.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Vous pouvez également écrire des requêtes personnalisées et exporter les ré
 
 ### Toujours sur la sellette ?
 
-Si vous constatez une incohérence après le contrôle de vos données, consultez la rubrique [Contacter l’assistance : Incohérences entre les données](https://support.magento.com/hc/en-us/articles/360016505312) article relatif à l’assistance pour plus d’informations sur les prochaines étapes.
+Si vous constatez une incohérence après le contrôle de vos données, consultez la rubrique [Contacter l’assistance : Incohérences entre les données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) article relatif à l’assistance pour plus d’informations sur les prochaines étapes.

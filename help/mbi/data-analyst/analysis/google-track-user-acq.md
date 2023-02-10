@@ -2,10 +2,10 @@
 title: Google Analytics - Aperçu des données de source d’acquisition d’utilisateurs
 description: Découvrez comment segmenter vos données par source d’acquisition d’utilisateurs.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,6 @@ C&#39;est intéressant, mais d&#39;usage limité. Ce que nous aimerions vraiment
 
 ### Associé
 
-* **[Suivi des données utilisateur, navigateur et système d’exploitation dans votre base de données](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[Découvrez vos sources et canaux d’acquisition les plus précieux](../analysis/most-value-source-channel.md)**
 * **[Connectez-vous à [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)**
 * **[Augmentation du retour sur investissement de vos campagnes publicitaires](../analysis/roi-ad-camp.md)**

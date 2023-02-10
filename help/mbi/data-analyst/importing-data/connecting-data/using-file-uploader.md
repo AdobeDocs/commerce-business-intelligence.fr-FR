@@ -2,9 +2,9 @@
 title: Utilisation du téléchargement de fichier
 description: Découvrez comment placer toutes vos données dans un seul entrepôt de données.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Prenons l’exemple des campagnes publicitaires. Si vous exécutez des campagnes
 ## Restrictions et exigences {#require}
 
 1. **Le seul format pris en charge pour les chargements de fichiers est `CSV` ou`comma separated values`**. Si vous travaillez dans Excel, vous pouvez utiliser la fonction Enregistrer sous pour enregistrer le fichier dans `.csv` format.
-1. **`CSV`Les fichiers doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce ne sera pas un problème. Si vous rencontrez cette erreur lors du téléchargement d’un fichier, [Consultez cet article d’assistance](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`Les fichiers doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce ne sera pas un problème. Si vous rencontrez cette erreur lors du téléchargement d’un fichier, [Consultez cet article d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **Les fichiers ne peuvent pas dépasser 100 Mo**. Si le fichier est plus volumineux, séparez le tableau en blocs et enregistrez-le sous forme de fichiers individuels. Vous pouvez ajouter les données après le chargement du fichier initial.
 1. **Toutes les tables doivent avoir une`primary key`**. Votre tableau doit contenir au moins une colonne pouvant être utilisée comme `primary key`ou un identifiant unique pour chaque ligne du tableau. Toute colonne désignée comme `primary key` can *never* être nul. A `primary key` peut être aussi simple que l’ajout d’une colonne qui donne un nombre à chaque ligne ou peut être deux colonnes concaténées pour créer une colonne de valeurs uniques (par exemple, `campaign name` et `date`).
 

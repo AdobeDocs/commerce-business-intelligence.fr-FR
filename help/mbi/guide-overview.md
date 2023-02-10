@@ -5,9 +5,9 @@ breadcrumb-title: Présentation du guide
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Accédez à notre équipe d’assistance si vous avez des questions ou si vous s
 
 ### Stratégies de service
 
-Voir [liste des services proposés par notre équipe d’assistance clientèle](https://support.magento.com/hc/en-us/articles/360016730811).
+Voir [liste des services proposés par notre équipe d’assistance clientèle](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Envoi d’un ticket d’assistance
 
-Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter notre équipe d’assistance, nous vous demandons d’utiliser notre [instructions relatives aux tickets d’assistance](https://support.magento.com/hc/en-us/articles/360016730351). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
+Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter notre équipe d’assistance, nous vous demandons d’utiliser notre [instructions relatives aux tickets d’assistance] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
 
 ## Documentation disponible
 
