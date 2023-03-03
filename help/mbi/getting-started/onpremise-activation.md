@@ -2,9 +2,9 @@
 title: Activez votre [!DNL MBI] Compte pour les abonnements On-Premise
 description: En savoir plus sur l’activation de [!DNL MBI] Compte pour les abonnements On-Premise.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Pour activer [!DNL MBI] pour les abonnements on-premise, commencez par créer un
 
    - Accédez à **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
-   - Cliquez sur **[!UICONTROL Create Instance]**. Si vous ne voyez pas ce bouton, contactez votre responsable du succès client ou votre conseiller technique client.
+   - Cliquez sur **[!UICONTROL Create Instance]**. Si vous ne voyez pas ce bouton, contactez votre équipe de compte d’Adobe ou votre conseiller technique du client.
 
    - Renseignez les informations pour créer votre compte.
 
@@ -43,6 +43,6 @@ Pour activer [!DNL MBI] pour les abonnements on-premise, commencez par créer un
 
    Commerce recommande vivement de vous connecter à l’aide d’une [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md). Cependant, s’il ne s’agit pas d’une option, vous pouvez toujours lier [!DNL MBI] à votre base de données à l’aide d’un [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
 
-1. Une fois que vous êtes connecté [!DNL MBI] dans votre base de données Commerce, contactez votre gestionnaire de succès client pour coordonner les étapes suivantes, telles que la configuration des intégrations et d’autres étapes de configuration.
+1. Une fois que vous êtes connecté [!DNL MBI] dans votre base de données Commerce, contactez votre équipe de compte d’Adobe pour coordonner les étapes suivantes, telles que la configuration des intégrations et d’autres étapes de configuration.
 
 1. Une fois la configuration terminée, vous pouvez [connexion](../getting-started/sign-in.md) à [!DNL MBI] compte .

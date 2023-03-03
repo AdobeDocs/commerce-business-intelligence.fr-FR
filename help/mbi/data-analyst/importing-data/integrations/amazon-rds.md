@@ -2,9 +2,9 @@
 title: Connexion à Amazon RDS
 description: Découvrez les étapes de connexion de votre instance RDS.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Il s’agit de la partie du processus dans laquelle les étapes varient en fonct
 
 Après avoir accordé [!DNL MBI] l&#39;accès à votre instance et la création d&#39;un utilisateur pour nous, la dernière chose à faire est d&#39;entrer les informations de connexion dans [!DNL MBI].
 
-Pages d’informations d’identification pour `MySQL`, `Microsoft SQL`, et `PostgreSQL` sont accessibles via le `Integrations` page (**[!UICONTROL Manage Data** > **Integrations]**) en cliquant sur **[!UICONTROL Add Integration]**. Lorsque la liste des intégrations s’affiche, cliquez sur l’icône correspondant à la base de données que vous utilisez pour accéder à la page des informations d’identification. Si vous n’avez actuellement pas accès à l’intégration dont vous avez besoin, contactez votre CSM.
+Pages d’informations d’identification pour `MySQL`, `Microsoft SQL`, et `PostgreSQL` sont accessibles via le `Integrations` page (**[!UICONTROL Manage Data** > **Integrations]**) en cliquant sur **[!UICONTROL Add Integration]**. Lorsque la liste des intégrations s’affiche, cliquez sur l’icône correspondant à la base de données que vous utilisez pour accéder à la page des informations d’identification. Si vous n’avez actuellement pas accès à l’intégration dont vous avez besoin, contactez votre équipe de compte d’Adobe.
 
 Pour terminer la création de la connexion, nous aurons besoin des informations suivantes :
 

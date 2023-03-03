@@ -2,9 +2,9 @@
 title: Activez votre [!DNL MBI] Compte pour les abonnements à Cloud Starter
 description: Découvrez comment activer [!DNL MBI] pour les projets Cloud Starter.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Pour activer [!DNL MBI] pour `Cloud Starter` projets, créez d’abord un [!DNL 
 
 >[!NOTE]
 >
->Pour activer l’aide [!DNL MBI] pour `Cloud Pro` projets, contactez votre responsable du succès client ou votre conseiller technique client.
+>Pour activer l’aide [!DNL MBI] pour `Cloud Pro` pour les projets, contactez votre équipe de compte d’Adobe ou votre conseiller technique client.
 
 1. Créez votre [!DNL MBI] Compte.
 
@@ -23,7 +23,7 @@ Pour activer [!DNL MBI] pour `Cloud Starter` projets, créez d’abord un [!DNL 
 
    - Accédez à **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
-   - Cliquez sur **[!UICONTROL Create Instance]**. Si vous ne voyez pas ce bouton, contactez votre responsable du succès client ou votre conseiller technique client.
+   - Cliquez sur **[!UICONTROL Create Instance]**. Si vous ne voyez pas ce bouton, contactez votre équipe de compte d’Adobe ou votre conseiller technique du client.
 
    - Sélectionnez votre `Cloud Starter` abonnement. Si vous avez uniquement une `cloud starter` Cette option sera automatiquement sélectionnée.
 
@@ -198,6 +198,6 @@ Pour activer [!DNL MBI] pour `Cloud Starter` projets, créez d’abord un [!DNL 
 
 1. Vous êtes maintenant connecté à votre [!DNL MBI] compte .
 
-1. Une fois que vous êtes connecté [!DNL MBI] dans votre base de données Commerce, contactez votre gestionnaire de succès client pour coordonner les étapes suivantes, telles que la configuration des intégrations et d’autres étapes de configuration.
+1. Une fois que vous êtes connecté [!DNL MBI] dans votre base de données Commerce, contactez votre équipe de compte d’Adobe pour coordonner les étapes suivantes, telles que la configuration des intégrations et d’autres étapes de configuration.
 
 1. Une fois la configuration terminée, vous pouvez [connexion](../getting-started/sign-in.md) à [!DNL MBI] compte .
