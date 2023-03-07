@@ -7,7 +7,7 @@ seo-description: Describes how to use the MBI features used to gain insights fro
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
 source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défau
 | [Guides opérationnels Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Documentation système sur les concepts, processus, outils et bonnes pratiques permettant de développer, déployer et gérer des projets déployés sur des plateformes Adobe Commerce et Magento Open Source. |
 | [Documentation destinée aux développeurs Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
