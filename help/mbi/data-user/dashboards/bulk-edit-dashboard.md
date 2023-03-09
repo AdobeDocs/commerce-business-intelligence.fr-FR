@@ -2,9 +2,9 @@
 title: Modification en masse de graphiques dans les tableaux de bord
 description: Découvrez comment utiliser la fonction de modification en masse dans [!DNL MBI].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ La fonction de modification en masse facilite la modification des noms et dates 
 
 * [Le ](#dates)
 
-Cela dit, considérez ceci : *Ces modifications doivent-elles être permanentes ?* Si ce n’est pas le cas, pensez à cloner le tableau de bord, puis à modifier les dates dans le nouveau tableau de bord. Vous pourrez ainsi conserver votre tableau de bord d’origine tout en apportant les modifications dont vous avez besoin.
+Cela dit, considérez ceci : *Ces modifications doivent-elles être permanentes ?* Si ce n’est pas le cas, pensez à cloner le tableau de bord, puis à modifier les dates dans le nouveau tableau de bord. Cela vous permet de conserver votre tableau de bord d’origine tout en apportant les modifications dont vous avez besoin.
 
 >[!NOTE]
 >
->Si vous apportez des modifications à de nombreux rapports, le processus de mise à jour peut prendre un peu de temps.
+>Si vous modifiez de nombreux rapports, le processus de mise à jour peut prendre un certain temps.
 
 ## Utilisation `Find/Replace` {#findreplace}
 

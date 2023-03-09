@@ -2,16 +2,16 @@
 title: Création d’un tableau de bord pour les investisseurs
 description: Découvrez comment créer un tableau de bord pour les investisseurs.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 # Créer le tableau de bord des investisseurs
 
-Un grand nombre de nos clients travaillent avec des investisseurs et doivent partager des informations de la plateforme avec eux, mais les tableaux de bord que vous créez pour prendre des décisions commerciales au jour le jour ne sont peut-être pas ce qu&#39;un investisseur cherche. Nous présentons ici quelques bonnes pratiques pour créer un tableau de bord complet mais simple, idéal pour le partage avec des investisseurs principaux et potentiels.
+De nombreux clients travaillent avec des investisseurs et doivent partager des informations à partir de la plateforme, mais les tableaux de bord que vous créez pour prendre des décisions commerciales quotidiennes ne sont peut-être pas ce qu’un investisseur recherche. Vous trouverez ci-dessous quelques bonnes pratiques pour créer un tableau de bord complet mais simple, idéal pour le partage avec des investisseurs principaux et potentiels.
 
 Voici ce que vous devez créer pour le tableau de bord de votre investisseur :
 
@@ -28,7 +28,7 @@ Voici ce que vous devez créer pour le tableau de bord de votre investisseur :
 * **[!UICONTROL Revenue by quarter]**
    * Mesure - Recettes
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * Mesure - Chiffre d’affaires de la première commande
+   * Mesure : recettes de la première commande
    * Filtre : le numéro de commande de l’utilisateur est égal à 1
    * Mesure 2 - Recettes des commandes répétées
       * Filtre : le numéro de commande de l’utilisateur est supérieur à 1
@@ -71,8 +71,8 @@ Avec le [Services d’enrichissement des données de commerce](https://business.
 * Utiliser une ligne claire et concise [convention de dénomination](../best-practices/naming-elements.md)
 * Partage du tableau de bord avec les utilisateurs investisseurs
 * Ou l’envoyer via **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* Créez un seul tableau de bord. Cela facilite la maintenance du contenu et vous savez exactement ce que regardent vos investisseurs.
+* Créez un seul tableau de bord. Cela facilite la maintenance du contenu, et vous savez exactement ce que voient vos investisseurs.
 
-Organisez vos rapports avec soin et prêtez attention aux détails. Une fois terminé, le tableau de bord se présente comme suit :
+Organisez vos rapports avec soin et prêtez attention aux détails. Une fois l’opération terminée, le tableau de bord se présente comme suit :
 
 ![](../../mbi/assets/investor-dboard-example.png)

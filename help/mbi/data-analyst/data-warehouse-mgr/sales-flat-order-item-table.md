@@ -2,9 +2,9 @@
 title: table sales_order_item
 description: Découvrez comment utiliser la table sales_order_item .
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -29,19 +29,19 @@ Il est donc possible de créer des rapports sur les ventes de produits, soit au 
 
 | **Nom de la colonne** | **Description** |
 |----|----|
-| `base_price` | Prix d’une unité individuelle d’un produit au moment de la vente après vente [catalogue des règles de prix, remises échelonnées et prix spécial](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) sont appliquées et avant toute application de taxes, de frais d’expédition ou de remises sur le panier, représentées dans la devise de base du magasin ; |
-| `created_at` | Horodatage de création de l’élément de commande, généralement stocké localement en UTC. Selon votre configuration dans [!DNL MBI], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL MBI] qui diffère du fuseau horaire de votre base de données |
+| `base_price` | Prix d’une unité individuelle d’un produit au moment de la vente après vente [catalogue des règles de prix, remises échelonnées et prix spécial](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) sont appliquées et avant toute application des taxes, des frais d’expédition ou des remises sur le panier. Il est représenté dans la devise de base du magasin. |
+| `created_at` | Horodatage de création de l’élément de commande, stocké localement en UTC. Selon votre configuration dans [!DNL MBI], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL MBI] qui diffère du fuseau horaire de votre base de données |
 | `item_id` (PK) | Identifiant unique du tableau |
 | `name` | Nom de texte de l’élément de commande. |
 | `order_id` | `Foreign key` associé à la propriété `sales_order` table. Rejoindre à `sales_order.entity_id` pour déterminer les attributs de commande associés à l’élément de commande |
-| `parent_item_id` | `Foreign key` qui associe un produit simple à son lot parent ou à un produit configurable. Rejoindre à `sales_order_item.item_id` pour déterminer les attributs de produit parents associés à un produit simple. Pour les éléments de commande parents (c’est-à-dire les types de produit regroupés ou configurables), la variable `parent_item_id` sera `NULL` |
+| `parent_item_id` | `Foreign key` qui associe un produit simple à son lot parent ou à un produit configurable. Rejoindre à `sales_order_item.item_id` pour déterminer les attributs de produit parents associés à un produit simple. Pour les éléments de commande parents (c’est-à-dire les types de produit regroupés ou configurables), la variable `parent_item_id` is `NULL` |
 | `product_id` | `Foreign key` associé à la propriété `catalog_product_entity` table. Rejoindre à `catalog_product_entity.entity_id` pour déterminer les attributs de produit associés à l’article de commande |
 | `product_type` | Type de produit vendu. Potentiel [types de produits](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) inclure : simple, configurable, groupé, virtuel, groupé et téléchargeable |
 | `qty_ordered` | Quantité d’unités incluses dans le panier pour l’article de commande spécifique au moment de la vente |
 | `sku` | Identifiant unique de l’article de commande acheté |
 | `store_id` | `Foreign key` associé à la propriété `store` table. Rejoindre à `store.store_id` pour déterminer la vue de magasin Commerce associée à l’élément de commande |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Colonnes calculées courantes
 
@@ -57,7 +57,7 @@ Il est donc possible de créer des rapports sur les ventes de produits, soit au 
 | `Order's status` | État de la commande. Calculé par la jointure `sales_order_item.order_id` to `sales_order.entity_id` et le renvoi de la variable `status` field |
 | `Store name` | Nom de la boutique Commerce associée à l’élément de commande. Calculé par la jointure `sales_order_item.store_id` to `store.store_id` et le renvoi de la variable `name` field |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Mesures courantes
 
@@ -66,13 +66,13 @@ Il est donc possible de créer des rapports sur les ventes de produits, soit au 
 | `Products ordered` | La quantité totale de produits inclus dans les paniers au moment de la vente | `Operation: Sum`<br>`Operand: qty_ordered`<br>`Timestamp: created_at` |
 | `Revenue by products ordered` | Valeur totale des produits inclus dans les paniers au moment de la vente après l’application des règles de prix du catalogue, des remises à niveau et des prix spéciaux, et avant l’application des taxes, de l’expédition ou des remises au panier. | `Operation: Sum`<br>`Operand: Order item total value (quantity * price)`<br>`Timestamp: created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## `Foreign Key` Association des chemins
 
 `catalog_product_entity`
 
-* Rejoindre à `catalog_product_entity` pour créer de nouvelles colonnes qui renvoient les attributs de produit associés à l’élément de commande.
+* Rejoindre à `catalog_product_entity` tableau pour créer des colonnes qui renvoient les attributs de produit associés à l’élément de commande.
    * Chemin : `sales_order_item.product_id` (nombreux) => `catalog_product_entity.entity_id` (1)
 
 `sales_order`
@@ -82,10 +82,10 @@ Il est donc possible de créer des rapports sur les ventes de produits, soit au 
 
 `sales_order_item`
 
-* Rejoindre à `sales_order_item` pour créer de nouvelles colonnes qui associent les détails du SKU configurable parent ou du bundle au produit simple. Notez que vous devrez [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour plus d’informations sur la configuration de ces calculs, si vous créez dans Data Warehouse manager.
+* Rejoindre à `sales_order_item` pour créer des colonnes qui associent les détails du SKU configurable parent ou du bundle au produit simple. [Contacter le support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour plus d’informations sur la configuration de ces calculs, si vous créez dans Data Warehouse manager.
    * Chemin : `sales_order_item.parent_item_id` (nombreux) => `sales_order_item.item_id` (1)
 
 `store`
 
-* Rejoindre à `store` pour créer de nouvelles colonnes qui renvoient des détails relatifs à la boutique Commerce associée à l’élément de commande.
+* Rejoindre à `store` pour créer des colonnes qui renvoient des détails relatifs à la boutique Commerce associée à l’élément de commande.
    * Chemin : `sales_order_item.store_id` (nombreux) => `store.store_id` (1)

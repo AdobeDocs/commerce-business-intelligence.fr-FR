@@ -2,16 +2,16 @@
 title: Différences entre SQL et Data Warehouse Manager
 description: Découvrez les différences entre SQL et Data Warehouse Manager.
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # Différences entre SQL et Data Warehouse Manager
 
-Il existe deux différences clés entre les colonnes créées dans la variable [Report Builder SQL](../dev-reports/sql-rpt-bldr.md) et ceux créés à l’aide de la fonction [Gestionnaire de Data Warehouse](../data-warehouse-mgr/creating-calculated-columns.md): l’une est la dépendance aux cycles de mise à jour, l’autre est la manière dont les colonnes sont enregistrées dans votre compte.
+Il existe deux différences clés entre les colonnes créées dans la variable [Report Builder SQL](../dev-reports/sql-rpt-bldr.md) et ceux créés à l’aide de la fonction [Gestionnaire de Data Warehouse](../data-warehouse-mgr/creating-calculated-columns.md). L’une est la dépendance aux cycles de mise à jour, l’autre est la manière dont les colonnes sont enregistrées dans votre compte.
 
 ## Colonnes dans la variable `SQL Report Builder`
 

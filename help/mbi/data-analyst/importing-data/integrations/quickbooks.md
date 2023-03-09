@@ -2,9 +2,9 @@
 title: Connexion à QuickBooks
 description: Découvrez comment les finances de votre entreprise peuvent désormais vivre en même temps que vos données de vente et de marketing, ce qui vous permet de garder rapidement et facilement un oeil sur vos dépenses, d’identifier les surdépenses, etc.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---

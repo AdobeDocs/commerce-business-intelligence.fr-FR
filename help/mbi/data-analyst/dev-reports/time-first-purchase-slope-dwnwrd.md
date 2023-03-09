@@ -2,22 +2,22 @@
 title: Rapport Temps moyen jusqu’au premier achat
 description: Découvrez comment utiliser le rapport Temps moyen jusqu’au premier achat .
 exl-id: c18734ce-0ae0-4e84-b9d0-eb2c21a5c3a5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # Rapport Temps moyen jusqu’au premier achat
 
-La plupart de nos clients ont une mesure et un graphique nommé `Average time to first purchase`, qui indique la durée moyenne entre la date d’enregistrement d’un groupe d’utilisateurs et la date du premier achat. Les données sont presque invariablement descendantes au fur et à mesure que le temps se rapproche du présent.
+De nombreux clients Adobe ont une mesure et un graphique nommés `Average time to first purchase`, qui indique la durée moyenne entre la date d’enregistrement d’un groupe d’utilisateurs et la date du premier achat. Les données sont presque invariablement descendantes au fur et à mesure que le temps se rapproche du présent.
 
 ![durée moyenne de la première commande](../../assets/average-time-to-first-order.png)
 
 En effet, ces nouveaux clients n’ont pas encore eu la possibilité de générer des achats qui ont été effectués plus d’un mois à compter de leur date de jointure. Puisque les utilisateurs qui n’ont jamais effectué d’achat ne sont pas du tout inclus (tant qu’ils n’ont pas effectué d’achat), cela influe sur la moyenne vers le bas pour les groupes de clients plus récents.
 
-Il existe d’autres façons potentielles d’examiner cette mesure qui introduisent moins de biais. Examinons un exemple.
+Il existe d’autres façons potentielles d’examiner cette mesure qui introduisent moins de biais. Examinez un exemple.
 
 ## Exemple : Effectuez une `cohort` analyse des premières commandes
 

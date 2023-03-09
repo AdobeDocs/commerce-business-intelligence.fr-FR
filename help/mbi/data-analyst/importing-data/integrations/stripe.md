@@ -2,9 +2,9 @@
 title: Connexion à la bande
 description: Découvrez comment gérer et suivre les données de paiement et de facture de votre entreprise.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 1. Accédez au `Connections` page sous **[!UICONTROL Admin** > **Connections]**.
 1. Cliquez sur **[!UICONTROL Add a Data Source]**, situé sur le côté droit de l’écran, au-dessus de `Data Sources` table.
-1. Cliquez sur le bouton [!DNL Stripe] icône . Cela affichera la variable `[!DNL Stripe] authorization` page.
+1. Cliquez sur le bouton [!DNL Stripe] icône . Cette fenêtre affiche le `[!DNL Stripe] authorization` page.
 1. Cliquez sur **[!UICONTROL Connect with Stripe]**.
 
 ## Autoriser [!DNL MBI] accéder à [!DNL Stripe] data {#steptwo}

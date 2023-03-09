@@ -2,9 +2,9 @@
 title: Utilisation des groupes de tableaux de bord
 description: Découvrez comment permettre une meilleure organisation des tableaux de bord.
 exl-id: e48b7345-62d0-4898-997e-3c3c02040ad3
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Dans la liste déroulante de sélection des tableaux de bord, les groupes de tab
 
 ## Partage de groupes de tableaux de bord
 
-Les groupes de tableaux de bord ne peuvent pas être partagés directement entre les utilisateurs. Lorsqu’un tableau de bord est partagé avec des utilisateurs, le groupe sous lequel il se trouve est automatiquement créé pour ces utilisateurs s’il n’existe pas déjà. Si le groupe de tableaux de bord existe déjà, il est simplement ajouté à la liste.
+Les groupes de tableaux de bord ne peuvent pas être partagés directement entre les utilisateurs. Lorsqu’un tableau de bord est partagé avec des utilisateurs, le groupe sous lequel il se trouve est automatiquement créé pour ces utilisateurs s’il n’existe pas. Si le groupe de tableaux de bord existe, il est ajouté à la liste.
 
-Lorsqu’un groupe de tableaux de bord est modifié par son propriétaire, la modification est répercutée automatiquement sur tous les utilisateurs avec lesquels le tableau de bord a été partagé. Les utilisateurs ne peuvent pas modifier le groupe de tableaux de bord des tableaux de bord qu’ils ne possèdent pas.
+Lorsqu’un groupe de tableau de bord est modifié par son propriétaire, la modification est répercutée automatiquement sur tous les utilisateurs avec lesquels le tableau de bord a été partagé. Les utilisateurs ne peuvent pas modifier le groupe de tableaux de bord des tableaux de bord qu’ils ne possèdent pas.
 
 ## Création de groupes de tableaux de bord
 
@@ -33,9 +33,9 @@ Les groupes de tableaux de bord peuvent être créés de deux façons :
 
    1. Cliquez sur le tableau de bord pour lequel vous souhaitez créer le groupe.
 
-   1. Sous `Dashboard Group (optional)`, le groupe de tableau de bord actuel s’affiche.
+   1. Sous `Dashboard Group (optional)`, le groupe de tableau de bord actif s’affiche.
 
-   1. Pour créer un groupe, saisissez son nom, puis cliquez en dehors de la zone.
+   1. Pour créer un groupe, saisissez le nom du nouveau groupe, puis cliquez en dehors de la zone.
 
       ![créer un groupe de tableaux de bord](../../assets/create-dashboard-groups-existing-dashboard.png)
 

@@ -1,29 +1,29 @@
 ---
 title: Définition de la concentration des clients
-description: Découvrez comment configurer un tableau de bord qui vous aidera à mesurer la manière dont le total des recettes est réparti entre votre base de clients.
+description: Découvrez comment configurer un tableau de bord qui vous aide à mesurer la manière dont le total des recettes est réparti entre votre base de clients.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
 # Concentration des clients
 
-Dans cet article, nous vous montrons comment configurer un tableau de bord qui vous aidera à mesurer la manière dont le total des recettes est réparti entre votre base de clients. Identifiez le pourcentage de clients qui contribuent aux recettes et créez des listes segmentées afin de mieux commercialiser et de conserver vos clients ayant un fort taux de contribution.
+Cet article explique comment configurer un tableau de bord qui vous aide à mesurer la répartition du total des recettes entre votre base de clients. Identifiez le pourcentage de clients qui contribuent aux recettes et créez des listes segmentées afin de mieux commercialiser et de conserver vos clients ayant un fort taux de contribution.
 
 Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Prise en main
 
-Vous devez d’abord charger un fichier contenant une clé Principale dont la valeur est de 1. Cela permettra de créer certaines colonnes calculées nécessaires à l&#39;analyse.
+Vous devez d’abord charger un fichier contenant une clé Principale dont la valeur est de 1. Cela permet de créer certaines colonnes calculées nécessaires à l’analyse.
 
-Vous pouvez tirer parti de [Chargeur de fichiers](../importing-data/connecting-data/using-file-uploader.md) ainsi que l’image ci-dessous pour formater votre fichier.
+Vous pouvez utiliser [Chargeur de fichiers](../importing-data/connecting-data/using-file-uploader.md) et l’image ci-dessous pour formater votre fichier.
 
 ## Colonnes calculées
 
-Si vous utilisez l’architecture d’origine (par exemple, si vous ne disposez pas de la variable `Data Warehouse Views` sous l’option `Manage Data` ), contactez notre équipe d’assistance pour créer les colonnes ci-dessous. Sur la nouvelle architecture, ces colonnes peuvent être créées à partir du `Manage Data > Data Warehouse` page. Vous trouverez ci-dessous des instructions détaillées.
+Si vous utilisez l’architecture d’origine (par exemple, si vous ne disposez pas de la variable `Data Warehouse Views` sous l’option `Manage Data` ), vous souhaitez contacter l’équipe d’assistance pour créer les colonnes ci-dessous. Sur la nouvelle architecture, ces colonnes peuvent être créées à partir du `Manage Data > Data Warehouse` page. Vous trouverez ci-dessous des instructions détaillées.
 
 Une autre distinction est faite si votre entreprise autorise les commandes d’invités. Si tel est le cas, vous pouvez ignorer toutes les étapes de la variable `customer_entity` table. Si les commandes d’invités ne sont pas autorisées, ignorez toutes les étapes de la variable `sales_flat_order` table.
 
@@ -36,7 +36,7 @@ Colonnes à créer
 * [!UICONTROL Calculation]: - **Cas où A est nul puis nul else 1 end**
 * [!UICONTROL Datatype]: – `Integer`
 
-* `Customer concentration` (il s’agit du fichier que vous venez de charger avec le numéro . `1`)
+* `Customer concentration` (il s’agit du fichier que vous avez chargé avec le numéro. `1`)
 * Nombre de clients
 * [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * Path - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` OU `customer_entity.(input)reference > Customer Concentration.Primary Key`
@@ -79,7 +79,7 @@ Colonnes à créer
 
 >[!NOTE]
 >
->Les centiles utilisés sont des divisions d’instances de clients, représentant le Xe percentile de votre base de clients. Chaque client sera associé à un nombre entier compris entre 1 et 100, qui peut être considéré comme le chiffre d’affaires de sa durée de vie. *rank*. Par exemple, si le centile de revenu du client pour un client spécifique est **5**, ce client se trouve dans la variable ***5e percentile*** de tous les clients en termes de recettes sur la durée de vie.
+>Les centiles utilisés sont des divisions d’instances de clients, représentant le Xe percentile de votre base de clients. Chaque client est associé à un entier compris entre 1 et 100, qui peut être considéré comme le chiffre d’affaires de sa durée de vie. *rank*. Par exemple, si le centile de revenu du client pour un client spécifique est **5**, ce client se trouve dans la variable ***cinquième centile*** de tous les clients en termes de recettes sur la durée de vie.
 
 ## Mesures
 
@@ -156,6 +156,6 @@ Colonnes à créer
 
    [!UICONTROL Chart type]: `Table`
 
-Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’exemple de tableau de bord ci-dessus.
+Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

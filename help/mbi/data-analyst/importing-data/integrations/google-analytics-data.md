@@ -2,24 +2,24 @@
 title: Données Google Analytics attendues
 description: Découvrez comment interagir avec vos mesures Google Analytics.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # Valeur attendue [!DNL Google Analytics] data
 
-Après avoir connecté une [!DNL Google Analytics] intégration, vous pouvez interagir avec votre [!DNL Google Analytics] mesures *immédiatement dans le`Visual Report Builder`*. Lorsque vous saisissez le `Visual Report Builder`, si vous cliquez sur **[!UICONTROL Add a Metric]**, une série de mesures de votre [!DNL Google Analytics] les profils s’affichent dans une liste déroulante juste en dessous des mesures de votre entrepôt de données.
+Après avoir connecté une [!DNL Google Analytics] intégration, vous pouvez interagir avec votre [!DNL Google Analytics] mesures *immédiatement dans le`Visual Report Builder`*. Lorsque vous saisissez le `Visual Report Builder`, si vous cliquez sur **[!UICONTROL Add a Metric]**, une série de mesures de votre [!DNL Google Analytics] s’affiche dans une liste déroulante sous les mesures de votre Data Warehouse.
 
 Le [!DNL Google Analytics] l’intégration *live* — cela signifie que la variable `Report Builder` demande des données à partir de [!DNL Google Analytics] *immédiatement* lorsque vous ajoutez une mesure à votre rapport. Cela signifie également que les mesures auxquelles vous pouvez accéder sont définies exactement comme elles se trouvent dans [!DNL Google Analytics], et que ces valeurs ne sont pas *entreposé* dans votre [!DNL MBI] compte : s’affichait visuellement uniquement dans vos rapports.
 
-[!DNL Google Analytics] intégrations dans [!DNL MBI] utilisez la variable [!DNL Google Analytics] [API Core Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/)et prennent en charge les mesures et dimensions suivantes.
+[!DNL Google Analytics] intégrations dans [!DNL MBI] utilisez la méthode [!DNL Google Analytics] [API Core Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/)et prennent en charge les mesures et dimensions suivantes.
 
 >[!NOTE]
 >
->Pour éviter des résultats inattendus ou absurdes, vérifiez que les dimensions que vous utilisez sont compatibles avec les mesures que vous utilisez dans la variable `Report Builder`. Vous pouvez vérifier [here](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>Pour éviter des résultats inattendus ou absurdes, vérifiez que les dimensions que vous utilisez sont compatibles avec une ou plusieurs mesures que vous utilisez dans la variable `Report Builder`. Vous pouvez vérifier [here](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Mesures prises en charge
 
@@ -73,7 +73,7 @@ Le [!DNL Google Analytics] l’intégration *live* — cela signifie que la vari
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Dimensions prises en charge
 
@@ -142,4 +142,4 @@ Le [!DNL Google Analytics] l’intégration *live* — cela signifie que la vari
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

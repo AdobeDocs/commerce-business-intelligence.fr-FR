@@ -2,9 +2,9 @@
 title: Types de colonne calculés
 description: Découvrez comment créer des colonnes afin d’augmenter et d’optimiser vos données d’analyse.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 * [Carte de référence pratique](#map)
 * [Colonnes calculées avancées](#advanced)
 
-Dans le [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), vous avez la possibilité de créer des colonnes afin d’augmenter et d’optimiser vos données d’analyse. [Cette fonctionnalité](../data-warehouse-mgr/creating-calculated-columns.md) pour y accéder, sélectionnez n’importe quel tableau dans le Gestionnaire de Data Warehouse et cliquez sur **[!UICONTROL Create New Column]**.
+Dans le [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), vous pouvez créer des colonnes afin d’augmenter et d’optimiser vos données d’analyse. [Cette fonctionnalité](../data-warehouse-mgr/creating-calculated-columns.md) pour y accéder, sélectionnez n’importe quel tableau dans le Gestionnaire de Data Warehouse et cliquez sur **[!UICONTROL Create New Column]**.
 
-Cet article décrit les types de colonnes que vous pouvez créer avec le Gestionnaire de Data Warehouse, ainsi qu’une description, une présentation visuelle de cette colonne et une [table de référence](#map) de toutes les entrées requises pour créer une colonne. Il existe trois manières de créer des colonnes calculées :
+Cet article décrit les types de colonnes que vous pouvez créer à l’aide du Gestionnaire de Data Warehouse. Elle couvre également la description, une présentation visuelle de cette colonne et une [table de référence](#map) de toutes les entrées requises pour créer une colonne. Il existe trois manières de créer des colonnes calculées :
 
 * [Même tableau que les colonnes calculées](#sametable)
 * [Colonnes calculées de type &quot;un à plusieurs&quot;](#onetomany)
@@ -33,7 +33,7 @@ Ces colonnes sont construites à l’aide de colonnes d’entrée du même table
 
 Une colonne calculée d’âge renvoie le nombre de secondes entre l’heure actuelle et une heure d’entrée.
 
-Dans l’exemple ci-dessous, nous avons créé `Seconds since customer's most recent order` dans le `customers` table. Cela peut être utilisé pour créer des listes d’utilisateurs de clients qui n’ont pas effectué d’achats (parfois appelés &quot;perte&quot;) dans `X days`.
+L’exemple ci-dessous crée `Seconds since customer's most recent order` dans le `customers` table. Cela peut être utilisé pour créer des listes d’utilisateurs de clients qui n’ont pas effectué d’achats (parfois appelés &quot;perte&quot;) dans `X days`.
 
 ![](../../assets/age.gif)
 
@@ -41,7 +41,7 @@ Dans l’exemple ci-dessous, nous avons créé `Seconds since customer's most re
 
 Une colonne calculée de conversion de devise convertit la devise native d’une colonne en la nouvelle devise souhaitée.
 
-Dans l’exemple ci-dessous, nous avons créé `base\_grand\_total In AED`, en convertissant le `base\_grand\_total` Il s’agit de la devise native vers AED dans la variable `sales\_flat\_order` table. Cette colonne fonctionne bien pour les magasins avec plusieurs devises qui souhaitent générer des rapports dans leur devise locale.
+L’exemple ci-dessous crée `base\_grand\_total In AED`, en convertissant le `base\_grand\_total` Il s’agit de la devise native vers AED dans la variable `sales\_flat\_order` table. Cette colonne fonctionne bien pour les magasins avec plusieurs devises qui souhaitent générer des rapports dans leur devise locale.
 
 Pour les clients Commerce, la variable `base\_currency\_code` stocke généralement les devises natives. Le `Spot Time` doit correspondre à la date utilisée dans vos mesures.
 
@@ -49,7 +49,7 @@ Pour les clients Commerce, la variable `base\_currency\_code` stocke généralem
 
 ## Colonnes calculées de type &quot;un à plusieurs&quot; {#onetomany}
 
-`One-to-Many` colonnes [utiliser un chemin entre deux tables ;](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). Ce chemin implique toujours une table, où réside un attribut, et une table, où cet attribut est &quot;déplacé&quot; vers. Le chemin peut être décrit comme une `foreign key--primary key` relation.
+`One-to-Many` colonnes [utiliser un chemin entre deux tableaux ;](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). Ce chemin implique toujours une table, où réside un attribut, et une table, où cet attribut est &quot;déplacé&quot; vers. Le chemin peut être décrit comme une `foreign key--primary key` relation.
 
 ### Colonne liée {#joined}
 
@@ -97,9 +97,9 @@ Si vous rencontrez un peu de difficultés à vous souvenir de toutes les entrée
 
 ## Colonnes calculées avancées {#advanced}
 
-Dans votre quête d’analyse et de réponse aux questions sur votre entreprise, vous pouvez rencontrer une situation dans laquelle vous ne pouvez pas créer la colonne exacte que vous souhaitez. Dans ces cas, nous vous couvrons !
+Dans votre quête d’analyse et de réponse aux questions sur votre entreprise, vous pouvez rencontrer une situation dans laquelle vous ne pouvez pas créer la colonne exacte que vous souhaitez.
 
-Pour garantir un changement rapide, nous vous recommandons de consulter la variable [Types de colonne calculés avancés](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) pour voir le type de colonnes que notre équipe d’assistance peut créer. Dans cet article, nous couvrirons également les informations dont vous aurez besoin pour créer la colonne - veuillez l’inclure avec votre demande.
+Pour garantir un retour rapide, Adobe recommande d’extraire le [Types de colonne calculés avancés](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) pour voir le type de colonnes que l’équipe d’assistance Adobe peut créer. Cet article couvre également les informations dont vous avez besoin pour créer la colonne, en l’incluant avec votre requête.
 
 ## Documentation connexe
 

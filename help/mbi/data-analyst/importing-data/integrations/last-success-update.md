@@ -2,9 +2,9 @@
 title: Présentation des résultats entre la base de données et SQL Editor
 description: Découvrez comment comprendre les résultats entre la base de données et l’éditeur SQL.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Il affiche le début `timestamp` (dans le fuseau horaire défini sur votre com
 
 ## Identifier le dernier point de données &quot;réel&quot;
 
-Le dernier point de données pour une intégration particulière est déterminé par la variable `Last Data Point Received` `timestamp` situé à droite de chaque intégration. Cet horodatage fait référence au dernier point où votre entrepôt de données a bien reçu des points de données de cette source, qu’il s’agisse d’une base de données, d’une API ou d’une intégration tierce.
+Le dernier point de données pour une intégration particulière est déterminé par la variable `Last Data Point Received` `timestamp` situé à droite de chaque intégration. Cet horodatage fait référence au dernier point où votre Data Warehouse a bien reçu des points de données de cette source, qu’il s’agisse d’une base de données, d’une API ou d’une intégration tierce.
 
-Pour vérifier l’actualisation des données de *tables spécifiques*, nous vous recommandons de créer rapidement une [Rapport SQL](../../dev-reports/sql-rpt-bldr.md) qui effectue une `MAX(timestamp)` sur la table la plus importante de votre compte. Comparaison de cet horodatage au `Last Data Point` indique si le problème a affecté l’intégralité du compte ou un sous-ensemble des tables. Nous vous recommandons de le faire pour trois à quatre tables importantes, généralement utilisées.
+Pour vérifier l’actualisation des données de *tables spécifiques*, Adobe recommande de créer rapidement une [Rapport SQL](../../dev-reports/sql-rpt-bldr.md) qui effectue une `MAX(timestamp)` sur la table la plus importante de votre compte. Comparaison de cet horodatage au `Last Data Point` indique si le problème a affecté le compte entier ou un sous-ensemble des tables. Adobe recommande de le faire pour trois à quatre tables importantes, couramment utilisées.
 
 - Si la variable `MAX(timestamp)` sont plus récentes que `Last Data Point Received`, cela signifie qu’un sous-ensemble des tables a été affecté, mais que le cycle de mise à jour global du compte est stable.
 - Si la variable `MAX(timestamp)` est égale ou antérieure à `Last Data Point Received`, cela signifie que le cycle de mise à jour du compte a été affecté. Dans ce cas, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

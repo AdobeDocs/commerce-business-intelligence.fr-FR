@@ -2,9 +2,9 @@
 title: Réplication des canaux Google Analytics à l’aide de sources d’acquisition
 description: Découvrez comment répliquer des canaux Google Analytics à l’aide de sources d’acquisition.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 ## Que sont les canaux ? {#channels}
 
-Création de segments personnalisés pour observer les performances de différents trafic et observer les tendances (pour le meilleur ou pour le pire). est l’une des utilisations les plus puissantes pour  [!DNL Google Analytics ]. Une classe de segments qui existe par défaut dans [!DNL Google Analytics ] are `Channels`. Les canaux sont un ensemble de méthodes courantes par lesquelles les visiteurs se rendent sur votre site.  [!DNL Google Analytics ] trie automatiquement les nombreuses façons dont vous acquérez un utilisateur (qu’il s’agisse de liens de médias sociaux, de paiement par clic, d’e-mail ou de référence) et les regroupe dans un compartiment ou un canal.
+La création de segments personnalisés pour déterminer les performances du trafic et observer les tendances est l’une des utilisations les plus puissantes de la fonction  [!DNL Google Analytics ]. Une classe de segments qui existe par défaut dans [!DNL Google Analytics ] are `Channels`. Les canaux sont un ensemble de méthodes courantes par lesquelles les visiteurs se rendent sur votre site.  [!DNL Google Analytics ] trie automatiquement les nombreuses façons dont vous acquérez un utilisateur (qu’il s’agisse de liens de médias sociaux, de paiement par clic, d’e-mail ou de référence) et les regroupe dans un compartiment ou un canal.
 
 ## Pourquoi je ne vois pas mon `channels` dans l&#39;IMS ? {#nochannels}
 
 `Channels` sont des regroupements de données simples et agrégés. Pour classer vos acquisitions en compartiments de canal, Google définit des règles et des définitions distinctes à l’aide de paramètres spécifiques : une combinaison d&#39;acquisition [Source](https://support.google.com/analytics/answer/1033173?hl=en) (l’origine de votre trafic) et l’acquisition [Volume moyen](https://support.google.com/analytics/answer/6099206?hl=en) (catégorie générale de la source).
 
-Bien que ces compartiments puissent vous aider à comprendre d’où provient votre trafic, ces données ne sont pas réellement balisées par canal, mais par une combinaison de source et de support. Comme Google envoie des informations sur les canaux en tant que deux points de données distincts, les regroupements de canaux ne s’affichent pas automatiquement dans [!DNL MBI].
+Bien que ces compartiments puissent vous aider à comprendre d’où provient votre trafic, ces données ne sont pas balisées par canal, mais par une combinaison de source et de support. Comme Google envoie des informations sur les canaux en tant que deux points de données distincts, les regroupements de canaux ne s’affichent pas automatiquement dans [!DNL MBI].
 
 ## Quels sont les groupements de canaux par défaut ? Comment sont-ils créés ?
 
-Par défaut, Google vous configure avec 8 canaux différents. Examinons les règles qui déterminent leur mode de création :
+Par défaut, Google vous configure avec huit canaux différents. Examinez les règles qui déterminent la manière dont elles sont créées :
 
 | Canal | Qu&#39;est-ce que c&#39;est ? | Comment est-il créé ? |
 |---|---|---|
@@ -34,9 +34,9 @@ Par défaut, Google vous configure avec 8 canaux différents. Examinons les règ
 | Social | Trafic référent provenant d’une partie ou d’une partie approximativement [400 réseaux sociaux](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) et ne sont pas balisés en tant que publicités. | Référence de la source sociale = `Yes`<br>OU Moyen = `^(social|social-network|social-media|sm|social network|social media)$` |
 | Email | Trafic des sessions balisées avec un support de &quot;courrier électronique&quot;. | Code de suivi UTM de Medium = `email` |
 | Affichage | Trafic qui comporte un code de suivi UTM où le support est affiché ou cpm. Inclut également les interactions AdWords où le réseau de distribution d’annonces correspond à &quot;Contenu&quot; | Moyen = `^(display|cpm|banner)$`<br>OU Réseau de distribution d’annonces = `Content`<br>ET Format de publicité ≠ `Text` |
-| Autre | Sessions provenant d’autres canaux publicitaires, à l’exclusion de la recherche payante, qui sont balisées avec un support de &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm&quot;, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affilié&quot;. | Moyen = `^(cpv|cpa|cpp|content-text)$` |
+| Autre | Sessions provenant d’autres canaux publicitaires (à l’exclusion de la recherche payante) qui sont balisées avec un support de &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm&quot;, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affilié&quot;. | Moyen = `^(cpv|cpa|cpp|content-text)$` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Comment puis-je recréer ces groupements de canaux dans mon Data Warehouse ? {#recreate}
 
@@ -50,7 +50,7 @@ Maintenant que vous savez que les canaux ne sont que des combinaisons de sources
 
    Pour gagner du temps, Commerce a déjà créé un tableau avec les regroupements par défaut mappés en tant que fichier que vous pouvez [télécharger](../../assets/ga-channel-mapping.csv).
 
-   Si vous êtes un professionnel Google Analytics et que vous avez créé vos propres canaux, vous souhaiterez ajouter vos règles spécifiques à la table de mappage avant de charger le fichier dans [!DNL MBI].
+   Si vous êtes un professionnel Google Analytics et que vous avez créé vos propres canaux, vous souhaitez ajouter vos règles spécifiques à la table de mappage avant de charger le fichier dans [!DNL MBI].
 
    Apportez-le dans votre Data Warehouse en tant que [Téléchargement du fichier](../importing-data/connecting-data/using-file-uploader.md).
 
@@ -58,13 +58,13 @@ Maintenant que vous savez que les canaux ne sont que des combinaisons de sources
 
 1. **Établir une relation entre[!DNL Google ECommerce]et téléchargement du fichier de mappage**
 
-   Pour établir une relation entre la variable[!DNL Google ECommerce]et la table de mapping, [envoyer une demande d’assistance ;](../../guide-overview.md) à notre équipe d’analystes de données et reportez-vous à cet article. L’analyste crée une nouvelle colonne calculée appelée **Canal** dans la table Commerce. **Après un cycle de mise à jour complet**, cette colonne sera prête à être utilisée dans un filtre ou un groupe par .
+   Pour établir une relation entre la variable[!DNL Google ECommerce]et la table de mapping, [envoyer une demande d’assistance ;](../../guide-overview.md) à votre équipe d’analystes de données et reportez-vous à cet article. L’analyste crée une colonne calculée appelée **Canal** dans la table Commerce. **Après un cycle de mise à jour complet**, cette colonne sera prête à être utilisée dans un filtre ou un groupe par .
 
 Félicitations ! Vous disposez maintenant de groupements de canaux Google Analytics dans votre Data Warehouse, ce qui signifie que vous pouvez analyser vos données d’un point de vue nouveau :
 
 ![Segmentation de la mesure Nombre de commandes par canal](../../assets/GA_Channel_Gif.gif)
 
-Dans cet exemple, nous avons commencé simplement en segmentant la variable **Nombre de commandes** mesure par **Canal**. C’est maintenant votre tour. Testez votre nouvelle colonne et découvrez les tendances que vous pouvez identifier dans vos données de canal Google Analytics !
+Dans cet exemple, vous avez commencé simplement en segmentant la variable **Nombre de commandes** mesure par **Canal**. C’est maintenant votre tour. Testez votre nouvelle colonne et découvrez les tendances que vous pouvez identifier dans vos données de canal Google Analytics !
 
 ## Documentation connexe
 

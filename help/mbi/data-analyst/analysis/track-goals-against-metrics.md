@@ -2,32 +2,32 @@
 title: Objectifs de suivi par rapport aux mesures
 description: Découvrez comment configurer un tableau de bord qui vous aidera à effectuer le suivi des objectifs de votre entreprise par rapport à vos données réelles, notamment les recettes, les nouveaux utilisateurs enregistrés et les commandes au fil du temps.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # Objectifs de suivi par rapport aux mesures de performances
 
-Une grande majorité de nos clients souhaitent souvent effectuer le suivi de leurs **objectifs commerciaux**, mais ne réalisez pas que cela est possible dans [!DNL MBI]. Dans cet article, nous vous montrons comment configurer un tableau de bord qui vous aidera à effectuer le suivi des objectifs de votre entreprise par rapport à vos données réelles, notamment les recettes, les nouveaux utilisateurs enregistrés et les commandes au fil du temps. Nous vous montrons également comment comparer les performances d’une année à l’autre, le tout dans un tableau de bord comme celui-ci :
+La plupart des clients souhaitent effectuer le suivi de leurs **objectifs commerciaux**, mais ne réalisez pas que cela est possible dans [!DNL MBI]. Cet article explique comment configurer un tableau de bord qui vous aidera à effectuer le suivi des objectifs de votre entreprise par rapport à vos données réelles, notamment les recettes, les nouveaux utilisateurs enregistrés et les commandes au fil du temps. Vous apprenez également à comparer les performances d’une année à l’autre, le tout dans un tableau de bord comme celui-ci :
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Avant de commencer, vous souhaitez vous familiariser avec notre [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et assurez-vous d’avoir défini vos objectifs commerciaux pour une période donnée.
+Avant de commencer, vous souhaitez vous familiariser avec le [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et assurez-vous d’avoir défini vos objectifs commerciaux pour une période donnée.
 
 ## Prise en main
 
 Vous devez d’abord charger un fichier contenant des cibles quotidiennes/mensuelles/trimestrielles spécifiques pour votre entreprise.
 
-Vous pouvez utiliser la variable [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et l’image ci-dessous pour formater votre fichier. Les cibles les plus courantes suivies par nos clients [!DNL MBI] comprennent les commandes, les recettes et les nouveaux comptes enregistrés.
+Vous pouvez utiliser la variable [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et l’image ci-dessous pour formater votre fichier. Les cibles les plus courantes dont les clients effectuent le suivi [!DNL MBI] comprennent les commandes, les recettes et les nouveaux comptes enregistrés.
 
 ![](../../assets/Goals-_Excel.png)
 
 ## Mesures
 
-Vous devez créer une mesure pour chaque cible. Par exemple, si vous transférez des cibles de recettes mensuelles et de commandes, vous devrez créer deux nouvelles mesures :
+Créez une mesure pour chaque cible. Par exemple, si vous transférez des cibles de recettes mensuelles et de commandes, vous devez créer deux nouvelles mesures :
 
 * **Objectif de recettes mensuel**
 * Dans le **`Monthly goals`** table
@@ -103,4 +103,4 @@ Comme toujours, il est utile de disposer d’un mélange de valeurs statiques et
 
 Une fois que vous avez terminé les rapports ci-dessus pour les cibles de recettes, vous pouvez créer des rapports identiques pour les objectifs relatifs aux commandes, aux comptes enregistrés ou à toute autre valeur incluse dans le téléchargement du fichier d’objectifs.
 
-Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’image en haut de cette page.
+Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de cette page.

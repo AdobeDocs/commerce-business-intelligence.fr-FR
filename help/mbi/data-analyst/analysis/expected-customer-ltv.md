@@ -1,23 +1,23 @@
 ---
 title: Analyse de la valeur de durée de vie attendue (LTV) pour Pro
-description: Découvrez comment configurer un tableau de bord qui vous aidera à comprendre la croissance des valeurs de durée de vie des clients et la valeur de durée de vie attendue de vos clients.
+description: Découvrez comment configurer un tableau de bord qui vous aide à comprendre la croissance des valeurs de durée de vie des clients et la valeur de durée de vie attendue de vos clients.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
 # Analyse de la valeur de durée de vie attendue
 
-Dans cet article, nous montrons comment configurer un tableau de bord qui vous aidera à comprendre la croissance de la valeur de durée de vie des clients et la valeur de durée de vie attendue de vos clients.
+Cet article explique comment configurer un tableau de bord qui vous aide à comprendre la croissance de la valeur de durée de vie des clients et la valeur de durée de vie attendue de vos clients.
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
 Cette analyse est uniquement disponible pour les clients de compte Pro sur la nouvelle architecture. Si votre compte a accès à la variable `Persistent Views` sous `Manage Data` la barre latérale, vous utilisez la nouvelle architecture et pouvez suivre les instructions répertoriées ici pour créer vous-même cette analyse.
 
-Avant de commencer, vous souhaiterez vous familiariser avec notre [créateur de rapports de cohortes.](../dev-reports/cohort-rpt-bldr.md)
+Avant de commencer, vous souhaitez vous familiariser avec le [créateur de rapports de cohortes.](../dev-reports/cohort-rpt-bldr.md)
 
 ## Colonnes calculées
 
@@ -151,6 +151,6 @@ Autres détails du graphique
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
-Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’image en haut de la page.
+Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de la page.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

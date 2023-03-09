@@ -2,26 +2,26 @@
 title: Nommer les rapports et les éléments dans l’IMS
 description: Découvrez les bonnes pratiques pour nommer les rapports et les éléments dans [!DNL MBI].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
 
 # Nommer des rapports et des éléments
 
-Avant de commencer la création dans[!DNL MBI], nous voulons partager certains de nos secrets pour réussir. Il est important de savoir comment créer des mesures, des filtres, etc., mais tout ce qui fonctionne n’aura aucun effet si vous ne trouvez pas ce dont vous avez besoin ou si l’ambiguïté existe.
+Avant de commencer la création dans[!DNL MBI], Adobe souhaite partager quelques secrets pour réussir. Il est important de savoir comment créer des mesures, des filtres, etc., mais tout votre travail peut n’avoir aucun impact si vous ne trouvez pas ce dont vous avez besoin ou s’il y a de l’ambiguïté.
 
 ## Pourquoi la nomenclature est-elle importante ? {#why}
 
-La manière dont vous nommez vos colonnes, mesures et rapports calculés détermine la facilité avec laquelle les différents utilisateurs peuvent naviguer dans vos [!DNL MBI] compte . Lorsque vous nommez ces fonctionnalités, gardez à l’esprit les trois Cs :
+La manière dont vous nommez vos colonnes, mesures et rapports calculés détermine la facilité avec laquelle les différents utilisateurs peuvent naviguer dans vos [!DNL MBI] compte . Lors de l’attribution de noms à ces fonctionnalités, gardez à l’esprit les trois Cs :
 
 * **CLARITÉ** - Vous pouvez ainsi visualiser en un coup d’oeil ce qu’un rapport affiche, ce qu’une mesure fait, etc.
-* **COHÉRENCE** - afin que vous (et notre équipe d’assistance) puissiez facilement trouver et comprendre les éléments et les rapports de votre compte.
+* **COHÉRENCE** - afin que vous (et l’équipe d’assistance Adobe) puissiez facilement trouver et comprendre les éléments et les rapports de votre compte.
 * **CRÉDIBILITÉ** - Pour inspirer et autonomiser d&#39;autres personnes motivées par les données [!DNL MBI] utilisateurs, vous devez inspirer confiance dans la manière dont ils comprennent et utilisent les données !
 
-Lisez la suite pour connaître nos astuces sur la nomenclature !
+Lisez la suite pour des conseils avisés sur la nomenclature !
 
 ## Bonnes pratiques générales {#general}
 
@@ -41,13 +41,13 @@ Ces exemples sont spécifiques, ce qui réduit le risque de confusion.
 
 ### Respecter la casse {#capitalize}
 
-Nous sommes fans de la première lettre en majuscule, le reste des caractères en minuscules sauf si le style de majuscule approprié est le nom. Par exemple : **Numéro de commande de l’utilisateur** plutôt que **Numéro de commande de l’utilisateur.**
+Adobe recommande la première lettre en majuscule avec le reste des caractères en minuscules, sauf si le style de majuscule approprié est donné. Par exemple : **Numéro de commande de l’utilisateur** plutôt que **Numéro de commande de l’utilisateur.**
 
 C&#39;est vraiment une question de préférence, mais la chose à retenir est d&#39;être cohérent avec ce que vous choisissez.
 
 ### Cohérence des entités {#entity}
 
-Vous avez probablement déjà une nomenclature en place dans votre société. Conservez les mesures et dimensions que vous mettez en place en cohérence avec celles utilisées dans d’autres bases de données et outils. Par exemple :
+Vous avez probablement déjà une nomenclature en place dans votre société. Veillez à ce que les mesures et dimensions mises en place soient cohérentes avec celles utilisées dans d’autres bases de données et outils. Par exemple :
 
 * Utilisateur par rapport au client par rapport au membre par rapport au compte
 * Société ou compte ou organisation
@@ -59,7 +59,7 @@ Assurez-vous de vérifier votre orthographe et n’oubliez pas ces possessifs ag
 
 ## Graphiques {#charts}
 
-Lors de l’attribution d’un nom [Graphiques](../tutorials/using-visual-report-builder.md), nous trouvons le plus utile de suivre cette formule : **(Perspective des données) + (Mesure) + (Période) + (Intervalle temporel)**
+Lors de l’attribution d’un nom [Graphiques](../tutorials/using-visual-report-builder.md), il est plus utile de suivre cette formule : **(Perspective des données) + (Mesure) + (Période) + (Intervalle temporel)**
 
 **Mauvais exemple :**
 Recettes
@@ -79,7 +79,7 @@ Inversement, si votre tableau de bord est un endroit où vous testez différents
 
 ## Dimensions (colonnes calculées) {#dimensions}
 
-Lors de l’attribution d’un nouveau nom [dimensions](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), nous trouvons le plus utile de suivre cette formule : **(Entité) + (énième) + (période) + (calcul) + (commentaires)**. Par exemple :
+Lors de l’attribution d’un nouveau nom [dimensions](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), il est plus utile de suivre cette formule : **(Entité) + (énième) + (période) + (calcul) + (commentaires)**. Par exemple :
 
 Chiffre d’affaires des 30 premiers jours de l’utilisateur
 * Numéro de commande de l’utilisateur
@@ -87,11 +87,11 @@ Chiffre d’affaires des 30 premiers jours de l’utilisateur
 
 ## Visionneuses de filtres {#filterset}
 
-[Jeux de filtres](../data-user/reports/ess-manage-data-filters.md) sont généralement nommés de manière à expliquer les informations qu’ils incluent ou excluent. Par exemple, nommer un jeu de filtres **Éléments de commande que nous comptons** permettra à n’importe quel utilisateur d’entrer, d’afficher la logique du jeu de filtres et de comprendre quelles informations de commande déterminent ce qui est compté dans l’ensemble de l’entreprise. N’oubliez pas que les jeux de filtres peuvent être appliqués aux colonnes calculées et aux mesures et doivent être faciles à comprendre.
+[Jeux de filtres](../data-user/reports/ess-manage-data-filters.md) sont généralement nommés de manière à expliquer les informations qu’ils incluent ou excluent. Par exemple, nommer un jeu de filtres **Éléments de commande que nous comptons** permet à n’importe quel utilisateur d’entrer, d’afficher la logique du jeu de filtres et de comprendre les informations de commande qui déterminent ce qui est compté dans l’ensemble de l’entreprise. N’oubliez pas que les jeux de filtres peuvent être appliqués aux colonnes calculées et aux mesures et doivent être faciles à comprendre.
 
 ## Mesures {#metrics}
 
-[Mesures](../data-user/reports/ess-manage-data-metrics.md) sont essentiellement des questions auxquelles vous voulez des réponses régulières. Quel était le nombre de commandes au cours du dernier mois ? Quelle est la valeur de durée de vie moyenne de nos clients ? Il est généralement recommandé de nommer les mesures en fonction de la réponse donnée aux utilisateurs. De plus, si la même mesure est filtrée pour un magasin ou un département spécifique, elle doit être étiquetée comme telle. Par exemple :
+[Mesures](../data-user/reports/ess-manage-data-metrics.md) sont essentiellement des questions auxquelles vous voulez des réponses régulières. Quel était le nombre de commandes au cours du dernier mois ? Quelle est la valeur de durée de vie moyenne de vos clients ? Il est recommandé de nommer les mesures en fonction de la réponse donnée aux utilisateurs. En outre, si la même mesure est filtrée pour un magasin ou un département spécifique, elle doit être étiquetée comme telle. Par exemple :
 
 Client moyen LTV (30 premiers jours) Nom de la boutique - Recettes
 
@@ -101,4 +101,4 @@ Recettes (expédié\_at) Recettes (créé\_at)
 
 ## Remplissage {#wrapup}
 
-L’établissement précoce de conventions de style et d’appellation vous aidera à configurer votre réussite dans votre [!DNL MBI] compte . Souvenez-vous des trois C : clarté, cohérence et crédibilité.
+La définition précoce des conventions de style et d’appellation vous aide à vous préparer à la réussite de votre [!DNL MBI] compte . Rappelez-vous des trois C : clarté, cohérence et crédibilité.

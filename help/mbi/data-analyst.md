@@ -2,9 +2,9 @@
 title: Analyste de données
 description: Analyste de données
 exl-id: e7c4e0ba-f8fd-4a35-a9b1-1c2c43a1773d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '77'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,11 @@ ht-degree: 0%
 
 Vous êtes à l’aise avec la conception de requêtes et vous êtes la personne de référence pour l’analyse des données. Vous savez comment trouver des réponses spécifiques à des questions de données et vous souhaitez faciliter l’expérience en libre-service pour vos collègues.
 
-Dans cette section, vous apprendrez comment connecter et importer des données dans [!DNL MBI], découvrez comment vos données sont stockées et structurées dans votre entrepôt de données, comment analyser vos données et comment utiliser la variable `SQL report builder`.
+Cette section explique comment :
+* connecter et importer des données dans [!DNL MBI]
+* afficher la manière dont vos données sont stockées et structurées dans votre Data Warehouse ;
+* analyser vos données
+* utilisez la méthode `SQL report builder`
 
 ## Associé
 

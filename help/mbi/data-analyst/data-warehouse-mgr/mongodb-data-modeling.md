@@ -2,9 +2,9 @@
 title: Modélisation des données MongoDB
 description: Découvrez comment éviter les modèles de données qui posent problème.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 When [!DNL MBI] extrait [!DNL MongoDB] données, ces données sont traduites dans un modèle relationnel.
 
-La mauvaise nouvelle : Bien que la plupart des modèles de données ne posent pas problème, certains d’entre eux, en raison de leur traduction en modèle relationnel, [!DNL MBI] ne prend pas en charge.
+La mauvaise nouvelle : Bien que la plupart des modèles de données ne posent pas problème, certains d’entre eux, en raison de la traduction en modèle relationnel, [!DNL MBI] ne prend pas en charge.
 
 La bonne nouvelle : Tous ces modèles peuvent être évités.
 
-## Tableaux sous-imbriqués {#subnested}
+## Tableaux imbriqués {#subnested}
 
-Si votre collection ressemble à l’exemple ci-dessous, [!DNL MBI] ne répliquera que les données du tableau d’éléments. Les données du tableau de sous-éléments ne seront pas extraites.
+Si votre collection ressemble à l’exemple ci-dessous, [!DNL MBI] ne réplique que les données du tableau d’éléments. Les données du tableau de sous-éléments ne sont pas extraites.
 
 ```bash
     {
@@ -54,7 +54,7 @@ Les collections qui incluent des objets avec des clés d’objet variables ne so
     }
 ```
 
-Cela se produit généralement lorsqu’un objet est utilisé et qu’un tableau est plus approprié. Maintenant, nous allons retravailler l’exemple ci-dessus :
+Cela se produit généralement lorsqu’un objet est utilisé et qu’un tableau est plus approprié. Maintenant, retravaillez l’exemple ci-dessus :
 
 ```bash
     {

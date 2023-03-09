@@ -2,9 +2,9 @@
 title: Tableaux de bord prêts à l’emploi
 description: Découvrez les tableaux de bord d’usine pour vous donner des informations sur votre entreprise.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2240'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,10 @@ Le tableau de bord Clients (passage en caisse autorisé) fournit des information
 | `Orders by Existing Customers (Past 30 Days)` | Commandes des clients qui ont passé au moins une commande au cours des 30 derniers jours. |
 | `Total Unique Customers (Past 30 Days)` | Nombre de clients uniques qui passent des commandes au cours des 30 derniers jours. |
 | `Orders by New vs Existing Customers` | Nombre de commandes passées par les clients n’ayant pas de commande précédente, par rapport aux clients ayant passé au moins une commande précédente. |
-| `Subsequent Order Probability (All Time)` | La probabilité que les clients qui ont passé une commande en passent une autre. |
+| `Subsequent Order Probability (All Time)` | La probabilité que les clients qui ont passé une commande en placent une autre. |
 | `% of Customers with Multiple Orders (All Time)` | Pourcentage de tous les clients ayant passé plusieurs commandes. |
 | `Median Time Between Orders (All Time)` | Durée moyenne de chaque client entre le placement d’une commande et le suivant. |
-| `Subsequent Order Probability` | La probabilité que les clients qui ont passé une commande en passent une autre, ventilée par numéro de commande (c’est-à-dire, le pourcentage de clients qui passent une deuxième commande, le pourcentage de clients qui passent une troisième commande, etc.). |
+| `Subsequent Order Probability` | La probabilité que les clients qui ont passé une commande placent une autre commande, ventilée par numéro de commande. C&#39;est-à-dire le pourcentage de clients avec une commande qui en passent une seconde, le pourcentage de clients avec deux qui en passent une troisième, etc.). |
 | `Time Between Orders` | Le temps moyen et médian pris par les clients entre les commandes, ventilé par numéro de commande (c’est-à-dire le temps entre les commandes un et deux, deux et trois, etc.). |
 | `Number of Customers - Lifetime Orders` | Pour un nombre donné de commandes passées dans la durée de vie d’un client, le nombre de clients qui ont passé autant de commandes et le pourcentage de l’ensemble de la base de clients représentée par ce nombre. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Les clients qui ont effectué leur premier et unique achat il y a de trois à six mois. |
@@ -56,10 +56,10 @@ Le tableau de bord Clients (aucun passage en caisse invité autorisé) fournit d
 | % de conversion de l’enregistrement à la première commande (30 derniers jours) | Pourcentage de comptes enregistrés au cours des 30 derniers jours ayant passé une commande. |
 | % de conversion de l’enregistrement à la première commande | Pourcentage des comptes enregistrés ayant passé une commande, par mois d’inscription. |
 | Commandes par nouveaux clients et clients existants | Nombre de commandes passées par les clients n’ayant pas de commande précédente, par rapport aux clients ayant passé au moins une commande précédente. |
-| Probabilité de commande suivante (tout le temps) | La probabilité que les clients qui ont passé une commande en passent une autre. |
+| Probabilité de commande suivante (tout le temps) | La probabilité que les clients qui ont passé une commande en placent une autre. |
 | % des clients avec plusieurs commandes (toutes les heures) | Pourcentage de tous les clients ayant passé plusieurs commandes. |
 | Intervalle médian entre les commandes (toutes les heures) | Durée moyenne de chaque client entre le placement d’une commande et le suivant. |
-| Probabilité de commande suivante | La probabilité que les clients qui ont passé une commande en passent une autre, ventilée par numéro de commande (c’est-à-dire, le pourcentage de clients qui passent une deuxième commande, le pourcentage de clients qui passent une troisième commande, etc.). |
+| Probabilité de commande suivante | La probabilité que les clients qui ont passé une commande en placent une autre, ventilée par numéro de commande. C&#39;est-à-dire, le pourcentage de clients avec une commande qui en passent une seconde, le pourcentage de clients avec deux qui en passent une troisième, et ainsi de suite. |
 | Intervalle entre les commandes | Le temps moyen et médian pris par les clients entre les commandes, ventilé par numéro de commande (c’est-à-dire le temps entre les commandes un et deux, deux et trois, etc.). |
 | Nombre de clients - Commandes de durée de vie | Pour un nombre donné de commandes passées dans la durée de vie d’un client, le nombre de clients qui ont passé autant de commandes et le pourcentage de l’ensemble de la base de clients représentée par ce nombre. |
 | Clients ponctuels ayant acheté il y a 3 à 6 mois | Les clients qui ont effectué leur premier et unique achat il y a de trois à six mois. |
@@ -131,7 +131,7 @@ Le tableau de bord Commandes fournit des informations sur le volume transactionn
 
 ## Produits
 
-Le tableau de bord Produits présente les performances générales du produit en termes de produits commandés, de leur valeur brute de marchandisage (GMV), ainsi que les principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, ainsi qu’à déterminer le succès et la popularité du produit. Votre boutique doit être [configuré pour effectuer le suivi des remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) pour que ces graphiques soient renseignés.
+Le tableau de bord Produits présente les performances générales du produit en termes de produits commandés, de leur valeur brute de marchandisage (GMV) et des principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, ainsi qu’à déterminer le succès et la popularité du produit. Votre boutique doit être [configuré pour effectuer le suivi des remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) pour que ces graphiques soient renseignés.
 
 >[!NOTE]
 >

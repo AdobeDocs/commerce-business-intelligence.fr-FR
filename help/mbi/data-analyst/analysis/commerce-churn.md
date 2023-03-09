@@ -2,16 +2,16 @@
 title: Commerce Churn
 description: Découvrez comment générer et analyser votre taux de perte de clientèle Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 2%
 
 ---
 
 # Taux de perte de clientèle
 
-Dans cette rubrique, nous montrons comment calculer une **taux de perte de clientèle** pour votre **clients commerciaux**. Contrairement aux SaaS ou aux sociétés d’abonnement traditionnelles, les clients commerciaux n’ont généralement pas de clients concrets. **&quot;churn event&quot;** pour vous montrer qu’ils ne doivent plus compter pour vos principaux clients. Pour cette raison, les instructions ci-dessous vous permettent de définir un client comme &quot;généré&quot; en fonction d’un délai déterminé écoulé depuis sa dernière commande.
+Cette rubrique explique comment calculer une **taux de perte de clientèle** pour votre **clients commerciaux**. Contrairement aux SaaS ou aux sociétés d’abonnement traditionnelles, les clients commerciaux n’ont généralement pas de clients concrets. **&quot;churn event&quot;** pour vous montrer qu’ils ne doivent plus compter pour vos principaux clients. Pour cette raison, les instructions ci-dessous vous permettent de définir un client comme &quot;généré&quot; en fonction d’un temps déterminé écoulé depuis sa dernière commande.
 
 ![](../../assets/Churn_rate_image.png)
 
@@ -44,7 +44,7 @@ Colonnes à créer
 
 >[!NOTE]
 >
->Cette mesure existe peut-être déjà dans votre compte.
+>Cette mesure peut exister sur votre compte.
 
 * Dans le **`customer_entity`** table
 * Cette mesure effectue une **Count**
@@ -57,7 +57,7 @@ Colonnes à créer
 
 >[!NOTE]
 >
->Cette mesure existe peut-être déjà dans votre compte.
+>Cette mesure peut exister sur votre compte.
 
 * Dans le **`customer_entity`** table
 * Cette mesure effectue une **Count**
@@ -107,4 +107,4 @@ Vous trouverez ci-dessous quelques conversions mensuelles > secondes courantes, 
 | 9 | 23,328,000 |
 | 12 | 31,104,000 |
 
-Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’exemple de tableau de bord ci-dessus.
+Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.

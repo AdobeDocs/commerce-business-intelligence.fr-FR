@@ -2,9 +2,9 @@
 title: Connexion de MySQL via cPanel
 description: Découvrez comment connecter MySQL via cPanel.
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: e4ac176492913623ae461484c8ef2abe034e5f62
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -23,16 +23,16 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Nous vous recommandons vivement d’utiliser SSH ou toute autre forme de cryptage pour sécuriser vos données ! S’il ne s’agit pas d’une option, vous pouvez toujours vous connecter directement. [!DNL MBI] à votre base de données en suivant les instructions de cet article.
+>Adobe vous recommande d’utiliser SSH ou une autre forme de chiffrement pour sécuriser vos données ! S’il ne s’agit pas d’une option, vous pouvez toujours vous connecter directement. [!DNL MBI] à votre base de données en suivant les instructions de cet article.
 
-Dans cet article, nous vous guidons tout au long des étapes nécessaires pour connecter directement votre base de données MySQL à [!DNL MBI] à l’aide de cPanel&quot;. Ce processus peut également être utilisé pour se connecter. [!DNL Adobe Commerce] et toute autre base de données eCommerce basée sur MySQL vers [!DNL MBI].
+Cet article vous guide tout au long des étapes nécessaires pour connecter directement votre base de données MySQL à [!DNL MBI] using `cPanel`. Ce processus peut également être utilisé pour se connecter. [!DNL Adobe Commerce] et toute autre base de données eCommerce basée sur MySQL vers [!DNL MBI].
 
 1. Créez un [!DNL MBI] Utilisateur MySQL dans `cPanel`
 1. Saisissez les informations de connexion et d’utilisateur dans [!DNL MBI]
 
 Commencez.
 
-## Création d’un [!DNL MBI] Utilisateur MySQL dans `cPanel` {#cpanel}
+## Création d’une [!DNL MBI] Utilisateur MySQL dans `cPanel` {#cpanel}
 
 1. Connectez-vous à [`cPanel`](../../../data-analyst/importing-data/integrations/mysql-via-cpanel.md) via votre fournisseur d’hébergement.
 1. Cliquez sur **[!UICONTROL MySQL Databases]**, situé dans le `Database` .
@@ -41,7 +41,7 @@ Commencez.
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. Cliquez sur **[!UICONTROL Create User]**.
-1. Maintenant que vous avez créé l’utilisateur, vous devez l’associer à une base de données. Revenez au `Add New User` section - voir les paramètres pour `Add User to Database?` C&#39;est ce dont nous avons besoin.
+1. Maintenant que vous avez créé l’utilisateur, vous devez l’associer à une base de données. Revenez au `Add New User` section - voir les paramètres pour `Add User to Database?` C&#39;est ce dont vous avez besoin.
 1. Dans le `User` dans la liste déroulante de cette section, sélectionnez l’utilisateur que vous avez créé.
 1. Dans le `Database` dans la liste déroulante de cette section, sélectionnez la base de données à laquelle vous souhaitez vous connecter. [!DNL MBI].
 1. Cliquez sur **[!UICONTROL Add]**.
@@ -49,7 +49,7 @@ Commencez.
 
 ## Saisie des informations de connexion et d’utilisateur dans [!DNL MBI] {#finish}
 
-Pour terminer, nous devons saisir les informations de connexion et d’utilisateur dans [!DNL MBI]. Avez-vous laissé la page des informations d’identification MySQL ouverte ? Si ce n’est pas le cas, accédez à **[!UICONTROL Manage Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis l’icône MySQL.
+Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL MBI]. Avez-vous laissé la page des informations d’identification MySQL ouverte ? Si ce n’est pas le cas, accédez à **[!UICONTROL Manage Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis l’icône MySQL.
 
 Renseignez les informations suivantes dans cette page du `Database Connection` section :
 
@@ -58,7 +58,7 @@ Renseignez les informations suivantes dans cette page du `Database Connection` s
 * `Port`: Port de MySQL sur votre serveur (`3306` par défaut)
 * `Host`: Adresse publique du `MySQL` server [!DNL MBI] se connecte à . Il s’agit généralement de l’URL que vous utilisez pour vous connecter à `cPanel`.
 
-Si vous utilisez une [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md), vous devez également saisir les informations de chiffrement. Définissez la variable `Encrypted` bascule vers `Yes` pour afficher le formulaire.
+Si vous utilisez une [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md), vous devez saisir les informations de chiffrement. Définissez la variable `Encrypted` bascule vers `Yes` pour afficher le formulaire.
 
 * `Connection Type`: Définissez cette variable sur `SSH Tunnel`
 * `Remote Address`: Adresse IP ou nom d’hôte du serveur [!DNL MBI] tunnel

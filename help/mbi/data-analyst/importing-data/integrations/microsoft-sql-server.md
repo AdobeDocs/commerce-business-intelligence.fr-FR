@@ -1,15 +1,15 @@
 ---
-title: Connexion à Microsoft SQL Server
-description: Découvrez comment connecter votre base de données SQL Microsoft à [!DNL MBI] dans un processus en quatre étapes.
+title: Connecter Microsoft&reg;&reg; SQL Server
+description: Découvrez comment connecter Microsoft&reg ; Base de données SQL vers [!DNL MBI] dans un processus en quatre étapes.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
 
-# Connexion à Microsoft SQL Server
+# Connexion à Microsoft® SQL Server
 
 >[!NOTE]
 >
@@ -19,21 +19,21 @@ ht-degree: 0%
 
 Cet article explique comment connecter votre `Microsoft SQL` vers la base de données [!DNL MBI] dans un processus en quatre étapes. Ce processus nécessite une certaine expertise technique en ce qui concerne les connexions au serveur et SQL, et peut nécessiter l’aide des développeurs de votre équipe.
 
-Nous soutenons [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure]et la plupart des autres fournisseurs de serveurs cloud. Si vous avez une question sur votre hôte particulier, [envoi d’un ticket d’assistance](../../../guide-overview.md) nous demandant de fournir cette information.
+Prise en charge de MBI [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft®; SQL Azure]et la plupart des autres fournisseurs de serveurs cloud. Si vous avez une question sur votre hôte particulier, [envoi d’un ticket d’assistance](../../../guide-overview.md) nous demandant de fournir cette information.
 
-Notre système doit exécuter des requêtes SELECT sur votre base de données. Nous le faisons dans un premier temps pour obtenir un instantané de la structure de votre base de données, puis effectuer régulièrement des heures supplémentaires pour tenir nos données à jour. Nos mises à jour sont incrémentielles et nous limitons la fréquence et le temps de mise à jour afin d’éviter toute charge indésirable sur votre serveur.
+Votre système doit exécuter des requêtes SELECT sur votre base de données. Cette opération est initialement effectuée pour obtenir un instantané de la structure de votre base de données, puis effectuer régulièrement des heures supplémentaires afin de tenir vos données à jour. Vos mises à jour sont incrémentielles et les Adobes limitent la fréquence et le temps de mise à jour afin d’éviter toute charge indésirable sur votre serveur.
 
-Pour ce faire, nous vous invitons à vous connecter à votre serveur de base de données via TCP/IP. Créez un utilisateur qui ne peut exécuter que les requêtes SELECT (et, éventuellement, ne peut sélectionner que les données des tables que vous spécifiez). Cela doit être fait pour chacun des serveurs auxquels vous vous connectez. [!DNL MBI].
+Pour ce faire, nous vous invitons à vous connecter à votre serveur de base de données via TCP/IP. Créez un utilisateur qui ne peut exécuter que les requêtes SELECT (et, éventuellement, ne peut sélectionner que les données des tables que vous spécifiez). Cela doit être effectué pour chacun des serveurs auxquels vous vous connectez. [!DNL MBI].
 
 ## Connexion `Microsoft SQL` to [!DNL MBI]:
 
 1. Assurez-vous que votre serveur autorise les connexions via TCP/IP et l’authentification en mode mixte.
 
-1. Assurez-vous que votre pare-feu permettra à l’adresse IP dédiée de notre serveur de se connecter.
+1. Assurez-vous que votre pare-feu permet à l’adresse IP dédiée de votre serveur de se connecter.
 
-   Vous trouverez l’adresse IP que nous utiliserons pour nous connecter à votre serveur dans la section Connexions de votre `Settings` page.
+   Vous trouverez l’adresse IP utilisée pour la connexion à votre serveur dans la section Connexions de votre `Settings` page.
 
-1. Créez un utilisateur que nous utiliserons pour vous connecter à votre serveur de base de données.  Vous avez deux options : via `UI` ou via un `query`:
+1. Créez un utilisateur à utiliser pour se connecter à votre serveur de base de données. Vous avez deux options : via `UI` ou via un `query`:
    * `UI`
    * [`Query`](http://sqlserverplanet.com/security/add-user) (deuxième exemple)
 

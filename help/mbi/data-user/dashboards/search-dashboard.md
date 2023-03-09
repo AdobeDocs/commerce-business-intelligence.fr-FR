@@ -2,16 +2,16 @@
 title: Recherche de tableaux de bord
 description: Découvrez comment utiliser la fonction de recherche globale pour rechercher des tableaux de bord et comment rechercher des tableaux de bord appartenant à d’autres utilisateurs.
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
 # Recherche d’un tableau de bord
 
-Dans cet article, nous vous montrons comment utiliser la variable [`Global Search` fonctionnalité](#global) pour rechercher des tableaux de bord et comment les rechercher [Tableaux de bord détenus par d’autres utilisateurs](#other).
+Cet article vous explique comment utiliser la variable [`Global Search` fonctionnalité](#global) pour rechercher des tableaux de bord et comment les rechercher [Tableaux de bord détenus par d’autres utilisateurs](#other).
 
 ## Recherche globale {#global}
 

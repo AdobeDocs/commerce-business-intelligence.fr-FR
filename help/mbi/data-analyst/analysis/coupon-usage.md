@@ -2,16 +2,16 @@
 title: Analyse de l’utilisation des coupons
 description: Découvrez comment analyser l’utilisation des coupons pour acquérir et retenir des clients.
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1144'
 ht-degree: 2%
 
 ---
 
 # Utilisation du coupon
 
-Vous demandez-vous quel impact a l’offre de coupons sur votre activité ? Vous souhaitez savoir quels coupons aident ou nuisent aux performances ? Dans cet article, nous explorons des analyses qui vous donnent une bonne image de l’utilisation des coupons de vos clients en répondant à ces questions :
+Vous demandez-vous quel impact a l’offre de coupons sur votre activité ? Vous souhaitez savoir quels coupons aident ou nuisent aux performances ? Cet article explore les analyses qui vous donnent une bonne image de l’utilisation des coupons de vos clients en répondant à ces questions :
 
 * Combien de clients utilisent des coupons ?
 * Combien de coupons sont utilisés ?
@@ -35,7 +35,7 @@ Cette mesure révèle les recettes brutes que vous obtenez des commandes qui inc
 
 ### Remises sur les coupons
 
-Cette mesure peut vous indiquer le montant total de remise appliqué par les coupons. il est important de noter que ces commandes n’ont peut-être pas eu lieu sans les coupons.
+Cette mesure peut vous indiquer le montant total de remise appliqué par les coupons. Il est important de noter que ces commandes n’ont peut-être pas eu lieu sans les coupons.
 
 ### Chiffre d’affaires net
 
@@ -63,7 +63,7 @@ Cette mesure permet d’évaluer la fidélité et les recettes moyennes génér�
 
 ## Exemple {#example}
 
-Maintenant que nous savons quelles mesures examiner, prenons un exemple impliquant trois bons différents : 10 % de réduction, 20 $ de moins 100 $ et 10 $ de réduction.
+Maintenant que vous savez quelles mesures examiner, prenez un exemple impliquant trois bons différents : 10 % de réduction, 20 $ de 100 $ ou plus et 10 $ de remise.
 
 | **Bon** | **Nombre de commandes** | **Chiffre d’affaires brut** | **Remises brutes sur les coupons** | **Chiffre d’affaires net** | **Pourcentage de réduction** |
 |-----|-----|-----|-----|-----|-----|
@@ -71,7 +71,7 @@ Maintenant que nous savons quelles mesures examiner, prenons un exemple impliqua
 | **20 $ sur plus de 100 $** | 101 | $13,928.91 | $2,020.00 | $11,908.91 | 14.50% |
 | **10 $ de réduction** | 201 | $14,542.35 | $2,010.00 | $12,532.35 | 13.82% |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 
 | **Bon** | **Durée valeur nette de la commande** | **Durée réduction sur commande** | **Acheteurs distincts** | **Durée revenu total** |
@@ -80,9 +80,9 @@ Maintenant que nous savons quelles mesures examiner, prenons un exemple impliqua
 | **20 $ sur plus de 100 $** | $117.91 | $20.00 | 95 | $218.76 |
 | **10 $ de réduction** | $62.35 | $10.00 | 199 | $84.27 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Que pouvons-nous en retirer ?
+## Que pouvez-vous en retirer ?
 
 Environ 80 commandes ont été passées avec le coupon &quot;10 % de réduction&quot;, 100 commandes avec le coupon &quot;20 $ de moins 100 $&quot; et 200 commandes avec le coupon &quot;10 $ de réduction&quot;. Le **nombre de commandes** Les attributs associés à chaque coupon peuvent varier en fonction de plusieurs facteurs, notamment :
 
@@ -97,19 +97,19 @@ Environ 80 commandes ont été passées avec le coupon &quot;10 % de réduction&
 
 * le comportement d’achat typique du client.
 
-Lorsque la variable **remises brutes** pour les trois coupons, le nombre de commandes de chacun d&#39;eux est sensiblement différent (environ 2 000 $). L’analyse des remises par commande permet d’expliquer les raisons de ces nombres contrastés. Le coupon &quot;10 % de réduction&quot; a le moins de commandes, mais un **réduction moyenne des commandes** de 25 dollars environ. Bien que ce coupon ait un petit nombre de commandes, sa valeur de remise moyenne élevée entraîne un montant de remise brut d’environ 2 000 $.
+Lorsque la variable **remises brutes** pour les trois coupons sont similaires (environ 2 000 $), le nombre de commandes pour chaque coupon est différent. L’analyse des remises par commande permet d’expliquer les raisons de ces nombres contrastés. Le coupon &quot;10 % de réduction&quot; a le moins de commandes, mais un **réduction moyenne des commandes** de 25 dollars environ. Bien que ce coupon ait un petit nombre de commandes, sa valeur de remise moyenne élevée entraîne un montant de remise brut d’environ 2 000 $.
 
-**Chiffre d&#39;affaires brut et net** fournissent une idée globale de la valeur complète des commandes associées à chaque coupon. Toutefois, cette image globale ne permet pas de comprendre les différents comportements liés à chaque coupon. Une fois que vous observez la base de la commande, vous pouvez constater que le coupon &quot;10 % de réduction&quot; est très élevé. **commande nette moyenne** qui, à son tour, mène à sa valeur élevée **revenu net**.
+**Chiffre d&#39;affaires brut et net** fournissent une idée globale de la valeur complète des commandes associées à chaque coupon. Toutefois, cette image globale ne permet pas de comprendre les différents comportements liés à chaque coupon. Une fois que vous observez la base de la commande, vous pouvez constater que le coupon &quot;10 % de réduction&quot; a une valeur élevée. **commande nette moyenne** qui, à son tour, mène à sa valeur élevée **revenu net**.
 
-En revanche, le coupon &quot;10 % de réduction&quot; a une valeur de remise moyenne très élevée (25,01 $), mais la plus faible **pourcentage actualisé**. Cela est logique lorsque vous prenez en compte la valeur moyenne de la commande nette de 225,08 $. Le coupon &quot;10 % de réduction&quot; a une faible remise d’un pourcentage de la valeur moyenne de la commande nette, de sorte que la remise moyenne de la commande est un montant important.
+En revanche, le coupon &quot;10 % de réduction&quot; a une valeur de remise moyenne élevée (25,01 $), mais la plus faible **pourcentage actualisé**. Cela est logique lorsque vous prenez en compte la valeur moyenne de la commande nette de 225,08 $. Le coupon &quot;10 % de réduction&quot; a une faible remise d’un pourcentage de la valeur moyenne de la commande nette, de sorte que la remise moyenne de la commande est un montant important.
 
-Jetons un coup d’oeil au **acheteurs distincts** et **revenu moyen** pour chaque coupon. Le coupon &quot;10 % de réduction&quot; a le même nombre de commandes que les acheteurs distincts. Cela peut être dû au fait que chaque client est limité à un coupon. D’un autre côté, les coupons &quot;$20 de 100 $ ou plus&quot; et &quot;$10 de moins&quot; ont moins d’acheteurs distincts que le nombre de commandes, ce qui implique que certains clients ont utilisé ces coupons plusieurs fois.
+Consultez la **acheteurs distincts** et **revenu moyen** pour chaque coupon. Le coupon &quot;10 % de réduction&quot; a le même nombre de commandes que les acheteurs distincts. Cela peut être dû au fait que chaque client est limité à un coupon. D’un autre côté, les coupons &quot;$20 de 100 $ ou plus&quot; et &quot;$10 de moins&quot; ont moins d’acheteurs distincts que le nombre de commandes, ce qui implique que certains clients ont utilisé ces coupons plusieurs fois.
 
 Pour les recettes de durée de vie moyenne, vous pouvez constater que la moyenne des recettes sur la durée de vie de chaque coupon est supérieure aux recettes respectives. **commande nette moyenne** . Cela signifie que les clients ont effectué des achats répétés et/ou que leur valeur de commande était beaucoup plus élevée que la valeur de commande nette moyenne.
 
 ## Que puis-je analyser d&#39;autre ? {#otheranalyses}
 
-Les analyses que nous avons abordées dans cet article peuvent vous donner un aperçu précieux de la manière dont vos clients utilisent vos coupons, mais il existe une multitude d’autres analyses qui vous permettent de creuser un peu plus en détail.
+Les analyses mentionnées dans cet article peuvent vous donner un aperçu précieux de la manière dont vos clients utilisent vos coupons, mais il existe une multitude d’autres analyses qui vous permettent de creuser un peu plus en détail.
 
 **Vous pouvez analyser les acquisitions de vos clients à partir de coupons.**
 
@@ -117,10 +117,10 @@ Quels coupons encouragent les clients à passer des commandes ? Ces bons attiren
 
 **Vous pouvez analyser le temps nécessaire à vos clients pour utiliser vos bons.**
 
-Vos coupons sont-ils utilisés le jour de leur publication ou une semaine ou deux s’écoulent-ils avant que la majorité de vos clients ne les utilisent ?
+Vos coupons sont-ils utilisés le jour de leur publication ou bien une semaine ou deux s’écoulent-ils avant que la plupart de vos clients ne les utilisent ?
 
 **Vous pouvez découvrir le montant optimal de remise qui augmente la fidélité des clients et la valeur globale.**
 
-Quel montant de remise encouragera les acheteurs réguliers, une valeur de commande moyenne plus élevée et des recettes de durée de vie plus élevées ?
+Quel montant de remise encourage les acheteurs réguliers, une valeur de commande moyenne plus élevée et des recettes de durée de vie plus élevées ?
 
-Répondre à ces questions vous donnera des informations sur vos clients, leur comportement et les bons qui vous procurent le plus de valeur.
+Répondre à ces questions vous donne des informations sur vos clients, leur comportement et les bons de réduction qui offrent la plus grande valeur à votre entreprise.

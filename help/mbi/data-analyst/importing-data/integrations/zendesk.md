@@ -2,9 +2,9 @@
 title: Connexion à Zendesk
 description: Découvrez comment consolider les rapports de votre service d’assistance dans [!DNL MBI].
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navig
 
 1. Accédez au `Integrations` page sous **[!UICONTROL Manage Data** > ** Sources de données **> **Intégrations]**.
 1. Cliquez sur **[!UICONTROL Add Integration]**, situé sur le côté droit de l’écran.
-1. Cliquez sur le bouton [!DNL Zendesk] icône . Cette action ouvre la variable [!DNL Zendesk] informations d’identification.
+1. Cliquez sur le bouton [!DNL Zendesk] icône . Cela ouvre la fenêtre [!DNL Zendesk] informations d’identification.
 
 ## Récupérez vos [!DNL Zendesk] Jeton API {#steptwo}
 
@@ -39,9 +39,9 @@ Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navig
 1. Lorsque la variable `Settings` s’affiche, recherchez `Channels` . Cliquez sur **[!UICONTROL API]** dans cette section.
 1. Dans le `Token Access` de cette page, cochez la case en regard de `Enabled`. Une liste des Principaux jetons API s’affiche.
 1. Cliquez sur **[!UICONTROL Add New Token]**.
-1. Lorsque vous y êtes invité, saisissez le libellé du jeton. Nous vous recommandons d’utiliser `MBI`, afin que vous sachiez en un coup d’oeil quelle application utilise le jeton .
+1. Lorsque vous y êtes invité, saisissez le libellé du jeton. Adobe recommande d’utiliser `MBI`, vous savez donc en un coup d’oeil quelle application utilise le jeton.
 1. Cliquez sur **[!UICONTROL Create]**.
-1. Un jeton API sera créé. Copiez ce jeton ; il sera utilisé à l’étape suivante.
+1. Un jeton API est créé. Copiez ce jeton ; il sera utilisé à l’étape suivante.
 
 ## Entrée [!DNL Zendesk] informations de connexion et jeton API dans [!DNL MBI] {#stepthree}
 

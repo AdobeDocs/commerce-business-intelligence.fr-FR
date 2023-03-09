@@ -2,16 +2,16 @@
 title: table customer_entity
 description: Découvrez comment accéder aux enregistrements de tous les comptes enregistrés.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
 # table customer_entity
 
-Le `customer_entity` contient les enregistrements de tous les comptes enregistrés. Un compte est considéré comme enregistré s’il s’inscrit à un compte, qu’il effectue ou non un achat. Chaque ligne correspond à un compte enregistré unique, identifié par le compte en question. `entity_id`.
+Le `customer_entity` contient les enregistrements de tous les comptes enregistrés. Un compte est considéré comme enregistré s’il s’inscrit à un compte, qu’il effectue un achat ou non. Chaque ligne correspond à un compte enregistré unique, identifié par le compte en question. `entity_id`.
 
 Cette table ne contient pas d&#39;enregistrement des clients qui passent une commande via le passage en caisse des invités. Si votre boutique accepte le passage en caisse des invités, [découvrez comment créer un compte](../data-warehouse-mgr/guest-orders.md) pour ces clients.
 
@@ -19,13 +19,13 @@ Cette table ne contient pas d&#39;enregistrement des clients qui passent une com
 
 | **Nom de la colonne** | **Description** |
 |---|---|
-| `created_at` | Horodatage correspondant à la date d’enregistrement du compte, généralement stocké localement en UTC. Selon votre configuration dans [!DNL MBI], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL MBI] qui diffère du fuseau horaire de votre base de données |
+| `created_at` | Horodatage correspondant à la date d’enregistrement du compte, stocké localement en UTC. Selon votre configuration dans [!DNL MBI], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL MBI] qui diffère du fuseau horaire de votre base de données |
 | `email` | Adresse électronique associée au compte |
 | `entity_id` (PK) | Identifiant unique de la table, généralement utilisé dans les jointures au `customer_id` dans d’autres tables de l’instance. |
 | `group_id` | Clé étrangère associée à la variable `customer_group` table. Rejoindre à `customer_group.customer_group_id` pour déterminer le groupe de clients associé au compte enregistré |
 | `store_id` | Clé étrangère associée à la variable `store` table. Rejoindre à `store`.`store_id` pour déterminer quelle vue de magasin Commerce est associée au compte enregistré |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Colonnes calculées courantes
 
@@ -42,7 +42,7 @@ Cette table ne contient pas d&#39;enregistrement des clients qui passent une com
 | `Seconds since customer's first order date` | Délai écoulé entre la date de première commande du client et maintenant. Calculé par soustraction `Customer's first order date` de l’horodatage du serveur au moment de l’exécution de la requête, renvoyé sous la forme d’un nombre entier de secondes. |
 | `Store name` | Nom de la boutique Commerce associée à ce compte enregistré. Calculé par la jointure `customer_entity.store_id` to `store.store_id` et le renvoi de la variable `name` field |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Mesures courantes
 
@@ -53,18 +53,18 @@ Cette table ne contient pas d&#39;enregistrement des clients qui passent une com
 | `Avg lifetime orders` | Le nombre moyen de commandes passées par client au cours de sa durée de vie | Opération : Moyenne<br/>Operand : `Customer's lifetime number of orders`<br/>Horodatage : `created_at` |
 | `Avg lifetime revenue` | Chiffre d’affaires total moyen par client pour toutes les commandes passées sur leur durée de vie | Opération : Moyenne<br/>Operand : `Customer's lifetime revenue`<br/>Horodatage : `created_at` |
 | `New customers` | Nombre de clients avec au moins une commande, comptabilisé à la date de leur première commande. Exclut les comptes qui s’enregistrent mais ne passent jamais de commande | Opération : Count<br/>Operand : `entity_id`<br/>Horodatage : `Customer's first order date` |
-| `Registered accounts` | Nombre de comptes enregistrés. Inclut tous les comptes enregistrés, qu’un compte ait passé ou non une commande | Opération : Count<br/>Operand : `entity_id`<br/>Horodatage : `created_at` |
+| `Registered accounts` | Nombre de comptes enregistrés. Inclut tous les comptes enregistrés, qu’un compte ait passé une commande ou non | Opération : Count<br/>Operand : `entity_id`<br/>Horodatage : `created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins de jointure de clés étrangères
 
 `customer_group`
 
-* Rejoindre à `customer_group` tableau pour créer de nouvelles colonnes qui renvoient le nom du groupe de clients du compte enregistré.
+* Rejoindre à `customer_group` tableau pour créer des colonnes qui renvoient le nom du groupe de clients du compte enregistré.
    * Chemin : `customer_entity.group_id` (nombreux) => `customer_group.customer_group_id` (1)
 
 `store`
 
-* Rejoindre à `store` pour créer de nouvelles colonnes qui renvoient des détails relatifs au magasin associé au compte enregistré.
+* Rejoindre à `store` pour créer des colonnes qui renvoient des détails relatifs au magasin associé au compte enregistré.
    * Chemin : `customer_entity.store_id` (nombreux) => `store.store_id` (1)

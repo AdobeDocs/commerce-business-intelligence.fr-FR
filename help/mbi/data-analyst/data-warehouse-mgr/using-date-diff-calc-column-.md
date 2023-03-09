@@ -2,9 +2,9 @@
 title: Utilisation de la colonne calculée Différence de date
 description: Découvrez l’objectif et les utilisations de la colonne calculée Différence par date .
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ Cette rubrique décrit l’objectif et les utilisations de la fonction `Date Dif
 
 **Explication**
 
-Le `Date Difference` type de colonne : trouve l’heure entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement. La valeur brute calculée dans cette colonne est exprimée en secondes, mais elle est automatiquement convertie en minutes, heures, jours, etc. pour s’afficher sur les rapports. Cependant, lorsqu’il est utilisé comme filtre/groupe par , vous souhaiterez utiliser la valeur en secondes.
+Le `Date Difference` type de colonne : trouve l’heure entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement. La valeur brute calculée dans cette colonne est exprimée en secondes, mais elle est automatiquement convertie en minutes, heures, jours, etc., pour affichage dans les rapports. Cependant, lorsqu’il est utilisé comme filtre/groupe par , vous souhaitez utiliser la valeur en secondes.
 
 A `date difference` la colonne calculée peut être utilisée pour créer une mesure qui calcule la durée moyenne ou médiane entre deux événements, comme la durée moyenne entre l’enregistrement des clients et leurs premières commandes.
 
@@ -26,7 +26,7 @@ A `date difference` la colonne calculée peut être utilisée pour créer une me
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 
 Dans l’exemple ci-dessus, la variable `Date Difference` est la colonne `Seconds between timestamp_2 and timestamp_1` colonne . Il effectue le calcul `timestamp_2 minus timestamp_1`.
@@ -44,7 +44,7 @@ Les étapes suivantes décrivent comment créer une `Date Difference` colonne .
    * Sélectionner `Starting DATETIME` column** > Choisir le champ datetime de début, qui est généralement l’événement qui se produit plus tôt
 
 1. Attribuez un nom à la colonne et cliquez sur **[!UICONTROL Save]**.
-1. La colonne peut être utilisée. *immédiatement*.
+1. La colonne peut être utilisée *immédiatement*.
 
 Par exemple, l’exemple suivant est configuré pour calculer la variable `Seconds between order date and customer's creation date`:
 

@@ -2,9 +2,9 @@
 title: Options de visualisation dans le Report Builder visuel
 description: Découvrez comment utiliser les options Visualisation dans le Report Builder Visuel.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La sélection de la bonne visualisation pour un jeu de données donné est un élément essentiel du processus d’analyse. Chaque ensemble de données a une histoire à raconter, mais l&#39;effet de cette histoire est souligné par son impact visuel et sa lisibilité.
 
-Le [!DNL MBI] `Visual Report Builder` offre 12 options de visualisation distinctes, chacune avec ses propres avantages et cas d’utilisation. Cet article décrit les différentes options de visualisation dans [!DNL MBI], y compris les configurations de rapport requises le cas échéant, ainsi qu’un exemple de cas d’utilisation. Les visualisations suivantes sont disponibles dans l’IMS :
+Le [!DNL MBI] `Visual Report Builder` offre 12 options de visualisation distinctes, chacune avec ses propres avantages et cas d’utilisation. Cet article décrit les différentes options de visualisation dans [!DNL MBI], y compris les configurations de rapport requises, le cas échéant, et un exemple de cas d’utilisation. Les visualisations suivantes sont disponibles dans l’IMS :
 
 * `Scalar`
 * `Table`
@@ -35,7 +35,7 @@ Le [!DNL MBI] `Visual Report Builder` offre 12 options de visualisation distinct
 
 ![](../../assets/blobid0.png)
 
-Pour enregistrer un rapport en tant qu’échelle, configurez vos filtres et paramètres temporels, puis cliquez sur **[!UICONTROL Save]** ou **[!UICONTROL Update]** en haut à droite du rapport. Sous , `Type` , choisissez le nombre : Nom de la mesure pour enregistrer le rapport en tant que valeur affichée sur la barre latérale gauche.
+Pour enregistrer un rapport en tant qu’échelle, configurez vos filtres et paramètres temporels, puis cliquez sur **[!UICONTROL Save]** ou **[!UICONTROL Update]** dans la section supérieure droite du rapport. Sous , `Type` , choisissez le nombre : Nom de la mesure pour enregistrer le rapport en tant que valeur affichée sur la barre de gauche.
 
 ![](../../assets/blobid1.png)
 
@@ -47,7 +47,7 @@ Pour enregistrer un rapport en tant qu’échelle, configurez vos filtres et par
 
 ## `Table`
 
-Comme son nom l’indique, `table` Les rapports sont idéaux pour afficher les détails tabulaires. Lorsqu’il est nécessaire d’afficher un grand nombre de groupes par valeurs ou par mesures dans un seul rapport, un tableau est souvent la meilleure façon de procéder. À titre d’exemple, vous trouverez ci-dessous un tableau &quot;Détails du client&quot;, présentant les commandes et les recettes regroupées par email client :
+Comme son nom l’indique, `table` Les rapports sont idéaux pour afficher les détails tabulaires. Lorsqu’un même rapport doit afficher de nombreux groupes par valeurs ou par mesures, un tableau est souvent le meilleur moyen d’y parvenir. À titre d’exemple, vous trouverez ci-dessous un tableau &quot;Détails du client&quot;, présentant les commandes et les recettes regroupées par email client :
 
 ![](../../assets/blobid2.png)
 
@@ -57,7 +57,7 @@ Comme pour les rapports scalaires, vous pouvez enregistrer un rapport en tant qu
 
 **Conditions requises :**
 
-* Bien qu’il n’y ait aucune configuration de rapport requise, il est important de noter que les tableaux sont limités à 3 500 lignes. Si votre jeu de données comprend plus de 3 500 lignes, vous devrez soit filtrer les résultats pour réduire la portée, soit exporter les résultats vers `.csv` ou `Excel` pour afficher le jeu de données complet.
+* Bien qu’il n’y ait aucune configuration de rapport requise, il est important de noter que les tableaux sont limités à 3 500 lignes. Si votre jeu de données comprend plus de 3 500 lignes, vous devez soit filtrer les résultats pour réduire la portée, soit exporter les résultats vers `.csv` ou `Excel` pour afficher le jeu de données complet.
 
 ## `Line`
 
@@ -95,7 +95,7 @@ Pour enregistrer un rapport sous forme de graphique à barres, ajustez le rappor
 
 `Stacked bar` Les graphiques sont similaires à leurs frères de histogrammes, avec la possibilité supplémentaire d’afficher la répartition proportionnelle de chaque barre. La plupart du temps, les graphiques à barres empilés sont configurés avec plusieurs mesures et un seul groupe par, de sorte que chaque barre représente un groupe unique par valeur, divisé entre ses composantes de mesure.
 
-Par exemple, le rapport ci-dessous comporte deux mesures de recettes identiques : l’une filtrée pour les premières commandes et l’autre pour les commandes répétées. Une fois le regroupement par magasin effectué, vous pouvez afficher la contribution totale aux recettes pour chaque magasin (représentée par la largeur totale de la barre) ainsi que la répartition des recettes pour chaque magasin, la première fois ou la répétition :
+Par exemple, le rapport ci-dessous comporte deux mesures de recettes identiques : l’une filtrée pour les premières commandes et l’autre filtrée pour les commandes répétées. Une fois le regroupement par magasin effectué, vous pouvez afficher à la fois la contribution totale aux recettes pour chaque magasin (représentée par la largeur totale de la barre) et la première fois par rapport à la ventilation des recettes répétée pour chaque magasin.
 
 ![](../../assets/blobid4.png)
 
@@ -111,9 +111,9 @@ Pour enregistrer un rapport sous forme de graphique à barres empilées, ajustez
 
 ## `Column`
 
-`Column` Les graphiques représentent chaque point de données sous forme de colonne verticale. Ils sont généralement plus performants pour afficher les données de tendance de temps que la visualisation de graphique à barres horizontales. Puisque chaque mesure et groupe unique par combinaison est représenté dans sa propre série de barres, un rapport Colonne est généralement préférable pour les rapports comportant trois mesures ou moins, ou une mesure avec un seul groupe en contenant 1 à 3 groupes par valeurs.
+`Column` Les graphiques représentent chaque point de données sous la forme d’une colonne verticale. Ils sont plus adaptés à l’affichage des données de tendance temporelle qu’à la visualisation en graphique à barres horizontales. Chaque mesure et groupe unique par combinaison est représenté dans sa propre série de barres. Un rapport Colonne est préférable pour les rapports comportant trois mesures ou moins ou une mesure ayant un seul groupe en contenant 1 à 3 groupes par valeurs.
 
-Dans l’exemple ci-dessous, nous affichons deux mesures de recettes, l’une filtrée pour les recettes de la première fois, l’autre pour les recettes répétées, les tendances au fil du temps par mois :
+Dans l’exemple ci-dessous, vous voyez deux mesures de recettes : l’une filtrée pour les recettes pour la première fois et l’autre pour les recettes répétées, avec des tendances au fil du temps par mois :
 
 ![](../../assets/blobid6.png)
 
@@ -182,7 +182,7 @@ Pour enregistrer un rapport sous forme d’histogramme, ajustez la variable `Typ
 
 ![](../../assets/blobid4.png)
 
-Dans un rapport Entonnoir, la valeur relative d’une étape donnée de l’entonnoir est reflétée par la hauteur de l’étape et l’ordre dans lequel les étapes sont affichées est déterminé par la configuration du rapport. Il existe deux façons de configurer un rapport Entonnoir :
+Dans un rapport Entonnoir, la valeur relative d’une étape donnée de l’entonnoir est reflétée par la hauteur de l’étape. La configuration du rapport détermine l’ordre dans lequel les étapes sont affichées. Il existe deux façons de configurer un rapport Entonnoir :
 
 * `Single metric with one group by`: - Ordre des étapes déterminé par le paramètre &quot;Afficher le haut/bas&quot; du groupe. Par défaut, les étapes de l’entonnoir s’affichent dans l’ordre de la valeur la plus grande à la plus petite, mais vous pouvez également les trier par ordre alphabétique selon le groupe par nom.
 
@@ -227,7 +227,7 @@ Option 2 :
 
 ## `Bubble` chart
 
-A `bubble` le graphique peut afficher jusqu’à quatre dimensions de données pour lesquelles la variable `X` et `Y` Les axes spécifient l’emplacement des bulles, la variable `Z` axe est la taille des bulles, et en incluant deux groupes, vous pouvez ajouter de la couleur aux bulles. Ce type de visualisation est préférable lorsque vous souhaitez tracer plusieurs dimensions de données dans un seul graphique.
+A `bubble` le graphique peut afficher jusqu’à quatre dimensions de données pour lesquelles la variable `X` et `Y` Les axes spécifient l’emplacement des bulles. Le `Z` axe est la taille des bulles, et en incluant deux groupes, vous pouvez ajouter de la couleur aux bulles. Ce type de visualisation est préférable lorsque vous souhaitez tracer plusieurs dimensions de données dans un seul graphique.
 
 Par exemple, le graphique suivant montre le nombre de clients (taille de la bulle) regroupés selon une source d’acquisition spécifique (couleur de la bulle) et un état (différentes bulles d’une couleur spécifique), par rapport au total des recettes et aux commandes de durée de vie moyenne.
 
@@ -251,7 +251,7 @@ Option 2
 * Non `group by`
 * Définir `time interval`
 
-**Conditions requises pour le graphique à bulles à séries multiples :**
+**Conditions requises pour le graphique à bulles multisérie :**
 
 * Trois `metrics`
 * Deux `group by`

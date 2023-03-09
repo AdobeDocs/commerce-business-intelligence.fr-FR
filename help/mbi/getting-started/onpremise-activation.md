@@ -2,16 +2,16 @@
 title: Activez votre [!DNL MBI] Compte pour les abonnements On-Premise
 description: En savoir plus sur l’activation de [!DNL MBI] Compte pour les abonnements On-Premise.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 # Activez votre [!DNL MBI] Compte pour les abonnements On-Premise
 
-Pour activer [!DNL MBI] pour les abonnements on-premise, commencez par créer un [!DNL MBI] compte, puis connectez-vous [!DNL MBI] à votre base de données Commerce. Pour plus d’informations sur l’activation dans `Cloud Starter` projets, voir [Activez votre [!DNL MBI] Compte pour `Cloud Starter` Abonnements](../getting-started/cloud-activation.md).
+Pour activer [!DNL MBI] pour les abonnements on-premise, commencez par créer une [!DNL MBI] compte, puis connectez-vous [!DNL MBI] à votre base de données Commerce. Pour plus d’informations sur l’activation dans `Cloud Starter` projets, voir [Activez votre [!DNL MBI] Compte pour `Cloud Starter` Abonnements](../getting-started/cloud-activation.md).
 
 1. Créez votre [!DNL MBI] Compte.
 
@@ -31,7 +31,7 @@ Pour activer [!DNL MBI] pour les abonnements on-premise, commencez par créer un
 
    ![](../assets/create-account-4.png)
 
-   - Après avoir créé votre compte, vous avez la possibilité d’ajouter des utilisateurs à votre nouveau compte. Vous pouvez désormais ajouter des administrateurs techniques pour réaliser les étapes suivantes.
+   - Après avoir créé votre compte, vous pouvez ajouter des utilisateurs à votre nouveau compte. Vous pouvez désormais ajouter des administrateurs techniques pour réaliser les étapes suivantes.
 
    ![](../assets/create-account-5.png)
 

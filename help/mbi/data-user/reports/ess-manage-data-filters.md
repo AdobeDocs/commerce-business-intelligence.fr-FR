@@ -2,7 +2,7 @@
 title: Création d’ensembles de filtres pour les mesures
 description: Découvrez comment créer des visionneuses de filtres enregistrées et les appliquer aux mesures.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Si vous avez plusieurs mesures dans [!DNL MBI] qui doivent être filtrées de la même manière (par exemple, filtrer les commandes de test), vous pouvez créer des visionneuses de filtres enregistrées et les appliquer aux mesures. Cela vous permet de gagner du temps, car vous n’avez pas à ajouter de filtres individuels lors de la création ou de la modification d’une mesure.
 
-Voir notre [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) pour en savoir plus.
+Voir [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) pour en savoir plus.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Voir notre [vidéo de formation](https://experienceleague.adobe.com/docs/commerc
 
 1. Ajoutez tous les filtres appropriés.
 
-   Par exemple, si nous ne voulions inclure que les commandes dont le statut est Terminé dans notre `Total number of orders` , nous appliquons un filtre qui exclut toutes les commandes qui n’ont pas d’état = `complete`.
+   Par exemple, si vous souhaitez uniquement inclure des commandes dont l’état est Terminé dans votre `Total number of orders` , vous appliquez un filtre qui exclut toutes les commandes qui n’ont pas d’état = `complete`.
 
 1. Vérifiez la logique de votre filtre et assurez-vous que les parenthèses et les opérateurs sont correctement placés : par exemple, `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 

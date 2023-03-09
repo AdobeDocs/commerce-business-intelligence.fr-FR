@@ -2,20 +2,20 @@
 title: Opérateurs de filtres spéciaux
 description: Découvrez quelques opérateurs spéciaux utilisés dans les filtres lors de la création d’un rapport ou d’une mesure.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
 
 # Options de filtre
 
-Dans cet article, nous allons explorer quelques sujets spécifiques `operators` utilisé dans `filters` when [création d&#39;un rapport](../../tutorials/using-visual-report-builder.md){ : target=&quot;_blank&quot;} ou [création d’une mesure](../../data-user/reports/ess-manage-data-metrics.md){ : target=&quot;_blank&quot;}.
+Cet article explore quelques aspects spéciaux `operators` utilisé dans `filters` when [création d&#39;un rapport](../../tutorials/using-visual-report-builder.md){ : target=&quot;_blank&quot;} ou [création d’une mesure](../../data-user/reports/ess-manage-data-metrics.md){ : target=&quot;_blank&quot;}.
 
 ## `Filter Operators`
 
-* `LIKE` pour la correspondance de modèle. Il doit être utilisé conjointement avec les caractères génériques % (pour un caractère générique avec un nombre variable de lettres) ou _ (pour un caractère générique à une seule lettre).  Par exemple, la restriction `LIKE \_ake%` renvoie true pour `Jake Stein`, `Jake Smith`ou `Fake Smith`.  La valeur renvoyée est false pour `Drake Smith`.
+* `LIKE` pour la correspondance de modèle. Il doit être utilisé avec les caractères génériques % (pour un caractère générique avec un nombre de lettres variable) ou _ (pour un caractère générique à une seule lettre).  Par exemple, la restriction `LIKE \_ake%` renvoie true pour `Jake Stein`, `Jake Smith`ou `Fake Smith`.  La valeur renvoyée est false pour `Drake Smith`.
 
 * `NOT LIKE` est similaire à la correspondance de modèles ci-dessus, mais vérifie quels modèles ne correspondent pas.
 

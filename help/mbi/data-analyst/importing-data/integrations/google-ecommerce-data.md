@@ -2,9 +2,9 @@
 title: Valeur attendue[!DNL Google ECommerce]data
 description: Découvrez les types de données qui sont partagés avec Google ECommerce.
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Après votre [!DNL Google ECommerce] le compte est connecté à [!DNL MBI], le s
 | `medium` | Cette colonne contient le nom du support (par exemple : [`utm\_medium`](https://support.google.com/analytics/answer/1033867?hl=en)) |
 | `source` | Cette colonne contient le nom source. (par exemple, [`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)) |
 | `keyword` | Cette colonne contient la description du mot-clé (par exemple : [`utm\_term`](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| `transactionId` | Cette colonne contient l’identifiant de la commande. Elle sera utilisée pour associer les données de référence à vos données de commande. |
+| `transactionId` | Cette colonne contient l’identifiant de la commande. Il est utilisé pour associer les données de référence à vos données de commande. |
 | `updated\_at` | Cette colonne contient la dernière fois que la ligne de données a été mise à jour. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

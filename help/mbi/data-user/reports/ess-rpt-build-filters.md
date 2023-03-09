@@ -2,9 +2,9 @@
 title: Filtres
 description: Découvrez comment utiliser les filtres.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ L’IMS comprend une sélection de filtres que vous pouvez utiliser &quot;prêts
 
    * Une fois le filtre terminé, cliquez sur **[!UICONTROL Apply]**.
 
-      Le rapport comprend désormais uniquement les clients réguliers, et le nombre d’enregistrements de clients récupérés pour le rapport a été réduit de 33K à 12,6k.
+      Le rapport comprend désormais uniquement les clients réguliers, et le nombre d’enregistrements de clients récupérés pour le rapport a été réduit de 33 000 à 12 600.
 
       ![Rapport filtré](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 

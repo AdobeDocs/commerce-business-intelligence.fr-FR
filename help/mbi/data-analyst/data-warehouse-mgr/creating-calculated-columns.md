@@ -2,9 +2,9 @@
 title: Créer des colonnes calculées
 description: Découvrez comment consolider des données provenant de différentes sources.
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 Lors de l’analyse de vos données, il est bénéfique de consolider des données provenant de différentes sources. Souhaitez-vous regrouper les recettes par source d’acquisition, en liant les données de votre table de commandes et vos Google Analytics ? Que diriez-vous d’un regroupement des recettes par sexe de client ou de la jonction d’un attribut du client aux données de transaction pour la segmentation ?
 
-Ce guide vous apprendra à le faire. Avant de commencer, nous vous recommandons de consulter la [Guide sur les types de colonne calculés](../../data-analyst/data-warehouse-mgr/calc-column-types.md). Le _Guide sur les types de colonne calculés_ décrit les types de colonnes que vous pouvez créer dans Data Warehouse Manager, ainsi que leurs définitions et exemples.
+Ce guide vous apprend à faire exactement cela. Avant de commencer, Adobe vous recommande d’extraire la variable [Guide sur les types de colonne calculés](../../data-analyst/data-warehouse-mgr/calc-column-types.md). Le _Guide sur les types de colonne calculés_ décrit les types de colonnes que vous pouvez créer dans Data Warehouse Manager, ainsi que leurs définitions et exemples.
 
 1. Pour commencer, cliquez sur **[!DNL Manage Data > Data Warehouse]** dans la barre latérale.
 
-1. Cliquez sur le tableau dans lequel vous souhaitez créer une colonne. Par exemple, si nous voulions créer une `Customer Gender` pour la segmentation des recettes, nous allons sélectionner la variable `sales_flat_order` table.
+1. Cliquez sur le tableau dans lequel vous souhaitez créer une colonne. Par exemple, si vous souhaitez créer une `Customer Gender` pour la segmentation des recettes, vous devez sélectionner la variable `sales_flat_order` table.
 
 1. Le modèle de tableau s’affiche. Cliquez sur **[!UICONTROL Create New Column]**.
 
 1. Attribuez un nom à votre colonne, par exemple : `Customer Gender`.
 
-1. Sélectionnez la définition de la colonne. C’est là que le [Guide sur les types de colonne calculés](../data-warehouse-mgr/calc-column-types.md) sera utile !
+1. Sélectionnez la définition de la colonne. C’est là que le [Guide sur les types de colonne calculés](../data-warehouse-mgr/calc-column-types.md) c&#39;est pratique !
 
 1. Pour certains types de colonnes, un peu plus d’informations est nécessaire pour créer correctement la colonne :
    * Pour `One to Many` (joint) et `Many to One` (agrégé) , vous devez sélectionner les tableaux et les colonnes.
    * Pour un `Same Table calculation`, vous devez sélectionner le champ de date de votre choix dans la liste déroulante.
 
-Si vous créez une `One to Many` (joint) ou `Many to One` (agrégé) , vous devez sélectionner un chemin pour connecter les deux tables. Au cours de cette étape, vous pouvez utiliser un chemin existant ou en créer un nouveau.
+Si vous créez une `One to Many` (joint) ou `Many to One` (agrégé) , vous devez sélectionner un chemin pour connecter les deux tables. Au cours de cette étape, vous pouvez utiliser un chemin existant ou en créer un.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Si vous créez une `One to Many` (joint) ou `Many to One` (agrégé) , vous deve
 * Si vous le souhaitez, vous pouvez appliquer des [filtres](../../data-user/reports/ess-manage-data-filters.md) à la nouvelle colonne.
 * Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save]**.
 
-C&#39;est tout ! Votre nouvelle colonne apparaît dans le tableau actuel avec une `Pending` statut. Une fois la prochaine mise à jour terminée, votre colonne sera disponible dans les mesures et les rapports.
+C&#39;est tout ! La nouvelle colonne apparaît dans le tableau actuel avec un `Pending` statut. Une fois la prochaine mise à jour terminée, votre colonne sera disponible dans les mesures et les rapports.
 
 ## Carte de référence pratique {#map}
 

@@ -1,10 +1,10 @@
 ---
 title: ROI marketing
-description: Découvrez comment configurer un tableau de bord qui effectuera le suivi de votre analyse de canal, y compris le retour sur investissement dans l’agrégat et par campagne.
+description: Découvrez comment configurer un tableau de bord qui effectue le suivi de l’analyse de vos canaux, y compris le retour sur investissement dans l’agrégat et par campagne.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -15,24 +15,24 @@ ht-degree: 0%
 >
 >Cet article contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la [nouvelle architecture](../../administrator/account-management/new-architecture.md) Si la section &quot;Vues Data Warehouse&quot; est disponible après avoir sélectionné &quot;Gérer les données&quot; dans la barre d’outils principale.
 
-Si vous dépensez de l&#39;argent dans la publicité en ligne, vous allez inévitablement vouloir suivre votre retour sur cette dépense et prendre des décisions basées sur les données sur d&#39;autres investissements. Dans cet article, nous vous montrons comment configurer un tableau de bord qui suivra l’analyse de vos canaux, y compris le retour sur investissement dans l’agrégat et par campagne.
+Si vous dépensez de l’argent dans la publicité en ligne, vous souhaitez suivre votre retour sur cette dépense et prendre des décisions basées sur les données sur d’autres investissements. Cet article explique comment configurer un tableau de bord qui effectue le suivi de l’analyse de vos canaux, y compris le retour sur investissement agrégé et par campagne.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-Avant de commencer, vous souhaitez connecter votre [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md), et [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) et d’importer toutes les autres données relatives aux dépenses publicitaires en ligne. Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
+Avant de commencer, vous souhaitez connecter votre [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md), et [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) et d’importer toutes les données supplémentaires relatives aux dépenses publicitaires en ligne. Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Tables consolidées
 
-**Architecture originale :** Pour rassembler vos dépenses à partir de diverses sources (comme [!DNL Facebook Ads] ou [!DNL Google Adwords]), nous vous recommandons de créer un **table consolidée** de toutes vos dépenses publicitaires. Vous aurez besoin d’un analyste pour terminer cette étape. Si ce n’est déjà fait, [enregistrer une demande d’assistance ;](../../guide-overview.md) avec le sujet `[MARKETING ROI ANALYSIS]`et un analyste crée ce tableau.
+**Architecture originale :** Pour rassembler vos dépenses à partir de diverses sources (comme [!DNL Facebook Ads] ou [!DNL Google Adwords]), Adobe recommande de créer une **table consolidée** de toutes vos dépenses publicitaires. Pour vous, un analyste est nécessaire. Si ce n’est pas le cas, [enregistrer une demande d’assistance ;](../../guide-overview.md) avec le sujet `[MARKETING ROI ANALYSIS]`et un analyste crée ce tableau.
 
-**Nouvelle architecture :** Vous pouvez suivre l’exemple présenté dans la section [cette bibliothèque d’analyses](../../data-analyst/data-warehouse-mgr/create-dw-views.md) rubrique. Les tableaux consolidés sont désormais appelés vues Data Warehouse sur la nouvelle architecture.
+**Nouvelle architecture :** Vous pouvez suivre l’exemple de la section [cette bibliothèque d’analyses](../../data-analyst/data-warehouse-mgr/create-dw-views.md) rubrique. Les tableaux consolidés sont désormais appelés vues Data Warehouse sur la nouvelle architecture.
 
 ## Colonnes calculées
 
 Colonnes à créer
 
 * **`Consolidated Digital Ad Spend`** table
-* **`Campaign name`** sera créé par un analyste dans le cadre de votre **[ANALYSE DU ROI MARKETING]** ticket
+* **`Campaign name`** est créé par un analyste dans le cadre de votre **[ANALYSE DU ROI MARKETING]** ticket
 
 >[!NOTE]
 >
@@ -295,7 +295,7 @@ Colonnes à créer
 
    [!UICONTROL Chart Type]: `Table`
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Associé
 

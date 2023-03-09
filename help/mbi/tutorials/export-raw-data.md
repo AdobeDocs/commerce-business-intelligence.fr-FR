@@ -2,9 +2,9 @@
 title: Exporter les données brutes
 description: Découvrez comment exporter des enregistrements de votre [!DNL MBI] Data Warehouse pour examiner de plus près ce qui alimente votre tableau de bord.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Vous pouvez exporter des données brutes de deux manières différentes dans [!D
 
 ### Exportation au niveau du tableau dans votre `Manage Data` Onglet
 
-Si vous souhaitez exporter le tableau à partir de `Manage Data` , vous aurez besoin des [Administration](../administrator/user-management/user-management.md) autorisations.
+Si vous souhaitez exporter le tableau à partir de `Manage Data` , vous devez [Administration](../administrator/user-management/user-management.md) autorisations.
 
 1. Cliquez sur **[!UICONTROL Manage Data** > ** Exporter les données **> **Exportation de données brutes]** pour commencer.
-1. Vous verrez une `Export List` des exportations de données récemment créées, le cas échéant. Cliquez sur **[!UICONTROL Add Export]** pour créer un export.
+1. Vous voyez une `Export List` des exportations de données récemment créées, le cas échéant. Cliquez sur **[!UICONTROL Add Export]** pour créer un export.
 1. Le `New Raw Data Export` s’affiche. Vous pouvez personnaliser votre export en sélectionnant ou en désélectionnant des colonnes et des filtres :
 
-   * `Table` - Le `Table` sélectionne la table à partir de laquelle les données seront exportées. Par défaut, le tableau dans lequel vous avez accédé s’affiche.
+   * `Table` - Le `Table` sélectionne la table à partir de laquelle les données sont exportées. Par défaut, le tableau dans lequel vous avez accédé s’affiche.
    * `Export Name` - Dans ce champ, saisissez le nom de l&#39;export. Par exemple : `Philadelphia - Daily Revenue`.
    * `Available Columns` - Ce champ répertorie les colonnes (dimensions) de votre base de données qui peuvent être incluses dans l’exportation. Pour ajouter une colonne, cliquez sur son nom.
    * `Selected Columns` - Ce champ répertorie les colonnes (dimensions) actuellement incluses dans l’exportation. Pour supprimer une colonne, cliquez sur son nom.
@@ -51,7 +51,7 @@ Si vous souhaitez exporter le tableau à partir de `Manage Data` , vous aurez be
 
 1. Lorsque vous avez terminé, cliquez sur **[!UICONTROL Export Data]**.
 
-Regardons l’ensemble du processus au niveau des graphiques.
+Examinez l’ensemble du processus au niveau du graphique.
 
 ![](../assets/Chart-level_export.gif)
 

@@ -2,16 +2,16 @@
 title: Gestion des utilisateurs et des autorisations
 description: Découvrez comment gérer vos [!DNL MBI] utilisateurs.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # Gestion des autorisations utilisateur
 
-L&#39;IMS est conçu pour être une source unique de vérité dans votre organisation. Chaque utilisateur disposera de son propre jeu de tableaux de bord. [partager avec d’autres utilisateurs](../../data-user/dashboards/share-dashboard-with-users.md).
+L&#39;IMS est conçu pour être une source unique de vérité dans votre organisation. Chaque utilisateur dispose de son propre ensemble de tableaux de bord, qu’il peut [partager avec d’autres utilisateurs](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## Niveaux d’autorisation des utilisateurs
 
@@ -44,7 +44,7 @@ Ces autorisations permettent aux utilisateurs d’effectuer certaines actions ou
 | **Facturation d’accès** | ✔ | ✔** |  |
 | **Contacter le support technique** | ✔ | ✔ | ✔ |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!NOTE]
 >
@@ -52,24 +52,24 @@ Ces autorisations permettent aux utilisateurs d’effectuer certaines actions ou
 >
 >**[!UICONTROL Standard] _Les utilisateurs peuvent accéder à la Facturation avec un paramètre d’autorisation supplémentaire._
 >
->**[!UICONTROL Read-Only]** Les utilisateurs peuvent uniquement _view_ les tableaux de bord qui ont été partagés avec eux ; ils ne peuvent rien créer ni modifier dans [!DNL MBI], ils ne peuvent pas non plus rechercher et ajouter de nouveaux tableaux de bord à leur compte. Nous vous recommandons de partager un ensemble spécifique de tableaux de bord avec **[!UICONTROL Read-Only]** utilisateurs que vous ou un autre membre de votre équipe maintenez. Ne clonez pas un ensemble de tableaux de bord à leur place.
+>**[!UICONTROL Read-Only]** Les utilisateurs peuvent uniquement _view_ les tableaux de bord qui ont été partagés avec eux ; ils ne peuvent rien créer ni modifier dans [!DNL MBI], ils ne peuvent pas non plus rechercher et ajouter de nouveaux tableaux de bord à leur compte. Adobe vous recommande de partager un ensemble spécifique de tableaux de bord avec **[!UICONTROL Read-Only]** utilisateurs que vous ou un autre membre de votre équipe maintenez. Ne clonez pas un ensemble de tableaux de bord à leur place.
 
 ## Autorisations supplémentaires : Facturation et support technique {#billingtech}
 
-Outre les niveaux d’autorisation généraux, deux autres désignations d’utilisateur existent également : `Billing` et `Technical`. Ces désignations sont destinées à être utilisées conjointement avec les niveaux d’autorisation généraux.
+Outre les niveaux d’autorisation généraux, deux autres désignations d’utilisateur existent également : `Billing` et `Technical`. Ces désignations doivent être utilisées avec les niveaux d’autorisation généraux.
 
 ### Facturation
 
-`Billing` les utilisateurs ont accès à la page de facturation et peuvent modifier les informations de paiement. De plus, ils peuvent également être contactés par nos équipes pour des questions de facturation.
+`Billing` les utilisateurs ont accès à la page de facturation et peuvent modifier les informations de paiement. Ils peuvent également être contactés par Adobe pour des questions de facturation.
 
-`Admin` les utilisateurs ont accès à l’onglet Facturation par défaut, mais les utilisateurs standard peuvent également y accéder s’ils disposent de la variable `Billing` case à cocher sélectionnée sur leur profil.
+`Admin` Les utilisateurs ont accès au `Billing` par défaut, mais `Standard` les utilisateurs peuvent également accéder à s’ils disposent de la variable `Billing` case à cocher sélectionnée sur leur profil.
 
 ![facturation](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### Technique
 
-`Technical` Les utilisateurs ne disposent d’aucune autorisation spécifique : ce paramètre marque simplement un contact technique au sein de votre organisation. Ces utilisateurs peuvent être contactés par nos équipes pour des questions techniques.
+`Technical` Les utilisateurs ne disposent d’aucune autorisation spécifique : ce paramètre marque simplement un contact technique au sein de votre organisation. Ces utilisateurs peuvent être contactés par Adobe pour des questions techniques.
 
 `Admin` les utilisateurs peuvent ajouter de nouveaux utilisateurs à leur compte en cliquant sur **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** et suivez les invites. Une fois l’utilisateur créé dans [!DNL MBI], la personne chanceuse que vous invitez recevra des instructions par courrier électronique sur la manière d’effectuer le processus de configuration du compte.
 
-À tout moment, `Admins` peuvent afficher tous les utilisateurs de leur compte en cliquant sur **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. Cette page affiche les autorisations de l’utilisateur, ainsi que les mesures et les tableaux de bord auxquels il a accès.
+À tout moment, `Admins` peuvent afficher tous les utilisateurs de leur compte en cliquant sur **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. Cette page affiche les autorisations de l’utilisateur, ainsi que les mesures et les tableaux de bord auxquels il peut accéder.

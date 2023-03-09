@@ -2,9 +2,9 @@
 title: Comprendre et créer des analyses de base
 description: Découvrez comment comprendre et créer des analyses de base.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '3153'
+source-wordcount: '3117'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Une fois que vous connaissez le [!DNL MBI] et avoir une compréhension de base de l’outil, vous allez commencer à créer des rapports. Une des questions les plus courantes que vous avez est : &quot;Que dois-je regarder ?&quot;
 
-Les informations ci-dessous décrivent certaines des mesures et rapports courants qui peuvent vous être utiles. Un certain nombre de ces rapports existent déjà dans votre compte. Dès lors, veillez à consulter les mesures et rapports qui existent dans votre compte afin d’éviter de créer des doublons.
+Les informations ci-dessous décrivent certaines des mesures et rapports courants qui peuvent vous être utiles. Certains de ces rapports existent dans votre compte. Dès lors, veillez à consulter les mesures et rapports qui existent dans votre compte afin d’éviter de créer des doublons.
 
 ## Tableaux et colonnes à comprendre
 
@@ -24,13 +24,13 @@ Lors de la création d’une mesure, vous devez connaître quatre éléments d�
 1. La colonne sur laquelle vous souhaitez effectuer cette action, et
 1. Horodatage que vous souhaitez utiliser pour le suivi de ces données.
 
-Les noms des tables que nous utilisons dans ces exemples sont très probablement légèrement différents des noms des colonnes et des tables de votre base de données, car chaque base de données est unique. Référencez les définitions ci-dessous si vous avez besoin d’aide pour identifier une table ou une colonne correspondante dans votre base de données.
+Les noms des tables utilisées dans ces exemples sont très probablement légèrement différents des noms des colonnes et des tables de votre base de données, car chaque base de données est unique. Référencez les définitions ci-dessous si vous avez besoin d’aide pour identifier une table ou une colonne correspondante dans votre base de données.
 
 ## Table des clients
 
-Ce tableau contient des informations clés sur chaque client, telles qu’un ID de client unique, une adresse électronique, une date de création du compte, etc. Dans les exemples ci-dessous, nous utiliserons **[!UICONTROL customer_entity]** comme nom d’un exemple de table client.
+Ce tableau contient des informations clés sur chaque client, telles qu’un ID de client unique, une adresse électronique, etc. Les exemples ci-dessous utilisent **[!UICONTROL customer_entity]** comme nom d’un exemple de table client.
 
-Si certains de ces calculs n’existent pas actuellement dans votre base de données, tout utilisateur administrateur de votre compte peut les créer. De plus, vous souhaitez vous assurer que ces dimensions peuvent être regroupées pour toutes les mesures applicables.
+Si certains de ces calculs n’existent pas actuellement dans votre base de données, tout utilisateur administrateur de votre compte peut les créer. Vous souhaitez également vous assurer que ces dimensions sont regroupables pour toutes les mesures applicables.
 
 **Dimensions**
 
@@ -44,28 +44,28 @@ Si certains de ces calculs n’existent pas actuellement dans votre base de donn
 
 **Acceptez-vous les commandes des invités ?**
 
-*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez notre [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour vous assurer que vos analyses client comprennent tous les clients.*
+*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez le [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour vous assurer que vos analyses client comprennent tous les clients.*
 
 *Vous ne savez pas si vous acceptez les commandes des invités ? Voir [cette rubrique](../data-warehouse-mgr/guest-orders.md) pour en savoir plus !*
 
 ## Table des commandes
 
-Dans ce tableau, chaque ligne représente un ordre. Les colonnes de ce tableau contiennent des informations de base sur chaque commande, telles que l’identifiant de la commande, la date de création, l’état, l’identifiant du client qui a passé la commande, etc. Dans les exemples ci-dessous, nous utilisons **[!UICONTROL sales_flat_order]** comme nom d’une table d’exemples de commandes.
+Dans ce tableau, chaque ligne représente un ordre. Les colonnes de ce tableau contiennent des informations de base sur chaque commande, telles que l’identifiant de la commande, la date de création, l’état, l’identifiant du client qui a passé la commande, etc. Les exemples ci-dessous utilisent **[!UICONTROL sales_flat_order]** comme nom d’une table d’exemples de commandes.
 
 **Dimensions**
 
-* **[!UICONTROL Customer_id]**: Identifiant unique du client qui a passé la commande. Cette opération est souvent utilisée pour déplacer les informations entre les tables du client et des commandes. Dans nos exemples, nous nous attendons à ce que customer_id figure dans la variable **[!UICONTROL sales_flat_order]** pour s’aligner sur la variable **[!UICONTROL entitiy_id]** sur le **[!UICONTROL customer_entity]** table.
+* **[!UICONTROL Customer_id]**: Identifiant unique du client qui a passé la commande. Il est souvent utilisé pour déplacer des informations entre les tables du client et des commandes. Dans ces exemples, vous vous attendez à ce que le paramètre customer_id de la variable **[!UICONTROL sales_flat_order]** pour s’aligner sur la variable **[!UICONTROL entitiy_id]** sur le **[!UICONTROL customer_entity]** table.
 * **[!UICONTROL Created_at]**: Date à laquelle la commande a été créée ou placée.
 * **[!UICONTROL Customer_email]**: Adresse électronique du client qui a passé la commande. Il peut également s’agir de l’identifiant unique du client.
 * **[!UICONTROL Customer's lifetime number of orders]**: Une copie de la colonne portant le même nom sur votre `Customers` table.
-* **[!UICONTROL Customer's order number]**: Numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous observez est la première commande d’un client, cette colonne est &quot;1&quot; ; mais, s’il s’agissait de la 15e commande du client, cette colonne indique &quot;15&quot; pour cette commande. Si cette dimension n’existe pas sur votre `Customers` , demandez à notre [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour vous aider à le construire.
+* **[!UICONTROL Customer's order number]**: Numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous observez est la première commande d’un client, cette colonne est &quot;1&quot; ; mais, s’il s’agissait de la 15e commande du client, cette colonne indique &quot;15&quot; pour cette commande. Si cette dimension n’existe pas sur votre `Customers` , demandez au [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour vous aider à le construire.
 * **[!UICONTROL Customer's order number (previous-current)]**: Une concaténation de deux valeurs dans la variable **[!UICONTROL Customer's order number]** colonne . Il est utilisé dans un exemple de rapport ci-dessous pour afficher le temps écoulé entre deux commandes. Par exemple, l’intervalle entre la date de première commande d’un client et sa date de deuxième commande est représenté sous la forme &quot;1-2&quot; avec ce calcul.
-* **[!UICONTROL Coupon_code]**: Indique le ou les bons utilisés pour chaque commande.
+* **[!UICONTROL Coupon_code]**: Indique les bons utilisés pour chaque commande.
 * **[!UICONTROL Seconds since previous order]**: Durée (en secondes) entre les commandes d’un client.
 
 ## Tableau des éléments de commande
 
-Dans ce tableau, chaque ligne représente un article vendu. Ce tableau contient des informations sur les articles vendus dans chaque commande, telles que le numéro de référence de la commande, le numéro du produit, la quantité, etc. Dans les exemples ci-dessous, nous utilisons `sales_flat_order_item` comme nom d’un exemple de tableau d’éléments de commande.
+Dans ce tableau, chaque ligne représente un article vendu. Ce tableau contient des informations sur les articles vendus dans chaque commande, telles que le numéro de référence de la commande, le numéro du produit, la quantité, etc. Les exemples ci-dessous utilisent `sales_flat_order_item` comme nom d’un exemple de tableau d’éléments de commande.
 
 **Dimensions**
 
@@ -81,12 +81,12 @@ Ce tableau permet de gérer vos informations d’abonnement, telles que l’ID d
 
 **Dimensions**
 
-* **[!UICONTROL Customer_id]**: Identifiant unique du client qui a passé la commande. Il s’agit d’une méthode courante pour créer un chemin entre la table Clients et la table Commandes. Dans nos exemples, nous nous attendons à ce que customer_id figure dans la variable **sales_plat_order** pour s’aligner sur la variable `entitiy_id` sur le `customer_entity` table.
+* **[!UICONTROL Customer_id]**: Identifiant unique du client qui a passé la commande. Il s’agit d’une méthode courante pour créer un chemin entre la table Clients et la table Commandes. Dans ces exemples, vous vous attendez à ce que le paramètre customer_id de la variable **sales_plat_order** pour s’aligner sur la variable `entitiy_id` sur le `customer_entity` table.
 * **[!UICONTROL Start date]**: Date à laquelle l’abonnement d’un client a commencé.
 
 ## Tableau des dépenses marketing
 
-Lorsque vous analysez vos dépenses marketing, vous pouvez inclure [!DNL Facebook], [!DNL Google AdWords]ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez notre [Équipe Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
+Lorsque vous analysez vos dépenses marketing, vous pouvez inclure [!DNL Facebook], [!DNL Google AdWords]ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez le [Équipe Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
 
 **Dimensions**
 
@@ -95,14 +95,14 @@ Lorsque vous analysez vos dépenses marketing, vous pouvez inclure [!DNL Faceboo
 * **[!UICONTROL Clicks]**: Nombre total de clics. Dans [!DNL Facebook], il s’agit de la colonne clics dans la variable `facebook_ads_insights_####` table. Dans [!DNL Google AdWords], il s’agit de la colonne adClicks dans la variable `campaigns####` table.
 * **[!UICONTROL Impressions]**: Nombre total d’impressions. Dans [!DNL Facebook], il s’agit des impressions de la variable `facebook_ads_insights_####` table. Dans [!DNL Google AdWords], il s’agit des impressions de la variable `campaigns####` table.
 * **[!UICONTROL Campaign]**: Nombre total de clics. Dans [!DNL Facebook], il s’agit de la colonne campaign_name de la variable `facebook_ads_insights_####` table. Dans [!DNL Google AdWords], il s’agit de la colonne de l’opération dans la variable `campaigns####` table.
-* **[!UICONTROL Date]**: Horodatage selon lequel la dépense, les clics ou les impressions ont eu lieu pour une campagne spécifique. Dans [!DNL Facebook], il s’agirait de la fonction `date_start` dans la colonne `facebook_ads_insights_####` table. Dans [!DNL Google AdWords], il s’agit de la colonne de date dans la variable `campaigns####` table.
+* **[!UICONTROL Date]**: Heure et date auxquelles l’activité (dépenses, clics ou impressions) a eu lieu pour une campagne spécifique. Dans [!DNL Facebook], il s’agirait de la fonction `date_start` dans la colonne `facebook_ads_insights_####` table. Dans [!DNL Google AdWords], il s’agit de la colonne de date dans la variable `campaigns####` table.
 * **[!UICONTROL Customer's first order's source]**: Source de la commande issue de la première commande d’un client. Tout d’abord, vérifiez si vous disposez d’une colonne nommée `customer's first order's source` dans votre compte. Si vous ne voyez pas cette colonne, vous pouvez créer la colonne de votre choix en suivant ces instructions.
 * **[!UICONTROL Customer's first order's medium]**: Support de la commande issue de la première commande d’un client. Tout d’abord, vérifiez si vous disposez d’une colonne nommée `customer's first order's source` dans votre compte. Si vous ne voyez pas cette colonne, vous pouvez créer la colonne de votre choix en suivant ces instructions.
 * **[!UICONTROL Customer's first order's campaign]**: Campagne de la commande issue de la première commande d’un client. Tout d’abord, vérifiez si vous disposez d’une colonne nommée `customer's first order's source` dans votre compte. Si vous ne voyez pas cette colonne, vous pouvez créer la colonne de votre choix en suivant ces instructions.
 
 ## Rapports et mesures courants
 
-Voici quelques exemples courants de rapports et de mesures utiles :
+Voici quelques exemples courants de rapports et de mesures que vous trouverez utiles :
 
 * [Customer Analytics](#customeranalytics)
 * [Analyses de commande](#orderanalytics)
@@ -123,7 +123,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 ### Clients uniques
 
-* **Description**: Comptage du nombre total de clients distincts sur une période donnée. Différent de `New Users`, car il effectue uniquement le suivi des clients qui ont passé au moins une commande. Un rapport de clients distincts effectue uniquement le suivi d’un client une fois dans un intervalle de temps donné. Si vous définissez l’intervalle sur `By Day` et qu’un client effectue plusieurs achats ce jour-là, il ne sera comptabilisé qu’une seule fois. Si vous souhaitez afficher le nombre total d’achats en général, reportez-vous à la section `Number of Orders`.
+* **Description**: Comptage du nombre total de clients distincts sur une période donnée. Différent de `New Users`, car il effectue uniquement le suivi des clients qui ont passé au moins une commande. Le rapport d’un client distinct effectue uniquement le suivi d’un client une fois dans un intervalle de temps donné. Si vous définissez l’intervalle sur `By Day` et qu’un client effectue plusieurs achats ce jour-là, il n’est comptabilisé qu’une seule fois. Si vous souhaitez afficher le nombre total d’achats en général, reportez-vous à la section `Number of Orders`.
 * **Définition de mesure**: Cette mesure effectue une **Comptage distinct** de `customer_id` de `sales_flat_order` tableau trié par `created_at`.
 * **Exemple de rapport**: Clients distincts par semaine au cours des 90 derniers jours
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -155,7 +155,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
    ![](../../assets/2nd_and_3rd_purchases_last_year.png)
 
-* **Exemple de rapport 2**: Nombre de clients réguliers l’année dernière
+* **Exemple de rapport 2**: Le nombre de clients réguliers des dernières années
    * **[!UICONTROL Metric]**: `Distinct Customers`
    * **[!UICONTROL Filters]**: `Customer's Order Number Greater Than 1`
    * **[!UICONTROL Time Range]**: `Moving range > Last Year`
@@ -191,13 +191,13 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 ### Chiffre d’affaires moyen de la durée de vie par cohorte
 
-* **Description**: Suivi de la [revenu moyen sur la durée de vie des cohortes distinctes](../dev-reports/lifetime-rev-cohort-analysis.md) Nombre d’utilisateurs au fil du temps pour identifier les cohortes les plus performantes. Les cohortes sont regroupées par date commune, telle que la date de première commande ou de création.
+* **Description**: Suivi de la [revenu moyen sur la durée de vie des cohortes distinctes](../dev-reports/lifetime-rev-cohort-analysis.md) Nombre d’utilisateurs au fil du temps pour identifier les cohortes les plus performantes. Les cohortes sont regroupées par date courante, comme la date de première commande ou la date de création.
 * **Mesure utilisée**: `Revenue`
 * **Exemple de rapport**: Recettes sur la durée de vie moyenne des clients par cohorte
    * **[!UICONTROL Metric]**: `Revenue`
    * **[!UICONTROL Cohort Date]**: `Customer's first order date`
    * **[!UICONTROL Time Interval]**: `Month`
-   * **[!UICONTROL Time Period]**: Déplacement d’un ensemble de cohortes des 8 cohortes les plus récentes avec au moins 4 mois de données
+   * **[!UICONTROL Time Period]**: Déplacement d’un ensemble de cohortes des huit cohortes les plus récentes avec au moins quatre mois de données
    * **[!UICONTROL Duration]**: `12 Month(s)`
    * **[!UICONTROL Table]**: `Customer_entity`
    * **[!UICONTROL Perspective]**: Valeur moyenne cumulée par membre de cohorte
@@ -208,7 +208,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 * **Description**: Comptage du nombre de clients acquis qui ont utilisé un code de coupon/réduction. Cela peut vous aider à obtenir une vue claire de vos demandeurs de réduction par rapport aux acheteurs à prix plein.
 * **Mesure utilisée**: `New Users`
-* **Exemple de rapport**: Clients Bon et non coupon par mois
+* **Exemple de rapport**: Clients Bon et non-coupon par mois
    * **[!UICONTROL Metric A]**: `Non coupon customers`
    * **[!UICONTROL Metric]**: `New Users`
    * **[!UICONTROL Filters]**: Nombre de commandes de durée de vie du client supérieur à 0 et nombre de bons de durée de vie du client égal à 0
@@ -220,7 +220,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
    ![Clients par utilisation de coupon](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
-* **Exemple de rapport 2**: Pourcentage de clients Bon et non bons par mois
+* **Exemple de rapport 2**: Pourcentage de clients Bon et non-bons par mois
    * **[!UICONTROL Metric A]**: `Non coupon customers` (masquer la mesure)
       * **[!UICONTROL Metric]**: `New Users`
       * **[!UICONTROL Filters]**: `Customer's Lifetime Number of Orders Greater Than 0` et `Customer's Lifetime Number of Coupons Equal to 0`
@@ -241,7 +241,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 * **Description**: Moyenne du montant des recettes généré par les clients au cours de leurs 30 premiers jours en tant que client.
 * **Description de mesure**: Cette mesure effectue une **Moyenne** de `Customer's First 30 Day Revenue` de `customer_entity` tableau trié par `created_at`.
-* **Description du rapport**: Moyenne sur toute la durée des 30 premiers jours du chiffre d’affaires du client
+* **Description du rapport**: Moyenne sur tout le temps des 30 premiers jours du chiffre d’affaires du client
 * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
 * **[!UICONTROL Time Range]**: `All Time`
 * **[!UICONTROL Time Interval]**: `None`
@@ -252,7 +252,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 * **Description**: Montant moyen des recettes générées par vos clients au cours de leur vie.
 * **Description de mesure**: Cette mesure effectue une **Moyenne** de `Customer's Lifetime Revenue` sur la `customer_entity` en fonction de la variable `created_at`.
-* **Description du rapport**: Toute la durée moyenne des recettes sur la durée de vie du client
+* **Description du rapport**: Moyenne sur tout le temps des recettes sur toute la durée de vie du client
    * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
    * **[!UICONTROL Time Range]**: `All Time`
    * **[!UICONTROL Time Interval]**: `None`
@@ -272,13 +272,13 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 >[!TIP]
 >
->Assurez-vous que le calcul de votre mesure des recettes est cohérent avec la définition dont vous discutez en interne. Par exemple, vous pouvez ne comptabiliser que les recettes provenant des commandes expédiées, convertir des devises provenant de différentes régions et exclure les taxes. De plus, vous pouvez utiliser [Visionneuses de filtres](../../data-user/reports/ess-manage-data-filters.md) pour garantir la cohérence de toutes les mesures créées sur le même tableau.
+>Assurez-vous que le calcul de votre mesure des recettes est cohérent avec la définition dont vous discutez en interne. Par exemple, vous pouvez comptabiliser les recettes provenant des commandes expédiées, convertir les devises de différentes régions ou exclure les taxes. Vous pouvez également utiliser [Visionneuses de filtres](../../data-user/reports/ess-manage-data-filters.md) pour garantir la cohérence de toutes les mesures créées sur le même tableau.
 
 ![Recettes](../../assets/revenue.png)<!--{: width="929"}-->
 
 ### Commandes
 
-* **Description**: Comptage du nombre total de commandes sur une période donnée. Un rapport Commandes effectue le suivi des modifications du volume des commandes provoquées par les nouvelles offres de produits, les promotions ou tout autre élément susceptible d’augmenter (ou de diminuer) le volume des transactions. Vous voudrez peut-être souvent segmenter cette mesure selon un certain nombre de variables pour répondre à vos questions.
+* **Description**: Comptage du nombre total de commandes sur une période donnée. Un rapport Commandes effectue le suivi des modifications du volume des commandes provoquées par les nouvelles offres de produits, les promotions ou tout autre élément susceptible d’augmenter (ou de diminuer) le volume des transactions. Vous voudrez peut-être souvent segmenter cette mesure en fonction de certaines variables pour répondre à vos questions.
 * **Définition de mesure**: Cette mesure effectue une **Count** de `entity_id` de `sales_flat_order` tableau trié par `created_at`.
 * **Exemple de rapport**: Commandes par mois, JJ
    * **[!UICONTROL Metric]**: `number of orders`
@@ -303,11 +303,11 @@ Voici quelques exemples courants de rapports et de mesures utiles :
    ![Produits commandés](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * Combinez cette mesure à la mesure du nombre de commandes pour calculer le nombre d’articles par commande. Ajoutez ensuite des codes de coupon au rapport afin de déterminer l’impact de vos promotions sur la taille du panier, ou segmentez-les par nouvelles commandes par rapport aux commandes répétées, afin de mieux comprendre le comportement de vos clients.
-* **Exemple de rapport**: Produits par commande : Ordre de premier ordre et ordre de répétition
-   * **[!UICONTROL Metric A]**: Produits commandés : 1re commande
+* **Exemple de rapport**: Produits par commande : ordre initial et commandes répétées
+   * **[!UICONTROL Metric A]**: Produits commandés : première commande
       * **[!UICONTROL Metric]**: `Products ordered`
       * **[!UICONTROL Filter]**: `Customer's order number = 1`
-   * **[!UICONTROL Metric B]**: Commandes : 1re commande
+   * **[!UICONTROL Metric B]**: Commandes : première commande
       * **[!UICONTROL Metric]**: `Orders`
       * **[!UICONTROL Filter]**: `Customer's order number = 1`
    * **[!UICONTROL Metric C]**: Produits commandés : commandes répétées
@@ -329,7 +329,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 ### Valeur de commande moyenne
 
-* **Description**: Permet de suivre la valeur moyenne des commandes passées sur une période donnée. Utilisez cette mesure pour déterminer rapidement la manière dont la valeur de commande moyenne (AOV) a fluctué en raison de vos efforts marketing, de votre offre de produits et/ou d’autres changements survenus dans votre entreprise.
+* **Description**: Permet de suivre la valeur moyenne des commandes passées sur une période. Utilisez cette mesure pour déterminer rapidement la manière dont la valeur de commande moyenne (AOV) a fluctué en raison de vos efforts marketing, de votre offre de produits et/ou d’autres changements survenus dans votre entreprise.
 * **Définition de mesure**: Cette mesure effectue une **average** de `grand_total` de `sales_flat_order` tableau trié par `created_at`.
 * **Exemple de rapport**: AOV par rapport à l’année précédente, YTD
    * **[!UICONTROL Metric]**: `Average order value`
@@ -420,7 +420,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 ### Coût par clic (CPC)
 
-* **Description**: Grâce aux mesures de dépenses publicitaires et de clics publicitaires que vous avez créées ci-dessus, vous pouvez analyser votre coût par clic en fonction des différentes campagnes au fil du temps.
+* **Description**: À l’aide des mesures de dépenses publicitaires et de clics publicitaires que vous avez créées ci-dessus, vous pouvez analyser votre coût par clic selon différentes campagnes au fil du temps.
 * **Exemple de rapport**: CPC par opération
    * **[!UICONTROL Metric A]**: `Ad spend`
    * **[!UICONTROL Metric B]**: `Ad clicks`
@@ -438,7 +438,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 ### Clients par source d’acquisition
 
-* **Description**: Si vous effectuez le suivi de la source, du support et de la campagne d’une commande à l’aide de [!DNL Google eCommerce], vous pouvez analyser vos clients en fonction de leur source d’acquisition. Cela vous aidera à identifier les sources marketing qui acquièrent des clients et à répondre à des questions telles que &quot;La plupart de vos clients passent-ils leurs premières commandes ? [!DNL Google], [!DNL Facebook]ou une autre source ?&quot;
+* **Description**: Si vous effectuez le suivi de la source, du support et de la campagne d’une commande à l’aide de [!DNL Google eCommerce], vous pouvez analyser vos clients en fonction de leur source d’acquisition. Vous pouvez ainsi identifier les sources marketing qui acquièrent des clients et répondre à des questions telles que &quot;La plupart de vos clients passent leurs premières commandes par l’intermédiaire de [!DNL Google], [!DNL Facebook]ou une autre source ?&quot;
 * **Exemple de rapport**: Clients par source d’acquisition
    * **[!UICONTROL Metric Used]**: `New Customers`
    * **[!UICONTROL Time Range]**: `All-Time`
@@ -494,7 +494,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 ### Valeur de durée de vie par source d’acquisition, moyenne et campagne
 
-* **Description**: Outre l&#39;analyse du nombre de clients acquis par chaque campagne, vous pouvez analyser le chiffre d&#39;affaires moyen de ces clients sur toute la durée de vie. Vous pourrez ainsi identifier :
+* **Description**: Outre l&#39;analyse du nombre de clients acquis par chaque campagne, vous pouvez analyser le chiffre d&#39;affaires moyen de ces clients sur toute la durée de vie. Vous pouvez ainsi identifier :
    * Si certaines campagnes attirent un grand volume de clients, mais que ces clients ont une faible valeur de durée de vie.
    * Si certaines campagnes attirent un faible volume de clients, mais que ces clients ont une valeur de durée de vie élevée.
 * **Exemple de rapport**: Ajoutez d’abord la variable `New customers` mesure. Ajoutez ensuite le `Average lifetime revenue` mesure. Sélectionnez la période souhaitée et choisissez la `interval` as `None`. Enfin, sélectionnez l’option `group by` option comme`Customer's first order's campaign`.
@@ -510,7 +510,7 @@ Voici quelques exemples courants de rapports et de mesures utiles :
 
 >[!NOTE]
 >
->Pour les deux filtres, vous pouvez ajouter tout autre média qui est considéré comme étant &quot;payant&quot; pour votre entreprise, par exemple le cas de la création d’un compte ou du référencement payant, et vous pouvez ajouter toute autre source que vous souhaitez analyser, par exemple Facebook. En outre, extrayez [cet article](../analysis/roi-ad-camp.md) pour plus d’informations sur CAC, LTV et le retour sur investissement.
+>Pour les deux filtres, vous pouvez ajouter tout autre média qui est considéré comme étant &quot;payant&quot; pour votre entreprise (par exemple, le CPC ou le référencement payant). Vous pouvez également ajouter toutes les autres sources que vous souhaitez analyser, telles que Facebook. Consulter [cet article](../analysis/roi-ad-camp.md) pour plus d’informations sur CAC, LTV et le retour sur investissement.
 
 ![Valeur de durée de vie par source d’acquisition, moyenne et campagne](../../assets/LTV_2.png)<!--{: width="929"}-->
 

@@ -2,9 +2,9 @@
 title: Importation de données MailChimp
 description: Découvrez comment importer des données MailChimp dans [!DNL MBI].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Pour obtenir une vue d’ensemble complète de vos efforts de campagne, vous pou
 
 1. Cliquez sur **[!UICONTROL Export]** et enregistrez la variable `.csv` fichier .
 
-   Vous devrez ajouter `primary key`, `date (mm/dd/yyyy)`, et `campaign name` à ce fichier. Assurez-vous que la variable `primary keys` sont propres à chaque ligne.
+   Vous devez ajouter `primary key`, `date (mm/dd/yyyy)`, et `campaign name` à ce fichier. Assurez-vous que la variable `primary keys` sont propres à chaque ligne.
 
    ![import mailchimp 4](../../../assets/import-mailchimp-4.png)
 
@@ -47,7 +47,7 @@ Pour obtenir une vue d’ensemble complète de vos efforts de campagne, vous pou
 
 1. Cliquez sur **[!UICONTROL Export]** et enregistrez la variable `.csv` fichier .
 
-   Vous devrez ajouter `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`, et `URL` à ce fichier. Il n’est pas nécessaire d’ajouter l’URL complète, mais cela vous permet de savoir ce qui a fait l’objet d’un clic.
+   Vous devez ajouter `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`, et `URL` à ce fichier. Vous n’avez pas besoin d’ajouter l’URL complète, simplement un élément qui vous permet de savoir ce qui a fait l’objet d’un clic.
 
    ![import mailchimp 7](../../../assets/import-mailchimp-7.png)
 
@@ -65,12 +65,12 @@ Pour obtenir une vue d’ensemble complète de vos efforts de campagne, vous pou
 
 1. Cliquez sur **[!UICONTROL Export]** et enregistrez la variable `.csv` fichier .
 
-   Vous devrez ajouter `Primary Key`, `date (mm/dd/yyyy)`, et `campaign name` à ce fichier.
+   Vous devez ajouter `Primary Key`, `date (mm/dd/yyyy)`, et `campaign name` à ce fichier.
 
    ![import mailchimp 9](../../../assets/import-mailchimp-9.png)
 
 ## Préparation du chargement de fichiers dans [!DNL MBI] {#upload}
 
-Chaque fichier - `Opens`, `Clicks`, et `Sent` - doit être chargé dans [!DNL MBI] comme un fichier distinct. Nous vous recommandons également de nommer les fichiers selon cette convention d’affectation des noms : `MailChimp\_ACTION\_DATE`. Remplacer `ACTION` avec `Open`, `Click`ou `Sent`et remplacez `DATE` avec la date d&#39;export.
+Chaque fichier - `Opens`, `Clicks`, et `Sent` - doit être chargé dans [!DNL MBI] comme un fichier distinct. Adobe vous recommande de nommer les fichiers selon cette convention d’affectation des noms : `MailChimp\_ACTION\_DATE`. Remplacer `ACTION` avec `Open`, `Click`ou `Sent`et remplacez `DATE` avec la date d&#39;export.
 
-Lorsque vous êtes prêt à charger les fichiers, utilisez la variable [`File Upload` fonctionnalité](../connecting-data/using-file-uploader.md) pour importer les données dans votre entrepôt de données.
+Lorsque vous êtes prêt à charger les fichiers, utilisez la variable [`File Upload` fonctionnalité](../connecting-data/using-file-uploader.md) pour importer les données dans votre Data Warehouse.

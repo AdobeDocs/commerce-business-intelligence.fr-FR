@@ -2,9 +2,9 @@
 title: Connexion à Google Commerce
 description: Découvrez les canaux de référence les plus précieux.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ![](../../../assets/google-ecommerce-logo.png)
 
-Vous avez un flux constant de trafic et de commandes, ce qui signifie que vous atteignez et acquérez efficacement des clients. Mais quels sont vos canaux de parrainage les plus précieux ? quelle est la valeur moyenne de durée de vie des clients acquis d’une source par rapport à une autre ? En connectant vos données source de référence de commande à partir de [!DNL Google ECommerce] to [!DNL MBI], vous pouvez créer des analyses qui vous aideront à identifier votre [canaux marketing les plus précieux](../../../data-analyst/analysis/most-value-source-channel.md).
+Vous avez un flux constant de trafic et de commandes, ce qui signifie que vous atteignez et acquérez efficacement des clients. Mais quels sont vos canaux de parrainage les plus précieux ? Quelle est la valeur moyenne de durée de vie des clients acquis d’une source par rapport à une autre ? En connectant vos données source de référence de commande à partir de [!DNL Google ECommerce] to [!DNL MBI], vous pouvez créer des analyses qui vous aident à identifier votre [canaux marketing les plus précieux](../../../data-analyst/analysis/most-value-source-channel.md).
 
-Commençons par entrer dans notre [!DNL Google ECommerce] informations d’identification [!DNL MBI]:
+Commencez en saisissant [!DNL Google ECommerce] informations d’identification [!DNL MBI]:
 
 1. Accédez au `Connections` page sous **[!UICONTROL Admin** > **Connections]**.
 1. Cliquez sur **[!UICONTROL Add a New Source]**, situé sur le côté droit de l’écran, au-dessus de `Data Sources` table.
-1. Cliquez sur le bouton [!DNL Google ECommerce] icône . Cette action ouvre la variable [!DNL Google ECommerce] informations d’identification.
+1. Cliquez sur le bouton [!DNL Google ECommerce] icône . Cela ouvre la fenêtre [!DNL Google ECommerce] informations d’identification.
 1. Saisissez votre [!DNL Google Analytics] informations d’identification. Une fois le processus d’autorisation terminé, vous êtes redirigé vers [!DNL MBI].
 1. Une liste des identifiants de profil s’affiche. Vérifiez les profils auxquels vous souhaitez vous connecter. [!DNL MBI].
 
@@ -31,23 +31,23 @@ Commençons par entrer dans notre [!DNL Google ECommerce] informations d’ident
 
    ![](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
-1. Les modifications sont enregistrées automatiquement. Il vous suffit donc de cliquer sur **[!UICONTROL Back to Connections]** lorsque vous avez terminé.
+1. Les modifications sont enregistrées automatiquement, donc cliquez sur **[!UICONTROL Back to Connections]** lorsque vous avez terminé.
 
 ## Connexion de plusieurs [!DNL Google Analytics] profils vers [!DNL MBI]
 
-Vous pouvez avoir plusieurs sites Web connectés à un seul [!DNL Google Analytics] compte, identifié par leur propre compte [!DNL Google Analytics] identifiant de profil. Dans ce cas, vous aurez la possibilité d’inclure tous vos identifiants de profil dans [!DNL MBI]. Il vous suffit de vérifier les identifiants de profil que vous souhaitez inclure lors de l’étape de sélection du profil.
+Vous pouvez avoir plusieurs sites Web connectés à un seul [!DNL Google Analytics] compte, identifié par leur propre compte [!DNL Google Analytics] identifiant de profil. Dans ce cas, vous avez la possibilité d’inclure tous vos identifiants de profil dans [!DNL MBI]. Vérifiez les identifiants de profil que vous souhaitez inclure lors de l’étape de sélection du profil.
 
 Pour identifier les [!DNL Google Analytics] Identifiant du profil :
 
 1. Se connecter [!DNL Google Analytics]
 1. Accédez au [!DNL Google Analytics] tableau de bord
-1. Examinez l’URL : l’identifiant du profil correspond aux 8 chiffres suivants : `p` à la fin de la ligne
+1. Examinez l’URL : l’identifiant du profil correspond aux huit chiffres suivants : `p` à la fin de la ligne
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
 ## Déconnexion [!DNL Google ECommerce] de [!DNL MBI] {#disconnect}
 
-1. Visitez votre [!DNL Google Analytics] [paramètres du compte](https://www.google.com/accounts/) page.
+1. Visitez votre [!DNL Google Analytics] [paramètres du compte](https://www.google.com/account/about/?hl=en) page.
 1. Sous , `Security` , cliquez sur **[!UICONTROL edit]** en regard de `Authorizing` applications et sites.
 1. Cliquez sur **[!UICONTROL revoke access]** en regard de [!DNL MBI].
 

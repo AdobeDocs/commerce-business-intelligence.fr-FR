@@ -2,9 +2,9 @@
 title: Gérer les tableaux de bord
 description: Découvrez comment gérer les autorisations utilisateur pour les tableaux de bord que vous possédez, supprimer les tableaux de bord dont vous n’avez plus besoin et définir un tableau de bord par défaut.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
-Dans **[!DNL Manage Data** > **Dashboards]**, vous pouvez gérer les autorisations utilisateur des tableaux de bord que vous détenez, supprimer les tableaux de bord dont vous n’avez plus besoin et définir un tableau de bord par défaut. Voici un bref aperçu de ce que nous abordons dans cet article :
+Dans **[!DNL Manage Data** > **Dashboards]**, vous pouvez gérer les autorisations utilisateur des tableaux de bord que vous détenez, supprimer les tableaux de bord dont vous n’avez plus besoin et définir un tableau de bord par défaut. Couvert dans cet article :
 
 1. [Changement du nom des tableaux de bord](#rename)
 

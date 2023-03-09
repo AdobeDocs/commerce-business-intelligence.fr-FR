@@ -2,9 +2,9 @@
 title: Formatage et importation de données financières
 description: Découvrez comment formater et importer des données financières.
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Cette rubrique décrit le meilleur moyen d’importer des données financières pour une analyse dans [!DNL MBI].
 
-Un tableau de données à deux dimensions sur plusieurs onglets est souvent le format utilisé pour les données financières. Avec des valeurs classées par libellé dans les colonnes et les lignes, ce type de disposition peut être facile à visualiser à l’aide des yeux d’un humain et des outils de tableur, mais il n’est pas très adapté aux bases de données.
+Un tableau de données à deux dimensions sur plusieurs onglets est souvent le format utilisé pour les données financières. Avec des valeurs classées par libellé à la fois dans les colonnes et les lignes, ce type de disposition peut être facile à visualiser à l’aide des yeux humains et des outils de tableur, mais il n’est pas adapté aux bases de données.
 
 ![](../../mbi/assets/crosstab.png)
 
@@ -26,7 +26,7 @@ Pour importer et analyser ces données dans [!DNL MBI], le tableau doit être ap
 Pour aplatir un tableau bidimensionnel à l’aide d’un tableau croisé dynamique Excel :
 
 1. Ouvrez le fichier avec le tableau de données bidimensionnel.
-1. Ouvrez l’Assistant Tableau croisé dynamique. Sous Windows, le raccourci est `Alt-D`. Dans Mac OSX, saisissez `Command-Option-P`.
+1. Ouvrez l’Assistant Tableau croisé dynamique. Sous Windows, le raccourci est `Alt-D`. Sous Mac OS, saisissez `Command-Option-P`.
 1. Sélectionner **[!UICONTROL Multiple consolidated ranges]** et cliquez sur **[!UICONTROL Next]**.
 1. Sélectionner **[!UICONTROL I will create the page fields]** et cliquez sur **[!UICONTROL Next]**.
 1. Sélectionnez l’ensemble des données du tableau bidimensionnel, y compris les libellés. Assurez-vous que `0` est sélectionné pour le nombre de champs de page de votre choix, puis cliquez sur **[!UICONTROL Next]**.

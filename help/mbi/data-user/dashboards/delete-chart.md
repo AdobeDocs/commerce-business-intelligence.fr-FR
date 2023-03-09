@@ -2,9 +2,9 @@
 title: Suppression définitive d’un graphique
 description: Découvrez comment supprimer définitivement un graphique.
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Pour supprimer définitivement un graphique :
 
 1. Cliquez sur **[!UICONTROL Charts]**.
 
-1. Les graphiques que vous pouvez supprimer (en fonction des autorisations utilisateur et de la propriété du graphique) s’affichent sur le côté droit de l’écran.
+1. Les graphiques que vous pouvez supprimer (en fonction des autorisations utilisateur et de la propriété du graphique) s’affichent dans la partie droite de l’écran.
 
 1. Cochez la case en regard de la ligne de graphique à supprimer.
 
@@ -27,7 +27,7 @@ Pour supprimer définitivement un graphique :
 
    >[!NOTE]
    >
-   >Si le graphique est utilisé dans un tableau de bord ou un résumé email, une notification s&#39;affiche. Pour continuer, vous devez confirmer la suppression, puis cliquer sur **[!UICONTROL Force Deletion]**.
+   >Si le graphique est utilisé dans un tableau de bord ou un résumé d&#39;email, une notification s&#39;affiche. Pour continuer, vous devez confirmer la suppression, puis cliquer sur **[!UICONTROL Force Deletion]**.
 
 Exemple :
 

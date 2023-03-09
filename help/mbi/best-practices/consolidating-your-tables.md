@@ -2,9 +2,9 @@
 title: Consolidation de vos tableaux
 description: Découvrez comment consolider vos tables et bases de données.
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ L’exemple suivant indique à quel moment il peut être approprié d’utiliser
 
 Si vous vendez vos produits sous différentes marques et différents sites web, il est probable que les tableaux de chaque marque ou site web soient structurés de la même manière.
 
-Par exemple, vous pouvez avoir une `orders` tableau pour le site web `A` et une `orders` tableau pour le site web `B`. Dans ce cas, il peut s’avérer utile de consolider le `orders` tableaux du site web `A` et `B` afin que vous puissiez consulter les recettes consolidées et le nombre de commandes provenant du site web `A` et `B`, en plus de pouvoir segmenter les mesures en fonction de ces deux sites web.
+Par exemple, vous pouvez avoir une `orders` tableau pour le site web `A` et une `orders` tableau pour le site web `B`. Dans ce cas, il peut s’avérer utile de consolider le `orders` tableaux du site web `A` et `B`. Vous pouvez ainsi consulter les recettes consolidées et le nombre de commandes provenant du site web. `A` et `B`, en plus de pouvoir segmenter les mesures en fonction de ces deux sites web.
 
 ### Intégration de données héritées
 
@@ -39,11 +39,11 @@ Imaginez un site web sur lequel les utilisateurs peuvent réaliser plusieurs act
 
 Vous pouvez utiliser des tableaux consolidés pour créer une liste unifiée de tous les utilisateurs et le moment où l’un de ces événements s’est produit. Vous pouvez ensuite exécuter des requêtes sur la table consolidée pour réaliser facilement une telle analyse.
 
-Comme pour tous les autres tableaux de votre entrepôt de données, vous pouvez ajouter des colonnes supplémentaires pour alimenter différents types de graphiques et d’analyses.
+Comme pour tous les autres tableaux de votre Data Warehouse, vous pouvez ajouter des colonnes supplémentaires pour alimenter différents types de graphiques et d’analyses.
 
 ## Création, affichage ou mise à jour d’une table consolidée
 
-Si vous souhaitez ajouter une table consolidée à votre entrepôt de données, contactez [!DNL MBI] [support](../guide-overview.md).
+Si vous souhaitez ajouter une table consolidée à votre Data Warehouse, contactez [!DNL MBI] [support](../guide-overview.md).
 
 >[!NOTE]
 >

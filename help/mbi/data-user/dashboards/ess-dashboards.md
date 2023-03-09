@@ -2,9 +2,9 @@
 title: Tableaux de bord
 description: Découvrez comment créer et utiliser un tableau de bord.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 [!DNL MBI] Les tableaux de bord vous donnent un aperçu rapide des performances et de l’activité de vente de votre boutique en un coup d’oeil. Les tableaux de bord individuels peuvent être partagés avec d’autres utilisateurs et organisés en groupes logiques. Vous pouvez également définir différents niveaux d’autorisation pour d’autres utilisateurs.
 
-Il est facile de créer un nouveau rapport, de l’ajouter à un tableau de bord et d’exporter les données vers Excel. Les tableaux et les rapports peuvent être redimensionnés et déplacés dans leur position sur le tableau de bord.
+Il est facile de créer un rapport, de l’ajouter à un tableau de bord et d’exporter les données vers Excel. Les tableaux et les rapports peuvent être redimensionnés et déplacés dans leur position sur le tableau de bord.
 
 ![Tableau de bord](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## Création de tableaux de bord {#createdash}
 
-Les tableaux de bord sont essentiellement des compartiments à thème partageables pour les analyses que vous créez dans les Reports Builder. C’est ainsi que vous pouvez encourager votre équipe à collaborer et à maintenir une source unique de vérité dans l’ensemble de votre organisation.
+Les tableaux de bord sont des compartiments à thème partageables pour les analyses que vous créez dans les Reports Builder. C’est ainsi que vous pouvez encourager votre équipe à collaborer et à maintenir une source unique de vérité dans l’ensemble de votre organisation.
 
 *Si vous êtes un administrateur ou un utilisateur standard*, vous pouvez créer un tableau de bord en cliquant sur le bouton `Dashboard Options` menu déroulant et choix `Create New dashboard`.
 
@@ -76,7 +76,7 @@ Dans **[!DNL Manage Data** > **Dashboards]**, vous pouvez gérer les autorisatio
 
 ### Partage de vos tableaux de bord {#sharingdash}
 
-Pour une réelle échelle [!DNL MBI] dans l’ensemble de votre organisation et fournissez des informations précieuses, nous vous encourageons à partager les tableaux de bord que vous créez avec d’autres membres de l’équipe. *Vous pouvez partager les tableaux de bord vous-même.* en cliquant sur le bouton `Share Dashboard` en haut de la page.
+Pour une réelle échelle [!DNL MBI] dans l’ensemble de votre organisation et fournissez des informations précieuses, Adobe vous encourage à partager les tableaux de bord que vous créez avec d’autres membres de l’équipe. *Vous pouvez partager les tableaux de bord vous-même.* en cliquant sur le bouton `Share Dashboard` en haut de la page.
 
 Lorsque vous partagez un tableau de bord, vous pouvez attribuer des autorisations à l’échelle de votre organisation OU sur une base individuelle, ce qui signifie que vous pouvez choisir qui peut afficher et modifier vos rapports.
 

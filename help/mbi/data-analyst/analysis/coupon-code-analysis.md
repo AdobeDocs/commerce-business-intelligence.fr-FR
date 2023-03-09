@@ -2,16 +2,16 @@
 title: Performances des coupons
 description: Découvrez comment analyser les performances de vos coupons.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
 
 # Analyse avancée du code de bon
 
-Comprendre les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre vos clients. Cet article décrit les étapes à suivre pour créer des analyses afin de comprendre quels clients vous acquérez grâce à l’utilisation de coupons, leurs performances et le suivi de l’utilisation générale des coupons.
+Comprendre les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre vos clients. Cet article vous guide tout au long des étapes nécessaires à la création d’analyses afin de comprendre quels clients vous acquérez à l’aide de bons, leurs performances et le suivi de l’utilisation générale des bons.
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -34,7 +34,8 @@ Colonnes à créer, quelle que soit la stratégie de commandes d’invités :
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * [!UICONTROL Datatype]:: `String`
+   * 
+      [!UICONTROL Type de données]: `String`
    * [!UICONTROL Calculation]: Cas lorsque `A` est nul alors `No coupon` else `Coupon` end
 
 
@@ -43,8 +44,8 @@ Colonnes à créer, quelle que soit la stratégie de commandes d’invités :
    * [!UICONTROL Inputs]:
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
-   * [!UICONTROL Datatype]: Chaîne
-   * [!UICONTROL Calculation]:: `concat(A,' - ',B)`
+   * [!UICONTROL Datatype] Chaîne
+   * [!UICONTROL Calculation]: `concat(A,' - ',B)`
 
 
 * **Nombre de commandes avec ce coupon**
@@ -80,20 +81,23 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-      * [!UICONTROL Datatype]:: `String`
+      * 
+         [!UICONTROL Type de données]: `String`
       * [!UICONTROL Calculation]: **Cas où A=&#39;Coupon&#39; alors &#39;Client d&#39;acquisition de coupon&#39; else &#39;Client d&#39;acquisition de coupon&#39;**
    * **Pourcentage des commandes du client avec coupon**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
-      * [!UICONTROL Datatype]:: `Decimal`
+      * 
+         [!UICONTROL Type de données]: `Decimal`
       * [!UICONTROL Calculation]: **cas où A est nul ou B est nul ou B=0 alors nul autre fin A/B**
    * **Utilisation des coupons du client**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
-      * [!UICONTROL Datatype]:: `String`
+      * 
+         [!UICONTROL Type de données]: `String`
       * [!UICONTROL Calculation]: **Cas où A est nul puis nul lorsque A=0 alors &quot;Coupon jamais utilisé&quot; lorsque A&lt;0.5 alors &quot;Prix le plus souvent plein&quot; quand A=0.5 puis &quot;50/50&quot; quand A=1 puis &quot;Coupons seulement&quot; quand A>0.5 puis &quot;Coupon principalement&quot; else &quot;Indéfini&quot;**
 
 
@@ -127,7 +131,8 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * [!UICONTROL Datatype]:: `String`
+   * 
+      [!UICONTROL Type de données]: `String`
    * [!UICONTROL Calculation]: **Cas où A=&#39;Coupon&#39; alors &#39;Client d&#39;acquisition de coupon&#39; else &#39;Client d&#39;acquisition de coupon&#39;**
 
 
@@ -136,7 +141,8 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * [!UICONTROL Datatype]:: `Decimal`
+   * 
+      [!UICONTROL Type de données]: `Decimal`
    * [!UICONTROL Calculation]: **cas où A est nul ou B est nul ou B=0 alors nul autre fin A/B**
 
 
@@ -144,7 +150,8 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * [!UICONTROL Datatype]:: `String`
+   * 
+      [!UICONTROL Type de données]: `String`
    * [!UICONTROL Calculation]: **Cas où A est nul puis nul lorsque A=0 alors &quot;Coupon jamais utilisé&quot; lorsque A&lt;0.5 alors &quot;Prix le plus souvent plein&quot; quand A=0.5 puis &quot;50/50&quot; quand A=1 puis &quot;Coupons seulement&quot; quand A>0.5 puis &quot;Coupon principalement&quot; else &quot;Indéfini&quot;**
 
 
@@ -237,7 +244,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 
 >[!NOTE]
 >
->Si vous disposez d’un grand nombre de codes de bon, comme le font de nombreux clients, vous souhaiterez appliquer un Top/Bottom tel que Top 10 trié par les recettes Durée de vie moyenne.
+>Si vous avez de nombreux codes de bon, comme le font de nombreux clients, vous souhaitez appliquer un Top/Bottom tel que Top 10 trié par les recettes de durée de vie moyenne.
 
 * **Probabilité de commande répétée : Acquisitions de coupons**
    * [!UICONTROL Metric]: `Number of orders`
@@ -251,7 +258,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
       [!UICONTROL Formule]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
-   * Sélectionnez un nombre statistiquement significatif parmi `Customer's by lifetime orders` graphique. Lorsque vous observez le graphique, nous recherchons généralement les numéros de commande avec 30 clients ou plus dans l’intervalle. En fonction de votre jeu de données, il peut s’agir d’un grand nombre. Vous pouvez donc ajouter 1 à 10.
+   * Sélectionnez un nombre statistiquement significatif parmi `Customer's by lifetime orders` graphique. Lorsque vous consultez le graphique, il est préférable de rechercher les numéros de commande avec 30 clients ou plus dans le compartiment. En fonction de votre jeu de données, il peut s’agir d’un grand nombre. Vous pouvez donc ajouter 1 à 10.
 
 
 * Mesure `A`: `Number of orders`
@@ -291,7 +298,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 * **Taux d&#39;utilisation des coupons des clients achetés par coupon (commandes répétées)**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
-      * Client d&#39;acquisition de coupons ou client d&#39;acquisition de coupons = Acquisition de coupons
+      * Client d&#39;acquisition de coupon ou client d&#39;acquisition de non-coupon = Acquisition de coupons
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Numéro de commande du client > 1
@@ -322,7 +329,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 * **Taux d&#39;utilisation des coupons des clients non-coupons acquis (commandes répétées)**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
-      * Client ayant acheté un bon ou client n’ayant pas acheté de bon = Acquisition de bons
+      * Client d&#39;acquisition de coupons ou client d&#39;acquisition de coupons = Acquisition de coupons non
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Numéro de commande du client > 1
@@ -510,6 +517,6 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 >
 >La quantité de 10 pour &quot;Nombre de commandes avec ce coupon&quot; est arbitraire. N’hésitez pas à utiliser la quantité la plus appropriée pour ce filtre.
 
-Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’image en haut de la page.
+Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de la page.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

@@ -2,16 +2,16 @@
 title: Intégration
 description: En savoir plus sur l’intégration.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 # Intégration
 
-Les questions relatives à l’intégration liées à `store` et `database` assurez-vous que nous configurons correctement vos rapports. Grâce à ces réponses, nous vous enverrons vos rapports qui sont précisément adaptés à la configuration de votre magasin.
+Les questions relatives à l’intégration liées à `store` et `database` assurez-vous de configurer correctement vos rapports. Grâce à ces réponses, Adobe diffuse vos rapports qui sont précisément adaptés à la configuration de votre magasin.
 
 ## Paramètres de magasin
 
@@ -25,7 +25,7 @@ Les questions relatives à l’intégration liées à `store` et `database` assu
 
 - *Quelle version de Commerce utilisez-vous ?* - Sélectionnez la variable `currency` que votre magasin opère.
 
-- *Votre boutique est-elle basée dans l&#39;Union Européenne ?* - Si vous répondez `Yes` à cette question, nous allons héberger votre Data Warehouse et toutes vos données dans l’Union européenne, conformément au RGPD.
+- *Votre boutique est-elle basée dans l&#39;Union Européenne ?* - Si vous répondez `Yes` à cette question, Adobe d’héberger votre Data Warehouse et toutes vos données dans l’Union européenne, conformément au RGPD.
 
 ## Paramètres de base de données
 

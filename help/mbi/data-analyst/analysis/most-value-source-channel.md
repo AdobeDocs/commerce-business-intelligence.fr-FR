@@ -2,9 +2,9 @@
 title: Identification de vos sources marketing et canaux les plus utiles
 description: Découvrez certains rapports que vous pouvez utiliser pour découvrir vos canaux marketing les plus précieux.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Vous avez fait des recherches sur votre audience, créé votre campagne, investi dans quelques canaux marketing. Maintenant que le temps est écoulé, comment ces canaux fonctionnent-ils ? Quel canal a attiré les nouveaux utilisateurs ? Quelle source a le plus contribué à vos recettes totales ?
 
-Avec [!DNL MBI], vous pouvez facilement segmenter les recettes et les utilisateurs par source de référence, qu’ils correspondent ou non à [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) ou des champs de données personnalisés. Cette segmentation vous permettra de trouver les canaux les plus performants et d’investir davantage votre budget marketing.
+Avec [!DNL MBI], vous pouvez facilement segmenter les recettes et les utilisateurs par source de référence, qu’ils correspondent ou non à [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) ou des champs de données personnalisés. Cette segmentation vous permet de trouver les canaux les plus performants et d’investir davantage votre budget marketing.
 
-Dans cet article, nous allons explorer certains rapports que vous pouvez utiliser pour découvrir vos canaux marketing les plus précieux :
+Cet article explore certains rapports que vous pouvez utiliser pour découvrir vos canaux marketing les plus précieux :
 
 * [Nouveaux utilisateurs par sources](#newusersbysource)
 * [Chiffre d’affaires moyen de la durée de vie par source d’utilisateur](#avglifetimerev)
@@ -25,7 +25,7 @@ Dans cet article, nous allons explorer certains rapports que vous pouvez utilise
 
 ## Conditions préalables {#prereqs}
 
-Pour créer les analyses de cet article, vous devez accéder aux données de source d’acquisition/de référence marketing. Si vous ne le suivez pas déjà, vous devrez apporter [données source de référence de commande provenant de [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) into [!DNL MBI] avant de pouvoir continuer. En outre, l’ajout d’informations sur les appareils utilisateur à vos analyses vous permet de voir la technologie que vos référents utilisent.
+Pour créer les analyses de cet article, vous devez accéder aux données de source d’acquisition/de référence marketing. Si vous ne le suivez pas déjà, vous devez apporter [données source de référence de commande provenant de [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) into [!DNL MBI] avant de pouvoir continuer. En outre, l’ajout d’informations sur les appareils utilisateur à vos analyses vous permet de voir la technologie que vos référents utilisent.
 
 ## Nouveaux utilisateurs par source {#newusersbysource}
 
@@ -36,7 +36,7 @@ Pour créer ce rapport dans le [Report Builder](../../tutorials/using-visual-rep
 1. Définissez la variable [!UICONTROL Time Period] à la période d&#39;enregistrement que vous souhaitez analyser.
 1. Définissez la variable [!UICONTROL Interval] au mois.
 1. Définir [!UICONTROL Group By] à la source d’acquisition (ou de référence) et sélectionnez les sources à inclure.
-1. Dans cet exemple, nous avons utilisé la méthode `stacked columns` [!UICONTROL chart type].
+1. Cet exemple utilise la méthode `stacked columns` [!UICONTROL chart type].
 
 Voici une présentation visuelle :
 
@@ -51,7 +51,7 @@ Pour créer ce rapport dans le Report Builder, ajoutez le **Chiffre d’affaires
 1. Définissez la variable [!UICONTROL Time Period] à la période que vous souhaitez analyser.
 1. Définissez la variable [!UICONTROL Interval] au mois.
    [!UICONTROL Group By] à la source d’acquisition (ou de référence) et sélectionnez les sources à inclure.
-1. Dans cet exemple, nous avons utilisé la méthode `line chart` type.
+1. Cet exemple utilise la méthode `line chart` type.
 
 Voici une présentation visuelle :
 
@@ -61,14 +61,14 @@ Cet exemple ne tient compte que des recettes sur la durée de vie, mais vous pou
 
 ## Valeur de commande moyenne par source d’utilisateur {#avgorderval}
 
-Pour mieux comprendre le montant d’argent dépensé par les utilisateurs d’une source d’acquisition spécifique, vous pouvez créer un rapport qui examine la valeur de leur commande moyenne. Vous pourrez ainsi déterminer si les utilisateurs acquis à partir d’une source spécifique dépensent plus par commande que les utilisateurs provenant d’une autre source.
+Pour mieux comprendre le montant d’argent dépensé par les utilisateurs d’une source d’acquisition spécifique, vous pouvez créer un rapport qui examine la valeur de leur commande moyenne. Cela vous permet de déterminer si les utilisateurs acquis à partir d’une source particulière dépensent plus par commande que les utilisateurs provenant d’une autre source.
 
 Pour créer ce rapport dans le Report Builder, ajoutez le **Valeur de commande moyenne** puis procédez comme suit :
 
 1. Définissez la variable [!UICONTROL Time Period] à la période d&#39;enregistrement que vous souhaitez analyser.
 1. Définissez la variable [!UICONTROL Time Interval] au mois.
 1. Définir [!UICONTROL Group By] à la source d’acquisition (ou de référence) et sélectionnez les sources à inclure.
-1. Dans cet exemple, nous avons utilisé la méthode **colonnes empilées** type de graphique.
+1. Cet exemple utilise la méthode **colonnes empilées** type de graphique.
 
 Voici une présentation visuelle :
 
@@ -76,14 +76,14 @@ Voici une présentation visuelle :
 
 ## Chiffre d’affaires total par date d’enregistrement de l’utilisateur et source {#revbyregdateandsource}
 
-L’analyse des recettes sur la durée de vie que nous avons effectuée plus tôt vous permet de consulter les recettes moyennes sur la durée de vie des utilisateurs provenant de sources différentes, mais qu’en est-il des recettes totales sur la durée de vie ? Ce rapport vous permet d’identifier le montant global des recettes générées par les utilisateurs enregistrés au cours d’une période spécifique et à partir d’une source spécifique.
+L’analyse des recettes sur la durée de vie qui a été traitée précédemment vous permet de consulter les recettes sur la durée de vie moyenne des utilisateurs provenant de sources différentes, mais qu’en est-il des recettes totales sur la durée de vie ? Ce rapport vous permet d’identifier le montant global des recettes générées par les utilisateurs enregistrés au cours d’une période et d’une source spécifiques.
 
 Pour créer ce rapport dans le Report Builder, ajoutez le `Revenue by user registration date` mesure. Si vous n’avez pas [créé cette mesure](../../data-user/reports/ess-manage-data-metrics.md) vous pouvez déjà le faire en répliquant la variable `Revenue` et de modifier la variable `time stamp` à l’utilisateur `creation date`. Après avoir ajouté la mesure, procédez comme suit :
 
 1. Définissez la variable [!UICONTROL Time Period] à la période d&#39;enregistrement que vous souhaitez analyser.
 1. Définissez la variable [!UICONTROL Time Interval] au mois.
 1. Définir [!UICONTROL Group By] à la source d’acquisition (ou de référence) et sélectionnez les sources à inclure.
-1. Dans cet exemple, nous avons utilisé la méthode `stacked columns` type de graphique.
+1. Cet exemple utilise la méthode `stacked columns` type de graphique.
 
 Voici une présentation visuelle :
 
@@ -91,7 +91,7 @@ Voici une présentation visuelle :
 
 ## Répétition des commandes par source d’utilisateur {#repeatordersbysource}
 
-Le rapport Valeur de commande moyenne vous indique, en moyenne, le montant que les utilisateurs acquis d’une source spécifique dépensent lors du placement d’une commande. Ce rapport, en revanche, ne vous indique pas si ces mêmes utilisateurs sont des clients réguliers. Mais avec les commandes répétées par les sources des utilisateurs, vous pouvez voir si les utilisateurs d’une source particulière effectuent plus ou moins des achats répétés.
+Le rapport Valeur de commande moyenne vous indique, en moyenne, le nombre d’utilisateurs acquis d’une source spécifique qui dépensent lors du placement d’une commande. Ce rapport, en revanche, ne vous indique pas si ces mêmes utilisateurs sont des clients réguliers. Mais avec les commandes répétées par les sources des utilisateurs, vous pouvez voir si les utilisateurs d’une source particulière effectuent plus ou moins des achats répétés.
 
 Pour créer ce rapport dans le [Report Builder](../../tutorials/using-visual-report-builder.md), ajoutez le **Nombre de commandes** puis procédez comme suit :
 
@@ -102,7 +102,7 @@ Pour créer ce rapport dans le [Report Builder](../../tutorials/using-visual-rep
    Numéro de commande de l’utilisateur supérieur à 1
 
 1. Définir [!UICONTROL Group By] à la source d’acquisition (ou de référence) et sélectionnez les sources à inclure.
-1. Dans cet exemple, nous avons utilisé la méthode `stacked columns` type de graphique.
+1. Cet exemple utilise la méthode `stacked columns` type de graphique.
 
 Voici une présentation visuelle :
 
@@ -111,7 +111,7 @@ Voici une présentation visuelle :
 
 ## Remplissage {#wrapup}
 
-Dans cet article, nous n&#39;avons abordé que quelques analyses que vous pouvez utiliser pour analyser la valeur de vos canaux d&#39;acquisition et marketing, mais ce n&#39;est que la partie visible de l&#39;iceberg. Si vous avez créé une analyse puissante que nous n&#39;avons pas décrite ici, laissez-nous vous expliquer ce que vous faites dans les commentaires.
+Cet article ne traite que de quelques analyses que vous pouvez utiliser pour analyser la valeur de vos canaux d’acquisition et marketing, mais ce n’est que la partie visible de l’iceberg.
 
 ## Associé {#related}
 

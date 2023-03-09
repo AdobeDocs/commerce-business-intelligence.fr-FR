@@ -2,7 +2,7 @@
 title: Création de résumés de courriers électroniques automatisés
 description: Découvrez comment créer des résumés d’email automatisés.
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Création de résumés de courriers électroniques automatisés
 
-Les résumés d’emails sont un puissant outil de communication que vous pouvez utiliser pour partager l’état et les tendances actuels de votre entreprise avec les principaux intervenants. Avec les résumés d’emails, vous pouvez :
+Les résumés d’emails sont un puissant outil de communication que vous pouvez utiliser pour partager l’état et les tendances de votre entreprise avec les principaux intervenants. Avec les résumés d’emails, vous pouvez :
 
 * Résumés graphiques des emails contenant des rapports
 * Inclure ou exclure l’auteur de résumé de l’email de la réception de l’email
@@ -32,7 +32,7 @@ Les résumés d’emails sont un puissant outil de communication que vous pouvez
 
 1. Dans le `Choose Content` , sélectionnez les rapports à inclure dans le résumé.
 
-   Vous pouvez sélectionner jusqu’à 10 rapports à votre disposition. Après avoir sélectionné un rapport, utilisez les icônes qui s&#39;affichent pour indiquer si vous souhaitez que ce rapport soit envoyé sous forme de tableau ou de graphique. Si vous avez enregistré le rapport sous forme numérique, vous pouvez uniquement l’envoyer sous forme numérique. Pour plus d’informations sur l’envoi d’un résumé d’email contenant un rapport avec des données obsolètes, voir [Gestion des paramètres de votre compte](../../administrator/account-management/managing-account-settings.md).
+   Vous pouvez sélectionner jusqu’à dix rapports que vous possédez. Après avoir sélectionné un rapport, utilisez les icônes qui s&#39;affichent pour indiquer si vous souhaitez que ce rapport soit envoyé sous forme de tableau ou de graphique. Si vous avez enregistré le rapport sous forme numérique, vous pouvez uniquement l’envoyer sous forme numérique. Pour plus d’informations sur l’envoi d’un résumé d’email contenant un rapport avec des données obsolètes, voir [Gestion des paramètres de votre compte](../../administrator/account-management/managing-account-settings.md).
 
    >[!NOTE]
    >

@@ -2,9 +2,9 @@
 title: Connexion à Mixpanel
 description: Découvrez comment analyser la manière dont les utilisateurs naviguent et utilisent vos sites web et applications.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navig
 
 ## Ouverture de la [!DNL Mixpanel] page des informations d’identification {#stepone}
 
-Commençons :
+Prise en main :
 
 1. Accédez au `Connections` page sous **[!DNL Manage Data** > **Connections]**.
 1. Cliquez sur **[!UICONTROL Add a New Source]**, situé sur le côté droit de l’écran, au-dessus de `Data Sources` table.
@@ -47,7 +47,7 @@ Si vous n’êtes pas connecté à votre [!DNL Mixpanel] mais, faites-le, puis p
 
 ![Récupération des informations d’identification de l’API Mixpanel](../../../assets/Mixpanel_API_creds.png)
 
-Gardez ceci ouvert - nous en avons besoin pour résumer ceci.
+Gardez ceci ouvert - vous en avez besoin pour terminer ceci.
 
 ## Saisissez votre [!DNL Mixpanel] Informations d’identification de l’API dans [!DNL MBI] {#stepthree}
 

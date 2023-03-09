@@ -2,9 +2,9 @@
 title: Connexion à Facebook Ads
 description: Découvrez comment analyser vos données de dépenses publicitaires et voir si votre argent est dépensé efficacement.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Connexion de vos données publicitaires Facebook à [!DNL MBI] est un processus 
 
 1. Pour ajouter la variable [!DNL Facebook] intégration à votre compte, accédez à la `Connections` page sous **[!UICONTROL Manage Data** > **Integrations]**.
 1. Cliquez sur **[!UICONTROL Add Integration]**, situé sur le côté droit de l’écran au-dessus des données `Sources` table.
-1. Cliquez sur le bouton [!DNL Facebook] icône . Cela affichera la variable [!DNL Facebook] page d’autorisation.
+1. Cliquez sur le bouton [!DNL Facebook] icône . Cette fenêtre affiche le [!DNL Facebook] page d’autorisation.
 1. Cliquez sur **[!UICONTROL Authorize]**.
 
 ## Autoriser [!DNL MBI] accéder à [!DNL Facebook Ads] data {#steptwo}
@@ -38,7 +38,7 @@ Après avoir cliqué sur **[!DNL Facebook Authorize]**, une petite fenêtre cont
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-Vous allez suivre une série d’étapes pour autoriser [!DNL MBI] pour accéder aux données de votre profil public, [!DNL Facebook Ads] et les statistiques connexes. Cliquez sur **[!UICONTROL OK]** sur ces étapes pour continuer.
+Suivez une série d’étapes pour autoriser [!DNL MBI] pour accéder aux données de votre profil public, [!DNL Facebook Ads] et les statistiques connexes. Cliquez sur **[!UICONTROL OK]** sur ces étapes pour continuer.
 
 ## Sélectionner [!DNL Facebook Ads] Comptes d’extraction de données {#stepthree}
 
@@ -50,7 +50,7 @@ Vous allez suivre une série d’étapes pour autoriser [!DNL MBI] pour accéder
 
    Si la connexion est établie, une *Connexion réussie !* s’affiche en haut de la page.
 
-## que va-t-il se passer ensuite ? {#next}
+## Quelle sera la suite ? {#next}
 
 Assurez-vous que vous effectuez le suivi [!DNL Facebook] campagnes dans [!DNL Google Analytics]. Cela permet de s’assurer que la variable `utm\_campaign` champ dans [!DNL Google Analytics] est correctement renseigné pour la variable [!DNL Facebook] campagnes.
 
@@ -60,7 +60,7 @@ Assurez-vous que vous effectuez le suivi [!DNL Facebook] campagnes dans [!DNL Go
 * [Connectez-vous à [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Suivi de la source de référence de commande via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Suivi de la source de référence des utilisateurs dans votre base de données](../../analysis/google-track-user-acq.md)
-* [Suivi des données utilisateur, navigateur et système d’exploitation dans votre base de données](../../analysis/track-usr-dev-browser.md)
+* [Suivi des données de l’appareil utilisateur, du navigateur et du système d’exploitation dans votre base de données](../../analysis/track-usr-dev-browser.md)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux](../../analysis/most-value-source-channel.md)
 * [Augmentation du retour sur investissement de vos campagnes publicitaires](../../analysis/roi-ad-camp.md)
 * [Comment [!DNL Google Analytics] Fonctionnement de l’attribution UTM ?](../../analysis/utm-attributes.md)

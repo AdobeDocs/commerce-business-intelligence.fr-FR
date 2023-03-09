@@ -2,7 +2,7 @@
 title: 'Google Analytics : suivi des données de l’appareil utilisateur et du navigateur dans votre base de données'
 description: Découvrez combien d’utilisateurs se connectent réellement via des appareils mobiles et comment cela affecte la valeur de durée de vie de ces utilisateurs.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Ces informations sont accessibles par votre serveur chaque fois qu’une demande
 
 ### Quand devriez-vous enregistrer ces données ?
 
-Nous vous recommandons d’ajouter un nouveau champ appelé `Platform` ou `User-Agent` à `Customers` et `Orders` des tables de base de données permettant de stocker ces informations chaque fois qu’un utilisateur est créé ou qu’une commande est passée. Si vous utilisez une base de données SQL, ce champ doit être une `VARCHAR(255)`. 
+Adobe vous recommande d’ajouter un nouveau champ appelé `Platform` ou `User-Agent` à `Customers` et `Orders` des tables de base de données permettant de stocker ces informations chaque fois qu’un utilisateur est créé ou qu’une commande est passée. Si vous utilisez une base de données SQL, ce champ doit être une `VARCHAR(255)`. 
 
 >[!NOTE]
 >

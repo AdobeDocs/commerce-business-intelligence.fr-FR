@@ -1,17 +1,21 @@
 ---
 title: Récence, fréquence, analyse monétaire (RFM)
-description: Découvrez comment configurer un tableau de bord qui vous permettra de segmenter vos clients selon leur récence, leur fréquence et leur classement monétaire.
+description: Découvrez comment configurer un tableau de bord qui vous permet de segmenter vos clients selon leur récence, leur fréquence et leur classement monétaire.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # Analyse RFM
 
-Dans cet article, nous vous montrons comment configurer un tableau de bord qui vous permettra de segmenter vos clients selon leur récence, leur fréquence et leur classement monétaire. L’analyse RFM est une technique marketing qui prend en compte les comportements des clients pour vous aider à déterminer la segmentation pour la diffusion. Il prend en compte trois aspects : Récence des achats récents d’un client dans votre boutique, fréquence d’achat sur vous et monétaire du montant dépensé par le client.
+Cet article explique comment configurer un tableau de bord qui vous permet de segmenter vos clients selon leur récence, leur fréquence et leur classement monétaire. L’analyse RFM est une technique marketing qui prend en compte les comportements des clients pour vous aider à déterminer la segmentation pour la diffusion. Il comporte trois aspects :
+
+* Récence des achats récemment réalisés par un client sur votre boutique
+* Fréquence d’achat des clients
+* Montant monétaire des dépenses du client
 
 ![](../../assets/blobid0.png)
 
@@ -19,9 +23,9 @@ L’analyse RFM ne peut être configurée que si vous disposez de la variable [!
 
 ## Prise en main
 
-Vous devez d’abord charger un fichier contenant une clé Principale dont la valeur est de 1. Cela permettra de créer certaines colonnes calculées nécessaires à l&#39;analyse.
+Vous devez d’abord charger un fichier contenant une clé Principale dont la valeur est de 1. Cela permet de créer certaines colonnes calculées nécessaires à l’analyse.
 
-Vous pouvez utiliser ces [article du centre d’aide](../importing-data/connecting-data/using-file-uploader.md) ainsi que l’image ci-dessous pour formater votre fichier.
+Vous pouvez utiliser [article du centre d’aide](../importing-data/connecting-data/using-file-uploader.md) et l’image ci-dessous pour formater votre fichier.
 
 ## Colonnes calculées
 
@@ -51,7 +55,7 @@ Colonnes à créer
 
    [!UICONTROL Type de données]: `Integer`
 
-* **Référence des nombres** (il s’agit du fichier que vous venez de charger avec le numéro &quot;1&quot;)
+* **Référence des nombres** (il s’agit du fichier que vous avez téléchargé avec le numéro &quot;1&quot;)
 * Nombre de clients
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` OU `customer_entity.(input)reference > Count Reference`. `Primary Key`
@@ -196,7 +200,7 @@ Aucune nouvelle mesure !
 
    [!UICONTROL Chart type]: `Table`
 
-* **Clients avec un score de récence de 5**
+* **Clients avec cinq scores de récence**
 * Mesure `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
@@ -214,7 +218,7 @@ Aucune nouvelle mesure !
 
    [!UICONTROL Chart type]: `Table`
 
-* **Clients avec 1 score de récence**
+* **Clients avec un score de récence**
 * Mesure `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
@@ -232,4 +236,4 @@ Aucune nouvelle mesure !
 
    [!UICONTROL Chart type]: `Table`
 
-Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’exemple de tableau de bord ci-dessus, mais les trois tableaux générés ne sont que des exemples des types de segmentation des clients que vous pouvez effectuer.
+Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus, mais les trois tableaux générés ne sont que des exemples des types de segmentation des clients que vous pouvez effectuer.

@@ -2,7 +2,7 @@
 title: Partage des tableaux de bord avec d’autres utilisateurs
 description: Découvrez comment partager des tableaux de bord avec d’autres utilisateurs.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Partage des tableaux de bord avec d’autres utilisateurs
 
-Le partage de tableaux de bord est un excellent moyen de maintenir votre équipe au courant et d’encourager la discussion collaborative. En créant et en partageant un tableau de bord central, vous pouvez fournir à votre équipe les informations dont elle a besoin tout en conservant le contrôle. [Nous vous recommandons](../../best-practices/share-dashboard-best-practice.md){ : target=&quot;_blank&quot;} que vous accordez `Edit` droits d’accès à quelques-uns pour minimiser les modifications accidentelles.
+Le partage de tableaux de bord est un excellent moyen de maintenir votre équipe au courant et d’encourager la discussion collaborative. En créant et en partageant un tableau de bord central, vous pouvez fournir à votre équipe les informations dont elle a besoin tout en conservant le contrôle. [Adobe recommande](../../best-practices/share-dashboard-best-practice.md){ : target=&quot;_blank&quot;} que vous accordez `Edit` droits d’accès à quelques-uns pour minimiser les modifications accidentelles.
 
 >[!NOTE]
 >

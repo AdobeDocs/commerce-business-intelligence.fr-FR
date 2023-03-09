@@ -2,9 +2,9 @@
 title: Rapports du centre d’aide pour Zendesk
 description: Découvrez les canaux de référence les plus précieux.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Cette option n’est disponible que pour les clients qui se trouvent sur la variable `Pro` planifiez et utilisez la nouvelle architecture. Vous utilisez la nouvelle architecture si vous avez le `Data Warehouse Views` section disponible après sélection `Manage Data` dans la barre d’outils principale.
 
-Consolidation de votre [!DNL Zendesk] les données de votre base de données transactionnelle sont un excellent moyen de mieux comprendre comment vos clients interagissent avec vos équipes de vente ou de succès client et quel type de clients utilisent votre plateforme d’assistance. Dans cet article, nous montrons comment configurer un tableau de bord pour obtenir des rapports granulaires sur votre [!DNL Zendesk] les performances et l’association avec vos clients transactionnels.
+Consolidation de votre [!DNL Zendesk] les données de votre base de données transactionnelle sont un excellent moyen de mieux comprendre comment vos clients interagissent avec vos équipes de vente ou de succès client. Il vous aide également à déterminer le type de clients qui utilisent votre plateforme d’assistance. Cet article explique comment configurer un tableau de bord pour obtenir des rapports détaillés sur votre [!DNL Zendesk] les performances et l’association avec vos clients transactionnels.
 
-Avant de commencer, vous souhaiterez connecter votre [[!DNL Zendesk]](../integrations/zendesk.md). Cette analyse contient [colonnes calculées avancées](../../data-warehouse-mgr/adv-calc-columns.md).
+Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrations/zendesk.md). Cette analyse contient [colonnes calculées avancées](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -272,7 +272,7 @@ Avant de commencer, vous souhaiterez connecter votre [[!DNL Zendesk]](../integra
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]Temps moyen/médian jusqu’à la première réponse**
-   * Billets comptés
+   * Billets comptabilisés
    * statut EN fermé, résolu
 
 * Dans le **`[Zendesk] tickets`** table

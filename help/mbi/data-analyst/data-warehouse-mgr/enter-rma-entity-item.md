@@ -1,10 +1,10 @@
 ---
 title: Table Enterprise_Rma_Item_Entity
-description: Découvrez comment analyser les informations sur un élément spécifique à partir d’un retour demandé.
+description: Découvrez comment analyser les informations relatives à un élément spécifique à partir d’un retour demandé.
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Chaque ligne du `enterprise_rma_item_entity` table (souvent appelée `magento_rm
 |---|---|
 | `entity\_id` | Identifiant unique du tableau. Chaque `entity\_id` représente un élément qui a été demandé pour renvoi. |
 | `rma\_entity\_id` | Clé étrangère associée à la variable `enterprise\_rma` table. |
-| `status` | État du retour de l’élément. Les valeurs comprennent &quot;reçu&quot;, &quot;en attente&quot;, &quot;autorisé&quot;, entre autres. Les valeurs de cet état ne correspondent pas nécessairement à la valeur de l’état global du retour. |
+| `status` | État du retour de l’élément. Les valeurs comprennent &quot;reçu&quot;, &quot;en attente&quot;, &quot;autorisé&quot;, entre autres. Les valeurs de cet état peuvent ne pas correspondre à la valeur de l’état global du retour. |
 | `qty\_requested` | Quantité que le client demande de retour. |
 | `qty\_approved` | La quantité validée pour le retour. |
-| `qty\_returned` | La quantité réellement renvoyée. |
+| `qty\_returned` | Quantité renvoyée. |
 | `order\_item\_id` | Clé étrangère associée à la variable `sales\_flat\_order\_item` table. |
 | `product\_sku` | Le sku en cours de retour. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Colonnes calculées courantes
 
@@ -38,9 +38,9 @@ Chaque ligne du `enterprise_rma_item_entity` table (souvent appelée `magento_rm
 |---|---|
 | `Return date\_requested` | Il s’agit de la date à laquelle le client a demandé le retour. |
 | `Item price` | Le prix de l’article. |
-| `Return item's total value (qty\_returned * price)` | Il s’agit de la valeur monétaire totale des éléments renvoyés. Elle sera utilisée pour calculer le montant total du retour sur la variable `enterprise\_rma` table. |
+| `Return item's total value (qty\_returned * price)` | Il s’agit de la valeur monétaire totale des éléments renvoyés. Elle sert à calculer le montant total du retour sur la variable `enterprise\_rma` table. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Mesures courantes
 
@@ -49,7 +49,7 @@ Chaque ligne du `enterprise_rma_item_entity` table (souvent appelée `magento_rm
 | `Number of items returned` | Nombre d’éléments renvoyés. | Colonne de l’opération : quantité renvoyée<br>Opération : Somme<br>Colonne Horodatage : Date de retour demandée |
 | `Returned items' total value` | Le montant monétaire renvoyé. | Colonne de l’opération : Valeur totale de l’élément de retour (quantité renvoyée * prix)<br>Opération : Somme<br>Colonne Horodatage : Date de retour demandée |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Connexions à d’autres tableaux
 

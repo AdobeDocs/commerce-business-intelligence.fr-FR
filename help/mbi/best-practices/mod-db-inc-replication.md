@@ -2,9 +2,9 @@
 title: Modification de la base de données pour la prise en charge de la réplication incrémentielle
 description: Découvrez comment modifier votre base de données pour prendre en charge la réplication incrémentielle.
 exl-id: c9a38892-6096-4eb5-8a53-35b8b7b083dc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Le `Modified At` , qui est la méthode de réplication la plus adaptée, utilise
 
 Si votre tableau ne comporte pas de `datetime` colonne, vous pouvez ajouter un index `modified at` colonne . Les valeurs nulles ne sont pas autorisées dans un `modified at` colonne . Vérifiez que la colonne est renseignée pour chaque ligne.
 
-Pour garantir la variable `Modified At` fonctionne comme prévu, vous ne pouvez pas supprimer de lignes du tableau. Vous devez plutôt marquer la ligne comme non valide en ajoutant une `deleted` au tableau. Cette colonne renverra une `1` si la ligne n’est pas valide et `0` dans le cas contraire. Vous pouvez ensuite utiliser cette colonne pour filtrer les lignes non valides lors de la création de mesures et de rapports.
+Pour garantir la variable `Modified At` fonctionne comme prévu, vous ne pouvez pas supprimer de lignes du tableau. Vous devez plutôt marquer la ligne comme non valide en ajoutant une `deleted` au tableau. Cette colonne renvoie une `1` si la ligne n’est pas valide et `0` dans le cas contraire. Vous pouvez ensuite utiliser cette colonne pour filtrer les lignes non valides lors de la création de mesures et de rapports.
 
 ## Modifications pour une clé Principal d’incrémentation automatique unique
 
@@ -32,4 +32,4 @@ N’oubliez pas que les tableaux utilisant cette méthode sont des colonnes simp
 
 ## Remplissage
 
-En apportant des modifications mineures à vos tableaux, vous pouvez tirer parti des méthodes de réplication incrémentielle plus rapides et plus efficaces. toutefois, si cela n’est toujours pas possible, vous pouvez tout de même prendre d’autres mesures pour [réduire le temps de mise à jour](../best-practices/reduce-update-cycle-time.md) et [optimiser votre base de données](../best-practices/opt-db-analysis.md).
+En apportant des modifications mineures à vos tableaux, vous pouvez tirer parti des méthodes de réplication incrémentielle plus rapides et plus efficaces. Cependant, si cela n’est pas possible, vous pouvez tout de même prendre d’autres mesures pour [réduire le temps de mise à jour](../best-practices/reduce-update-cycle-time.md) et [optimiser votre base de données](../best-practices/opt-db-analysis.md).

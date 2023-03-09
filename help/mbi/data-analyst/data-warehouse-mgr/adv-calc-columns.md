@@ -2,9 +2,9 @@
 title: Types de colonne calculés avancés
 description: Découvrez les principes de base de la plupart des cas d’utilisation des colonnes, mais vous souhaiterez peut-être que les colonnes calculées soient un peu plus complexes que ce que le Gestionnaire de Data Warehouse peut créer.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '900'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 De nombreuses analyses que vous pouvez tenter de créer impliquent l’utilisation d’une **nouvelle colonne** que vous voulez `group by` ou `filter by`. Le [Création de colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md) Ce tutoriel aborde les principes de base de la plupart des cas d’utilisation, mais vous souhaiterez peut-être que la colonne calculée soit un peu plus complexe que ce que le Gestionnaire de Data Warehouse peut créer.
 { : #top}
 
-Ces types de colonnes peuvent être créés par notre équipe d’analystes de Data Warehouse. Pour définir une nouvelle colonne calculée, renseignez les informations suivantes :
+Ces types de colonnes peuvent être créés par l’équipe Adobe des analystes de Data Warehouse. Pour définir une nouvelle colonne calculée, renseignez les informations suivantes :
 
 1. Le **`definition`** de cette colonne (y compris les entrées, les formules ou la mise en forme)
 1. Le **`table`** que vous souhaitez créer la colonne sur
@@ -31,7 +31,7 @@ Voici quelques exemples courants de colonnes calculées avancées que les utilis
 
 ## J’essaie de classer les événements de manière séquentielle. {#compareevents}
 
-Nous appelons cela un **numéro de l’événement** colonne calculée. Cela signifie que nous essayons de trouver la séquence dans laquelle les événements se sont produits pour un propriétaire d’événement particulier, comme un client ou un utilisateur.
+Cela s’appelle une **numéro de l’événement** colonne calculée. Cela signifie que vous essayez de trouver la séquence dans laquelle les événements se sont produits pour un propriétaire d’événement particulier, comme un client ou un utilisateur.
 
 Voici un exemple :
 
@@ -43,7 +43,7 @@ Voici un exemple :
 | 4 | `A` | 2015-01-02 13:00:00 | 3 |
 | 5 | `B` | 2015-01-03 13:00:00 | 2 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Une colonne calculée de numéro d’événement peut être utilisée pour observer les différences de comportement entre les premiers événements, les événements de répétition ou les énièmes événements de vos données.
 
@@ -61,7 +61,7 @@ Pour créer ce type de colonne calculée, vous devez savoir :
 
 ## J&#39;essaie de trouver le temps entre deux événements. {#twoevents}
 
-Nous appelons cela une `date difference` colonne calculée. Cela signifie que nous essayons de trouver l’heure entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement.
+Cela s’appelle une `date difference` colonne calculée. Cela signifie que vous essayez de trouver l’heure entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement.
 
 Voici un exemple :
 
@@ -70,7 +70,7 @@ Voici un exemple :
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Une colonne calculée de différence de date peut être utilisée pour créer une mesure qui calcule la durée moyenne ou médiane entre deux événements. Cliquez sur l’image ci-dessous pour découvrir comment la variable `Average time to first order` est utilisée dans un rapport.
 
@@ -85,7 +85,7 @@ Pour créer ce type de colonne calculée, vous devez savoir :
 
 ## J’essaie de comparer les valeurs d’événement séquentiel. {#sequence}
 
-Nous appelons cela une **comparaison d’événements séquentiels**. Cela signifie que nous essayons de trouver le delta entre une valeur (devise, nombre, horodatage) et la valeur correspondante pour l’événement précédent du propriétaire.
+Cela s’appelle une **comparaison d’événements séquentiels**. Cela signifie que vous essayez de trouver le delta entre une valeur (devise, nombre, horodatage) et la valeur correspondante pour l’événement précédent du propriétaire.
 
 Voici un exemple :
 
@@ -97,7 +97,7 @@ Voici un exemple :
 | 4 | `A` | 2015-01-02 13:00:00 | 126000 |
 | 5 | `B` | 2015-01-03 13:00:00 | 217800 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Une comparaison d’événements séquentiels peut être utilisée pour trouver la durée moyenne ou médiane entre chaque événement séquentiel. Cliquez sur l’image ci-dessous pour afficher la variable **Durée moyenne et moyenne entre les commandes** mesures en action.
 
@@ -122,7 +122,7 @@ Voici un exemple :
 | `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
 | `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Pour créer ce type de colonne calculée, vous devez savoir :
 
@@ -144,7 +144,7 @@ Voici un exemple :
 | `1` | 2015-01-01 00:00:00 | 2014-12-31 19:00:00 |
 | `2` | 2015-01-01 12:00:00 | 2015-01-01 07:00:00 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Pour créer ce type de colonne calculée, vous devez savoir :
 
@@ -157,7 +157,7 @@ Pour créer ce type de colonne calculée, vous devez savoir :
 
 ## J&#39;essaie de faire quelque chose qui n&#39;est pas listé ici. {#else}
 
-Ne vous inquiétez pas. Ce n&#39;est pas parce qu&#39;il n&#39;est pas répertorié ici que ce n&#39;est pas possible. Notre équipe d’analystes Data Warehouse vous a parlé.
+Ne vous inquiétez pas. Ce n&#39;est pas parce qu&#39;il n&#39;est pas répertorié ici que ce n&#39;est pas possible. L’équipe Adobe d’analystes Data Warehouse peut vous aider.
 
 Pour définir une nouvelle colonne calculée, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) avec des détails précis sur ce que vous souhaitez créer.
 

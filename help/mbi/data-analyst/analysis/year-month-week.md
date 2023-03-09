@@ -2,9 +2,9 @@
 title: Rapports annuels, mensuels et hebdomadaires
 description: Découvrez comment afficher facilement les tendances au fil du temps et modifier la perspective pour les périodes que vous souhaitez comparer.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,18 +15,18 @@ ht-degree: 0%
 >
 >Cet article contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la [nouvelle architecture](../../administrator/account-management/new-architecture.md) si vous disposez de la variable _Vues Data Warehouse_ section disponible après sélection `Manage Data` dans la barre d’outils principale.
 
-Le Créateur de rapports vous permet d’afficher facilement les tendances au fil du temps et de modifier la perspective pour les périodes que vous souhaitez comparer. Dans cet article, nous vous montrerons comment configurer un tableau de bord pour qu’il s’approfondisse afin que vous puissiez créer des rapports pour une analyse d’une semaine à l’autre, d’un mois à l’autre et d’une année à l’autre.
+Le Créateur de rapports vous permet d’afficher facilement les tendances au fil du temps et de modifier la perspective pour les périodes que vous souhaitez comparer. Cet article explique comment configurer un tableau de bord pour qu’il s’approfondisse afin que vous puissiez créer des rapports pour l’analyse d’une semaine à l’autre, d’un mois à l’autre et d’une année à l’autre.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Avant de commencer, vous souhaitez vous familiariser avec les perspectives plus en détail. [here](../../tutorials/using-visual-report-builder.md) ainsi que des options d’heure indépendantes [here](../../tutorials/time-options-visual-rpt-bldr.md).
+Avant de commencer, vous souhaitez vous familiariser avec les perspectives plus en détail. [here](../../tutorials/using-visual-report-builder.md) et options d’heure indépendantes [here](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Colonnes calculées
 
 * **`Sales_flat_order`** table
-* **Architecture originale :** les colonnes ci-dessous seront créées par un analyste dans le cadre de votre `[YoY WoW MoM ANALYSIS]` ticket
+* **Architecture originale :** les colonnes ci-dessous sont créées par un analyste dans le cadre de votre `[YoY WoW MoM ANALYSIS]` ticket
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
@@ -79,7 +79,7 @@ Aucun.
 
 * Mesure `A`: Ce mois*
 * Mesure `B`: Mois dernier*
-* [!UICONTROL Time period]: Il y a 1 mois à 0 mois
+* [!UICONTROL Time period]: il y a un mois à 0 mois
 * 
    [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
@@ -120,4 +120,4 @@ Aucun.
 * 
    [!UICONTROL Chart Type]: `Line`
 
-Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’image en haut de cette page.
+Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de cette page.

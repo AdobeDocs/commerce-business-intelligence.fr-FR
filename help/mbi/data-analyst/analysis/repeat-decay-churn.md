@@ -2,9 +2,9 @@
 title: Analyse de la décroissance et de la perte de clientèle des répétitions
 description: Découvrez et comprenez l’écart de temps entre les commandes et le moment où les clients sont censés se produire.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -35,25 +35,25 @@ Cette mesure indique la probabilité qu’un utilisateur commande à nouveau, é
 
 Selon votre modèle d’entreprise, la probabilité de commandes répétées peut diminuer immédiatement après qu’un client a passé une commande et continuer à diminuer au cours des mois suivants ou elle peut démontrer des variations et des pics saisonniers.
 
-Dans les deux cas, comprendre quel pourcentage de vos clients sont censés effectuer des achats répétés et comment ces tendances au fil du temps vous permettent de cibler vos clients à des intervalles critiques afin d’optimiser la probabilité d’un achat répété. Ainsi, lorsque la probabilité d’achat répété est en baisse, vous pouvez choisir un moment pour identifier un client comme ayant été généré et passer de la rétention à la réactivation.
+Comprendre le pourcentage de clients qui sont censés effectuer des achats répétés (et la manière dont cette tendance évolue au fil du temps) vous permet de cibler vos clients à intervalles réguliers, afin d’optimiser la probabilité d’un achat répété. Ainsi, lorsque la probabilité d’achat répété est en baisse, vous pouvez choisir un moment pour identifier un client comme ayant été généré et passer de la rétention à la réactivation.
 
 ## Exemple d&#39;aujourd&#39;hui
 
-Observez la probabilité de récidive pour une activité classique d’e-commerce.
+Examinez la diminution de probabilité de répétition pour une activité de commerce électronique classique.
 
 ![Probabilité initiale de répétition de l’ordre probabilité de répétition de l’ordre donnée des mois depuis l’ordre.](../../assets/Order_probability_reports.png)
 
 ### Probabilité initiale de l’ordre de répétition
 
-Dans cet exemple, la probabilité initiale de répétition de l’ordre - ou la probabilité qu’une commande soit suivie d’une autre commande - est de 60 %. Cela signifie que 60 % de toutes les commandes passées avec cette entreprise sont suivies d’une commande ultérieure.
+Dans cet exemple, la probabilité initiale de commande répétée - ou la probabilité qu’un client effectue un achat répété - est de 60 %. Cela signifie que 60 % de toutes les commandes passées avec cette activité sont suivies d’une commande ultérieure.
 
 ### Probabilité de répétition de l’ordre exprimée en mois depuis la commande
 
-Ce rapport présente la probabilité qu’un client commande à nouveau, étant donné que plusieurs mois se sont écoulés depuis sa dernière commande. Bien qu’il n’existe aucune définition unique du seuil de perte de clientèle dans ce rapport, nous vous recommandons de définir la perte de clientèle comme le point où la probabilité de décomposition dépasse la valeur qui est la moitié du taux de probabilité de répétition initial.
+Ce rapport présente la probabilité qu’un client commande à nouveau, étant donné que certains mois se sont écoulés depuis sa dernière commande. Bien qu’il n’existe aucune définition unique du seuil de perte de clientèle dans ce rapport, Adobe recommande de définir la perte de clientèle comme le point où la probabilité de perte de clientèle dépasse la valeur qui est la moitié du taux de probabilité de répétition initial.
 
-Comme le taux de probabilité de répétition initial de cet exemple est de 60 %, la date de perte serait l’heure à laquelle la probabilité de répétition de l’ordre chute en dessous de 60 %/2 = 30 %, ou à environ 6 mois. Sur les 60% des commandes qui seront suivies d&#39;une autre commande, la moitié d&#39;entre elles ont été passées dans les 6 premiers mois.
+Comme le taux de probabilité de répétition initial de cet exemple est de 60 %, la date de perte serait l’heure à laquelle la probabilité de répétition de l’ordre chute en dessous de 60 %/2 = 30 %, ou à environ 6 mois. Sur les 60% des commandes qui devaient être suivies d&#39;une autre commande, la moitié d&#39;entre elles ont été passées dans les 6 premiers mois.
 
-Autrement dit, si un client devait passer une commande de relance, il est plus probable qu’il l’ait fait dans les 6 mois suivant sa dernière commande qu’après le 6 mois. Si un client n’a pas effectué ses achats au bout de 6 mois, une campagne de réactivation doit être lancée pour le rappeler.
+Autrement dit, si un client devait passer une commande de relance, il est plus probable qu’il l’ait fait dans les six mois suivant sa dernière commande qu’après le délai de six mois. Si un client n’a pas effectué ses achats au bout de six mois, une campagne de réactivation doit être lancée pour le rappeler.
 
 Selon votre modèle d’entreprise, vous pouvez choisir un seuil différent, comme le point où la probabilité de l’ordre de répétition chute en dessous de 50 % ou 10 %. Si vos connaissances internes suggèrent un nombre différent, alors vous devriez l&#39;utiliser par tous les moyens !
 
@@ -61,7 +61,7 @@ En fin de compte, l’objectif est de sélectionner le seuil où il est logique 
 
 ## Quelles questions dois-je considérer ?
 
-Pour vous aider à comprendre la probabilité de répétition d’ordre telle qu’elle s’applique à votre entreprise, nous vous suggérons de prendre en compte ces questions lorsque vous explorez vos propres données :
+Pour vous aider à comprendre la probabilité de répétition d’ordre telle qu’elle s’applique à votre entreprise, Adobe vous suggère de prendre en compte ces questions lorsque vous explorez vos propres données :
 
 * La probabilité initiale de l’ordre de répétition est-elle attendue ? Si ce n&#39;est pas le cas, pourquoi pensez-vous qu&#39;elle devrait être plus ou moins élevée ?
 * Existe-t-il des baisses importantes de la probabilité de répétition de l’ordre pour des mois spécifiques depuis le dernier ordre ? Si tel est le cas, ces modifications sont-elles attendues ?
@@ -76,7 +76,7 @@ Après avoir créé l’analyse ci-dessus et déterminé un seuil de perte de cl
 
 Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Vous voulez en savoir plus ? Consultez ce tutoriel pour découvrir le comportement d’achat de durée de vie des cohortes de clients en fonction de produits spécifiques qu’ils ont achetés.
 
-Cette bonne pratique est fournie par [!DNL MBI] Data Analysis Services (DAS). Nous sommes impatients de répondre à toutes vos questions spécifiques ! [Contacter le support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour plus d’informations.
+Cette bonne pratique est fournie par [!DNL MBI] Data Analysis Services (DAS). [Contacter le support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour plus d’informations.
 
 ### Associé
 

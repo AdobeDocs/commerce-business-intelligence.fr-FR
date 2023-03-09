@@ -2,27 +2,27 @@
 title: Analyse du comportement d’achat des clients
 description: Découvrez comment analyser le comportement de rachat des clients.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
 
 # Comportement de rachat des clients
 
-Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Dans cet article, nous explorons des analyses qui peuvent vous aider à répondre aux questions suivantes :
+Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Cet article explore les analyses qui peuvent vous aider à répondre aux questions suivantes :
 
 Parmi les clients qui achètent une *élément spécifique*,
 
 * Quelle est la probabilité qu&#39;ils effectuent un autre achat ?
-* Combien de temps leur faudra-t-il pour faire un autre achat ?
+* Combien de temps leur faut-il pour faire un autre achat ?
 * Quel est le nombre moyen de commandes passées par les clients à court/long terme ?
 * Quelles sont les recettes moyennes à court/long terme générées par les clients ?
 
 ## Mesures recommandées
 
-Lors de la création d&#39;analyses de l&#39;activité de réachat des clients, il est recommandé d&#39;utiliser les mesures suivantes :
+Lors de la création d’analyses de l’activité de réachat des clients, Adobe recommande d’utiliser les mesures suivantes :
 
 ### Probabilité de répétition de l’ordre
 
@@ -42,7 +42,7 @@ Cette mesure indique la fréquence de commande du client ou le temps nécessaire
 
 ## Exemple d’aujourd’hui : produits du café
 
-En gardant à l’esprit les mesures ci-dessus, examinons un exemple de produits à base de café.
+En gardant à l’esprit les mesures ci-dessus, prenez un exemple concernant les produits à base de café.
 
 | **Nom du produit** | **Probabilité de répétition de l’ordre** | **Nombre moyen de commandes pendant la durée de vie** | **Chiffre d’affaires moyen de la durée de vie** | **Temps moyen jusqu’à la commande suivante** |
 |-----|-----|-----|-----|-----|
@@ -50,9 +50,9 @@ En gardant à l’esprit les mesures ci-dessus, examinons un exemple de produits
 | Capsules de café | 93.82% | 8.68 | $479.98 | 63,48 jours |
 | Les fèves de café | 41.92% | 6.07 | $99.82 | 27,31 jours |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Maintenant que nous avons nos données, regardons ce que cela peut signifier pour chacune de nos mesures.
+Maintenant que vous disposez de vos données, regardez ce que cela peut signifier pour chacune de vos mesures.
 
 ### Probabilité de répétition de l’ordre
 
@@ -62,7 +62,7 @@ Comme les clients qui achètent le brasseur s&#39;engagent à acheter à l&#39;a
 
 ### Durée de vie moyenne des commandes
 
-Sur la base des données ci-dessus, nous pouvons constater que les personnes qui achètent le brasseur ou les gélules ont fait plus d&#39;achats au cours de leur vie, en moyenne, que les clients qui ont acheté des grains de café.
+D&#39;après les données ci-dessus, vous pouvez constater que les personnes qui achètent le brasseur ou les gélules ont fait plus d&#39;achats au cours de leur vie, en moyenne, par rapport aux clients qui ont acheté des grains de café.
 
 ### Chiffre d’affaires moyen des clients
 
@@ -70,14 +70,14 @@ Les clients qui achètent le brasseur ont les recettes de durée de vie moyennes
 
 ### Temps jusqu’à la commande suivante
 
-Parmi les clients qui ont acheté des capsules de café, la moitié font une commande répétée dans environ 2 mois. Cependant, parmi les clients qui ont acheté des grains de café, la moitié passent une commande renouvelée dans environ un mois. Cela peut être dû au fait que les personnes qui commandent des capsules (1) ne boivent pas autant de café, ou (2) passent des commandes en bloc (par exemple, en achetant 2 mois de café dans une seule commande).
+Parmi les clients qui ont acheté des capsules de café, la moitié font une commande répétée dans environ deux mois. Cependant, parmi les clients qui ont acheté des grains de café, la moitié passent une commande renouvelée en un mois environ. Cela peut être dû au fait que les personnes qui commandent des capsules (1) ne boivent pas autant de café, ou (2) passent des commandes en bloc (par exemple, en achetant en une seule commande pour deux mois de café).
 
 ## Quelles autres analyses puis-je construire ?
 
-En utilisant les mesures décrites dans cet article, vous pouvez également créer d’autres analyses de réachat utiles. Par exemple, nous pouvons également voir comment les clients rachètent **le même élément ;** - par exemple, s’ils achètent des recharges sur une base régulière. Les capsules et les haricots peuvent être achetés régulièrement, mais il serait inattendu que les clients effectuent des achats répétés du brasseur de café. Si votre entreprise se concentre sur les rechargements ou le redémarrage, cette analyse serait extrêmement utile.
+En utilisant les mesures décrites dans cet article, vous pouvez également créer d’autres analyses de réachat utiles. Par exemple, vous pouvez également voir comment les clients effectuent un rachat **le même élément ;** - par exemple, s’ils achètent des renforts régulièrement. Les capsules et les haricots peuvent être achetés régulièrement, mais il serait inattendu que les clients effectuent des achats répétés du brasseur de café. Si votre entreprise se concentre sur les rechargements ou le redémarrage, cette analyse serait utile.
 
 Outre l’analyse du comportement de réachat de vos clients, vous pouvez également créer des analyses portant sur la fidélité de vos clients. Envisagez d’analyser les schémas de perte de clientèle : où vos clients quittent votre site et ne reviennent pas ? À quelle vitesse cela se produit-il ?
 
-Une fois que vous avez identifié les raisons de l’attrition, vous pouvez utiliser votre analyse pour créer une `reactivation` campaign. Grâce à ces données, vous pouvez identifier les utilisateurs devenus inactifs, la durée écoulée depuis leur dernière visite, leur dernier achat, etc. Vous pourrez ainsi prendre des décisions pratiques qui inciteront vos clients à revenir.
+Une fois que vous avez identifié les raisons de l’attrition, vous pouvez utiliser votre analyse pour créer une `reactivation` campaign. Grâce à ces données, vous pouvez identifier les utilisateurs devenus inactifs, la durée écoulée depuis leur dernière visite, le dernier achat effectué, etc. Cela vous permet de prendre des décisions pratiques qui incitent vos clients à revenir.
 
 Pour obtenir de l’aide sur l’analyse, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

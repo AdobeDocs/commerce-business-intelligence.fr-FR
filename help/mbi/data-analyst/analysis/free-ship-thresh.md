@@ -1,10 +1,10 @@
 ---
 title: Seuil de livraison gratuit
-description: Découvrez comment configurer un tableau de bord qui suivra les performances de votre seuil de livraison gratuite.
+description: Découvrez comment configurer un tableau de bord qui suit les performances de votre seuil de livraison gratuite.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Cet article contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. La nouvelle architecture s’affiche si la section &quot;Data Warehouse Views&quot; est disponible après avoir sélectionné &quot;Manage Data&quot; (Gérer les données) dans la barre d’outils principale.
 
-Dans cet article, nous montrons comment configurer un tableau de bord qui suivra les performances de votre seuil de livraison gratuite. Ce tableau de bord, illustré ci-dessous, est un excellent moyen de tester A/B deux seuils d’expédition libres différents. Par exemple, votre société peut ne pas savoir si vous devez proposer la livraison gratuite à 50 ou 100 $. Vous devez effectuer un test A/B de deux sous-ensembles aléatoires de vos clients et effectuer l’analyse dans la section [!DNL MBI].
+Cet article explique comment configurer un tableau de bord qui suit les performances de votre seuil de livraison gratuite. Ce tableau de bord, illustré ci-dessous, est un excellent moyen de tester A/B deux seuils de livraison gratuits. Par exemple, votre société peut ne pas savoir si vous devez proposer la livraison gratuite à 50 ou 100 $. Vous devez effectuer un test A/B de deux sous-ensembles aléatoires de vos clients et effectuer l’analyse dans la section [!DNL MBI].
 
 Avant de commencer, vous souhaitez identifier deux périodes distinctes au cours desquelles vous disposez de valeurs différentes pour le seuil de livraison gratuite de votre magasin.
 
@@ -25,17 +25,17 @@ Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv
 
 ## Colonnes calculées
 
-Si vous utilisez l’architecture d’origine (par exemple, si vous ne disposez pas de la variable `Data Warehouse Views` sous l’option `Manage Data` ), contactez notre équipe d’assistance pour créer les colonnes ci-dessous. Sur la nouvelle architecture, ces colonnes peuvent être créées à partir du `Manage Data > Data Warehouse` page. Vous trouverez ci-dessous des instructions détaillées.
+Si vous utilisez l’architecture d’origine (par exemple, si vous ne disposez pas de la variable `Data Warehouse Views` sous l’option `Manage Data` ), vous souhaitez contacter l’équipe d’assistance pour créer les colonnes ci-dessous. Sur la nouvelle architecture, ces colonnes peuvent être créées à partir du `Manage Data > Data Warehouse` page. Vous trouverez ci-dessous des instructions détaillées.
 
 * **`sales_flat_order`** table
    * Ce calcul crée des intervalles par incréments par rapport aux tailles de panier standard. Cela peut être compris entre 5, 10, 50 et 100.
 
-* **`Order subtotal (buckets)`** Architecture originale : sera créé par un analyste dans le cadre de votre `[FREE SHIPPING ANALYSIS]` ticket
+* **`Order subtotal (buckets)`** Architecture originale : créé par un analyste dans le cadre de votre `[FREE SHIPPING ANALYSIS]` ticket
 * **`Order subtotal (buckets)`** Nouvelle architecture :
    * Comme mentionné ci-dessus, ce calcul crée des intervalles par incréments par rapport aux tailles de panier standard. Si vous disposez d’une colonne de sous-total native, telle que `base_subtotal`, qui peut être utilisé comme base de cette nouvelle colonne. Dans le cas contraire, il peut s’agir d’une colonne calculée qui exclut les frais d’expédition et les remises des recettes.
    >[!NOTE]
    >
-   >Les tailles de &quot;compartiment&quot; dépendent de ce qui vous convient en tant que client. Vous pouvez commencer par votre `average order value` et créer un certain nombre de compartiments inférieurs ou supérieurs à cette quantité. Lorsque vous regardez le calcul ci-dessous, vous verrez comment copier facilement une partie de la requête, la modifier et créer des compartiments supplémentaires. L’exemple est effectué par incréments de 50.
+   >Les tailles de &quot;compartiment&quot; dépendent de ce qui vous convient en tant que client. Vous pouvez commencer par votre `average order value` et créer des intervalles inférieurs ou supérieurs à cette quantité. Lorsque vous regardez le calcul ci-dessous, vous pouvez facilement copier une partie de la requête, la modifier et créer des intervalles supplémentaires. L’exemple est effectué par incréments de 50.
 
    * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`ou `calculated column`, `Datatype`: `Integer`
    * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
@@ -137,4 +137,4 @@ Aucune nouvelle mesure!!!
 
 Répétez les étapes et les rapports ci-dessus pour l’expédition B et la période avec la règle d’expédition B.
 
-Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat final peut ressembler à l’image en haut de cette page.
+Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de cette page.

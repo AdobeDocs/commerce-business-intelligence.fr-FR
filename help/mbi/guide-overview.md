@@ -5,9 +5,9 @@ breadcrumb-title: Présentation du guide
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -34,15 +34,15 @@ Outre les workflows basés sur les rôles ci-dessus, ce guide contient égalemen
 
 ## Accès à l’aide
 
-Accédez à notre équipe d’assistance si vous avez des questions ou si vous souhaitez profiter de certains de nos services professionnels ou si vous rencontrez des problèmes avec notre compte et souhaitez découvrir les ressources disponibles pour vous aider à résoudre le problème.
+Contactez l’équipe d’assistance si vous avez des questions, si vous souhaitez profiter de certains de vos services professionnels ou si vous rencontrez des problèmes avec votre compte.
 
 ### Stratégies de service
 
-Voir [liste des services proposés par notre équipe d’assistance clientèle](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Voir [liste des services fournis par l’équipe d’assistance clientèle](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Envoi d’un ticket d’assistance
 
-Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter notre équipe d’assistance, nous vous demandons d’utiliser notre [instructions relatives aux tickets d’assistance] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
+Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter l’équipe d’assistance, Adobe vous demande d’utiliser la variable [instructions relatives aux tickets d’assistance] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
 
 ## Documentation disponible
 

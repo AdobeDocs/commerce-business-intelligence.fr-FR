@@ -2,16 +2,16 @@
 title: Définition d’un tableau de bord par défaut
 description: Découvrez comment définir un tableau de bord par défaut.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '64'
 ht-degree: 0%
 
 ---
 
 # Définition d’un tableau de bord par défaut
 
-Le tableau de bord par défaut est le premier tableau de bord qui s’affiche à l’ouverture [!DNL MBI].
+Le tableau de bord par défaut est le premier tableau de bord que vous voyez à l’ouverture. [!DNL MBI].
 
 1. Dans le tableau de bord, cliquez sur **[!UICONTROL Dashboard Options]** situé en haut de l’écran.
 

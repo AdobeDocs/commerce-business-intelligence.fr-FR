@@ -2,16 +2,16 @@
 title: Formatage et importation de données eCommerce
 description: Découvrez les formats de données idéaux à utiliser pour le transfert de données eCommerce.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Formatage et import de données
 
-Si vous utilisez une intégration qui n’est actuellement pas prise en charge par [!DNL MBI], vous pouvez toujours utiliser la variable [Fonction de téléchargement de fichier](using-file-uploader.md) pour importer vos données dans votre entrepôt de données. Dans cet article, nous examinons les formats de données idéaux à utiliser pour le transfert de données eCommerce.
+Si vous utilisez une intégration qui n’est actuellement pas prise en charge par [!DNL MBI], vous pouvez toujours utiliser la variable [Fonction de téléchargement de fichier](using-file-uploader.md) pour intégrer vos données dans votre Data Warehouse. Cet article couvre les formats de données idéaux à utiliser pour le transfert de données eCommerce.
 
 ## `Orders` table
 
@@ -23,12 +23,12 @@ Le `orders` La table doit contenir une ligne pour chaque transaction effectuée 
 | `Customer` | Le client qui a passé la commande. |
 | `Order total` | Total de la commande. Il peut s’agir d’une colonne basée sur des calculs, dans laquelle les valeurs d’autres colonnes, telles que le sous-total et l’expédition, constituent le total de cette colonne. |
 | `Currency` | Devise dans laquelle la commande a été payée. Inclure si nécessaire. |
-| ` Order status` | État de la commande, tel que `In Progress`, `Refunded`ou `Complete`. La valeur de cette colonne risque de changer (si elle n’est pas terminée). Les données nouvelles et mises à jour peuvent être importées à l’aide de la variable [Fonction d’ajout de données](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) sur le `File Uploads` page. |
+| ` Order status` | État de la commande, tel que `In Progress`, `Refunded`ou `Complete`. La valeur de cette colonne change (si elle n’est pas terminée). Les données nouvelles et mises à jour peuvent être importées à l’aide de la variable [Fonction d’ajout de données](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) sur le `File Uploads` page. |
 | `Acquisition/marketing channel` | Canal d’acquisition ou marketing duquel le client qui a passé la commande a été référencé. |
 | `Order datetime` | Date et heure de création de la commande. |
 | `Order updated at` | Date et heure de la dernière modification de l’enregistrement de commande. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## `Order detail/items` table {#itemstable}
 

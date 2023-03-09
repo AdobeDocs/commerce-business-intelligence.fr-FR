@@ -1,10 +1,10 @@
 ---
 title: Gestion des dimensions de données
-description: Découvrez comment les données sont générées, ce qui entraîne exactement l’insertion d’une nouvelle ligne dans l’un des Core Commerce, comment les actions telles que l’achat ou la création d’un compte sont-elles enregistrées dans la base de données Commerce ?
+description: Découvrez ce qu’est une dimension et l’utiliser pour filtrer ou segmenter les graphiques en fonction d’une mesure.
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Pour supprimer une ou plusieurs dimensions de plusieurs mesures :
 
 >[!NOTE]
 >
->Toute dimension dont vous souhaitez filtrer ou regrouper les éléments doit déjà faire l’objet d’un suivi dans [!DNL MBI]. Si vous ne trouvez pas la dimension souhaitée, il se peut que nous devions commencer le suivi d’une nouvelle colonne de données dans votre base de données via l’événement [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
+>Toute dimension dont vous souhaitez filtrer ou regrouper les éléments doit déjà faire l’objet d’un suivi dans [!DNL MBI]. Si vous ne trouvez pas la dimension souhaitée, vous devrez peut-être commencer le suivi d’une nouvelle colonne de données dans votre base de données via la variable [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
 
 
 **Pour supprimer une ou plusieurs dimensions d’une mesure :**
@@ -76,7 +76,7 @@ Pour supprimer une ou plusieurs dimensions de plusieurs mesures :
 
 >[!NOTE]
 >
->Même après la suppression d’une dimension, elle existe toujours sous la forme d’une colonne sur votre table dans l’entrepôt de données. Vous pouvez la réajouter à n’importe quelle mesure et créer de nouvelles mesures à l’aide de ces dimensions. Pour supprimer la colonne de données, une dimension correspond à [!DNL MBI], il vous suffit d’annuler le suivi de la colonne de données via l’événement [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
+>Même après la suppression d’une dimension, elle existe toujours sous la forme d’une colonne sur votre table dans votre Data Warehouse. Vous pouvez la réajouter à n’importe quelle mesure et créer de nouvelles mesures à l’aide de ces dimensions. Pour supprimer la colonne de données à partir de laquelle correspond une dimension [!DNL MBI], il vous suffit d’annuler le suivi de la colonne de données via l’événement [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
 
 ## Documentation connexe
 

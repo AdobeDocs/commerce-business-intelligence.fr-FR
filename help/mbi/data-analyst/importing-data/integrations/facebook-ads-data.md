@@ -1,10 +1,10 @@
 ---
 title: Données Facebook Ads attendues
-description: Découvrez un bref aperçu des tables que nous vous recommandons de synchroniser avec votre entrepôt de données
+description: Découvrez un bref aperçu des tables dont la synchronisation avec votre Data Warehouse est recommandée.
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -15,27 +15,27 @@ ht-degree: 0%
 
 Après avoir [connecté à [!DNL Facebook Ads] account](../integrations/facebook-ads.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
 
-Dans cet article, nous vous donnons un bref aperçu des tables que nous vous recommandons de synchroniser avec votre entrepôt de données. Il ne s’agit pas d’une liste complète, car il existe plusieurs sous-tables. Nous ne faisons que mettre en surbrillance les tableaux principaux.
+Cet article présente un bref aperçu des tables que l’Adobe vous recommande de synchroniser avec votre Data Warehouse. Il ne s’agit pas d’une liste complète, car il existe plusieurs sous-tables. Il met uniquement en surbrillance les tableaux principaux.
 
 ## Tables de campagnes publicitaires principales
 
 Ces tableaux contiennent des données sur les composants de campagne publicitaire principaux.
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcampaign/)
+### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
 Ce tableau est le tableau principal des campagnes d’une [!DNL Facebook Ads] compte . Les colonnes incluent `campaign id`, `name`, `status (active/paused)`, `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-Cet enregistrement de table est la table principale de [!DNL Facebook Ads] Définit dans un [!DNL Facebook Ads] compte . Les colonnes comprennent la publicité `Campaign id/name` le jeu d’annonces auquel appartient, les informations de budget, de type d’offre, de planification et de ciblage des audiences.
+Cet enregistrement de tableau est le tableau principal de [!DNL Facebook Ads] Définit dans un [!DNL Facebook Ads] compte . Les colonnes comprennent la publicité `Campaign id/name` le jeu d’annonces auquel appartient, le budget, le type d’offre, la planification et les informations de ciblage d’audience.
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adgroup/)
+### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-Ce tableau enregistre toutes les publicités d’une [!DNL Facebook Ads] compte . Les colonnes comprennent les informations sur la publicité, y compris la visionneuse de publicités et la campagne publicitaire à laquelle elle appartient, l’enchère publicitaire, le ciblage publicitaire et la référence à un élément créatif spécifique (image/texte) utilisé par la publicité.
+Ce tableau enregistre toutes les publicités d’une [!DNL Facebook Ads] compte . Les colonnes comprennent les informations sur la publicité, notamment la visionneuse de publicités et la campagne publicitaire auxquelles elle appartient, l’offre publicitaire, le ciblage publicitaire et la référence à un élément créatif spécifique (image/texte) utilisé par la publicité.
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcreative/)
+### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
-Ce tableau enregistre tous les éléments créatifs utilisés dans [!DNL Facebook Ads]. Cela inclut le nom créatif, la description et les URL d’image appropriées, le cas échéant.
+Ce tableau enregistre les créations utilisées dans [!DNL Facebook Ads]. Les créatifs incluent le nom, la description et les URL d’image pertinentes, le cas échéant.
 
 ## Tableaux d’opération segmentés
 

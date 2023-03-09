@@ -2,9 +2,9 @@
 title: Tableaux de commerce courants
 description: Découvrez certaines des tables les plus courantes qui [!DNL MBI] les clients utilisent .
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ Vous trouverez ci-dessous une liste des tables les plus courantes qui [!DNL MBI]
 | `catalog_category_product` | Chaque ligne du `catalog_category_product` Le tableau répertorie une combinaison d’un produit et d’une catégorie. Par conséquent, un produit donné peut exister sur ce tableau plusieurs fois avec différentes catégories, et une catégorie donnée peut exister sur ce tableau plusieurs fois associée à différents produits. Cette table indexe la variable `catalog_category_entity` (qui contient les détails au niveau de la catégorie) et la variable `catalog_product_entity` table (contenant les détails au niveau du produit). |
 | `catalog_product_entity` | Chaque ligne du `catalog_product_entity` représente un produit spécifique. Cela inclut le moment où ce produit a été créé dans votre compte Commerce et son SKU. |
 | `customer_entity` | Chaque ligne du [`customer_entity`](../data-warehouse-mgr/cust-ent-table.md) représente un utilisateur enregistré sur votre site web. Des informations de base au niveau du client, telles que sa date d’enregistrement et son adresse électronique, sont disponibles sur cette table. |
-| `quote` | Chaque ligne du [`quote`](../data-warehouse-mgr/sales-flat-quote-table.md) représente un panier créé lors du processus de passage en caisse, que ce panier ait été converti ou non en commande. En raison de la taille potentielle de ce tableau, nous vous recommandons de supprimer régulièrement les enregistrements si certains critères sont respectés, par exemple s’il existe des paniers non convertis de plus de 60 jours. |
-| `quote_item` | Chaque ligne du [`quote_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) représente un élément ajouté à un panier, que le panier ait été converti ou non en commande. En raison de la taille potentielle de ce tableau, nous vous recommandons de supprimer régulièrement les enregistrements si certains critères sont respectés, par exemple s’il existe des paniers non convertis de plus de 60 jours. |
+| `quote` | Chaque ligne du [`quote`](../data-warehouse-mgr/sales-flat-quote-table.md) représente un panier créé lors du processus de passage en caisse, que ce panier ait été converti ou non en commande. En raison de la taille potentielle de ce tableau, Adobe vous recommande de supprimer régulièrement les enregistrements si certains critères sont remplis, par exemple s’il existe des paniers non convertis de plus de 60 jours. |
+| `quote_item` | Chaque ligne du [`quote_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) représente un élément ajouté à un panier, que le panier ait finalement été converti en commande. En raison de la taille potentielle de ce tableau, Adobe vous recommande de supprimer régulièrement les enregistrements si certains critères sont remplis, par exemple s’il existe des paniers non convertis de plus de 60 jours. |
 | `sales_order` | Chaque ligne du [`sales_order`](../data-warehouse-mgr/sales-flat-order-table.md) représente une commande passée sur votre site. Ce tableau contient des informations au niveau de la commande, telles que la date de la commande, le client qui a passé la commande, le total de la commande et l’utilisation du code de réduction et de coupon. |
 | `sales_order_address` | Chaque ligne du `sales_order_address` Le tableau contient des informations d’expédition et de facturation pour une commande spécifique. Sur le `sales_order` , la variable `billing_address_id` et le `shipping_address_id` pour un ordre donné, fait référence à une ligne spécifique (identifiée par `entity_id`) sur le `sales_order_address` table. |
 | `sales_order_item` | Chaque ligne du [`sales_order_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) identifie un élément spécifique dans un ordre spécifique. Chaque ligne contient des détails tels que le produit, la quantité achetée et la commande à laquelle l’article donné est associé. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Documentation connexe
 

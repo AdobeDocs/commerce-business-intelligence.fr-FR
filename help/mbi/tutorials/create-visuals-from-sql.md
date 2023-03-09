@@ -2,9 +2,9 @@
 title: Création de visualisations à partir de requêtes SQL
 description: Apprenez à vous familiariser avec la terminologie utilisée dans le Report Builder SQL et à vous donner une base solide pour créer des visualisations SQL.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Avant de commencer ce tutoriel, reportez-vous à la terminologie suivante utilis
 >
 >Les dates et les horodatages peuvent également être utilisés comme `Categories`. Il ne s’agit que d’une autre colonne de données de votre requête et il doit être formaté et ordonné selon vos besoins dans la requête elle-même.
 
-- `Labels`: Ils sont appliqués en tant qu’étiquettes sur l’axe X. Lors de l’analyse des tendances des données au fil du temps, les colonnes &quot;année&quot; et &quot;mois&quot; sont généralement spécifiées sous forme de libellés. Plusieurs colonnes peuvent être définies comme libellé.
+- `Labels`: Ils sont appliqués en tant qu’étiquettes sur l’axe X. Lors de l’analyse des tendances des données au fil du temps, les colonnes &quot;année&quot; et &quot;mois&quot; sont spécifiées sous forme de libellés. Plusieurs colonnes peuvent être définies comme libellé.
 
 ## Étape 1 : Écrire la requête
 
@@ -60,17 +60,17 @@ Cette requête renvoie cette table de résultats :
 
 ## Étape 2 : Création de la visualisation
 
-Avec ces résultats, *comment créer la visualisation ?* Pour commencer, cliquez sur le bouton **[!UICONTROL Chart]** dans le `Results` volet. Cela affichera la variable `Chart settings` .
+Avec ces résultats, *comment créer la visualisation ?* Pour commencer, cliquez sur le bouton **[!UICONTROL Chart]** dans le `Results` volet. Cette fenêtre affiche le `Chart settings` .
 
 Lors de la première exécution d’une requête, le rapport peut sembler impénétrable, car toutes les colonnes de la requête sont tracées sous la forme d’une série :
 
 ![](../assets/SQL_initial_report_results.png)
 
-Pour cet exemple, nous voulons qu’il s’agisse d’un graphique en courbes qui évolue au fil du temps. Pour le créer, utilisez les paramètres suivants :
+Pour cet exemple, vous souhaitez qu’il s’agisse d’un graphique en courbes qui évolue au fil du temps. Pour le créer, utilisez les paramètres suivants :
 
-- `Series`: Sélectionnez la `Items sold` en tant que `Series` car nous voulons le mesurer. Après avoir défini une `Series` une seule ligne est tracée dans le rapport.
+- `Series`: Sélectionnez la `Items sold` en tant que `Series` car vous voulez le mesurer. Après avoir défini une `Series` une seule ligne est tracée dans le rapport.
 
-- `Category`: Pour cet exemple, nous voulons afficher chaque produit sous la forme d’une ligne différente dans le rapport. Pour ce faire, nous définissons `Product name` comme la propriété `Category`.
+- `Category`: Pour cet exemple, vous souhaitez afficher chaque produit sous la forme d’une ligne différente dans le rapport. Pour ce faire, définissez `Product name` comme la propriété `Category`.
 
 - `Labels`: Utiliser les colonnes `year` et `month` comme libellés sur l’axe X pour pouvoir afficher `Items Sold` comme tendance au fil du temps.
 
@@ -78,7 +78,7 @@ Pour cet exemple, nous voulons qu’il s’agisse d’un graphique en courbes qu
 >
 >La requête doit contenir un `ORDER BY` clause sur les étiquettes si elles sont `date`/`time` colonnes.
 
-Voici un aperçu rapide de la manière dont nous avons créé cette visualisation, depuis l’exécution de la requête jusqu’à la configuration du rapport :
+Vous trouverez ci-dessous un aperçu rapide de la manière dont vous avez créé cette visualisation, depuis l’exécution de la requête jusqu’à la configuration du rapport :
 
 ![](../assets/SQL_report_settings.gif)
 

@@ -2,16 +2,16 @@
 title: Analyse des niveaux de stock
 description: Découvrez comment analyser les niveaux d’inventaire.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
 # Analyse des niveaux de stock
 
-Cette rubrique explique comment configurer un tableau de bord qui fournira des informations sur votre inventaire actuel. Cette rubrique contient des instructions destinées aux clients sur l’architecture héritée ou la nouvelle architecture. Vous utilisez l’architecture héritée si vous ne disposez pas de la variable **[!UICONTROL Data Warehouse Views]** sous l’option **[!UICONTROL Manage Data]** ). Si vous utilisez l’architecture héritée, envoyez une [nouvelle demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) avec le sujet **[!UICONTROL INVENTORY ANALYSIS]** une fois que vous avez atteint la section désignée dans la variable _Colonnes calculées_ instructions ci-dessous.
+Cette rubrique explique comment configurer un tableau de bord qui fournit des informations sur votre inventaire actuel. Cette rubrique contient des instructions destinées aux clients sur l’architecture héritée ou la nouvelle architecture. Vous utilisez l’architecture héritée si vous ne disposez pas de la variable **[!UICONTROL Data Warehouse Views]** sous l’option **[!UICONTROL Manage Data]** ). Si vous utilisez l’architecture héritée, envoyez une [nouvelle demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) avec le sujet **[!UICONTROL INVENTORY ANALYSIS]** une fois que vous avez atteint la section désignée dans la variable _Colonnes calculées_ instructions ci-dessous.
 
 ## Colonnes à suivre :
 
@@ -151,7 +151,7 @@ Cette rubrique explique comment configurer un tableau de bord qui fournira des i
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Avg products sold per week (all time)`**
-      * sera créé par un analyste lorsque vous envoyez votre fichier **[ANALYSE DES INVENTAIRES]** demande d’assistance
+      * Créé par un analyste lorsque vous envoyez votre **[ANALYSE DES INVENTAIRES]** demande d’assistance
 
 
 
@@ -183,7 +183,7 @@ Cette rubrique explique comment configurer un tableau de bord qui fournira des i
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez une [!UICONTROL column]: `Avg products sold per week (all time)`
    * **`Weeks on hand`**
-      * sera créé par un analyste lorsque vous envoyez votre fichier **[!UICONTROL INVENTORY ANALYSIS]** demande d’assistance
+      * Créé par un analyste lorsque vous envoyez votre **[!UICONTROL INVENTORY ANALYSIS]** demande d’assistance
 
 
 
@@ -240,4 +240,4 @@ Cette rubrique explique comment configurer un tableau de bord qui fournira des i
       [!UICONTROL Chart type]: `Table`
 
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à notre équipe de services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

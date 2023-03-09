@@ -2,14 +2,14 @@
 title: Ajouter/modifier un nouvel utilisateur
 description: Découvrez comment ajouter une nouvelle [!DNL MBI] et comment mettre à jour votre nom d’utilisateur ou votre mot de passe.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
-# Ajouter un nouvel utilisateur
+# Ajout d’un utilisateur
 
 1. Cliquez sur le nom de votre société dans le coin supérieur droit et sélectionnez **[!UICONTROL Invite User]** dans la liste déroulante.
 1. Saisissez le nom et l’adresse électronique de l’utilisateur.
@@ -22,19 +22,19 @@ ht-degree: 0%
 
 1. Cliquez sur **[!UICONTROL Save]**.
 
-Le nouvel utilisateur recevra un courrier électronique contenant les informations de connexion et de mot de passe.
+Le nouvel utilisateur reçoit un courrier électronique contenant les informations de connexion et de mot de passe.
 
 >[!NOTE]
 >
->Par défaut, le nouvel utilisateur ne disposera d’aucun tableau de bord. Nous vous recommandons de [share](../../data-user/dashboards/share-dashboard-with-users.md) les tableaux de bord nécessaires avec le nouvel utilisateur immédiatement.
+>Par défaut, le nouvel utilisateur ne dispose d’aucun tableau de bord. Adobe vous recommande de [share](../../data-user/dashboards/share-dashboard-with-users.md) les tableaux de bord nécessaires avec le nouvel utilisateur immédiatement.
 
 ## Mettre à jour votre adresse électronique ou votre mot de passe
 
-Vous pouvez mettre à jour votre adresse électronique et/ou votre mot de passe en cliquant sur le nom de votre société dans le coin supérieur droit, puis sur Cliquez sur Cliquez sur . **[!UICONTROL Edit Profile]**.
+Vous pouvez mettre à jour votre adresse électronique et/ou votre mot de passe en cliquant sur le nom de votre société dans le coin supérieur droit, puis en cliquant sur Cliquer . **[!UICONTROL Edit Profile]**.
 
 ## Renvoyer l’invitation
 
-Si vous devez renvoyer l’invitation au nouvel utilisateur, sur la page [page de connexion](https://dashboard.rjmetrics.com), cliquez sur **[!UICONTROL Forgot?]**, saisissez l’adresse électronique du nouvel utilisateur, puis cliquez sur **[!UICONTROL Reset Password]**. L’invitation est alors renvoyée et l’utilisateur peut se connecter.
+Si vous devez renvoyer l’invitation au nouvel utilisateur, sur la page [page de connexion](https://dashboard.rjmetrics.com/v2/session/create), cliquez sur **[!UICONTROL Forgot?]**, saisissez l’adresse électronique du nouvel utilisateur, puis cliquez sur **[!UICONTROL Reset Password]**. L’invitation est alors renvoyée et l’utilisateur peut se connecter.
 
 >[!IMPORTANT]
 >

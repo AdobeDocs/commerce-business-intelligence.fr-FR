@@ -2,9 +2,9 @@
 title: Analyse du code de bon (de base)
 description: Découvrez les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre les habitudes des clients.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Comprendre les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre les habitudes des clients.
 
-Nous avons documenté les étapes nécessaires à la création de cette analyse pour comprendre les performances des clients achetés par coupon, afficher les tendances et suivre l’utilisation du code de coupon individuel.
+Cet article décrit les étapes nécessaires à la création de cette analyse pour comprendre les performances des clients achetés par coupon, afficher les tendances et suivre l’utilisation du code de coupon individuel.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -27,7 +27,7 @@ Tout d’abord, une note sur le suivi des codes de coupon. Si un client a appliq
 
 ## Création d’une mesure
 
-La première étape consiste à construire une nouvelle mesure avec les étapes suivantes :
+La première étape consiste à créer une mesure en procédant comme suit :
 
 * Accédez à **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
@@ -45,7 +45,7 @@ La première étape consiste à construire une nouvelle mesure avec les étapes 
    * Accédez à [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
    * Attribuez au tableau de bord un nom tel que `_Coupon Analysis_`.
 
-* C’est là que nous créons et ajoutons tous les rapports.
+* C’est là que vous créez et ajoutez tous les rapports.
 
 ## Création de rapports
 
@@ -53,7 +53,7 @@ La première étape consiste à construire une nouvelle mesure avec les étapes 
 
 >[!NOTE]
 >
->Le [!UICONTROL Time Period]** pour chaque rapport est répertorié comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Nous recommandons que tous les rapports de ce tableau de bord couvrent la même période, comme par exemple `All time`, `Year-to-date`ou `Last 365 days`.
+>Le [!UICONTROL Time Period]** pour chaque rapport est répertorié comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, comme par exemple `All time`, `Year-to-date`ou `Last 365 days`.
 
 * **Commandes avec coupons**
    * 

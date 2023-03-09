@@ -2,9 +2,9 @@
 title: Accédez à [!DNL MBI] Compte
 description: En savoir plus sur la connexion à [!DNL MBI] compte .
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Vous pouvez vous connecter avec votre [!DNL Adobe ID] ou en utilisant [!DNL MBI]
 
 >[!NOTE]
 >
->Si vous vous connectez en utilisant votre [!DNL Adobe ID], vous ne pourrez pas modifier votre [!DNL MBI] mot de passe du profil.
+>Si vous vous connectez en utilisant votre [!DNL Adobe ID], vous ne pouvez pas modifier votre [!DNL MBI] mot de passe du profil.
 
 ## Connexion à l’aide de votre nom d’utilisateur et de votre mot de passe
 

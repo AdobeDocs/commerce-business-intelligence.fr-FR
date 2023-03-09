@@ -1,21 +1,21 @@
 ---
 title: Créer et utiliser des vues de Data Warehouse
-description: Découvrez une méthode de création de tables stockées en modifiant une table existante ou en associant ou en consolidant plusieurs tables via SQL.
+description: Découvrez une méthode de création de tables stockées en modifiant une table existante ou en associant ou en consolidant plusieurs tables à l’aide de SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1064'
 ht-degree: 9%
 
 ---
 
 # Utilisation des vues de Data Warehouse
 
-Ce document décrit l’objectif et l’utilisation de `Data Warehouse Views` accessible en accédant à **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Vous trouverez ci-dessous une explication de ce qu’il fait et comment créer de nouvelles vues, ainsi qu’un exemple d’utilisation `Data Warehouse Views` à consolider [!DNL Facebook] et [!DNL AdWords] dépensez des données.
+Ce document décrit l’objectif et l’utilisation de `Data Warehouse Views` accessible en accédant à **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Vous trouverez ci-dessous une explication de ce qu’il fait et comment créer des vues, ainsi qu’un exemple d’utilisation `Data Warehouse Views` à consolider [!DNL Facebook] et [!DNL AdWords] dépensez des données.
 
 ## Objectif général
 
-Le `Data Warehouse Views` La fonctionnalité est une méthode permettant de créer de nouvelles tables stockées en modifiant une table existante ou en associant ou en consolidant plusieurs tables à l’aide de SQL. Une fois un `Data Warehouse View` a été créé et traité par un cycle de mise à jour ; il sera renseigné dans votre Data Warehouse sous la forme d’un nouveau tableau sous `Data Warehouse Views` , comme illustré ci-dessous :
+Le `Data Warehouse Views` La fonctionnalité est une méthode permettant de créer de nouvelles tables stockées en modifiant une table existante ou en associant ou en consolidant plusieurs tables à l’aide de SQL. Une fois un `Data Warehouse View` a été créé et traité par un cycle de mise à jour ; il est renseigné dans votre Data Warehouse sous la forme d’un nouveau tableau sous la variable `Data Warehouse Views` , comme illustré ci-dessous :
 
 ![](../../assets/Data_Warehouse.png)
 
@@ -40,13 +40,13 @@ Nouveau `Data Warehouse Views` peut être créé et les vues existantes peuvent 
    >
    >Votre requête doit référencer des noms de colonne spécifiques. L’utilisation de la variable `*`n’est pas autorisé pour sélectionner toutes les colonnes.
 
-1. Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save]** pour enregistrer votre vue. Notez que votre vue comporte temporairement une `Pending` jusqu’à ce qu’il soit traité par le cycle de mise à jour complet suivant, à ce moment-là le statut passe à `Active`. Après avoir été traité par une mise à jour, votre vue est prête à être utilisée dans les rapports.
+1. Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save]** pour enregistrer votre vue. Votre vue comporte temporairement un `Pending` jusqu’à ce qu’il soit traité par le cycle de mise à jour complet suivant, à ce moment-là le statut passe à `Active`. Après avoir été traité par une mise à jour, votre vue est prête à être utilisée dans les rapports.
 
-Il est important de mentionner qu’après l’enregistrement, la requête sous-jacente utilisée pour générer un `Data Warehouse View` ne peut pas être modifié. Si, pour une raison quelconque, vous devez ajuster la structure d’une `Data Warehouse View`, vous devez créer une vue et migrer manuellement toutes les colonnes, mesures ou rapports calculés de la vue d’origine vers la nouvelle vue. Une fois la migration terminée, vous pouvez supprimer la vue d’origine en toute sécurité. Parce que `Data Warehouse Views` ne sont pas modifiables, il est vivement recommandé de tester la sortie de votre requête à l’aide de la variable `SQL Report Builder` avant d’enregistrer votre requête en tant que vue de Data Warehouse.
+Il est important de mentionner qu’après l’enregistrement, la requête sous-jacente utilisée pour générer un `Data Warehouse View` ne peut pas être modifié. Si vous devez ajuster la structure d’un `Data Warehouse View`, vous devez créer une vue et migrer manuellement toutes les colonnes, mesures ou rapports calculés de la vue d’origine vers la nouvelle vue. Une fois la migration terminée, vous pouvez supprimer la vue d’origine en toute sécurité. Parce que `Data Warehouse Views` ne sont pas modifiables, Adobe vous recommande de tester la sortie de votre requête à l’aide de la variable `SQL Report Builder` avant d’enregistrer votre requête en tant que vue de Data Warehouse.
 
 ## Exemple : [!DNL Facebook] et [!DNL Google AdWords] data
 
-Regardons de plus près l&#39;un des exemples mentionnés plus haut dans cet article : consolidation [!DNL Facebook] et [!DNL AdWords] dépensez des données dans un nouveau tableau publicitaire consolidé. Cela implique le plus souvent la consolidation de deux tables, avec des exemples de jeux de données ci-dessous :
+Regardez de plus près l’un des exemples mentionnés précédemment dans cet article : consolidation [!DNL Facebook] et [!DNL AdWords] dépensez des données dans un nouveau tableau publicitaire consolidé. Cela implique le plus souvent la consolidation de deux tables, avec des exemples de jeux de données ci-dessous :
 
 `Ad source: Google AdWords`
 
@@ -76,7 +76,7 @@ Regardons de plus près l&#39;un des exemples mentionnés plus haut dans cet art
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-Pour créer une seule table de dépenses publicitaires contenant les deux [!DNL Facebook] et [!DNL AdWords] campagnes, nous devrons écrire une requête SQL et utiliser l’ `UNION ALL` fonction . A `UNION ALL` est généralement utilisée pour combiner plusieurs requêtes SQL distinctes tout en ajoutant les résultats de chaque requête à une seule sortie.
+Pour créer une seule table de dépenses publicitaires contenant les deux [!DNL Facebook] et [!DNL AdWords] campagnes, vous devez écrire une requête SQL et utiliser la variable `UNION ALL` fonction . A `UNION ALL` est généralement utilisée pour combiner plusieurs requêtes SQL distinctes tout en ajoutant les résultats de chaque requête à une seule sortie.
 
 Il existe quelques exigences d’une `UNION` Instruction qui vaut la peine d’être mentionnée, comme indiqué dans PostgreSQL [documentation](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -85,7 +85,7 @@ Il existe quelques exigences d’une `UNION` Instruction qui vaut la peine d’�
 
 Lors de l’exécution d’une `UNION` ou `UNION ALL` , les noms des colonnes de la sortie finale reflètent le nom des colonnes de votre première requête.
 
-Dans la plupart des cas, consolidez vos [!DNL Facebook] et [!DNL Google AdWords] dépenser des données dans une `Data Warehouse View` nécessite la création d&#39;un tableau de sept colonnes, avec une requête similaire à celle-ci :
+Normalement, consolider votre [!DNL Facebook] et [!DNL Google AdWords] dépenser des données dans une `Data Warehouse View` nécessite la création d&#39;un tableau de sept colonnes, avec une requête similaire à celle-ci :
 
 ```sql
     SELECT
@@ -112,7 +112,7 @@ Dans la plupart des cas, consolidez vos [!DNL Facebook] et [!DNL Google AdWords]
 Voici quelques points importants :
 
 * Par souci de clarté, toutes les colonnes sont affectées d’un alias au-dessus afin que les noms correspondent à toutes les requêtes. Cependant, il ne s’agit pas d’une exigence. L’ordre dans lequel les colonnes sont appelées dans les requêtes SELECT détermine la manière dont elles sont alignées.
-* Une nouvelle colonne intitulée `ad_source` est créé pour faciliter le filtrage de [!DNL AdWords] ou [!DNL Facebook] data. N’oubliez pas que cette requête combine toutes les données des deux tables. Si vous ne créez pas de colonne comme `ad_source`, il n’y aura aucun moyen facile d’identifier les dépenses d’une source particulière.
+* Une nouvelle colonne intitulée `ad_source` est créé pour faciliter le filtrage de [!DNL AdWords] ou [!DNL Facebook] data. N’oubliez pas que cette requête combine toutes les données des deux tables. Si vous ne créez pas de colonne comme `ad_source`, il n’existe aucun moyen simple d’identifier les dépenses d’une source particulière.
 
 Enregistrer la requête ci-dessus en tant que `Data Warehouse View` crée un tableau avec les deux [!DNL Facebook] et [!DNL AdWords] dépenser, comme ci-dessous :
 
@@ -133,11 +133,11 @@ Plutôt que de créer un ensemble distinct de mesures marketing pour chaque sour
 
 **Vous recherchez une aide supplémentaire ?**
 
-Ecriture SQL et création `Data Warehouse Views` n’est pas inclus dans le support technique.  Toutefois, l’équipe Services vous aide à créer des vues. Pour tout ce qui concerne la migration et la consolidation d’une base héritée avec une nouvelle base de données, ou la création d’une vue de Data Warehouse unique aux fins d’une analyse spécifique, ils sont experts dans le traitement de solutions SQL pour tous les défis liés à votre structure de données.
+Ecriture SQL et création `Data Warehouse Views` n’est pas inclus dans le support technique. Toutefois, l’équipe Services vous aide à créer des vues. Pour tout savoir sur la migration d’une base de données héritée avec une nouvelle base de données afin de créer une vue de Data Warehouse unique aux fins d’une analyse spécifique, l’équipe d’assistance peut vous aider.
 
-Dans la plupart des cas, la création d’une `Data Warehouse View` pour consolider 2 à 3 tables structurées de manière similaire, il faut 5 heures de temps de service, ce qui représente environ 1 250 $ de travail. Vous trouverez ci-dessous quelques facteurs courants susceptibles d’accroître l’investissement attendu nécessaire :
+En règle générale, la création d’un `Data Warehouse View` pour consolider 2 à 3 tables structurées de manière similaire, il faut cinq heures de temps de service, ce qui représente environ 1 250 $ de travail. Vous trouverez ci-dessous quelques facteurs courants susceptibles d’accroître l’investissement attendu nécessaire :
 
-* Consolidation de plus de 3 tableaux en une seule vue
-* Création de plusieurs vues d’entrepôt de données
+* Consolidation de plus de trois tables en une seule vue
+* Création de plusieurs vues de Data Warehouse
 * Logique de jointure complexe ou conditions de filtrage
-* Consolidation de 2 tables ou plus avec des structures de données différentes
+* Consolidation de deux tableaux ou plus avec des structures de données différentes
