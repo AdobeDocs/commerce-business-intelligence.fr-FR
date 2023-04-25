@@ -2,9 +2,9 @@
 title: Données Google Analytics attendues
 description: Découvrez comment interagir avec vos mesures Google Analytics.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 0e9d30155432a29cf67d29a10646a2971ea0382f
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 Après avoir connecté une [!DNL Google Analytics] intégration, vous pouvez interagir avec votre [!DNL Google Analytics] mesures *immédiatement dans le`Visual Report Builder`*. Lorsque vous saisissez le `Visual Report Builder`, si vous cliquez sur **[!UICONTROL Add a Metric]**, une série de mesures de votre [!DNL Google Analytics] s’affiche dans une liste déroulante sous les mesures de votre Data Warehouse.
 
 Le [!DNL Google Analytics] l’intégration *live* — cela signifie que la variable `Report Builder` demande des données à partir de [!DNL Google Analytics] *immédiatement* lorsque vous ajoutez une mesure à votre rapport. Cela signifie également que les mesures auxquelles vous pouvez accéder sont définies exactement comme elles se trouvent dans [!DNL Google Analytics], et que ces valeurs ne sont pas *entreposé* dans votre [!DNL MBI] compte : s’affichait visuellement uniquement dans vos rapports.
+
++++Mesures et Dimensions prises en charge (Google Analytics 3 ou Universal Analytics)
+
+>[!NOTE]
+>
+>Le 1er juillet 2023, Analytics universel standard ([!DNL Google Analytics] 3) Les propriétés ne traiteront plus les données. Vous pourrez consulter vos rapports Analytics universels pour une période postérieure au 1er juillet 2023. Toutefois, les nouvelles données ne seront introduites que dans [!DNL Google Analytics] 4 propriétés.
 
 [!DNL Google Analytics] intégrations dans [!DNL MBI] utilisez la méthode [!DNL Google Analytics] [API Core Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/)et prennent en charge les mesures et dimensions suivantes.
 
@@ -143,3 +149,17 @@ Le [!DNL Google Analytics] l’intégration *live* — cela signifie que la vari
 | `Year` | `ga:year` | `No` |
 
 {style="table-layout:auto"}
+
++++
+
++++Mesures et Dimensions prises en charge (Google Analytics 4)
+
+[!DNL Google Analytics] intégrations dans [!DNL MBI] utilisez la méthode [!DNL Google Analytics] [API de données v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+
+>[!NOTE]
+>
+> L’IMS ne prend pas en charge les dimensions suivantes : `cohort`, `cohortNthDay`, `cohortNthMonth`, et `cohortNthWeek`.
+>
+>Pour éviter des résultats inattendus ou absurdes, vérifiez que les dimensions que vous utilisez sont compatibles avec une ou plusieurs mesures que vous utilisez dans la variable `Visual Report Builder`. Vous pouvez vérifier les [Explorateur de Dimensions et de mesures GA4](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+
++++
