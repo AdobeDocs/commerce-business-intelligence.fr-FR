@@ -2,16 +2,16 @@
 title: Analyse des commandes retournées
 description: Découvrez comment configurer un tableau de bord qui fournit une analyse détaillée des retours de votre boutique.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
 # Commandes renvoyées
 
-Dans cet article, découvrez comment configurer un tableau de bord qui fournit une analyse détaillée des retours de votre boutique.
+Cette rubrique explique comment configurer un tableau de bord qui fournit une analyse détaillée des retours de votre magasin.
 
 ![](../../assets/detailed-returns-dboard.png)
 
@@ -248,4 +248,4 @@ Colonnes à créer
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez faire appel à l’équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez faire appel à l’équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

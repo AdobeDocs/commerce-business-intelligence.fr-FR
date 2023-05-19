@@ -2,16 +2,16 @@
 title: Colonne calculée de comparaison séquentielle
 description: Découvrez l’objectif et les utilisations de la colonne calculée Comparaison séquentielle .
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
 # Colonne calculée de comparaison séquentielle
 
-Cette rubrique décrit l’objectif et les utilisations de la fonction `Sequential Comparison` colonne calculée disponible dans la **[!DNL Manage Data > Data Warehouse]** page. Vous trouverez ci-dessous une explication de ce qu&#39;il fait, suivie d&#39;un exemple, et des mécanismes de sa création.
+Cette rubrique décrit l’objectif et les utilisations de la fonction `Sequential Comparison` colonne calculée disponible dans la **[!DNL Manage Data > Data Warehouse]** page. Vous trouverez ci-dessous une explication de ce qu&#39;il fait, suivie d&#39;un exemple et des mécanismes de sa création.
 
 **Explication**
 
@@ -39,17 +39,25 @@ Pour ce type de colonne calculé, la ligne correspondant au premier événement 
 
 Pour créer une **Numéro d’événement** column :
 
-1. Accédez au **[!DNL Manage Data** > **Data Warehouse]** page.
+1. Accédez au **[!DNL Manage Data > Data Warehouse]** page.
+
 1. Accédez au tableau sur lequel vous souhaitez créer cette colonne.
-1. Cliquez sur **[!UICONTROL Create New Column]** en haut à droite de l’écran.
+
+1. Cliquez sur **[!UICONTROL Create New Column]** dans le coin supérieur droit.
+
 1. Sélectionner `Same Table` comme la propriété `Definition Type` (si les colonnes que vous souhaitez comparer ne se trouvent pas sur la même table, vous devrez peut-être les déplacer).
+
 1. Sélectionner `SEQUENTIAL_COMPARISON` comme la propriété `Column Definition Equation`.
+
 1. Choisissez les entrées, comme expliqué ci-dessus :
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. Vous pouvez également ajouter des filtres pour exclure les lignes de la prise en compte. Les lignes exclues ont une valeur NULL pour cette colonne.
-1. Attribuez un nom à la colonne en haut de la page et cliquez sur **[!UICONTROL Save]**.
+
+1. Vous pouvez également ajouter des filtres pour exclure les lignes de la prise en compte. Les lignes exclues ont une `NULL` pour cette colonne.
+
+1. Attribuez un nom à la colonne en haut de la page, puis cliquez sur **[!UICONTROL Save]**.
+
 1. La colonne peut être utilisée *immédiatement*.
 
 ![SEC](../../assets/SEC_new.png)

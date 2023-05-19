@@ -2,18 +2,18 @@
 title: Optimisation de vos requêtes SQL
 description: Découvrez comment optimiser vos requêtes SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
 
 # Optimisation des requêtes SQL
 
-Le Report Builder SQL vous permet de lancer des requêtes et d’effectuer une itération sur ces requêtes à un moment donné. Cela s’avère utile lorsque vous devez modifier une requête sans avoir à attendre la fin d’un cycle de mise à jour avant de réaliser une colonne ou un rapport que vous avez créé qui doit être mis à jour.
+Le [!DNL SQL Report Builder] vous permet d’interroger et d’effectuer une itération sur ces requêtes à un moment donné. Cela s’avère utile lorsque vous devez modifier une requête sans avoir à attendre la fin d’un cycle de mise à jour avant de réaliser une colonne ou un rapport que vous avez créé qui doit être mis à jour.
 
-Avant l&#39;exécution d&#39;une requête, [[!DNL MBI] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Le coût prend en compte le temps et le nombre de ressources nécessaires à l’exécution d’une requête. Si ce coût est considéré comme trop élevé ou si le nombre de lignes renvoyées dépasse les limites MBI, la requête échoue. Pour interroger votre Data Warehouse, afin de vous assurer que vous rédigez les requêtes les plus simples possible, Adobe recommande ce qui suit.
+Avant l&#39;exécution d&#39;une requête, [[!DNL Commerce Intelligence] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Le coût prend en compte le temps et le nombre de ressources nécessaires à l’exécution d’une requête. Si ce coût est jugé trop élevé ou si le nombre de lignes renvoyé dépasse [!DNL Commerce Intelligence] , la requête échoue. Pour interroger votre [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), qui vous permet d’écrire les requêtes les plus simples possible, Adobe recommande ce qui suit.
 
 ## Utilisation de l’option SELECT (Sélectionner) ou Sélectionner toutes les colonnes
 

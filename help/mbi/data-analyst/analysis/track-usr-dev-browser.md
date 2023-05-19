@@ -2,16 +2,16 @@
 title: 'Google Analytics : suivi des données de l’appareil utilisateur et du navigateur dans votre base de données'
 description: Découvrez combien d’utilisateurs se connectent réellement via des appareils mobiles et comment cela affecte la valeur de durée de vie de ces utilisateurs.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Google Analytics] Tracking
 
-Avec [!UICONTROL Google Analytics] vous pouvez [enregistrer les informations de source de référence](../analysis/google-track-user-acq.md) pour comprendre d’où viennent vos utilisateurs les plus précieux. Dans cette rubrique, vous en apprendrez davantage sur la plateforme (par exemple, le périphérique ou le navigateur) sur laquelle travaillent vos utilisateurs. Vous pourrez ainsi comprendre combien d’utilisateurs se connectent par le biais d’appareils mobiles et comment cela affecte la valeur de durée de vie de ces utilisateurs.
+Avec [!UICONTROL Google Analytics] vous pouvez [enregistrer les informations de source de référence](../analysis/google-track-user-acq.md) pour comprendre d’où viennent vos utilisateurs les plus précieux. Cette rubrique aborde la plateforme (par exemple, le périphérique ou le navigateur) sur laquelle travaillent les utilisateurs. Vous pourrez ainsi comprendre combien d’utilisateurs se connectent par le biais d’appareils mobiles et comment cela affecte la valeur de durée de vie de ces utilisateurs.
 
 ## Enregistrement des données de navigateur et de périphérique utilisateur
 
@@ -30,7 +30,7 @@ Ces informations sont accessibles par votre serveur chaque fois qu’une demande
 
 ### Quand devriez-vous enregistrer ces données ?
 
-Adobe vous recommande d’ajouter un nouveau champ appelé `Platform` ou `User-Agent` à `Customers` et `Orders` des tables de base de données permettant de stocker ces informations chaque fois qu’un utilisateur est créé ou qu’une commande est passée. Si vous utilisez une base de données SQL, ce champ doit être une `VARCHAR(255)`. 
+[!DNL Adobe] recommande d’ajouter un nouveau champ appelé `Platform` ou `User-Agent` à `Customers` et `Orders` des tables de base de données permettant de stocker ces informations chaque fois qu’un utilisateur est créé ou qu’une commande est passée. Si vous utilisez une base de données SQL, ce champ doit être une `VARCHAR(255)`. 
 
 >[!NOTE]
 >

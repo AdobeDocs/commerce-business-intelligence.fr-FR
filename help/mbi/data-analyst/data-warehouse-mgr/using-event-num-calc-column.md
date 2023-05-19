@@ -2,7 +2,7 @@
 title: Colonne calculée Nombre d’événements
 description: Découvrez l’objectif et les utilisations de la colonne calculée Numéro d’événement .
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 3%
@@ -15,7 +15,7 @@ Cette rubrique décrit l’objectif et les utilisations de la fonction `Event Nu
 
 **Explication**
 
-Le `Event Number` type de colonne : identifie la séquence dans laquelle des événements se sont produits pour un **propriétaire d’événement**, comme un `customer` ou `user`. Si vous maîtrisez SQL, ce type de colonne est identique au `RANK` fonction . Il peut être utilisé pour observer des différences de comportement entre les premiers événements, les événements de répétition ou les énièmes événements dans vos données.
+Le `Event Number` type de colonne identifie la séquence dans laquelle des événements se sont produits pour un **propriétaire d’événement**, comme un `customer` ou `user`. Si vous maîtrisez SQL, ce type de colonne est identique au `RANK` fonction . Il peut être utilisé pour observer des différences de comportement entre les premiers événements, les événements de répétition ou les énièmes événements dans vos données.
 
 En cas d&#39;égalité, cette colonne contient la même **rank** pour les événements liés et ignore les nombres suivants. Par exemple, s’il classait les nombres 5,8,10,10,12, les grades seraient de 1,2,3,3,5.
 
@@ -40,10 +40,17 @@ Par exemple, prenez en compte toutes les lignes où `owner_id = A`. La première
 Voici quelques instructions sur la création d’un `Event Number` column :
 
 1. Accédez au **[!UICONTROL Manage Data > Data Warehouse]** page.
+
 1. Accédez au tableau sur lequel vous souhaitez créer cette colonne.
+
 1. Cliquez sur **[!UICONTROL Create a Column]** et sélectionnez la variable `EVENT_NUMBER (…)` type de colonne : sous le `Same Table` .
+
 1. Première liste déroulante `Event Owner` spécifie l’entité pour laquelle le rang doit être déterminé. Dans le cas où une `Customer's order number`, un identifiant de client tel que `customer_id` ou `customer_email` serait `Event Owner`.
+
 1. Deuxième liste déroulante `Event Rank` spécifie la colonne qui applique la séquence qui détermine le rang de la ligne. Dans le cas où une `Customer's order number`, la variable `created_at` l’horodatage correspondrait à `Event Rank`.
+
 1. Sous , `Options` , vous pouvez ajouter des filtres pour exclure les lignes de la prise en compte. Les lignes exclues ont une `NULL` pour cette colonne.
+
 1. Attribuez un nom à la colonne et cliquez sur **[!UICONTROL Save]**.
+
 1. La colonne peut être utilisée _immédiatement._

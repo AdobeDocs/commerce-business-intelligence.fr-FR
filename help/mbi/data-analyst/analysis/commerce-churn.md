@@ -2,7 +2,7 @@
 title: Commerce Churn
 description: Découvrez comment générer et analyser votre taux de perte de clientèle Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -15,7 +15,7 @@ Cette rubrique explique comment calculer une **taux de perte de clientèle** pou
 
 ![](../../assets/Churn_rate_image.png)
 
-De nombreux clients souhaitent obtenir de l’aide pour commencer à conceptualiser ce qui **délai** ils doivent utiliser en fonction de leurs données. Si vous souhaitez utiliser l’historique du comportement du client pour définir ceci **délai d’exécution**, vous souhaitez peut-être vous familiariser avec le [définition de la perte de clientèle](../analysis/define-cust-churn.md) article. Vous pouvez ensuite utiliser les résultats de la formule pour le taux de perte de clientèle dans les instructions ci-dessous.
+De nombreux clients souhaitent obtenir de l’aide pour commencer à conceptualiser ce qui **délai** ils doivent utiliser en fonction de leurs données. Si vous souhaitez utiliser l’historique du comportement du client pour définir ceci **délai d’exécution**, vous souhaitez peut-être vous familiariser avec le [définition de la perte de clientèle](../analysis/define-cust-churn.md) rubrique. Vous pouvez ensuite utiliser les résultats de la formule pour le taux de perte de clientèle dans les instructions ci-dessous.
 
 ## Colonnes calculées
 
@@ -55,9 +55,9 @@ Colonnes à créer
 * **Nouveaux clients (par date de dernière commande)**
    * Clients comptabilisés
 
->[!NOTE]
->
->Cette mesure peut exister sur votre compte.
+   >[!NOTE]
+   >
+   >Cette mesure peut exister sur votre compte.
 
 * Dans le **`customer_entity`** table
 * Cette mesure effectue une **Count**

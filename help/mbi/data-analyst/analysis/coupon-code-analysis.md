@@ -2,16 +2,16 @@
 title: Performances des coupons
 description: Découvrez comment analyser les performances de vos coupons.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # Analyse avancée du code de bon
 
-Comprendre les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre vos clients. Cet article vous guide tout au long des étapes nécessaires à la création d’analyses afin de comprendre quels clients vous acquérez à l’aide de bons, leurs performances et le suivi de l’utilisation générale des bons.
+Comprendre les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre vos clients. Cette rubrique vous guide tout au long des étapes nécessaires à la création d’analyses afin de comprendre quels clients vous acquérez à l’aide de bons, leurs performances et le suivi de l’utilisation générale des bons.
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -19,7 +19,7 @@ Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv
 
 ## Prise en main
 
-Dans un premier temps, vous devez vous assurer que les colonnes suivantes sont synchronisées avec votre Data Warehouse. Dans le cas contraire, effectuez-en le suivi en accédant à &quot;Gérer les données&quot; > &quot;Data Warehouse&quot; et en synchronisant les éléments suivants :
+Dans un premier temps, vous devez vous assurer que les colonnes suivantes sont synchronisées avec votre Data Warehouse. Si ce n’est pas le cas, suivez-les, en accédant à `Manage Data` > `Data Warehouse`et synchroniser les éléments suivants :
 
 * **sales\_plat\_order** table
 * **coupon\_code**
@@ -519,4 +519,4 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de la page.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

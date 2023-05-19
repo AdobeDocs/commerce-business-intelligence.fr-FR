@@ -2,16 +2,16 @@
 title: Définition de la perte de clientèle
 description: Découvrez comment configurer un tableau de bord qui vous aide à définir l’attrition de vos clients transactionnels.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Perte de clientèle transactionnelle
 
-Cet article explique comment configurer un tableau de bord qui vous aide à définir l’attrition de vos clients transactionnels.
+Cette rubrique explique comment configurer un tableau de bord qui vous aide à définir l’attrition de vos clients transactionnels.
 
 ![](../../assets/churn-deashboard.png)
 
@@ -136,4 +136,4 @@ Une fois que vous avez créé votre tableau de bord, la question la plus courant
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de la page.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

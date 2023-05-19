@@ -2,20 +2,20 @@
 title: Connexion à Salesforce
 description: Découvrez comment les données Salesforce permettent une gamme d’analyses, depuis les pistes de notation et d’optimisation jusqu’à vos objectifs en termes d’opportunités converties.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
 
-# Connexion à Salesforce
+# Connexion [!DNL Salesforce]
+
+![](../../../assets/Salesforce_Logo.png)
 
 >[!NOTE]
 >
 >Nécessite [Autorisations d’administrateur](../../../administrator/user-management/user-management.md).
-
-![](../../../assets/Salesforce_Logo.png)
 
 Connectez-vous à [!DNL Salesforce] Les données permettent d’effectuer diverses analyses, depuis les pistes de notation et d’optimisation jusqu’à vos objectifs en termes d’opportunités converties.
 
@@ -29,11 +29,9 @@ Connectez-vous à [!DNL Salesforce] Les données permettent d’effectuer divers
 1. Cliquez sur **[!UICONTROL Connect to Salesforce]**.
 1. Saisissez votre [!DNL Salesforce] informations d’identification et cliquez sur **[!UICONTROL Login to Salesforce]**.
 
-C&#39;est tout ! Une fois vos informations d’identification validées, [!DNL Salesforce] La configuration sera terminée.
-
 ## En rapport :
 
-Si vous êtes un peu plus féru de technologie, la variable [[!DNL Salesforce] Documentation API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) peut s’avérer utile pour en savoir plus sur la façon dont Salesforce est intégré à [!DNL MBI].
+Si vous êtes un peu plus féru de technologie, la variable [[!DNL Salesforce] Documentation API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) peut s’avérer utile pour en savoir plus sur la façon dont Salesforce est intégré à [!DNL Commerce Intelligence].
 
 * [Valeur attendue [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

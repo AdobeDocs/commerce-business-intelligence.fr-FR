@@ -2,9 +2,9 @@
 title: Options de visualisation dans le Report Builder visuel
 description: Découvrez comment utiliser les options Visualisation dans le Report Builder Visuel.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La sélection de la bonne visualisation pour un jeu de données donné est un élément essentiel du processus d’analyse. Chaque ensemble de données a une histoire à raconter, mais l&#39;effet de cette histoire est souligné par son impact visuel et sa lisibilité.
 
-Le [!DNL MBI] `Visual Report Builder` offre 12 options de visualisation distinctes, chacune avec ses propres avantages et cas d’utilisation. Cet article décrit les différentes options de visualisation dans [!DNL MBI], y compris les configurations de rapport requises, le cas échéant, et un exemple de cas d’utilisation. Les visualisations suivantes sont disponibles dans l’IMS :
+Le [!DNL Commerce Intelligence] [!DNL Visual Report Builder] offre 12 options de visualisation distinctes, chacune avec ses propres avantages et cas d’utilisation. Cette rubrique décrit les différentes options de visualisation dans [!DNL Commerce Intelligence], y compris les configurations de rapport requises, le cas échéant, et un exemple de cas d’utilisation. Les visualisations suivantes sont disponibles dans [!DNL Commerce Intelligence]:
 
 * `Scalar`
 * `Table`

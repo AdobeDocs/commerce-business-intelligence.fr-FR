@@ -1,19 +1,19 @@
 ---
 title: Exporter les données brutes
-description: Découvrez comment exporter des enregistrements de votre [!DNL MBI] Data Warehouse pour examiner de plus près ce qui alimente votre tableau de bord.
+description: Découvrez comment exporter des enregistrements de votre [!DNL Commerce Intelligence] Data Warehouse pour examiner de plus près ce qui alimente votre tableau de bord.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
 # Exporter les données brutes
 
-À l’aide des exportations de données brutes, vous pouvez exporter des enregistrements de votre [!DNL MBI] Data Warehouse pour examiner de plus près ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider. [Identifier les incohérences entre les données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
+Grâce aux exportations de données brutes, vous pouvez exporter des enregistrements de votre Data Warehouse afin d’examiner de plus près ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider. [Identifier les incohérences entre les données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
-Les exportations de données brutes permettent d’accéder à des colonnes et dimensions supplémentaires générées par la normalisation et la pré-agrégation des mesures pertinentes. Par exemple : `User's first order date` est une dimension que vous pouvez exporter pour chaque utilisateur dans . [!DNL MBI], bien qu’il puisse ne pas être disponible dans votre base de données.
+Les exportations de données brutes permettent d’accéder à des colonnes et dimensions supplémentaires générées par la normalisation et la pré-agrégation des mesures pertinentes. Par exemple : `User's first order date` est une dimension que vous pouvez exporter pour chaque utilisateur dans . [!DNL Commerce Intelligence], bien qu’il puisse ne pas être disponible dans votre base de données.
 
 Ce tutoriel porte sur les aspects suivants :
 
@@ -23,13 +23,16 @@ Ce tutoriel porte sur les aspects suivants :
 
 ## Étape 1 : Sélection des données à exporter {#select}
 
-Vous pouvez exporter des données brutes de deux manières différentes dans [!DNL MBI]: au niveau du graphique ou au niveau du tableau.
+Vous pouvez exporter des données brutes de deux manières différentes dans [!DNL Commerce Intelligence]:
 
-### Exportation au niveau du tableau dans votre `Manage Data` Onglet
+1. au niveau du graphique
+1. au niveau du tableau
 
-Si vous souhaitez exporter le tableau à partir de `Manage Data` , vous devez [Administration](../administrator/user-management/user-management.md) autorisations.
+### Exportation au niveau du tableau dans votre [!UICONTROL Manage Data] Onglet
 
-1. Cliquez sur **[!UICONTROL Manage Data** > ** Exporter les données **> **Exportation de données brutes]** pour commencer.
+Si vous souhaitez exporter le tableau à partir de [!UICONTROL Manage Data] , vous devez [Administration](../administrator/user-management/user-management.md) autorisations.
+
+1. Cliquez sur **[!UICONTROL Manage Data** > ** Exporter les données **> **Exportation de données brutes]**.
 1. Vous voyez une `Export List` des exportations de données récemment créées, le cas échéant. Cliquez sur **[!UICONTROL Add Export]** pour créer un export.
 1. Le `New Raw Data Export` s’affiche. Vous pouvez personnaliser votre export en sélectionnant ou en désélectionnant des colonnes et des filtres :
 
@@ -43,8 +46,11 @@ Si vous souhaitez exporter le tableau à partir de `Manage Data` , vous devez [A
 ### Exportation au niveau du graphique à partir du tableau de bord
 
 1. Cliquez sur l’icône d’engrenage dans le coin supérieur droit d’un graphique.
+
 1. Sélectionner `Raw Export` dans la liste déroulante pour afficher la variable `Raw Export` boîte de dialogue.
+
 1. Personnalisez l’exportation en sélectionnant le `table`, `columns`, et `filters` à inclure ou à exclure. Reportez-vous à la section précédente pour plus d&#39;informations sur les champs de ce module.
+
    >[!NOTE]
    >
    >Le tableau qui s’affiche dans la variable `Table` est, par défaut, le tableau qui alimente le graphique.
@@ -66,5 +72,3 @@ Pour vérifier si votre exportation est prête, cliquez sur **[!UICONTROL Raw Da
 ## Étape 3 : Accès aux exportations historiques {#historical}
 
 Pour afficher vos exportations antérieures, cliquez sur **[!UICONTROL Raw Data Export]** dans le coin supérieur droit de l’écran. Les rapports en attente et terminés sont accessibles pendant sept jours au maximum.
-
-Félicitations ! Tu as fini.

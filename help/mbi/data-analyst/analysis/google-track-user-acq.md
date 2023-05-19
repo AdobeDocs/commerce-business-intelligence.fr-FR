@@ -2,9 +2,9 @@
 title: Google Analytics - Aperçu des données de source d’acquisition d’utilisateurs
 description: Découvrez comment segmenter vos données par source d’acquisition d’utilisateurs.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: ad95a03193853eebf2b695cd6f5c3cb5a9837f93
+source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -13,27 +13,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Le processus ci-dessous ne prend pas en charge [!DNL GoogleUniversal Analytics].
+>Le processus ci-dessous ne prend pas en charge [!DNL Google Universal Analytics].
 
 La possibilité de segmenter vos données par source d’acquisition d’utilisateurs est essentielle pour gérer efficacement votre plan marketing. Connaître la source d’acquisition des nouveaux utilisateurs indique les canaux qui génèrent les meilleurs retours et permet à votre équipe d’allouer les dollars marketing en toute confiance.
 
-Si vous n’effectuez pas déjà le suivi des sources d’acquisition d’utilisateurs dans votre base de données, [!DNL MBI] peut vous aider à démarrer :
+Si vous n’effectuez pas déjà le suivi des sources d’acquisition d’utilisateurs dans votre base de données, [!DNL Adobe Commerce Intelligence] peut vous aider à démarrer :
 
 ## Suivi de la source d’acquisition des utilisateurs
 
-Adobe recommande deux méthodes pour effectuer le suivi des données de source de référence en fonction de votre configuration :
+[!DNL Adobe] recommande deux méthodes pour effectuer le suivi des données de source de référence en fonction de votre configuration :
 
 ### (Option 1) Suivi des données de source de référence de commande via [!DNL Google Analytics E-Commerce] (y compris [!DNL Shopify] Magasins)
 
-Si vous utilisez [!DNL Google Analytics E-Commerce] pour suivre vos données de commande et de vente, vous pouvez utiliser la variable [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) pour synchroniser les données de source de référence de chaque commande. Vous pouvez ainsi segmenter les recettes et les commandes par source de référence (par exemple, `utm_source` ou `utm_medium`). Vous obtenez également une idée des sources d’acquisition client via [!DNL MBI] dimensions personnalisées, telles que `User's first order source`.
+Si vous utilisez [!DNL Google Analytics E-Commerce] pour suivre vos données de commande et de vente, vous pouvez utiliser la variable [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) pour synchroniser les données de source de référence de chaque commande. Vous pouvez ainsi segmenter les recettes et les commandes par source de référence (par exemple, `utm_source` ou `utm_medium`). Vous obtenez également une idée des sources d’acquisition client via [!DNL Commerce Intelligence] dimensions personnalisées, telles que `User's first order source`.
 
 >[!NOTE]
 >
->Pour les utilisateurs Shopify** : Activer [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) avant de connecter votre [!DNL Google Analytics E-Commerce] compte à [!DNL MBI].
+>**Pour les utilisateurs Shopify**: Activer [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) avant de connecter votre [!DNL Google Analytics E-Commerce] compte à [!DNL Commerce Intelligence].
 
 ### (Option 2) Enregistrement [!DNL Google Analytics]Données source d’acquisition dans votre base de données
 
-Cet article explique comment enregistrer [!DNL Google Analytics] les informations du canal d’acquisition dans votre propre base de données, à savoir : `source`, `medium`, `term`, `content`, `campaign`, et `gclid` qui étaient présents lors de la première visite d’un utilisateur sur votre site web. Pour une explication de ces paramètres, consultez la section [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Ensuite, vous explorez certaines des puissantes analyses marketing qui peuvent être effectuées à l’aide de ces informations dans [!DNL MBI].
+Cette rubrique explique comment enregistrer [!DNL Google Analytics] les informations du canal d’acquisition dans votre propre base de données, à savoir : `source`, `medium`, `term`, `content`, `campaign`, et `gclid` qui étaient présents lors de la première visite d’un utilisateur sur votre site web. Pour une explication de ces paramètres, consultez la section [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Ensuite, vous explorez certaines des puissantes analyses marketing qui peuvent être effectuées à l’aide de ces informations dans [!DNL Commerce Intelligence].
 
 #### Pourquoi ?
 
@@ -51,7 +51,7 @@ Que se passe-t-il si vous souhaitez envoyer par courrier électronique une offre
 
 > `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
-Il existe clairement des données source d’acquisition codées dans la chaîne. Ceci est testé afin de confirmer qu’il s’agit de la dernière source d’acquisition du visiteur et des données de campagne associées. Vous devez maintenant savoir comment extraire les données. Heureusement, Justin Cutroni a déjà décrit le fonctionnement de cet encodage et a partagé du code JavaScript pour extraire les éléments clés d&#39;information.
+Il existe clairement des données source d’acquisition codées dans la chaîne. Ceci est testé afin de confirmer qu’il s’agit de la dernière source d’acquisition du visiteur et des données de campagne associées. Vous devez maintenant savoir comment extraire les données.
 
 Ce code a été traduit en une [Bibliothèque PHP hébergée sur github](https://github.com/RJMetrics/referral-grabber-php). Pour utiliser la bibliothèque, `include` une référence à `ReferralGrabber.php` puis appelez
 
@@ -59,7 +59,7 @@ Ce code a été traduit en une [Bibliothèque PHP hébergée sur github](https:/
 
 La valeur renvoyée `$data` array est une carte des clés `source`, `medium`, `term`, `content`, `campaign`, `gclid`et leurs valeurs respectives.
 
-Adobe recommande d’ajouter à votre base de données un tableau appelé, par exemple : `user_referral`, avec les colonnes comme : `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Chaque fois qu’un utilisateur s’inscrit, prenez les informations de référence et stockez-les dans ce tableau.
+[!DNL Adobe] recommande d’ajouter une table à votre base de données appelée, par exemple, `user_referral`, avec les colonnes comme : `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Chaque fois qu’un utilisateur s’inscrit, prenez les informations de référence et stockez-les dans ce tableau.
 
 #### Utilisation de ces données
 

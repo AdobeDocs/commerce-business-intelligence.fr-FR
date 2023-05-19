@@ -2,9 +2,9 @@
 title: Création de mesures
 description: Découvrez comment utiliser les mesures pour créer des graphiques.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
-En d’autres termes, une mesure est une mesure. Dans les structures SQL et de base de données, une mesure est comme une requête stockée sur une période variable.
+Une mesure est une mesure. Dans les structures SQL et de base de données, une mesure est comme une requête stockée sur une période variable.
 
-Dans [!DNL MBI], vous pouvez utiliser des mesures pour [créer des graphiques](../../data-user/reports/ess-rpt-build-visual.md). Par exemple, la mesure `revenue` est le nombre total de commandes. La mesure `average customer revenue per order` est ce que le client moyen dépense par commande.
+Dans [!DNL Commerce Intelligence], vous pouvez utiliser des mesures pour [créer des graphiques](../../data-user/reports/ess-rpt-build-visual.md). Par exemple, la mesure `revenue` est le nombre total de commandes. La mesure `average customer revenue per order` est ce que le client moyen dépense par commande.
 
 Lorsqu’elles sont utilisées dans des rapports, les mesures peuvent être analysées sur une période spécifiée et [filtré ou segmenté](../../best-practices/segment-filter.md) par différentes catégories. Envisagez d’analyser les recettes moyennes des clients regroupées par sexe, dans ce cas, `average customer revenue per order` est la mesure et le genre est le regroupement.
 
@@ -68,7 +68,7 @@ Le `Filter Logic` vous permet de définir plus précisément le comportement d�
 
 Le [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) présente toutes les dimensions de données disponibles pour le filtrage ou le regroupement ; par défaut, toutes les colonnes de données disponibles sont répertoriées en tant que dimensions. Si vous souhaitez segmenter vos recettes par source de référence dans l’exemple suivant, vous pouvez le faire ici.
 
-En plus de répertorier toutes les colonnes de données disponibles sous forme de dimensions, [!DNL MBI] devinettes à partir desquelles les colonnes peuvent être regroupées. *Pour segmenter ou regrouper des données dans des rapports*, les colonnes doivent être marquées comme pouvant être regroupées.
+En plus de répertorier toutes les colonnes de données disponibles sous forme de dimensions, [!DNL Commerce Intelligence] devinettes à partir desquelles les colonnes peuvent être regroupées. *Pour segmenter ou regrouper des données dans des rapports*, les colonnes doivent être marquées comme pouvant être regroupées.
 
 ## Finalisation {#finish}
 

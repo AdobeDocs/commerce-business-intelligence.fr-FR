@@ -1,24 +1,24 @@
 ---
-title: MBI
-description: Découvrez comment utiliser [!DNL MBI] fonctionnalités disponibles pour Adobe Commerce.
-breadcrumb-title: Guide de l’utilisateur MBI
-source-git-commit: be09d288755ea32eddf62b1eaf26ce586017320f
+title: Commerce Intelligence
+description: Découvrez comment utiliser [!DNL Commerce Intelligence] fonctionnalités disponibles pour Adobe Commerce.
+breadcrumb-title: Guide de l’utilisateur de Commerce Intelligence
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
 
 
-# [!DNL MBI] Guide de l’utilisateur {#mbi}
+# [!DNL Commerce Intelligence] Guide de l’utilisateur {#mbi}
 
-- [[!DNL MBI] Présentation du guide de l’utilisateur](guide-overview.md)
-- [[!DNL MBI] Introduction](getting-started/getting-started.md)
+- [[!DNL Commerce Intelligence] Guide de l’utilisateur](guide-overview.md)
+- [[!DNL Commerce Intelligence] Introduction](getting-started/getting-started.md)
 - Prise en main {#start}
    - [Intégration](getting-started/onboarding.md)
-   - [Activez votre [!DNL MBI] Compte](getting-started/onpremise-activation.md)
-   - [Connectez-vous à [!DNL MBI] Compte](getting-started/sign-in.md)
-   - [Notions fondamentales sur l’IMS par rapport aux MBI Pros](getting-started/essentials-vs-pro.md)
+   - [Activez votre [!DNL Commerce Intelligence] Compte](getting-started/onpremise-activation.md)
+   - [Connectez-vous à [!DNL Commerce Intelligence] Compte](getting-started/sign-in.md)
+   - [Commerce Intelligence Essentials contre Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - Administrateur {#administrator}
    - Gestion de compte {#acct-mgmt}
       - [Avantages de [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
@@ -53,7 +53,7 @@ ht-degree: 0%
       - [[!DNL MongoDB] guide de modélisation des données](data-analyst/data-warehouse-mgr/mongodb-data-modeling.md)
       - [Réplication [!DNL Google Analytics] channels](data-analyst/data-warehouse-mgr/rep-google-analytics-channels.md)
       - [Normalisation des données avec les tableaux de mappage](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
-      - [Traduire les requêtes SQL en [!DNL MBI] rapports](data-analyst/dev-reports/sql-queries-reports.md)
+      - [Traduire les requêtes SQL en [!DNL Commerce Intelligence] rapports](data-analyst/dev-reports/sql-queries-reports.md)
       - [Présentation et évaluation des relations entre les tables](data-analyst/data-warehouse-mgr/table-relationships.md)
       - [Utilisation de la différence de date calculée](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
       - [Utilisation du filtrage à l’échelle du tableau de bord](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
@@ -74,7 +74,7 @@ ht-degree: 0%
       - [Créer une analyse qualitative des cohortes](data-analyst/dev-reports/create-qual-cohort-analysis.md)
       - [Explorer les opérateurs de filtres spéciaux](data-analyst/dev-reports/explr-special-filter-ops.md)
       - [Exporter les résultats de ma requête](data-analyst/dev-reports/export-query-results.md)
-      - [Utilisation de formules dans la variable [!DNL Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
+      - [Utilisation de formules dans le [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [Créer [!DNL Google Analytics] Graphiques](data-analyst/dev-reports/google-analytics-charts-regex.md)
       - [Importance de la [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
       - [Commande des données à l’aide du [!DNL Show Top/Bottom] fonctionnalité](data-analyst/dev-reports/order-data-top-bottom-feat.md)
@@ -129,8 +129,8 @@ ht-degree: 0%
    - Intégrations de base de données {#integration}
       - [Connexion [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [Connexion de bases de données via VPN](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
-      - [Connectez-vous [!DNL MySQL Database] to [!DNL MBI]](data-analyst/importing-data/integrations/db-to-mbi.md)
-      - [Connexion à Commerce](data-analyst/importing-data/integrations/magento.md)
+      - [Connectez-vous [!DNL MySQL Database] to [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
+      - [Connexion à Adobe Commerce](data-analyst/importing-data/integrations/magento.md)
       - [Données commerciales attendues](data-analyst/importing-data/integrations/magento-data.md)
       - [Connexion [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
       - [Connexion [!DNL MongoDB] via [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
@@ -221,11 +221,11 @@ ht-degree: 0%
       - [Modification de la base de données pour la prise en charge de la réplication incrémentielle](best-practices/mod-db-inc-replication.md)
       - [Optimisation de la base de données pour l’analyse](best-practices/opt-db-analysis.md)
       - [Optimisation de vos [!DNL SQL] Requêtes](best-practices/optimizing-your-sql-queries.md)
-      - [Comprendre votre [!DNL MBI] Environnement](best-practices/understanding-magento.md)
+      - [Comprendre votre [!DNL Commerce Intelligence] Environnement](best-practices/understanding-magento.md)
    - Organisation du projet {#project}
-      - [Attribution de noms aux rapports et aux éléments dans [!DNL MBI]](best-practices/naming-elements.md)
+      - [Attribution de noms aux rapports et aux éléments dans [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Consolidation des tableaux](best-practices/consolidating-your-tables.md)
-      - [Désencombrez vos [!DNL MBI] account](best-practices/declutter-account.md)
+      - [Désencombrez vos [!DNL Commerce Intelligence] account](best-practices/declutter-account.md)
    - Utilisation des tableaux de bord {#working-dashboards}
       - [Partage de tableaux de bord](best-practices/share-dashboard-best-practice.md)
       - [Création d’un tableau de bord pour les investisseurs](best-practices/build-investor-dashboard.md)

@@ -1,5 +1,5 @@
 ---
-source-git-commit: 84182bc922e95cf066675af936add7ca7b82bfae
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -11,7 +11,7 @@ Nous acceptons les contributions de notre communauté ainsi que des employés d�
 
 ## Adobe de code de conduite Open Source
 
-Ce projet a adopté la méthode [Adobe de code de conduite Open Source](../code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, voir [Contribution](../contributing.md) article.
+Ce projet a adopté la méthode [Adobe de code de conduite Open Source](../code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, voir [Contribution](../contributing.md) rubrique.
 
 ## À propos de vos contributions pour Adobe du contenu
 
@@ -21,7 +21,7 @@ Votre contribution dépend de qui vous êtes et du type de modifications que vou
 
 ### Modifications mineures
 
-Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur le bouton **Modifier** lien dans l’article qui accède à la source GitHub de l’article. Ensuite, utilisez simplement l’interface utilisateur GitHub pour effectuer vos mises à jour. Voir le [Guide du contributeur pour Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus d’informations.
+Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur le bouton **Modifier** lien dans l’article qui accède à la source GitHub pour la rubrique. Ensuite, utilisez simplement l’interface utilisateur GitHub pour effectuer vos mises à jour. Voir le [Guide du contributeur pour Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus d’informations.
 
 Les corrections mineures ou les clarifications que vous envoyez pour la documentation et les exemples de code dans ce référentiel sont couvertes par les conditions d’utilisation Adobe.
 

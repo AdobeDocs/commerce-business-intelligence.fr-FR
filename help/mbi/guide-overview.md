@@ -1,18 +1,23 @@
 ---
-title: Présentation du guide de l’utilisateur MBI
-description: Informations complètes à l’intention des administrateurs de données de l’IMS.
+title: Guide de l’utilisateur de Commerce Intelligence
+description: Informations complètes à l’intention des administrateurs de données Commerce Intelligence.
 breadcrumb-title: Présentation du guide
-seo-title: MBI User Guide
-seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
+seo-title: Commerce Intelligence User Guide
+seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
-# [!DNL MBI] Présentation du guide de l’utilisateur
+
+# [!DNL Adobe Commerce Intelligence] Guide de l’utilisateur
+
+>[!NOTE]
+>
+>[!DNL Adobe Commerce Intelligence] était auparavant connu sous le nom [!DNL Magento Business Intelligence]. Une série de mises à jour est en cours pour que ce guide capture les modifications.
 
 Les administrateurs de données ont deux zones :
 
@@ -25,24 +30,24 @@ Ce guide contient les sections suivantes, organisées en fonction du rôle que v
 
 - [Utilisateur de données](data-user.md): Vous utilisez les données pour vous aider à prendre des décisions professionnelles. Vous pouvez recevoir des rapports et des tableaux de bord d’un analyste de données de votre équipe, mais vous souhaitez également apprendre à créer ces rapports et tableaux de bord.
 - [Analyste de données](data-analyst.md): Vous êtes à l’aise avec la conception de requêtes et vous êtes la personne de référence pour l’analyse des données. Vous savez comment trouver des réponses spécifiques à des questions de données et vous souhaitez faciliter l’expérience en libre-service pour vos collègues.
-- Administrateur : Vous gérez le [!DNL MBI] compte comprenant la licence, l’ajout et la suppression d’utilisateurs, ainsi que la gestion des tâches administratives essentielles.
+- Administrateur : Vous gérez le [!DNL Commerce Intelligence] compte comprenant la licence, l’ajout et la suppression d’utilisateurs, ainsi que la gestion des tâches administratives essentielles.
 
 Outre les workflows basés sur les rôles ci-dessus, ce guide contient également :
 
-- Bonnes pratiques : [!UICONTROL MBI] est une plateforme robuste et flexible, ce qui signifie qu’il existe de nombreuses façons différentes d’effectuer des tâches similaires. Cette section regroupe les [!DNL MBI] méthodes recommandées pour capturer, analyser et visualiser vos données.
-- Tutorials : Suivez ces tutoriels autonomes pour découvrir la puissance de [!DNL MBI].
+- Bonnes pratiques : [!UICONTROL Commerce Intelligence] est une plateforme robuste et flexible, ce qui signifie qu’il existe de nombreuses façons différentes d’effectuer des tâches similaires. Cette section regroupe les [!DNL Commerce Intelligence] méthodes recommandées pour capturer, analyser et visualiser vos données.
+- Tutorials : Suivez ces tutoriels autonomes pour découvrir la puissance de [!DNL Commerce Intelligence].
 
 ## Accès à l’aide
 
-Contactez l’équipe d’assistance si vous avez des questions, si vous souhaitez profiter de certains de vos services professionnels ou si vous rencontrez des problèmes avec votre compte.
+Contactez le [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si vous avez des questions et souhaitez profiter de certains de vos services professionnels ou si vous rencontrez des problèmes avec votre compte.
 
 ### Stratégies de service
 
-Voir [liste des services fournis par l’équipe d’assistance clientèle](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Voir [liste des services fournis par l’équipe d’assistance clientèle](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Envoi d’un ticket d’assistance
 
-Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter l’équipe d’assistance, Adobe vous demande d’utiliser la variable [instructions relatives aux tickets d’assistance] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
+Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter l’équipe d’assistance, Adobe vous demande d’utiliser la variable [instructions relatives aux tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
 
 ## Documentation disponible
 

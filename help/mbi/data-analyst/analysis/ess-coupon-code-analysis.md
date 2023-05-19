@@ -2,9 +2,9 @@
 title: Analyse du code de bon (de base)
 description: Découvrez les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre les habitudes des clients.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Comprendre les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre les habitudes des clients.
 
-Cet article décrit les étapes nécessaires à la création de cette analyse pour comprendre les performances des clients achetés par coupon, afficher les tendances et suivre l’utilisation du code de coupon individuel.
+Cette rubrique décrit les étapes nécessaires à la création de cette analyse pour comprendre les performances des clients achetés par coupon, afficher les tendances et suivre l’utilisation du code de coupon individuel.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -21,7 +21,7 @@ Cet article décrit les étapes nécessaires à la création de cette analyse po
 
 Tout d’abord, une note sur le suivi des codes de coupon. Si un client a appliqué un coupon à une commande, trois choses se produisent :
 
-* Une remise est répercutée dans la variable `base_grand_total` quantité (votre `Revenue` mesure dans MBI)
+* Une remise est répercutée dans la variable `base_grand_total` quantité (votre `Revenue` mesure dans Commerce Intelligence)
 * Le code de coupon est stocké dans la variable `coupon_code` champ . Si ce champ est NULL (vide), aucun coupon n’est associé à la commande.
 * Le montant escompté est stocké dans la variable `base_discount_amount`. Selon votre configuration, cette valeur peut apparaître négative ou positive.
 

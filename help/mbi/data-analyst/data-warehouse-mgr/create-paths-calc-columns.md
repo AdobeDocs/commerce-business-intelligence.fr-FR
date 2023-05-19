@@ -2,9 +2,9 @@
 title: Création ou suppression de chemins d’accès pour les colonnes calculées
 description: Découvrez comment définir un chemin décrivant la relation entre le tableau sur lequel vous créez une colonne et le tableau à partir duquel vous extrayez des informations.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ When [création de colonnes calculées](../data-warehouse-mgr/creating-calculate
 1. Comment les tables de vos bases de données se relient les unes aux autres
 1. Clés Principale et étrangère qui définissent cette relation
 
-Si vous connaissez ces informations, vous pouvez facilement créer un chemin suivant les instructions de cet article. Un aperçu de ces concepts si vous n’êtes pas certain, mais que vous souhaitez peut-être demander à un expert technique de votre entreprise ou contacter l’équipe d’assistance Adobe.
+Si vous connaissez ces informations, vous pouvez facilement créer un chemin suivant les instructions de cette rubrique. Vous pouvez contacter un expert technique de votre entreprise ou contacter le [Équipe des services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Rafraîchissements sur les relations de table et les types clés {#refresher}
 
@@ -36,7 +36,7 @@ Les tableaux peuvent être associés les uns aux autres de trois façons :
 
 {style="table-layout:auto"}
 
-Une fois qu’une relation entre deux tables est comprise, elle peut être utilisée pour déterminer le chemin à créer afin d’apporter des informations d’une table à une autre. Cette étape suivante nécessite de connaître les clés Principales et étrangères qui facilitent une relation de tableau.
+Lorsqu’une relation entre deux tables est comprise, elle peut être utilisée pour déterminer le chemin à créer afin d’apporter des informations d’une table à une autre. Cette étape suivante nécessite de connaître les clés Principales et étrangères qui facilitent une relation de tableau.
 
 ### Principale et clés étrangères {#keys}
 
@@ -75,20 +75,23 @@ Vous pouvez maintenant créer le chemin.
 
 ### Limites de la création de chemins {#limits}
 
-* **[!DNL MBI]ne peut pas deviner les relations de clé Principale/étrangère**. Vous ne souhaitez pas introduire des données incorrectes dans votre compte. Par conséquent, la création de chemins d’accès doit être effectuée manuellement.
-* **Actuellement, les chemins ne peuvent être spécifiés que entre deux tables différentes.**. La logique que vous essayez de recréer implique-t-elle plus de deux tables ? Il peut alors s’avérer judicieux (1) de joindre d’abord les colonnes à une table intermédiaire, puis à la table &quot;destination finale&quot;, ou (2) de consulter l’équipe d’Adobe pour trouver la meilleure approche pour vos objectifs.
+* **[!DNL Commerce Intelligence]ne peut pas deviner les relations de clé Principale/étrangère**. Vous ne souhaitez pas introduire des données incorrectes dans votre compte. Par conséquent, la création de chemins d’accès doit être effectuée manuellement.
+
+* **Actuellement, les chemins ne peuvent être spécifiés que entre deux tables différentes.**. La logique que vous essayez de recréer implique-t-elle plus de deux tables ? Il peut alors être judicieux (1) de joindre d’abord les colonnes à une table intermédiaire, puis à la table &quot;destination finale&quot;, ou (2) de consulter la [Équipe des services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour trouver la meilleure approche pour vos objectifs.
+
 * **Une colonne ne peut être la référence de clé étrangère que pour un seul chemin à la fois.**. Par exemple, si `order_items.order_id` pointe vers `orders.id`, puis `order_items.order_id` ne peut pointer vers rien d’autre.
+
 * **`Many-to-many`les chemins peuvent techniquement être créés, mais produisent souvent des données incorrectes car aucun côté n’est vrai. `one-to-many` clé étrangère**. La meilleure façon d’aborder ces chemins dépend toujours de l’analyse spécifique souhaitée. Consultez l’équipe d’analystes RJ pour découvrir la meilleure solution.
 
 Si vous ne pouvez pas créer de colonne calculée en raison d’une ou de plusieurs des restrictions ci-dessus, contactez l’assistance avec une description de la colonne que vous êtes.
 
 ## Suppression d’un chemin de colonne calculé {#delete}
 
-Création d’un chemin d’accès incorrect dans votre Data Warehouse ? Ou peut-être que vous faites un petit ménage de printemps et que vous voulez ranger ? Si vous devez supprimer un chemin d’accès de votre compte, vous pouvez [envoyer un ticket à des analystes de l’assistance Adobe](../../guide-overview.md). **Veillez à inclure le nom du chemin.**
+Création d’un chemin d’accès incorrect dans votre Data Warehouse ? Ou peut-être que vous faites un petit ménage de printemps et que vous voulez ranger ? Si vous devez supprimer un chemin d’accès de votre compte, vous pouvez [envoyer un ticket à des analystes de l’assistance Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Veillez à inclure le nom du chemin.**
 
 ## Remplissage {#wrapup}
 
-Maintenant que vous êtes à l’aise avec la création de chemins pour les colonnes calculées dans votre Data Warehouse. Si vous n’êtes toujours pas sûr d’un chemin particulier, n’oubliez pas que vous pouvez toujours cliquer sur **[!UICONTROL Support]** dans votre [!DNL MBI] pour obtenir de l’aide.
+Maintenant que vous êtes à l’aise avec la création de chemins pour les colonnes calculées dans votre Data Warehouse. Si vous n’êtes toujours pas sûr d’un chemin particulier, n’oubliez pas que vous pouvez toujours cliquer sur **[!UICONTROL Support]** dans votre [!DNL Commerce Intelligence] pour obtenir de l’aide.
 
 ## Associé
 

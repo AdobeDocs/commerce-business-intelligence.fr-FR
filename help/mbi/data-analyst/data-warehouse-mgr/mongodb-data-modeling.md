@@ -2,24 +2,24 @@
 title: Modélisation des données MongoDB
 description: Découvrez comment éviter les modèles de données qui posent problème.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
 # [!DNL MongoDB] Modélisation des données
 
-When [!DNL MBI] extrait [!DNL MongoDB] données, ces données sont traduites dans un modèle relationnel.
+When [!DNL Adobe Commerce Intelligence] extrait [!DNL MongoDB] données, ces données sont traduites dans un modèle relationnel.
 
-La mauvaise nouvelle : Bien que la plupart des modèles de données ne posent pas problème, certains d’entre eux, en raison de la traduction en modèle relationnel, [!DNL MBI] ne prend pas en charge.
+La mauvaise nouvelle : Bien que la plupart des modèles de données ne posent pas de problème, certains d’entre eux ne sont pas pris en charge par [!DNL Commerce Intelligence], en raison de la traduction en modèle relationnel.
 
 La bonne nouvelle : Tous ces modèles peuvent être évités.
 
 ## Tableaux imbriqués {#subnested}
 
-Si votre collection ressemble à l’exemple ci-dessous, [!DNL MBI] ne réplique que les données du tableau d’éléments. Les données du tableau de sous-éléments ne sont pas extraites.
+Si votre collection ressemble à l’exemple ci-dessous, [!DNL Commerce Intelligence] ne réplique que les données du tableau d’éléments. Les données du tableau de sous-éléments ne sont pas extraites.
 
 ```bash
     {
@@ -41,7 +41,7 @@ Si votre collection ressemble à l’exemple ci-dessous, [!DNL MBI] ne réplique
 
 ## Clés d’objet variable {#varobjectkeys}
 
-Les collections qui incluent des objets avec des clés d’objet variables ne sont pas répliquées dans [!DNL MBI]. Par exemple :
+Les collections qui incluent des objets avec des clés d’objet variables ne sont pas répliquées dans [!DNL Commerce Intelligence]. Par exemple :
 
 ```bash
     {

@@ -2,9 +2,9 @@
 title: Formules
 description: Découvrez comment utiliser des formules.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Une formule combine plusieurs mesures et une logique mathématique pour répondr
 
    Procédez comme suit :
 
-   * Dans le `Enter your Formul` zone de saisie, saisissez `A/B`.
+   * Dans le `Enter your Formula` zone de saisie, saisissez `A/B`.
 
       Les recettes sont ainsi divisées par le nombre de produits commandés par le nombre de nouveaux clients.
 
@@ -71,7 +71,7 @@ Une formule combine plusieurs mesures et une logique mathématique pour répondr
 
    * Sur les calendriers, sélectionnez la période.
 
-      Dans cet exemple, la saison des fêtes s’étend du 1er au 31 décembre.
+      Dans cet exemple, la saison des fêtes est la suivante : `November 1` through `December 31`.
 
    * Sous `Select Time Interval`, choisissez `Day`.
 

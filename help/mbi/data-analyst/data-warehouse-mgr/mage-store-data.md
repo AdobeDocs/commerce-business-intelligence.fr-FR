@@ -1,25 +1,25 @@
 ---
-title: Stockage des données dans Commerce
-description: Découvrez comment les données sont générées, ce qui entraîne l’insertion d’une nouvelle ligne et comment les actions sont enregistrées dans la base de données Commerce.
+title: Stockage des données dans Adobe Commerce
+description: Découvrez comment les données sont générées, ce qui entraîne l’insertion d’une nouvelle ligne et comment les actions sont enregistrées dans la base de données Adobe Commerce.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '928'
 ht-degree: 3%
 
 ---
 
 # Stockage des données dans [!DNL Adobe Commerce]
 
-La plateforme Adobe Commerce enregistre et organise un large éventail de données commerciales importantes sur des centaines de tables. Cette rubrique décrit :
+Le [!DNL Adobe Commerce] platform enregistre et organise une grande variété de données commerciales importantes sur des centaines de tables. Cette rubrique décrit :
 
 * comment ces données sont générées
-* ce qui entraîne exactement l’insertion d’une nouvelle ligne dans l’une des [Tables de commerce principales](../data-warehouse-mgr/common-mage-tables.md)
-* comment les actions telles que réaliser un achat ou créer un compte sont enregistrées dans la base de données Commerce
+* ce qui entraîne l’insertion d’une nouvelle ligne dans l’une des [Tables de commerce principales](../data-warehouse-mgr/common-mage-tables.md)
+* comment les actions telles que réaliser un achat ou créer un compte sont enregistrées dans la variable [!DNL Adobe Commerce] base
 
-Pour expliquer ces concepts, reportez-vous à l&#39;exemple suivant :
+Pour discuter de ces concepts, reportez-vous à l&#39;exemple suivant :
 
-`Clothes4U` est un détaillant de vêtements disposant d’une présence en ligne et d’une présence en briques et mortiers. Il utilise le Magento Open Source derrière son site web pour collecter et organiser des données.
+`Clothes4U` est un détaillant de vêtements avec des présences en ligne et en brique et mortier. Elle utilise [!DNL Magento Open Source] derrière son site web pour collecter et organiser des données.
 
 ## `catalog\_product\_entity`
 
@@ -57,7 +57,7 @@ Peu après l&#39;ajout des trois nouveaux produits, un nouveau client, `Sammy Cu
 * `email` - ce champ est renseigné par le courrier électronique qu’un nouveau client saisit lors de l’établissement de son compte
 * `created_at` - Cette colonne renvoie l’horodatage du moment où chaque utilisateur a rejoint
 
-## `sales\_flat\_order (or Sales\_order` si vous disposez de Commerce 2.0 ou version ultérieure)
+## `sales\_flat\_order (or Sales\_order` si vous avez [!DNL Adobe Commerce 2.x]
 
 Une fois la création du compte terminée, `Sammy Customer` est prêt à commencer à effectuer un achat. Sur le site web, le client ajoute deux paires de la variable `Throwback Bellbottoms` et un `V-Neck T-Shirt` au panier. Satisfait par les sélections, le client passe à l’extraction et envoie la commande, créant ainsi l’entrée suivante sur la page [table des commandes plats](../data-warehouse-mgr/sales-flat-order-table.md):
 
@@ -73,7 +73,9 @@ Une fois la création du compte terminée, `Sammy Customer` est prêt à commenc
    * Les deux paires &quot;Throwback Bellbouteilles&quot; et &quot;V-Neck T-Shirt&quot; coûtent 94,85 dollars au total.
 * `created_at` - Cette colonne renvoie l’horodatage de la création de chaque commande.
 
-## `sales\_flat\_order\_item ( or Sales\_order\_item` si vous disposez de Commerce 2.0 ou version ultérieure)
+## `sales\_flat\_order\_item ( or Sales\_order\_item`
+
+(si vous disposez de Commerce 2.0 ou version ultérieure)
 
 En plus de la seule ligne de la `Sales\_flat\_order` table, lorsque `Sammy Customer` envoie la commande, une ligne pour chaque élément unique dans cet ordre est insérée dans la variable [`sales\_flat\_order\_item` table](../data-warehouse-mgr/sales-flat-order-item-table.md):
 

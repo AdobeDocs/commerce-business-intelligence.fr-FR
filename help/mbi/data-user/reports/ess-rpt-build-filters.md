@@ -2,9 +2,9 @@
 title: Filtres
 description: Découvrez comment utiliser les filtres.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Un ou plusieurs filtres peuvent être ajoutés pour limiter les données utilis�
 >
 >Un rapport peut contenir, au maximum, 3 500 points de données. Pour réduire le nombre de points de données, utilisez un filtre afin de réduire la quantité de données utilisées pour générer le rapport.
 
-L’IMS comprend une sélection de filtres que vous pouvez utiliser &quot;prêts à l’emploi&quot; ou modifier en fonction de vos besoins. Le nombre de filtres que vous pouvez créer n’est pas limité.
+[!DNL Adobe Commerce Intelligence] comprend une sélection de filtres que vous pouvez utiliser &quot;prêts à l’emploi&quot; ou modifier en fonction de vos besoins. Le nombre de filtres que vous pouvez créer n’est pas limité.
 
 ## Pour ajouter un filtre :
 

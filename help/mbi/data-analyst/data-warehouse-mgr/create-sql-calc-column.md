@@ -1,23 +1,23 @@
 ---
 title: Création et utilisation d’une colonne calculée SQL
-description: Découvrez comment créer des colonnes avancées sous la forme de colonnes de calcul SQL sur la nouvelle architecture MBI.
+description: Découvrez comment créer des colonnes avancées sous la forme de colonnes de calcul SQL sur la nouvelle architecture Adobe Commerce Intelligence.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
 # Création d’une colonne calculée SQL
 
-Cette rubrique décrit l’objectif et les utilisations de la fonction `Calculation` type de colonne : qui peuvent être ajoutés aux tableaux à l’aide de la variable [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md). Vous trouverez ci-dessous une explication des calculs SQL, des raisons de leur utilisation, du processus de création d’un calcul SQL, ainsi que deux exemples.
+Cette rubrique décrit l’objectif et les utilisations de la fonction `Calculation` type de colonne, qui peut être ajouté aux tableaux à l’aide de la variable [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md). Vous trouverez ci-dessous des explications sur les calculs SQL, les raisons de leur utilisation, le processus de création d’un calcul SQL, ainsi que deux exemples.
 
 **Explication**
 
-Dans le passé, colonnes considérées `advanced` ne peut être effectué que par un analyste de l’équipe du succès client à l’adresse [!DNL MBI]. Désormais, toute la puissance est entre les mains de l’utilisateur final, et des colonnes avancées peuvent être créées sous la forme de `SQL Calculation` sur la nouvelle [!DNL MBI] l’architecture.
+Dans le passé, colonnes considérées `advanced` ne peut être effectué que par un analyste de l’équipe du succès client à l’adresse [!DNL Adobe Commerce Intelligence]. Désormais, toute la puissance est entre les mains de l’utilisateur final, et des colonnes avancées peuvent être créées sous la forme de `SQL Calculation` sur la nouvelle [!DNL Commerce Intelligence] l’architecture.
 
-Le `Calculation` Le type de colonne, désormais disponible en tant qu’option dans Data Warehouse Manager, est une même opération de table qui permet de transformer les colonnes d’un tableau à l’aide de la logique PostgreSQL. Documentation sur les fonctions et opérateurs pouvant être utilisés dans le `Calculatio`Un type de colonne est disponible sur le site Web de PostgreSQL. [here](https://www.postgresql.org/docs/9.6/functions.html).
+Le `Calculation` Le type de colonne, désormais disponible en tant qu’option dans Data Warehouse Manager, est une même opération de table qui permet de transformer les colonnes d’un tableau à l’aide de la logique PostgreSQL. Documentation sur les fonctions et opérateurs pouvant être utilisés dans le `Calculation` Le type de colonne est disponible sur le site web PostgreSQL [here](https://www.postgresql.org/docs/9.6/functions.html).
 
 Les différentes colonnes qui peuvent être créées avec l’objet `Calculation` sont pratiquement illimitées, mais la plupart des colonnes peuvent être créées à l’aide d’instructions IF-THEN et d’une arithmétique de base, qui est utilisée dans les exemples ci-dessous.
 
@@ -73,4 +73,5 @@ Vous pouvez créer un `Calculation` en suivant les étapes ci-dessous :
    * `Datetime` - aaaa-MM-jj hh:mm:format ss
 
 1. Cliquez sur **[!UICONTROL test column]**. Cela génère une liste de cinq valeurs de test pour chacune de vos entrées et affiche le résultat de la logique de l’étape 6 pour chaque ensemble de valeurs de test. Si une partie du code SQL génère une erreur, le message d’erreur approprié est renvoyé. Les exemples de résultats ne peuvent être générés que si toutes les colonnes d’entrée sont des champs natifs. Si l’une des colonnes d’entrée est des colonnes calculées, vous devez valider les résultats en ajoutant la colonne à une mesure et en la visualisant dans le Report Builder Visuel.
-1. Lorsque les résultats vous conviennent, cliquez sur **[!UICONTROL Save]**. La colonne est utilisable.
+
+1. Lorsque vous êtes satisfait des résultats, cliquez sur **[!UICONTROL Save]**. La colonne est utilisable.

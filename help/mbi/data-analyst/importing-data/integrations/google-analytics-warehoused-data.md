@@ -2,14 +2,14 @@
 title: Données Google Analytics stockées attendues
 description: Découvrez comment interagir avec vos données stockées Google Analytics.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
-# Valeur attendue [!DNL Google Analytics] Données stockées
+# Valeur attendue [!DNL Google Analytics Warehoused] Données
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Certaines informations ont été utilisées avec la permission de vos amis sur [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
 
-[!DNL Google Analytics Warehoused] intégration dans [!DNL MBI] utilise la variable [!DNL Google Analytics] [API Core Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+[!DNL Google Analytics Warehoused] intégration dans [!DNL Commerce Intelligence] utilise la variable [!DNL Google Analytics] [API Core Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
@@ -39,8 +39,8 @@ Le tableau ressemble à l’exemple ci-dessous.
 | **Nom de la colonne** | **Description** |
 |-----|-----|
 | `\_id` | Cette colonne correspond au `primary key`. |
-| `\_rjm\_record\_hash` | [!DNL MBI] identifiant unique. Cette colonne est créée par [!DNL MBI]. |
-| `\_updated\_at` | Cette colonne contient la dernière fois que la ligne de données a été mise à jour. Cette colonne est créée par [!DNL MBI]. |
+| `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] identifiant unique. Cette colonne est créée par [!DNL Commerce Intelligence]. |
+| `\_updated\_at` | Cette colonne contient la dernière fois que la ligne de données a été mise à jour. Cette colonne est créée par [!DNL Commerce Intelligence]. |
 | `start-date` | Identification du jour de la ligne. |
 | `end-date` | Identification du jour de la ligne. |
 | `month` | Dimension sélectionnée : Mois de la session, entier à deux chiffres compris entre 01 et 12. |
@@ -48,7 +48,7 @@ Le tableau ressemble à l’exemple ci-dessous.
 
 {style="table-layout:auto"}
 
-## Rappel : Différence entre l’intégration de l’entrepôt de Google Analytics et l’intégration en direct
+## Quelle est la différence entre [!DNL Google Analytics Warehoused] et [!DNL Live Integration]
 
 Le principal différenciateur est qu’une intégration est stockée ([!DNL Google Analytics Warehoused]), et l’autre n’est pas ([!DNL Google Analytics Live]). Dans les cas de [!DNL Google Analytics Warehoused], cela permet de manipuler votre [!DNL Google Analytics] et vous donne la possibilité de combiner des [!DNL Google Analytics] et d’autres sources de données pour créer des rapports pertinents.
 
@@ -56,7 +56,7 @@ Regarder [!DNL Google Analytics] campagnes publicitaires pour un exemple de ce q
 
 L’aspect de combinaison permet [!DNL Google Analytics] données à associer à d&#39;autres données afin de mener des analyses. Par exemple, prenez `Total Time On Site By Ad Campaign` des données provenant de [!DNL Google Analytics] et rejoignez-le contre `Total Spent Per Campaign` des données provenant de [!DNL Facebook Ads] pour obtenir une vue d’ensemble de l’engagement qui vous coûte.
 
-Avec le [!DNL Google Analytics Live] d’autre part, chaque [!DNL Google Analytics] Le graphique est comme un petit silo qui n’est pas stocké dans votre [!DNL MBI] Data Warehouse.
+Avec le [!DNL Google Analytics Live] d’autre part, chaque [!DNL Google Analytics] Le graphique est comme un petit silo qui n’est pas stocké dans votre [!DNL Commerce Intelligence] Data Warehouse.
 
 ## En rapport :
 

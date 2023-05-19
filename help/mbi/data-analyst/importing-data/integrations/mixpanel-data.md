@@ -1,10 +1,10 @@
 ---
 title: Données de panneau mixte attendues
-description: Explorez les principaux tableaux de données que vous pouvez importer à partir de Mixpanel dans votre [!DNL MBI] compte .
+description: Explorez les principaux tableaux de données que vous pouvez importer à partir de Mixpanel dans votre [!DNL Commerce Intelligence] compte .
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Après [vous avez connecté votre [!DNL Mixpanel] account](../integrations/mixpanel.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
 
-Cet article explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Mixpanel] dans [!DNL MBI] compte . Les tableaux suivants seront créés dans votre Data Warehouse après la connexion de Mixpanel. Pour visualiser tous les champs disponibles pour le tracking, cliquez sur les liens de la colonne du nom du tableau.
+Cette rubrique explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Mixpanel] dans [!DNL Commerce Intelligence] compte . Les tableaux suivants seront créés dans votre Data Warehouse après la connexion. [!DNL Mixpanel]. Pour visualiser tous les champs disponibles pour le tracking, cliquez sur les liens de la colonne du nom du tableau.
 
 >[!NOTE]
 >
->En raison des limites de la variable [!DNL Mixpanel] API, données historiques : données datant de plus de sept (7) jours à compter de la date de connexion à [!DNL MBI] - n’est pas répliqué.
+>En raison des limites de la variable [!DNL Mixpanel] API, données historiques : données datant de plus de sept (7) jours à compter de la date de connexion à [!DNL Commerce Intelligence] - n’est pas répliqué.
 
 | **Nom de la table** | **Description** |
 |-----|-----|
@@ -30,4 +30,4 @@ Cet article explore les principaux tableaux de données à partir desquels vous 
 ## Documentation connexe
 
 * [Connexion [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

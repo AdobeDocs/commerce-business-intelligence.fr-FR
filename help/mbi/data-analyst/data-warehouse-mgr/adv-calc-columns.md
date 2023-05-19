@@ -2,16 +2,16 @@
 title: Types de colonne calculés avancés
 description: Découvrez les principes de base de la plupart des cas d’utilisation des colonnes, mais vous souhaiterez peut-être que les colonnes calculées soient un peu plus complexes que ce que le Gestionnaire de Data Warehouse peut créer.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
 # Types de colonne calculés avancés
 
-De nombreuses analyses que vous pouvez tenter de créer impliquent l’utilisation d’une **nouvelle colonne** que vous voulez `group by` ou `filter by`. Le [Création de colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md) Ce tutoriel aborde les principes de base de la plupart des cas d’utilisation, mais vous souhaiterez peut-être que la colonne calculée soit un peu plus complexe que ce que le Gestionnaire de Data Warehouse peut créer.
+De nombreuses analyses que vous souhaitez peut-être créer impliquent l’utilisation d’un **nouvelle colonne** que vous voulez `group by` ou `filter by`. Le [Création de colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md) Ce tutoriel aborde les principes de base de la plupart des cas d’utilisation, mais vous souhaiterez peut-être que la colonne calculée soit un peu plus complexe que ce que le Gestionnaire de Data Warehouse peut créer.
 { : #top}
 
 Ces types de colonnes peuvent être créés par l’équipe Adobe des analystes de Data Warehouse. Pour définir une nouvelle colonne calculée, renseignez les informations suivantes :
@@ -159,7 +159,7 @@ Pour créer ce type de colonne calculée, vous devez savoir :
 
 Ne vous inquiétez pas. Ce n&#39;est pas parce qu&#39;il n&#39;est pas répertorié ici que ce n&#39;est pas possible. L’équipe Adobe d’analystes Data Warehouse peut vous aider.
 
-Pour définir une nouvelle colonne calculée, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) avec des détails précis sur ce que vous souhaitez créer.
+Pour définir une nouvelle colonne calculée, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) avec des détails précis sur ce que vous souhaitez créer.
 
 ## Documentation connexe
 

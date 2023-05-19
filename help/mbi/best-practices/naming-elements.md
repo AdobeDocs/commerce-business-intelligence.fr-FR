@@ -1,25 +1,25 @@
 ---
-title: Nommer les rapports et les éléments dans l’IMS
-description: Découvrez les bonnes pratiques pour nommer les rapports et les éléments dans [!DNL MBI].
+title: Nommer des rapports et des éléments dans Commerce Intelligence
+description: Découvrez les bonnes pratiques pour nommer les rapports et les éléments dans [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # Nommer des rapports et des éléments
 
-Avant de commencer la création dans[!DNL MBI], Adobe souhaite partager quelques secrets pour réussir. Il est important de savoir comment créer des mesures, des filtres, etc., mais tout votre travail peut n’avoir aucun impact si vous ne trouvez pas ce dont vous avez besoin ou s’il y a de l’ambiguïté.
+Avant de commencer la création dans[!DNL Adobe Commerce Intelligence], Adobe souhaite partager quelques secrets pour réussir. Il est important de savoir comment créer des mesures, des filtres, etc., mais tout votre travail peut n’avoir aucun impact si vous ne trouvez pas ce dont vous avez besoin ou s’il y a de l’ambiguïté.
 
 ## Pourquoi la nomenclature est-elle importante ? {#why}
 
-La manière dont vous nommez vos colonnes, mesures et rapports calculés détermine la facilité avec laquelle les différents utilisateurs peuvent naviguer dans vos [!DNL MBI] compte . Lors de l’attribution de noms à ces fonctionnalités, gardez à l’esprit les trois Cs :
+La manière dont vous nommez vos colonnes, mesures et rapports calculés détermine la facilité avec laquelle les différents utilisateurs peuvent naviguer dans vos [!DNL Commerce Intelligence] compte . Lors de l’attribution de noms à ces fonctionnalités, gardez à l’esprit les trois Cs :
 
 * **CLARITÉ** - Vous pouvez ainsi visualiser en un coup d’oeil ce qu’un rapport affiche, ce qu’une mesure fait, etc.
 * **COHÉRENCE** - afin que vous (et l’équipe d’assistance Adobe) puissiez facilement trouver et comprendre les éléments et les rapports de votre compte.
-* **CRÉDIBILITÉ** - Pour inspirer et autonomiser d&#39;autres personnes motivées par les données [!DNL MBI] utilisateurs, vous devez inspirer confiance dans la manière dont ils comprennent et utilisent les données !
+* **CRÉDIBILITÉ** - Pour inspirer et autonomiser d&#39;autres personnes motivées par les données [!DNL Commerce Intelligence] utilisateurs, vous devez inspirer confiance dans la manière dont ils comprennent et utilisent les données !
 
 Lisez la suite pour des conseils avisés sur la nomenclature !
 
@@ -41,7 +41,7 @@ Ces exemples sont spécifiques, ce qui réduit le risque de confusion.
 
 ### Respecter la casse {#capitalize}
 
-Adobe recommande la première lettre en majuscule avec le reste des caractères en minuscules, sauf si le style de majuscule approprié est donné. Par exemple : **Numéro de commande de l’utilisateur** plutôt que **Numéro de commande de l’utilisateur.**
+[!DNL Adobe] recommande la première lettre, en majuscule, avec le reste des caractères, en minuscules, sauf si le style de majuscule approprié est le nom . Par exemple : **Numéro de commande de l’utilisateur** plutôt que **Numéro de commande de l’utilisateur.**
 
 C&#39;est vraiment une question de préférence, mais la chose à retenir est d&#39;être cohérent avec ce que vous choisissez.
 
@@ -101,4 +101,4 @@ Recettes (expédié\_at) Recettes (créé\_at)
 
 ## Remplissage {#wrapup}
 
-La définition précoce des conventions de style et d’appellation vous aide à vous préparer à la réussite de votre [!DNL MBI] compte . Rappelez-vous des trois C : clarté, cohérence et crédibilité.
+La définition précoce des conventions de style et d’appellation vous aide à vous préparer à la réussite de votre [!DNL Commerce Intelligence] compte . Rappelez-vous des trois C : clarté, cohérence et crédibilité.

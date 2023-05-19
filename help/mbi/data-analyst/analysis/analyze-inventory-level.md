@@ -2,16 +2,16 @@
 title: Analyse des niveaux de stock
 description: Découvrez comment analyser les niveaux d’inventaire.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Analyse des niveaux de stock
 
-Cette rubrique explique comment configurer un tableau de bord qui fournit des informations sur votre inventaire actuel. Cette rubrique contient des instructions destinées aux clients sur l’architecture héritée ou la nouvelle architecture. Vous utilisez l’architecture héritée si vous ne disposez pas de la variable **[!UICONTROL Data Warehouse Views]** sous l’option **[!UICONTROL Manage Data]** ). Si vous utilisez l’architecture héritée, envoyez une [nouvelle demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) avec le sujet **[!UICONTROL INVENTORY ANALYSIS]** une fois que vous avez atteint la section désignée dans la variable _Colonnes calculées_ instructions ci-dessous.
+Cette rubrique explique comment configurer un tableau de bord qui fournit des informations sur votre inventaire actuel et contient des instructions destinées aux clients sur l’architecture héritée ou la nouvelle architecture. Vous utilisez l’architecture héritée si vous ne disposez pas de la variable **[!UICONTROL Data Warehouse Views]** sous l’option **[!UICONTROL Manage Data]** . Si vous utilisez l’architecture héritée, envoyez une [nouvelle demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) avec le sujet **[!UICONTROL INVENTORY ANALYSIS]** une fois que vous avez atteint la section désignée dans la variable _Colonnes calculées_ instructions ci-dessous.
 
 ## Colonnes à suivre :
 
@@ -29,7 +29,7 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
 ## Colonnes calculées :
 
-### Nouvelle architecture
++++ Nouvelle architecture
 
 * **[!UICONTROL catalog_product_entity]** table :
    * **`Product's most recent order date`**
@@ -118,7 +118,8 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
 
 
-### Architecture héritée
++++
++++ Architecture héritée
 
 * **[!UICONTROL catalog_product_entity]** table :
    * **`Product's most recent order date`**
@@ -189,6 +190,8 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
 
 
++++
+
 ## Mesures
 
 ### Instructions sur les mesures
@@ -240,4 +243,4 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
       [!UICONTROL Chart type]: `Table`
 
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

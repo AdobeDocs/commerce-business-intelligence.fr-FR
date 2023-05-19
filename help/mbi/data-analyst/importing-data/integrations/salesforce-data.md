@@ -2,16 +2,16 @@
 title: Données Salesforce attendues
 description: Découvrez les objets pris en charge et non pris en charge dans les données Salesforce.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
 # Valeur attendue [!DNL Salesforce] data
 
-[Après la [!DNL Salesforce] la configuration est terminée](../integrations/salesforce.md), un tableau pour chaque table de requête [objet](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - named `sf_/\{sobject-name}` - est créé dans votre Data Warehouse.
+Après la [[!DNL Salesforce] setup](../integrations/salesforce.md) est terminé, un tableau pour chaque table de requête [objet](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - named `sf_/\{sobject-name}` - est créé dans votre Data Warehouse.
 
 >[!NOTE]
 >
@@ -48,4 +48,4 @@ Actuellement, [!DNL Salesforce] n’expose actuellement pas les objets suivants 
 ## En rapport :
 
 * [Connexion [!DNL Salesforce]](../integrations/salesforce.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

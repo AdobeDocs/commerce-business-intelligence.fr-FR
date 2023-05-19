@@ -1,8 +1,8 @@
 ---
 title: Données de type Bande attendues
-description: Explorez les tableaux de données principaux que vous pouvez importer de Stripe dans [!DNL MBI].
+description: Explorez les principaux tableaux de données que vous pouvez importer depuis Tripe dans Commerce Intelligence.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Après [vous avez connecté votre [!DNL Stripe] account](../integrations/stripe.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
 
-Cet article explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Stripe] into [!DNL MBI]. Une fois la configuration terminée, les tableaux suivants sont créés dans votre Data Warehouse. Cliquez sur les liens de la colonne Nom du tableau pour en savoir plus sur les attributs de chaque tableau.
+Cette rubrique explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Stripe] into [!DNL Commerce Intelligence]. Une fois la configuration terminée, les tableaux suivants sont créés dans votre Data Warehouse. Cliquez sur les liens de la colonne Nom du tableau pour en savoir plus sur les attributs de chaque tableau.
 
 | **Nom de la table** | **Description** |
 |-----|-----|
@@ -34,4 +34,4 @@ Cet article explore les principaux tableaux de données à partir desquels vous 
 ## En rapport :
 
 * [Connexion [!DNL Stripe]](../integrations/stripe.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

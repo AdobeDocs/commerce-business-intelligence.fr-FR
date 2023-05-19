@@ -2,16 +2,16 @@
 title: Utilisation du Report Builder visuel
 description: Découvrez comment analyser les données de votre rapport pour une période spécifique.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# Utilisez la variable `Visual Report Builder`
+# Utilisez la variable [!DNL Visual Report Builder]
 
-Le [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) vous permet d’explorer visuellement vos données afin d’obtenir des informations et de vous aider à prendre des décisions professionnelles. Ce tutoriel vous guide tout au long du processus de création d’un rapport de base.
+Le [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) vous permet d’explorer visuellement vos données afin d’obtenir des informations et de vous aider à prendre des décisions professionnelles. Ce tutoriel vous guide tout au long du processus de création d’un rapport de base.
 
 >[!NOTE]
 >
@@ -19,9 +19,9 @@ Le [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) vous 
 
 ## Étape 1 : Création d’un rapport
 
-Pour commencer à créer un rapport, cliquez sur **[!UICONTROL Report Builder]** dans la barre latérale ou **[!UICONTROL Add Report]** en haut de n’importe quel tableau de bord. Lorsque la variable `Report Builder` la page de sélection s’affiche, cliquez sur **[!UICONTROL Visual Report Builder]** .
+Pour commencer à créer un rapport, cliquez sur **[!UICONTROL Report Builder]** dans la barre latérale ou **[!UICONTROL Add Report]** en haut de n’importe quel tableau de bord. Lorsque la variable `Report Builder` s’affiche, cliquez sur le bouton **[!UICONTROL Visual Report Builder]** .
 
-Pour modifier un rapport créé dans le `Visual Report Builder`, cliquez sur l’icône d’engrenage (Options) dans le coin supérieur droit d’un graphique, puis cliquez sur **[!UICONTROL Edit]**.
+Pour modifier un rapport créé dans le [!DNL Visual Report Builder], cliquez sur l’icône d’engrenage (Options) dans le coin supérieur droit d’un graphique, puis cliquez sur **[!UICONTROL Edit]**.
 
 ## Étape 2 : Ajout de mesures
 
@@ -45,7 +45,7 @@ Pour vous concentrer sur une période spécifique, vous pouvez définir la péri
 
 Lorsque vous définissez une période spécifique pour cette période, assurez-vous que la date de début se trouve au début de l’intervalle et que la date de fin se trouve à la fin de l’intervalle.
 
-Par exemple, la définition d’une période à partir de `January 1st to March 1st` et le choix d’un `monthly` l’intervalle affiche `March` comme point de données, mais ignorez chaque jour dans `March` Sauf `March 1`. Dans ce cas, vous devez effectuer les opérations suivantes : `Time Period` de `January 1 to March 31`.
+Par exemple, la définition d’une période à partir de `January 1st` to `March 1st` et le choix d’un `monthly` l’intervalle affiche `March` comme point de données, mais ignorez chaque jour dans `March` Sauf `March 1`. Dans ce cas, vous devez effectuer les opérations suivantes : `Time Period` de `January 1 to March 31`.
 
 ## Étape 5 : `Group by` / `Segmenting the Analysis` {#groupby}
 

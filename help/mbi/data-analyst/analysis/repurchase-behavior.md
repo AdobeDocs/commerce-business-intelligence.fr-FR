@@ -2,16 +2,16 @@
 title: Analyse du comportement d’achat des clients
 description: Découvrez comment analyser le comportement de rachat des clients.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
 
 # Comportement de rachat des clients
 
-Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Cet article explore les analyses qui peuvent vous aider à répondre aux questions suivantes :
+Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Cette rubrique explore les analyses qui peuvent vous aider à répondre aux questions suivantes.
 
 Parmi les clients qui achètent une *élément spécifique*,
 
@@ -52,7 +52,7 @@ En gardant à l’esprit les mesures ci-dessus, prenez un exemple concernant les
 
 {style="table-layout:auto"}
 
-Maintenant que vous disposez de vos données, regardez ce que cela peut signifier pour chacune de vos mesures.
+Maintenant que vous disposez de vos données, qu’est-ce que cela signifie pour chacune de vos mesures ?
 
 ### Probabilité de répétition de l’ordre
 
@@ -66,7 +66,7 @@ D&#39;après les données ci-dessus, vous pouvez constater que les personnes qui
 
 ### Chiffre d’affaires moyen des clients
 
-Les clients qui achètent le brasseur ont les recettes de durée de vie moyennes les plus élevées ; ce qui est logique, étant donné que le coût du brasseur est inclus dans cette mesure. En revanche, les clients qui achètent des grains de café n’achètent généralement que des produits à bas prix.
+Les clients qui achètent le brasseur ont les recettes de durée de vie moyennes les plus élevées, ce qui est logique, étant donné que le coût du brasseur est inclus dans cette mesure. En revanche, les clients qui achètent des grains de café n’achètent généralement que des produits à bas prix.
 
 ### Temps jusqu’à la commande suivante
 
@@ -74,10 +74,10 @@ Parmi les clients qui ont acheté des capsules de café, la moitié font une com
 
 ## Quelles autres analyses puis-je construire ?
 
-En utilisant les mesures décrites dans cet article, vous pouvez également créer d’autres analyses de réachat utiles. Par exemple, vous pouvez également voir comment les clients effectuent un rachat **le même élément ;** - par exemple, s’ils achètent des renforts régulièrement. Les capsules et les haricots peuvent être achetés régulièrement, mais il serait inattendu que les clients effectuent des achats répétés du brasseur de café. Si votre entreprise se concentre sur les rechargements ou le redémarrage, cette analyse serait utile.
+En utilisant les mesures décrites dans cette rubrique, vous pouvez également créer d’autres analyses de réachat utiles. Par exemple, vous pouvez également voir comment les clients effectuent un rachat **le même élément ;** - par exemple, s’ils achètent des renforts régulièrement. Les capsules et les haricots peuvent être achetés régulièrement, mais il serait inattendu que les clients effectuent des achats répétés du brasseur de café. Si votre entreprise se concentre sur les rechargements ou le redémarrage, cette analyse serait utile.
 
 Outre l’analyse du comportement de réachat de vos clients, vous pouvez également créer des analyses portant sur la fidélité de vos clients. Envisagez d’analyser les schémas de perte de clientèle : où vos clients quittent votre site et ne reviennent pas ? À quelle vitesse cela se produit-il ?
 
 Une fois que vous avez identifié les raisons de l’attrition, vous pouvez utiliser votre analyse pour créer une `reactivation` campaign. Grâce à ces données, vous pouvez identifier les utilisateurs devenus inactifs, la durée écoulée depuis leur dernière visite, le dernier achat effectué, etc. Cela vous permet de prendre des décisions pratiques qui incitent vos clients à revenir.
 
-Pour obtenir de l’aide sur l’analyse, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Pour obtenir de l’aide sur l’analyse, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

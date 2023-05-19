@@ -1,19 +1,19 @@
 ---
 title: Tableaux de commerce courants
-description: Découvrez certaines des tables les plus courantes qui [!DNL MBI] les clients utilisent .
+description: Découvrez certaines des tables les plus courantes qui [!DNL Commerce Intelligence] les clients utilisent .
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 # Tableaux de commerce courants
 
-Lors de la première connexion d’une instance Commerce à [[!DNL MBI]](../importing-data/integrations/magento.md), [!DNL MBI] réplique automatiquement les données de certaines de vos tables commerciales (généralement 4 à 6 tables) afin de configurer l’ensemble initial de tableaux de bord et de rapports. Bien que cela constitue un excellent point de départ, la plupart des instances de magasin génèrent des dizaines, voire des centaines de tables supplémentaires, ce qui peut fournir des informations essentielles sur les performances de votre entreprise.
+Lorsque vous connectez un [!DNL Adobe Commerce] instance à [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] réplique automatiquement les données de certaines de vos tables commerciales (généralement 4 à 6 tableaux) pour configurer l’ensemble initial de tableaux de bord et de rapports. Bien que cela constitue un excellent point de départ, la plupart des instances de magasin génèrent des dizaines, voire des centaines de tables supplémentaires, ce qui peut fournir des informations essentielles sur les performances de votre entreprise.
 
-Vous trouverez ci-dessous une liste des tables les plus courantes qui [!DNL MBI] les clients utilisent . Après vous [Connecter votre instance Commerce à MBI](../../data-analyst/importing-data/integrations/magento.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer le suivi des champs de données pertinents.
+Vous trouverez ci-dessous une liste des tables les plus courantes qui [!DNL Commerce Intelligence] les clients utilisent . Après vous [Connectez votre instance Commerce à Commerce Intelligence.](../../data-analyst/importing-data/integrations/magento.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer le suivi des champs de données pertinents.
 
 | Nom de la table | Description |
 |---|---|

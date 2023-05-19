@@ -2,9 +2,9 @@
 title: Connexion à Facebook Ads
 description: Découvrez comment analyser vos données de dépenses publicitaires et voir si votre argent est dépensé efficacement.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -15,30 +15,30 @@ ht-degree: 0%
 >
 >Nécessite [Autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Facebook_Logo.png)
+![](../../../assets/facebook-ads-logo.png)
 
 Vous avez fait vos recherches, créé vos publicités, lancé votre campagne sur [!DNL Facebook]. Il est maintenant temps d’analyser vos données de dépenses publicitaires et de voir si votre argent est dépensé efficacement. En utilisant vos données de dépenses publicitaires, vous pouvez : [mesurez le retour sur investissement de la campagne en associant le coût de la publicité et la valeur de durée de vie du client (CLV).](../../../data-analyst/analysis/roi-ad-camp.md) des utilisateurs acquis à partir de vos campagnes.
 
-Connexion de vos données publicitaires Facebook à [!DNL MBI] est un processus simple en trois étapes :
+Connectez-vous à [!DNL Facebook Ad] data to [!DNL Commerce Intelligence] est un processus simple en trois étapes :
 
-1. [Ajouter [!DNL Facebook] comme source de données dans [!DNL MBI]](#stepone)
-1. [Autoriser [!DNL MBI] accéder à [!DNL Facebook Ads] data](#steptwo)
+1. [Ajouter [!DNL Facebook] comme source de données dans [!DNL Commerce Intelligence]](#stepone)
+1. [Autoriser [!DNL Commerce Intelligence] accéder à [!DNL Facebook Ads] data](#steptwo)
 1. [Sélectionner [!DNL Facebook Ads] Comptes d’extraction de données](#stepthree)
 
-## Ajouter [!DNL Facebook] comme source de données dans [!DNL MBI] {#stepone}
+## Ajouter [!DNL Facebook] comme source de données dans [!DNL Commerce Intelligence] {#stepone}
 
-1. Pour ajouter la variable [!DNL Facebook] intégration à votre compte, accédez à la `Connections` page sous **[!UICONTROL Manage Data** > **Integrations]**.
-1. Cliquez sur **[!UICONTROL Add Integration]**, situé sur le côté droit de l’écran au-dessus des données `Sources` table.
+1. Pour ajouter la variable [!DNL Facebook] intégration à [!DNL Commerce Intelligence], accédez à la `Connections` page sous **[!UICONTROL Manage Data** > **Integrations]**.
+1. Cliquez sur **[!UICONTROL Add Integration]**, situé à droite.
 1. Cliquez sur le bouton [!DNL Facebook] icône . Cette fenêtre affiche le [!DNL Facebook] page d’autorisation.
 1. Cliquez sur **[!UICONTROL Authorize]**.
 
-## Autoriser [!DNL MBI] accéder à [!DNL Facebook Ads] data {#steptwo}
+## Autoriser [!DNL Commerce Intelligence] accéder à [!DNL Facebook Ads] data {#steptwo}
 
 Après avoir cliqué sur **[!DNL Facebook Authorize]**, une petite fenêtre contextuelle s’affiche :
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-Suivez une série d’étapes pour autoriser [!DNL MBI] pour accéder aux données de votre profil public, [!DNL Facebook Ads] et les statistiques connexes. Cliquez sur **[!UICONTROL OK]** sur ces étapes pour continuer.
+Suivez une série d’étapes pour autoriser [!DNL Commerce Intelligence] pour accéder aux données de votre profil public, [!DNL Facebook Ads] et les statistiques connexes. Cliquez sur **[!UICONTROL OK]** sur ces étapes pour continuer.
 
 ## Sélectionner [!DNL Facebook Ads] Comptes d’extraction de données {#stepthree}
 
@@ -56,7 +56,7 @@ Assurez-vous que vous effectuez le suivi [!DNL Facebook] campagnes dans [!DNL Go
 
 ## Associé
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Connectez-vous à [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Suivi de la source de référence de commande via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Suivi de la source de référence des utilisateurs dans votre base de données](../../analysis/google-track-user-acq.md)

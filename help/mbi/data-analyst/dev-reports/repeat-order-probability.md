@@ -2,7 +2,7 @@
 title: Rapport Probabilité des commandes répétées
 description: Découvrez et comprenez le rapport Probabilité des commandes répétées .
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Lorsque est `Incremental Event Probability` perspective disponible ?
 
-Le `incremental event probability` La perspective n’est disponible que lorsque les filtres utilisent des dimensions égales pour toutes les commandes (par exemple, celle de l’utilisateur `gender`, de l’utilisateur `age` ou de l’utilisateur `source`)
+Le `incremental event probability` La perspective n’est disponible que lorsque les filtres utilisent des dimensions égales pour toutes les commandes (par exemple, celle de l’utilisateur `gender`, de l’utilisateur `age` ou de l’utilisateur `source`).
 
 En effet, cette perspective repose sur une dimension appelée `User's order number` pour la segmentation, qui comptabilise les achats d’un utilisateur (par exemple, les 1re, 2e et 3e commandes de John).
 
@@ -23,7 +23,7 @@ Si vous avez ajouté un filtre qui utilise une dimension différente de toutes l
 
 Dans certains cas, vous pouvez activer une `order-specific` dans une `user-specific` dimension à ajouter en tant que filtre dans `Repeat Order Probability` graphique. Dans ce cas, vous renvoyez l’attribut de commande de la première commande ou de la dernière commande d’un utilisateur (par exemple, le nom de la région de première commande de l’utilisateur).
 
-Si vous souhaitez créer une telle dimension, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous souhaitez créer une telle dimension, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Comparaison de la probabilité de répétition des commandes avec différents attributs
 
@@ -33,7 +33,7 @@ Les nombres qui constituent un tel graphique peuvent ensuite être exportés pou
 
 ### Exemple :
 
-|  |  |
+| Catégorie | Valeur |
 |---|---|
 | Nombre de clients qui ont effectué un achat au cours de leur vie | `90` |
 | Nombre de clients qui ont effectué deux achats au cours de leur vie | `30` |

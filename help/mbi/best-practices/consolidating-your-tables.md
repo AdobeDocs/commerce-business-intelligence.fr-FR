@@ -2,7 +2,7 @@
 title: Consolidation de vos tableaux
 description: Découvrez comment consolider vos tables et bases de données.
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Consolidation de vos tableaux
 
-Si vous utilisez plusieurs fronts de magasins ou sur plusieurs marchés, vous pouvez avoir des bases de données similaires stockées séparément. Dans [!DNL MBI], il est facile de consolider des tables similaires à partir de différentes bases de données.
+Si vous utilisez plusieurs fronts de magasins ou sur plusieurs marchés, vous pouvez avoir des bases de données similaires stockées séparément. Dans [!DNL Adobe Commerce Intelligence], il est facile de consolider des tables similaires à partir de différentes bases de données.
 
-Par exemple, vous pouvez avoir une `orders` table pour `Market A`, et un `orders` table pour `Market B`. [!DNL MBI] peut consolider les deux tableaux et vous permettre de consulter les données de l’ordre des agrégats des deux `Market A` et `B`, en plus de la segmenter selon un marché spécifique.
+Par exemple, vous pouvez avoir une `orders` table pour `Market A`, et un `orders` table pour `Market B`. [!DNL Commerce Intelligence] peut consolider les deux tableaux et vous permettre de consulter les données de l’ordre des agrégats des deux `Market A` et `B`, en plus de la segmenter selon un marché spécifique.
 
 Pour que la consolidation des tables fonctionne, les tables d’entrée doivent être **structurée de manière similaire**. En d’autres termes, tous les tableaux d’entrée doivent contenir les colonnes de données requises dans le tableau consolidé.
 
@@ -43,8 +43,8 @@ Comme pour tous les autres tableaux de votre Data Warehouse, vous pouvez ajouter
 
 ## Création, affichage ou mise à jour d’une table consolidée
 
-Si vous souhaitez ajouter une table consolidée à votre Data Warehouse, contactez [!DNL MBI] [support](../guide-overview.md).
+Si vous souhaitez ajouter une table consolidée à votre Data Warehouse, contactez [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->Parce que les tableaux consolidés ne sont pas visibles dans la variable `Data Warehouse Manager`, l’affichage et la mise à jour de ces tableaux ne peuvent être effectués que par [!DNL MBI] prise en charge.
+>Parce que les tableaux consolidés ne sont pas visibles dans la variable `Data Warehouse Manager`, l’affichage et la mise à jour de ces tableaux ne peuvent être effectués que par [!DNL Commerce Intelligence] prise en charge.

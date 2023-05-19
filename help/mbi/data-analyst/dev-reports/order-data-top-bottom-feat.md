@@ -2,9 +2,9 @@
 title: Commande des données à l’aide de la fonction Afficher le haut/bas
 description: Découvrez comment classer vos données à l’aide de la fonction Afficher le haut/bas.
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Ce type de tri et d’ordre des données peut être effectué dans des rapports 
 
 ## Comment puis-je utiliser ceci ? {#how}
 
-Après avoir cliqué sur le bouton **[!UICONTROL Show Top/Bottom link]**, une fenêtre s’affiche dans laquelle vous pouvez définir les paramètres d’affichage et de tri. Le nombre dans la zone de texte peut être un nombre entier (comme `5`) ou `ALL`. Vous pouvez ensuite choisir de trier le rapport par mesure OU par groupement.
+Cliquez sur le bouton **[!UICONTROL Show Top/Bottom link]** pour définir les paramètres d&#39;affichage et de tri. Le nombre dans la zone de texte peut être un nombre entier (comme `5`) ou `ALL`. Vous pouvez ensuite choisir de trier le rapport par mesure OU par groupement.
 
 Par exemple, si vous souhaitez afficher les cinq sources de référence qui ont généré le plus de recettes, procédez comme suit :
 

@@ -1,10 +1,10 @@
 ---
 title: Données de diffusion prévues
-description: Explorez les principaux tableaux de données que vous pouvez importer à partir de Spree dans votre [!DNL MBI] compte .
+description: Explorez les principaux tableaux de données que vous pouvez importer à partir de Spree dans votre [!DNL Commerce Intelligence] compte .
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Après avoir [connecté à [!DNL Spree] store](../../../data-analyst/importing-data/integrations/spree.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à partir de vos [!DNL Spree] plateforme d’analyse.
 
-Cet article explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Spree] dans [!DNL MBI] compte, y compris les liens vers [documentation supplémentaire](https://guides.spreecommerce.org/developer/addresses.html#address) about [!DNL Spree] data.
+Cette rubrique explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Spree] dans [!DNL Commerce Intelligence] compte, y compris les liens vers [documentation supplémentaire](https://guides.spreecommerce.org/developer/addresses.html#address) about [!DNL Spree] data.
 
 | **Nom de la table** | **Description** |
 |-----|-----|
@@ -28,4 +28,4 @@ Cet article explore les principaux tableaux de données à partir desquels vous 
 ## En rapport :
 
 * [Connexion [!DNL Spree]](../integrations/spree.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

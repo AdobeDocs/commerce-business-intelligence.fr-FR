@@ -2,7 +2,7 @@
 title: Utilisateur de données
 description: Utilisateur de données
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 Vous utilisez les données pour vous aider à prendre des décisions professionnelles. Vous pouvez recevoir des rapports et des tableaux de bord d’un analyste de données de votre équipe, mais vous souhaitez également apprendre à créer ces rapports et tableaux de bord.
 
 Cette section explique comment :
-* acquérir et afficher des données dans [!DNL MBI] utilisation des rapports et des tableaux de bord
+* acquérir et afficher des données dans [!DNL Commerce Intelligence] utilisation des rapports et des tableaux de bord
 * partager ces données avec les parties prenantes par courrier électronique et `.csv` files
 
 ## Associé

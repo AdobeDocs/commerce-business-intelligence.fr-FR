@@ -2,9 +2,9 @@
 title: table customer_entity
 description: Découvrez comment accéder aux enregistrements de tous les comptes enregistrés.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Le `customer_entity` contient les enregistrements de tous les comptes enregistrés. Un compte est considéré comme enregistré s’il s’inscrit à un compte, qu’il effectue un achat ou non. Chaque ligne correspond à un compte enregistré unique, identifié par le compte en question. `entity_id`.
 
-Cette table ne contient pas d&#39;enregistrement des clients qui passent une commande via le passage en caisse des invités. Si votre boutique accepte le passage en caisse des invités, [découvrez comment créer un compte](../data-warehouse-mgr/guest-orders.md) pour ces clients.
+Cette table ne contient pas d&#39;enregistrement des clients qui passent une commande via le passage en caisse des invités. Si votre boutique accepte le passage en caisse des invités, reportez-vous à la section [Comment tenir compte des commandes d’invités](../data-warehouse-mgr/guest-orders.md) pour ces commandes.
 
 ## Colonnes communes
 
 | **Nom de la colonne** | **Description** |
 |---|---|
-| `created_at` | Horodatage correspondant à la date d’enregistrement du compte, stocké localement en UTC. Selon votre configuration dans [!DNL MBI], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL MBI] qui diffère du fuseau horaire de votre base de données |
+| `created_at` | Horodatage correspondant à la date d’enregistrement du compte, stocké localement en UTC. Selon votre configuration dans [!DNL Commerce Intelligence], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL Commerce Intelligence] qui diffère du fuseau horaire de votre base de données |
 | `email` | Adresse électronique associée au compte |
 | `entity_id` (PK) | Identifiant unique de la table, généralement utilisé dans les jointures au `customer_id` dans d’autres tables de l’instance. |
 | `group_id` | Clé étrangère associée à la variable `customer_group` table. Rejoindre à `customer_group.customer_group_id` pour déterminer le groupe de clients associé au compte enregistré |

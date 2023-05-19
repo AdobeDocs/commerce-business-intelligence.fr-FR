@@ -2,7 +2,7 @@
 title: Augmentation du retour sur investissement sur vos campagnes publicitaires
 description: Découvrez quelques différentes méthodes d’évaluation des performances de votre campagne.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Campagnes publicitaires et retour sur investissement
 
-L’IMS vous permet de facilement [mariage des données de coûts publicitaires et des données de recettes](../../data-analyst/importing-data/integrations/google-adwords.md) de votre base de données. Vous pouvez ainsi identifier les campagnes qui ont le meilleur retour sur investissement. Cet article explore quelques méthodes différentes d’évaluation des performances de votre campagne.
+[!DNL Adobe Commerce Intelligence] vous permet de facilement [mariage des données de coûts publicitaires et des données de recettes](../../data-analyst/importing-data/integrations/google-adwords.md) de votre base de données. Vous pouvez ainsi identifier les campagnes qui génèrent le meilleur retour sur investissement. Cette rubrique explore quelques différentes méthodes d’évaluation des performances de votre campagne.
 
 ## Conditions préalables
 
 * Importez vos données de coûts publicitaires :
-   * [Connectez-vous à [!DNL Google AdWords] to [!DNL MBI]](../importing-data/integrations/google-adwords.md): Cela synchronise votre [!DNL Adwords] dépenser dans [!DNL MBI]
-   * [Chargement d’autres données de coûts publicitaires](../importing-data/connecting-data/import-offline-ad-data.md): Ceci est recommandé pour les canaux sans connecteur direct vers [!DNL MBI]
-   * Si vous importez des données de coût provenant de plusieurs sources, vous pouvez : [consolidation](../../best-practices/consolidating-your-tables.md) les données de [!DNL MBI]. Simplement [envoi d’un ticket d’assistance](../../guide-overview.md).
+   * [Connectez-vous à [!DNL Google AdWords] to [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): Cela synchronise votre [!DNL Adwords] dépenser dans [!DNL Commerce Intelligence]
+   * [Chargement d’autres données de coûts publicitaires](../importing-data/connecting-data/import-offline-ad-data.md): Ceci est recommandé pour les canaux sans connecteur direct vers [!DNL Commerce Intelligence]
+   * Si vous importez des données de coût provenant de plusieurs sources, vous pouvez : [consolidation](../../best-practices/consolidating-your-tables.md) les données de [!DNL Commerce Intelligence]. Simplement [envoi d’un ticket d’assistance](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [Suivi des données du canal d’acquisition des utilisateurs](../analysis/google-track-user-acq.md)
 
 ## Campagnes d’acquisition d’utilisateurs
@@ -35,7 +35,7 @@ Les analyses (1) et (2) ci-dessus sont explorées dans un tutoriel distinct sur 
 >
 >Cet exemple suppose que tous les coûts de campagne ont été utilisés exclusivement pour acquérir de nouveaux utilisateurs. En réalité, le coût de votre campagne est également partagé avec l’acquisition de visites non converties, d’acheteurs réguliers, etc. En supposant que tous les coûts soient utilisés pour acquérir de nouveaux utilisateurs enregistrés, le ROI qui en résulte tient compte du scénario le plus défavorable (coût par acquisition le plus élevé). Vous pouvez être certain que votre ROI réel est supérieur à votre calcul.
 >
->Exemple : En supposant que vous ayez dépensé 20 € pour une campagne qui a généré 10 nouveaux utilisateurs et 10 acheteurs réguliers, le coût réel par nouvel utilisateur est de 1 €. Toutefois, en supposant que tous les coûts ont été engagés pour acquérir de nouveaux utilisateurs, le coût par acquisition est de 2 $.)
+>Exemple : En supposant que vous ayez dépensé 20 € pour une campagne qui a généré 10 nouveaux utilisateurs et 10 acheteurs réguliers, le coût réel par nouvel utilisateur est de 1 €. Toutefois, en supposant que tous les coûts ont été engagés pour acquérir de nouveaux utilisateurs, le coût par acquisition est de 2 $.
 
 **1. Commencez par créer un graphique qui segmente le coût de votre publicité par campagnes :**
 
@@ -95,9 +95,9 @@ Effectuez-vous des publicités spécifiques à un produit ? Si tel est le cas, v
 
 >[!NOTE]
 >
->Cet exemple suppose que tous les coûts de campagne ont été utilisés exclusivement pour générer des achats de produits spécifiques. En supposant que tout le coût ait été dépensé pour générer des achats, le retour sur investissement qui en résulte tient compte du scénario le plus défavorable (coût par achat le plus élevé). Vous pouvez être certain que votre ROI réel est supérieur à ce calcul. Exemple : En supposant que vous ayez dépensé 20 € pour une campagne qui a généré 10 nouveaux utilisateurs et 10 achats, le coût réel par achat est de 1 €. En supposant que tous les coûts aient été engagés pour acquérir de nouveaux utilisateurs, le coût par achat est de 2 $.)*
+>Cet exemple suppose que tous les coûts de campagne ont été utilisés exclusivement pour générer des achats de produits spécifiques. En supposant que tout le coût ait été dépensé pour générer des achats, le retour sur investissement qui en résulte tient compte du scénario le plus défavorable (coût par achat le plus élevé). Vous pouvez être certain que votre ROI réel est supérieur à ce calcul. Exemple : En supposant que vous ayez dépensé 20 € pour une campagne qui a généré 10 nouveaux utilisateurs et 10 achats, le coût réel par achat est de 1 €. En supposant que tous les coûts aient été engagés pour acquérir de nouveaux utilisateurs, le coût par achat est de 2 $.
 
-Avant de commencer, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
+Avant de commencer, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
 
 * Source de la commande (si vous effectuez uniquement le suivi de la source de référence au niveau de l’utilisateur, rejoignez la source de l’utilisateur)
 * Campagne de la commande (si vous effectuez uniquement le suivi de la source de référence au niveau de l’utilisateur, rejoignez la campagne de l’utilisateur)

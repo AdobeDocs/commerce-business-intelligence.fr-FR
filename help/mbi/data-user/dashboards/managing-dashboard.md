@@ -2,9 +2,9 @@
 title: Gérer les tableaux de bord
 description: Découvrez comment gérer les autorisations utilisateur pour les tableaux de bord que vous possédez, supprimer les tableaux de bord dont vous n’avez plus besoin et définir un tableau de bord par défaut.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
-Dans **[!DNL Manage Data** > **Dashboards]**, vous pouvez gérer les autorisations utilisateur des tableaux de bord que vous détenez, supprimer les tableaux de bord dont vous n’avez plus besoin et définir un tableau de bord par défaut. Couvert dans cet article :
+Dans **[!DNL Manage Data** > **Dashboards]**, vous pouvez gérer les autorisations utilisateur des tableaux de bord que vous détenez, supprimer les tableaux de bord dont vous n’avez plus besoin et définir un tableau de bord par défaut. Cette rubrique traite des sujets suivants :
 
 1. [Changement du nom des tableaux de bord](#rename)
 
@@ -35,7 +35,7 @@ Pour renommer un tableau de bord :
 
 ## Gestion des autorisations d’utilisateur {#userperm}
 
-Il existe trois niveaux d’accès dans [!DNL MBI] pour les tableaux de bord - `View`, `Edit`, et `None`.
+Il existe trois niveaux d’accès dans [!DNL Commerce Intelligence] pour les tableaux de bord - `View`, `Edit`, et `None`.
 
 * `View` permet aux utilisateurs sélectionnés d’afficher le tableau de bord, mais pas de le modifier. Les utilisateurs peuvent également redimensionner des graphiques, exporter des données et copier les graphiques dans leurs propres tableaux de bord à l’aide de la fonction Enregistrer sous s’ils disposent des autorisations Standard ou Admin.
 

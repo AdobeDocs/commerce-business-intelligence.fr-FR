@@ -2,16 +2,16 @@
 title: Comprendre et créer des analyses de base
 description: Découvrez comment comprendre et créer des analyses de base.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3113'
 ht-degree: 0%
 
 ---
 
 # Analyses de base
 
-Une fois que vous connaissez le [!DNL MBI] et avoir une compréhension de base de l’outil, vous allez commencer à créer des rapports. Une des questions les plus courantes que vous avez est : &quot;Que dois-je regarder ?&quot;
+Une fois que vous connaissez le [!DNL Adobe Commerce Intelligence] et avoir une compréhension de base de l’outil, vous allez commencer à créer des rapports. Une des questions les plus courantes que vous avez est : &quot;Que dois-je regarder ?&quot;
 
 Les informations ci-dessous décrivent certaines des mesures et rapports courants qui peuvent vous être utiles. Certains de ces rapports existent dans votre compte. Dès lors, veillez à consulter les mesures et rapports qui existent dans votre compte afin d’éviter de créer des doublons.
 
@@ -44,7 +44,7 @@ Si certains de ces calculs n’existent pas actuellement dans votre base de donn
 
 **Acceptez-vous les commandes des invités ?**
 
-*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez le [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour vous assurer que vos analyses client comprennent tous les clients.*
+*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez le [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour vous assurer que vos analyses client comprennent tous les clients.*
 
 *Vous ne savez pas si vous acceptez les commandes des invités ? Voir [cette rubrique](../data-warehouse-mgr/guest-orders.md) pour en savoir plus !*
 
@@ -58,7 +58,7 @@ Dans ce tableau, chaque ligne représente un ordre. Les colonnes de ce tableau c
 * **[!UICONTROL Created_at]**: Date à laquelle la commande a été créée ou placée.
 * **[!UICONTROL Customer_email]**: Adresse électronique du client qui a passé la commande. Il peut également s’agir de l’identifiant unique du client.
 * **[!UICONTROL Customer's lifetime number of orders]**: Une copie de la colonne portant le même nom sur votre `Customers` table.
-* **[!UICONTROL Customer's order number]**: Numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous observez est la première commande d’un client, cette colonne est &quot;1&quot; ; mais, s’il s’agissait de la 15e commande du client, cette colonne indique &quot;15&quot; pour cette commande. Si cette dimension n’existe pas sur votre `Customers` , demandez au [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour vous aider à le construire.
+* **[!UICONTROL Customer's order number]**: Numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous observez est la première commande d’un client, cette colonne est &quot;1&quot; ; mais, s’il s’agissait de la 15e commande du client, cette colonne indique &quot;15&quot; pour cette commande. Si cette dimension n’existe pas sur votre `Customers` , demandez au [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour vous aider à le construire.
 * **[!UICONTROL Customer's order number (previous-current)]**: Une concaténation de deux valeurs dans la variable **[!UICONTROL Customer's order number]** colonne . Il est utilisé dans un exemple de rapport ci-dessous pour afficher le temps écoulé entre deux commandes. Par exemple, l’intervalle entre la date de première commande d’un client et sa date de deuxième commande est représenté sous la forme &quot;1-2&quot; avec ce calcul.
 * **[!UICONTROL Coupon_code]**: Indique les bons utilisés pour chaque commande.
 * **[!UICONTROL Seconds since previous order]**: Durée (en secondes) entre les commandes d’un client.

@@ -2,16 +2,16 @@
 title: Optimisation de la base de données pour l’analyse
 description: Découvrez comment optimiser votre base de données pour l’analyse.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Optimiser votre base de données
 
-Le Principal avantage de l&#39;utilisation d&#39;une base de données opérationnelle pour les renseignements commerciaux est que rien n&#39;a besoin d&#39;être construit ou modifié pour collecter des données. De précieuses informations existent déjà; tout ce que tu as à faire est de le déverrouiller.
+Le Principal avantage de l’utilisation d’une base de données opérationnelle pour [!DNL Adobe Commerce Intelligence] est que rien n’a besoin d’être créé ou modifié pour collecter des données. Il y a déjà des informations précieuses, il suffit de les déverrouiller.
 
 Cette rubrique contient quelques recommandations destinées à vous aider à optimiser votre base de données pour l’analyse et à obtenir des informations exploitables à partir de données brutes.
 
@@ -51,16 +51,16 @@ Trop d’entreprises se concentrent uniquement sur la recherche de canaux qui fo
 
 ### Définition d’une clé Principal
 
-A [Clé Principale](https://en.wikipedia.org/wiki/Unique_key) est une colonne (ou un ensemble de colonnes) inchangée qui produit des valeurs uniques dans un tableau. Les clés Principal sont extrêmement importantes, car elles garantissent que vos tableaux sont correctement répliqués dans [!DNL MBI].
+A [Clé Principale](https://en.wikipedia.org/wiki/Unique_key) est une colonne (ou un ensemble de colonnes) inchangée qui produit des valeurs uniques dans un tableau. Les clés Principal sont extrêmement importantes, car elles garantissent que vos tableaux sont correctement répliqués dans [!DNL Commerce Intelligence].
 
 Lors de la création de Principales clés, utilisez un type de données entier pour la colonne qui augmente automatiquement. Adobe vous recommande d’éviter d’utiliser, dans la mesure du possible, plusieurs clés Principales à colonnes.
 
-Si votre table est une vue SQL, ajoutez une colonne pouvant agir comme une clé Principale. [!DNL MBI] peut identifier automatiquement cette colonne en tant que clé Principale.
+Si votre table est une vue SQL, ajoutez une colonne pouvant agir comme une clé Principale. [!DNL Commerce Intelligence] peut identifier automatiquement cette colonne en tant que clé Principale.
 
 ### Affectation d’un type de données à votre colonne de données
 
-Si une colonne de données n’est pas affectée [type de données](https://en.wikipedia.org/wiki/Data_type), [!DNL MBI] détermine le type de données à utiliser. Si le système ne devine pas correctement, vous ne pourrez peut-être pas effectuer les analyses appropriées tant que l’équipe d’assistance à l’Adobe n’aura pas adapté la colonne au type de données approprié. Par exemple, si une colonne de date est considérée comme un type de données numérique, vous pouvez suivre la tendance au fil du temps à l’aide de cette dimension de date.
+Si une colonne de données n’est pas affectée [type de données](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] détermine le type de données à utiliser. Si le système ne devine pas correctement, vous ne pourrez peut-être pas effectuer les analyses appropriées tant que l’équipe d’assistance à l’Adobe n’aura pas adapté la colonne au type de données approprié. Par exemple, si une colonne de date est considérée comme un type de données numérique, vous pouvez suivre la tendance au fil du temps à l’aide de cette dimension de date.
 
 ### Ajouter des préfixes à vos tableaux de données si vous disposez de plusieurs bases de données
 
-Si plusieurs bases de données sont connectées à [!DNL MBI], Adobe vous recommande d’ajouter des préfixes à vos tableaux pour éviter toute confusion. Les préfixes vous aident à mémoriser d’où proviennent les mesures ou les dimensions de données.
+Si plusieurs bases de données sont connectées à [!DNL Commerce Intelligence], Adobe vous recommande d’ajouter des préfixes à vos tableaux pour éviter toute confusion. Les préfixes vous aident à mémoriser d’où proviennent les mesures ou les dimensions de données.

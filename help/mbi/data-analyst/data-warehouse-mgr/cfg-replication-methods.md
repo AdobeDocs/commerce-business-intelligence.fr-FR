@@ -2,28 +2,28 @@
 title: Configuration des méthodes de réplication
 description: Découvrez comment les tables sont organisées et comment les données du tableau se comportent vous permet de choisir la meilleure méthode de réplication pour vos tables.
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
 
 # Configuration des méthodes de réplication
 
-`Replication` méthodes et [révérifications](../data-warehouse-mgr/cfg-data-rechecks.md) sont utilisées pour identifier les données nouvelles ou mises à jour dans les tables de votre base de données. Les définir correctement est essentiel pour garantir à la fois la précision des données et des temps de mise à jour optimisés. Cet article se concentre sur les méthodes de réplication.
+`Replication` méthodes et [révérifications](../data-warehouse-mgr/cfg-data-rechecks.md) sont utilisées pour identifier les données nouvelles ou mises à jour dans les tables de votre base de données. Les définir correctement est essentiel pour garantir à la fois la précision des données et des temps de mise à jour optimisés. Cette rubrique porte sur les méthodes de réplication.
 
-Lorsque de nouvelles tables sont synchronisées dans Data Warehouse Manager, une méthode de réplication est automatiquement sélectionnée pour la table. La présentation des différentes méthodes de réplication, de l’organisation des tables et du comportement des données tabulaires vous permet de choisir la meilleure méthode de réplication pour vos tables.
+Lorsque de nouveaux tableaux sont synchronisés dans la variable [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), une méthode de réplication est automatiquement sélectionnée pour le tableau. La présentation des différentes méthodes de réplication, de l’organisation des tables et du comportement des données tabulaires vous permet de choisir la meilleure méthode de réplication pour vos tables.
 
 ## Quelles sont les méthodes de réplication ?
 
 `Replication` Les méthodes se divisent en trois groupes : `Incremental`, `Full Table`, et `Paused`.
 
-[**[!UICONTROL Incremental Replication]**](#incremental) signifie que [!DNL MBI] réplique uniquement les données nouvelles ou mises à jour à chaque tentative de réplication. Comme ces méthodes réduisent considérablement la latence, Adobe recommande de l’utiliser si possible.
+[**[!UICONTROL Incremental Replication]**](#incremental) signifie que [!DNL Commerce Intelligence] réplique uniquement les données nouvelles ou mises à jour à chaque tentative de réplication. Comme ces méthodes réduisent considérablement la latence, Adobe recommande de l’utiliser si possible.
 
-[**[!UICONTROL Full Table Replication]**](#fulltable) signifie que [!DNL MBI] réplique l’intégralité du contenu d’un tableau à chaque tentative de réplication. En raison de la quantité potentiellement importante de données à répliquer, ces méthodes peuvent augmenter la latence et les temps de mise à jour. Si un tableau contient des colonnes horodatées ou datetime, Adobe recommande d’utiliser plutôt une méthode incrémentielle .
+[**[!UICONTROL Full Table Replication]**](#fulltable) signifie que [!DNL Commerce Intelligence] réplique l’intégralité du contenu d’un tableau à chaque tentative de réplication. En raison de la quantité potentiellement importante de données à répliquer, ces méthodes peuvent augmenter la latence et les temps de mise à jour. Si un tableau contient des colonnes horodatées ou datetime, Adobe recommande d’utiliser plutôt une méthode incrémentielle .
 
-**[!UICONTROL Paused]** indique que la réplication de la table est arrêtée ou suspendue. [!DNL MBI] ne vérifie pas les données nouvelles ou mises à jour au cours d’un cycle de mise à jour ; cela signifie qu’aucune donnée n’est répliquée à partir d’une table qui a cette méthode comme méthode de réplication.
+**[!UICONTROL Paused]** indique que la réplication de la table est arrêtée ou suspendue. [!DNL Commerce Intelligence] ne vérifie pas les données nouvelles ou mises à jour au cours d’un cycle de mise à jour ; cela signifie qu’aucune donnée n’est répliquée à partir d’une table qui a cette méthode comme méthode de réplication.
 
 ## Méthodes de réplication incrémentielle {#incremental}
 
@@ -37,7 +37,7 @@ Le `Modified At` la méthode de réplication utilise une colonne datetime (qui e
 
 Outre ces critères, Adobe recommande de **indexation** la valeur `datetime` colonne utilisée pour `Modified At` réplication, car cela permet d’optimiser la vitesse de réplication.
 
-Lorsque la mise à jour s’exécute, les données nouvelles ou modifiées sont identifiées en recherchant les lignes ayant une valeur dans la variable `datetime` qui s’est produite après la mise à jour la plus récente. Lorsque de nouvelles lignes sont découvertes, elles sont répliquées vers votre Data Warehouse. S’il existe des lignes dans le Data Warehouse, elles sont remplacées par les valeurs actuelles de la base de données.
+Lorsque la mise à jour s’exécute, les données nouvelles ou modifiées sont identifiées en recherchant les lignes ayant une valeur dans la variable `datetime` qui s’est produite après la mise à jour la plus récente. Lorsque de nouvelles lignes sont découvertes, elles sont répliquées vers votre Data Warehouse. S’il existe des lignes dans la variable [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), elles sont remplacées par les valeurs actuelles de la base de données.
 
 Par exemple, un tableau peut avoir une colonne appelée `modified\_at` qui indique la dernière modification des données. Si la mise à jour la plus récente s’est déroulée le mardi à midi, la mise à jour recherche toutes les lignes comportant une `modified\_at` valeur supérieure à mardi à midi. Toutes les lignes découvertes qui ont été créées ou modifiées depuis midi le mardi sont répliquées vers le Data Warehouse.
 
@@ -74,7 +74,7 @@ Lorsqu’un tableau utilise `Add Date` réplication, de nouvelles données sont 
 
 `Full table` la réplication actualise le tableau entier chaque fois que de nouvelles lignes sont détectées. Il s’agit de loin de la méthode de réplication la moins efficace, car toutes les données doivent être retraitées à chaque mise à jour, en supposant qu’il y ait de nouvelles lignes.
 
-De nouvelles lignes sont détectées en interrogeant votre base de données au début du processus de synchronisation et en comptabilisant le nombre de lignes. Si votre base de données locale contient plus de lignes que [!DNL MBI], le tableau est actualisé. Si le nombre de lignes est identique ou si [!DNL MBI] contains *more* lignes de la base de données locale, puis le tableau est ignoré.
+De nouvelles lignes sont détectées en interrogeant votre base de données au début du processus de synchronisation et en comptabilisant le nombre de lignes. Si votre base de données locale contient plus de lignes que [!DNL Commerce Intelligence], le tableau est actualisé. Si le nombre de lignes est identique ou si [!DNL Commerce Intelligence] contains *more* lignes de la base de données locale, puis le tableau est ignoré.
 
 Cela soulève un point important : **`Full Table`la réplication est incompatible lorsque :**
 
@@ -104,11 +104,11 @@ Les méthodes de réplication sont définies table par table. Pour définir une 
 1. Une fois dans le Gestionnaire de Data Warehouse, sélectionnez le tableau dans la `Synced Tables` pour afficher le schéma de la table.
 1. La méthode de réplication actuelle est répertoriée sous le nom de la table. Pour le modifier, cliquez sur le lien.
 1. Dans la fenêtre contextuelle qui s’affiche, cliquez sur le bouton radio en regard de l’une des options suivantes : `Incremental` ou `Full Table` réplication pour sélectionner un type de réplication.
-1. Cliquez ensuite sur le **[!UICONTROL Replication Method]** pour sélectionner une méthode, par exemple : `Paused` ou `Modified At`.
+1. Cliquez ensuite sur le **[!UICONTROL Replication Method]** pour sélectionner une méthode. Par exemple : `Paused` ou `Modified At`.
 
    >[!NOTE]
    >
-   >**Certaines méthodes incrémentielles nécessitent que vous définissiez une`Replication Key`**. [!DNL MBI] utilisera cette clé pour déterminer où doit commencer le cycle de mise à jour suivant.
+   >**Certaines méthodes incrémentielles nécessitent que vous définissiez une`Replication Key`**. [!DNL Commerce Intelligence] utilisera cette clé pour déterminer où doit commencer le cycle de mise à jour suivant.
    >
    >Par exemple, si vous souhaitez utiliser la variable `modified at` pour votre `orders` , vous devez définir une `date column` comme clé de réplication. Plusieurs options pour les clés de réplication peuvent exister, mais vous pouvez sélectionner `created at`ou l’heure à laquelle la commande a été créée. Si le dernier cycle de mise à jour s&#39;est arrêté à 12/1/2015 00:10:00, le cycle suivant commencerait à répliquer les données avec une `created at` date supérieure à celle-ci.
 

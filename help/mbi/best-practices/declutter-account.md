@@ -1,25 +1,25 @@
 ---
-title: Déverglacer votre [!DNL MBI] Compte
-description: Découvrez comment nettoyer votre [!DNL MBI] compte .
+title: Déverglacer votre [!DNL Commerce Intelligence] Compte
+description: Découvrez comment nettoyer votre [!DNL Commerce Intelligence] compte .
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Nettoyez votre [!DNL MBI] Compte
+# Nettoyez votre [!DNL Adobe Commerce Intelligence] Compte
 
-Si vous avez été avec [!DNL MBI] pendant six mois ou six ans, la maintenance d’un compte ordonné est essentielle pour que votre entreprise tire le meilleur parti de la plateforme. Au fil du temps, il est naturel que des utilisateurs, des tableaux de bord, des rapports, des mesures et des colonnes ne soient plus nécessaires. Peut-être avez-vous créé un rapport à usage unique et l’avez-vous oublié ou un utilisateur qui a quitté votre société n’a jamais eu son compte désactivé.
+Si vous avez été avec [!DNL Commerce Intelligence] pendant six mois ou six ans, la maintenance d’un compte ordonné est essentielle pour que votre entreprise tire le meilleur parti de la plateforme. Au fil du temps, il est naturel que des utilisateurs, des tableaux de bord, des rapports, des mesures et des colonnes ne soient plus nécessaires. Peut-être avez-vous créé un rapport à usage unique et l’avez-vous oublié ou un utilisateur qui a quitté votre société n’a jamais eu son compte désactivé.
 
-Avec [noms normalisés et clairs pour tous les éléments](../best-practices/naming-elements.md)) de votre [!DNL MBI] , les étapes de contrôle du compte ci-dessous vous aident à réduire les analyses encombrantes et inutiles pour vos utilisateurs. Un avantage supplémentaire inclut [cycles de mise à jour potentiellement plus rapides](../best-practices/reduce-update-cycle-time.md).
+Avec [noms normalisés et clairs pour tous les éléments](../best-practices/naming-elements.md)) de votre [!DNL Commerce Intelligence] , les étapes de contrôle du compte ci-dessous vous aident à réduire les analyses encombrantes et inutiles pour vos utilisateurs. Un avantage supplémentaire inclut [cycles de mise à jour potentiellement plus rapides](../best-practices/reduce-update-cycle-time.md).
 
 ## Étape 1 : Identification de vos utilisateurs non Principaux
 
-La première étape du nettoyage de votre compte consiste à désactiver les comptes de vos utilisateurs non principaux, tels que les personnes qui ont quitté l’entreprise ou qui n’utilisent plus [!DNL MBI] dans leurs rôles actuels.
+La première étape du nettoyage de votre compte consiste à désactiver les comptes de vos utilisateurs non principaux, tels que les personnes qui ont quitté l’entreprise ou qui n’utilisent plus [!DNL Commerce Intelligence] dans leurs rôles actuels.
 
-Pour ce faire, cliquez sur le nom de votre société dans le coin supérieur droit de la barre de navigation supérieure, puis sélectionnez **[!UICONTROL Manage Users]**. Sélectionnez ensuite l’utilisateur à désactiver, puis cliquez sur **[!UICONTROL Deactivate User]**.
+Pour ce faire, cliquez sur le nom de votre société dans la barre de navigation supérieure droite, puis sélectionnez **[!UICONTROL Manage Users]**. Sélectionnez ensuite l’utilisateur à désactiver, puis cliquez sur **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Pour ce faire, cliquez sur le nom de votre société dans le coin supérieur dro
 
 >[!WARNING]
 >
->La désactivation d’un utilisateur supprime les graphiques, les tableaux de bord et autres ressources créés par cet utilisateur. Si vous souhaitez conserver ces ressources, contactez le [!DNL MBI] [support](../guide-overview.md) avant de désactiver l’utilisateur. L’assistance peut vous aider à transférer ces ressources à un autre utilisateur.
+>La désactivation d’un utilisateur supprime les graphiques, les tableaux de bord et autres ressources créés par cet utilisateur. Si vous souhaitez conserver ces ressources, contactez le [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket) avant de désactiver l’utilisateur. L’assistance peut vous aider à transférer ces ressources à un autre utilisateur.
 
 ### Réactivation d’un utilisateur
 
@@ -89,7 +89,7 @@ Après avoir nettoyé la liste des utilisateurs, les tableaux de bord et les rap
 1. Pour générer une liste des rapports dépendants pour une mesure, accédez à **[!DNL Manage Data]**, puis cliquez sur Cliquez sur **[!UICONTROL Metrics]**.
 1. Cliquez sur **[!UICONTROL Edit]** en regard d’une mesure.
 1. Au bas de la page, une section appelée **[!UICONTROL Dependent Charts]**. Cliquez sur le lien pour générer une liste de rapports dépendants pour cette mesure.
-1. Une fois la vérification terminée par le système, [!DNL MBI] affiche une liste des tableaux de bord, des rapports et des utilisateurs qui utilisent cette mesure.
+1. Une fois la vérification terminée par le système, [!DNL Commerce Intelligence] affiche une liste des tableaux de bord, des rapports et des utilisateurs qui utilisent cette mesure.
 
 ![](../../mbi/assets/report_dependecies.png)
 
@@ -99,7 +99,7 @@ Si vous décidez que la mesure n’est plus nécessaire, revenez à la **[!UICON
 
 La dernière étape consiste à évaluer les colonnes en cours de synchronisation dans votre Data Warehouse. Non seulement la désynchronisation des colonnes peut désencombrer votre compte, mais elle peut aussi potentiellement réduire le temps de mise à jour.
 
-Si vous souhaitez poursuivre, contactez [!DNL MBI] [Assistance](../guide-overview.md). L’équipe d’assistance peut créer un rapport qui inclut toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour aucun utilisateur et qui ne sont pas utilisées dans les résumés d’emails, à l’exception des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide pour sélectionner les colonnes à désynchroniser via le Gestionnaire de Data Warehouse.
+Si vous souhaitez poursuivre, contactez [!DNL Commerce Intelligence] [Assistance](../guide-overview.md#Submitting-a-Support-Ticket). L’équipe d’assistance peut créer un rapport qui inclut toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour aucun utilisateur et qui ne sont pas utilisées dans les résumés d’emails, à l’exception des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide pour sélectionner les colonnes à désynchroniser via le Gestionnaire de Data Warehouse.
 
 >[!NOTE]
 >
@@ -122,4 +122,4 @@ Voici un aperçu de l’ensemble du processus :
 
 ## Remplissage
 
-C&#39;est tout ! Votre [!DNL MBI] Votre compte devrait maintenant être plus ordonné et plus facile à parcourir pour vous et votre équipe.
+Votre [!DNL Commerce Intelligence] Votre compte devrait maintenant être plus ordonné et plus facile à parcourir pour vous et votre équipe.

@@ -2,16 +2,16 @@
 title: Suivi UTM en Google Analytics
 description: Découvrez les bonnes pratiques relatives au suivi UTM (balisage) en Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
 # Suivi UTM
 
-`UTM` Le suivi est une convention de balisage pour les URL qui vous permet d’analyser d’où viennent vos utilisateurs. Si vous observez les URL sur lesquelles vous cliquez dans la plupart des bannières ou courriers électroniques marketing, le balisage UTM s’affiche. Ce sont ces liens longs qui se terminent par des choses comme `utm\_source` et `utm\_medium`.
+`UTM` le suivi est une convention de balisage des URL qui vous permet d’analyser d’où viennent vos utilisateurs. Si vous observez les URL sur lesquelles vous cliquez dans la plupart des bannières ou courriers électroniques marketing, le balisage UTM s’affiche. Ce sont ces liens longs qui se terminent par des choses comme `utm\_source` et `utm\_medium`.
 
 [!DNL Google Analytics] uses `UTM` balisage pour savoir d’où provient votre trafic. Certaines de ces informations proviennent du [Référent HTTP](https://en.wikipedia.org/wiki/HTTP_referer) mais le reste, vous devez vous fournir `UTM` paramètres. Lorsque vous voyez `google adwords` ou `email marketing`, cela signifie que `UTM` paramètres enregistrés à partir du clic sur le lien d’origine, puis stockés dans les cookies des utilisateurs. De là, [!DNL Google Analytics] utilise ces données pour [comportements intéressants des attributs](../data-analyst/analysis/google-track-user-acq.md) sur votre site. Comprendre ces paramètres vous aide à comprendre comment configurer et utiliser au mieux le balisage UTM.
 

@@ -1,23 +1,23 @@
 ---
 title: Modification en masse de graphiques dans les tableaux de bord
-description: Découvrez comment utiliser la fonction de modification en masse dans [!DNL MBI].
+description: Découvrez comment utiliser la fonction de modification en masse dans [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # Modification en masse de graphiques dans les tableaux de bord
 
-La fonction de modification en masse facilite la modification des noms et dates des graphiques dans vos tableaux de bord. Par exemple, vous souhaitez que tous les graphiques d’un tableau de bord spécifique fassent référence à une seule boutique et à un rapport sur une base mensuelle plutôt qu’trimestrielle. Au lieu de tout modifier manuellement, laissez la fonction `bulk-editing` effectue le travail. Dans cet article, vous apprendrez à utiliser :
+La fonction de modification en masse facilite la modification des noms et dates des graphiques dans vos tableaux de bord. Par exemple, vous souhaitez que tous les graphiques d’un tableau de bord spécifique fassent référence à une seule boutique et à un rapport sur une base mensuelle plutôt qu’trimestrielle. Au lieu de tout modifier manuellement, laissez la fonction `bulk-editing` effectue le travail. Dans cette rubrique, vous apprendrez à utiliser :
 
-* [Le ](#findreplace)
+* [Le [!DNL Find/Replace] Fonctionnalité](#findreplace)
 
-* [Le ](#prepend)
+* [Le [!DNL Prepend Name] Fonctionnalité](#prepend)
 
-* [Le ](#dates)
+* [Le [!DNL Change Dates] Fonctionnalité](#dates)
 
 Cela dit, considérez ceci : *Ces modifications doivent-elles être permanentes ?* Si ce n’est pas le cas, pensez à cloner le tableau de bord, puis à modifier les dates dans le nouveau tableau de bord. Cela vous permet de conserver votre tableau de bord d’origine tout en apportant les modifications dont vous avez besoin.
 
@@ -25,7 +25,7 @@ Cela dit, considérez ceci : *Ces modifications doivent-elles être permanentes 
 >
 >Si vous modifiez de nombreux rapports, le processus de mise à jour peut prendre un certain temps.
 
-## Utilisation `Find/Replace` {#findreplace}
+## Utilisation [!DNL Find/Replace] {#findreplace}
 
 1. Cliquez sur l’engrenage (![](../../assets/gear-icon.png)) en regard du nom de votre tableau de bord, puis de la variable [!UICONTROL Bulk Edit Reports] fenêtre.
 
@@ -57,7 +57,7 @@ Exemple :
 
 ## Modification `Dates` {#dates}
 
-1. Cliquez sur l’engrenage (![](../../assets/gear-icon.png)) en regard du nom de votre tableau de bord, puis sélectionnez la variable `!UICONTROL Bulk Edit Reports` fenêtre.
+1. Cliquez sur l’engrenage (![](../../assets/gear-icon.png)) en regard du nom de votre tableau de bord, puis sélectionnez la variable [!UICONTROL Bulk Edit Reports] fenêtre.
 
 1. Cliquez sur **[!UICONTROL Change Dates]** dans la fenêtre contextuelle.
 

@@ -2,7 +2,7 @@
 title: Utilisation du téléchargement de fichier
 description: Découvrez comment placer toutes vos données dans un seul Data Warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >Nécessite [Autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-[!DNL MBI] est puissant non seulement en raison de ses fonctionnalités de visualisation, mais également parce qu’il vous permet de placer toutes vos données dans un seul Data Warehouse. Même les données qui résident en dehors de vos bases de données et de vos intégrations peuvent être introduites dans [!DNL MBI] à l’aide de l’outil Téléchargement de fichier dans Data Warehouse Manager.
+[!DNL Adobe Commerce Intelligence] est puissant non seulement en raison de ses fonctionnalités de visualisation, mais également parce qu’il vous permet de placer toutes vos données dans un seul Data Warehouse. Même les données qui résident en dehors de vos bases de données et de vos intégrations peuvent être introduites dans [!DNL Commerce Intelligence] à l’aide de l’outil Téléchargement de fichier dans Data Warehouse Manager.
 
 Utilisez les campagnes publicitaires comme exemple. Si vous exécutez des campagnes en ligne et hors ligne, vous ne pouvez pas obtenir une vue d’ensemble si vous analysez uniquement les données d’une intégration en ligne. Le téléchargement d’une feuille de calcul avec les données de campagne hors ligne vous permet d’analyser les deux ensembles de données et de mieux comprendre les performances de votre campagne.
 
 ## Restrictions et exigences {#require}
 
 1. **Le seul format pris en charge pour les chargements de fichiers est `CSV` ou`comma separated values`**. Si vous travaillez dans Excel, vous pouvez utiliser la fonction Enregistrer sous pour enregistrer le fichier dans `.csv` format.
-1. **`CSV`Les fichiers doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du téléchargement d’un fichier, [Consultez cet article d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
+1. **`CSV`Les fichiers doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du téléchargement d’un fichier, [Consultez cet article d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Les fichiers ne peuvent pas dépasser 100 Mo**. Si le fichier est plus volumineux, séparez le tableau en blocs et enregistrez-le sous forme de fichiers individuels. Vous pouvez ajouter les données après le chargement du fichier initial.
 1. **Toutes les tables doivent avoir une`primary key`**. Votre tableau doit contenir au moins une colonne pouvant être utilisée comme `primary key`ou un identifiant unique pour chaque ligne du tableau. Toute colonne désignée comme `primary key` can *never* être nul. A `primary key` peut être aussi simple que l’ajout d’une colonne qui donne un nombre à chaque ligne ou peut être deux colonnes concaténées pour créer une colonne de valeurs uniques (par exemple, `campaign name` et `date`).
 
@@ -30,7 +30,7 @@ Utilisez les campagnes publicitaires comme exemple. Si vous exécutez des campag
 
 ## Formatage des données à charger {#formatting}
 
-Avant de pouvoir transférer vos données dans [!DNL MBI], vérifiez qu’il est formaté selon les directives de cette section.
+Avant de pouvoir transférer vos données dans [!DNL Commerce Intelligence], vérifiez qu’il est formaté selon les directives de cette section.
 
 ### Rangée d’en-tête {#header}
 
@@ -77,7 +77,7 @@ Pour [!DNL Google Docs] et [!DNL Apple Numbers] ressources, voir [Associé](#rel
 
 ## Chargement de données {#uploading}
 
-Maintenant que la feuille de calcul est correctement formatée et [!DNL MBI]-friendly, ajoutez-le à votre Data Warehouse.
+Maintenant que la feuille de calcul est correctement formatée et [!DNL Commerce Intelligence]-friendly, ajoutez-le à votre Data Warehouse.
 
 1. Pour commencer, accédez à **[!UICONTROL Data** > **File Uploads]**.
 
@@ -85,7 +85,7 @@ Maintenant que la feuille de calcul est correctement formatée et [!DNL MBI]-fri
 
 1. Cliquez sur **[!UICONTROL Choose File]** et sélectionnez le fichier. Cliquez sur **[!UICONTROL Open]** pour lancer le chargement.
 
-   Une fois le transfert terminé, une liste des colonnes [!DNL MBI] trouvés dans votre fichier s’affiche.
+   Une fois le transfert terminé, une liste des colonnes [!DNL Commerce Intelligence] trouvés dans votre fichier s’affiche.
 
 1. Vérifiez que les noms des colonnes et les types de données sont corrects. Plus précisément, vérifiez que les colonnes de dates sont lues comme des dates et non comme des nombres.
 
@@ -111,7 +111,7 @@ Les tableaux téléchargés s’affichent sous **Téléchargements de fichiers**
 
 ## Mettre à jour ou ajouter des données à une table existante {#appending}
 
-Vous avez de nouvelles données à ajouter à un fichier que vous avez déjà chargé ? Aucun problème : vous pouvez facilement mettre à jour et ajouter des données dans [!DNL MBI].
+Vous avez de nouvelles données à ajouter à un fichier que vous avez déjà chargé ? Aucun problème : vous pouvez facilement mettre à jour et ajouter des données dans [!DNL Commerce Intelligence].
 
 1. Pour commencer, accédez à **[!UICONTROL Manage Data** > **File Uploads]**.
 
@@ -121,7 +121,7 @@ Vous avez de nouvelles données à ajouter à un fichier que vous avez déjà ch
 
 1. Utilisez la liste déroulante pour sélectionner l’option de gestion des lignes dupliquées :
 
-   |  |  |
+   | Option | Description |
    |---|---|
    | `Overwrite old row with new row` | Cela remplace les données existantes par de nouvelles données si une ligne possède la même clé Principale dans le tableau existant et dans le nouveau fichier. Il s’agit de la méthode à utiliser pour les colonnes dont les valeurs changent au fil du temps, par exemple, une colonne État. Les données existantes sont écrasées et mises à jour avec les nouvelles données. Les lignes avec des touches Principales qui ne figurent pas dans le tableau existant sont ajoutées en tant que nouvelles lignes. |
    | `Retain old row; discard new row` | De nouvelles données sont alors ignorées si une ligne possède la même clé Principale dans le tableau existant et dans le nouveau fichier. |
@@ -131,7 +131,7 @@ Vous avez de nouvelles données à ajouter à un fichier que vous avez déjà ch
 
 1. Cliquez sur **[!UICONTROL Open]** pour lancer le chargement.
 
-   Une fois le transfert terminé, [!DNL MBI] valide la structure de données dans le fichier. A *Succès !* s’affiche en haut de l’écran une fois votre tableau enregistré.
+   Une fois le transfert terminé, [!DNL Commerce Intelligence] valide la structure de données dans le fichier. A *Succès !* s’affiche en haut de l’écran une fois votre tableau enregistré.
 
 ## Disponibilité des données {#availability}
 
@@ -139,9 +139,9 @@ Tout comme les colonnes calculées, les données issues des téléchargements de
 
 ## Remplissage {#wrapup}
 
-Cet article ne traitait que des principes de base de l’utilisation de l’importation de données, mais vous souhaiteriez peut-être faire quelque chose de plus avancé. Consultez les articles connexes pour en savoir plus sur le formatage et l’importation de données financières, d’e-commerce, de dépenses publicitaires et d’autres types de données.
+Cette rubrique ne traitait que des principes de base de l’utilisation de l’importation de données, mais vous souhaiteriez peut-être faire quelque chose de plus avancé. Consultez les articles connexes pour en savoir plus sur le formatage et l’importation de données financières, d’e-commerce, de dépenses publicitaires et d’autres types de données.
 
-En outre, le transfert de fichiers n’est pas le seul moyen de transférer vos données dans [!DNL MBI]. Le [API Data Import](https://developer.adobe.com/commerce/services/reporting/import-api/) Les fonctions vous permettent de transférer des données arbitraires dans vos [!DNL MBI] Data Warehouse.
+En outre, le transfert de fichiers n’est pas le seul moyen de transférer vos données dans [!DNL Commerce Intelligence]. Le [API Data Import](https://developer.adobe.com/commerce/services/reporting/import-api/) Les fonctions vous permettent de transférer des données arbitraires dans vos [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Associé {#related}
 

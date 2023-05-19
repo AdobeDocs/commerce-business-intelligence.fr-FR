@@ -2,7 +2,7 @@
 title: Analyse de la décroissance et de la perte de clientèle des répétitions
 description: Découvrez et comprenez l’écart de temps entre les commandes et le moment où les clients sont censés se produire.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,13 +39,13 @@ Comprendre le pourcentage de clients qui sont censés effectuer des achats rép�
 
 ## Exemple d&#39;aujourd&#39;hui
 
-Examinez la diminution de probabilité de répétition pour une activité de commerce électronique classique.
+Examinez la probabilité de récidive pour une activité de commerce électronique classique.
 
 ![Probabilité initiale de répétition de l’ordre probabilité de répétition de l’ordre donnée des mois depuis l’ordre.](../../assets/Order_probability_reports.png)
 
 ### Probabilité initiale de l’ordre de répétition
 
-Dans cet exemple, la probabilité initiale de commande répétée - ou la probabilité qu’un client effectue un achat répété - est de 60 %. Cela signifie que 60 % de toutes les commandes passées avec cette activité sont suivies d’une commande ultérieure.
+Dans cet exemple, la probabilité initiale de commande répétée - ou la probabilité qu’un client effectue un achat répété - est de 60 %. Cela signifie que 60 % de toutes les commandes passées avec cette entreprise sont suivies d’une commande ultérieure.
 
 ### Probabilité de répétition de l’ordre exprimée en mois depuis la commande
 
@@ -76,7 +76,7 @@ Après avoir créé l’analyse ci-dessus et déterminé un seuil de perte de cl
 
 Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Vous voulez en savoir plus ? Consultez ce tutoriel pour découvrir le comportement d’achat de durée de vie des cohortes de clients en fonction de produits spécifiques qu’ils ont achetés.
 
-Cette bonne pratique est fournie par [!DNL MBI] Data Analysis Services (DAS). [Contacter le support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour plus d’informations.
+Cette bonne pratique est fournie par [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contacter le support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour plus d’informations.
 
 ### Associé
 

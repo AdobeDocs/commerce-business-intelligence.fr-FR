@@ -2,7 +2,7 @@
 title: Formatage et importation de données eCommerce
 description: Découvrez les formats de données idéaux à utiliser pour le transfert de données eCommerce.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Formatage et import de données
 
-Si vous utilisez une intégration qui n’est actuellement pas prise en charge par [!DNL MBI], vous pouvez toujours utiliser la variable [Fonction de téléchargement de fichier](using-file-uploader.md) pour intégrer vos données dans votre Data Warehouse. Cet article couvre les formats de données idéaux à utiliser pour le transfert de données eCommerce.
+Si vous utilisez une intégration qui n’est actuellement pas prise en charge par [!DNL Adobe Commerce Intelligence], vous pouvez toujours utiliser la variable [Fonction de téléchargement de fichier](using-file-uploader.md) pour intégrer vos données dans votre Data Warehouse. Cette rubrique couvre les formats de données idéaux à utiliser pour le transfert de données de commerce électronique.
 
 ## `Orders` table
 

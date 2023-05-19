@@ -2,16 +2,16 @@
 title: Analyse de l'impact des coupons
 description: Découvrez comment analyser l’impact des coupons sur l’acquisition et la fidélisation des clients.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1359'
 ht-degree: 2%
 
 ---
 
 # Coupon Impact
 
-L’analyse de la manière dont les clients utilisent vos coupons peut fournir des informations importantes sur votre entreprise. Plus précisément, l’analyse de la manière dont vous acquérez et fidélisez des clients au moyen de bons. Cet article explore des analyses qui peuvent vous aider à répondre aux types de questions suivants :
+L’analyse de la manière dont les clients utilisent vos coupons peut fournir des informations importantes sur votre entreprise. Plus précisément, l’analyse de la manière dont vous acquérez et fidélisez des clients au moyen de bons. Cette rubrique explore des analyses qui peuvent vous aider à répondre aux types de questions suivants :
 
 * Combien de clients achetez-vous au moyen de coupons ?
 * Les clients ayant obtenu un bon sont-ils plus susceptibles de procéder à des achats répétés que les clients n’ayant pas effectué l’acquisition par l’intermédiaire de bons ?
@@ -69,7 +69,7 @@ Le nombre de commandes répétées pour les acquisitions sans coupon est beaucou
 
 De même, le nombre de commandes répétées effectuées avec un coupon est plus élevé pour les acquisitions sans coupon.
 
-## #Percent des commandes répétées avec coupon
+## Pourcentage de commandes répétées avec coupon
 
 Les clients non-coupon acquis ont un pourcentage beaucoup plus faible de commandes répétées avec un coupon appliqué que les clients ayant acheté un coupon. Ainsi, pour les clients rachetés par coupon, près de la moitié des commandes répétées a un coupon appliqué. Dans cet exemple, les clients achetés par coupon ont tendance à effectuer des achats répétés avec des coupons.
 
@@ -149,4 +149,4 @@ Le plus grand nombre de clients a été racheté via le coupon &quot;20% de réd
 
 ## Remplissage {#wrapup}
 
-Vous pouvez créer une multitude d’analyses pour mieux comprendre l’utilisation des bons par vos clients. Avez-vous déjà réfléchi à la manière dont vos clients utilisent vos coupons ou au temps nécessaire à leur utilisation ? Qu’en est-il de la recherche du montant de remise optimal : quel montant encourage les acheteurs réguliers, une valeur de commande moyenne plus élevée et des recettes de durée de vie plus élevées ? Pour obtenir de l’aide sur ces types de questions, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Vous pouvez créer une multitude d’analyses pour mieux comprendre l’utilisation des bons par vos clients. Avez-vous déjà réfléchi à la manière dont vos clients utilisent vos coupons ou au temps nécessaire à leur utilisation ? Qu’en est-il de la recherche du montant de remise optimal : quel montant encourage les acheteurs réguliers, une valeur de commande moyenne plus élevée et des recettes de durée de vie plus élevées ? Pour obtenir de l’aide sur ces types de questions, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

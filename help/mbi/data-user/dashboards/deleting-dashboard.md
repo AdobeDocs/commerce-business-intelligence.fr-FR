@@ -2,9 +2,9 @@
 title: Suppression d’un tableau de bord
 description: Découvrez comment supprimer un tableau de bord.
 exl-id: 27482dea-0593-46d6-8310-ad505ff9436a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Si vous souhaitez éviter que votre liste de tableaux de bord ne devienne trop e
 
 1. [Via le `Account Settings` page](#account) - cette méthode nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
-1. [Via le `Dashboard Options` menu](#do) - cette méthode nécessite que vous possédiez le tableau de bord ou que vous disposiez des autorisations de modification.
+1. [Via le `Dashboard Options` menu](#do) - cette méthode requiert que vous possédiez le tableau de bord ou `Edit` autorisations.
 
 ## Supprimer le tableau de bord via la fonction `Account Settings` page {#account}
 

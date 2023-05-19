@@ -2,20 +2,18 @@
 title: Données Facebook Ads attendues
 description: Découvrez un bref aperçu des tables dont la synchronisation avec votre Data Warehouse est recommandée.
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
 
 # Valeur attendue [!DNL Facebook Ads] data
 
-![](../../../assets/Facebook_Logo.png)
-
 Après avoir [connecté à [!DNL Facebook Ads] account](../integrations/facebook-ads.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
 
-Cet article présente un bref aperçu des tables que l’Adobe vous recommande de synchroniser avec votre Data Warehouse. Il ne s’agit pas d’une liste complète, car il existe plusieurs sous-tables. Il met uniquement en surbrillance les tableaux principaux.
+Cette rubrique présente un bref aperçu des tables que Adobe vous recommande de synchroniser avec votre Data Warehouse. Cela ne fait que mettre en surbrillance les tables principales, car il existe plusieurs sous-tables.
 
 ## Tables de campagnes publicitaires principales
 
@@ -60,4 +58,4 @@ Ce tableau contient les mêmes informations que la variable `facebook_ads_insigh
 ## Associé
 
 * [Connexion [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

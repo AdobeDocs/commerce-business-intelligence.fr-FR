@@ -2,26 +2,26 @@
 title: Objectifs de suivi par rapport aux mesures
 description: Découvrez comment configurer un tableau de bord qui vous aidera à effectuer le suivi des objectifs de votre entreprise par rapport à vos données réelles, notamment les recettes, les nouveaux utilisateurs enregistrés et les commandes au fil du temps.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # Objectifs de suivi par rapport aux mesures de performances
 
-La plupart des clients souhaitent effectuer le suivi de leurs **objectifs commerciaux**, mais ne réalisez pas que cela est possible dans [!DNL MBI]. Cet article explique comment configurer un tableau de bord qui vous aidera à effectuer le suivi des objectifs de votre entreprise par rapport à vos données réelles, notamment les recettes, les nouveaux utilisateurs enregistrés et les commandes au fil du temps. Vous apprenez également à comparer les performances d’une année à l’autre, le tout dans un tableau de bord comme celui-ci :
+La plupart des clients souhaitent effectuer le suivi de leurs **objectifs commerciaux**, mais ne réalisez pas que cela est possible dans [!DNL Adobe Commerce Intelligence]. Cette rubrique explique comment configurer un tableau de bord qui vous aidera à effectuer le suivi des objectifs de votre entreprise par rapport à vos données réelles, notamment les recettes, les nouveaux utilisateurs enregistrés et les commandes au fil du temps. Vous apprenez également à comparer les performances d’une année à l’autre, le tout dans un tableau de bord comme celui-ci :
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Avant de commencer, vous souhaitez vous familiariser avec le [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et assurez-vous d’avoir défini vos objectifs commerciaux pour une période donnée.
+Avant de commencer, vous devez consulter la section [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et assurez-vous d’avoir défini vos objectifs commerciaux pour une période donnée.
 
 ## Prise en main
 
 Vous devez d’abord charger un fichier contenant des cibles quotidiennes/mensuelles/trimestrielles spécifiques pour votre entreprise.
 
-Vous pouvez utiliser la variable [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et l’image ci-dessous pour formater votre fichier. Les cibles les plus courantes dont les clients effectuent le suivi [!DNL MBI] comprennent les commandes, les recettes et les nouveaux comptes enregistrés.
+Vous pouvez utiliser la variable [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et l’image ci-dessous pour formater votre fichier. Les cibles les plus courantes dont les clients effectuent le suivi [!DNL Commerce Intelligence] comprennent les commandes, les recettes et les nouveaux comptes enregistrés.
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -49,7 +49,7 @@ Créez une mesure pour chaque cible. Par exemple, si vous transférez des cibles
 
 ## Rapports
 
-Comme toujours, il est utile de disposer d’un mélange de valeurs statiques et de graphiques visuels lors de l’analyse de vos cibles. Vous trouverez ci-dessous trois exemples de rapports pour vous aider à commencer à suivre les performances de vos recettes.
+Il est utile de disposer d’un mélange de valeurs statiques et de graphiques visuels lors de l’analyse de vos cibles. Vous trouverez ci-dessous trois exemples de rapports pour vous aider à commencer à suivre les performances de vos recettes.
 
 * **Recettes restantes pour atteindre la cible**
 * Mesure `A`: `Revenue`

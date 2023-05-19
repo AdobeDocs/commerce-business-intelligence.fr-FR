@@ -2,9 +2,9 @@
 title: ROI marketing
 description: Découvrez comment configurer un tableau de bord qui effectue le suivi de l’analyse de vos canaux, y compris le retour sur investissement dans l’agrégat et par campagne.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cet article contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la [nouvelle architecture](../../administrator/account-management/new-architecture.md) Si la section &quot;Vues Data Warehouse&quot; est disponible après avoir sélectionné &quot;Gérer les données&quot; dans la barre d’outils principale.
+>Cette rubrique contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la [nouvelle architecture](../../administrator/account-management/new-architecture.md) Si la section &quot;Vues Data Warehouse&quot; est disponible après avoir sélectionné &quot;Gérer les données&quot; dans la barre d’outils principale.
 
-Si vous dépensez de l’argent dans la publicité en ligne, vous souhaitez suivre votre retour sur cette dépense et prendre des décisions basées sur les données sur d’autres investissements. Cet article explique comment configurer un tableau de bord qui effectue le suivi de l’analyse de vos canaux, y compris le retour sur investissement agrégé et par campagne.
+Si vous dépensez de l’argent dans la publicité en ligne, vous souhaitez suivre votre retour sur cette dépense et prendre des décisions basées sur les données sur d’autres investissements. Cette rubrique explique comment configurer un tableau de bord qui effectue le suivi de l’analyse de vos canaux, y compris le retour sur investissement agrégé et par campagne.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
@@ -23,7 +23,7 @@ Avant de commencer, vous souhaitez connecter votre [!DNL [Facebook Ads]](../impo
 
 ## Tables consolidées
 
-**Architecture originale :** Pour rassembler vos dépenses à partir de diverses sources (comme [!DNL Facebook Ads] ou [!DNL Google Adwords]), Adobe recommande de créer une **table consolidée** de toutes vos dépenses publicitaires. Pour vous, un analyste est nécessaire. Si ce n’est pas le cas, [enregistrer une demande d’assistance ;](../../guide-overview.md) avec le sujet `[MARKETING ROI ANALYSIS]`et un analyste crée ce tableau.
+**Architecture originale :** Pour rassembler vos dépenses à partir de diverses sources, par exemple [!DNL Facebook Ads] ou [!DNL Google Adwords], Adobe recommande de créer une **table consolidée** de toutes vos dépenses publicitaires. Pour vous, un analyste est nécessaire. Si ce n’est pas le cas, [enregistrer une demande d’assistance ;](../../guide-overview.md#Submitting-a-Support-Ticket) avec le sujet `[MARKETING ROI ANALYSIS]`et un analyste crée ce tableau.
 
 **Nouvelle architecture :** Vous pouvez suivre l’exemple de la section [cette bibliothèque d’analyses](../../data-analyst/data-warehouse-mgr/create-dw-views.md) rubrique. Les tableaux consolidés sont désormais appelés vues Data Warehouse sur la nouvelle architecture.
 
@@ -32,11 +32,7 @@ Avant de commencer, vous souhaitez connecter votre [!DNL [Facebook Ads]](../impo
 Colonnes à créer
 
 * **`Consolidated Digital Ad Spend`** table
-* **`Campaign name`** est créé par un analyste dans le cadre de votre **[ANALYSE DU ROI MARKETING]** ticket
-
->[!NOTE]
->
->Voir ci-dessus pour connaître les nouvelles différences d’architecture.
+* **`Campaign name`** est créé par un analyste d’Adobe dans le cadre de votre **[ANALYSE DU ROI MARKETING]** ticket
 
 **Architectures originales et nouvelles :**
 
@@ -63,7 +59,6 @@ Colonnes à créer
       * Sélectionnez une [!UICONTROL table]: `ecommerce####`
       * Sélectionnez une [!UICONTROL column]: `source`
       * [!UICONTROL Path]: sales_plat_order.incrément_id = ecommerce#####.transactionId ^
-
 
 
 
@@ -295,7 +290,7 @@ Colonnes à créer
 
    [!UICONTROL Chart Type]: `Table`
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Associé
 

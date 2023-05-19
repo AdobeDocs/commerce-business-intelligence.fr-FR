@@ -2,22 +2,22 @@
 title: Tableaux de bord inclus
 description: Découvrez comment vérifier l’intégrité des mesures essentielles telles que les recettes de durée de vie des utilisateurs, le nombre d’achats répétés, etc., ce qui crée des bases solides pour l’exploration future.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # Tableaux de bord inclus
 
-Offres Adobe eCommerce et `SaaS` Modules de démarrage. Ces modules, créés par les analystes Adobe, contiennent un ensemble personnalisé de tableaux de bord et de rapports pour votre jeu de données. Les analyses contenues dans ces packages vous permettent de vérifier l’intégrité des mesures essentielles telles que les recettes de durée de vie des utilisateurs, le nombre d’achats répétés, etc., ce qui crée une base solide pour une exploration future.
+[!DNL Adobe] offres `eCommerce` et `SaaS` Modules de démarrage. Ces modules, créés par les analystes Adobe, contiennent un ensemble personnalisé de tableaux de bord et de rapports pour votre jeu de données. Les analyses contenues dans ces packages vous permettent de vérifier l’intégrité des mesures essentielles telles que les recettes de durée de vie des utilisateurs, le nombre d’achats répétés, etc., ce qui crée une base solide pour une exploration future.
 
 >[!NOTE]
 >
 >La disponibilité de certains tableaux de bord dépend de votre jeu de données.
 
-Si vous avez des questions ou si vous souhaitez ajouter un module à votre compte, envoyez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour obtenir de l’aide.
+Si vous avez des questions ou si vous souhaitez ajouter un module à votre compte, envoyez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour obtenir de l’aide.
 
 ## Présentation exécutive
 

@@ -2,7 +2,7 @@
 title: Partage de tableaux de bord
 description: Découvrez comment utiliser et partager vos tableaux de bord.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Partage d’un tableau de bord
 
-Le partage de tableaux de bord signifie que vous et votre équipe avez les mêmes informations à tout moment, ce qui vous permet de collaborer et de discuter. Voici quelques recommandations pour partager les tableaux de bord et conserver vos [!DNL MBI] n&#39;est pas encombrée.
+Le partage de tableaux de bord signifie que vous et votre équipe avez les mêmes informations à tout moment, ce qui vous permet de collaborer et de discuter. Voici quelques recommandations pour partager les tableaux de bord et conserver vos [!DNL Adobe Commerce Intelligence] n&#39;est pas encombrée.
 
 ## Éviter les tableaux de bord en double
 
 Parfois, vous pouvez trouver plusieurs tableaux de bord portant le même nom, car d’autres utilisateurs ont créé et partagé des tableaux de bord similaires avec vous. Ces tableaux de bord peuvent être des doublons d’une Principale copie. Dans ce cas, Adobe recommande qu’un utilisateur partage la Principale copie du tableau de bord, puis qu’il supprime tous les tableaux de bord en double.
 
-Pour savoir qui possède un tableau de bord, cliquez sur la liste déroulante du tableau de bord en haut à gauche. Tous les tableaux de bord qui n’ont pas de nom en dessous vous appartiennent.
+Pour savoir qui possède un tableau de bord, cliquez sur la liste déroulante du tableau de bord dans le coin supérieur gauche. Tous les tableaux de bord qui n’ont pas de nom en dessous vous appartiennent.
 
 ![](../../mbi/assets/Dash_ownership.gif)
 
@@ -30,7 +30,7 @@ Pour supprimer tous les tableaux de bord en double :
 
 ## Création d’un ensemble principal de tableaux de bord
 
-Lorsque de nouveaux utilisateurs sont créés, ils ne possèdent aucun tableau de bord ni graphique. Toutefois, ils verront la liste des tableaux de bord les plus populaires de votre entreprise (avec les droits d’affichage ou de modification pour l’ensemble de l’équipe) lors de leur première connexion. Assurez-vous que les tableaux de bord figurent toujours dans cette liste afin que de nouveaux utilisateurs puissent être inclus.
+Lorsque de nouveaux utilisateurs sont créés, ils ne possèdent aucun tableau de bord ni graphique. Cependant, une liste des tableaux de bord les plus populaires de votre entreprise s’affiche (avec les droits d’affichage ou de modification pour l’ensemble de l’équipe) lors de la première connexion. Assurez-vous que les tableaux de bord figurent toujours dans cette liste afin que de nouveaux utilisateurs puissent être inclus.
 
 ## Partage de tableaux de bord avec les nouveaux utilisateurs
 

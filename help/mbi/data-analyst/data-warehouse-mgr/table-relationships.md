@@ -2,7 +2,7 @@
 title: Présentation et évaluation des relations entre les tables
 description: Découvrez comment comprendre le nombre d’occurrences possibles dans une table pouvant appartenir à une entité dans une autre.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -19,13 +19,13 @@ La compréhension des relations est essentielle au maintien de l’intégrité d
 
 Il existe trois types de relations entre deux tables :
 
-* [&quot;un-à-un&quot;](#onetoone)
-* [`un-à-plusieurs`](#onetomany)
-* [`many-to-many`](#manytomany)
+1. [&quot;un-à-un&quot;](#onetoone)
+1. [`un-à-plusieurs`](#onetomany)
+1. [`many-to-many`](#manytomany)
 
 ### `One-to-One` {#onetoone}
 
-Dans un `one-to-one` relation, un enregistrement dans le tableau `B` appartient à un seul enregistrement dans le tableau `A`. Et un enregistrement dans Table `A` appartient à un seul enregistrement dans le tableau `B`.
+Dans un `one-to-one` relation, un enregistrement dans la table `B` appartient à un seul enregistrement de la table `A`. Et un enregistrement dans Table `A` appartient à un seul enregistrement dans le tableau `B`.
 
 Par exemple, dans la relation entre les personnes et les numéros de permis de conduire, une personne ne peut avoir qu&#39;un seul numéro de permis de conduire, et un numéro de permis de conduire appartient à une seule personne.
 
@@ -33,13 +33,13 @@ Par exemple, dans la relation entre les personnes et les numéros de permis de c
 
 ### `One-to-Many` {#onetomany}
 
-Dans un `one-to-many` relation, un enregistrement dans le tableau `A` peut potentiellement appartenir à plusieurs enregistrements du tableau `B`. Pensez à la relation entre `orders` et `items` - une commande peut contenir de nombreux éléments, mais un élément appartient à une seule commande. Dans ce cas, la variable `orders` Le tableau est le côté unique et le `items` la table est le côté multiple.
+Dans un `one-to-many` relation, un enregistrement dans la table `A` peut potentiellement appartenir à plusieurs enregistrements de la table `B`. Pensez à la relation entre `orders` et `items` - une commande peut contenir de nombreux éléments, mais un élément appartient à une seule commande. Dans ce cas, la variable `orders` Le tableau est le côté unique et le `items` la table est le côté multiple.
 
 ![](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
-Dans un `many-to-many` relation, un enregistrement dans le tableau `B` peut potentiellement appartenir à plusieurs enregistrements du tableau `A`. Et vice versa : un enregistrement dans le tableau `A` peut potentiellement appartenir à plusieurs enregistrements du tableau `B`.
+Dans un `many-to-many` relation, un enregistrement dans la table `B` peut potentiellement appartenir à plusieurs enregistrements de la table `A`. Et vice versa : un enregistrement dans la table `A` peut potentiellement appartenir à plusieurs enregistrements dans Ttable `B`.
 
 Pensez à la relation entre **products** et **categories**: un produit peut appartenir à de nombreuses catégories et une catégorie peut contenir de nombreux produits.
 
@@ -60,6 +60,7 @@ Par exemple, lorsque vous réfléchissez aux utilisateurs et aux commandes, tene
 Pour utiliser cette méthode :
 
 1. Identifiez l’entité décrite dans chaque tableau. **Conseil : c&#39;est généralement un nom**. Par exemple, la variable `user` et `orders` Les tableaux décrivent explicitement les utilisateurs et les commandes.
+
 1. Identifiez un ou plusieurs verbes qui décrivent la manière dont ces entités interagissent. Par exemple, lorsque vous comparez des utilisateurs à des commandes, les utilisateurs &quot;placent&quot; des commandes. Dans l’autre sens, les commandes &quot;appartiennent&quot; aux utilisateurs.
 
 Ce type de structure peut être appliqué à n’importe quelle association de tableaux dans votre Data Warehouse. Cela vous permet d’identifier facilement le type de relation et la table d’un côté et celle d’un autre côté.

@@ -2,27 +2,30 @@
 title: Données Google Adwords attendues
 description: Découvrez comment utiliser Data Warehouse Manager pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
 
-# Données Google Adwords attendues
+# Valeur attendue [!DNL Google Adwords] data
 
 Après [vous avez connecté votre [!DNL Google Adwords] account](../integrations/google-adwords.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
 
-Deux tables sont alors disponibles pour la réplication dans votre Data Warehouse : `campaigns[account-id]` et `adwords[account-id]`.
+Deux tables sont alors disponibles pour la réplication dans votre Data Warehouse :
+
+* `campaigns[account-id]`
+* `adwords[account-id]`
 
 Le `campaigns` table *doit être utilisé par défaut.*, afin que vous puissiez commencer par synchroniser tous les champs pertinents de ce tableau.
 
 Le `adwords` Le tableau contient quatre colonnes qui ne figurent pas dans la variable `campaigns` table :
 
-* `keyword`
-* `adContent`
-* `adDestinationUrl`
-* `adGroup`
+1. `keyword`
+1. `adContent`
+1. `adDestinationUrl`
+1. `adGroup`
 
 Lorsque vous souhaitez réaliser une analyse qui prend en compte ces attributs, vous devez utiliser la variable `adwords` table.
 
@@ -30,9 +33,9 @@ Lorsque vous souhaitez réaliser une analyse qui prend en compte ces attributs, 
 >
 >Ce tableau exclut les lignes où les quatre colonnes sont `null`.
 
-Voici un aperçu du schéma attendu pour les deux tables :
+Vous trouverez ci-dessous un aperçu du schéma attendu pour les deux tableaux.
 
-## `Campaigns` table
+## [!DNL Campaigns] table
 
 Le `campaigns` Le tableau contient les colonnes suivantes :
 
@@ -52,7 +55,7 @@ Le `campaigns` Le tableau contient les colonnes suivantes :
 
 {style="table-layout:auto"}
 
-## Tableau AdWords
+## [!DNL AdWords] table
 
 Le `adwords` Le tableau contient les colonnes suivantes :
 
@@ -76,12 +79,12 @@ Le `adwords` Le tableau contient les colonnes suivantes :
 
 {style="table-layout:auto"}
 
-A partir de ces données, vous pouvez commencer à créer [mesures ](../../../data-user/reports/ess-manage-data-metrics.md) et [rapports](../../../tutorials/using-visual-report-builder.md) en fonction des dépenses et [l’épouser aux recettes de votre vie pour calculer le retour sur investissement](../../analysis/roi-ad-camp.md).
+A partir de ces données, vous pouvez commencer à créer [mesures](../../../data-user/reports/ess-manage-data-metrics.md) et [rapports](../../../tutorials/using-visual-report-builder.md) en fonction des dépenses et [l’épouser aux recettes de votre vie pour calculer le retour sur investissement](../../analysis/roi-ad-camp.md).
 
 ## Tables consolidées
 
-Adobe recommande de créer une `consolidated ad spend` pour combiner les données de toutes vos sources publicitaires multiples en un seul tableau. Vous pouvez ainsi utiliser un seul ensemble de mesures pour l’analyse des publicités.
+[!DNL Adobe] recommande de créer une `consolidated ad spend` pour combiner les données de toutes vos sources publicitaires multiples en un seul tableau. Vous pouvez ainsi utiliser un seul ensemble de mesures pour l’analyse des publicités.
 
-Sans tableau consolidé, si vous créez un joli tableau de bord sur le `adwords` tableau, vous devez répliquer le rapport ou créer des mesures en double pour comparer ces données à votre [!DNL Facebook Ads] data. L’utilisation d’un tableau consolidé vous permet d’incorporer facilement des [!DNL Facebook Ads] avec vos données existantes [!DNL Adwords] rapports. Vous pouvez également segmenter par plateforme publicitaire.
+Si vous ne disposez pas d’une table consolidée et que vous créez un beau tableau de bord sur la page `adwords` tableau, vous devez répliquer le rapport ou créer des mesures en double pour comparer ces données à votre [!DNL Facebook Ads] data. L’utilisation d’un tableau consolidé vous permet d’incorporer facilement des [!DNL Facebook Ads] avec vos données existantes [!DNL Adwords] rapports. Vous pouvez également segmenter par plateforme publicitaire.
 
-Si vous avez déjà synchronisé les champs ci-dessus, contactez-nous pour consolider vos dépenses publicitaires.
+Si vous avez déjà synchronisé les champs ci-dessus, [contactez-nous](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour consolider vos dépenses publicitaires.

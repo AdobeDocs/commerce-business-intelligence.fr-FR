@@ -2,9 +2,9 @@
 title: table sales_order
 description: Découvrez comment utiliser la table sales_order.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Ce tableau comprend toutes les commandes client, que cette commande ait été tr
 | `base_tax_amount` | Valeur de taxe appliquée à la commande |
 | `billing_address_id` | `Foreign key` associé à la propriété `sales_order_address` table. Rejoindre à `sales_order_address.entity_id` pour déterminer les détails de l’adresse de facturation associés à la commande |
 | `coupon_code` | Bon appliqué à la commande. Si aucun coupon n&#39;est appliqué, ce champ est `NULL` |
-| `created_at` | Horodatage de création de la commande, stocké localement en UTC. Selon votre configuration dans [!DNL MBI], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL MBI] qui diffère du fuseau horaire de votre base de données |
+| `created_at` | Horodatage de création de la commande, stocké localement en UTC. Selon votre configuration dans [!DNL Commerce Intelligence], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL Commerce Intelligence] qui diffère du fuseau horaire de votre base de données |
 | `customer_email` | Adresse électronique du client qui passe la commande. Cela est renseigné dans toutes les situations, y compris les commandes traitées lors du passage en caisse de l’invité. |
 | `customer_group_id` | Clé étrangère associée à la variable `customer_group` table. Rejoindre à `customer_group.customer_group_id` pour déterminer le groupe de clients associé à la commande |
 | `customer_id` | `Foreign key` associé à la propriété `customer_entity` , si le client est enregistré. Rejoindre à `customer_entity.entity_id` pour déterminer les attributs du client associés à la commande. Si la commande a été passée par le biais de l’extraction d’invité, ce champ est `NULL` |
@@ -55,7 +55,7 @@ Ce tableau comprend toutes les commandes client, que cette commande ait été tr
 | `Customer's lifetime revenue` | Somme du total des recettes de toutes les commandes passées par ce client. Calculé en totalisant le `base_grand_total` champ pour toutes les commandes pour chaque client unique |
 | `Customer's order number` | Classement séquentiel de la commande de ce client. Calculé en identifiant toutes les commandes passées par un client, triées par ordre croissant selon le `created_at` horodatage et attribution d’une valeur entière incrémentée à chaque commande. Par exemple, la première commande du client renvoie une `Customer's order number` de 1, la deuxième commande du client renvoie un `Customer's order number` de 2, etc. |
 | `Customer's order number (previous-current)` | Classement de la commande précédente du client concaténé avec le classement de cette commande, séparé par un `-` caractère. Calculé par concaténation (&quot;`Customer's order number` - 1&quot;) avec &quot;&quot;`-`&quot; suivi de &quot;`Customer's order number`&quot;. Par exemple, pour la commande associée au deuxième achat du client, cette colonne renvoie la valeur `1-2`. Le plus souvent utilisé lors de la représentation du temps entre deux événements de commande (c’est-à-dire dans le graphique &quot;Durée entre les commandes&quot;) |
-| `Is customer's last order?` | Détermine si la commande correspond à la dernière commande du client, ou la plus récente. Calculé en comparant la variable `Customer's order number` avec la valeur `Customer's lifetime number of orders`. Lorsque ces deux champs sont égaux pour l’ordre donné, cette colonne renvoie &quot;Oui&quot; ; sinon, il renvoie &quot;Non&quot;. |
+| `Is customer's last order?` | Détermine si la commande correspond à la dernière commande du client, ou la plus récente. Calculé en comparant la variable `Customer's order number` avec la valeur `Customer's lifetime number of orders`. Lorsque ces deux champs sont égaux à l’ordre donné, cette colonne renvoie `Yes`; sinon, il renvoie `No` |
 | `Number of items in order` | Nombre total d’articles inclus dans la commande. Calculé par la jointure `sales_order`.`entity_id` to `sales_order_item`.`order_id` et additionner les `sales_order_item`.`qty_ordered` field |
 | `Seconds between customer's first order date and this order` | Délai écoulé entre cette commande et la première commande du client. Calculé par soustraction `Customer's first order date` de la `created_at` pour chaque commande, renvoyé sous la forme d’un nombre entier de secondes. |
 | `Seconds since previous order` | Délai écoulé entre cette commande et la commande précédente du client. Calculé en soustrayant le `created_at` pour la commande précédente de la fonction `created_at` de cet ordre, renvoyé sous la forme d’un nombre entier de secondes. Par exemple, pour l’enregistrement de commande correspondant à la troisième commande d’un client, cette colonne renvoie le nombre de secondes entre la deuxième et la troisième commande du client. Pour la première commande du client, ce champ renvoie `NULL` |

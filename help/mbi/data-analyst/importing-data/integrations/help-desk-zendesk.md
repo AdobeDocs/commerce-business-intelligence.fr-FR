@@ -2,7 +2,7 @@
 title: Rapports du centre d’aide pour Zendesk
 description: Découvrez les canaux de référence les plus précieux.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Cette option n’est disponible que pour les clients qui se trouvent sur la variable `Pro` planifiez et utilisez la nouvelle architecture. Vous utilisez la nouvelle architecture si vous avez le `Data Warehouse Views` section disponible après sélection `Manage Data` dans la barre d’outils principale.
 
-Consolidation de votre [!DNL Zendesk] les données de votre base de données transactionnelle sont un excellent moyen de mieux comprendre comment vos clients interagissent avec vos équipes de vente ou de succès client. Il vous aide également à déterminer le type de clients qui utilisent votre plateforme d’assistance. Cet article explique comment configurer un tableau de bord pour obtenir des rapports détaillés sur votre [!DNL Zendesk] les performances et l’association avec vos clients transactionnels.
+Consolidation de votre [!DNL Zendesk] les données de votre base de données transactionnelle sont un excellent moyen de mieux comprendre comment vos clients interagissent avec vos équipes de vente ou de succès client. Il vous aide également à déterminer le type de clients qui utilisent votre plateforme d’assistance. Cette rubrique explique comment configurer un tableau de bord pour obtenir des rapports détaillés sur votre [!DNL Zendesk] les performances et l’association avec vos clients transactionnels.
 
 Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrations/zendesk.md). Cette analyse contient [colonnes calculées avancées](../../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -86,34 +86,34 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
 
       * `Datatype` - `String`
 
-* **`[Zendesk] audits_~_events`** table
+* **`[!DNL Zendesk] audits_~_events`** table
    * Sélectionnez une définition : `Joined Column`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] audits_~_events.author_id8`
-   * [!UICONTROL One]: `[Zendesk] users.id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
+   * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * Sélectionnez une [!UICONTROL table]: `[Zendesk] users`
+   * Sélectionnez une [!UICONTROL table]: `[!DNL Zendesk] users`
    * Sélectionnez une [!UICONTROL column]: `User is agent? (Yes/No)`
-   * [!UICONTROL Path]: `[Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
 
-* **`[Zendesk] audits`** table
+* **`[!DNL Zendesk] audits`** table
    * Sélectionnez une définition : `Exists`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] audits_~_events._id_of_parent`
-   * [!UICONTROL One]: `[Zendesk] audits._id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
+   * [!UICONTROL One]: `[!DNL Zendesk] audits._id`
 
-   * Sélectionnez une [!UICONTROL table]: `[Zendesk] audits_~_events`
-   * [!UICONTROL Path]: `[Zendesk] audits_~_events._id_of_parent = [Zendesk] audits._id`
+   * Sélectionnez une [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]:
    * `field_name` = `status`
    * `type` = `Change`
    * `value` = `solved`
 
    * Sélectionnez une définition : `Exists`
-   * Sélectionnez une [!UICONTROL table]: `[Zendesk] audits_~_events`
-   * [!UICONTROL Path]: `[Zendesk] audits_~_events._id_of_parent = [Zendesk] audits._id`
+   * Sélectionnez une [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
    * `type` = `Comment`
    * `public` = `1`
@@ -121,36 +121,36 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
 * **`Status changes to solved? (1/0)`**
 * **`Is agent comment? (1/0)`**
 
-* **`[Zendesk] Tickets`** table
+* **`[!DNL Zendesk] Tickets`** table
    * Sélectionnez une définition : `Joined Column`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] tickets.requester_id`
-   * [!UICONTROL One]: `[Zendesk] users.id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
+   * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * Sélectionnez une [!UICONTROL table]: `[Zendesk] users`
+   * Sélectionnez une [!UICONTROL table]: `[!DNL Zendesk] users`
    * Sélectionnez une [!UICONTROL column]: `email`
-   * [!UICONTROL Path]: `[Zendesk] tickets.requester_id = [Zendesk] users.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * Sélectionnez une définition : `Joined Column`
-   * Sélectionnez une [!UICONTROL table]: `[Zendesk] users`
+   * Sélectionnez une [!UICONTROL table]: `[!DNL Zendesk] users`
    * Sélectionnez une [!UICONTROL column]: `role`
-   * [!UICONTROL Path]: `[Zendesk] tickets.requester_id = [Zendesk] users.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * Sélectionnez une définition : `Max`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] audits.ticket_id`
-   * [!UICONTROL One]: `[Zendesk] tickets.id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] audits.ticket_id`
+   * [!UICONTROL One]: `[!DNL Zendesk] tickets.id`
 
-   * Sélectionnez une [!UICONTROL table]: `[Zendesk] audits`
+   * Sélectionnez une [!UICONTROL table]: `[!DNL Zendesk] audits`
    * Sélectionnez une [!UICONTROL column]: `created_at`
-   * [!UICONTROL Path]: `[Zendesk] audits.ticket_id = [Zendesk] tickets.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `status` a été remplacé par `solved = 1`
 
    * Sélectionnez une définition : `Min`
-   * Sélectionnez une [!UICONTROL table]: `[Zendesk] audits`
+   * Sélectionnez une [!UICONTROL table]: `[!DNL Zendesk] audits`
    * Sélectionnez une [!UICONTROL column]: `created_at`
-   * [!UICONTROL Path]: `[Zendesk] audits.ticket_id = [Zendesk] tickets.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `Is agent comment? = 1`
 
@@ -202,13 +202,13 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
 * **`customer_entity`** table
    * Sélectionnez une définition : `Count`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] tickets.email`
+   * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
    * 
 
       [!UICONTROL One]: `customer_entity.email`
 
-   * Sélectionnez une [!UICONTROL table]: `[Zendesk] tickets`
-   * [!UICONTROL Path]: `[Zendesk] tickets.email = customer_entity.email`
+   * Sélectionnez une [!UICONTROL table]: `[!DNL Zendesk] tickets`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
    * [!UICONTROL Filter]:
    * `Tickets we count`
 
@@ -223,11 +223,11 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
 
       * `Datatype` – `String`
 
-* **`[Zendesk] Tickets`** table
+* **`[!DNL Zendesk] Tickets`** table
    * Sélectionnez une définition : `Joined Column`
    * Sélectionnez une [!UICONTROL table]: `customer_entity`
    * Sélectionnez une [!UICONTROL column]: `User's lifetime number of support tickets requested`
-   * [!UICONTROL Path]: `[Zendesk] tickets.email = customer_entity.email`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
 
@@ -236,7 +236,7 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
 * **[!DNL Zendesk]Nouveaux tickets**
    * `Tickets we count`
 
-* Dans le **`[Zendesk] tickets`** table
+* Dans le **`[!DNL Zendesk] tickets`** table
 * Cette mesure effectue une **Count**
 * Sur le **`id`** column
 * Commandé par le **`created_at`** timestamp
@@ -246,7 +246,7 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
    * `Tickets we count`
    * status IN `closed, solved`
 
-* Dans le **`[Zendesk] tickets`** table
+* Dans le **`[!DNL Zendesk] tickets`** table
 * Cette mesure effectue une **Count**
 * Sur le **`id`** column
 * Commandé par le **`created_at`** timestamp
@@ -255,7 +255,7 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
 * **[!DNL Zendesk]Classement de tickets par les utilisateurs distincts**
    * `Tickets we count`
 
-* Dans le **`[Zendesk] tickets`** table
+* Dans le **`[!DNL Zendesk] tickets`** table
 * Cette mesure effectue une **Comptage distinct**
 * Sur le **`requester_id`** column
 * Commandé par le **`created_at`** timestamp
@@ -265,7 +265,7 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
    * `Tickets we count`
    * status IN `closed, solved`
 
-* Dans le **`[Zendesk] tickets`** table
+* Dans le **`[!DNL Zendesk] tickets`** table
 * Cette mesure effectue une **Moyenne (ou médiane)**
 * Sur le **`Seconds to resolution`** column
 * Commandé par le **`created_at`** timestamp
@@ -275,7 +275,7 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
    * Billets comptabilisés
    * statut EN fermé, résolu
 
-* Dans le **`[Zendesk] tickets`** table
+* Dans le **`[!DNL Zendesk] tickets`** table
 * Cette mesure effectue une **Moyenne (ou médiane)**
 * Sur le **`Seconds to first response`** column
 * Commandé par le **`created_at`** timestamp

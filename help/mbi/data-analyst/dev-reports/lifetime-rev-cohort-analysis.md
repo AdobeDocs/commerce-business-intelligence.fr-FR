@@ -1,17 +1,17 @@
 ---
 title: Analyse des cohortes de recettes sur la durée de vie
-description: Explorer la puissance de [!DNL MBI] analyse des cohortes.
+description: Explorez la puissance de l’analyse des cohortes de Commerce Intelligence.
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
-# `Lifetime Revenue Cohort` Analyse
+# [!DNL Lifetime Revenue Cohort] Analyse
 
-Il existe de nombreuses façons d’examiner vos données dans [!DNL MBI]et vous savez que l&#39;interprétation et la compréhension sont aussi importantes que le calcul et la visualisation. Cet article explore la puissance de [!DNL MBI] `cohort` analyse.
+Il existe de nombreuses façons d’examiner vos données dans [!DNL Adobe Commerce Intelligence]et vous savez que l&#39;interprétation et la compréhension sont aussi importantes que le calcul et la visualisation. Cette rubrique explore la puissance de [!DNL Commerce Intelligence] `cohort` analyse.
 
 ## Que faire ? `lifetime revenue cohort` l&#39;analyse signifie ?
 

@@ -2,9 +2,9 @@
 title: Gestion des dimensions de données
 description: Découvrez ce qu’est une dimension et l’utiliser pour filtrer ou segmenter les graphiques en fonction d’une mesure.
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Une dimension est un champ du même tableau qu’une mesure qui peut être utili
 
 Pour ajouter une ou plusieurs dimensions à plusieurs mesures à la fois :
 
-1. Dans la barre de navigation principale, accédez à **[!UICONTROL Manage Data > Metrics]**.
+1. Accédez à **[!UICONTROL Manage Data > Metrics]**.
 
-1. En haut de la page, cliquez sur **[!UICONTROL Add Dimensions To Metric(s)]**.
+1. Cliquez sur **[!UICONTROL Add Dimensions To Metric(s)]**.
 
 1. Sélectionnez la table contenant les dimensions.
 
@@ -39,9 +39,9 @@ Pour ajouter une ou plusieurs dimensions à plusieurs mesures à la fois :
 
 Pour supprimer une ou plusieurs dimensions de plusieurs mesures :
 
-1. Dans la barre de navigation principale, accédez à **[!UICONTROL Data > Metrics]**.
+1. Accédez à **[!UICONTROL Data > Metrics]**.
 
-1. En haut de la page, cliquez sur **[!UICONTROL Remove Dimensions From Metric(s)]**.
+1. Cliquez sur **[!UICONTROL Remove Dimensions From Metric(s)]**.
 
 1. Sélectionnez la table contenant les dimensions.
 
@@ -49,26 +49,26 @@ Pour supprimer une ou plusieurs dimensions de plusieurs mesures :
 
 1. Cliquez sur **[!UICONTROL Remove]**.
 
-1. Si les dimensions sont utilisées dans les rapports, un avertissement s’affiche, ainsi qu’une liste des graphiques qui utilisent les dimensions. Cliquez sur **[!UICONTROL Delete]** pour supprimer les dimensions vérifiées et toutes leurs dépendances, y compris les rapports.
+1. Si les dimensions sont utilisées dans les rapports, un avertissement s’affiche avec la liste des graphiques qui utilisent les dimensions. Cliquez sur **[!UICONTROL Delete]** pour supprimer les dimensions vérifiées et toutes leurs dépendances, y compris les rapports.
 
 ## Gestion des dimensions dans les mesures
 
 **Pour ajouter une ou plusieurs dimensions à une mesure :**
 
-1. Dans la barre de navigation principale, accédez à **[!UICONTROL Data > Metrics]**.
+1. Accédez à **[!UICONTROL Data > Metrics]**.
 
 1. Cliquez sur **[!UICONTROL Edit]** sur la mesure, vous souhaitez une nouvelle dimension.
 
-1. Sous , `Dimensions` , utilisez la fonction `Add a dimension` pour sélectionner une dimension à ajouter.
+1. Dans le `Dimensions` , utilisez la fonction `Add a dimension` pour sélectionner une dimension à ajouter.
 
 >[!NOTE]
 >
->Toute dimension dont vous souhaitez filtrer ou regrouper les éléments doit déjà faire l’objet d’un suivi dans [!DNL MBI]. Si vous ne trouvez pas la dimension souhaitée, vous devrez peut-être commencer le suivi d’une nouvelle colonne de données dans votre base de données via la variable [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
+>Toute dimension dont vous souhaitez filtrer ou regrouper les éléments doit déjà faire l’objet d’un suivi dans [!DNL Commerce Intelligence]. Si vous ne trouvez pas la dimension souhaitée, vous devrez peut-être commencer le suivi d’une nouvelle colonne de données dans votre base de données via la variable [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
 
 
 **Pour supprimer une ou plusieurs dimensions d’une mesure :**
 
-1. Dans la barre de navigation principale, accédez à **[!UICONTROL Manage Data > Metrics]**.
+1. Accédez à **[!UICONTROL Manage Data > Metrics]**.
 
 1. Cliquez sur **[!UICONTROL Edit]** sur la mesure, vous souhaitez une nouvelle dimension.
 
@@ -76,7 +76,7 @@ Pour supprimer une ou plusieurs dimensions de plusieurs mesures :
 
 >[!NOTE]
 >
->Même après la suppression d’une dimension, elle existe toujours sous la forme d’une colonne sur votre table dans votre Data Warehouse. Vous pouvez la réajouter à n’importe quelle mesure et créer de nouvelles mesures à l’aide de ces dimensions. Pour supprimer la colonne de données à partir de laquelle correspond une dimension [!DNL MBI], il vous suffit d’annuler le suivi de la colonne de données via l’événement [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
+>Même après la suppression d’une dimension, elle existe toujours sous la forme d’une colonne sur votre table dans votre Data Warehouse. Vous pouvez la réajouter à n’importe quelle mesure et créer de nouvelles mesures à l’aide de ces dimensions. Pour supprimer la colonne de données à partir de laquelle correspond une dimension [!DNL Commerce Intelligence], il vous suffit d’annuler le suivi de la colonne de données via l’événement [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
 
 ## Documentation connexe
 

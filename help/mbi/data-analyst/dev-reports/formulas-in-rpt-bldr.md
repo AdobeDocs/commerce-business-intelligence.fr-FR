@@ -2,16 +2,16 @@
 title: Formules dans le Report Builder
 description: Découvrez comment les formules peuvent être utilisées dans le Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # Formules dans le `Report Builder`
 
-Dans le [`Report Builder`](../../tutorials/using-visual-report-builder.md), vous pouvez créer de puissantes visualisations à l’aide de la variable [mesures définies](../../data-user/reports/ess-manage-data-metrics.md) dans votre compte. La combinaison de ces mesures dans une formule vous permet d’obtenir des informations supplémentaires sur vos données. Cet article explique comment les formules peuvent être utilisées dans la variable `Report Builder` - allons-y !
+Dans le [`Report Builder`](../../tutorials/using-visual-report-builder.md), vous pouvez créer de puissantes visualisations à l’aide de la variable [mesures définies](../../data-user/reports/ess-manage-data-metrics.md) dans votre compte. La combinaison de ces mesures dans une formule vous permet d’obtenir des informations supplémentaires sur vos données. Cette rubrique explique comment les formules peuvent être utilisées dans la variable `Report Builder` - allons-y !
 
 ## Qu’est-ce qu’une `formula`? {#what}
 
@@ -63,4 +63,4 @@ Dans cet exemple, vous avez utilisé la méthode `Stacked Columns` perspective p
 
 Avez-vous remarqué dans les exemples ci-dessus que la variable `timestamp`, `groupings`, `perspectives`, et `filters` sont-elles héritées de ses mesures d’entrée ? Gardez à l’esprit que les formules peuvent être utilisées `perspectives` et [options d’heure indépendantes](../../tutorials/time-options-visual-rpt-bldr.md){ : target=&quot;_blank&quot;}, comme le peuvent les mesures.
 
-Si vous avez d’autres questions sur l’utilisation des formules dans la variable `Report Builder`, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous avez d’autres questions sur l’utilisation des formules dans la variable `Report Builder`, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

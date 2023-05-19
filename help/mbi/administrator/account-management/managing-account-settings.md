@@ -2,9 +2,9 @@
 title: Gestion des paramètres du compte
 description: Découvrez comment personnaliser les paramètres de votre compte pour votre Data Warehouse.
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Nécessite [Autorisations d’administrateur.](../../administrator/user-management/user-management.md)
 
-Dans votre [!DNL MBI] , vous pouvez personnaliser les paramètres de votre compte pour votre Data Warehouse. Pour y accéder, sélectionnez le nom de votre organisation dans le coin supérieur droit de n’importe quel écran, puis choisissez **[!UICONTROL Account Settings]** dans la liste déroulante.
+Dans votre [!DNL Commerce Intelligence] , vous pouvez personnaliser les paramètres de votre compte pour votre Data Warehouse. Pour y accéder, sélectionnez le nom de votre organisation dans le coin supérieur droit de n’importe quel écran, puis choisissez **[!UICONTROL Account Settings]** dans la liste déroulante.
 
 * **[!UICONTROL Client Name:]** Ce paramètre s’affiche dans le coin supérieur droit de tous les tableaux de bord et ailleurs dans votre compte. Si vous souhaitez modifier **[!UICONTROL "Vandelay Industries Co., Ltd]** à **[!UICONTROL "Vandelay]**, c&#39;est là que vous voulez faire ça.
 

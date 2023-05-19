@@ -2,16 +2,16 @@
 title: Filtrage à l’échelle du tableau de bord
 description: Découvrez comment apporter des modifications en masse à tous les rapports d’un tableau de bord spécifique.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Filtrage à l’échelle du tableau de bord
 
-Le filtrage à l’échelle du tableau de bord vous permet d’apporter des modifications en masse à tous les rapports d’un tableau de bord spécifique. Vous pouvez afficher rapidement la même analyse sur différentes périodes ou pour différents magasins. Vous pouvez facilement comparer les performances d’une année, d’un mois ou d’une semaine précédents par magasin. De plus, vous pouvez mettre à jour un tableau de bord entier pour l’adapter à une nouvelle campagne lancée.
+Le filtrage à l’échelle du tableau de bord vous permet d’apporter des modifications en masse à tous les rapports d’un tableau de bord spécifique. Vous pouvez afficher rapidement la même analyse sur différentes périodes ou pour différents magasins. Vous pouvez facilement comparer les performances d’une année, d’un mois ou d’une semaine précédents par magasin. Vous pouvez mettre à jour un tableau de bord entier pour l’adapter à une nouvelle campagne lancée.
 
 ## Filtres de date
 
@@ -45,7 +45,7 @@ Pour analyser les performances d’un magasin spécifique, cliquez sur l’icôn
 
 >[!NOTE]
 >
->Un filtre de magasin est activé ou désactivé pour l’ensemble d’un [!DNL MBI] compte . Si un tableau de bord contient des rapports qui ne sont pas affectés par le filtre (tels que des rapports qui ne sont pas créés à partir de données de commerce ), ces rapports ne sont pas mis à jour lorsque le filtre de magasin est appliqué. Vous pouvez [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) si vous pensez qu’un rapport doit être mis à jour en fonction de la sélection du magasin ou si vous pensez que votre filtre de magasin de comptes est désactivé par erreur.
+>Un filtre de magasin est activé ou désactivé pour l’ensemble d’un [!DNL Commerce Intelligence] compte . Si un tableau de bord contient des rapports qui ne sont pas affectés par le filtre (tels que des rapports qui ne sont créés sur aucune [!DNL Adobe Commerce] data), ces rapports ne sont pas mis à jour lorsque le filtre de magasin est appliqué. Vous pouvez [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si vous pensez qu’un rapport doit être mis à jour en fonction de la sélection du magasin ou si vous pensez que votre filtre de magasin de comptes est désactivé par erreur.
 
 Lorsque vous sélectionnez un magasin dans la variable `Store Filter`, le filtre conserve votre sélection lorsque vous naviguez entre les tableaux de bord. Le fait de conserver votre sélection vous permet d’afficher partout les données de votre magasin sélectionné jusqu’à ce que vous sélectionniez `All Stores`.
 

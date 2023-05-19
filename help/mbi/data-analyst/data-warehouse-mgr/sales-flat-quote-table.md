@@ -2,7 +2,7 @@
 title: Tableau de citations
 description: Découvrez comment utiliser la table des guillemets.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Le `quote` tableau (`sales_flat_quote` sur M1) contient des enregistrements sur 
 | `base_currency_code` | Devise pour toutes les valeurs capturées dans `base_*` (c’est-à-dire `base_grand_total`, `base_subtotal`, etc.). Cela reflète généralement la devise par défaut de la boutique Commerce. |
 | `base_grand_total` | Prix final cité au client pour le panier, après l’application de toutes les taxes, les frais d’expédition et les remises. Bien que le calcul précis soit personnalisable, la variable `base_grand_total` est calculé comme `base_subtotal` + `base_tax_amount` + `base_shipping_amount` + `base_discount_amount` - `base_gift_cards_amount` - `base_customer_balance_amount` |
 | `base_subtotal` | Valeur brute de la marchandise de tous les articles inclus dans le panier. Les taxes, les frais d’expédition, les remises, etc. ne sont pas inclus |
-| `created_at` | Horodatage de création du panier, stocké localement en UTC. Selon votre configuration dans [!DNL MBI], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL MBI] qui diffère du fuseau horaire de votre base de données |
+| `created_at` | Horodatage de création du panier, stocké localement en UTC. Selon votre configuration dans [!DNL Commerce Intelligence], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL Commerce Intelligence] qui diffère du fuseau horaire de votre base de données |
 | `customer_email` | Adresse électronique du client qui a créé le panier |
 | `customer_id` | `Foreign key` associé à la propriété `customer_entity` , si le client est enregistré. Rejoindre à `customer_entity.entity_id` pour déterminer les attributs du client associés à l’utilisateur qui a créé le panier. Si le panier a été créé par le biais de l’extraction d’invité, ce champ est `NULL` |
 | `entity_id` (PK) | Identifiant unique de la table, généralement utilisé dans les jointures à d’autres tables dans l’instance Commerce. |

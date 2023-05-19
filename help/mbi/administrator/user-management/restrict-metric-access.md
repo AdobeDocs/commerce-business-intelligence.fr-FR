@@ -2,9 +2,9 @@
 title: Limitation de l’accès aux mesures
 description: Découvrez comment utiliser l’accès aux mesures et les restrictions.
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Après avoir défini le niveau d’autorisation, vous pouvez sélectionner les m
 
 1. Accédez à **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. Sélectionnez le compte d’utilisateur de votre choix.
-1. Le **[!UICONTROL Metrics]** affiche une liste des mesures disponibles. Vérifiez les mesures auxquelles vous souhaitez que l’utilisateur ait accès. désélectionnez celles auxquelles l’utilisateur ne doit pas avoir accès.
-1. [!DNL MBI] enregistre automatiquement les modifications. Si la modification est réussie, [!DNL MBI] affiche **[!UICONTROL Saved!]** en haut de la page.
+1. Le **[!UICONTROL Metrics]** affiche une liste des mesures disponibles. Vérifiez les mesures auxquelles l’utilisateur doit avoir accès et désélectionnez celles auxquelles il ne doit pas avoir accès.
+1. [!DNL Adobe Commerce Intelligence] enregistre automatiquement les modifications. Si la modification est réussie, [!DNL Commerce Intelligence] affiche **[!UICONTROL Saved!]** en haut de la page.
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ Vous pouvez également restreindre l’accès à une mesure en la modifiant et e
 
 >[!NOTE]
 >
->Si vous dupliquez une mesure, [!DNL MBI] copie les autorisations utilisateur définies dans la mesure d’origine.
+>Si vous dupliquez une mesure, [!DNL Commerce Intelligence] copie les autorisations utilisateur définies dans la mesure d’origine.

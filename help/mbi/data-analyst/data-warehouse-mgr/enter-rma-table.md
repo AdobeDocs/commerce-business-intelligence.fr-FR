@@ -2,20 +2,20 @@
 title: enterprise_rma Table
 description: Découvrez comment analyser les informations sur une requête de retour spécifique.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # enterprise_rma Table
 
-Chaque ligne du `enterprise_rma` table (souvent appelée `magento_rma` dans Commerce 2.x, mais le nom peut être personnalisé) contient des informations sur une requête de retour spécifique.
+Chaque ligne du `enterprise_rma` table (souvent appelée `magento_rma` dans Adobe Commerce 2.x, mais le nom peut être personnalisé) contient des informations sur une requête de retour spécifique.
 
 >[!NOTE]
 >
->Ce tableau est fourni avec votre compte Commerce uniquement si vous êtes un `Enterprise Edition` ou `Enterprise Cloud Edition` client.
+>Ce tableau n’est fourni en standard avec votre compte Adobe Commerce que si vous êtes un `Enterprise Edition` ou `Enterprise Cloud Edition` client.
 
 ## Colonnes natives communes
 

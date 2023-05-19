@@ -2,16 +2,16 @@
 title: Analyse de la valeur de durée de vie attendue (LTV) pour Pro
 description: Découvrez comment configurer un tableau de bord qui vous aide à comprendre la croissance des valeurs de durée de vie des clients et la valeur de durée de vie attendue de vos clients.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
 # Analyse de la valeur de durée de vie attendue
 
-Cet article explique comment configurer un tableau de bord qui vous aide à comprendre la croissance de la valeur de durée de vie des clients et la valeur de durée de vie attendue de vos clients.
+Cette rubrique explique comment configurer un tableau de bord qui vous aide à comprendre la croissance des valeurs de durée de vie des clients et la valeur de durée de vie attendue de vos clients.
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
@@ -153,4 +153,4 @@ Autres détails du graphique
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de la page.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

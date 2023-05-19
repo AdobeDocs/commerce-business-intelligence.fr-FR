@@ -2,7 +2,7 @@
 title: Utilisation de la colonne calculée Différence de date
 description: Découvrez l’objectif et les utilisations de la colonne calculée Différence par date .
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
@@ -15,7 +15,7 @@ Cette rubrique décrit l’objectif et les utilisations de la fonction `Date Dif
 
 **Explication**
 
-Le `Date Difference` type de colonne : trouve l’heure entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement. La valeur brute calculée dans cette colonne est exprimée en secondes, mais elle est automatiquement convertie en minutes, heures, jours, etc., pour affichage dans les rapports. Cependant, lorsqu’il est utilisé comme filtre/groupe par , vous souhaitez utiliser la valeur en secondes.
+Le `Date Difference` Le type de colonne calcule la durée entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement. La valeur brute calculée dans cette colonne est exprimée en secondes, mais elle est automatiquement convertie en minutes, heures, jours, etc., pour affichage dans les rapports. Cependant, lorsqu’il est utilisé comme filtre/groupe par , vous souhaitez utiliser la valeur en secondes.
 
 A `date difference` la colonne calculée peut être utilisée pour créer une mesure qui calcule la durée moyenne ou médiane entre deux événements, comme la durée moyenne entre l’enregistrement des clients et leurs premières commandes.
 

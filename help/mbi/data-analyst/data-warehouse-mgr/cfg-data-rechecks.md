@@ -2,31 +2,32 @@
 title: Configuration des contrôles de données
 description: Découvrez comment configurer des colonnes de données avec des valeurs modifiables.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # Configuration des contrôles de données
 
-Dans une table de base de données, il peut y avoir des colonnes de données avec des valeurs modifiables. Par exemple, dans un `orders`). Il peut y avoir une colonne appelée `status`. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur _pending_. L’ordre est répliqué dans votre [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) avec `pending` .
+Dans une table de base de données, il peut y avoir des colonnes de données avec des valeurs modifiables. Par exemple, dans un `orders` tableau il peut y avoir une colonne appelée `status`. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur _pending_. L’ordre est répliqué dans votre [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) avec `pending` .
 
-Les statuts des commandes peuvent toutefois changer, car ils ne sont pas toujours dans un `pending` statut. Finalement elle pourrait devenir `complete` ou `cancelled`. Pour vous assurer que votre Data Warehouse synchronise cette modification, la colonne doit être vérifiée à nouveau pour les nouvelles valeurs.
+Les statuts des commandes peuvent changer, bien qu’ils ne figurent pas toujours dans un `pending` statut. Finalement elle pourrait devenir `complete` ou `cancelled`. Pour vous assurer que votre Data Warehouse synchronise cette modification, la colonne doit être vérifiée à nouveau pour les nouvelles valeurs.
 
 En quoi cela s’intègre-t-il à la variable [méthodes de réplication](../data-warehouse-mgr/cfg-replication-methods.md) qui a été discuté ? Le traitement des nouvelles vérifications varie en fonction de la méthode de réplication choisie. Le `Modified\_At` la méthode de réplication est le meilleur choix pour le traitement des valeurs qui changent, car les nouvelles vérifications n’ont pas à être configurées. Le `Auto-Incrementing Primary Key` et `Primary Key Batch Monitoring` Les méthodes nécessitent une configuration de nouveau contrôle.
 
 Lors de l’utilisation de l’une de ces méthodes, les colonnes modifiables doivent être marquées pour la nouvelle vérification. Il existe trois façons de procéder :
 
-* Processus de contrôle qui s’exécute dans le cadre des colonnes des indicateurs de mise à jour à vérifier.
+1. Processus de contrôle qui s’exécute dans le cadre des colonnes des indicateurs de mise à jour à vérifier.
 
    >[!NOTE]
    >
    >L&#39;auditeur s&#39;appuie sur un processus d&#39;échantillonnage et les colonnes en évolution ne peuvent pas être capturées immédiatement.
 
-* Vous pouvez les définir vous-même en cochant la case en regard de la colonne dans le Gestionnaire de Data Warehouse, en cliquant sur **[!UICONTROL Set Recheck Frequency]**, et en choisissant un intervalle de temps approprié pour lequel vous devez vérifier les modifications.
-* Un membre du [!DNL MBI] L’équipe de Data Warehouse peut marquer manuellement les colonnes à des fins de nouvelle vérification dans votre Data Warehouse. Si vous connaissez des colonnes modifiables, contactez l’équipe pour demander que les nouvelles vérifications soient définies. Incluez une liste de colonnes, ainsi que la fréquence, à votre requête.
+1. Vous pouvez les définir vous-même en cochant la case en regard de la colonne dans le Gestionnaire de Data Warehouse, en cliquant sur **[!UICONTROL Set Recheck Frequency]**, et en choisissant un intervalle de temps approprié pour lequel vous devez vérifier les modifications.
+
+1. Un membre du [!DNL Adobe Commerce Intelligence] L’équipe de Data Warehouse peut marquer manuellement les colonnes à des fins de nouvelle vérification dans votre Data Warehouse. Si vous connaissez des colonnes modifiables, contactez l’équipe pour demander que les nouvelles vérifications soient définies. Incluez une liste de colonnes, ainsi que la fréquence, à votre requête.
 
 ## Fréquences de rechargement {#frequency}
 
@@ -55,7 +56,7 @@ Pour modifier la fréquence de vérification, cochez la case en regard des colon
 
 Parfois, vous verrez `Paused` dans le `Changes?` colonne . Cette valeur s’affiche lorsque le [méthode de réplication](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) est défini sur `Paused`.
 
-Adobe recommande de consulter ces colonnes afin d’optimiser vos mises à jour et de s’assurer que les colonnes modifiables sont à nouveau vérifiées. Si la fréquence de vérification d’une colonne est élevée, étant donné la fréquence à laquelle les données changent, Adobe recommande de la réduire afin d’optimiser vos mises à jour.
+[!DNL Adobe] recommande de consulter ces colonnes afin d’optimiser vos mises à jour et de vous assurer que les colonnes modifiables sont à nouveau vérifiées. Si la fréquence de vérification d’une colonne est élevée, étant donné la fréquence à laquelle les données changent, Adobe recommande de la réduire afin d’optimiser vos mises à jour.
 
 Contactez-nous pour toute question ou pour toute question concernant les méthodes de réplication ou les nouvelles vérifications actuelles.
 

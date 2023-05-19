@@ -2,9 +2,9 @@
 title: Rapports annuels, mensuels et hebdomadaires
 description: Découvrez comment afficher facilement les tendances au fil du temps et modifier la perspective pour les périodes que vous souhaitez comparer.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cet article contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la [nouvelle architecture](../../administrator/account-management/new-architecture.md) si vous disposez de la variable _Vues Data Warehouse_ section disponible après sélection `Manage Data` dans la barre d’outils principale.
+>Cette rubrique contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la [nouvelle architecture](../../administrator/account-management/new-architecture.md) si vous disposez de la variable [!DNL _Vues Data Warehouse_] section disponible après sélection [!DNL Manage Data] dans la barre d’outils principale.
 
-Le Créateur de rapports vous permet d’afficher facilement les tendances au fil du temps et de modifier la perspective pour les périodes que vous souhaitez comparer. Cet article explique comment configurer un tableau de bord pour qu’il s’approfondisse afin que vous puissiez créer des rapports pour l’analyse d’une semaine à l’autre, d’un mois à l’autre et d’une année à l’autre.
+Le Créateur de rapports vous permet d’afficher facilement les tendances au fil du temps et de modifier la perspective pour les périodes que vous souhaitez comparer. Cette rubrique explique comment configurer un tableau de bord pour qu’il s’approfondisse afin que vous puissiez créer des rapports pour une analyse d’une semaine à l’autre, d’un mois à l’autre et d’une année à l’autre.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Avant de commencer, vous souhaitez vous familiariser avec les perspectives plus en détail. [here](../../tutorials/using-visual-report-builder.md) et options d’heure indépendantes [here](../../tutorials/time-options-visual-rpt-bldr.md).
+Avant de commencer, vous devez examiner les perspectives plus en détail. [here](../../tutorials/using-visual-report-builder.md) et options d’heure indépendantes [here](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 

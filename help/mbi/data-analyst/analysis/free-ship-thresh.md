@@ -2,9 +2,9 @@
 title: Seuil de livraison gratuit
 description: Découvrez comment configurer un tableau de bord qui suit les performances de votre seuil de livraison gratuite.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cet article contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. La nouvelle architecture s’affiche si la section &quot;Data Warehouse Views&quot; est disponible après avoir sélectionné &quot;Manage Data&quot; (Gérer les données) dans la barre d’outils principale.
+>Cette rubrique contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous utilisez la nouvelle architecture si vous avez le `Data Warehouse Views` section disponible après sélection `Manage Data` dans la barre d’outils principale.
 
-Cet article explique comment configurer un tableau de bord qui suit les performances de votre seuil de livraison gratuite. Ce tableau de bord, illustré ci-dessous, est un excellent moyen de tester A/B deux seuils de livraison gratuits. Par exemple, votre société peut ne pas savoir si vous devez proposer la livraison gratuite à 50 ou 100 $. Vous devez effectuer un test A/B de deux sous-ensembles aléatoires de vos clients et effectuer l’analyse dans la section [!DNL MBI].
+Cette rubrique explique comment configurer un tableau de bord qui suit les performances de votre seuil de livraison gratuite. Ce tableau de bord, illustré ci-dessous, est un excellent moyen de tester A/B deux seuils de livraison gratuits. Par exemple, votre société peut ne pas savoir si vous devez proposer la livraison gratuite à 50 ou 100 $. Vous devez effectuer un test A/B de deux sous-ensembles aléatoires de vos clients et effectuer l’analyse dans la section [!DNL Commerce Intelligence].
 
 Avant de commencer, vous souhaitez identifier deux périodes distinctes au cours desquelles vous disposez de valeurs différentes pour le seuil de livraison gratuite de votre magasin.
 

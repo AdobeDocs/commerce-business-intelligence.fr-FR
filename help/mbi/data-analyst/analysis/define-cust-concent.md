@@ -2,16 +2,16 @@
 title: Définition de la concentration des clients
 description: Découvrez comment configurer un tableau de bord qui vous aide à mesurer la manière dont le total des recettes est réparti entre votre base de clients.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # Concentration des clients
 
-Cet article explique comment configurer un tableau de bord qui vous aide à mesurer la répartition du total des recettes entre votre base de clients. Identifiez le pourcentage de clients qui contribuent aux recettes et créez des listes segmentées afin de mieux commercialiser et de conserver vos clients ayant un fort taux de contribution.
+Cette rubrique explique comment configurer un tableau de bord qui vous aide à mesurer la répartition du total des recettes entre votre base de clients. Identifiez le pourcentage de clients qui contribuent aux recettes et créez des listes segmentées afin de mieux commercialiser et de conserver vos clients ayant un fort taux de contribution.
 
 Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -158,4 +158,4 @@ Colonnes à créer
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

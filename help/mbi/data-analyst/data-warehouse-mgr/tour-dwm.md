@@ -2,9 +2,9 @@
 title: Gestionnaire de Data Warehouse
 description: Découvrez comment gérer les paramètres de synchronisation des tableaux et des colonnes, explorer le schéma d’un tableau et créer des colonnes calculées à utiliser dans les rapports.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md)
 
-Gestionnaire de Data Warehouse, accessible en cliquant sur **[!UICONTROL Manage Data > Data Warehouse]** dans la barre latérale, est le portail vers votre [!DNL MBI] Data Warehouse. Le Gestionnaire des Data Warehouse vous permet de gérer les paramètres de synchronisation des tableaux et des colonnes, d’explorer en détail le schéma d’un tableau et de créer des colonnes calculées à utiliser dans les rapports.
+Gestionnaire de Data Warehouse, accessible en cliquant sur **[!UICONTROL Manage Data > Data Warehouse]**, est le portail de votre [!DNL Adobe Commerce Intelligence] Data Warehouse. Le Gestionnaire des Data Warehouse vous permet de gérer les paramètres de synchronisation des tableaux et des colonnes, d’explorer en détail le schéma d’un tableau et de créer des colonnes calculées à utiliser dans les rapports.
 
-Cet article traite des sujets suivants :
+Cette rubrique traite des sujets suivants :
 
 * [Apprendre à contourner le problème](#learning)
 * [Synchronisation des tableaux et des colonnes](#syncing)
@@ -39,7 +39,7 @@ Le `Synced Tables` affiche tous les tableaux qui ont déjà été ajoutés à vo
 Ne pas voir le tableau que vous recherchez dans le `All Tables` liste ? Il existe plusieurs raisons à cela :
 
 * La source de données n’a pas encore été ajoutée
-* La source de données est une base de données et la variable [!DNL MBI] l’utilisateur que vous avez créé n’a pas accès. Dans ce cas, vous ou votre administrateur de base de données devez accorder l’accès.
+* La source de données est une base de données et la variable [!DNL Commerce Intelligence] l’utilisateur que vous avez créé n’a pas accès. Dans ce cas, vous ou votre administrateur de base de données devez accorder l’accès.
 * La source de données ou le tableau a récemment été ajouté et n’a pas encore été synchronisé.
 
 ## Synchronisation des tableaux et des colonnes {#syncing}
@@ -61,7 +61,7 @@ Le Gestionnaire de Data Warehouse vous permet non seulement d’afficher et de g
    Si vous synchronisez une table qui provient directement de votre base de données, il est possible que `Primary Keys` peut ne pas être identifié. Dans ce cas, contactez votre administrateur de base de données pour demander qu’une ou plusieurs clés Principales soient ajoutées au tableau.
 1. Lorsque vous avez terminé, cliquez sur le ![button](../../assets/button.png) bouton .
 
-A *Succès !* s’affiche et l’état devient `Pending` pour les colonnes sélectionnées. Une fois la prochaine mise à jour complète terminée, les tables et colonnes nouvellement synchronisées seront disponibles dans les rapports. vous pouvez également définir de nouvelles [méthodes de réplication](./cfg-replication-methods.md) après la synchronisation initiale.
+A *Succès !* s’affiche et le statut passe à `Pending` pour les colonnes sélectionnées. Une fois la prochaine mise à jour complète terminée, les tableaux et colonnes nouvellement synchronisés pourront être utilisés dans les rapports. Vous pouvez également définir de nouvelles [méthodes de réplication](./cfg-replication-methods.md) après la synchronisation initiale.
 
 Voici un aperçu rapide de l’ensemble du processus :
 
@@ -119,6 +119,6 @@ Lorsque vous êtes prêt à utiliser vos nouvelles colonnes dans les rapports, [
 
 ## Remplissage
 
-Ce tutoriel a couvert beaucoup de matériel. À l’heure actuelle, vous devez avoir une bonne compréhension de ce qu’est une base de données, de la manière dont les données sont organisées, de la manière dont les tableaux sont interconnectés et de ce que vous pouvez faire avec Data Warehouse Manager.
+Cet article a couvert beaucoup de contenu. À l’heure actuelle, vous devez avoir une bonne compréhension de ce qu’est une base de données, de la manière dont les données sont organisées, de la manière dont les tableaux sont interconnectés et de ce que vous pouvez faire avec Data Warehouse Manager.
 
-Excellent ! Testez vos nouvelles connaissances en [création d’une colonne calculée](../data-warehouse-mgr/creating-calculated-columns.md) ou [création de rapports intéressants](../../tutorials/using-visual-report-builder.md).
+Testez vos connaissances en [création d’une colonne calculée](../data-warehouse-mgr/creating-calculated-columns.md) ou [création de rapports intéressants](../../tutorials/using-visual-report-builder.md).

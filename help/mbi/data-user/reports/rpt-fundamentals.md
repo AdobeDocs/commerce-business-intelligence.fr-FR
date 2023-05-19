@@ -2,7 +2,7 @@
 title: Utilisation d’un rapport
 description: Découvrez comment utiliser les données de votre rapport.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Utilisation d’un rapport
 
-Utilisation des rapports dans [!DNL MBI] pour vous aider à répondre aux questions d’entreprise, que vous souhaitiez simplement consulter les recettes de ce mois par rapport à l’année précédente ou comprendre vos coûts d’acquisition pour vos dernières [!DNL Google AdWords] campaign.
+Utilisation des rapports dans [!DNL Adobe Commerce Intelligence] pour vous aider à répondre aux questions d’entreprise, que vous souhaitiez simplement consulter les recettes de ce mois par rapport à l’année précédente ou comprendre vos coûts d’acquisition pour vos dernières [!DNL Google AdWords] campaign.
 
 A quoi ressemble exactement cette voie de question à réponse ?
 
@@ -62,7 +62,7 @@ Il est ensuite utilisé pour créer :
 
 Ces deux champs doivent être créés au niveau de l’utilisateur (par exemple, sur la variable `user` ). Cela permet à l’analyse moyenne d’être normalisée par les utilisateurs (en d’autres termes, le dénominateur dans ce calcul de moyenne est le nombre d’utilisateurs).
 
-C’est là que [!DNL MBI] entrez ! Vous pouvez utiliser [!DNL MBI] Data Warehouse pour créer les colonnes ci-dessus. Contactez l’équipe d’analystes d’Adobe et fournissez-nous la définition spécifique de vos nouvelles colonnes à créer. Vous pouvez également utiliser la variable [Éditeur de colonnes](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+C’est là que [!DNL Commerce Intelligence] entrez ! Vous pouvez utiliser [!DNL Commerce Intelligence] Data Warehouse pour créer les colonnes ci-dessus. Contactez l’équipe d’analystes d’Adobe et fournissez-nous la définition spécifique de vos nouvelles colonnes à créer. Vous pouvez également utiliser la variable [Éditeur de colonnes](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Il est recommandé d’éviter de créer directement ces champs de données calculés dans votre base de données, car cela impose un fardeau inutile aux serveurs de production.
 
@@ -75,7 +75,7 @@ Ici, vous souhaitez effectuer le calcul suivant :
 
 _[SOMME de `Time between a customer's registration date and first purchase date`] / [Nombre total de clients qui se sont inscrits et ont acheté]_
 
-Et vous souhaitez voir ce calcul tracé au fil du temps, ou tendance, selon la date d’enregistrement d’un client. Et voici comment [créer cette mesure](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL MBI]:
+Et vous souhaitez voir ce calcul tracé au fil du temps, ou tendance, selon la date d’enregistrement d’un client. Et voici comment [créer cette mesure](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
 1. Accédez à **[!UICONTROL Data]** et sélectionnez la variable `Metrics` .
 1. Cliquez sur **[!UICONTROL Add New Metric]** et sélectionnez la variable `user` (où vous avez créé les dimensions ci-dessus).

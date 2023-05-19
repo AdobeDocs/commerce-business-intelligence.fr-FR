@@ -2,24 +2,22 @@
 title: Analyse de l’utilisation des coupons
 description: Découvrez comment analyser l’utilisation des coupons pour acquérir et retenir des clients.
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1141'
 ht-degree: 2%
 
 ---
 
 # Utilisation du coupon
 
-Vous demandez-vous quel impact a l’offre de coupons sur votre activité ? Vous souhaitez savoir quels coupons aident ou nuisent aux performances ? Cet article explore les analyses qui vous donnent une bonne image de l’utilisation des coupons de vos clients en répondant à ces questions :
+Vous demandez-vous quel impact a l’offre de coupons sur votre activité ? Vous souhaitez savoir quels coupons aident ou nuisent aux performances ? Cette rubrique explore les analyses qui vous donnent une bonne image de l’utilisation des coupons de vos clients en répondant à ces questions :
 
 * Combien de clients utilisent des coupons ?
 * Combien de coupons sont utilisés ?
 * Quelles sont vos recettes avant et après l’application des coupons ?
 * Quelle est la valeur moyenne de la commande avant et après l’application des coupons ?
 * Quel type de clients attirez-vous avec des coupons ?
-
-Commençons !
 
 ## Mesures recommandées {#metrics}
 
@@ -109,7 +107,7 @@ Pour les recettes de durée de vie moyenne, vous pouvez constater que la moyenne
 
 ## Que puis-je analyser d&#39;autre ? {#otheranalyses}
 
-Les analyses mentionnées dans cet article peuvent vous donner un aperçu précieux de la manière dont vos clients utilisent vos coupons, mais il existe une multitude d’autres analyses qui vous permettent de creuser un peu plus en détail.
+Les analyses mentionnées dans cette rubrique peuvent vous donner un aperçu précieux de la manière dont vos clients utilisent vos coupons, mais il existe une multitude d’autres analyses qui vous permettent de creuser un peu plus en détail.
 
 **Vous pouvez analyser les acquisitions de vos clients à partir de coupons.**
 

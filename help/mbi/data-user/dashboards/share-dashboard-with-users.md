@@ -2,16 +2,16 @@
 title: Partage des tableaux de bord avec d’autres utilisateurs
 description: Découvrez comment partager des tableaux de bord avec d’autres utilisateurs.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
 # Partage des tableaux de bord avec d’autres utilisateurs
 
-Le partage de tableaux de bord est un excellent moyen de maintenir votre équipe au courant et d’encourager la discussion collaborative. En créant et en partageant un tableau de bord central, vous pouvez fournir à votre équipe les informations dont elle a besoin tout en conservant le contrôle. [Adobe recommande](../../best-practices/share-dashboard-best-practice.md){ : target=&quot;_blank&quot;} que vous accordez `Edit` droits d’accès à quelques-uns pour minimiser les modifications accidentelles.
+Le partage de tableaux de bord est un excellent moyen de maintenir votre équipe au courant et d’encourager la discussion collaborative. En créant et en partageant un tableau de bord central, vous pouvez fournir à votre équipe les informations dont elle a besoin tout en conservant le contrôle. [[!DNL Adobe] recommande](../../best-practices/share-dashboard-best-practice.md){ : target=&quot;_blank&quot;} que vous accordez `Edit` droits d’accès à quelques-uns pour minimiser les modifications accidentelles.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Le partage de tableaux de bord est un excellent moyen de maintenir votre équipe
 
 1. Cliquez sur **[!UICONTROL Share Dashboard]** en haut de l’écran.
 
-   Liste de tous les utilisateurs de votre [!DNL MBI] s’affiche.
+   Liste de tous les utilisateurs de votre [!DNL Commerce Intelligence] s’affiche.
 
 1. Pour sélectionner un utilisateur avec lequel partager le tableau de bord, cochez la case située à gauche de son nom.
 

@@ -1,30 +1,30 @@
 ---
 title: Importation de données Linkshare
-description: Découvrez comment importer des données Linkshare dans [!DNL MBI].
+description: Découvrez comment importer des données Linkshare dans [!DNL Commerce Intelligence].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
-# Importer `Linkshare` data
+# Importer [!DNL Linkshare] data
 
-Pour apporter votre `Linkshare` données dans [!DNL MBI], vous devez effectuer deux opérations :
+Pour apporter votre [!DNL Linkshare] données dans [!DNL Adobe Commerce Intelligence], vous devez effectuer deux opérations :
 
 1. [Exportation des données Linkshare dans ](#export)
-1. [Chargement de la feuille de calcul [!DNL MBI]](../connecting-data/using-file-uploader.md)
+1. [Chargement de la feuille de calcul [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Exporter des données depuis Linkshare {#export}
 
-1. Dans votre `Linkshare` compte, accédez à **[!UICONTROL Reports** > **Run Reports].**
+1. Dans votre [!DNL Linkshare] compte, accédez à **[!UICONTROL Reports** > **Run Reports].**
 
 1. Dans le `Report` menu déroulant, sélectionnez **[!UICONTROL Sales & Activity Report]**.
 
 1. Conservez toutes les autres options de liste déroulante comme sélection par défaut.
 
-1. Dans le `Date Range` dans la liste déroulante, sélectionnez n’importe quelle option (`Sun - Sat`, `Mon - Sun`) correspond à votre `Start of Week` paramètres dans [!DNL MBI].
+1. Dans le `Date Range` dans la liste déroulante, sélectionnez n’importe quelle option (`Sun - Sat`, `Mon - Sun`) correspond à votre `Start of Week` paramètres dans [!DNL Commerce Intelligence].
 
 1. Effacez la variable `Compare Year-Over-Year Data` .
 
@@ -38,4 +38,4 @@ Pour apporter votre `Linkshare` données dans [!DNL MBI], vous devez effectuer d
 
    À ce stade, une `.csv` et téléchargé.
 
-Une fois le fichier téléchargé, vous pouvez le charger dans [!DNL MBI] en utilisant la variable [`File Upload` fonctionnalité](../connecting-data/using-file-uploader.md).
+Une fois le fichier téléchargé, vous pouvez le charger dans [!DNL Commerce Intelligence] en utilisant la variable [`File Upload` fonctionnalité](../connecting-data/using-file-uploader.md).

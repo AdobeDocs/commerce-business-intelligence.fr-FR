@@ -1,19 +1,19 @@
 ---
 title: Données Zendesk attendues
-description: Découvrez les principaux tableaux de données que vous pouvez importer depuis Zendesk dans MBI, y compris des liens vers une documentation supplémentaire sur les données Zendesk.
+description: Découvrez les principaux tableaux de données que vous pouvez importer depuis Zendesk dans Commerce Intelligence, y compris des liens vers une documentation supplémentaire sur les données Zendesk.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
-# Données Zendesk attendues
+# Valeur attendue [!DNL Zendesk] data
 
 Après [vous avez connecté votre [!DNL Zendesk] account](../integrations/zendesk.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
 
-Cet article explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Zendesk] into [!DNL MBI], y compris des liens vers une documentation supplémentaire sur [!DNL Zendesk] data.
+Cette rubrique explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Zendesk] into [!DNL Adobe Commerce Intelligence], y compris des liens vers une documentation supplémentaire sur [!DNL Zendesk] data.
 
 | Nom de la table | Description |
 |-----|-----|
@@ -33,4 +33,4 @@ Cet article explore les principaux tableaux de données à partir desquels vous 
 ## Associé
 
 * [Connexion à Zendesk](../integrations/zendesk.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

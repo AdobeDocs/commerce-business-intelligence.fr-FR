@@ -2,7 +2,7 @@
 title: Affichage des tableaux de bord sur plusieurs écrans
 description: Découvrez comment afficher vos tableaux de bord autour du bureau.
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Afficher les tableaux de bord autour du bureau
 
-Pour [!DNL MBI] Les utilisateurs qui souhaitent afficher leurs tableaux de bord et leurs rapports sur les écrans dans tout le bureau disposent de différentes options matérielles qui peuvent facilement activer cette configuration.
+Pour [!DNL Commerce Intelligence] Les utilisateurs qui souhaitent afficher leurs tableaux de bord et leurs rapports sur les écrans dans tout le bureau disposent de différentes options matérielles qui peuvent facilement activer cette configuration.
 
 Voici la liste recommandée des éléments dont vous avez besoin pour l’option :
 

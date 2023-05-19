@@ -2,16 +2,16 @@
 title: Google Analytics et attribution UTM
 description: Découvrez le processus d’attribution de sources Google Analytics.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Google Analytics et attribution UTM
+# [!DNL Google Analytics] et attribution UTM
 
-Il est essentiel pour [suivi de la source d’acquisition d’utilisateurs](../../data-analyst/analysis/google-track-user-acq.md) to [identifier les campagnes publicitaires les plus performantes ;](../../data-analyst/analysis/most-value-source-channel.md). Cet article explore le processus d’attribution de source Google Analytics. En d&#39;autres termes, à quel moment est enregistrée l&#39;information.
+Il est essentiel pour [suivi de la source d’acquisition d’utilisateurs](../../data-analyst/analysis/google-track-user-acq.md) to [identifier les campagnes publicitaires les plus performantes ;](../../data-analyst/analysis/most-value-source-channel.md). Cette rubrique explore les [!DNL Google Analytics] processus d’attribution de source. En d&#39;autres termes, à quel moment est enregistrée l&#39;information.
 
 ## Qu’est-ce que l’attribution ?
 
@@ -31,11 +31,11 @@ Lorsque les paramètres de la gestion dynamique des balises sont spécifiés dan
 
 L’attribution Dernier clic est le modèle d’attribution le plus courant utilisé par [!DNL Google Analytics]. Dans ce cas, la variable [!DNL Google Analytics] représente les paramètres de la gestion dynamique des balises pour la source la plus récente avant l’événement de conversion, à savoir : [enregistré dans la base](../../data-analyst/analysis/google-track-user-acq.md). Le [!DNL Google Analytics] Le cookie ne remplace les paramètres UTM précédents que si l’utilisateur clique sur une nouvelle URL contenant un nouvel ensemble de paramètres UTM.
 
-Prenons l’exemple d’un utilisateur qui consulte un site web pour la première fois via [!DNL Google Analytics][!DNL Google Analytics][!DNL Google Analytics] *recherche payante*, puis renvoie via *référencement naturel*, puis revient au *site web directement* ou au moyen d’un *lien de courrier électronique* **sans paramètres UTM** avant l’événement de conversion. Dans cet exemple, la variable [!DNL Google Analytics] indique que la source de l’utilisateur est organique, car il s’agit de la dernière source avant la conversion. Le *path* de l’utilisateur avant que cet événement de conversion final ne soit ignoré. Si, au lieu de cela, l’utilisateur a consulté le site web à partir d’un lien de courrier électronique avec UTM, la variable [!DNL Google Analytics] indique que la source est &quot;email&quot;. Par conséquent, s’il existe des paramètres UTM dans le cookie et que l’utilisateur y accède directement, la variable [!DNL Google Analytics] Le cookie affiche les paramètres UTM plutôt que &quot;direct&quot;.
+Prenons l’exemple d’un utilisateur qui consulte un site web pour la première fois via [!DNL Google Analytics] *recherche payante*, puis renvoie via *référencement naturel*, puis revient au *site web directement* ou au moyen d’un *lien de courrier électronique* **sans paramètres UTM** avant l’événement de conversion. Dans cet exemple, la variable [!DNL Google Analytics] indique que la source de l’utilisateur est organique, car il s’agit de la dernière source avant la conversion. Le *path* de l’utilisateur avant que cet événement de conversion final ne soit ignoré. Si, au lieu de cela, l’utilisateur a consulté le site web à partir d’un lien de courrier électronique avec UTM, la variable [!DNL Google Analytics] indique que la source est &quot;email&quot;. Par conséquent, s’il existe des paramètres UTM dans le cookie et que l’utilisateur y accède directement, la variable [!DNL Google Analytics] Le cookie affiche les paramètres UTM plutôt que &quot;direct&quot;.
 
 >[!NOTE]
 >
->d’un utilisateur spécifique ; [!DNL Google Analytics] les paramètres de cookie sont effacés lorsque le cookie [expires](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)ou lorsqu’un utilisateur efface ses cookies dans le navigateur.*)
+>d’un utilisateur spécifique ; [!DNL Google Analytics] les paramètres de cookie sont effacés lorsque le cookie [expires](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)ou lorsqu’un utilisateur efface ses cookies dans le navigateur.*
 
 ### Attribution du premier clic
 
@@ -45,10 +45,10 @@ Certains outils d’attribution payante vous permettent de capturer &quot;la pil
 
 [!DNL Google Analytics] dispose de fonctionnalités puissantes dans son interface web qui vous permet d’exécuter quatre modèles d’attribution différents :
 
-* premier clic
-* dernier clic
-* linéaire (diviser les recettes uniformément entre toutes les sources dans le chemin)
-* pondéré (attribution personnalisée)
+1. premier clic
+1. dernier clic
+1. linéaire (diviser les recettes uniformément entre toutes les sources dans le chemin)
+1. pondéré (attribution personnalisée)
 
 Maintenant que vous comprenez quel est le modèle d’attribution pour chaque micro ou macro-conversion, la question devient &quot;Que faites-vous avec la totalité des conversions d’un utilisateur ?&quot;  Par exemple, observez les UTM enregistrés en fonction de la logique de dernier clic GA :
 
@@ -57,7 +57,7 @@ Maintenant que vous comprenez quel est le modèle d’attribution pour chaque mi
 * Second achat de l’utilisateur sous email 50,00 $
 * Troisième achat de l’utilisateur sous 10 $ organiques
 
-Voici où vous demandez : &quot;Combien de recettes ai-je tiré du référencement payant ? De l&#39;email ?  Du bio ?&quot;. Vous pouvez dire que les réponses sont 5, 50 et 10 (quelle que soit la dernière source), ou vous pouvez aussi dire que vous attribuez toutes les recettes à la première source (toutes les 65 sont organiques). Vous pouvez également appliquer une analyse pondérée ou appliquer le modèle linéaire (soit environ 22 chacune).
+Voici où vous demandez : &quot;Combien de recettes ai-je obtenu du référencement payant ? De l&#39;email ?  Du bio ?&quot;. Vous pouvez dire que les réponses sont 5, 50 et 10 (quelle que soit la dernière source), ou vous pouvez aussi dire que vous attribuez toutes les recettes à la première source (toutes les 65 sont organiques). Vous pouvez également appliquer une analyse pondérée ou appliquer le modèle linéaire (soit environ 22 chacune).
 
 ## Documentation connexe
 

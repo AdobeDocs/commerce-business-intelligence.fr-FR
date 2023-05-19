@@ -1,8 +1,8 @@
 ---
 title: Partage des tableaux de bord à l’échelle de l’entreprise
-description: Découvrez comment vous assurer que chaque utilisateur a accès aux tableaux de bord essentiels de l’ [!DNL MBI].
+description: Découvrez comment vous assurer que chaque utilisateur a accès aux tableaux de bord essentiels de l’ [!DNL Commerce Intelligence].
 exl-id: 5afa8c3c-1673-4350-babf-3e4657292871
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Partage des tableaux de bord à l’échelle de l’entreprise
 
-Il est facile de s’assurer que chaque utilisateur a accès aux tableaux de bord essentiels de l’ [!DNL MBI]. Le partage universel de tableaux de bord facilite la collaboration et la transparence accrues dans l’ensemble de votre organisation en fournissant une seule &quot;source de vérité&quot;.
+Il est facile de s’assurer que chaque utilisateur a accès aux tableaux de bord essentiels de l’ [!DNL Adobe Commerce Intelligence]. Le partage universel de tableaux de bord facilite la collaboration et la transparence accrues dans l’ensemble de votre organisation en fournissant une seule &quot;source de vérité&quot;.
 
 1. Pour afficher vos informations à vos collègues, cliquez sur **[!UICONTROL Share this Dashboard]** en haut de l’écran.
 

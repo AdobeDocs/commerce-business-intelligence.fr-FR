@@ -1,19 +1,19 @@
 ---
-title: Traduire les requêtes SQL en [!DNL MBI] rapports
-description: Découvrez comment les requêtes SQL sont converties en colonnes calculées, en mesures que vous utilisez dans [!DNL MBI].
+title: Traduction de requêtes SQL dans des rapports Commerce Intelligence
+description: Découvrez comment les requêtes SQL sont traduites dans les colonnes calculées, les mesures que vous utilisez dans Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
-# Traduire les requêtes SQL dans MBI
+# Traduire les requêtes SQL dans Commerce Intelligence
 
-Vous êtes déjà demandé comment les requêtes SQL sont traduites dans [colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md), [mesures](../../data-user/reports/ess-manage-data-metrics.md), et [rapports](../../tutorials/using-visual-report-builder.md) vous utilisez dans [!DNL MBI]? Si vous êtes un utilisateur SQL lourd, comprenez comment SQL est traduit dans [!DNL MBI] vous permet de travailler plus intelligemment dans le [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md) et tirez le meilleur parti de [!DNL MBI] plateforme.
+Vous êtes déjà demandé comment les requêtes SQL sont traduites dans [colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md), [mesures](../../data-user/reports/ess-manage-data-metrics.md), et [rapports](../../tutorials/using-visual-report-builder.md) vous utilisez dans [!DNL Commerce Intelligence]? Si vous êtes un utilisateur SQL lourd, comprenez comment SQL est traduit dans [!DNL Commerce Intelligence] vous permet de travailler plus intelligemment dans le [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md) et tirez le meilleur parti de [!DNL Commerce Intelligence] plateforme.
 
-À la fin de cet article, vous trouverez une **matrice de traduction** pour les clauses de requête SQL et [!DNL MBI] éléments .
+À la fin de cette rubrique, vous trouverez un **matrice de traduction** pour les clauses de requête SQL et [!DNL Commerce Intelligence] éléments .
 
 Commencez par examiner une requête générale :
 
@@ -32,7 +32,7 @@ Cet exemple couvre la plupart des cas de traduction, mais il existe certaines ex
 
 ## Fonctions d’agrégation
 
-Fonctions d’agrégation (par exemple, `count`, `sum`, `average`, `max`, `min`) dans les requêtes sous la forme **agrégations de mesures** ou **agrégations de colonnes** in [!DNL MBI]. Le facteur de différenciation est de savoir si une jointure est nécessaire pour effectuer l’agrégation.
+Fonctions d’agrégation (par exemple, `count`, `sum`, `average`, `max`, `min`) dans les requêtes sous la forme **agrégations de mesures** ou **agrégations de colonnes** in [!DNL Commerce Intelligence]. Le facteur de différenciation est de savoir si une jointure est nécessaire pour effectuer l’agrégation.
 
 Consultez un exemple pour chacun des cas ci-dessus.
 
@@ -40,7 +40,7 @@ Consultez un exemple pour chacun des cas ci-dessus.
 
 Une mesure est requise lors de l’agrégation `within a single table`. Par exemple, la variable `SUM(b)` la fonction d’agrégat de la requête ci-dessus serait probablement représentée par une mesure qui additionne les colonnes `B`. 
 
-Examinez un exemple spécifique de la manière dont une `Total Revenue` peut être définie dans [!DNL MBI]. Examinez la requête ci-dessous que vous essayez de traduire :
+Examinez un exemple spécifique de la manière dont une `Total Revenue` peut être définie dans [!DNL Commerce Intelligence]. Examinez la requête ci-dessous que vous essayez de traduire :
 
 |  |  |
 |--- |--- |
@@ -71,7 +71,7 @@ La requête de cette agrégation peut ressembler à ce qui suit :
 | `ON c.customer_id = o.customer_id` | Chemin |
 | `WHERE o.status = 'success'` | Filtre agrégé |
 
-Configuration de [!DNL MBI] nécessite l’utilisation de votre gestionnaire de Data Warehouse, où vous créez un chemin entre vos `orders` et `customers` puis créer une colonne appelée `Customer LTV` dans la table de votre client.
+Configuration de [!DNL Commerce Intelligence] nécessite l’utilisation de votre gestionnaire de Data Warehouse, où vous créez un chemin entre vos `orders` et `customers` puis créer une colonne appelée `Customer LTV` dans la table de votre client.
 
 Découvrez comment établir un nouveau chemin entre les `customers` et `orders`. L’objectif final est de créer une colonne agrégée dans la variable `customers` , accédez donc d’abord à la `customers` dans votre Data Warehouse, puis cliquez sur **[!UICONTROL Create a Column** > ** Sélectionner une définition **> **SUM]**.
 
@@ -83,9 +83,9 @@ Ici, vous devez examiner attentivement la relation entre les deux tables auxquel
 
 >[!NOTE]
 >
->Dans [!DNL MBI], un *path* équivaut à un `Join` dans SQL.
+>Dans [!DNL Commerce Intelligence], un `path` équivaut à un `Join` dans SQL.
 
-Une fois le chemin d’accès enregistré, vous êtes prêt à créer la variable `Customer LTV` colonne ! Regardez ce qui suit :
+Une fois le chemin enregistré, vous pouvez créer la variable `Customer LTV` colonne ! Voir ci-dessous :
 
 ![](../../assets/Customer_LTV.gif)
 
@@ -95,11 +95,11 @@ Maintenant que vous avez construit le nouveau `Customer LTV` dans votre `custome
 >
 >Pour ce dernier, chaque fois que vous créez une colonne calculée, vous devez [ajouter la dimension aux mesures existantes ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant d’être disponible en tant que `filter` ou `group by`.
 
-Voir [création de colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md) avec votre Data Warehouse manager.
+Voir [création de colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md) avec votre gestionnaire de Data Warehouse.
 
 ## `Group By` clauses
 
-`Group By` les fonctions des requêtes sont souvent représentées dans [!DNL MBI] comme colonne utilisée pour segmenter ou filtrer un rapport visuel. À titre d’exemple, nous allons revoir la `Total Revenue` requête que vous avez explorée précédemment, mais segmentez cette fois les recettes par la variable `coupon\_code` pour mieux comprendre quels coupons génèrent le plus de recettes.
+`Group By` les fonctions des requêtes sont souvent représentées dans [!DNL Commerce Intelligence] comme colonne utilisée pour segmenter ou filtrer un rapport visuel. À titre d’exemple, nous allons revoir la `Total Revenue` requête que vous avez explorée précédemment, mais segmentez cette fois les recettes par la variable `coupon\_code` pour mieux comprendre quels coupons génèrent le plus de recettes.
 
 Commencez par la requête ci-dessous :
 
@@ -149,10 +149,10 @@ Maintenant, supposons que des mesures sont déjà configurées pour calculer la 
 
 ## Remplissage
 
-Si vous êtes un utilisateur SQL lourd, pensez à la façon dont les requêtes se traduisent en [!DNL MBI] vous permet de créer des colonnes, des mesures et des rapports calculés.
+Si vous êtes un utilisateur SQL lourd, pensez à la façon dont les requêtes se traduisent en [!DNL Commerce Intelligence] vous permet de créer des colonnes, des mesures et des rapports calculés.
 
-Pour une référence rapide, consultez le tableau ci-dessous. Ceci affiche l’équivalent d’une clause SQL [!DNL MBI] et la façon dont il peut mapper à plusieurs éléments, selon la manière dont il est utilisé dans la requête.
+Pour une référence rapide, consultez le tableau ci-dessous. Ceci affiche l’équivalent d’une clause SQL [!DNL Commerce Intelligence] et la façon dont il peut mapper à plusieurs éléments, selon la manière dont il est utilisé dans la requête.
 
-## Éléments MBI
+## Éléments d’intelligence de commerce
 
 |**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—|— |`SELECT`|X|-|X|-|-|X|-| |`FROM`|-|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-|-| |`WHERE` (avec des éléments temporels)|-|-|-|X|-|-|-| |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X|-|-|-|-|-|

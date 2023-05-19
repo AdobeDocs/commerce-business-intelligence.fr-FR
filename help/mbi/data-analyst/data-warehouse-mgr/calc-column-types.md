@@ -2,9 +2,9 @@
 title: Types de colonne calculés
 description: Découvrez comment créer des colonnes afin d’augmenter et d’optimiser vos données d’analyse.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Dans le [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), vous pouvez créer des colonnes afin d’augmenter et d’optimiser vos données d’analyse. [Cette fonctionnalité](../data-warehouse-mgr/creating-calculated-columns.md) pour y accéder, sélectionnez n’importe quel tableau dans le Gestionnaire de Data Warehouse et cliquez sur **[!UICONTROL Create New Column]**.
 
-Cet article décrit les types de colonnes que vous pouvez créer à l’aide du Gestionnaire de Data Warehouse. Elle couvre également la description, une présentation visuelle de cette colonne et une [table de référence](#map) de toutes les entrées requises pour créer une colonne. Il existe trois manières de créer des colonnes calculées :
+Cette rubrique décrit les types de colonnes que vous pouvez créer à l’aide du Gestionnaire de Data Warehouse. Elle couvre également la description, une présentation visuelle de cette colonne et une [table de référence](#map) de toutes les entrées requises pour créer une colonne. Il existe trois manières de créer des colonnes calculées :
 
-* [Même tableau que les colonnes calculées](#sametable)
-* [Colonnes calculées de type &quot;un à plusieurs&quot;](#onetomany)
-* [Colonnes calculées multiples-à-un](#manytoone)
+1. [Même tableau que les colonnes calculées](#sametable)
+1. [Colonnes calculées de type &quot;un à plusieurs&quot;](#onetomany)
+1. [Colonnes calculées multiples-à-un](#manytoone)
 
 ## Même tableau que les colonnes calculées {#sametable}
 
@@ -85,13 +85,13 @@ Vous pouvez l’utiliser pour créer des dimensions au niveau du client, telles 
 
 ### Existe {#exists}
 
-Une colonne calculée existe est un test binaire déterminant la présence d’un enregistrement du côté multiple. En d’autres termes, la nouvelle colonne renvoie un `1` si le chemin connecte au moins une ligne dans chaque tableau, et `0` si aucune connexion ne peut être établie.
+Une colonne calculée est un test binaire déterminant la présence d’un enregistrement du côté multiple. En d’autres termes, la nouvelle colonne renvoie un `1` si le chemin connecte au moins une ligne dans chaque tableau, et `0` si aucune connexion ne peut être établie.
 
 Ce type de dimension peut déterminer, par exemple, si un client a déjà acheté un produit particulier. Utiliser une jointure entre une `customers` table et `orders` tableau, filtre d’un produit spécifique, dimension `Customer has purchased Product X?` peuvent être créés.
 
 ## Carte de référence pratique {#map}
 
-Si vous rencontrez un peu de difficultés à vous souvenir de toutes les entrées lors de la création d’une colonne calculée, essayez de conserver cette carte de référence à portée de main lors de la création :
+Si vous rencontrez des difficultés à vous souvenir de toutes les entrées lors de la création d’une colonne calculée, conservez cette carte de référence pratique lorsque vous créez :
 
 ![](../../assets/merged_reference_map.png)
 
@@ -99,7 +99,7 @@ Si vous rencontrez un peu de difficultés à vous souvenir de toutes les entrée
 
 Dans votre quête d’analyse et de réponse aux questions sur votre entreprise, vous pouvez rencontrer une situation dans laquelle vous ne pouvez pas créer la colonne exacte que vous souhaitez.
 
-Pour garantir un retour rapide, Adobe recommande d’extraire le [Types de colonne calculés avancés](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) pour voir le type de colonnes que l’équipe d’assistance Adobe peut créer. Cet article couvre également les informations dont vous avez besoin pour créer la colonne, en l’incluant avec votre requête.
+Pour garantir un retour rapide, Adobe recommande d’extraire le [Types de colonne calculés avancés](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) pour voir le type de colonnes que l’équipe d’assistance Adobe peut créer. Cette rubrique couvre également les informations dont vous avez besoin pour créer la colonne, en les incluant avec votre requête.
 
 ## Documentation connexe
 

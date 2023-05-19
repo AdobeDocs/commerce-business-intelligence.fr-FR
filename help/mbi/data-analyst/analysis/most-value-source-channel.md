@@ -2,9 +2,9 @@
 title: Identification de vos sources marketing et canaux les plus utiles
 description: Découvrez certains rapports que vous pouvez utiliser pour découvrir vos canaux marketing les plus précieux.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Vous avez fait des recherches sur votre audience, créé votre campagne, investi dans quelques canaux marketing. Maintenant que le temps est écoulé, comment ces canaux fonctionnent-ils ? Quel canal a attiré les nouveaux utilisateurs ? Quelle source a le plus contribué à vos recettes totales ?
 
-Avec [!DNL MBI], vous pouvez facilement segmenter les recettes et les utilisateurs par source de référence, qu’ils correspondent ou non à [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) ou des champs de données personnalisés. Cette segmentation vous permet de trouver les canaux les plus performants et d’investir davantage votre budget marketing.
+Avec [!DNL Adobe Commerce Intelligence], vous pouvez facilement segmenter les recettes et les utilisateurs par source de référence, qu’ils correspondent ou non à [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) ou des champs de données personnalisés. Cette segmentation vous permet de trouver les canaux les plus performants et d’investir davantage votre budget marketing.
 
-Cet article explore certains rapports que vous pouvez utiliser pour découvrir vos canaux marketing les plus précieux :
+Cette rubrique explore certains rapports que vous pouvez utiliser pour découvrir vos canaux marketing les plus précieux :
 
 * [Nouveaux utilisateurs par sources](#newusersbysource)
 * [Chiffre d’affaires moyen de la durée de vie par source d’utilisateur](#avglifetimerev)
@@ -25,7 +25,7 @@ Cet article explore certains rapports que vous pouvez utiliser pour découvrir v
 
 ## Conditions préalables {#prereqs}
 
-Pour créer les analyses de cet article, vous devez accéder aux données de source d’acquisition/de référence marketing. Si vous ne le suivez pas déjà, vous devez apporter [données source de référence de commande provenant de [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) into [!DNL MBI] avant de pouvoir continuer. En outre, l’ajout d’informations sur les appareils utilisateur à vos analyses vous permet de voir la technologie que vos référents utilisent.
+Pour générer les analyses dans cette rubrique, vous devez accéder aux données de source d’acquisition/de référence marketing. Si vous ne le suivez pas déjà, vous devez apporter [données source de référence de commande provenant de [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) into [!DNL Adobe Commerce Intelligence] avant de pouvoir continuer. En outre, l’ajout d’informations sur les appareils utilisateur à vos analyses vous permet de voir la technologie que vos référents utilisent.
 
 ## Nouveaux utilisateurs par source {#newusersbysource}
 
@@ -111,7 +111,7 @@ Voici une présentation visuelle :
 
 ## Remplissage {#wrapup}
 
-Cet article ne traite que de quelques analyses que vous pouvez utiliser pour analyser la valeur de vos canaux d’acquisition et marketing, mais ce n’est que la partie visible de l’iceberg.
+Cette rubrique n’a abordé que quelques analyses que vous pouvez utiliser pour analyser la valeur de vos canaux d’acquisition et marketing, mais ce n’est que la partie visible de l’iceberg.
 
 ## Associé {#related}
 

@@ -2,24 +2,24 @@
 title: Utiliser les options d’heure dans le Report Builder visuel
 description: Découvrez comment analyser les données de votre rapport pour une période spécifique.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
 
-# Utilisation `Time` Options dans `Visual Report Builder`
+# Utilisation [!DNL Time] Options dans [!DNL Visual Report Builder]
 
-L’une des fonctionnalités des `Visual Report Builder` est la variable globale `Time Range` et `Interval` paramètres. Ces paramètres vous permettent d’analyser les données de votre rapport pendant une période spécifique.
+L’une des fonctionnalités des [!DNL Visual Report Builder] est la variable globale `Time Range` et `Interval` paramètres. Ces paramètres vous permettent d’analyser les données de votre rapport pendant une période spécifique.
 
-Cependant, pour certaines analyses, vous devrez peut-être tenir compte de périodes ou d’intervalles dans le même rapport. C&#39;est là que nous en sommes `Time` Les options entrent. Pour vous donner une meilleure idée de la manière d’utiliser `Time` Options de vos rapports, ce tutoriel couvre les cas pratiques suivants :
+Cependant, pour certaines analyses, vous devrez peut-être tenir compte de périodes ou d’intervalles dans le même rapport. C&#39;est là que nous en sommes `Time` Les options entrent. Pour vous donner une meilleure idée de la manière d’utiliser `Time` dans vos rapports, ce tutoriel couvre les cas pratiques suivants :
 
 * [Analyse des mesures sans horodatage](#notimestamp)
 * [Octroi à une mesure d’un intervalle de temps indépendant](#independenttimeinterval)
 * [Comparaison de la même mesure sur différentes périodes](#difftimerange)
 
-Si vous souhaitez suivre certains des exemples de rapports abordés dans cette rubrique, ouvrez le [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) avant de continuer.
+Si vous souhaitez suivre certains des exemples de rapports abordés dans cette rubrique, ouvrez le [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) avant de continuer.
 
 ## Analyse des mesures sans horodatage {#notimestamp}
 
@@ -64,7 +64,7 @@ Vous pouvez voir à quel point chaque mois a eu un impact l&#39;année dernière
 
 ## Comparaison de la même mesure sur différentes périodes {#difftimerange}
 
-Cet exemple utilise une dimension personnalisée appelée `Day number of the month`. Si vous souhaitez créer ce rapport et que vous ne disposez pas déjà de cette dimension dans votre Data Warehouse, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) pour obtenir de l’aide.
+Cet exemple utilise une dimension personnalisée appelée `Day number of the month`. Si vous souhaitez créer ce rapport et que vous ne disposez pas déjà de cette dimension dans votre Data Warehouse, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour obtenir de l’aide.
 
 Les deux exemples les plus courants dans cette catégorie sont (1) la comparaison des mesures de croissance (recettes d’une année à l’autre ou d’un mois à l’autre) et (2) une meilleure compréhension des tendances récentes de ventes d’inventaire ou d’article.
 
