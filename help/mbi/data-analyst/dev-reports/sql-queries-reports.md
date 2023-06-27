@@ -2,7 +2,7 @@
 title: Traduction de requêtes SQL dans des rapports Commerce Intelligence
 description: Découvrez comment les requêtes SQL sont traduites dans les colonnes calculées, les mesures que vous utilisez dans Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Vous êtes déjà demandé comment les requêtes SQL sont traduites dans [colonn
 
 Commencez par examiner une requête générale :
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `a,` | Rapport `group by` |
@@ -42,7 +42,7 @@ Une mesure est requise lors de l’agrégation `within a single table`. Par exem
 
 Examinez un exemple spécifique de la manière dont une `Total Revenue` peut être définie dans [!DNL Commerce Intelligence]. Examinez la requête ci-dessous que vous essayez de traduire :
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` (colonne) |
@@ -63,7 +63,7 @@ La requête de cette agrégation peut ressembler à ce qui suit :
 
 |  |  |
 |--- |--- |
-| `Select` |  |
+| `Select` | |
 | `c.customer_id` | Propriétaire de l’agrégat |
 | `SUM(o.order_total) as "Customer LTV"` | Opération agrégée(colonne) |
 | `FROM customers c` | Table du propriétaire agrégé |
@@ -103,7 +103,7 @@ Voir [création de colonnes calculées](../data-warehouse-mgr/creating-calculate
 
 Commencez par la requête ci-dessous :
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT coupon_code,` | Rapport `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`(colonne) |
@@ -132,7 +132,7 @@ La première méthode impliquerait la création d’une nouvelle mesure qui effe
 
 Revenez en arrière et examinez la requête globale pour `Average order value`:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | Mesure `operation` (colonne) |
@@ -155,4 +155,11 @@ Pour une référence rapide, consultez le tableau ci-dessous. Ceci affiche l’�
 
 ## Éléments d’intelligence de commerce
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—|— |`SELECT`|X|-|X|-|-|X|-| |`FROM`|-|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-|-| |`WHERE` (avec des éléments temporels)|-|-|-|X|-|-|-| |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X|-|-|-|-|-|
+| **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
+|---|---|---|---|---|---|---|---|
+| `SELECT` | X | - | X | - | - | X | - |
+| `FROM` | - | - | - | - | - | - | X |
+| `WHERE` | - | X | - | - | - | - | - |
+| `WHERE` (avec des éléments temporels) | - | - | - | X | - | - | - |
+| `JOIN...ON` | - | X | - | - | X | X | - |
+| `GROUP BY` | - | - | X | - | - | - | - |
