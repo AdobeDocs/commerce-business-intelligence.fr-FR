@@ -2,7 +2,9 @@
 title: Stockage des données dans Adobe Commerce
 description: Découvrez comment les données sont générées, ce qui entraîne l’insertion d’une nouvelle ligne et comment les actions sont enregistrées dans la base de données Adobe Commerce.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -61,7 +63,7 @@ Peu après l&#39;ajout des trois nouveaux produits, un nouveau client, `Sammy Cu
 
 Une fois la création du compte terminée, `Sammy Customer` est prêt à commencer à effectuer un achat. Sur le site web, le client ajoute deux paires de la variable `Throwback Bellbottoms` et un `V-Neck T-Shirt` au panier. Satisfait par les sélections, le client passe à l’extraction et envoie la commande, créant ainsi l’entrée suivante sur la page [table des commandes plats](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

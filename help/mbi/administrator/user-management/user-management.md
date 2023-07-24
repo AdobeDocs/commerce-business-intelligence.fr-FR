@@ -2,7 +2,9 @@
 title: Gestion des utilisateurs et des autorisations Adobe Commerce
 description: Découvrez comment gérer vos utilisateurs de Commerce Intelligence.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -23,25 +25,25 @@ Dans [!DNL Commerce Intelligence], trois niveaux d’autorisation généraux s�
 
 Ces autorisations permettent aux utilisateurs d’effectuer certaines actions ou d’accéder à des parties spécifiques de [!DNL Commerce Intelligence]. Voici un tableau de ce que chaque niveau d’autorisation peut faire dans [!DNL Commerce Intelligence]:
 
-|  | `Admin` | `Standard` | `Read Only` |
+|   | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Créer/gérer des utilisateurs** | ✔ |  |  |
-| **Création de résumés d’emails** | ✔ | ✔ |  |
-| **Créer/modifier/partager des tableaux de bord** | ✔ | ✔ |  |
+| **Créer/gérer des utilisateurs** | ✔ |   |   |
+| **Création de résumés d’emails** | ✔ | ✔ |   |
+| **Créer/modifier/partager des tableaux de bord** | ✔ | ✔ |   |
 | **Affichage des tableaux de bord** | ✔ | ✔ | ✔ |
-| **Créer/modifier/supprimer des rapports visuels** | ✔ | ✔* |  |
-| **Créer/modifier/supprimer des rapports SQL** | ✔ |  |  |
-| **Clonage des tableaux de bord** | ✔ |  |  |
-| **Ajouter/gérer des intégrations** | ✔ |  |  |
-| **Accès à Data Warehouse Manager** | ✔ |  |  |
-| **Tables et colonnes de synchronisation/désynchronisation** | ✔ |  |  |
-| **Créer/modifier des mesures** | ✔ |  |  |
-| **Créer/modifier des jeux de filtres** | ✔ |  |  |
-| **Créer/modifier des colonnes calculées** | ✔ |  |  |
-| **Créer une liste de rapports dépendants** | ✔ |  |  |
-| **Résumé du système d’accès** | ✔ |  |  |
-| **Accès aux paramètres de fuseau horaire** | ✔ |  |  |
-| **Facturation d’accès** | ✔ | ✔** |  |
+| **Créer/modifier/supprimer des rapports visuels** | ✔ | ✔* |   |
+| **Créer/modifier/supprimer des rapports SQL** | ✔ |  |   |
+| **Clonage des tableaux de bord** | ✔ |   |   |
+| **Ajouter/gérer des intégrations** | ✔ |   |   |
+| **Accès à Data Warehouse Manager** | ✔ |   |   |
+| **Tables et colonnes de synchronisation/désynchronisation** | ✔ |   |   |
+| **Créer/modifier des mesures** | ✔ |   |   |
+| **Créer/modifier des jeux de filtres** | ✔ |   |   |
+| **Créer/modifier des colonnes calculées** | ✔ |   |   |
+| **Créer une liste de rapports dépendants** | ✔ |   |   |
+| **Résumé du système d’accès** | ✔ |   |   |
+| **Accès aux paramètres de fuseau horaire** | ✔ |   |   |
+| **Facturation d’accès** | ✔ | ✔** |   |
 | **Contacter le support technique** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}

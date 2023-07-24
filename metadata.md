@@ -1,15 +1,18 @@
 ---
-solution: Commerce
+solution: Commerce, Commerce Intelligence
 product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.fr-FR
 role: User
+feature-set: Commerce Intelligence
+level: Beginner, Intermediate
+topic: Commerce
 index: true
-source-git-commit: 8e4854e5b8820eb1fa0aee0d23f7e1ecd36c538b
+source-git-commit: c212256ff32e308cb67a84afd3fd86b0f756ae24
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
@@ -29,7 +32,7 @@ Le `metadata.md` comprend des métadonnées au niveau du référentiel qui sont 
 | mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. la valeur par défaut est 2 |
 | git-repo | Spécifie l’emplacement du référentiel maître pour une utilisation interne. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Dans le fichier TOC.md
 
@@ -38,4 +41,4 @@ Dans le fichier TOC.md
 | user-guide-title | Utilisé dans l’en-tête de l’article comme lien |
 | user-guide-url | Ouvre la page hub helpx |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

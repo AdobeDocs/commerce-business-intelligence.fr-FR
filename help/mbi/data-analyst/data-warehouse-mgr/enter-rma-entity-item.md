@@ -2,7 +2,9 @@
 title: Table Enterprise_Rma_Item_Entity
 description: Découvrez comment analyser les informations relatives à un élément spécifique à partir d’un retour demandé.
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -46,7 +48,7 @@ Chaque ligne du `enterprise_rma_item_entity` table (souvent appelée `magento_rm
 
 | **Nom de la mesure** | **Description** | **Construction** |
 |---|---|---|
-| `Number of items returned` | Nombre d’éléments renvoyés. | Colonne de l’opération : quantité renvoyée<br>Opération : Somme<br>Colonne Horodatage : Date de retour demandée |
+| `Number of items returned` | Nombre d’éléments renvoyés. | Colonne de l’opération : qté renvoyée<br>Opération : Somme<br>Colonne Horodatage : Date de retour demandée |
 | `Returned items' total value` | Le montant monétaire renvoyé. | Colonne de l’opération : Valeur totale de l’élément de retour (quantité renvoyée * prix)<br>Opération : Somme<br>Colonne Horodatage : Date de retour demandée |
 
 {style="table-layout:auto"}
@@ -64,4 +66,4 @@ Chaque ligne du `enterprise_rma_item_entity` table (souvent appelée `magento_rm
 * Créez des colonnes jointes sur la  `enterprise_rma_item_entity` via la jointure suivante :
 
 * Commerce 1.x : `enterprise_rma_item_entity.order_item_id ` (nombreux) => `sales_flat_order_item.item_id` (1)
-* Commerce 2.x : `magento_rma_item_entity.order_item_id ` (nombreux) => `sales_order_item.item_id` (1)
+* Commerce 2.x : `magento_rma_item_entity.order_item_id ` (nombreux) => `sales_order_item.item_id` (1)

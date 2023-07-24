@@ -2,7 +2,9 @@
 title: Objectifs de suivi par rapport aux mesures
 description: Découvrez comment configurer un tableau de bord qui vous aidera à effectuer le suivi des objectifs de votre entreprise par rapport à vos données réelles, notamment les recettes, les nouveaux utilisateurs enregistrés et les commandes au fil du temps.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -54,51 +56,46 @@ Il est utile de disposer d’un mélange de valeurs statiques et de graphiques v
 * **Recettes restantes pour atteindre la cible**
 * Mesure `A`: `Revenue`
 * 
-
-   [!UICONTROL Mesure]: `Revenue`
+  [!UICONTROL Mesure]: `Revenue`
 
 * Mesure `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
 * 
-   [!UICONTROL Formule]: `(B-A)`
+  [!UICONTROL Formule]: `(B-A)`
 * 
-
-   [!UICONTROL Format]: `Number`
+  [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (Quelle que soit la période appropriée que vous souhaitez)
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * 
-
-   [!UICONTROL Type de graphique]: `Scalar`
+  [!UICONTROL Type de graphique]: `Scalar`
 
 * **Cibles de recettes**
 * Mesure `A`: `Revenue`
 * 
-
-   [!UICONTROL Mesure]: `Revenue`
+  [!UICONTROL Mesure]: `Revenue`
 
 * Mesure `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Mesure `C`: `Revenue (amount change since previous year)` (masquer)
 * 
-   [!UICONTROL Mesure]: `Revenue`
+  [!UICONTROL Mesure]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Ce mois l’an dernier)
 * 
-   [!UICONTROL Formule]: `(A-C)`
+  [!UICONTROL Formule]: `(A-C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 * Désactiver `Multiple Y-Axes`
 * [!UICONTROL Time period]: (Quelle que soit la période appropriée que vous souhaitez)*
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
 Une fois que vous avez terminé les rapports ci-dessus pour les cibles de recettes, vous pouvez créer des rapports identiques pour les objectifs relatifs aux commandes, aux comptes enregistrés ou à toute autre valeur incluse dans le téléchargement du fichier d’objectifs.

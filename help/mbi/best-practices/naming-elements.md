@@ -2,7 +2,9 @@
 title: Nommer des rapports et des éléments dans Commerce Intelligence
 description: Découvrez les bonnes pratiques pour nommer les rapports et les éléments dans [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # Nommer des rapports et des éléments
 
-Avant de commencer la création dans[!DNL Adobe Commerce Intelligence], Adobe souhaite partager quelques secrets pour réussir. Il est important de savoir comment créer des mesures, des filtres, etc., mais tout votre travail peut n’avoir aucun impact si vous ne trouvez pas ce dont vous avez besoin ou s’il y a de l’ambiguïté.
+Avant de commencer la création dans [!DNL Adobe Commerce Intelligence], Adobe souhaite partager quelques secrets pour réussir. Il est important de savoir comment créer des mesures, des filtres, etc., mais tout votre travail peut n’avoir aucun impact si vous ne trouvez pas ce dont vous avez besoin ou s’il y a de l’ambiguïté.
 
 ## Pourquoi la nomenclature est-elle importante ? {#why}
 

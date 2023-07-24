@@ -2,7 +2,9 @@
 title: Informations sur les données et les mises à jour
 description: Découvrez comment vérifier le statut de votre cycle de mise à jour.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

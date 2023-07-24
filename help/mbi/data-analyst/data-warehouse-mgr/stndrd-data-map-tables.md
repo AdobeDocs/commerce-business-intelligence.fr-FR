@@ -2,7 +2,9 @@
 title: Normalisation des données avec les tableaux de mappage
 description: Découvrez comment utiliser les tables de mappage.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -64,7 +66,7 @@ Pour créer la variable `joined` , accédez au tableau vers lequel le champ sera
    * Sur le `One` côté , sélectionnez la variable `mapping` et le `Primary key` colonne . Dans ce cas, vous devez sélectionner la variable `state_input` de la colonne `mapping_state` table.
    * Voici à quoi ressemble le chemin :
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save]** pour créer le chemin.
 1. Le chemin ne peut pas être renseigné immédiatement après l’enregistrement. Si cela se produit, cliquez sur la variable `Path` et sélectionnez le chemin que vous avez créé.

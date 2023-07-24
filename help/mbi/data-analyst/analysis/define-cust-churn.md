@@ -2,7 +2,9 @@
 title: Définition de la perte de clientèle
 description: Découvrez comment configurer un tableau de bord qui vous aide à définir l’attrition de vos clients transactionnels.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -68,29 +70,27 @@ Aucune nouvelle mesure !
 
 * [!UICONTROL Formula]: Probabilité initiale de l’ordre de répétition
 * 
-   [!UICONTROL Formule]: `A/B`
+  [!UICONTROL Formule]: `A/B`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilité de répétition de l’ordre exprimée en mois depuis la commande**
 * Mesure A : Répéter les commandes par mois depuis la commande précédente (masquer)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Mesure B : Dernières commandes par mois depuis la commande (masquer)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * Mesure C : Commandes répétées tout le temps (masquer)
@@ -98,33 +98,29 @@ Aucune nouvelle mesure !
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-
-   [!UICONTROL Groupe par]: `Independent`
+  [!UICONTROL Groupe par]: `Independent`
 
 * Mesure D : Toutes les dernières commandes (masquer)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-
-   [!UICONTROL Groupe par]: `Independent`
+  [!UICONTROL Groupe par]: `Independent`
 
 * [!UICONTROL Formula]: Probabilité initiale de l’ordre de répétition
 * 
-   [!UICONTROL Formule]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL Formule]: `(C-A)/(C+D-A-B)`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Afficher top.bottom : 24 premières catégories, triées par nom de catégorie
 
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 Le rapport de probabilité d’ordre de répétition initial représente le total des commandes répétées / total des commandes. Chaque commande est l’occasion d’effectuer une commande répétée. le nombre de commandes répétées est le sous-ensemble de celles qui le font réellement.
 

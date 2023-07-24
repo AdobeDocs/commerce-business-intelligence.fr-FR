@@ -2,7 +2,9 @@
 title: Analyse des commandes retournées
 description: Découvrez comment configurer un tableau de bord qui fournit une analyse détaillée des retours de votre boutique.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -60,10 +62,9 @@ Colonnes à créer
 * Sélectionnez une définition : `Joined Column`
 * [!UICONTROL Create Path]:
 * 
-   [!UICONTROL Many]: `enterprise_rma.order_id`
+  [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
-
-   [!UICONTROL One]: `sales_flat_order.entity_id`
+  [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Sélectionnez une [!UICONTROL table]: `sales_flat_order`
 * Sélectionnez une [!UICONTROL column]: `created_at`
@@ -82,10 +83,9 @@ Colonnes à créer
 * Sélectionnez une définition : `Joined Column`
 * [!UICONTROL Create Path]:
    * 
-      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+     [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
-
-      [!UICONTROL One]: `enterprise_rma.entity_id`
+     [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Sélectionnez une [!UICONTROL table]: `enterprise_rma`
 * Sélectionnez une [!UICONTROL column]: `date_requested`
@@ -158,15 +158,14 @@ Colonnes à créer
 * Formule : Probabilité de répétition de l’ordre
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervalle]: `None`
+  [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-   [!UICONTROL Type de graphique]: `Bar`
+  [!UICONTROL Type de graphique]: `Bar`
 
 * **Temps moyen pour revenir (tout le temps)**
 * Mesure `A`: `Avg time between order and return`
@@ -174,10 +173,9 @@ Colonnes à créer
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervalle]: `None`
+  [!UICONTROL Intervalle]: `None`
 * 
-
-   [!UICONTROL Type de graphique]: `Number`
+  [!UICONTROL Type de graphique]: `Number`
 
 * **Pourcentage de commandes avec un retour**
 * Mesure `A`: `Number of orders`
@@ -191,12 +189,11 @@ Colonnes à créer
 * Formule : % des commandes avec retour
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervalle]: `None`
+  [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **Recettes renvoyées par mois**
@@ -206,8 +203,7 @@ Colonnes à créer
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
 * 
-
-   [!UICONTROL Type de graphique]: `Line`
+  [!UICONTROL Type de graphique]: `Line`
 
 * **Clients qui ont effectué un retour et n’ont pas effectué de nouvel achat**
 * Mesure `A`: `Number of orders with returns`
@@ -218,12 +214,11 @@ Colonnes à créer
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervalle]: `None`
+  [!UICONTROL Intervalle]: `None`
 * 
-   [!UICONTROL Groupe par]: `Customer_email`
+  [!UICONTROL Groupe par]: `Customer_email`
 * 
-
-   [!UICONTROL Type de graphique]: `Table`
+  [!UICONTROL Type de graphique]: `Table`
 
 * **Taux de retour par élément**
 * Mesure `A`: `Returned items` (Masquer)
@@ -236,15 +231,14 @@ Colonnes à créer
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervalle]: `None`
+  [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-   [!UICONTROL Type de graphique]: `Table`
+  [!UICONTROL Type de graphique]: `Table`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.
 

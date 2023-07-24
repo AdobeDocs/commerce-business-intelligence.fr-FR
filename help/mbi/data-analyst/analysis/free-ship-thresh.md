@@ -2,9 +2,11 @@
 title: Seuil de livraison gratuit
 description: Découvrez comment configurer un tableau de bord qui suit les performances de votre seuil de livraison gratuite.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin,  User
+feature: Data Warehouse Manager, Dashboards, Reports
+source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -33,9 +35,10 @@ Si vous utilisez l’architecture d’origine (par exemple, si vous ne disposez 
 * **`Order subtotal (buckets)`** Architecture originale : créé par un analyste dans le cadre de votre `[FREE SHIPPING ANALYSIS]` ticket
 * **`Order subtotal (buckets)`** Nouvelle architecture :
    * Comme mentionné ci-dessus, ce calcul crée des intervalles par incréments par rapport aux tailles de panier standard. Si vous disposez d’une colonne de sous-total native, telle que `base_subtotal`, qui peut être utilisé comme base de cette nouvelle colonne. Dans le cas contraire, il peut s’agir d’une colonne calculée qui exclut les frais d’expédition et les remises des recettes.
-   >[!NOTE]
-   >
-   >Les tailles de &quot;compartiment&quot; dépendent de ce qui vous convient en tant que client. Vous pouvez commencer par votre `average order value` et créer des intervalles inférieurs ou supérieurs à cette quantité. Lorsque vous regardez le calcul ci-dessous, vous pouvez facilement copier une partie de la requête, la modifier et créer des intervalles supplémentaires. L’exemple est effectué par incréments de 50.
+
+  >[!NOTE]
+  >
+  >Les tailles de &quot;compartiment&quot; dépendent de ce qui vous convient en tant que client. Vous pouvez commencer par votre `average order value` et créer des intervalles inférieurs ou supérieurs à cette quantité. Lorsque vous regardez le calcul ci-dessous, vous pouvez facilement copier une partie de la requête, la modifier et créer des intervalles supplémentaires. L’exemple est effectué par incréments de 50.
 
    * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`ou `calculated column`, `Datatype`: `Integer`
    * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
@@ -45,7 +48,6 @@ when `A<301` et `A<= 350` then `301 - 350`
 when `A<351` et `A<=400` then `351 - 400`
 when `A<401` et `A<=450` then `401 - 450`
 else &quot;over 450&quot; end
-
 
 
 ## Mesures
@@ -64,75 +66,67 @@ Aucune nouvelle mesure!!!
 * Mesure `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **Nombre de commandes par intervalles de sous-total avec la règle de livraison A**
    * [!UICONTROL Metric]: `Number of orders`
 
-   >[!NOTE]
-   >
-   >Vous pouvez couper l’extrémité de la queue en affichant la partie supérieure. `X` `sorted by` `Order subtotal` (intervalles) dans la variable `Show top/bottom`.
+  >[!NOTE]
+  >
+  >Vous pouvez couper l’extrémité de la queue en affichant la partie supérieure. `X` `sorted by` `Order subtotal` (intervalles) dans la variable `Show top/bottom`.
 
 * Mesure `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Column`
+  [!UICONTROL Chart Type]: `Column`
 
 * **Pourcentage de commandes par sous-total avec la règle de livraison A**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * 
-      [!UICONTROL Groupe par]: `Independent`
+     [!UICONTROL Groupe par]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
    * 
-
-      [!UICONTROL Format]: `%`
+     [!UICONTROL Format]: `%`
 
 * Mesure `A`: `Number of orders by subtotal (hide)`
 * Mesure `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **Pourcentage de commandes dont le sous-total dépasse la règle d’expédition A**
    * [!UICONTROL Metric]: `Number of orders`
    * 
-
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
    * 
-
-      [!UICONTROL Groupe par]: `Independent`
+     [!UICONTROL Groupe par]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
    * 
-
-      [!UICONTROL Format]: `%`
+     [!UICONTROL Format]: `%`
 
 * Mesure `A`: `Number of orders by subtotal`
 * Mesure `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 
 Répétez les étapes et les rapports ci-dessus pour l’expédition B et la période avec la règle d’expédition B.

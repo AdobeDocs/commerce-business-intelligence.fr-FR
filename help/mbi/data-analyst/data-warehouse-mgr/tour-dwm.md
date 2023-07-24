@@ -2,7 +2,9 @@
 title: Gestionnaire de Data Warehouse
 description: Découvrez comment gérer les paramètres de synchronisation des tableaux et des colonnes, explorer le schéma d’un tableau et créer des colonnes calculées à utiliser dans les rapports.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%

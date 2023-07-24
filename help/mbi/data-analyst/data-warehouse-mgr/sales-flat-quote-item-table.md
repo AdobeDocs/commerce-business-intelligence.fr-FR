@@ -2,7 +2,9 @@
 title: table du guillemet_élément
 description: Découvrez comment utiliser la table quote_élément .
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -51,8 +53,8 @@ Le `quote_item` tableau (`sales_flat_quote_item` sur M1) contient des enregistr
 
 | **Nom de la mesure** | **Description** | **Construction** |
 |---|---|---|
-| `Number of abandoned cart items` | Nombre total d’articles ajoutés aux paniers qui répondent à des conditions d’&quot;abandon&quot; spécifiques | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>Filtres :<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, où &quot;x&quot; correspond au temps écoulé (en secondes) depuis la création du panier au-delà duquel un panier est considéré comme abandonné |
-| `Abandoned cart item value` | Somme du total des recettes associées aux paniers répondant à des conditions d’&quot;abandon&quot; spécifiques | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>Filtres :<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, où &quot;x&quot; correspond au temps écoulé (en secondes) depuis la création du panier au-delà duquel un panier est considéré comme abandonné |
+| `Number of abandoned cart items` | Nombre total d’articles ajoutés aux paniers qui répondent à des conditions d’&quot;abandon&quot; spécifiques | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>Filtres :<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, où &quot;x&quot; correspond au temps écoulé (en secondes) depuis la création du panier au-delà duquel un panier est considéré comme abandonné |
+| `Abandoned cart item value` | Somme du total des recettes associées aux paniers répondant à des conditions d’&quot;abandon&quot; spécifiques | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>Filtres :<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, où &quot;x&quot; correspond au temps écoulé (en secondes) depuis la création du panier au-delà duquel un panier est considéré comme abandonné |
 
 {style="table-layout:auto"}
 

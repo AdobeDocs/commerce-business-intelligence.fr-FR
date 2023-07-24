@@ -2,7 +2,9 @@
 title: Configuration des méthodes de réplication
 description: Découvrez comment les tables sont organisées et comment les données du tableau se comportent vous permet de choisir la meilleure méthode de réplication pour vos tables.
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1414'
 ht-degree: 0%

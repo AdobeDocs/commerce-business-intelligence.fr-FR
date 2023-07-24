@@ -2,7 +2,9 @@
 title: Création de rapports sur un calendrier de vente au détail
 description: Découvrez comment configurer la structure pour utiliser un calendrier de vente au détail 4-5-4 dans votre [!DNL Commerce Intelligence] compte .
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -49,18 +51,19 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) a `.csv` version du c
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
       * 
-         [!UICONTROL Type de données]: `Datetime`
+        [!UICONTROL Type de données]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
-         >[!NOTE]
-         >
-         >Le `now()` La fonction ci-dessus est spécifique à PostgreSQL. Bien que [!DNL Commerce Intelligence] Les entrepôts de données sont hébergés sur PostgreSQL, certains peuvent l’être sur Redshift. Si le calcul ci-dessus renvoie une erreur, vous devrez peut-être utiliser la fonction Redshift `getdate()` au lieu de `now()`.
+        >[!NOTE]
+        >
+        >Le `now()` La fonction ci-dessus est spécifique à PostgreSQL. Bien que [!DNL Commerce Intelligence] Les entrepôts de données sont hébergés sur PostgreSQL, certains peuvent l’être sur Redshift. Si le calcul ci-dessus renvoie une erreur, vous devrez peut-être utiliser la fonction Redshift `getdate()` au lieu de `now()`.
+
    * **Current retail year** (Doit être créé par l’analyste de support)
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
       * 
-         [!UICONTROL Operation]: `Max`
+        [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **Inclus dans l’année de vente en cours ? (Oui/Non)**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -68,7 +71,7 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) a `.csv` version du c
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [!UICONTROL Type de données]: `String`
+        [!UICONTROL Type de données]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **Inclus dans l’année de vente précédente ? (Oui/Non)**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -76,9 +79,8 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) a `.csv` version du c
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [!UICONTROL Type de données]: String
+        [!UICONTROL Type de données]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
-
 
 * **sales\_order** table
    * **Created\_at (année de vente au détail)**
@@ -138,64 +140,62 @@ Remarque : Aucune nouvelle mesure n’est nécessaire pour cette analyse. Veille
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail week)
+     [!UICONTROL Group by]: `Created\_at` (retail week)
    * 
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
       * Désactiver `multiple Y-axes`
 
 * **Aperçu du calendrier de vente au détail (année de vente au détail actuelle par mois)**
    * Mesure `A`: `Revenue`
       * 
-         [!UICONTROL Mesure]: `Revenue`
+        [!UICONTROL Mesure]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Mesure `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Mesure `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 * **Présentation du calendrier de vente au détail (année de vente au détail précédente par mois)**
    * Mesure `A`: `Revenue`
       * 
-         [!UICONTROL Mesure]: `Revenue`
+        [!UICONTROL Mesure]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Mesure `B`: `Orders`
       * [!UICONTROL Metric]: Nombre de commandes
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Mesure `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 ## Étapes suivantes
 

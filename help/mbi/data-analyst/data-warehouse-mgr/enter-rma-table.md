@@ -2,7 +2,9 @@
 title: enterprise_rma Table
 description: Découvrez comment analyser les informations sur une requête de retour spécifique.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -44,10 +46,10 @@ Chaque ligne du `enterprise_rma` table (souvent appelée `magento_rma` dans Adob
 
 | **Nom de la mesure** | **Description** | **Construction** |
 |---|---|---|
-| `Number of returns` | Nombre de retours demandés. | `Operation` column : `entity id`<br>`Operation`: `Count`<br>`Timestamp` Colonne : `date requested` |
-| `Total returned amount` | Montant monétaire total renvoyé. | `Operation `Colonne : `Return's total value`<br>`Operation`: Somme<br>`Timestamp` Colonne : date demandée |
-| `Average returned amount` | Montant monétaire moyen renvoyé. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Colonne : `date requested` |
-| `Average time to return` | Temps moyen entre le retour de la commande. | `Operation` Colonne : Secondes entre la date de création de la commande et la date de retour demandée<br>`Operation`: `Average`<br>`Timestamp` Colonne : `date requested` |
+| `Number of returns` | Nombre de retours demandés. | `Operation` column : `entity id`<br>`Operation`: `Count`<br>`Timestamp` Colonne : `date requested` |
+| `Total returned amount` | Montant monétaire total renvoyé. | `Operation `Colonne : `Return's total value`<br>`Operation`: Somme<br>`Timestamp` Colonne : date demandée |
+| `Average returned amount` | Montant monétaire moyen renvoyé. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Colonne : `date requested` |
+| `Average time to return` | Temps moyen entre le retour de la commande. | `Operation` Colonne : Secondes entre la date de création de la commande et la date de retour demandée<br>`Operation`: `Average`<br>`Timestamp` Colonne : `date requested` |
 
 {style="table-layout:auto"}
 

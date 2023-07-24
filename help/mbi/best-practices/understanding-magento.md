@@ -2,7 +2,9 @@
 title: Comprendre votre [!DNL Commerce Intelligence] Environnement
 description: En savoir plus sur l’utilisation et l’amélioration de votre [!DNL Commerce Intelligence] environnement.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -19,7 +21,7 @@ La plupart de vos tableaux contiennent une colonne nommée `entity\_id`. Dans c
 
 Par exemple, chaque ligne du `sales\_order` table est un ordre unique. La clé Principale de ce tableau est appelée `entity\_id`. Cette colonne peut être considérée comme `order\_id`. Dans une table séparée, `customer\_entity`, chaque ligne représente un client unique. La clé Principale de ce tableau est également appelée `entity\_id`, qui peut être considéré comme `customer\_id`.
 
-Dans ces tableaux, `sales\_order.entity\_id` n’est pas égal à `customer\_entity.entity\_id`. Cela est vrai pour tous les ensembles de tables qui contiennent `entity\_id`: `table\_A.entity\_id` n’est pas égal à `table\_B.entity\_id`.
+Dans ces tableaux, `sales\_order.entity\_id` n’est pas égal à `customer\_entity.entity\_id`. Cela est vrai pour tous les ensembles de tables qui contiennent `entity\_id`: `table\_A.entity\_id` n’est pas égal à `table\_B.entity\_id`.
 
 ## [!DNL Guest orders]
 

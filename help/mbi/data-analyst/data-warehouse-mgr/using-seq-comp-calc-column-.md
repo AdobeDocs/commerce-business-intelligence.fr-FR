@@ -2,7 +2,9 @@
 title: Colonne calculée de comparaison séquentielle
 description: Découvrez l’objectif et les utilisations de la colonne calculée Comparaison séquentielle .
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 2%

@@ -2,7 +2,9 @@
 title: Analyse de l'impact des coupons
 description: Découvrez comment analyser l’impact des coupons sur l’acquisition et la fidélisation des clients.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 2%
@@ -122,10 +124,10 @@ Que peut-on en tirer ? Tout d’abord, le coupon &quot;20 % de réduction&quot; 
 * l’heure du jour/de la semaine/du mois/de l’année où les bons ont été proposés.
 * la saison pendant laquelle les coupons ont été proposés, en fonction de l&#39;activité.
 
-   **Exemple :** le coupon &quot;20% de réduction&quot; a été proposé pendant les mois d&#39;été, mais l&#39;entreprise vend des vêtements d&#39;hiver.
+  **Exemple :** le coupon &quot;20% de réduction&quot; a été proposé pendant les mois d&#39;été, mais l&#39;entreprise vend des vêtements d&#39;hiver.
 * les restrictions sur les coupons.
 
-   **Exemple :** le coupon &quot;10% de réduction&quot; n&#39;est proposé qu&#39;aux clients qui achètent un manteau d&#39;hiver dans la même commande.
+  **Exemple :** le coupon &quot;10% de réduction&quot; n&#39;est proposé qu&#39;aux clients qui achètent un manteau d&#39;hiver dans la même commande.
 
 Le **revenu brut** pour le coupon &quot;25 % de 100 $ ou plus&quot; est beaucoup plus élevé que le revenu brut du coupon &quot;10 $ de réduction&quot;. Cependant, le coupon &quot;$10 off&quot; est beaucoup plus grand. **nombre de commandes**. Analyser la variable **valeur de commande moyenne** fournit des informations sur ces différences. Même si le coupon &quot;25 % de 100 $ ou plus&quot; avait moins de commandes, la valeur de commande moyenne est plus de trois fois supérieure à celle du coupon &quot;10 $ de réduction&quot;. Ainsi, un revenu brut plus élevé est attribué au coupon &quot;25 % de 100 $ ou plus&quot;.
 

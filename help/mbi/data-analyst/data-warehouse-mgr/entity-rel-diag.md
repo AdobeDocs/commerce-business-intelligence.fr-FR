@@ -2,7 +2,9 @@
 title: Diagrammes de relation d’entité
 description: Découvrez quelques diagrammes d’E/S pour vous aider à visualiser la relation entre une poignée de tableaux de base de données Commerce courants.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%

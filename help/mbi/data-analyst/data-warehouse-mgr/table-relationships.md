@@ -2,7 +2,9 @@
 title: Présentation et évaluation des relations entre les tables
 description: Découvrez comment comprendre le nombre d’occurrences possibles dans une table pouvant appartenir à une entité dans une autre.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -120,7 +122,7 @@ Lorsque des tables sont liées à l’aide d’une `Foreign key` pointant vers u
 Si l’une des conditions suivantes est vraie, la relation est `many-to-many`:
 
 * `Non-primary key` des colonnes sont utilisées pour lier deux tables.
-   ![](../../assets/many-to-many1.png)
+  ![](../../assets/many-to-many1.png)
 * Partie d’un composite `primary key` est utilisé pour lier deux tables.
 
 ![](../../assets/many-to-mnay2.png)

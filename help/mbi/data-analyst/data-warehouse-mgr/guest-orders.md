@@ -2,7 +2,9 @@
 title: Commandes des invités
 description: Découvrez l’impact des commandes d’invités sur vos données et les options que vous devez correctement tenir compte des commandes d’invités dans vos [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ Dans la base de données commerciale standard, il existe une `orders` table qui 
 
 * **Si tous les clients sont enregistrés** et les commandes d’invités ne sont pas autorisées, ce qui signifie que chaque enregistrement dans la variable `orders` contient une valeur dans la variable `customer\_id` colonne . Par conséquent, chaque commande revient au `customers` table.
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **Si les commandes d’invités sont autorisées**, cela signifie que certaines commandes n’ont pas de valeur dans la variable `customer\_id` colonne . Seuls les clients enregistrés reçoivent une valeur pour la variable `customer\_id` sur la `orders` table. Les clients qui ne sont pas enregistrés reçoivent une `NULL` (ou vide) pour cette colonne. Par conséquent, tous les enregistrements de commande n’ont pas les enregistrements correspondants dans la variable `customers` table.
 
-   >[!NOTE]
-   >
-   >Pour identifier l’individu unique qui a passé la commande, un autre attribut utilisateur unique doit se trouver en regard de . `customer\_id` joint à une commande. En règle générale, l’adresse électronique du client est utilisée.
+  >[!NOTE]
+  >
+  >Pour identifier l’individu unique qui a passé la commande, un autre attribut utilisateur unique doit se trouver en regard de . `customer\_id` joint à une commande. En règle générale, l’adresse électronique du client est utilisée.
 
 ## Comment tenir compte des commandes d’invités dans la configuration du Data Warehouse
 

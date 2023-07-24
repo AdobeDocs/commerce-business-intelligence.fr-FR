@@ -2,7 +2,9 @@
 title: Analyse du code de bon (de base)
 description: Découvrez les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre les habitudes des clients.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -57,142 +59,140 @@ La première étape consiste à créer une mesure en procédant comme suit :
 
 * **Commandes avec coupons**
    * 
-      [!UICONTROL Mesure]: `Orders`
+     [!UICONTROL Mesure]: `Orders`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS NOT** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalle]: `None`
+     [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
-
 
 * **Commandes sans coupons**
    * 
-      [!UICONTROL Mesure]: `Orders`
+     [!UICONTROL Mesure]: `Orders`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalle]: `None`
+     [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
-
 
 * **Chiffre d’affaires net des commandes avec coupons**
    * 
-      [!UICONTROL Mesure]: `Revenue`
+     [!UICONTROL Mesure]: `Revenue`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS NOT** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalle]: `None`
+     [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Remises sur les coupons**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalle]: `None`
+     [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Chiffre d’affaires moyen de la durée de vie : Coupon aux clients acquis**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Ajouter un filtre :
          * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalle]: `None`
+     [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Chiffre d’affaires moyen de la durée de vie : Clients acquis non coupon**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Ajouter un filtre :
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalle]: `None`
+     [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Détails d’utilisation du coupon (premières commandes)**
    * Mesure `1`: `Orders`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS NOT**`[NULL]`
          * [`B`] `Customer's order number` **Égal à** `1`
+
    * Mesure `2`: `Revenue`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS NOT**`[NULL]`
          * [`B`] `Customer's order number` **Égal à** `1`
+
       * Renommer :  `Net revenue`
+
    * Mesure `3`: `Coupon discount amount`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS NOT**`[NULL]`
          * [`B`] `Customer's order number` **Égal à** `1`
+
    * Créer une formule : `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
-         [!UICONTROL Format]: `Currency`
+        [!UICONTROL Format]: `Currency`
+
    * Créer une formule :**% actualisé**
       * Formule : `(C / (B - C))`
       * 
-         [!UICONTROL Format]: `Percentage`
+        [!UICONTROL Format]: `Percentage`
+
    * Créer une formule : `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
       * 
-         [!UICONTROL Format]: `Percentage`
+        [!UICONTROL Format]: `Percentage`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalle]: `None`
+     [!UICONTROL Intervalle]: `None`
    * 
-
-      [!UICONTROL Type de graphique]: `Table`
-
-
-
-
-
-
-
+     [!UICONTROL Type de graphique]: `Table`
 
 * **Chiffre d’affaires moyen de la durée de vie par coupon de première commande**
    * [!UICONTROL Metric]:**Chiffre d’affaires moyen de la durée de vie**
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS**`[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalle]: `None`
+     [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Détails d’utilisation du coupon (premières commandes)**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Ajouter un filtre :
          * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalle]: `None`
+     [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
    * 
-
-      [!UICONTROL Type de graphique]: **Column**
-
+     [!UICONTROL Type de graphique]: **Column**
 
 * **Nouveaux clients par acquisition de coupons/coupons non-coupons**
    * Mesure `1`: `New customers`
       * Ajouter un filtre :
          * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+
       * [!UICONTROL Rename]: `Coupon acquisition customer`
+
    * Mesure `2`: `New customers`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS**`[NULL]`
+
       * [!UICONTROL Rename]: `Non-coupon acquisition customer`
+
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
    * [!UICONTROL Chart type]: `Stacked Column`
-
-
-
-
 
 Une fois les rapports créés, reportez-vous à l’image en haut de cette rubrique pour savoir comment organiser les rapports sur votre tableau de bord.
