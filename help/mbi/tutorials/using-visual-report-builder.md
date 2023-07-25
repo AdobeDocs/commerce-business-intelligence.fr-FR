@@ -2,7 +2,9 @@
 title: Utilisation du Report Builder visuel
 description: Découvrez comment analyser les données de votre rapport pour une période spécifique.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -45,7 +47,7 @@ Pour vous concentrer sur une période spécifique, vous pouvez définir la péri
 
 Lorsque vous définissez une période spécifique pour cette période, assurez-vous que la date de début se trouve au début de l’intervalle et que la date de fin se trouve à la fin de l’intervalle.
 
-Par exemple, la définition d’une période à partir de `January 1st` to `March 1st` et le choix d’un `monthly` l’intervalle affiche `March` comme point de données, mais ignorez chaque jour dans `March` Sauf `March 1`. Dans ce cas, vous devez effectuer les opérations suivantes : `Time Period` de `January 1 to March 31`.
+Par exemple, la définition d’une période à partir de `January 1st` to `March 1st` et le choix d’un `monthly` l’intervalle affiche `March` comme point de données, mais ignorez tous les jours dans `March` Sauf `March 1`. Dans ce cas, vous devez effectuer les opérations suivantes : `Time Period` de `January 1 to March 31`.
 
 ## Étape 5 : `Group by` / `Segmenting the Analysis` {#groupby}
 

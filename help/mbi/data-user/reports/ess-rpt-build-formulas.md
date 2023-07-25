@@ -2,7 +2,9 @@
 title: Formules
 description: Découvrez comment utiliser des formules.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -49,7 +51,7 @@ Une formule combine plusieurs mesures et une logique mathématique pour répondr
 
    * Dans le `Enter your Formula` zone de saisie, saisissez `A/B`.
 
-      Les recettes sont ainsi divisées par le nombre de produits commandés par le nombre de nouveaux clients.
+     Les recettes sont ainsi divisées par le nombre de produits commandés par le nombre de nouveaux clients.
 
    * Définir `Select format` to `123Number`.
 
@@ -71,11 +73,11 @@ Une formule combine plusieurs mesures et une logique mathématique pour répondr
 
    * Sur les calendriers, sélectionnez la période.
 
-      Dans cet exemple, la saison des fêtes est la suivante : `November 1` through `December 31`.
+     Dans cet exemple, la saison des fêtes est la suivante : `November 1` through `December 31`.
 
    * Sous `Select Time Interval`, choisissez `Day`.
 
-      ![Période fixe](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+     ![Période fixe](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
    * Une fois l’opération terminée, cliquez sur **[!UICONTROL Apply]**.
 

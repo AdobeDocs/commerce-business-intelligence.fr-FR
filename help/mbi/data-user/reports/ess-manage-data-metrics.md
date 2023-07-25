@@ -2,7 +2,9 @@
 title: Création de mesures
 description: Découvrez comment utiliser les mesures pour créer des graphiques.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -45,12 +47,12 @@ Lorsqu’elles sont utilisées dans des rapports, les mesures peuvent être anal
       * `Median` - Cette opération calcule la médiane des valeurs de colonne de données.
       * `First and Third Quartiles` - Ces opérations calculent respectivement les 25e et 75e percentiles des valeurs de colonne de données.
       * `Tenth and Ninetieth Percentiles` - Ces opérations calculent respectivement les 10e et 90e percentiles des valeurs de colonne de données.
+
    * Sélectionnez une colonne sur laquelle effectuer l’opération. Par exemple, si vous souhaitez obtenir le total de vos recettes, vous devez effectuer une opération de somme sur la variable `order total` colonne .
 
-      Si vous modifiez une mesure existante, vous pouvez également [modifier le tableau opérationnel de la mesure ;](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) dans cette section.
+     Si vous modifiez une mesure existante, vous pouvez également [modifier le tableau opérationnel de la mesure ;](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) dans cette section.
 
    * Sélectionnez une dimension de date pouvant être utilisée pour suivre la tendance de la mesure. Par exemple : `order date`.
-
 
 ## Ajout de filtres {#filters}
 

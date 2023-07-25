@@ -2,7 +2,9 @@
 title: Sélection d’un créateur de rapports
 description: Découvrez comment choisir votre créateur de rapports.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -13,7 +15,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >>Nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md).
-
 
 Maintenant que vous disposez d’options supplémentaires pour la création d’analyses, il peut parfois être difficile de savoir exactement quelle version du créateur de rapports correspond à vos besoins. Cette rubrique vous guide tout au long du choix du meilleur moyen de créer votre analyse.
 

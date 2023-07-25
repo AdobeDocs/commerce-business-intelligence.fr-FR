@@ -2,7 +2,9 @@
 title: Traduction de requêtes SQL dans des rapports Commerce Intelligence
 description: Découvrez comment les requêtes SQL sont traduites dans les colonnes calculées, les mesures que vous utilisez dans Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%

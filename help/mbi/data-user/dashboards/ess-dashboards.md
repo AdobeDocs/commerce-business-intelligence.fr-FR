@@ -2,7 +2,9 @@
 title: Tableaux de bord
 description: Découvrez comment créer et utiliser un tableau de bord.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -41,14 +43,13 @@ Ce à quoi ressemblent les tableaux de bord que vous créez dépend entièrement
 
    * Pour créer une `Group` pour le tableau de bord, saisissez le nom du groupe.
 
-      Par exemple, si votre installation Commerce présente plusieurs vues de magasin, vous pouvez créer un Groupe pour chaque vue de magasin.
+     Par exemple, si votre installation Commerce présente plusieurs vues de magasin, vous pouvez créer un Groupe pour chaque vue de magasin.
 
    * Cliquez sur **[!UICONTROL Create]**.
 
    ![nom du tableau de bord](../../assets/magento-bi-dashboard-create-name.png)
 
    * Le nom de votre nouveau tableau de bord s’affiche dans le coin supérieur gauche. Cliquez sur la flèche vers le bas (![](../../assets/magento-bi-btn-down.png)) pour afficher les options. Si vous avez créé un groupe, le nouveau tableau de bord s’affiche sous le groupe dans la liste.
-
 
 ### Ajouter un rapport
 
@@ -58,7 +59,7 @@ Ce à quoi ressemblent les tableaux de bord que vous créez dépend entièrement
 
    * Dans l’en-tête du tableau de bord, cliquez sur **[!UICONTROL Add Report]**.
 
-      ![Ajouter un rapport](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![Ajouter un rapport](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. Cliquez sur **[!UICONTROL Create Report]** pour afficher le **[!UICONTROL Report Builder Options]**.
 
@@ -107,6 +108,7 @@ Lorsque vous partagez un tableau de bord, vous pouvez attribuer des autorisation
       * `View`
       * `Edit`
       * `None`
+
    1. Lorsque vous êtes invité à confirmer l’opération, cliquez sur **[!UICONTROL OK]** pour mettre à jour le niveau d’autorisation de chaque utilisateur.
 
    1. Pour modifier le niveau d’autorisation d’une personne, recherchez l’utilisateur dans la liste et modifiez le niveau d’autorisation. La modification est enregistrée automatiquement.

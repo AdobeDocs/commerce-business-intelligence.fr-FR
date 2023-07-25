@@ -2,9 +2,9 @@
 title: Types de colonne calculés avancés
 description: Découvrez les principes de base de la plupart des cas d’utilisation des colonnes, mais vous souhaiterez peut-être que les colonnes calculées soient un peu plus complexes que ce que le Gestionnaire de Data Warehouse peut créer.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-role: Data Architect, Data Engineer, User
+role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 4%

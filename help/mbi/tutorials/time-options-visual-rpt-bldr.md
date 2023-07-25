@@ -2,7 +2,9 @@
 title: Utiliser les options d’heure dans le Report Builder visuel
 description: Découvrez comment analyser les données de votre rapport pour une période spécifique.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -82,6 +84,7 @@ Pour illustrer ce cas d’utilisation, comparez les recettes quotidiennes du moi
    * `Time Interval`: Définissez cette variable sur `None`.
 
    * `Time Range`: Définissez cette variable sur `From 14 Months Ago To 13 Months Ago` par le premier clic **[!UICONTROL Custom]** then **[!UICONTROL Moving Range]**. Pour définir la plage, utilisez les champs et les listes déroulantes dans la partie supérieure du menu. Ce paramètre nous permet d’afficher les recettes du mois précédent, mais de l’année précédente.
+
    Ne vous inquiétez pas si la mesure disparaît du rapport. La définition d’une option d’heure indépendante masque automatiquement la mesure du rapport. Pour le réafficher, cliquez sur **[!UICONTROL Show]** en regard de la mesure.
 
    ![](../assets/Different_Time_Ranges.gif)
@@ -95,8 +98,6 @@ Pour illustrer ce cas d’utilisation, comparez les recettes quotidiennes du moi
    ![](../assets/TO4.png)
 
    * Renommez les mesures. Dans cet exemple, la première mesure est `Revenue - 2015` et le second est `Revenue - 2014`.
-
-
 
 Autre utilisation courante de la personnalisation `Time Options` est de déterminer les semaines d’approvisionnement. En particulier pendant la période des fêtes ou une période promotionnelle spéciale, vous pouvez considérer les articles vendus au cours de la dernière semaine, du mois et de la période promotionnelle précédente pour prendre des décisions d’achat éclairées.
 
@@ -129,13 +130,13 @@ Pour créer les formules, cliquez sur **[!UICONTROL Add Formula]**. Saisissez la
 * Pour le `last 7 days time period`, saisissez `D / A` dans le `Formula` champ .
 * Pour le `last 28 days time period`, saisissez `D / (B/4)` dans le `Formula` champ .
 
-   >[!NOTE]
-   >
-   >Il est important de normaliser ici les périodes sélectionnées. Ventilez 28 jours en quatre semaines dans cet exemple. Vous devrez peut-être appliquer une logique différente à la formule.
+  >[!NOTE]
+  >
+  >Il est important de normaliser ici les périodes sélectionnées. Ventilez 28 jours en quatre semaines dans cet exemple. Vous devrez peut-être appliquer une logique différente à la formule.
 
 * Pour le `last promo period`, saisissez `D / C` dans le `Formula` champ .
 
-   ![](../assets/Different_Time_Ranges_2.png)
+  ![](../assets/Different_Time_Ranges_2.png)
 
 * Enfin, personnalisez le rapport en masquant les mesures et en ajoutant une `SKU` ou une dimension similaire au rapport en tant que `Group By`.
 

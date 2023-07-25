@@ -2,7 +2,9 @@
 title: Filtres
 description: Découvrez comment utiliser les filtres.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -37,21 +39,21 @@ Un ou plusieurs filtres peuvent être ajoutés pour limiter les données utilis�
 
    * Cliquez sur la première partie du filtre et choisissez la colonne que vous souhaitez utiliser comme objet de l&#39;expression.
 
-      ![Sélection de la première partie du filtre](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![Sélection de la première partie du filtre](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * Cliquez sur la seconde partie du filtre et choisissez l&#39;opérateur.
 
-      ![Choisissez l&#39;opérateur](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![Choisissez l&#39;opérateur](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * Dans la troisième partie du filtre, saisissez la valeur nécessaire pour terminer l’expression.
 
-      ![Saisissez la valeur](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![Saisissez la valeur](../../assets/magento-bi-report-builder-filter-part3.png)
 
    * Une fois le filtre terminé, cliquez sur **[!UICONTROL Apply]**.
 
-      Le rapport comprend désormais uniquement les clients réguliers, et le nombre d’enregistrements de clients récupérés pour le rapport a été réduit de 33 000 à 12 600.
+     Le rapport comprend désormais uniquement les clients réguliers, et le nombre d’enregistrements de clients récupérés pour le rapport a été réduit de 33 000 à 12 600.
 
-      ![Rapport filtré](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![Rapport filtré](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. Dans la barre latérale, cliquez sur la perspective ( ![](../../assets/magento-bi-btn-perspective.png)).
 
