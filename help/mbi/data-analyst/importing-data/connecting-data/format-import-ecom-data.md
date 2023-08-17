@@ -17,15 +17,15 @@ Si vous utilisez une intégration qui n’est actuellement pas prise en charge p
 
 ## `Orders` table
 
-Le `orders` La table doit contenir une ligne pour chaque transaction effectuée par l’entreprise. Les colonnes potentielles sont les suivantes :
+La variable `orders` La table doit contenir une ligne pour chaque transaction effectuée par l’entreprise. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|
-| `Order ID` | L’identifiant de commande doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé Principale du tableau. |
+| `Order ID` | L’identifiant de commande doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé primaire de la table. |
 | `Customer` | Le client qui a passé la commande. |
 | `Order total` | Total de la commande. Il peut s’agir d’une colonne basée sur des calculs, dans laquelle les valeurs d’autres colonnes, telles que le sous-total et l’expédition, constituent le total de cette colonne. |
 | `Currency` | Devise dans laquelle la commande a été payée. Inclure si nécessaire. |
-| ` Order status` | État de la commande, tel que `In Progress`, `Refunded`ou `Complete`. La valeur de cette colonne change (si elle n’est pas terminée). Les données nouvelles et mises à jour peuvent être importées à l’aide de la variable [Fonction d’ajout de données](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) sur le `File Uploads` page. |
+| ` Order status` | État de la commande, tel que `In Progress`, `Refunded`, ou `Complete`. La valeur de cette colonne change (si elle n’est pas terminée). Les données nouvelles et mises à jour peuvent être importées à l’aide de la variable [Fonction d’ajout de données](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) sur le `File Uploads` page. |
 | `Acquisition/marketing channel` | Canal d’acquisition ou marketing duquel le client qui a passé la commande a été référencé. |
 | `Order datetime` | Date et heure de création de la commande. |
 | `Order updated at` | Date et heure de la dernière modification de l’enregistrement de commande. |
@@ -34,11 +34,11 @@ Le `orders` La table doit contenir une ligne pour chaque transaction effectuée 
 
 ## `Order detail/items` table {#itemstable}
 
-Le `order_detail / items` Le tableau doit contenir une ligne pour chaque élément distinct dans chaque ordre. Les colonnes potentielles sont les suivantes :
+La variable `order_detail / items` Le tableau doit contenir une ligne pour chaque élément distinct dans chaque ordre. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|
-| `Order item ID` | L’identifiant de l’élément de commande doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la variable `primary key` pour la table. |
+| `Order item ID` | L’identifiant de l’élément de commande doit être unique pour chaque ligne du tableau. Il s’agit généralement de la variable `primary key` pour la table. |
 | `Order ID` | L’identifiant de la commande. |
 | `Product ID` | ID du produit. |
 | `Product name` | Nom du produit. |
@@ -47,11 +47,11 @@ Le `order_detail / items` Le tableau doit contenir une ligne pour chaque éléme
 
 ## `Customers` table {#customerstable}
 
-Le `customers` Le tableau doit contenir une ligne pour chaque compte client. Les colonnes potentielles sont les suivantes :
+La variable `customers` Le tableau doit contenir une ligne pour chaque compte client. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|
-| `Customer ID` | L’ID de client doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé Principale du tableau. |
+| `Customer ID` | L’ID de client doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé primaire de la table. |
 | `Customer created at` | Date et heure de création du compte du client. |
 | `Customer modified at` | Date et heure de la dernière modification du compte du client. |
 | `Acquisition/marketing channel source` | Canal d’acquisition ou marketing à partir duquel le client a été référencé. |
@@ -60,11 +60,11 @@ Le `customers` Le tableau doit contenir une ligne pour chaque compte client. Les
 
 ## `Subscription payments` table
 
-Le `subscriptions` le tableau doit contenir une ligne pour chaque paiement d’abonnement. Les colonnes potentielles sont les suivantes :
+La variable `subscriptions` le tableau doit contenir une ligne pour chaque paiement d’abonnement. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|
-| `Subscription ID` | L’ID d’abonnement doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé Principale du tableau. |
+| `Subscription ID` | L’ID d’abonnement doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé primaire de la table. |
 | `Customer ID` | L’identifiant du client qui a effectué le paiement. |
 | `Payment amount` | Le montant du paiement d’abonnement. |
 | `Start date` | Date et heure de début de la période couverte par le paiement. |

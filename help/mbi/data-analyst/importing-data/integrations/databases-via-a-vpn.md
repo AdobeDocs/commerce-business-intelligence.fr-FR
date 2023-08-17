@@ -22,11 +22,11 @@ Adobe vous recommande de connecter vos bases de données à l’aide d’une `SS
 
 Outre les informations d’identification de base de données, vous devez saisir les informations d’identification d’un utilisateur VPN pour terminer. Tout utilisateur VPN fonctionne, mais Adobe vous recommande de créer un [!DNL Commerce Intelligence] , car cela facilite le suivi des utilisateurs sur votre compte.
 
-## Création d’un utilisateur de base de données pour [!DNL Commerce Intelligence] {#database}
+## Créer un utilisateur de base de données pour [!DNL Commerce Intelligence] {#database}
 
 Le processus de création d’un utilisateur de base de données varie en fonction du type de base de données que vous connectez. Pour afficher les instructions pour chaque type de base de données, cliquez sur les liens ci-dessous.
 
-* [Microsoft SQL](../integrations/microsoft-sql-server.md)
+* [MICROSOFT SQL](../integrations/microsoft-sql-server.md)
 * [MongoDB](../integrations/databases-via-a-vpn.md)
 * [MySQL](../integrations/mysql-via-a-direct-connection.md)
 * [PostgreSQL](../integrations/postgresql.md)
@@ -41,29 +41,29 @@ Pour que la connexion soit établie, vous devez configurer votre pare-feu pour a
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## Entrer dans la connexion et `VPN` informations sur l’utilisateur [!DNL Commerce Intelligence] {#finish}
+## la connexion et `VPN` informations sur l’utilisateur [!DNL Commerce Intelligence] {#finish}
 
-Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté la base de données `credentials` ouverture de la page ? Si ce n’est pas le cas, accédez à **[!UICONTROL Manage Data** > **Connections]**. Cliquez sur **[!UICONTROL Add New Data Source]**, puis cliquez sur l’icône correspondant à la base de données que vous connectez. N’oubliez pas de modifier la variable `Encrypted` bascule vers `Yes`.
+Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté la base de données `credentials` ouverture de la page ? Dans le cas contraire, accédez à **[!UICONTROL Manage Data** > **Connections]**. Cliquez sur **[!UICONTROL Add New Data Source]**, puis cliquez sur l’icône correspondant à la base de données que vous connectez. N’oubliez pas de modifier la variable `Encrypted` bascule vers `Yes`.
 
 Renseignez les informations suivantes dans cette page, en commençant par le `Database Connection` section :
 
-* `Username`: Nom d’utilisateur de la variable [!DNL Commerce Intelligence] utilisateur de base de données
-* `Password`: Le mot de passe du [!DNL Commerce Intelligence] utilisateur de base de données
-* `Port`: Port de la base de données sur votre serveur. Les valeurs par défaut sont les suivantes :
+* `Username`: nom d’utilisateur de la variable [!DNL Commerce Intelligence] utilisateur de base de données
+* `Password`: mot de passe de la variable [!DNL Commerce Intelligence] utilisateur de base de données
+* `Port`: port de la base de données sur votre serveur. Les valeurs par défaut sont :
    * `MicrosoftSQL`: `1433`
    * `MongoDB`: `27017`
    * `MySQL`: `3306`
    * `PostgreSQL`: `5432`
-* `Host`: Par défaut, il s’agit de localhost `127.0.0.1`, mais il peut également s’agir de l’adresse IP publique de votre serveur ou d’une adresse réseau locale.
-* `Database Name (optional)`: Si vous n&#39;avez autorisé l&#39;accès qu&#39;à une seule base de données (cette information est indiquée lors de l&#39;étape de création de l&#39;utilisateur de la base de données), indiquez son nom dans cette zone.
+* `Host`: par défaut, il s’agit de localhost `127.0.0.1`, mais il peut également s’agir de l’adresse IP publique de votre serveur ou d’une adresse réseau locale.
+* `Database Name (optional)`: si vous n’avez autorisé l’accès qu’à une seule base de données (cette information est indiquée lors de l’étape de création de l’utilisateur de base de données), saisissez le nom de cette base de données dans ce champ.
 
 Sous , `Encryption Connection` section :
 
-* `Encryption Type`: Définissez cette variable sur `Cisco IPsec VPN`
-* `Gateway Address`: Adresse IP du serveur VPN
-* `Group Name`: Nom du groupe utilisé pour l’authentification de groupe.
-* `Group Secret`: Mot de passe correspondant au groupe.
-* `Username`: Le [!DNL Commerce Intelligence] `VPN` username
-* `Password`: Le [!DNL Commerce Intelligence] `VPN` mot de passe utilisateur
+* `Encryption Type`: définissez cette variable sur `Cisco IPsec VPN`
+* `Gateway Address`: adresse IP du serveur VPN
+* `Group Name`: nom du groupe utilisé pour l’authentification de groupe.
+* `Group Secret`: mot de passe correspondant au groupe.
+* `Username`: la variable [!DNL Commerce Intelligence] `VPN` username
+* `Password`: la variable [!DNL Commerce Intelligence] `VPN` mot de passe utilisateur
 
 Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save & Test]** pour terminer la configuration.

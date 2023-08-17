@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Avantages techniques
 
-Les principales différences sont répertoriées ci-dessus, mais la principale modification est la façon dont les calculs sont effectués pendant le cycle de mise à jour. Les calculs ne sont plus exécutés sur chaque colonne à chaque mise à jour ; à la place, elles sont exécutées à la demande à partir du Report Builder visuel.
+Les principales différences sont répertoriées ci-dessus, mais la principale modification est la façon dont les calculs sont effectués pendant le cycle de mise à jour. Les calculs ne sont plus exécutés sur chaque colonne à chaque mise à jour ; ils le sont plutôt sur demande à partir du Report Builder visuel.
 
 ### Passage à la nouvelle architecture
 
@@ -45,7 +45,7 @@ Une fois cette opération terminée, vous savez quelles données vous devez sync
 
 ### Obtention d’aide
 
-Le [!DNL Adobe Commerce Intelligence] [Équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) Vous pouvez effectuer votre remise en oeuvre pour un coût supplémentaire. Contactez votre [Équipe du compte Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) et être prêt à fournir une liste de tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte.
+La variable [!DNL Adobe Commerce Intelligence] [Équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) Vous pouvez effectuer votre remise en oeuvre pour un coût supplémentaire. Contactez votre [Équipe du compte Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) et être prêt à fournir une liste de tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte.
 
 ### Rester avec l’architecture existante
 

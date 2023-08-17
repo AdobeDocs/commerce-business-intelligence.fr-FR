@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Taux de perte de clientèle
 
-Cette rubrique explique comment calculer une **taux de perte de clientèle** pour votre **clients commerciaux**. Contrairement aux SaaS ou aux sociétés d’abonnement traditionnelles, les clients commerciaux n’ont généralement pas de clients concrets. **&quot;churn event&quot;** pour vous montrer qu’ils ne doivent plus compter pour vos principaux clients. Pour cette raison, les instructions ci-dessous vous permettent de définir un client comme &quot;généré&quot; en fonction d’un temps déterminé écoulé depuis sa dernière commande.
+Cette rubrique explique comment calculer une **taux de perte de clientèle** pour votre **clients commerciaux**. Contrairement aux SaaS ou aux sociétés d’abonnement traditionnelles, les clients commerciaux n’ont généralement pas de clients concrets. **&quot;churn event&quot;** pour vous montrer qu’ils ne doivent plus compter pour vos clients actifs. Pour cette raison, les instructions ci-dessous vous permettent de définir un client comme &quot;généré&quot; en fonction d’un délai déterminé écoulé depuis sa dernière commande.
 
 ![](../../assets/Churn_rate_image.png)
 
@@ -37,7 +37,7 @@ Colonnes à créer
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ## Mesures
 
@@ -69,12 +69,12 @@ Colonnes à créer
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ## Rapports
 
 * **Taux de perte de clientèle**
-   * [!UICONTROL Metric]: Nouveaux clients (par date de première commande)
+   * [!UICONTROL Metric]: nouveaux clients (par date de première commande)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
      [!UICONTROL Perspective]: `Cumulative`

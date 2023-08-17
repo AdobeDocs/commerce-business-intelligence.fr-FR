@@ -49,7 +49,7 @@ Cette collection de rapports est créée à l’aide des éléments suivants :
 1. Remplacez votre période par une plage mobile, d’il y a 13 mois à il y a 1 mois, puis ajustez l’intervalle sur `by month`.
 1. Attribuez un nom à votre rapport, par exemple `Page views by month,` et cliquez sur **[!UICONTROL Save]**.
 
-**Le troisième graphique présente le taux de rebond de l’année écoulée :**
+**Le troisième graphique présente le taux de rebond au cours de l’année écoulée :**
 
 1. Créez un rapport.
 1. Cliquez sur **[!UICONTROL Add Metric]**, placez le pointeur de la souris sur l’objet [!DNL Google Analytics] au bas de la liste déroulante, puis sélectionnez _Taux de rebond_.
@@ -61,16 +61,16 @@ Cette collection de rapports est créée à l’aide des éléments suivants :
 1. Créez un rapport.
 1. Cliquez sur **UICONTROL Add Metric**, placez le pointeur de la souris sur l’objet [!DNL Google Analytics] au bas de la liste déroulante, puis sélectionnez `Average Session Length`.
 1. Remplacez votre période par une plage mobile, d’il y a 13 mois à il y a 1 mois, puis ajustez l’intervalle sur `by month`?
-1. Ajouter un `Group by` et sélectionnez `New or returning visitor`.  Vérifiez les `Show All` la boîte; puis cliquez sur **[!UICONTROL Apply]**.
+1. Ajouter un `Group by` et sélectionnez `New or returning visitor`.  Vérifiez les `Show All` , puis cliquez sur **[!UICONTROL Apply]**.
 1. Attribuez un nom à votre rapport, par exemple `Average session length`, puis cliquez sur **[!UICONTROL Save]**.
 
-**Examinez ensuite les principaux domaines référents des 30 derniers jours :**
+**Examinez ensuite les principaux domaines référents au cours des 30 derniers jours :**
 
 1. Créez un rapport.
 1. Cliquez sur **[!UICONTROL Add Metric]**, placez le pointeur de la souris sur l’objet [!DNL Google Analytics] au bas de la liste déroulante, puis sélectionnez `Sessions`.
-1. Remplacez votre période par une période glissante, d’il y a 31 jours à il y a 1 jour, puis ajustez l’intervalle sur `none`.
-1. Ajouter un `Group by` et sélectionnez `ga:source`.  Vérifiez les _Tout afficher_ la boîte; puis cliquez sur **[!UICONTROL Apply]**.
-1. Ajouter un autre `group by` et sélectionnez `ga:medium`. Vérifiez à nouveau le `Show All` la boîte; puis cliquez sur **[!UICONTROL Apply]**.
+1. Remplacez votre période par une période glissante, d’il y a 31 jours à 1 jour, puis ajustez l’intervalle sur `none`.
+1. Ajouter un `Group by` et sélectionnez `ga:source`.  Vérifiez les _Tout afficher_ , puis cliquez sur **[!UICONTROL Apply]**.
+1. Ajouter un autre `group by` et sélectionnez `ga:medium`. Vérifiez à nouveau le `Show All` , puis cliquez sur **[!UICONTROL Apply]**.
 1. Attribuez un nom à votre rapport, par exemple `Top 20 Referring Domains, 30 Days`, puis cliquez sur **[!UICONTROL Save]**.
 
 **Enfin, examinez la conversion :**
@@ -94,7 +94,7 @@ Cette collection de rapports est créée à l’aide des éléments suivants :
    * Ajoutez les formules suivantes en cliquant sur **[!UICONTROL Formula]**.
    * A/D, puis cliquez sur **[!UICONTROL Apply]**
    * Renommer la formule `Registration conversion`
-   * B/D puis cliquez sur **[!UICONTROL Apply]**
+   * B/D, puis cliquez sur **[!UICONTROL Apply]**
    * Renommer la formule `First order conversion`
    * C/D puis cliquez sur **[!UICONTROL Apply]**
    * Renommer la formule `Any order conversion`

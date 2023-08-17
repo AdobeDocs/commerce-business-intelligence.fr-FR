@@ -8,29 +8,29 @@ exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# [!DNL Adobe Commerce Intelligence] Guide de l’utilisateur
+# [!DNL Adobe Commerce Intelligence] Guide d’utilisation
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Intelligence] était auparavant connu sous le nom [!DNL Magento Business Intelligence]. Une série de mises à jour est en cours pour que ce guide capture les modifications.
+>[!DNL Adobe Commerce Intelligence] était auparavant connu sous le nom de [!DNL Magento Business Intelligence]. Une série de mises à jour est en cours pour que ce guide capture les modifications.
 
 Les administrateurs de données ont deux zones :
 
-- L’administrateur : Utilisez cette zone pour accéder à l’interface utilisateur de configuration et aux rapports.
-- Interface de ligne de commande : Utilisez cet outil pour exécuter les tâches d’installation et de configuration du serveur principal.
+- L’administrateur : utilisez cette zone pour accéder à l’interface utilisateur de configuration et aux rapports.
+- Interface de ligne de commande : utilisez cet outil pour exécuter les tâches d’installation et de configuration du serveur principal.
 
 ## Utilisation de ce guide
 
 Ce guide contient les sections suivantes, organisées en fonction du rôle que vous pouvez avoir au sein de votre organisation.
 
-- [Utilisateur de données](data-user.md): Vous utilisez les données pour vous aider à prendre des décisions professionnelles. Vous pouvez recevoir des rapports et des tableaux de bord d’un analyste de données de votre équipe, mais vous souhaitez également apprendre à créer ces rapports et tableaux de bord.
-- [Analyste de données](data-analyst.md): Vous êtes à l’aise avec la conception de requêtes et vous êtes la personne de référence pour l’analyse des données. Vous savez comment trouver des réponses spécifiques à des questions de données et vous souhaitez faciliter l’expérience en libre-service pour vos collègues.
-- Administrateur : Vous gérez le [!DNL Commerce Intelligence] compte comprenant la licence, l’ajout et la suppression d’utilisateurs, ainsi que la gestion des tâches administratives essentielles.
+- [Utilisateur de données](data-user.md): vous utilisez les données pour vous aider à prendre des décisions commerciales. Vous pouvez recevoir des rapports et des tableaux de bord d’un analyste de données de votre équipe, mais vous souhaitez également apprendre à créer ces rapports et tableaux de bord.
+- [Analyste de données](data-analyst.md): vous vous sentez à l’aise dans la conception de requêtes et vous êtes la personne idéale pour l’analyse des données. Vous savez comment trouver des réponses spécifiques à des questions de données et vous souhaitez faciliter l’expérience en libre-service pour vos collègues.
+- Administrateur : vous gérez le [!DNL Commerce Intelligence] compte comprenant la licence, l’ajout et la suppression d’utilisateurs, ainsi que la gestion des tâches administratives essentielles.
 
 Outre les workflows basés sur les rôles ci-dessus, ce guide contient également :
 

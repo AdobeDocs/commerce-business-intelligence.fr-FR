@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Valeur attendue [!DNL Google Analytics] data
 
-Après avoir connecté une [!DNL Google Analytics] intégration, vous pouvez interagir avec votre [!DNL Google Analytics] mesures *immédiatement dans le`Visual Report Builder`*. Lorsque vous saisissez le `Visual Report Builder`, si vous cliquez sur **[!UICONTROL Add a Metric]**, une série de mesures de votre [!DNL Google Analytics] s’affiche dans une liste déroulante sous les mesures de votre Data Warehouse.
+Après avoir connecté une [!DNL Google Analytics] intégration, vous pouvez interagir avec votre [!DNL Google Analytics] mesures *immédiatement dans la variable`Visual Report Builder`*. Lorsque vous saisissez la variable `Visual Report Builder`, si vous cliquez sur **[!UICONTROL Add a Metric]**, une série de mesures de votre [!DNL Google Analytics] s’affiche dans une liste déroulante sous les mesures de votre Data Warehouse.
 
-Le [!DNL Google Analytics] l’intégration *live* — cela signifie que la variable `Report Builder` demande des données à partir de [!DNL Google Analytics] *immédiatement* lorsque vous ajoutez une mesure à votre rapport. Cela signifie également que les mesures auxquelles vous pouvez accéder sont définies exactement comme elles se trouvent dans [!DNL Google Analytics], et que ces valeurs ne sont pas *entreposé* dans votre [!DNL Commerce Intelligence] compte : s’affichait visuellement uniquement dans vos rapports.
+La variable [!DNL Google Analytics] l’intégration *live* — cela signifie que la variable `Report Builder` demande des données depuis [!DNL Google Analytics] *immédiatement* lorsque vous ajoutez une mesure à votre rapport. Cela signifie également que les mesures auxquelles vous pouvez accéder sont définies exactement comme elles se trouvent dans [!DNL Google Analytics], et que ces valeurs ne sont pas *entreposé* dans votre [!DNL Commerce Intelligence] compte : s’affichait visuellement uniquement dans vos rapports.
 
 +++Mesures et Dimensions prises en charge (Google Analytics 3 ou Universal Analytics)
 

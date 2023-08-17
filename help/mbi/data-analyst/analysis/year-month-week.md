@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cette rubrique contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la [nouvelle architecture](../../administrator/account-management/new-architecture.md) si vous disposez de la variable [!DNL _Vues Data Warehouse_] section disponible après sélection [!DNL Manage Data] dans la barre d’outils principale.
+>Cette rubrique contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la page [nouvelle architecture](../../administrator/account-management/new-architecture.md) si vous disposez de la variable [!DNL _Vues Data Warehouse_] section disponible après sélection [!DNL Manage Data] dans la barre d’outils principale.
 
 Le Créateur de rapports vous permet d’afficher facilement les tendances au fil du temps et de modifier la perspective pour les périodes que vous souhaitez comparer. Cette rubrique explique comment configurer un tableau de bord pour qu’il s’approfondisse afin que vous puissiez créer des rapports pour une analyse d’une semaine à l’autre, d’un mois à l’autre et d’une année à l’autre.
 
@@ -49,7 +49,7 @@ Aucun.
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ## Rapports
 
@@ -59,7 +59,7 @@ Aucun.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]: Les 100 % les plus triés par **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]: 100 % supérieurs triés par **`created_at (month-day)`***
 
 * Mesure `A`: `This year`
 * Mesure `B`: `Last year`
@@ -76,10 +76,10 @@ Aucun.
    * [!UICONTROL Metric]: `Number of orders`
    * Options d’heure : `Time range (Custom)`: `2 months ago to 1 month ago`
 
-   * Afficher en haut/en bas : Les 100 % les plus triés par **`created_at (day of month)`***
+   * Afficher en haut/en bas : les 100 % supérieurs triés par **`created_at (day of month)`***
 
-* Mesure `A`: Ce mois*
-* Mesure `B`: Mois dernier*
+* Mesure `A`: ce mois*
+* Mesure `B`: mois dernier*
 * [!UICONTROL Time period]: il y a un mois à 0 mois
 * 
   [!UICONTROL Interval]: None
@@ -87,13 +87,13 @@ Aucun.
 * 
   [!UICONTROL Chart Type]: Line
 
-* **Graphique WoW**
+* **Graphique W**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]: Les 100 % les plus triés par `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]: 100 % supérieurs triés par `created_at (day of week)`
 
 * Mesure `A`: `This week`
 * Mesure `B`: `Last week`
@@ -110,7 +110,7 @@ Aucun.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]: Les 100 % les plus triés par `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]: 100 % supérieurs triés par `created_at (hour of day)`
 
 * Mesure `A`: `Today`
 * Mesure B : `Yesterday`

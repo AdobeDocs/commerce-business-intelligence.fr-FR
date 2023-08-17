@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Utilisation d’un rapport
+# Utiliser un rapport
 
 Utilisation des rapports dans [!DNL Adobe Commerce Intelligence] pour vous aider à répondre aux questions d’entreprise, que vous souhaitiez simplement consulter les recettes de ce mois par rapport à l’année précédente ou comprendre vos coûts d’acquisition pour vos dernières [!DNL Google AdWords] campaign.
 
@@ -49,8 +49,8 @@ Ventilez votre mesure dans ses composants principaux. Vous devez connaître le n
 
 À un niveau plus granulaire, vous devez identifier les champs de données exacts utilisés pour cette analyse :
 
-* Le tableau de données et la colonne contenant la date d’enregistrement d’un client : par exemple `user.created\_at`
-* Le tableau de données et la colonne contenant une date d’achat : par exemple `order.created\_at`
+* Le tableau de données et la colonne contenant la date d’enregistrement d’un client, par exemple : `user.created\_at`
+* Le tableau de données et la colonne contenant une date d’achat, par exemple : `order.created\_at`
 
 ## Création de colonnes de données à analyser
 
@@ -66,7 +66,7 @@ Ces deux champs doivent être créés au niveau de l’utilisateur (par exemple,
 
 C’est là que [!DNL Commerce Intelligence] entrez ! Vous pouvez utiliser [!DNL Commerce Intelligence] Data Warehouse pour créer les colonnes ci-dessus. Contactez l’équipe d’analystes d’Adobe et fournissez-nous la définition spécifique de vos nouvelles colonnes à créer. Vous pouvez également utiliser la variable [Éditeur de colonnes](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
-Il est recommandé d’éviter de créer directement ces champs de données calculés dans votre base de données, car cela impose un fardeau inutile aux serveurs de production.
+Il est recommandé d’éviter de créer directement ces champs de données calculés dans votre base de données, car cela impose une charge inutile à vos serveurs de production.
 
 ## Création de la mesure
 
@@ -77,7 +77,7 @@ Ici, vous souhaitez effectuer le calcul suivant :
 
 _[SOMME de `Time between a customer's registration date and first purchase date`] / [Nombre total de clients qui se sont inscrits et ont acheté]_
 
-Et vous souhaitez voir ce calcul tracé au fil du temps, ou tendance, selon la date d’enregistrement d’un client. Et voici comment [créer cette mesure](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
+Et vous souhaitez voir ce calcul tracé au fil du temps, ou tendance, en fonction de la date d’enregistrement d’un client. Et voici comment [créer cette mesure](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
 1. Accédez à **[!UICONTROL Data]** et sélectionnez la variable `Metrics` .
 1. Cliquez sur **[!UICONTROL Add New Metric]** et sélectionnez la variable `user` (où vous avez créé les dimensions ci-dessus).
@@ -90,11 +90,11 @@ Cette mesure est maintenant prête.
 
 Une fois la nouvelle mesure configurée, vous pouvez l’utiliser pour créer des rapports sur la durée moyenne entre l’enregistrement et la date du premier achat par date d’enregistrement.
 
-Il vous suffit d’accéder à n’importe quel tableau de bord et [création d’un rapport](../../data-user/reports/ess-manage-data-metrics.md) en utilisant la mesure créée ci-dessus.
+Accédez simplement à n’importe quel tableau de bord et [créer un rapport ;](../../data-user/reports/ess-manage-data-metrics.md) en utilisant la mesure créée ci-dessus.
 
 ### `Visual Report Builder` {#visualrb}
 
-[Le `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) est le moyen le plus simple de visualiser vos données. Si vous ne connaissez pas SQL ou si vous souhaitez créer rapidement un rapport, le Report Builder visuel est votre meilleur choix. En quelques clics seulement, vous pouvez ajouter des mesures, segmenter vos données et créer des rapports pour l’ensemble de votre organisation. Cette option est idéale pour les débutants comme pour les experts, car elle ne nécessite aucune expertise technique.
+[La variable `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) est le moyen le plus simple de visualiser vos données. Si vous ne connaissez pas SQL ou si vous souhaitez créer rapidement un rapport, le Report Builder visuel est votre meilleur choix. En quelques clics seulement, vous pouvez ajouter des mesures, segmenter vos données et créer des rapports pour l’ensemble de votre organisation. Cette option est idéale pour les débutants comme pour les experts, car elle ne nécessite aucune expertise technique.
 
 |  |  |
 |--- |--- |
@@ -124,7 +124,7 @@ Vous devez inclure un rapport dans une présentation ou un document ? Tout rappo
 1. Cliquez sur l’icône d’engrenage dans le coin supérieur droit d’un rapport.
 1. Dans la liste déroulante, sélectionnez `Enlarge`.
 1. Lorsque le rapport s’agrandit, cliquez sur **[!UICONTROL Download]** dans le coin supérieur droit du rapport.
-1. Sélectionnez le format d’image de votre choix dans la liste déroulante. Le téléchargement commence immédiatement.
+1. Sélectionnez le format d’image préféré dans la liste déroulante. Le téléchargement commence immédiatement.
 
 Voir ci-dessous :
 

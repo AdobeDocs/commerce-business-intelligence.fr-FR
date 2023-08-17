@@ -39,7 +39,7 @@ Colonnes à créer, quelle que soit la stratégie de commandes d’invités :
 
    * 
      [!UICONTROL Type de données]: `String`
-   * [!UICONTROL Calculation]: Cas lorsque `A` est nul alors `No coupon` else `Coupon` end
+   * [!UICONTROL Calculation]: casse lorsque `A` est nul alors `No coupon` else `Coupon` end
 
 * **\[INPUT\] customer\_id - code de coupon**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
@@ -75,7 +75,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
          * `A`: `Orders we count`
          * `B`: `Customer's order number = 1`
 
-   * **Nombre de coupons utilisés sur la durée de vie du client**
+   * **Nombre de coupons utilisés sur toute la durée de vie du client**
       * [!UICONTROL Column type]: `Many to One => COUNT`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * [!UICONTROL Filter]:
@@ -128,7 +128,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * **La première commande du client comprenait un coupon ? (Bon/Aucun coupon)** **-** créé par analyste dans le cadre de votre ticket \[ANALYSE COUPON\]
    * **Coupon de première commande du client**{:}**-** créé par analyste dans le cadre de votre ticket \[ANALYSE COUPON\]
 
-* **Nombre de coupons utilisés sur la durée de vie du client**{:}**-** créé par analyste dans le cadre de votre ticket \[ANALYSE COUPON\]
+* **Nombre de coupons utilisés sur toute la durée de vie du client**{:}**-** créé par analyste dans le cadre de votre ticket \[ANALYSE COUPON\]
 * **Client ayant acheté un coupon ou client ayant acheté un autre coupon**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
@@ -181,7 +181,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ## Rapports
 
@@ -208,7 +208,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 * **Chiffre d’affaires moyen de la durée de vie : Bons Acq. (90 jours ou plus)**
    * [!UICONTROL Metric]: `Average lifetime revenue`
    * [!UICONTROL Filter]:
-      * La première commande du client comprenait un coupon (coupon/aucun coupon) = coupon
+      * La première commande du client comprenait un coupon (Bon/Aucun coupon) = Bon
 
 * Mesure `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
@@ -217,8 +217,8 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 * 
   [!UICONTROL Type de graphique]: `Scalar`
 
-* **Chiffre d’affaires moyen de la durée de vie : Acq non coupon. (90 jours ou plus)**
-   * [!UICONTROL Metric]: Chiffre d’affaires moyen
+* **Chiffre d’affaires moyen de la durée de vie : Acq non-coupon. (90 jours ou plus)**
+   * [!UICONTROL Metric]: recettes moyennes sur la durée
    * [!UICONTROL Filter]:
       * La première commande du client comprenait un coupon (Bon/Aucun coupon) = Aucun coupon
 
@@ -247,11 +247,11 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 * **Probabilité de commande répétée : Acquisitions de coupons**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
-      * La première commande du client comprenait un coupon (coupon/aucun coupon) = coupon
+      * La première commande du client comprenait un coupon (Bon/Aucun coupon) = Bon
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
-      * La première commande du client comprenait un coupon (coupon/aucun coupon) = coupon
+      * La première commande du client comprenait un coupon (Bon/Aucun coupon) = Bon
       * La dernière commande du client ? = Non
    * 
      [!UICONTROL Formule]: `B/A`
@@ -268,14 +268,14 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
-* **Probabilité de l’ordre de répétition : Acquisitions sans coupon**
+* **Probabilité des commandes répétées : acquisitions sans coupon**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
-      * La première commande du client comprenait un bon (bon/pas de bon) = Aucun bon
+      * La première commande du client comprenait un coupon (coupon/aucun coupon) = Aucun coupon
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
-      * La première commande du client comprenait un bon (bon/pas de bon) = Aucun bon
+      * La première commande du client comprenait un coupon (coupon/aucun coupon) = Aucun coupon
       * La dernière commande du client ? = Non
 
    * 
@@ -301,13 +301,13 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Numéro de commande du client > 1
-      * La première commande du client comprenait un coupon ? (Coupon/Aucun coupon) = Coupon
+      * La première commande du client comprenait un coupon ? (Bon/Aucun coupon) = Bon
 
    * [!UICONTROL Metric]:`Number of orders`
    * [!UICONTROL Filter]:
       * Numéro de commande du client > 1
-      * La première commande du client comprenait un coupon ? (Coupon/Aucun coupon) = Coupon
-      * Bon de commande appliqué ? (Coupon/Aucun coupon) = Coupon
+      * La première commande du client comprenait un coupon ? (Bon/Aucun coupon) = Bon
+      * Bon de commande appliqué ? (Bon/Aucun coupon) = Bon
 
    * 
      [!UICONTROL Formule]: `C/B`
@@ -331,13 +331,13 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Numéro de commande du client > 1
-      * La première commande du client comprenait un coupon ? (Coupon/Aucun coupon) = Aucun coupon
+      * La première commande du client comprenait un coupon ? (Bon/Aucun coupon) = Aucun coupon
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Numéro de commande du client > 1
-      * La première commande du client comprenait un coupon ? (Coupon/Aucun coupon) = Aucun coupon
-      * Bon de commande appliqué ? (Coupon/Aucun coupon) = Coupon
+      * La première commande du client comprenait un coupon ? (Bon/Aucun coupon) = Aucun coupon
+      * Bon de commande appliqué ? (Bon/Aucun coupon) = Bon
 
    * 
      [!UICONTROL Formule]: `C/B`
@@ -370,7 +370,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
       * Numéro de commande du client = 1
       * Nombre de commandes avec ce coupon > 10
 
-   * [!UICONTROL Formula]: `B-C` (si C est négatif); B+C (si C est positif)
+   * [!UICONTROL Formula]: `B-C` (si C est négatif) ; B+C (si C est positif)
    * 
      [!UICONTROL Format]: `Currency`
 
@@ -408,7 +408,7 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
    * 
      [!UICONTROL Mesure]: `Revenue`
    * [!UICONTROL Filter]:
-      * Bon de commande appliqué ? (Coupon/Aucun coupon) = Coupon
+      * Bon de commande appliqué ? (Bon/Aucun coupon) = Bon
 
 * Mesure `A`: `Net revenue from orders with coupons`
 * [!UICONTROL Time period]: `All time`

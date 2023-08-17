@@ -63,8 +63,8 @@ Un ou plusieurs filtres peuvent être ajoutés pour limiter les données utilis�
 
    ![Perspective cumulée](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
-   Le `Cumulative` La perspective répartit le changement au fil du temps, plutôt que d’afficher les décalages vers le haut et vers le bas pour chaque mois.
+   La variable `Cumulative` La perspective répartit le changement au fil du temps, plutôt que d’afficher les décalages vers le haut et vers le bas pour chaque mois.
 
-1. Saisissez un `Title` pour le rapport et cliquez sur **[!UICONTROL Save]** it as a `Chart` à votre tableau de bord.
+1. Saisissez un `Title` pour le rapport, puis cliquez sur **[!UICONTROL Save]** it as a `Chart` à votre tableau de bord.
 
    ![Enregistrer dans le tableau de bord](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

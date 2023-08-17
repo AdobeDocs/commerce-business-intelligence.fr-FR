@@ -43,7 +43,7 @@ Dans un `one-to-many` relation, un enregistrement dans la table `A` peut potenti
 
 Dans un `many-to-many` relation, un enregistrement dans la table `B` peut potentiellement appartenir à plusieurs enregistrements de la table `A`. Et vice versa : un enregistrement dans la table `A` peut potentiellement appartenir à plusieurs enregistrements dans Ttable `B`.
 
-Pensez à la relation entre **products** et **categories**: un produit peut appartenir à de nombreuses catégories et une catégorie peut contenir de nombreux produits.
+Pensez à la relation entre **products** et **categories**: un produit peut appartenir à plusieurs catégories et une catégorie peut contenir de nombreux produits.
 
 ![](../../assets/many-to-many.png)
 
@@ -71,9 +71,9 @@ Une fois que vous avez identifié la terminologie qui décrit le mode d’intera
 
 ### `One-to-One`
 
-Une personne donnée ne peut avoir qu&#39;un seul numéro de permis de conduire. Un numéro de permis de conduire donné n&#39;appartient qu&#39;à une seule personne.
+Une personne donnée ne peut avoir qu&#39;un seul numéro de permis de conduire. Un numéro de permis de conduire donné appartient à une seule personne.
 
-Il s’agit d’une `one-to-one` où chaque tableau est un côté.
+Ceci est une `one-to-one` où chaque tableau est un côté.
 
 ![](../../assets/one-to-one3.png)
 
@@ -81,7 +81,7 @@ Il s’agit d’une `one-to-one` où chaque tableau est un côté.
 
 Une commande donnée peut contenir de nombreux éléments. Un élément donné appartient à une seule commande.
 
-Il s’agit d’une `one-to-many` la relation dans laquelle la table des commandes est la seule et la table des éléments est la relation multiple.
+Ceci est une `one-to-many` la relation dans laquelle la table des commandes est la seule et la table des éléments est la relation multiple.
 
 ![](../../assets/one-to-many3.png)
 
@@ -89,7 +89,7 @@ Il s’agit d’une `one-to-many` la relation dans laquelle la table des command
 
 Un produit donné peut appartenir à plusieurs catégories. Une catégorie donnée peut contenir de nombreux produits.
 
-Il s’agit d’une `many-to-many` où chaque table est un côté multiple.
+Ceci est une `many-to-many` où chaque table est un côté multiple.
 
 ![](../../assets/many-to-many3.png)
 
@@ -111,9 +111,9 @@ Par exemple, un `users` peut capturer la plupart des attributs utilisateur (tels
 
 >[!NOTE]
 >
->Acceptez-vous les commandes des invités ? Voir [Commandes d’invités](../data-warehouse-mgr/guest-orders.md) pour découvrir comment les commandes d’invités peuvent avoir un impact sur vos relations de table.
+>Acceptez-vous les commandes des invités ? Voir [Commandes d’invités](../data-warehouse-mgr/guest-orders.md) pour découvrir comment les commandes d’invités peuvent avoir un impact sur vos relations de table.
 
-Lorsque des tables sont liées à l’aide d’une `Foreign key` pointant vers un `primary key`, cette configuration décrit une `one-to-many` relation. Le seul côté est le tableau contenant le `primary key` et le côté multiple est la table contenant le `foreign key`.
+Lorsque des tables sont liées à l’aide d’une `Foreign key` pointant vers un `primary key`, cette configuration décrit une `one-to-many` relation. Le seul côté est le tableau contenant la variable `primary key` et le côté multiple est la table contenant le `foreign key`.
 
 ![](../../assets/one-to-many1.png)
 
@@ -129,4 +129,4 @@ Si l’une des conditions suivantes est vraie, la relation est `many-to-many`:
 
 ## Étapes suivantes
 
-L’évaluation correcte des relations entre les tables est essentielle pour modéliser précisément vos données. Maintenant que vous comprenez comment les tables sont liées les unes aux autres, reportez-vous à la section [ce que vous pouvez faire avec le Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
+L’évaluation correcte des relations entre les tables est essentielle pour modéliser précisément vos données. Maintenant que vous comprenez comment les tables sont liées les unes aux autres, reportez-vous à la section [ce que vous pouvez faire avec Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md).

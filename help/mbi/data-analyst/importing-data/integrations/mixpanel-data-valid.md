@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Validation des données dans [!DNL Mixpanel]
 
-When [!DNL Adobe Commerce Intelligence] se connecte d’abord à votre [!DNL Mixpanel] , votre gestionnaire de compte ou votre analyste peut vous demander de fournir des exportations de données depuis [!DNL Mixpanel] à des fins de validation. Cela vous permet de confirmer que vous avez synchronisé toutes les mêmes données disponibles directement dans [!DNL Mixpanel].
+When [!DNL Adobe Commerce Intelligence] se connecte d’abord à votre [!DNL Mixpanel] , votre gestionnaire de compte ou votre analyste peut vous demander de fournir des exportations de données depuis [!DNL Mixpanel] pour la validation. Cela vous permet de confirmer que vous avez synchronisé toutes les mêmes données disponibles directement dans [!DNL Mixpanel].
 
 ## Processus d’exportation des données : `Events`
 

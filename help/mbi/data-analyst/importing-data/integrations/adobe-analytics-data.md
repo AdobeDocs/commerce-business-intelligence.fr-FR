@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Valeur attendue [!DNL Adobe Analytics] Données
 
-Le [!DNL Adobe Analytics] intégration pour [!DNL Adobe Commerce Intelligence] utilise la variable [API de création de rapports Analytics 2.0](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md).
+La variable [!DNL Adobe Analytics] intégration pour [!DNL Adobe Commerce Intelligence] utilise la variable [API de création de rapports dans Analytics 2.0](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md).
 
 >[!INFO]
 >
->Pour obtenir les données attendues, vous pouvez d’abord créer un rapport dans la variable [!DNL Adobe Analytics] Workspace avec les mesures et dimensions de votre choix. Vous pouvez ainsi vérifier la compatibilité et la disponibilité des données.
+>Pour vous assurer d’obtenir les données attendues, vous pouvez d’abord créer un rapport dans le [!DNL Adobe Analytics] Workspace avec les mesures et dimensions de votre choix. Vous pouvez ainsi vérifier la compatibilité et la disponibilité des données.
 
 Un tableau par suite de rapports connectée appelé `report-suite-<ID>` (où `<ID>` est un identifiant unique généré par [!DNL Commerce Intelligence]) est créé dans votre Data Warehouse.
 
@@ -31,13 +31,13 @@ Le tableau contiendra les colonnes suivantes :
 
 | Nom de la colonne | Description |
 | --- | --- |
-| `_id` | Cette colonne est la Principale clé. |
+| `_id` | Cette colonne est la clé primaire. |
 | `_item_hash` | [!DNL Commerce Intelligence] identifiant unique. Cette colonne est créée par [!DNL Commerce Intelligence]. |
-| `_updated_at` | Cette colonne contient la dernière fois que la ligne de données a été mise à jour. Il est créé par [!DNL Commerce Intelligence]. |
+| `_updated_at` | Cette colonne contient la dernière mise à jour de la ligne de données. Il est créé par [!DNL Commerce Intelligence]. |
 | `start_date` | Date de début des données incluses pour la ligne. `start_date` est toujours 00:00 du même jour sur une ligne. |
 | `end_date` | Date de fin des données incluses pour la ligne. `end_date` est toujours 02:59 du même jour sur une ligne. |
-| `page_views` | Mesure sélectionnée : Nombre total de pages vues pour la période identifiée. |
-| `page` | Dimension sélectionnée : Noms de page individuels avec vues suivies. |
+| `page_views` | Mesure sélectionnée : nombre total de pages vues pour la période identifiée. |
+| `page` | Dimension sélectionnée : noms de page individuels avec vues suivies. |
 
 Déterminer quelles mesures et dimensions sélectionnées disposent de données dans votre [!DNL Commerce Intelligence] en utilisant la variable *synchronisation* ou *unsync* dans le `Data Warehouse` page. Les colonnes non synchronisées apparaissent en gris. Si vous arrêtez de synchroniser une colonne, vous pouvez recommencer la synchronisation ultérieurement.
 

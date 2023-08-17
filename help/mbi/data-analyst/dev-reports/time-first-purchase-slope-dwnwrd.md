@@ -21,7 +21,7 @@ En effet, ces nouveaux clients n’ont pas encore eu la possibilité de génére
 
 Il existe d’autres façons potentielles d’examiner cette mesure qui introduisent moins de biais. Examinez un exemple.
 
-## Exemple : Effectuez une `cohort` analyse des premières commandes
+## Exemple : effectuer une `cohort` analyse des premières commandes
 
 Vous pouvez avoir un graphique sur votre `Users` tableau de bord nommé `Time to first order cohort`. Ce rapport utilise la variable `Distinct buyers` mesure, groupe les utilisateurs par `cohort` semaines ou mois d’inscription et affiche le rapport (entre `0` et `1`) des utilisateurs qui ont effectué un premier achat au cours des semaines ou des mois suivants après l’enregistrement.
 

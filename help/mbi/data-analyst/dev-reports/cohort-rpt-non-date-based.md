@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Cohort Report Builder] pour les cohortes non basées sur des dates
 
-Le [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) est très utile pour aider les marchands à étudier le comportement des différents sous-ensembles d’utilisateurs au fil du temps. Dans le passé, la `Cohort Report Builder` était optimisé pour regrouper les utilisateurs selon un `cohort date` (par exemple, l’ensemble de tous les clients qui ont effectué leur premier achat au cours d’un mois donné). Le `Non-Date Based Cohort` permet désormais de regrouper les utilisateurs selon une activité ou un attribut similaire. Examinez quelques cas d’utilisation de cette fonctionnalité.
+La variable [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) est très utile pour aider les marchands à étudier le comportement des différents sous-ensembles d’utilisateurs au fil du temps. Dans le passé, la `Cohort Report Builder` était optimisé pour regrouper les utilisateurs selon un `cohort date` (par exemple, l’ensemble de tous les clients qui ont effectué leur premier achat au cours d’un mois donné). La variable `Non-Date Based Cohort` permet désormais de regrouper les utilisateurs selon une activité ou un attribut similaire. Examinez quelques cas d’utilisation de cette fonctionnalité.
 
 ## Cas d’utilisation
 
@@ -57,11 +57,11 @@ Cinq spécifications sont nécessaires pour créer un rapport de cohorte :
 
 #### 1. Regroupement `cohorts`
 
-`Cohorts` sont regroupées par caractéristique de comportement, dans cet exemple `Customer's first order GA source`. Les options disponibles ici sont les colonnes déjà désignées comme `groupable` pour la mesure.
+`Cohorts` sont regroupées par caractéristique de comportement, dans cet exemple ; `Customer's first order GA source`. Les options disponibles ici sont les colonnes déjà désignées comme `groupable` pour la mesure.
 
 #### 2. Sélection des cohortes
 
-Vous pouvez afficher tous les résultats pour la caractéristique donnée. Cela peut se traduire par de nombreuses `cohorts`, vous pouvez sélectionner la variable `cohorts` (qui correspond aux différentes valeurs disponibles pour `Customer's first order GA source`) dont vous avez besoin.
+Vous pouvez afficher tous les résultats de la caractéristique donnée. Cela peut se traduire par de nombreuses `cohorts`, vous pouvez sélectionner la variable `cohorts` (qui correspond aux différentes valeurs disponibles pour `Customer's first order GA source`) dont vous avez besoin.
 
 ![groupes de cohortes](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
 
@@ -75,7 +75,7 @@ C’est là que vous sélectionnez la période qui contient le `cohorts action t
 
 #### 5. `Time range after cohort occurrence`
 
-Voulez-vous voir la `cohorts` au fil du temps, par mois, semaine ou année ? C&#39;est ici que vous faites ces sélections. Sous cette section, vous allez sélectionner la variable `time range` après la `cohort action timestamp` s’est produite. Par exemple, cela vous montre 12 mois de données pour les clients qui ont passé la première commande pendant la période d’action.
+Voulez-vous voir la `cohorts` au fil du temps, par mois, semaine ou année ? C&#39;est ici que vous faites ces sélections. Sous cette section, vous allez sélectionner la variable `time range` après la balise `cohort action timestamp` s’est produite. Par exemple, cela vous montre 12 mois de données pour les clients qui ont passé la première commande pendant la période d’action.
 
 ![cohorte-première-action-période](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 

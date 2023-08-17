@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md) pour créer et modifier des graphiques SQL. `Standard` les utilisateurs peuvent réorganiser ces graphiques dans les tableaux de bord ; et `Read-only` les utilisateurs ont la même expérience que les graphiques traditionnels. En outre, `Read-only` les utilisateurs n&#39;ont pas accès au texte de la requête.
+>Nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md) pour créer et modifier des graphiques SQL. `Standard` les utilisateurs peuvent réorganiser ces graphiques dans les tableaux de bord ; et `Read-only` les utilisateurs ont la même expérience qu’avec les graphiques traditionnels. En outre, `Read-only` les utilisateurs n&#39;ont pas accès au texte de la requête.
 
 Voir [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) pour en savoir plus.
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser la variable [[!DNL SQL Report Builder]](../dev-reports/sql-
 
 Voir [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) pour en savoir plus.
 
-Le [!DNL SQL Report Builder] vous permet d’interroger directement votre Data Warehouse, d’afficher les résultats et de les transformer rapidement en graphique. La meilleure partie concernant l’utilisation de [!DNL SQL] pour créer des rapports, il n’est pas nécessaire d’attendre les cycles de mise à jour pour effectuer une itération sur les colonnes que vous créez. Si les résultats ne semblent pas bons, vous pouvez rapidement modifier et réexécuter la requête jusqu’à ce que les éléments correspondent à vos attentes.
+La variable [!DNL SQL Report Builder] vous permet d’interroger directement votre Data Warehouse, d’afficher les résultats et de les transformer rapidement en graphique. La meilleure partie concernant l’utilisation de [!DNL SQL] pour créer des rapports, il n’est pas nécessaire d’attendre les cycles de mise à jour pour effectuer une itération sur les colonnes que vous créez. Si les résultats ne semblent pas bons, vous pouvez rapidement modifier et réexécuter la requête jusqu’à ce que les éléments correspondent à vos attentes.
 
 Cette rubrique vous guide tout au long de l’utilisation de la variable [!DNL SQL Report Builder]. Une fois que vous avez pris connaissance de votre parcours, consultez la [!DNL SQL] pour le tutoriel sur les visualisations ou essayez d’optimiser certaines des requêtes que vous avez écrites.
 
@@ -63,7 +63,7 @@ En procédant comme suit : [directives relatives à l’optimisation des requêt
 
 Si la mesure est mise à jour ultérieurement, le rapport SQL *ne fait pas* reflètent les modifications. Vous devez modifier manuellement le rapport pour que les modifications soient prises en compte.
 
-Les boutons situés en haut de la barre latérale vous permettent de basculer entre les listes de tableaux et de mesures disponibles dans la variable [!DNL SQL Report Builder]. Si vous ne voyez pas ce que vous recherchez dans la liste, essayez de le rechercher à l’aide de la barre de recherche située en haut de la barre latérale.
+À l’aide des boutons situés en haut de la barre latérale, vous pouvez permuter entre les listes de tableaux et les mesures disponibles dans la variable [!DNL SQL Report Builder]. Si vous ne voyez pas ce que vous recherchez dans la liste, essayez de le rechercher à l’aide de la barre de recherche située en haut de la barre latérale.
 
 Vous pouvez également utiliser la barre latérale dans la variable [!DNL SQL] pour insérer des mesures, des tableaux et des colonnes directement dans vos requêtes en pointant dessus et en cliquant sur **[!UICONTROL Insert]**:
 
@@ -91,9 +91,9 @@ Une fois la requête modifiée, vous pouvez passer à la création d’une visua
 
 Pour créer une visualisation avec les résultats de la requête, cliquez sur le bouton **[!UICONTROL Chart]** dans le `Results` volet. Dans cet onglet, vous sélectionnez :
 
-* Le `Series`ou la colonne à mesurer, telle que **Articles vendus**.
-* Le `Category`ou la colonne que vous souhaitez utiliser pour segmenter vos données, par exemple **source d&#39;acquisition**.
-* Le `Labels`ou les valeurs de l’axe X.
+* La variable `Series`ou la colonne à mesurer, telle que **Articles vendus**.
+* La variable `Category`ou la colonne que vous souhaitez utiliser pour segmenter vos données, par exemple **source d&#39;acquisition**.
+* La variable `Labels`ou les valeurs de l’axe X.
 
 Voici un aperçu rapide du processus de visualisation :
 
@@ -103,7 +103,7 @@ Pour une présentation détaillée de la création d’une visualisation, report
 
 ## Enregistrer le rapport {#save}
 
-Avant de pouvoir enregistrer votre travail, vous devez donner un nom au rapport. N’oubliez pas de suivre le [bonnes pratiques relatives à l’attribution de noms](../../best-practices/naming-elements.md){ : target=&quot;_blank&quot;} et choisissez quelque chose qui véhicule clairement ce qu’est le rapport !
+Avant de pouvoir enregistrer votre travail, vous devez donner un nom au rapport. N’oubliez pas de suivre le [bonnes pratiques relatives à l’attribution de noms](../../best-practices/naming-elements.md){: target=&quot;_blank&quot;} et choisissez quelque chose qui véhicule clairement ce qu’est le rapport !
 
 Cliquez sur **[!UICONTROL Save]** dans le coin supérieur droit du [!DNL SQL] et sélectionnez le rapport `Type` (`Chart` ou `Table`). Pour terminer, sélectionnez le tableau de bord dans lequel enregistrer le rapport et cliquez sur **[!UICONTROL Save to Dashboard]**.
 
@@ -119,13 +119,13 @@ Colonnes calculées créées à l’aide de [!DNL SQL] ne dépendent pas des cyc
 
 >[!NOTE]
 >
->Cela s&#39;applique uniquement à la structure de la colonne, et non à l&#39;actualisation des données. Les nouvelles données dépendent toujours des cycles de mise à jour terminés avec succès.
+>Cela ne s&#39;applique qu&#39;à la structure de la colonne, et non à l&#39;actualisation des données. Les nouvelles données dépendent toujours des cycles de mise à jour terminés avec succès.
 
 | **C&#39;est parfait pour...** | **Ce n&#39;est pas si bien pour...** |
 |---|---|
 | Analystes intermédiaires/avancés | Débutants - vous devez savoir [!DNL SQL]. |
-| Le [!DNL SQL] savvy | Analyses simples : l’écriture d’une requête peut s’avérer plus efficace que l’utilisation de la fonction [!UICONTROL Visual Report Builder]. |
-| Création de colonnes calculées à usage unique | Partage avec d&#39;autres personnes - prenez en compte votre audience : est-ce qu&#39;ils comprennent [!DNL SQL]? Dans le cas contraire, ils peuvent être perturbés par la manière dont le rapport est créé. |
+| La variable [!DNL SQL] savvy | Analyses simples : l’écriture d’une requête peut s’avérer plus efficace que l’utilisation de la fonction [!UICONTROL Visual Report Builder]. |
+| Création de colonnes calculées à usage unique | Partage avec d&#39;autres - considérez votre audience : comprennent-ils [!DNL SQL]? Dans le cas contraire, ils peuvent être perturbés par la manière dont le rapport est créé. |
 | Données avec `one-to-many` relations |  |
 | Test d&#39;une nouvelle colonne ou analyse |  |
 
@@ -148,11 +148,11 @@ Colonnes créées à l’aide du [!DNL SQL Report Builder] ne sont pas enregistr
 
 #### `Report Builder` versus `SQL Report Builder`
 
-Le [!DNL SQL Report Builder] vous offre davantage de flexibilité lors de la création et de la structuration de vos graphiques. Vous pouvez, par exemple, sélectionner les valeurs à afficher sur le `X` et `Y` axes. Pour plus d’informations sur la création de graphiques dans le [!DNL SQL Report Builder], extrayez le [Création de visualisations à partir de [!DNL SQL] requêtes](../../tutorials/create-visuals-from-sql.md) tutoriel .
+La variable [!DNL SQL Report Builder] vous offre davantage de flexibilité lors de la création et de la structuration de vos graphiques. Vous pouvez, par exemple, sélectionner les valeurs à afficher sur le `X` et `Y` axes. Pour plus d’informations sur la création de graphiques dans le [!DNL SQL Report Builder], extrayez le [Création de visualisations à partir de [!DNL SQL] requêtes](../../tutorials/create-visuals-from-sql.md) tutoriel .
 
 #### `Cohort Report Builder` {#cohortrb}
 
-Contrairement au [!DNL Visual Report Builder], la variable [[!DNL Cohort Report Builder]](../dev-reports/cohort-rpt-bldr.md) est destiné à un seul objectif : analyser et identifier les tendances comportementales de groupes d’utilisateurs similaires au fil du temps. En utilisant la variable [!DNL Cohort Report Builder] ne nécessite pas [!DNL SQL] savourer, pour pouvoir plonger sans hésiter si vous commencez.
+Contrairement à la variable [!DNL Visual Report Builder], la variable [[!DNL Cohort Report Builder]](../dev-reports/cohort-rpt-bldr.md) est destiné à un seul objectif : analyser et identifier les tendances comportementales de groupes d’utilisateurs similaires au fil du temps. En utilisant la variable [!DNL Cohort Report Builder] ne nécessite pas [!DNL SQL] savourer, pour pouvoir plonger sans hésiter si vous commencez.
 
 | **C&#39;est parfait pour...** | **Ce n&#39;est pas si bien pour...** |
 |---|---|
@@ -173,4 +173,4 @@ Vous n’avez pas à recréer vos requêtes. Rapports créés à l’aide de la 
 
 ## Remplissage {#wrapup}
 
-Si vous souhaitez essayer quelque chose d’un peu plus difficile, pourquoi ne pas essayer d’écrire une requête optimisée pour la visualisation ? Consultez la section [Création de visualisations à partir de [!DNL SQL] tutoriel sur les requêtes](../../tutorials/create-visuals-from-sql.md){ : target=&quot;_blank&quot;} pour commencer.
+Si vous souhaitez essayer quelque chose d’un peu plus difficile, pourquoi ne pas essayer d’écrire une requête optimisée pour la visualisation ? Consultez la section [Création de visualisations à partir de [!DNL SQL] tutoriel sur les requêtes](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;} pour commencer.

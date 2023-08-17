@@ -25,7 +25,7 @@ Tout d’abord, une note sur le suivi des codes de coupon. Si un client a appliq
 
 * Une remise est répercutée dans la variable `base_grand_total` quantité (votre `Revenue` mesure dans Commerce Intelligence)
 * Le code de coupon est stocké dans la variable `coupon_code` champ . Si ce champ est NULL (vide), aucun coupon n’est associé à la commande.
-* Le montant escompté est stocké dans la variable `base_discount_amount`. Selon votre configuration, cette valeur peut apparaître négative ou positive.
+* Le montant escompté est stocké dans `base_discount_amount`. Selon votre configuration, cette valeur peut apparaître négative ou positive.
 
 ## Création d’une mesure
 
@@ -33,12 +33,12 @@ La première étape consiste à créer une mesure en procédant comme suit :
 
 * Accédez à **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
-* Sélectionnez la `sales_order`.
+* Sélectionnez la variable `sales_order`.
 * Cette mesure effectue une **Somme** sur le **base_discount_amount** colonne, triée par **created_at**.
    * [!UICONTROL Filters]:
       * Ajoutez la variable `Orders we count` (Jeu de filtres enregistrés)
       * Ajoutez ce qui suit :
-         * `coupon_code`**IS NOT**`[NULL]`
+         * `coupon_code`**N’EST PAS**`[NULL]`
       * Attribuez un nom à la mesure, par exemple `Coupon discount amount`.
 
 ## Création de votre tableau de bord
@@ -55,13 +55,13 @@ La première étape consiste à créer une mesure en procédant comme suit :
 
 >[!NOTE]
 >
->Le [!UICONTROL Time Period]** pour chaque rapport est répertorié comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, comme par exemple `All time`, `Year-to-date`ou `Last 365 days`.
+>La variable [!UICONTROL Time Period]** pour chaque rapport est répertorié comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, comme par exemple `All time`, `Year-to-date`, ou `Last 365 days`.
 
 * **Commandes avec coupons**
    * 
      [!UICONTROL Mesure]: `Orders`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -83,7 +83,7 @@ La première étape consiste à créer une mesure en procédant comme suit :
    * 
      [!UICONTROL Mesure]: `Revenue`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -97,17 +97,17 @@ La première étape consiste à créer une mesure en procédant comme suit :
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Chiffre d’affaires moyen de la durée de vie : Coupon aux clients acquis**
+* **Chiffre d’affaires moyen sur la durée de vie : coupon aux clients achetés**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Ajouter un filtre :
-         * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Chiffre d’affaires moyen de la durée de vie : Clients acquis non coupon**
+* **Chiffre d’affaires moyen sur la durée de vie : clients non-coupons acquis**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Ajouter un filtre :
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
@@ -120,19 +120,19 @@ La première étape consiste à créer une mesure en procédant comme suit :
 * **Détails d’utilisation du coupon (premières commandes)**
    * Mesure `1`: `Orders`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT**`[NULL]`
+         * [`A`] `coupon_code` **N’EST PAS**`[NULL]`
          * [`B`] `Customer's order number` **Égal à** `1`
 
    * Mesure `2`: `Revenue`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT**`[NULL]`
+         * [`A`] `coupon_code` **N’EST PAS**`[NULL]`
          * [`B`] `Customer's order number` **Égal à** `1`
 
       * Renommer :  `Net revenue`
 
    * Mesure `3`: `Coupon discount amount`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT**`[NULL]`
+         * [`A`] `coupon_code` **N’EST PAS**`[NULL]`
          * [`B`] `Customer's order number` **Égal à** `1`
 
    * Créer une formule : `Gross revenue`
@@ -169,7 +169,7 @@ La première étape consiste à créer une mesure en procédant comme suit :
 * **Détails d’utilisation du coupon (premières commandes)**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Ajouter un filtre :
-         * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -181,7 +181,7 @@ La première étape consiste à créer une mesure en procédant comme suit :
 * **Nouveaux clients par acquisition de coupons/coupons non-coupons**
    * Mesure `1`: `New customers`
       * Ajouter un filtre :
-         * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **N’EST PAS** `[NULL]`
 
       * [!UICONTROL Rename]: `Coupon acquisition customer`
 
@@ -195,4 +195,4 @@ La première étape consiste à créer une mesure en procédant comme suit :
    * [!UICONTROL Interval]: `By Month`
    * [!UICONTROL Chart type]: `Stacked Column`
 
-Une fois les rapports créés, reportez-vous à l’image en haut de cette rubrique pour savoir comment organiser les rapports sur votre tableau de bord.
+Une fois les rapports créés, reportez-vous à l’image dans la partie supérieure de cette rubrique pour savoir comment organiser les rapports sur votre tableau de bord.

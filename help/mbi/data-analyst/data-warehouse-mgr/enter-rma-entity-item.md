@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Chaque ligne du `enterprise_rma_item_entity` table (souvent appelée `magento_rm
 
 | **Nom de la colonne** | **Description** |
 |---|---|
-| `entity\_id` | Identifiant unique du tableau. Chaque `entity\_id` représente un élément qui a été demandé pour renvoi. |
+| `entity\_id` | Identifiant unique de la table. Chaque `entity\_id` représente un élément qui a été demandé pour renvoi. |
 | `rma\_entity\_id` | Clé étrangère associée à la variable `enterprise\_rma` table. |
 | `status` | État du retour de l’élément. Les valeurs comprennent &quot;reçu&quot;, &quot;en attente&quot;, &quot;autorisé&quot;, entre autres. Les valeurs de cet état peuvent ne pas correspondre à la valeur de l’état global du retour. |
 | `qty\_requested` | Quantité que le client demande de retour. |
@@ -48,8 +48,8 @@ Chaque ligne du `enterprise_rma_item_entity` table (souvent appelée `magento_rm
 
 | **Nom de la mesure** | **Description** | **Construction** |
 |---|---|---|
-| `Number of items returned` | Nombre d’éléments renvoyés. | Colonne de l’opération : qté renvoyée<br>Opération : Somme<br>Colonne Horodatage : Date de retour demandée |
-| `Returned items' total value` | Le montant monétaire renvoyé. | Colonne de l’opération : Valeur totale de l’élément de retour (quantité renvoyée * prix)<br>Opération : Somme<br>Colonne Horodatage : Date de retour demandée |
+| `Number of items returned` | Nombre d’éléments renvoyés. | Colonne de l’opération : quantité renvoyée<br>Opération : Somme<br>Colonne Horodatage : Date de retour demandée |
+| `Returned items' total value` | Le montant monétaire renvoyé. | Colonne d’opération : valeur totale de l’élément de retour (quantité renvoyée * prix).<br>Opération : Somme<br>Colonne Horodatage : Date de retour demandée |
 
 {style="table-layout:auto"}
 

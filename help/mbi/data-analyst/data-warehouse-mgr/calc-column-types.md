@@ -43,15 +43,15 @@ L’exemple ci-dessous crée `Seconds since customer's most recent order` dans l
 
 Une colonne calculée de conversion de devise convertit la devise native d’une colonne en la nouvelle devise souhaitée.
 
-L’exemple ci-dessous crée `base\_grand\_total In AED`, en convertissant le `base\_grand\_total` Il s’agit de la devise native vers AED dans la variable `sales\_flat\_order` table. Cette colonne fonctionne bien pour les magasins avec plusieurs devises qui souhaitent générer des rapports dans leur devise locale.
+L’exemple ci-dessous crée `base\_grand\_total In AED`, en convertissant la variable `base\_grand\_total` Il s’agit de la devise native vers AED dans la variable `sales\_flat\_order` table. Cette colonne fonctionne bien pour les magasins avec plusieurs devises qui souhaitent générer des rapports dans leur devise locale.
 
-Pour les clients Commerce, la variable `base\_currency\_code` stocke généralement les devises natives. Le `Spot Time` doit correspondre à la date utilisée dans vos mesures.
+Pour les clients Commerce, la variable `base\_currency\_code` stocke généralement les devises natives. La variable `Spot Time` doit correspondre à la date utilisée dans vos mesures.
 
 ![](../../assets/currency_converter.png)
 
 ## Colonnes calculées de type &quot;un à plusieurs&quot; {#onetomany}
 
-`One-to-Many` colonnes [utiliser un chemin entre deux tableaux ;](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). Ce chemin implique toujours une table, où réside un attribut, et une table, où cet attribut est &quot;déplacé&quot; vers. Le chemin peut être décrit comme une `foreign key--primary key` relation.
+`One-to-Many` colonnes [utiliser un chemin entre deux tableaux ;](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). Ce chemin implique toujours une seule table, où réside un attribut, et une grande table, où cet attribut est &quot;déplacé&quot; vers. Le chemin peut être décrit comme une `foreign key--primary key` relation.
 
 ### Colonne liée {#joined}
 
@@ -71,7 +71,7 @@ Ce type de colonne calculée renvoie le nombre de valeurs sur le tableau de nomb
 
 Dans l’exemple ci-dessous, la dimension `Customer's lifetime number of canceled orders` est créé sur le `customers` tableau (avec filtre pour `orders.status`).
 
-![](../../assets/many_to_one.gif){ : width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
 
 ### Somme {#sum}
 
@@ -89,7 +89,7 @@ Vous pouvez l’utiliser pour créer des dimensions au niveau du client, telles 
 
 Une colonne calculée est un test binaire déterminant la présence d’un enregistrement du côté multiple. En d’autres termes, la nouvelle colonne renvoie un `1` si le chemin connecte au moins une ligne dans chaque tableau, et `0` si aucune connexion ne peut être établie.
 
-Ce type de dimension peut déterminer, par exemple, si un client a déjà acheté un produit particulier. Utiliser une jointure entre une `customers` table et `orders` tableau, filtre d’un produit spécifique, dimension `Customer has purchased Product X?` peuvent être créés.
+Ce type de dimension peut déterminer, par exemple, si un client a déjà acheté un produit particulier. Utilisation d’une jointure entre une `customers` table et `orders` tableau, filtre d’un produit spécifique, dimension `Customer has purchased Product X?` peuvent être créés.
 
 ## Carte de référence pratique {#map}
 
@@ -101,7 +101,7 @@ Si vous rencontrez des difficultés à vous souvenir de toutes les entrées lors
 
 Dans votre quête d’analyse et de réponse aux questions sur votre entreprise, vous pouvez rencontrer une situation dans laquelle vous ne pouvez pas créer la colonne exacte que vous souhaitez.
 
-Pour garantir un retour rapide, Adobe recommande d’extraire le [Types de colonne calculés avancés](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) pour voir le type de colonnes que l’équipe d’assistance Adobe peut créer. Cette rubrique couvre également les informations dont vous avez besoin pour créer la colonne, en les incluant avec votre requête.
+Pour garantir un retour rapide, Adobe recommande d’extraire le [Types de colonne calculés avancés](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) pour voir le type de colonnes que l’équipe d’assistance Adobe peut créer. Cette rubrique couvre également les informations dont vous avez besoin pour créer la colonne, en l’incluant avec votre requête.
 
 ## Documentation connexe
 

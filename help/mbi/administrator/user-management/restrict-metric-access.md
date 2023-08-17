@@ -21,7 +21,7 @@ Après avoir défini le niveau d’autorisation, vous pouvez sélectionner les m
 
 1. Accédez à **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. Sélectionnez le compte d’utilisateur de votre choix.
-1. Le **[!UICONTROL Metrics]** affiche une liste des mesures disponibles. Vérifiez les mesures auxquelles l’utilisateur doit avoir accès et désélectionnez celles auxquelles il ne doit pas avoir accès.
+1. La variable **[!UICONTROL Metrics]** affiche une liste des mesures disponibles. Vérifiez les mesures auxquelles l’utilisateur doit avoir accès et désélectionnez celles auxquelles il ne doit pas avoir accès.
 1. [!DNL Adobe Commerce Intelligence] enregistre automatiquement les modifications. Si la modification est réussie, [!DNL Commerce Intelligence] affiche **[!UICONTROL Saved!]** en haut de la page.
 
 >[!NOTE]

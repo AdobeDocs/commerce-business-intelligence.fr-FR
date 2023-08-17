@@ -27,13 +27,13 @@ Commencez en saisissant [!DNL Google ECommerce] informations d’identification 
 
 1. Cliquez sur **[!UICONTROL Add a New Source]**, situé sur le côté droit de l’écran, au-dessus de `Data Sources` table.
 
-1. Cliquez sur le bouton [!DNL Google ECommerce] icône . Cela ouvre la fenêtre [!DNL Google ECommerce] informations d’identification.
+1. Cliquez sur le bouton [!DNL Google ECommerce] Icône Cela ouvre la fenêtre [!DNL Google ECommerce] informations d’identification.
 
 1. Saisissez votre [!DNL Google Analytics] informations d’identification. Une fois le processus d’autorisation terminé, vous êtes redirigé vers [!DNL Commerce Intelligence].
 
 1. Une liste des identifiants de profil s’affiche. Vérifiez les profils auxquels vous souhaitez vous connecter. [!DNL Commerce Intelligence].
 
-   Si vous disposez de plusieurs profils et que vous avez besoin d’aide pour identifier lequel, reportez-vous à la section **Connexion de plusieurs profils [!DNL Google Analytics] profils ci-dessous.
+   Si vous disposez de plusieurs profils et que vous avez besoin d’aide pour identifier lequel, reportez-vous à la section **Connexion à plusieurs [!DNL Google Analytics] profils ci-dessous.
 
    ![](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 

@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # [!DNL SQL Report Builder]
 
-Le [!DNL SQL Report Builder] est principalement utilisé pour créer de nouveaux rapports et effectuer une itération sur les analyses, mais il peut également être utilisé pour contrôler efficacement les données et les mesures. Les informations suivantes expliquent comment contrôler les données et les mesures à l’aide de la variable [!DNL SQL Report Builder] afin de comparer les résultats avec les données de votre base de données locale.
+La variable [!DNL SQL Report Builder] est principalement utilisé pour créer de nouveaux rapports et effectuer une itération sur les analyses, mais il peut également être utilisé pour contrôler efficacement les données et les mesures. Les informations suivantes expliquent comment contrôler les données et les mesures à l’aide de la variable [!DNL SQL Report Builder] afin de comparer les résultats avec les données de votre base de données locale.
 
 ## Requête sur une mesure
 
 Pour commencer, ouvrez le [!DNL SQL Report Builder] en accédant à **[!UICONTROL Report Builder > SQL Report Builder > Create Report]**. Vous pouvez utiliser la barre latérale dans la variable [!DNL SQL] éditeur pour insérer une mesure directement dans votre requête en survolant la mesure et en cliquant sur **[!UICONTROL Insert]**. La définition de requête de cette mesure est alors ajoutée à l’éditeur. La définition comprend les composants suivants :
 
-- Le **opération de mesure** en cours d’exécution, comme indiqué par `SUM()` dans l’exemple ci-dessous.
-- Le **table on** qui est la mesure créée, indiquée par la variable `FROM` clause .
+- La variable **opération de mesure** en cours d’exécution, indiqué par `SUM()` dans l’exemple ci-dessous.
+- La variable **table on** qui est la mesure créée, indiquée par la variable `FROM` clause .
 - Quelconque **filtres (et ensembles de filtres)** qui ont été ajoutés à la mesure, indiquée par la variable `WHERE` dans l’exemple ci-dessous.
 - Le composant du **timestamp** (année, mois) sur laquelle les données doivent être classées, indiqué par la variable `ORDER BY` dans l’exemple ci-dessous.
 
@@ -48,4 +48,4 @@ Vous pouvez également écrire des requêtes personnalisées et exporter les ré
 
 >[!NOTE]
 >
->Si vous constatez une incohérence après le contrôle de vos données, consultez la [Contacter l’assistance : Incohérences entre les données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) rubrique d’assistance pour plus d’informations sur les prochaines étapes.
+>Si vous constatez une incohérence après le contrôle de vos données, consultez la [Contacter l’assistance : écarts de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) rubrique d’assistance pour plus d’informations sur les prochaines étapes.

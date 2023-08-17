@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Options de filtre
 
-Cette rubrique explore quelques fonctions spéciales : `operators` utilisé dans `filters` when [création d&#39;un rapport](../../tutorials/using-visual-report-builder.md){ : target=&quot;_blank&quot;} ou [création d’une mesure](../../data-user/reports/ess-manage-data-metrics.md){ : target=&quot;_blank&quot;}.
+Cette rubrique explore quelques fonctions spéciales : `operators` utilisé dans `filters` when [création d&#39;un rapport](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} ou [création d’une mesure](../../data-user/reports/ess-manage-data-metrics.md){ : target=&quot;_blank&quot;}.
 
 ## `Filter Operators`
 
-* `LIKE` pour la correspondance de modèle. Il doit être utilisé avec les caractères génériques % (pour un caractère générique avec un nombre de lettres variable) ou _ (pour un caractère générique à une seule lettre).  Par exemple, la restriction `LIKE \_ake%` renvoie true pour `Jake Stein`, `Jake Smith`ou `Fake Smith`.  La valeur renvoyée est false pour `Drake Smith`.
+* `LIKE` pour la correspondance de modèle. Il doit être utilisé avec les caractères génériques % (pour un caractère générique avec un nombre de lettres variable) ou _ (pour un caractère générique à une seule lettre).  Par exemple, la restriction `LIKE \_ake%` renvoie true pour `Jake Stein`, `Jake Smith`, ou `Fake Smith`.  La valeur renvoyée est false pour `Drake Smith`.
 
 * `NOT LIKE` est similaire à la correspondance de modèles ci-dessus, mais vérifie quels modèles ne correspondent pas.
 

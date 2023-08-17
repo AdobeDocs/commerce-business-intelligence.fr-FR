@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Utilisation de graphiques dans les tableaux de bord
 
-Numéros scalaires. Graphiques en barres. Graphiques s’étendant sur de longues périodes. Chaque graphique affiche les informations différemment, ce qui signifie que la taille et l’emplacement des graphiques ne sont pas une solution universelle. Dans [!DNL Commerce Intelligence], vous pouvez redimensionner et réorganiser les graphiques afin de créer votre espace de travail idéal.
+Numéros scalaires. Graphiques en barres. Graphiques couvrant de longues périodes. Chaque graphique affiche les informations différemment, ce qui signifie que la taille et l’emplacement des graphiques ne sont pas une solution universelle. Dans [!DNL Commerce Intelligence], vous pouvez redimensionner et réorganiser les graphiques afin de créer votre espace de travail idéal.
 
 *Pour redimensionner un graphique*, cliquez sur et faites glisser le coin inférieur droit d’un graphique.
 

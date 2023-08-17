@@ -54,7 +54,7 @@ Une nouvelle fenêtre s’ouvre alors pour configurer les détails de la variabl
 ### Cinq spécifications sont nécessaires pour créer une `Cohort` rapport :
 
 1. Comment regrouper les `cohorts`
-1. Le `cohort` période
+1. La variable `cohort` période
 1. Le nombre de `cohorts` pour afficher
 1. La quantité minimale de données pour chaque `cohort` must contain
 1. Durée après `cohort` occurrence
@@ -69,7 +69,7 @@ Une nouvelle fenêtre s’ouvre alors pour configurer les détails de la variabl
 
 #### 2. `Cohort` période
 
-Sélection de la période à grouper `cohorts` par. En d’autres termes, quelle partie de l’horodatage que vous avez sélectionnée ci-dessus est la plus importante ; la valeur `week`, `month`, `quarter`ou `year`? Votre rapport affiche les données dans l’intervalle que vous sélectionnez ici
+Sélection de la période à grouper `cohorts` par. En d’autres termes, quelle partie de l’horodatage que vous avez sélectionnée ci-dessus est la plus importante ; la variable `week`, `month`, `quarter`, ou `year`? Votre rapport affiche les données dans l’intervalle que vous sélectionnez ici
 
 #### 3. et 4. Définissez le nombre de `cohorts` pour afficher et combien de données chaque `cohort` must have
 
@@ -79,15 +79,15 @@ Par défaut, la variable `cohort` n’est pas inclus, sauf si vous modifiez la q
 
 #### 5. Période après `Cohort` Occurrence
 
-Cette fonctionnalité vous permet de définir la période des données que vous affichez pour le sélectionné. `cohorts`. Par exemple, si vous souhaitez afficher 24 rapports mensuels `cohorts` basé sur `customer's first order date`, mais vous n’êtes intéressé que par les 3 premiers mois de données pour chaque `cohort`, vous pouvez définir la variable `number of cohorts to view` to `24` et le `time range after cohort occurrence` to `3`.
+Cette fonctionnalité vous permet de définir la période des données que vous affichez pour le sélectionné. `cohorts`. Par exemple, si vous souhaitez afficher 24 rapports mensuels `cohorts` basé sur `customer's first order date`, mais vous n’êtes intéressé que par les 3 premiers mois de données pour chaque `cohort`, vous pouvez définir la variable `number of cohorts to view` to `24` et la variable `time range after cohort occurrence` to `3`.
 
-L’intervalle de cette valeur change en fonction de ce que vous avez sélectionné dans la variable `cohort time period` et la valeur est définie sur `12` par défaut ; la valeur ne change que si vous cliquez sur l’icône du calendrier pour la modifier.
+L’intervalle de cette valeur change selon ce que vous avez sélectionné dans la variable `cohort time period` et la valeur est définie sur `12` par défaut, la valeur ne change que si vous cliquez sur l’icône du calendrier pour la modifier.
 
 ![](../../assets/cohort-time-range.png)
 
 #### Autres notes
 
-* [!UICONTROL Filters]: appliqué à vos mesures reste intact lorsque vous passez d’une `Standard` et `Cohort` vues.
+* [!UICONTROL Filters]: les mesures appliquées restent inchangées lorsque vous passez d’une `Standard` et `Cohort` vues.
 
 * Voir [`Perspectives`](#perspectives).
 
@@ -101,7 +101,7 @@ Voici un exemple pour tout rassembler. Dans cet exemple, je veux vérifier le co
 
 #### Architecture héritée {#personalinfo}
 
-Vous trouverez ci-dessous des instructions spécifiques à la version héritée de la fonction `Cohort Report Builder`. Si vous souhaitez utiliser la nouvelle version, reportez-vous à la section [Nouvelle architecture](../../administrator/account-management/new-architecture.md) pour plus d’informations sur la migration vers une [!DNL Commerce Intelligence] Nouveau compte Architecture .
+Vous trouverez ci-dessous des instructions spécifiques à la version héritée de `Cohort Report Builder`. Si vous souhaitez utiliser la nouvelle version, voir [Nouvelle architecture](../../administrator/account-management/new-architecture.md) pour plus d’informations sur la migration vers une [!DNL Commerce Intelligence] Nouveau compte Architecture .
 
 #### Comment créer la mienne `cohort` analyse ? {#create}
 
@@ -109,7 +109,7 @@ Vous trouverez ci-dessous des instructions spécifiques à la version héritée 
 
 `Cohort` l&#39;analyse en action ! Vous pouvez constater ici que les recettes augmentent au fil du temps de manière cumulée et par utilisateur.
 
-Cette section vous guide tout au long de la création de votre propre `cohort` analyse. Pour consulter des exemples (et des GIFs animés qui illustrent le processus), reportez-vous à la section [Section Exemples](#examples) de cette rubrique.
+Cette section vous guide tout au long de la création de votre propre `cohort` analyse. Pour obtenir des exemples (et des GIFs animés qui illustrent le processus), consultez la section [Section Exemples](#examples) de cette rubrique.
 
 1. Cliquez sur **[!UICONTROL Report Builder]** dans l’onglet de gauche ou **[!UICONTROL Add Report** > **Create Report]** dans n’importe quel tableau de bord.
 
@@ -125,7 +125,7 @@ Maintenant que vous êtes dans la `Cohort Report Builder`, ajoutez la mesure (ex
 
 #### Sélection de la date de cohorte {#date}
 
-L’étape suivante consiste à spécifier la variable `cohort date`. Il s’agit de la date à laquelle vos utilisateurs sont regroupés. Par exemple, il peut s’agir de `User's first order date` ou `User's registration date`.
+L’étape suivante consiste à spécifier la variable `cohort date`. Il s’agit de la date à laquelle vos utilisateurs sont regroupés. Par exemple, cela peut être `User's first order date` ou `User's registration date`.
 
 >[!NOTE]
 >
@@ -136,12 +136,12 @@ L’étape suivante consiste à spécifier la variable `cohort date`. Il s’agi
 Définissez ensuite la variable `Interval` et `Time Period`.
 
 `Interval`
-Le `Interval` vous permet de définir la variable `length` de votre `cohorts`. Par exemple, si la variable est définie sur `Month`, votre rapport est mesuré en mois.
+La variable `Interval` vous permet de définir la variable `length` de votre `cohorts`. Par exemple, si la variable est définie sur `Month`, votre rapport est mesuré en mois.
 
 Vous pouvez modifier l’affichage de ces intervalles sur l’axe X à l’aide de la variable **Durée** .
 
 `Time Period`
-Utilisez la variable `Time Period` pour sélectionner un utilisateur spécifique `cohorts` à analyser. Vous pouvez afficher toutes les `cohort`, effectuez une sélection dans une liste, spécifiez une période ou définissez une période variable de `cohorts` à inclure. Par exemple, si vous avez utilisé la variable `Specific Cohorts` vous pouvez sélectionner des mois spécifiques à inclure dans l’analyse :
+Utilisez la variable `Time Period` pour sélectionner un utilisateur spécifique `cohorts` à analyser. Vous pouvez afficher chaque `cohort`, effectuez une sélection dans une liste, spécifiez une période ou définissez une période variable de `cohorts` à inclure. Par exemple, si vous avez utilisé la variable `Specific Cohorts` vous pouvez sélectionner des mois spécifiques à inclure dans l’analyse :
 
 ![En utilisant la variable `Time Period` pour ajouter des `Cohorts`](../../assets/Cohort_Time_Period.gif)
 
@@ -153,11 +153,11 @@ Sous `duration`, vous pouvez définir les paramètres de l’axe X du graphique.
 
 #### En sélectionnant le `counting members` table
 
-Si vous avez choisi de regrouper des utilisateurs par un `cohort date` qui a été joint à partir d’une autre table, vous pouvez voir une `counting members in the … table` .
+Si vous avez choisi de regrouper des utilisateurs par un `cohort date` qui a été joint à partir d’une autre table, un `counting members in the … table` .
 
 ![](../../assets/Cohort_Counting_Members_option.png)
 
-Consultez un exemple pour comprendre ce paramètre. Supposons que vous ayez créé une cohorte de rapport dans une `Revenue` mesure par `Customer's registration date`. Vous vouliez également utiliser la perspective `Average value per cohort member` pour visualiser les recettes par acheteur au fil du temps. Pour trouver la valeur moyenne par acheteur, vous devez décider du nombre d&#39;acheteurs à diviser. S’agit-il du nombre de clients enregistrés dans votre `customers` ou est-ce le nombre d’acheteurs distincts dans votre `orders table` pour la même période ?
+Consultez un exemple pour comprendre ce paramètre. Supposons que vous ayez créé une cohorte de rapport dans une `Revenue` mesure par `Customer's registration date`. Vous vouliez également utiliser la perspective `Average value per cohort member` pour visualiser les recettes par acheteur au fil du temps. Pour trouver la valeur moyenne par acheteur, vous devez décider du nombre d&#39;acheteurs à diviser. S’agit-il du nombre de clients enregistrés dans votre `customers` ou s’agit-il du nombre d’acheteurs distincts dans votre `orders table` pour la même période ?
 
 Ce paramètre répond à cette question. Comptage des membres dans la variable `customers` table inclut tous les clients (qu’ils aient effectué un achat ou non) en moyenne. Comptage des membres dans la variable `orders` comprend uniquement les clients qui ont effectué un achat.
 
@@ -165,7 +165,7 @@ Ce paramètre répond à cette question. Comptage des membres dans la variable `
 
 Après avoir défini la mesure et la manière dont vous souhaitez l’analyser, vous pouvez sélectionner la variable `perspective` vous voulez utiliser.
 
-Juste au-dessus de la visualisation du rapport se trouve une liste déroulante de `perspective` paramètres.
+Juste au-dessus de la visualisation du rapport se trouve une liste déroulante `perspective` paramètres.
 
 Voir [Perspectives](#perspectives).
 
@@ -183,7 +183,7 @@ Dans cet exemple, vous avez analysé la variable `Revenue` , regroupées par coh
 
 ### Je veux savoir, en moyenne, combien de commandes un utilisateur effectue à différents moments de sa vie.
 
-(../../assets/cohort2.gif)
+(../../assets/cohort2.gif
 
 Dans cet exemple, vous avez analysé la variable `Number of orders` , regroupées par cohortes selon la `customer's first order date`et incluaient les huit cohortes les plus récentes (définies dans la variable `Time Period` ) dans l’analyse. Pour afficher le nombre moyen de commandes pour chaque cohorte, vous avez modifié la variable `perspective` to `Average Value per Cohort Member`.
 
@@ -194,16 +194,16 @@ Dans cet exemple, vous avez analysé la variable `Number of orders` , regroupée
 ## `Perspectives` {#perspectives}
 
 `Standard`
-Cela indique la contribution incrémentielle d’un groupe de cohortes donné à un moment donné de leur cycle de vie. (exemple : Le point &quot;Semaine 6&quot; affiche tous les points de données effectués par les utilisateurs au cours de leur sixième semaine.)
+Cela indique la contribution incrémentielle d’un groupe de cohortes donné à un moment donné de leur cycle de vie. (exemple : le point &quot;Semaine 6&quot; affiche tous les points de données effectués par les utilisateurs au cours de leur sixième semaine.)
 
 `Average Value per Cohort Member`
 Cela divise le `Standard cohort` en (1) par le nombre d’utilisateurs dans chaque `cohort` groupe. Cela peut s’avérer utile pour comparer les performances des cohortes d’après les pommes, car tous les groupes de cohortes ne peuvent pas inclure le même nombre d’utilisateurs. Par exemple, le revenu moyen par utilisateur de la semaine 6 d’un certain `cohort`.
 
 `Cumulative`
-Ceci `perspective` montre les `cohort` analyse sur un `cumulative` base. En d’autres termes, il montre la contribution totale d’une cohorte donnée à ce jour à un moment donné de son cycle de vie. Par exemple, les recettes cumulées après six semaines d’utilisateurs provenant d’une certaine cohorte.
+Ceci `perspective` montre la tradition `cohort` analyse sur un `cumulative` base. En d’autres termes, il montre la contribution totale d’une cohorte donnée à ce jour à un moment donné de son cycle de vie. Par exemple, les recettes cumulées après six semaines d’utilisateurs provenant d’une certaine cohorte.
 
 `Cumulative Average Value per Cohort Member`
-Cela divise le `Cumulative` en (3) par le nombre d’utilisateurs dans chaque `cohort` groupe. Il indique la contribution de durée de vie moyenne (souvent les recettes de durée de vie moyenne) par `cohort` à chaque période dans la variable `cohort's` la vie. Par exemple, les recettes de durée de vie moyenne après six mois d’utilisateurs ayant rejoint le site en juin.
+Cela divise le `Cumulative` en (3) en fonction du nombre d’utilisateurs dans chaque `cohort` groupe. Il indique la contribution de durée de vie moyenne (souvent les recettes de durée de vie moyenne) par `cohort` à chaque période dans la variable `cohort's` la vie. Par exemple, les recettes de durée de vie moyenne après six mois d’utilisateurs ayant rejoint le site en juin.
 
 `Percent of First Value (show first value)`
 Cela analyse l’agrégat `cohort` à un moment spécifique dans une `cohort's` cycle de vie en pourcentage de leur contribution au cours de la première période. Par exemple, les recettes du mois 6 divisées par les recettes du mois 1 des utilisateurs qui ont rejoint le mois de juin.
@@ -213,4 +213,4 @@ Il s’agit de la même chose que la variable `perspective` ci-dessus, sauf que 
 
 ## Remplissage {#finish}
 
-Le `Cohort Report Builder` est optimisé pour regrouper les utilisateurs selon un `cohort date`. Il peut être intéressant de regrouper les utilisateurs selon une activité ou un attribut similaire. Adobe recommande d’extraire [ce tutoriel sur les cohortes qualitatives](../dev-reports/create-qual-cohort-analysis.md) pour commencer.
+La variable `Cohort Report Builder` est optimisé pour regrouper les utilisateurs selon un `cohort date`. Il peut être intéressant de regrouper les utilisateurs selon une activité ou un attribut similaire. Adobe recommande d’extraire [ce tutoriel sur les cohortes qualitatives](../dev-reports/create-qual-cohort-analysis.md) pour commencer.

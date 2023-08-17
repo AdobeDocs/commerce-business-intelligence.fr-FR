@@ -19,11 +19,11 @@ Le filtrage à l’échelle du tableau de bord vous permet d’apporter des modi
 
 Pour modifier la période ou l’intervalle des rapports sur un tableau de bord, cliquez sur l’icône Calendrier dans le coin supérieur droit (![calendar](../../assets/calendar-button.png)).
 
-Vous pouvez choisir d’afficher les données à l’aide d’une `Fixed Date Range` ou divers précalculés `Moving Date Ranges`:
+Vous pouvez choisir d’afficher les données à l’aide d’une `Fixed Date Range` ou tout autre précalculé `Moving Date Ranges`:
 
 ![déplacement de périodes](../../assets/moving_date_ranges.png)
 
-Le `Last Full...` les options de plage de déplacement représentent la plage la plus récemment terminée, tandis que `This...` est la plage en cours actuelle. Si, par exemple, nous sommes en juin, la variable `Last Full Month` is _1er mai au 31 mai_, tandis que `This Month` is _1er juin - Maintenant_.
+La variable `Last Full...` les options de plage de déplacement représentent la plage la plus récemment terminée, tandis que `This...` correspond à la plage en cours actuelle. Si, par exemple, nous sommes en juin, la variable `Last Full Month` is _1er mai au 31 mai_, tandis que `This Month` is _1er juin - Maintenant_.
 
 Vous pouvez également créer les vôtres `Custom Moving Range`\:
 
@@ -31,7 +31,7 @@ Vous pouvez également créer les vôtres `Custom Moving Range`\:
 
 Choisissez également de modifier l’intervalle. Sélection du bouton par défaut (![valeur par défaut de l’intervalle de temps](../../assets/time_interval_default.png)) signifie que seule la période change :
 
-![intervalle](../../assets/time_interval.png)
+![intervalle de temps](../../assets/time_interval.png)
 
 Pour rétablir tous les rapports sur leur période et leur intervalle initiaux, cliquez sur **[!UICONTROL Restore Defaults]** ou cliquez sur **[!UICONTROL Cancel]**.
 

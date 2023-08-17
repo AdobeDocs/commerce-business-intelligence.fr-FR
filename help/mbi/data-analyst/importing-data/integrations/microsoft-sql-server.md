@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Cette rubrique explique comment connecter votre [!DNL Microsoft SQL] vers la base de données [!DNL Commerce Intelligence] dans un processus en quatre étapes. Ce processus nécessite une certaine expertise technique en ce qui concerne les connexions au serveur et SQL, et peut nécessiter l’aide des développeurs de votre équipe.
 
-[!DNL Commerce Intelligence] prend en charge [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure]et la plupart des autres fournisseurs de serveurs cloud. Si vous avez une question sur votre hôte particulier, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) nous demandant de fournir cette information.
+[!DNL Commerce Intelligence] prend [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure]et la plupart des autres fournisseurs de serveurs cloud. Si vous avez une question sur votre hôte particulier, [envoyer un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) nous demandant de fournir cette information.
 
 Votre système doit exécuter des requêtes SELECT sur votre base de données. Cette opération est initialement effectuée pour obtenir un instantané de la structure de votre base de données, puis effectuer régulièrement des heures supplémentaires afin de tenir vos données à jour. Vos mises à jour sont incrémentielles et les Adobes limitent la fréquence et le temps de mise à jour afin d’éviter toute charge indésirable sur votre serveur.
 
@@ -35,7 +35,7 @@ Pour ce faire, nous vous invitons à vous connecter à votre serveur de base de 
 
    Vous trouverez l’adresse IP utilisée pour la connexion à votre serveur dans la section Connexions de votre `Settings` page.
 
-1. Créez un utilisateur à utiliser pour se connecter à votre serveur de base de données. Vous avez deux options : via `UI` ou via un `query`:
+1. Créez un utilisateur à utiliser pour se connecter à votre serveur de base de données. Vous disposez de deux options : via `UI` ou au moyen d’un `query`:
    * `UI`
    * [`Query`](http://sqlserverplanet.com/security/add-user) (deuxième exemple)
 

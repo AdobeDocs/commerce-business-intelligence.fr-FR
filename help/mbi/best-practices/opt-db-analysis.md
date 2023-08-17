@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Optimiser votre base de données
 
-Le Principal avantage de l’utilisation d’une base de données opérationnelle pour [!DNL Adobe Commerce Intelligence] est que rien n’a besoin d’être créé ou modifié pour collecter des données. Il y a déjà des informations précieuses, il suffit de les déverrouiller.
+L’utilisation d’une base de données opérationnelle pour [!DNL Adobe Commerce Intelligence] est que rien n’a besoin d’être créé ou modifié pour collecter des données. Il y a déjà des informations précieuses, il suffit de les déverrouiller.
 
 Cette rubrique contient quelques recommandations destinées à vous aider à optimiser votre base de données pour l’analyse et à obtenir des informations exploitables à partir de données brutes.
 
@@ -25,9 +25,9 @@ Cette rubrique contient quelques recommandations destinées à vous aider à opt
 
 Lorsqu’une commande est annulée, qu’un utilisateur désactive son compte ou qu’un produit est arrêté, il est tentant de supprimer les informations associées dans la base de données. Les tables poussent et éliminent l&#39;encombrement semble être une idée prudente. Cependant, la suppression de lignes signifie que ces informations sont perdues pour toujours ou que vous devez effectuer d’anciennes sauvegardes pour les retrouver.
 
-Vous pouvez ajouter une colonne d’état au tableau qui indique quand la ligne n’est plus principale ou pertinente. Il est également recommandé d’ajouter une colonne qui stocke la date de la modification ou de créer un journal pour les modifications historiques. Si les tableaux deviennent suffisamment volumineux pour que les performances commencent à diminuer, pensez à archiver les anciennes données dans un tableau utilisé pour les analyses.
+Vous pouvez ajouter une colonne d’état au tableau qui indique quand la ligne n’est plus active ou pertinente. Il est également recommandé d’ajouter une colonne qui stocke la date de la modification ou de créer un journal pour les modifications historiques. Si les tableaux deviennent suffisamment volumineux pour que les performances commencent à diminuer, pensez à archiver les anciennes données dans un tableau utilisé pour les analyses.
 
-## Remplacer rarement les données
+## Écraser rarement des données
 
 Le remplacement des données doit être effectué avec modération et avec précaution.
 
@@ -37,13 +37,13 @@ En règle générale, si vous mettez à jour un enregistrement en raison d’une
 
 ## Inclure `Updated_at` Colonnes de données mises à jour au fil du temps
 
-Si les valeurs des lignes d’un tableau changent au fil du temps, par exemple : **order\_status** change depuis`processing` to `complete`, incluez une **updated\_at** pour enregistrer le moment où la dernière modification se produit. Assurez-vous que la variable **updated\_at** est disponible lors de la première insertion de la nouvelle ligne de données, lorsque la variable **updated\_at** date correspond au **created\_at** date.
+Si les valeurs des lignes d’un tableau changent au fil du temps, par exemple : **order\_status** change depuis`processing` to `complete`, incluez une **updated\_at** pour enregistrer le moment où la dernière modification se produit. Assurez-vous que la variable **updated\_at** est disponible lors de la première insertion de la nouvelle ligne de données, lorsque la variable **updated\_at** date correspond à la **created\_at** date.
 
 En plus de l&#39;optimisation pour les analyses, **updated\_at** Les colonnes vous permettent également d’utiliser [Méthodes de réplication incrémentielle](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), ce qui peut vous aider à raccourcir la durée de vos cycles de mise à jour.
 
-## Store User Acquisition Source
+## Stocker la source d’acquisition d’utilisateurs
 
-L’une des erreurs les plus courantes est la suivante : [source d’acquisition d’utilisateurs](../data-analyst/analysis/google-track-user-acq.md) (UAS) non stocké dans la base de données opérationnelle. Dans la plupart des cas, lorsqu’il s’agit d’un problème, le suivi de l’UAS se fait uniquement par le biais de [!DNL Google Analytics] ou un autre outil web analytics. Bien que ces outils puissent être utiles, le stockage exclusif de la détection des intrusions présente certains inconvénients; par exemple, vous ne pouvez pas extraire de données au niveau de l’utilisateur à partir de ces outils. Quand c&#39;est possible, c&#39;est généralement un processus difficile. Il devrait être facile d’obtenir ces informations et de les associer à des données provenant d’autres sources, telles que les informations comportementales et transactionnelles également stockées dans votre base de données.
+L’une des erreurs les plus courantes est la [source d’acquisition d’utilisateurs](../data-analyst/analysis/google-track-user-acq.md) (UAS) non stocké dans la base de données opérationnelle. Dans la plupart des cas, lorsqu’il s’agit d’un problème, le suivi de l’UAS se fait uniquement par le biais de [!DNL Google Analytics] ou un autre outil web analytics. Bien que ces outils puissent s’avérer utiles, le stockage exclusif de l’UAS présente certains inconvénients. Par exemple, vous ne pouvez pas extraire des données au niveau de l’utilisateur à partir de ces outils. Quand c&#39;est possible, c&#39;est généralement un processus difficile. Il devrait être facile d’obtenir ces informations et de les associer à des données provenant d’autres sources, telles que les informations comportementales et transactionnelles également stockées dans votre base de données.
 
 Le stockage de l’UAS dans votre propre base de données est souvent la plus grande amélioration qu’une entreprise en ligne puisse apporter à ses capacités d’analyse. Cela permet d’analyser les ventes, l’engagement des utilisateurs, les périodes de retour sur investissement, la valeur de durée de vie des clients, l’attrition et d’autres mesures critiques par l’interface utilisateur (UAS). [Ces données sont essentielles pour décider où investir les ressources marketing](../data-analyst/analysis/most-value-source-channel.md).
 
@@ -51,13 +51,13 @@ Trop d’entreprises se concentrent uniquement sur la recherche de canaux qui fo
 
 ## Configuration du tableau de données
 
-### Définition d’une clé Principal
+### Définition d’une clé de Principal
 
-A [Clé Principale](https://en.wikipedia.org/wiki/Unique_key) est une colonne (ou un ensemble de colonnes) inchangée qui produit des valeurs uniques dans un tableau. Les clés Principal sont extrêmement importantes, car elles garantissent que vos tableaux sont correctement répliqués dans [!DNL Commerce Intelligence].
+A [clé primaire](https://en.wikipedia.org/wiki/Unique_key) est une colonne (ou un ensemble de colonnes) inchangée qui produit des valeurs uniques dans un tableau. Les clés de Principal sont extrêmement importantes, car elles garantissent que vos tableaux sont correctement répliqués dans [!DNL Commerce Intelligence].
 
-Lors de la création de Principales clés, utilisez un type de données entier pour la colonne qui augmente automatiquement. Adobe vous recommande d’éviter d’utiliser, dans la mesure du possible, plusieurs clés Principales à colonnes.
+Lors de la création de clés primaires, utilisez un type de données entier pour la colonne qui augmente automatiquement. Adobe vous recommande d’éviter, dans la mesure du possible, d’utiliser plusieurs clés primaires à colonnes.
 
-Si votre table est une vue SQL, ajoutez une colonne pouvant agir comme une clé Principale. [!DNL Commerce Intelligence] peut identifier automatiquement cette colonne en tant que clé Principale.
+Si votre table est une vue SQL, ajoutez une colonne pouvant agir comme clé primaire. [!DNL Commerce Intelligence] peut identifier automatiquement cette colonne comme clé primaire.
 
 ### Affectation d’un type de données à votre colonne de données
 
@@ -65,4 +65,4 @@ Si une colonne de données n’est pas affectée [type de données](https://en.w
 
 ### Ajouter des préfixes à vos tableaux de données si vous disposez de plusieurs bases de données
 
-Si plusieurs bases de données sont connectées à [!DNL Commerce Intelligence], Adobe vous recommande d’ajouter des préfixes à vos tableaux pour éviter toute confusion. Les préfixes vous aident à mémoriser d’où proviennent les mesures ou les dimensions de données.
+Si plusieurs bases de données sont connectées à [!DNL Commerce Intelligence], Adobe vous recommande d’ajouter des préfixes à vos tableaux afin d’éviter toute confusion. Les préfixes vous aident à mémoriser d’où proviennent les mesures ou les dimensions de données.

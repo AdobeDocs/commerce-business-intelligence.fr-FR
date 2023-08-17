@@ -80,7 +80,7 @@ Voici une présentation visuelle :
 
 L’analyse des recettes sur la durée de vie qui a été traitée précédemment vous permet de consulter les recettes sur la durée de vie moyenne des utilisateurs provenant de sources différentes, mais qu’en est-il des recettes totales sur la durée de vie ? Ce rapport vous permet d’identifier le montant global des recettes générées par les utilisateurs enregistrés au cours d’une période et d’une source spécifiques.
 
-Pour créer ce rapport dans le Report Builder, ajoutez le `Revenue by user registration date` mesure. Si vous n’avez pas [créé cette mesure](../../data-user/reports/ess-manage-data-metrics.md) vous pouvez déjà le faire en répliquant la variable `Revenue` et de modifier la variable `time stamp` à l’utilisateur `creation date`. Après avoir ajouté la mesure, procédez comme suit :
+Pour créer ce rapport dans le Report Builder, ajoutez le `Revenue by user registration date` mesure. Si vous n’avez pas [a créé cette mesure](../../data-user/reports/ess-manage-data-metrics.md) vous pouvez déjà le faire en répliquant la variable `Revenue` et de modifier la variable `time stamp` à l’utilisateur `creation date`. Après avoir ajouté la mesure, procédez comme suit :
 
 1. Définissez la variable [!UICONTROL Time Period] à la période d&#39;enregistrement que vous souhaitez analyser.
 1. Définissez la variable [!UICONTROL Time Interval] au mois.
@@ -118,6 +118,6 @@ Cette rubrique n’a abordé que quelques analyses que vous pouvez utiliser pour
 ## Associé {#related}
 
 * [Suivi de la source de référence des commandes via [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
-* [Connectez-vous à [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)
-* [Création [!DNL Google ECommerce] dimensions avec commandes et données client](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [Connexion à [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)
+* [Création [!DNL Google ECommerce] dimensions avec commandes et données client ;](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Bonnes pratiques relatives au balisage UTM dans [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

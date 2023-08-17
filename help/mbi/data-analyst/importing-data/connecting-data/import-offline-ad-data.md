@@ -27,11 +27,11 @@ Outre vos campagnes en ligne, vous pouvez également avoir des publicités hors 
 
 La structure de tableau décrite ci-dessous est recommandée lors de la création d’une `.csv` pour enregistrer les données de dépenses publicitaires. Un fichier de modèle est également joint au bas de cette rubrique pour servir d’exemple. Les colonnes recommandées sont les suivantes :
 
-* `ID` - Il s’agit d’un identifiant unique pour chaque ligne de données utilisée par la base de données comme clé Principale. Cela doit être différent pour chaque ligne.
+* `ID` - Il s’agit d’un identifiant unique pour chaque ligne de données utilisée par la base de données comme clé primaire. Cela doit être différent pour chaque ligne.
 * `Date` - Date d’exécution de la campagne, au format aaaa-mm-jj.
 * `Amount` - Il s’agit du montant que vous avez dépensé pour la campagne.
 * `campaign` - Il s’agit du nom de la campagne. Si vous utilisez [!DNL Google Analytics] pour effectuer le suivi de vos autres données de dépenses publicitaires, elles doivent correspondre au nom utm\_campaign.
-* `source` - Il s’agit du nom de la source. Si vous utilisez [!DNL Google Analytics], cela doit correspondre au `utm_source` nom.
+* `source` - Il s’agit du nom source. Si vous utilisez [!DNL Google Analytics], cela doit correspondre à la variable `utm_source` nom.
 * `other` (Facultatif) - Vous pouvez également incorporer des colonnes supplémentaires qui vous aident à segmenter les campagnes et les coûts. Il peut également s’agir d’un moyen de résumer plusieurs noms de campagne UTM différents en une seule campagne cohérente à des fins de suivi. Plutôt que de configurer cette configuration manuellement, il peut être judicieux d’utiliser une recherche en V dans une seconde feuille afin de faire correspondre chaque nom de campagne à l’autre nom et de le signaler de manière dynamique ici.
 
 ## Associé

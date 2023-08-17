@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Pour vos affaires, les vacances peuvent être l&#39;un des moments les plus fréquentés de l&#39;année. Pour les commerçants disposant d&#39;une clientèle américaine importante, la période des fêtes s&#39;étend généralement sur les mois entre Thanksgiving et le Nouvel An.
 
-Les ruches peuvent être vécues à tout moment de l&#39;année; par exemple, si votre entreprise vend des shorts ou des provisions en pool, vous pourriez être confronté à une ruée pendant l’été. Cette rubrique explore les analyses qui vous aident à comparer vos hautes saisons sur différentes années.
+Vous pouvez avoir de l’expérience à n’importe quel moment de l’année ; par exemple, si votre entreprise vend des shorts ou des provisions en pool, vous risquez de vous précipiter pendant l’été. Cette rubrique explore les analyses qui vous aident à comparer vos hautes saisons sur différentes années.
 
 ## Mesures recommandées
 
@@ -29,19 +29,19 @@ Pour vous aider à comprendre comment le modèle de croissance de cette année s
 
 Cette mesure affiche la valeur moyenne globale de la commande durant les saisons des fêtes.
 
-## Exemple : Chiffre d’affaires des fêtes quotidiennes
+## Exemple : recettes de la saison des fêtes quotidiennes
 
 Maintenant que vous savez quelles mesures analyser, vous pouvez consulter des données d’exemple sur les recettes au cours des mois de novembre et décembre de la période des fêtes pour les années 2014 et 2015.
 
 ![Recettes quotidiennes de la saison des fêtes pour 2014 et 2015](../../assets/Analyzing_holiday_season.png)
 
-Dans cet exemple, les recettes pour 2014 et 2015 présentent deux importantes hausses : ces augmentations coïncident avec le Black Friday et le Cyber Monday. Remarquez que les pics ne sont pas le même jour pour 2014 et 2015. C&#39;est parce que le Vendredi noir est tombé le 27 novembre 2014 et le 28 novembre 2015. De même, le Lundi cybernétique était le 30 novembre 2014 et le 1er décembre 2015.
+Dans cet exemple, les recettes pour 2014 et 2015 présentent deux importantes hausses : celles-ci coïncident avec le Black Friday et le Cyber Monday. Remarquez que les pics ne sont pas le même jour pour 2014 et 2015. C&#39;est parce que le Vendredi noir est tombé le 27 novembre 2014 et le 28 novembre 2015. De même, le Lundi cybernétique était le 30 novembre 2014 et le 1er décembre 2015.
 
 En outre, il y a un pic des recettes pour 2015 le 19 décembre qui n&#39;apparaît pas en 2014. Il est possible qu&#39;une vente ait été proposée ce samedi particulier qui n&#39;était pas disponible l&#39;année précédente.
 
 Outre les quelques dates mentionnées ci-dessus, les recettes de ces deux années sont cumulées.
 
-## Quelles questions dois-je considérer ?
+## Quelles questions dois-je prendre en compte ?
 
 Pour vous aider à comprendre les tendances saisonnières de votre entreprise, voici quelques questions que vous devez garder à l’esprit lorsque vous explorez vos propres données :
 

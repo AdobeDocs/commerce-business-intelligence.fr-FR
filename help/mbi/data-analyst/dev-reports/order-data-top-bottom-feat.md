@@ -43,7 +43,7 @@ L’utilisation de cette fonctionnalité devient complexe lorsque il existe plus
 
 Supposons que vous ayez créé un rapport avec les deux `Revenue` et `Number of orders` mesures, regroupées par source de référence. `Revenue` ne peut être trié que par `Revenue` ou source de référence ; `Number of orders` ne peut être trié que par `Number of orders` ou source de référence.
 
-Cela signifie que pendant que vous pouvez afficher la variable `Revenue` en haut uniquement `5` sources de référence générant des recettes, vous ne pouvez pas afficher le nombre de commandes également en haut `5` sources de référence générant des recettes. En termes simples : s’il existe plusieurs mesures, il est préférable de les trier en fonction du regroupement.
+Cela signifie que pendant que vous pouvez afficher la variable `Revenue` en haut uniquement `5` sources de référence générant des recettes, vous ne pouvez pas afficher le nombre de commandes également en haut `5` sources de référence générant des recettes. En d’autres termes : lorsqu’il existe plusieurs mesures, il est préférable de trier chaque mesure par regroupement.
 
 Vous trouverez ci-dessous un exemple de graphique qui a trié la variable `Revenue` mesure par elle-même plutôt que par le regroupement. Comme vous pouvez le constater, le fait de ne pas trier la mesure par groupement a créé un rapport étrange (et, en fin de compte, inutile) :
 

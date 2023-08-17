@@ -17,7 +17,7 @@ Le partage de tableaux de bord signifie que vous et votre équipe avez les même
 
 ## Éviter les tableaux de bord en double
 
-Parfois, vous pouvez trouver plusieurs tableaux de bord portant le même nom, car d’autres utilisateurs ont créé et partagé des tableaux de bord similaires avec vous. Ces tableaux de bord peuvent être des doublons d’une Principale copie. Dans ce cas, Adobe recommande qu’un utilisateur partage la Principale copie du tableau de bord, puis qu’il supprime tous les tableaux de bord en double.
+Parfois, vous pouvez trouver plusieurs tableaux de bord portant le même nom, car d’autres utilisateurs ont créé et partagé des tableaux de bord similaires avec vous. Ces tableaux de bord peuvent être des doublons d’une copie principale. Dans ce cas, Adobe recommande qu’un utilisateur partage la copie principale du tableau de bord, puis qu’il supprime tous les tableaux de bord en double.
 
 Pour savoir qui possède un tableau de bord, cliquez sur la liste déroulante du tableau de bord dans le coin supérieur gauche. Tous les tableaux de bord qui n’ont pas de nom en dessous vous appartiennent.
 

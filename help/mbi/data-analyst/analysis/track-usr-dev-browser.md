@@ -31,15 +31,15 @@ Ces informations sont accessibles par votre serveur chaque fois qu’une demande
 
 ### Quand devriez-vous enregistrer ces données ?
 
-[!DNL Adobe] recommande d’ajouter un nouveau champ appelé `Platform` ou `User-Agent` à `Customers` et `Orders` des tables de base de données permettant de stocker ces informations chaque fois qu’un utilisateur est créé ou qu’une commande est passée. Si vous utilisez une base de données SQL, ce champ doit être une `VARCHAR(255)`. 
+[!DNL Adobe] recommande d’ajouter un nouveau champ appelé `Platform` ou `User-Agent` à votre `Customers` et `Orders` des tables de base de données permettant de stocker ces informations chaque fois qu’un utilisateur est créé ou qu’une commande est passée. Si vous utilisez une base de données SQL, ce champ doit être une `VARCHAR(255)`. 
 
 >[!NOTE]
 >
->Le `User-Agent` La chaîne est autorisée à être beaucoup plus longue, mais en pratique, elle dépasse rarement cette longueur.
+>La variable `User-Agent` La chaîne est autorisée à être beaucoup plus longue, mais en pratique, elle dépasse rarement cette longueur.
 
 ### Comment analyser les segments utiles ?
 
-Il existe un certain nombre de bibliothèques pour vous aider à analyser la variable `User-Agent` chaîne en composants tels que le système d’exploitation, le périphérique, etc. Reportez-vous à la section [projet ua-parser](https://github.com/tobie/ua-parser) pour en savoir plus.
+Il existe un certain nombre de bibliothèques pour vous aider à analyser la variable `User-Agent` chaîne en composants tels que le système d’exploitation, le périphérique, etc. Voir [projet ua-parser](https://github.com/tobie/ua-parser) pour en savoir plus.
 
 Grâce à ces nouvelles informations, vous pouvez mieux comprendre comment les utilisateurs accèdent à votre site. Vous pouvez ensuite personnaliser leur expérience ou créer des campagnes marketing pour certains groupes.
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 L’une des fonctionnalités des [!DNL Visual Report Builder] est la variable globale `Time Range` et `Interval` paramètres. Ces paramètres vous permettent d’analyser les données de votre rapport pendant une période spécifique.
 
-Cependant, pour certaines analyses, vous devrez peut-être tenir compte de périodes ou d’intervalles dans le même rapport. C&#39;est là que nous en sommes `Time` Les options entrent. Pour vous donner une meilleure idée de la manière d’utiliser `Time` dans vos rapports, ce tutoriel couvre les cas pratiques suivants :
+Cependant, pour certaines analyses, vous devrez peut-être tenir compte de périodes ou d’intervalles dans le même rapport. C&#39;est là que nous en sommes `Time` Les options entrent. Pour vous donner une meilleure idée de l’utilisation de `Time` dans vos rapports, ce tutoriel couvre les cas pratiques suivants :
 
 * [Analyse des mesures sans horodatage](#notimestamp)
 * [Octroi à une mesure d’un intervalle de temps indépendant](#independenttimeinterval)
@@ -37,7 +37,7 @@ Lors de l’utilisation d’une telle mesure dans vos rapports, vous remarquerez
 
 Ce type de rapport peut s’avérer utile si vous souhaitez comparer les recettes générées d’une année à l’autre. Par exemple, vous avez un graphique pour 2015 qui révèle que janvier a contribué à 18 % des recettes de l’année et un graphique pour 2016 n’a montré que 8 %. Vous pourriez commencer à faire des recherches sur ce qui aurait pu arriver.
 
-1. Ajoutez vos `Revenue` au rapport.
+1. Ajoutez `Revenue` au rapport.
 1. Cliquez sur **[!UICONTROL Duplicate]** pour effectuer une copie de la mesure.
 1. Cliquez sur la variable globale **[!UICONTROL Time Range]** , puis **[!UICONTROL Moving Time Range]**. Définissez cette variable sur `Last Year`.
 1. Cliquez sur la variable globale **[!UICONTROL Time Interval]** et définissez-la sur `Monthly`.
@@ -46,9 +46,9 @@ Ce type de rapport peut s’avérer utile si vous souhaitez comparer les recette
 1. Cliquez sur **[!UICONTROL Time Options]** dans la fenêtre développée qui s’affiche au-dessus du rapport.
 1. Dans la liste déroulante, définissez les options suivantes :
 
-   * `Time Interval`: Définissez cette variable sur `None`.
+   * `Time Interval`: définissez cette variable sur `None`.
 
-   * `Time Range`: Définissez cette variable sur `Last Year` par le premier clic **[!UICONTROL Custom]**, puis **[!UICONTROL Moving Range]**, puis enfin, en sélectionnant le `Last Year` .
+   * `Time Range`: définissez cette variable sur `Last Year` en cliquant **[!UICONTROL Custom]**, puis **[!UICONTROL Moving Range]**, puis enfin, en sélectionnant le `Last Year` .
 
    * Cliquez sur **[!UICONTROL Apply]** pour enregistrer les paramètres d’intervalle et de plage. Cela crée une mesure qui calcule le total des recettes de l’année précédente. Ensuite, vous utilisez cette mesure comme dénominateur dans une formule.
 
@@ -72,7 +72,7 @@ Les deux exemples les plus courants dans cette catégorie sont (1) la comparaiso
 
 Pour illustrer ce cas d’utilisation, comparez les recettes quotidiennes du mois précédent au même mois de l’année précédente. Supposons que vous souhaitiez consulter les recettes pour chaque jour de janvier 2016, puis les comparer à janvier 2015, janvier 2014, etc. - ce rapport nous le montrerait.
 
-1. Ajoutez vos `Revenue` au rapport.
+1. Ajoutez `Revenue` au rapport.
 1. Cliquez sur **[!UICONTROL Duplicate]** pour effectuer une copie de la mesure.
 1. Renommez la première mesure en `Items sold last 7 days` et la deuxième mesure à `Items sold last 28 days`.
 1. Cliquez sur **[!UICONTROL Time Range]**, puis **[!UICONTROL Moving Time Range]**. Définissez cette variable sur `Last Month`.
@@ -81,9 +81,9 @@ Pour illustrer ce cas d’utilisation, comparez les recettes quotidiennes du moi
 1. Cliquez sur **[!UICONTROL Time Options]** dans la fenêtre développée qui s’affiche au-dessus du rapport.
 1. Dans la liste déroulante, définissez les options suivantes :
 
-   * `Time Interval`: Définissez cette variable sur `None`.
+   * `Time Interval`: définissez cette variable sur `None`.
 
-   * `Time Range`: Définissez cette variable sur `From 14 Months Ago To 13 Months Ago` par le premier clic **[!UICONTROL Custom]** then **[!UICONTROL Moving Range]**. Pour définir la plage, utilisez les champs et les listes déroulantes dans la partie supérieure du menu. Ce paramètre nous permet d’afficher les recettes du mois précédent, mais de l’année précédente.
+   * `Time Range`: définissez cette variable sur `From 14 Months Ago To 13 Months Ago` en cliquant **[!UICONTROL Custom]** then **[!UICONTROL Moving Range]**. Pour définir la plage, utilisez les champs et les listes déroulantes dans la partie supérieure du menu. Ce paramètre nous permet d’afficher les recettes du mois précédent, mais de l’année précédente.
 
    Ne vous inquiétez pas si la mesure disparaît du rapport. La définition d’une option d’heure indépendante masque automatiquement la mesure du rapport. Pour le réafficher, cliquez sur **[!UICONTROL Show]** en regard de la mesure.
 
@@ -103,27 +103,27 @@ Autre utilisation courante de la personnalisation `Time Options` est de détermi
 
 N’oubliez pas de définir vous-même les plages de temps à ce dont vous avez besoin lors de la création de ce rapport.
 
-1. Ajoutez vos `Items Sold` au rapport.
+1. Ajoutez `Items Sold` au rapport.
 1. Cliquez sur **[!UICONTROL Duplicate]** pour effectuer une copie de la mesure.
 1. Renommez les mesures. Vous pouvez utiliser les mêmes noms ou un élément similaire :
    1. Renommez la première mesure en `Items sold last 7 days`.
    1. Renommez la seconde mesure en `Items sold last 28 days`.
-1. Sur le `Items sold last 7 days` , cliquez sur la mesure globale **[!UICONTROL Time Range]** option alors **[!UICONTROL Moving Time Range]**. Dans cet exemple, vous définissez la variable sur `Last 7 Days`.
+1. Sur le `Items sold last 7 days` , cliquez sur la mesure globale **[!UICONTROL Time Range]** option , puis **[!UICONTROL Moving Time Range]**. Dans cet exemple, vous définissez la variable sur `Last 7 Days`.
 1. Cliquez sur **[!UICONTROL Time Interval]** et définissez-le sur `None`.
 1. Vous définissez ensuite la variable `Time Options` pour le `Items sold last 28 days` mesure. Cliquez sur **[!UICONTROL Time Options]** (icône d’horloge) à droite de la `second Items sold` mesure.
 1. Cliquez sur **[!UICONTROL Time Options]** dans la fenêtre développée qui s’affiche au-dessus du rapport.
 1. Dans la liste déroulante, définissez les options suivantes :
 
-   * `Time Interval`: Définissez cette variable sur `None`.
-   * `Time Range`: Définissez cette variable sur `From 29 days to 1 day ago` par le premier clic **[!UICONTROL Custom]**, puis **[!UICONTROL Moving Range]**. Pour définir la plage, utilisez les champs et les listes déroulantes dans la partie supérieure du menu.
+   * `Time Interval`: définissez cette variable sur `None`.
+   * `Time Range`: définissez cette variable sur `From 29 days to 1 day ago` en cliquant **[!UICONTROL Custom]**, puis **[!UICONTROL Moving Range]**. Pour définir la plage, utilisez les champs et les listes déroulantes dans la partie supérieure du menu.
    * Cliquez sur **[!UICONTROL Apply]** pour enregistrer les paramètres d’intervalle et de plage.
    * Dupliquez la variable `Items sold last 28 days` et ouvrez la nouvelle mesure `Time Options`. Définissez les options suivantes :
 
-      * `Time Interval`: laissez ceci comme `None`.
-      * `Time Range`: modifiez la date selon la période qui s’aligne sur la promotion qui vous intéresse en cliquant sur **[!UICONTROL Specific Date Range]** puis saisissez les dates appropriées.
+      * `Time Interval`: laissez ce champ comme suit : `None`.
+      * `Time Range`: remplacez cette valeur par la plage de dates correspondant à la promotion qui vous intéresse en cliquant sur **[!UICONTROL Specific Date Range]** puis saisissez les dates appropriées.
       * Renommer la mesure `Items sold during last promotion` ou quelque chose de similaire.
-      * Ajoutez vos `Units on hand` mesure.
-      * Vous devez ensuite ajouter les calculs qui montrent les semaines en cours, en tenant compte des tendances de vente, pour les périodes (`last 7 days`, `last 28 days`, et `last promo` point) que vous incluez dans le rapport. Vous devez le faire une fois pour chaque période.
+      * Ajoutez `Units on hand` mesure.
+      * Vous devez ensuite ajouter les calculs qui montrent les semaines en cours, en tenant compte des tendances de vente, pour les périodes (`last 7 days`, `last 28 days`, et `last promo` point) que vous incluez dans le rapport. Vous devez le faire une seule fois pour chaque période.
 
 Pour créer les formules, cliquez sur **[!UICONTROL Add Formula]**. Saisissez la formule ci-dessous et cliquez sur **[!UICONTROL Apply Changes]** lorsque vous avez terminé. Répétez cette opération pour chacune des trois périodes :
 

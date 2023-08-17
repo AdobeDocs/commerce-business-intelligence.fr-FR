@@ -20,9 +20,9 @@ Deux tables sont alors disponibles pour la réplication dans votre Data Warehous
 * `campaigns[account-id]`
 * `adwords[account-id]`
 
-Le `campaigns` table *doit être utilisé par défaut.*, afin que vous puissiez commencer par synchroniser tous les champs pertinents de ce tableau.
+La variable `campaigns` table *doit être utilisé par défaut.*, afin que vous puissiez commencer par synchroniser tous les champs pertinents de ce tableau.
 
-Le `adwords` Le tableau contient quatre colonnes qui ne figurent pas dans la variable `campaigns` table :
+La variable `adwords` Le tableau contient quatre colonnes qui ne se trouvent pas dans la variable `campaigns` table :
 
 1. `keyword`
 1. `adContent`
@@ -39,11 +39,11 @@ Vous trouverez ci-dessous un aperçu du schéma attendu pour les deux tableaux.
 
 ## [!DNL Campaigns] table
 
-Le `campaigns` Le tableau contient les colonnes suivantes :
+La variable `campaigns` Le tableau contient les colonnes suivantes :
 
 | **Colonne** | **Description** |
 |-----|-----|
-| `\_id` | Clé Principale du tableau |
+| `\_id` | Clé primaire de la table |
 | `accountId` | ID du compte |
 | [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Nombre total de clics pour la journée |
 | [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Coût total de la campagne pour la journée |
@@ -59,11 +59,11 @@ Le `campaigns` Le tableau contient les colonnes suivantes :
 
 ## [!DNL AdWords] table
 
-Le `adwords` Le tableau contient les colonnes suivantes :
+La variable `adwords` Le tableau contient les colonnes suivantes :
 
 | **Colonne** | **Description** |
 |-----|-----|
-| `\_id` | Clé Principale du tableau |
+| `\_id` | Clé primaire de la table |
 | `accountId` | ID du compte |
 | [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Nombre total de clics pour la journée |
 | [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Coût total de la campagne pour la journée |

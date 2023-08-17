@@ -21,14 +21,14 @@ Pour connecter votre [!DNL PostgreSQL] vers la base de données [!DNL Commerce I
 1. [Créez un [!DNL PostgreSQL] user pour [!DNL Commerce Intelligence]](#postgres)
 1. [Saisissez les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]](#finish)
 
-## Récupération de la variable [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
+## Récupération de la [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
 
-Le `public key` est utilisé pour autoriser la variable [!DNL Commerce Intelligence] [!DNL Linux] utilisateur. Vous allez maintenant créer l’utilisateur et importer la clé.
+La variable `public key` est utilisé pour autoriser la variable [!DNL Commerce Intelligence] [!DNL Linux] utilisateur. Vous allez maintenant créer l’utilisateur et importer la clé.
 
 1. Accédez à **[!UICONTROL Manage Data** > **Connections]** et cliquez sur **[!UICONTROL Add a Data Source]**.
-1. Cliquez sur le bouton [!DNL PostgreSQL] icône .
+1. Cliquez sur le bouton [!DNL PostgreSQL] Icône
 1. Après la `PostgreSQL credentials` s’ouvre, définissez `Encrypted` bascule vers `Yes`. Cette fenêtre affiche le `SSH` formulaire de configuration.
-1. Le `public key` se trouve sous ce formulaire.
+1. La variable `public key` se trouve sous ce formulaire.
 
 Laissez cette page ouverte tout au long du tutoriel. Vous en aurez besoin dans la section suivante et à la fin.
 
@@ -86,20 +86,20 @@ Si vous souhaitez connecter plusieurs bases de données ou schémas, répétez c
 
 ## Saisie des informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence] {#finish}
 
-Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté le [!DNL PostgreSQL] la page des informations d’identification s’ouvre ? Si ce n’est pas le cas, accédez à **[!UICONTROL Manage Data > Connections]** et cliquez sur **[!UICONTROL Add a Data Source]**, puis la variable [!DNL PostgreSQL] icône . N’oubliez pas de définir la variable `Encrypted` bascule vers `Yes`.
+Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté le [!DNL PostgreSQL] la page des informations d’identification s’ouvre ? Dans le cas contraire, accédez à **[!UICONTROL Manage Data > Connections]** et cliquez sur **[!UICONTROL Add a Data Source]**, puis la variable [!DNL PostgreSQL] Icône N’oubliez pas de définir la variable `Encrypted` bascule vers `Yes`.
 
 Renseignez les informations suivantes dans cette page, en commençant par le `Database Connection` section :
 
-* `Username`: Nom d’utilisateur de Postgres RJMetrics (doit être jmetric)
-* `Password`: Mot de passe Postgres RJMetrics
-* `Port`: Port PostgreSQL sur votre serveur (5432 par défaut)
+* `Username`: nom d’utilisateur des publications RJMetrics (doit être jmetric)
+* `Password`: mot de passe Postgres RJMetrics.
+* `Port`: port PostgreSQL sur votre serveur (5432 par défaut)
 * `Host`: 127.0.0.1
 
 Sous `SSH Connection`:
 
-* `Remote Address`: L’adresse IP ou le nom d’hôte du serveur vers lequel vous allez SSH
-* `Username`: Votre nom de connexion SSH (doit être jmetric)
-* `SSH Port`: Port SSH sur votre serveur (22 par défaut)
+* `Remote Address`: l’adresse IP ou le nom d’hôte du serveur dans lequel vous allez SSH.
+* `Username`: votre nom de connexion SSH (doit être jmetric)
+* `SSH Port`: port SSH sur votre serveur (22 par défaut)
 
 Lorsque vous avez terminé, cliquez sur **Enregistrement et test** pour terminer la configuration.
 

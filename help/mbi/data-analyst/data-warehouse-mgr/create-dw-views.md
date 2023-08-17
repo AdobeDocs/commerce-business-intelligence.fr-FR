@@ -17,15 +17,15 @@ Ce document décrit l’objectif et l’utilisation de `Data Warehouse Views` ac
 
 ## Objectif général
 
-Le `Data Warehouse Views` La fonctionnalité est une méthode permettant de créer de nouvelles tables stockées en modifiant une table existante ou en associant ou en consolidant plusieurs tables à l’aide de SQL. Une fois un `Data Warehouse View` a été créé et traité par un cycle de mise à jour ; il est renseigné dans votre Data Warehouse sous la forme d’un nouveau tableau sous la variable `Data Warehouse Views` , comme illustré ci-dessous :
+La variable `Data Warehouse Views` Cette fonctionnalité est une méthode permettant de créer de nouvelles tables stockées en modifiant une table existante ou en associant ou en consolidant plusieurs tables à l’aide de SQL. Une fois un `Data Warehouse View` a été créé et traité par un cycle de mise à jour ; il est renseigné dans votre Data Warehouse sous la forme d’un nouveau tableau sous la variable `Data Warehouse Views` , comme illustré ci-dessous :
 
 ![](../../assets/Data_Warehouse.png)
 
 À partir de là, votre nouvelle vue fonctionne comme n’importe quel autre tableau, ce qui vous permet de créer de nouvelles colonnes calculées ou de créer des mesures et des rapports.
 
-`Data Warehouse Views` sont principalement utilisées pour consolider plusieurs tableaux similaires mais disparates, de sorte que tous les rapports puissent être créés sur un seul nouveau tableau. Voici quelques exemples courants : consolidation des tableaux à partir d’une base de données héritée et d’une base de données active afin de combiner des données historiques et actuelles, ou combinaison de plusieurs sources d’annonces comme Facebook et AdWords en une seule base de données. `Consolidated ad spend` table.
+`Data Warehouse Views` sont principalement utilisées pour consolider plusieurs tableaux similaires mais disparates, de sorte que tous les rapports puissent être créés sur un seul nouveau tableau. Quelques exemples courants incluent la consolidation des tables d’une base de données héritée et d’une base de données active afin de combiner des données historiques et actuelles, ou la combinaison de plusieurs sources d’annonces comme Facebook et AdWords en une seule base de données. `Consolidated ad spend` table.
 
-Si vous connaissez SQL, ces deux exemples de consolidation utilisent la variable `UNION` mais vous pouvez utiliser n’importe quelle syntaxe et fonction PostgreSQL lors de la création d’une nouvelle vue.
+Si vous maîtrisez SQL, ces deux exemples de consolidation utilisent la méthode `UNION` mais vous pouvez utiliser n’importe quelle syntaxe et fonction PostgreSQL lors de la création d’une nouvelle vue.
 
 ## Création et gestion des vues de Data Warehouse
 
@@ -49,7 +49,7 @@ Il est important de mentionner qu’après l’enregistrement, la requête sous-
 
 ## Exemple : [!DNL Facebook] et [!DNL Google AdWords] data
 
-Regardez de plus près l’un des exemples mentionnés précédemment dans cet article : consolidation [!DNL Facebook] et [!DNL AdWords] dépensez des données dans un nouveau tableau publicitaire consolidé. Cela implique le plus souvent la consolidation de deux tables, avec des exemples de jeux de données ci-dessous :
+Regardez de plus près l’un des exemples mentionnés précédemment dans cet article : Consolidation [!DNL Facebook] et [!DNL AdWords] dépensez des données dans un nouveau tableau publicitaire consolidé. Cela implique le plus souvent la consolidation de deux tables, avec les exemples de jeux de données ci-dessous :
 
 `Ad source: Google AdWords`
 
@@ -79,7 +79,7 @@ Regardez de plus près l’un des exemples mentionnés précédemment dans cet a
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-Pour créer une seule table de dépenses publicitaires contenant les deux [!DNL Facebook] et [!DNL Google AdWords] campagnes, vous devez écrire une requête SQL et utiliser la variable `UNION ALL` fonction . A `UNION ALL` est généralement utilisée pour combiner plusieurs requêtes SQL distinctes tout en ajoutant les résultats de chaque requête à une seule sortie.
+Pour créer une seule table de dépenses publicitaires contenant les deux [!DNL Facebook] et [!DNL Google AdWords] campagnes, vous devez écrire une requête SQL et utiliser la variable `UNION ALL` de la fonction A `UNION ALL` est généralement utilisée pour combiner plusieurs requêtes SQL distinctes tout en ajoutant les résultats de chaque requête à une seule sortie.
 
 Il existe quelques exigences d’une `UNION` Instruction qui vaut la peine d’être mentionnée, comme indiqué dans PostgreSQL [documentation](https://www.postgresql.org/docs/8.3/queries-union.html):
 

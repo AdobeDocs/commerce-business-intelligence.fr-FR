@@ -38,7 +38,7 @@ Le tableau de bord Clients (passage en caisse autorisé) fournit des information
 | `Subsequent Order Probability (All Time)` | La probabilité que les clients qui ont passé une commande en placent une autre. |
 | `% of Customers with Multiple Orders (All Time)` | Pourcentage de tous les clients ayant passé plusieurs commandes. |
 | `Median Time Between Orders (All Time)` | Durée moyenne de chaque client entre le placement d’une commande et le suivant. |
-| `Subsequent Order Probability` | La probabilité que les clients qui ont passé une commande placent une autre commande, ventilée par numéro de commande. C&#39;est-à-dire le pourcentage de clients avec une commande qui en passent une seconde, le pourcentage de clients avec deux qui en passent une troisième, et ainsi de suite. |
+| `Subsequent Order Probability` | La probabilité que les clients qui ont passé une commande placent une autre commande, ventilée par numéro de commande. C&#39;est-à-dire le pourcentage de clients avec une commande qui en passent une seconde, le pourcentage de clients avec deux qui en passent une troisième, etc. |
 | `Time Between Orders` | Le temps moyen et médian pris par les clients entre les commandes, ventilé par numéro de commande (c’est-à-dire le temps entre les commandes un et deux, deux et trois, etc.). |
 | `Number of Customers - Lifetime Orders` | Pour un nombre donné de commandes passées dans la durée de vie d’un client, le nombre de clients qui ont passé autant de commandes et le pourcentage de l’ensemble de la base de clients représentée par ce nombre. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Les clients qui ont effectué leur premier et unique achat il y a de trois à six mois. |
@@ -61,7 +61,7 @@ Le tableau de bord Clients (aucun passage en caisse invité autorisé) fournit d
 | `Subsequent Order Probability (All Time)` | La probabilité que les clients qui ont passé une commande en placent une autre. |
 | `% of Customers with Multiple Orders (All Time)` | Pourcentage de tous les clients ayant passé plusieurs commandes. |
 | `Median Time Between Orders (All Time)` | Durée moyenne de chaque client entre le placement d’une commande et le suivant. |
-| `Subsequent Order Probability` | La probabilité que les clients qui ont passé une commande en placent une autre, ventilée par numéro de commande. C&#39;est-à-dire, le pourcentage de clients avec une commande qui en passent une seconde, le pourcentage de clients avec deux qui en passent une troisième, et ainsi de suite. |
+| `Subsequent Order Probability` | La probabilité que les clients qui ont passé une commande en placent une autre, ventilée par numéro de commande. C&#39;est-à-dire, le pourcentage de clients avec une commande qui en passent une seconde, le pourcentage de clients avec deux qui en passent une troisième, etc. |
 | `Time Between Orders` | Le temps moyen et médian pris par les clients entre les commandes, ventilé par numéro de commande (c’est-à-dire le temps entre les commandes un et deux, deux et trois, etc.). |
 | `Number of Customers - Lifetime Orders` | Pour un nombre donné de commandes passées dans la durée de vie d’un client, le nombre de clients qui ont passé autant de commandes et le pourcentage de l’ensemble de la base de clients représentée par ce nombre. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Les clients qui ont effectué leur premier et unique achat il y a de trois à six mois. |
@@ -70,7 +70,7 @@ Le tableau de bord Clients (aucun passage en caisse invité autorisé) fournit d
 
 ## Résumé (passage en caisse des invités autorisé)
 
-Le tableau de bord du résumé (paiement des invités autorisé) vous donne une vue succincte des commandes et des recettes de l’entreprise. Ce tableau de bord est conçu pour permettre aux cadres de mieux comprendre les performances de l’entreprise, mais il peut également être intéressant pour d’autres personnes.
+Le tableau de bord du résumé (paiement des invités autorisé) vous donne une vue succincte des commandes et des recettes de l’entreprise. Ce tableau de bord est conçu pour permettre aux cadres de mieux comprendre les performances de l’entreprise, mais il peut également être intéressant pour les autres.
 
 ### Rapports
 
@@ -89,7 +89,7 @@ Le tableau de bord du résumé (paiement des invités autorisé) vous donne une 
 
 ## Résumé (pas de passage en caisse des invités autorisé)
 
-Le tableau de bord du résumé (pas de passage en caisse autorisé) vous donne une vue succincte de l’activité en termes de commandes, de recettes et d’inscriptions au compte. Ce tableau de bord est conçu pour permettre aux cadres de mieux comprendre les performances de l’entreprise, mais il peut également être intéressant pour d’autres personnes.
+Le tableau de bord du résumé (pas de passage en caisse autorisé) vous donne une vue succincte de l’activité en termes de commandes, de recettes et d’inscriptions au compte. Ce tableau de bord est conçu pour permettre aux cadres de mieux comprendre les performances de l’entreprise, mais il peut également être intéressant pour les autres.
 
 ### Rapports
 
@@ -122,7 +122,7 @@ Le tableau de bord Commandes fournit des informations sur le volume transactionn
 | `Revenue (Past 30 Days)` | Les recettes générées par votre boutique au cours des 30 derniers jours. Les recettes sont définies comme le prix final payé par un client lors d’une commande. |
 | `Average Order Value (Past 30 Days)` | Valeur moyenne des commandes passées au cours des 30 derniers jours. La valeur de la commande est définie comme le prix final payé par un client lors d’une commande. |
 | `Orders` | Nombre de commandes passées dans votre boutique chaque mois. |
-| `Revenue by Payment Method` | Les recettes générées par votre boutique, réparties par mode de paiement. Les recettes sont définies comme le prix final payé par un client lors d’une commande. |
+| `Revenue by Payment Method` | Les recettes générées par votre boutique, fractionnées par mode de paiement. Les recettes sont définies comme le prix final payé par un client lors d’une commande. |
 | `AOV by New vs Existing Customers` | Moyenne mensuelle des commandes passées en magasin, fractionnée par les commandes passées par des clients sans commandes précédentes, par rapport aux clients ayant passé au moins une commande. La valeur de la commande est définie comme le prix final payé par un client lors d’une commande. |
 | `% Orders by Status (Past 30 Days)` | Pourcentage de commandes passées chaque jour au cours des 30 derniers jours et actuellement dans chaque état de commande. |
 | `Incomplete Orders (Created more than 1 Day Ago)` | Liste de toutes les commandes passées il y a plus d’un jour et qui sont toujours dans un état incomplet (non annulées ou terminées). |
@@ -133,7 +133,7 @@ Le tableau de bord Commandes fournit des informations sur le volume transactionn
 
 ## Produits
 
-Le tableau de bord Produits présente les performances générales du produit en termes de produits commandés, de leur valeur brute de marchandisage (GMV) et des principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, ainsi qu’à déterminer le succès et la popularité du produit. Votre boutique doit être [configuré pour effectuer le suivi des remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) pour que ces graphiques soient renseignés.
+Le tableau de bord Produits présente les performances générales du produit en termes de produits commandés, de leur valeur brute de marchandisage (GMV) et des principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, ainsi qu’à déterminer le succès et la popularité du produit. Votre boutique doit être [configuré pour suivre les remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) pour que ces graphiques soient renseignés.
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Le tableau de bord Produits présente les performances générales du produit en
 | `% GMV (Past 30 Days) Refunded` | Pourcentage de GMV pour les produits achetés au cours des 30 derniers jours ayant abouti à un remboursement. |
 | `Product Quantity Ordered (Past 30 Days)` | Nombre total d’articles commandés au cours des 30 derniers jours. |
 | `% Purchased Products (Past 30 Days) Refunded` | Pourcentage d’articles achetés au cours des 30 derniers jours qui ont abouti à un remboursement. |
-| `Gross Merchandise Value` | La valeur brute de tous les produits vendus, par mois. Le GMV est défini comme la quantité commandée multipliée par le prix de base de chaque produit. |
+| `Gross Merchandise Value` | La valeur brute de la marchandise de tous les produits vendus, par mois. Le GMV est défini comme la quantité commandée multipliée par le prix de base de chaque produit. |
 | `Purchases vs Refund Rate per Product (Past 30 Days)` | Pour chaque produit, une comparaison du nombre total commandé au cours des 30 derniers jours par rapport au taux de remboursement du produit. La taille de chaque bulle représente le taux de remboursement. |
 | `Product Performance Details (Past 30 Days)` | Informations détaillées sur les ventes et les remboursements ultérieurs au cours des 30 derniers jours, par SKU et nom du produit. |
 | `Top Purchased Products by GMV (Past 30 Days)` | Les produits vendus au cours des 30 derniers jours ont généré le plus de recettes (les 10 premiers). |

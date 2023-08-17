@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Chaque ligne du `enterprise_rma` table (souvent appelée `magento_rma` dans Adob
 
 | **Nom de la colonne** | **Description** |
 |---|---|
-| `entity\_id` | Identifiant unique du tableau. Chaque `entity\_id` représente une requête de retour. |
+| `entity\_id` | Identifiant unique de la table. Chaque `entity\_id` représente une requête de retour. |
 | `date\_requested` | Date à laquelle le retour a été demandé. |
 | `status` | État du retour. Les valeurs comprennent &quot;reçu&quot;, &quot;en attente&quot;, &quot;autorisé&quot;, entre autres. |
 | `order\_id` | Clé étrangère associée à la variable `sales\_flat\_order` table. |
@@ -35,8 +35,8 @@ Chaque ligne du `enterprise_rma` table (souvent appelée `magento_rma` dans Adob
 
 | **Nom de la colonne** | **Description** |
 |---|---|
-| `Order's created\_at` | Il s’agit de la date de la commande d’origine. Vous pouvez l’utiliser pour obtenir le temps entre la commande et la demande de retour. |
-| `Customer's order number` | Il s’agit du numéro de commande du client associé à la commande d’origine. |
+| `Order's created\_at` | Il s’agit de la date de la commande initiale. Vous pouvez l’utiliser pour obtenir le temps entre la commande et la demande de retour. |
+| `Customer's order number` | Il s’agit du numéro de commande du client associé à la commande initiale. |
 | `Seconds between order's created\_at and return's date\_requested` | Nombre de secondes entre la date de commande et la demande de retour. |
 | `Return's total value` | Il s’agit du montant monétaire total qui est renvoyé. Il s’agit de la somme du montant de retour individuel de chaque élément de retour. |
 
@@ -49,7 +49,7 @@ Chaque ligne du `enterprise_rma` table (souvent appelée `magento_rma` dans Adob
 | `Number of returns` | Nombre de retours demandés. | `Operation` column : `entity id`<br>`Operation`: `Count`<br>`Timestamp` Colonne : `date requested` |
 | `Total returned amount` | Montant monétaire total renvoyé. | `Operation `Colonne : `Return's total value`<br>`Operation`: Somme<br>`Timestamp` Colonne : date demandée |
 | `Average returned amount` | Montant monétaire moyen renvoyé. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Colonne : `date requested` |
-| `Average time to return` | Temps moyen entre le retour de la commande. | `Operation` Colonne : Secondes entre la date de création de la commande et la date de retour demandée<br>`Operation`: `Average`<br>`Timestamp` Colonne : `date requested` |
+| `Average time to return` | Temps moyen entre le retour de la commande. | `Operation` Colonne : secondes entre la date de création de la commande et la date de retour demandée<br>`Operation`: `Average`<br>`Timestamp` Colonne : `date requested` |
 
 {style="table-layout:auto"}
 

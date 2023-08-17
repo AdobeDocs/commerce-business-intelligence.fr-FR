@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Créez un `Qualitative Cohort Analysis`
 
-Sais-tu comment ta [!DNL Google Adwords]Les segments de clients acquis développent leur LTV par rapport aux clients acquis par le référencement organique ? Avez-vous déjà pensé à exécuter une `cohort` analyse côte à côte sur différents segments de clients dans le même rapport ? Si tel est le cas, une `qualitative cohort analysis` vous aide à répondre à ces questions.
+Sais-tu comment ta [!DNL Google Adwords]Les segments de clients acquis développent leur LTV par rapport aux clients acquis par le référencement organique ? Avez-vous déjà pensé à exécuter une `cohort` l’analyse côte à côte de différents segments de clients dans le même rapport ? Si tel est le cas, une `qualitative cohort analysis` vous aide à répondre à ces questions.
 
 Cette rubrique aborde ce qu’est une cohorte qualitative, pourquoi vous pourriez être intéressé par la création de cette analyse et comment la créer dans [!DNL Commerce Intelligence].
 
@@ -31,7 +31,7 @@ Le plus `cohort` analyses dans [!DNL Commerce Intelligence] regrouper les utilis
 
 ## En quoi cela diffère-t-il de la normale `cohort` builder ? {#different}
 
-Le [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) est optimisée pour les cohortes de regroupement utilisant une caractéristique temporelle. Cela s’avère particulièrement utile pour les analyses portant sur un segment spécifique d’utilisateurs (par exemple, tous les utilisateurs acquis au moyen d’une campagne de recherche payante). Dans le `Cohort Analysis Builder`, vous pouvez (1) vous concentrer sur ce groupe d’utilisateurs spécifique, et (2) `cohort` à une date (comme leur date de première commande).
+La variable [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) est optimisée pour les cohortes de regroupement utilisant une caractéristique temporelle. Cela s’avère particulièrement utile pour les analyses portant sur un segment spécifique d’utilisateurs (par exemple, tous les utilisateurs acquis au moyen d’une campagne de recherche payante). Dans le `Cohort Analysis Builder`, vous pouvez (1) vous concentrer sur ce groupe d’utilisateurs spécifique, et (2) `cohort` à une date (comme leur date de première commande).
 
 Cependant, si vous souhaitez analyser le comportement des cohortes de plusieurs segments d’utilisateurs dans le même rapport de cohorte (`paid` recherche et `organic` Rechercher par rapport au trafic direct, par exemple ?), cette analyse plus avancée peut être créée dans la variable `Report Builder`.
 
@@ -41,13 +41,13 @@ Création d’un `qualitative cohort` dans le rapport `Report Builder` implique 
 
 Pour les créer, envoyez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (et reportez-vous à cet article !). Voici ce que vous devez savoir :
 
-* Le `metric` vous souhaitez exécuter l’analyse des cohortes avec et avec le tableau qu’elle utilise (par exemple : `Revenue`, reposant sur la variable `orders` ).
+* La variable `metric` vous souhaitez exécuter l’analyse des cohortes avec et avec le tableau qu’elle utilise (par exemple : `Revenue`, reposant sur la variable `orders` ).
 
-* Le `user segments` vous souhaitez définir et où ces informations se trouvent dans votre base de données (par exemple : différentes valeurs de `User's referral source`, natif de la fonction `users` et déplacé vers le `orders`).
+* La variable `user segments` vous souhaitez définir et où ces informations se trouvent dans votre base de données (par exemple : différentes valeurs de `User's referral source`, natif de la fonction `users` et déplacé vers le `orders`).
 
-* Le `cohort date` vous souhaitez que votre analyse utilise (par exemple : la valeur `User's first order date` horodatage). Cet exemple nous permet de consulter chaque segment et de demander : `How does a user's revenue grow in the months following their first order date?`.
+* La variable `cohort date` vous souhaitez que votre analyse utilise (par exemple : `User's first order date` horodatage). Cet exemple nous permet de consulter chaque segment et de demander : `How does a user's revenue grow in the months following their first order date?`.
 
-* Le `time interval` sur lequel vous souhaitez afficher l’analyse (par exemple : `weeks`, `months`ou `quarters` après la `User's first order date`).
+* La variable `time interval` sur lequel vous souhaitez afficher l’analyse (par exemple : `weeks`, `months`, ou `quarters` après la balise `User's first order date`).
 
 Une fois que l’équipe d’analystes d’Adobe a répondu à ce qui précède, vous disposez de deux nouvelles colonnes calculées avancées pour élaborer votre rapport. Vous pouvez ensuite suivre les instructions ci-dessous pour le faire.
 
@@ -73,7 +73,7 @@ Troisièmement, vous ajustez pour configurer la variable `cohorts`. Selon la var
 
 * Sélectionnez toutes les valeurs de la variable `dimension` dans laquelle vous êtes intéressé
 
-* Avec le `Show top/bottom option`, sélectionnez les X premiers mois qui vous intéressent et triez selon le `Months between this order and customer's first order date` dimension
+* Avec la variable `Show top/bottom option`, sélectionnez les X premiers mois qui vous intéressent et triez selon le `Months between this order and customer's first order date` dimension
 
 Vous pouvez maintenant voir une ligne pour chaque `cohort` que vous avez spécifié. Consultez l’exemple maintenant — vous voyez le `Revenue` fournies par les utilisateurs de chaque source de référence, `grouped by` le nombre de mois entre leur première commande et toute commande ultérieure. L’exemple a également ajouté une `Cumulative perspective` pour afficher la variable `cohorts'` croissance agrégée : consultez le tableau des résultats pour plus de granularité.
 

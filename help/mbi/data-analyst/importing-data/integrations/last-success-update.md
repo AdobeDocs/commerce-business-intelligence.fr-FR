@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Résultats de la base de données [!DNL SQL Editor] Résultats
 
-Vous êtes peut-être curieux de ce que la variable `Last successful update began` se trouve à l’intérieur de votre `Integrations` page :
+Vous êtes peut-être curieux de ce que la variable `Last successful update began` se trouve dans votre `Integrations` page :
 
 ![Last_success_update.png](../../../assets/Last_successful_update.png)
 
@@ -30,5 +30,5 @@ Le dernier point de données pour une intégration particulière est déterminé
 
 Pour vérifier l’actualisation des données de *tables spécifiques*, Adobe recommande de créer rapidement une [[!DNL SQL] rapport](../../dev-reports/sql-rpt-bldr.md) qui effectue une `MAX(timestamp)` sur la table la plus importante de votre compte. Comparaison de cet horodatage au `Last Data Point` indique si le problème a affecté le compte entier ou un sous-ensemble des tables. Adobe recommande de le faire pour trois à quatre tables importantes, couramment utilisées.
 
-- Si la variable `MAX(timestamp)` sont plus récentes que `Last Data Point Received`, cela signifie qu’un sous-ensemble des tables a été affecté, mais que le cycle de mise à jour global du compte est stable.
-- Si la variable `MAX(timestamp)` est égale ou antérieure à `Last Data Point Received`, cela signifie que le cycle de mise à jour du compte a été affecté. Dans ce cas, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+- Si la variable `MAX(timestamp)` les valeurs sont plus récentes que `Last Data Point Received`, cela signifie qu’un sous-ensemble des tables a été affecté, mais que le cycle de mise à jour global du compte est stable.
+- Si la variable `MAX(timestamp)` est égale ou antérieure à `Last Data Point Received`, cela signifie que le cycle de mise à jour du compte a été affecté. Dans ce cas, [envoyer un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -23,7 +23,7 @@ Utilisez les campagnes publicitaires comme exemple. Si vous exécutez des campag
 
 ## Restrictions et exigences {#require}
 
-1. **Le seul format pris en charge pour les chargements de fichiers est `CSV` ou`comma separated values`**. Si vous travaillez dans Excel, vous pouvez utiliser la fonction Enregistrer sous pour enregistrer le fichier dans `.csv` format.
+1. **Le seul format pris en charge pour les chargements de fichiers est `CSV` ou`comma separated values`**. Si vous utilisez Excel, vous pouvez utiliser la fonction Enregistrer sous pour enregistrer le fichier dans `.csv` format.
 1. **`CSV`Les fichiers doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du téléchargement d’un fichier, [Consultez cet article d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Les fichiers ne peuvent pas dépasser 100 Mo**. Si le fichier est plus volumineux, séparez le tableau en blocs et enregistrez-le sous forme de fichiers individuels. Vous pouvez ajouter les données après le chargement du fichier initial.
 1. **Toutes les tables doivent avoir une`primary key`**. Votre tableau doit contenir au moins une colonne pouvant être utilisée comme `primary key`ou un identifiant unique pour chaque ligne du tableau. Toute colonne désignée comme `primary key` can *never* être nul. A `primary key` peut être aussi simple que l’ajout d’une colonne qui donne un nombre à chaque ligne ou peut être deux colonnes concaténées pour créer une colonne de valeurs uniques (par exemple, `campaign name` et `date`).
@@ -58,9 +58,9 @@ Les valeurs de devise doivent avoir le type de données `Decimal Number` sélect
 
 ### Pourcentages
 
-Les pourcentages doivent être renseignés en tant que décimales. Par exemple :
+Les pourcentages doivent être renseignés en tant que décimales. Par exemple :
 
-| **Droite :** | **Erreur :** |
+| **Droite :** | **Faux :** |
 |-----|-----|
 | `.05` | `5%` |
 | `.23` | `23` |
@@ -73,7 +73,7 @@ Certaines valeurs de votre fichier, telles que les codes postaux et les identifi
 
 Utilisation `US ZIP codes` comme exemple de modification de la mise en forme des nombres. Dans [!DNL Excel], mettez en surbrillance la colonne contenant `ZIP codes` et [changer le format des nombres](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) to `ZIP code`. Vous pouvez également sélectionner un format de nombre personnalisé, et dans la variable `Type` fenêtre, entrer `00000`. Gardez à l’esprit que cette méthode peut présenter des problèmes si certains codes sont formatés comme `00000` et d’autres sont `00000-0000`.
 
-Le `Type` peut être [formaté différemment en fonction des autres types de données](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us), comme les identifiants. Si `ID` est composé de neuf chiffres, par exemple, la valeur `Type` pourrait être `000000000` ou `000-000-000`. Cela changerait. `123456` to `000-123-456`.
+La variable `Type` peut être [formaté différemment en fonction des autres types de données](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us), comme les identifiants. Si `ID` est composé de neuf chiffres, par exemple, la valeur `Type` pourrait être `000000000` ou `000-000-000`. Cela changerait `123456` to `000-123-456`.
 
 Pour [!DNL Google Docs] et [!DNL Apple Numbers] ressources, voir [Associé](#related) Liste en bas de cette page.
 
@@ -93,7 +93,7 @@ Maintenant que la feuille de calcul est correctement formatée et [!DNL Commerce
 
    >[!NOTE]
    >
-   >Le `datatype` est important, donc n’ignorez pas cette étape !
+   >La variable `datatype` est important, donc n’ignorez pas cette étape !
 
 1. Sélectionnez la ou les colonnes qui constituent la `primary key` pour le tableau à l’aide des cases à cocher situées sous l’icône de clé.
 
@@ -125,8 +125,8 @@ Vous avez de nouvelles données à ajouter à un fichier que vous avez déjà ch
 
    | Option | Description |
    |---|---|
-   | `Overwrite old row with new row` | Cela remplace les données existantes par de nouvelles données si une ligne possède la même clé Principale dans le tableau existant et dans le nouveau fichier. Il s’agit de la méthode à utiliser pour les colonnes dont les valeurs changent au fil du temps, par exemple, une colonne État. Les données existantes sont écrasées et mises à jour avec les nouvelles données. Les lignes avec des touches Principales qui ne figurent pas dans le tableau existant sont ajoutées en tant que nouvelles lignes. |
-   | `Retain old row; discard new row` | De nouvelles données sont alors ignorées si une ligne possède la même clé Principale dans le tableau existant et dans le nouveau fichier. |
+   | `Overwrite old row with new row` | Cela remplace les données existantes par de nouvelles données si une ligne possède la même clé primaire dans le tableau existant et le nouveau fichier. Il s’agit de la méthode à utiliser pour les colonnes dont les valeurs changent au fil du temps, par exemple, une colonne État. Les données existantes sont écrasées et mises à jour avec les nouvelles données. Les lignes dont les clés primaires ne figurent pas dans le tableau existant sont ajoutées en tant que nouvelles lignes. |
+   | `Retain old row; discard new row` | De nouvelles données sont alors ignorées si une ligne possède la même clé primaire dans le tableau existant et le nouveau fichier. |
    | `Purge all existing rows first and ignore duplicate keys within the file` | Cela supprime toutes les données existantes et les remplace par les nouvelles données du fichier. N&#39;utilisez cette option que si vous n&#39;avez pas besoin des données de la table existante. |
 
 1. Cliquez sur **[!UICONTROL Choose File]** et sélectionnez le fichier.
@@ -143,7 +143,7 @@ Tout comme les colonnes calculées, les données issues des téléchargements de
 
 Cette rubrique ne traitait que des principes de base de l’utilisation de l’importation de données, mais vous souhaiteriez peut-être faire quelque chose de plus avancé. Consultez les articles connexes pour en savoir plus sur le formatage et l’importation de données financières, d’e-commerce, de dépenses publicitaires et d’autres types de données.
 
-En outre, le transfert de fichiers n’est pas le seul moyen de transférer vos données dans [!DNL Commerce Intelligence]. Le [API Data Import](https://developer.adobe.com/commerce/services/reporting/import-api/) Les fonctions vous permettent de transférer des données arbitraires dans vos [!DNL Commerce Intelligence] Data Warehouse.
+En outre, le transfert de fichiers n’est pas le seul moyen de transférer vos données dans [!DNL Commerce Intelligence]. La variable [API Data Import](https://developer.adobe.com/commerce/services/reporting/import-api/) Les fonctions vous permettent de transférer des données arbitraires dans vos [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Associé {#related}
 

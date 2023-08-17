@@ -13,13 +13,13 @@ ht-degree: 4%
 
 # Types de colonne calculés avancés
 
-De nombreuses analyses que vous souhaitez peut-être créer impliquent l’utilisation d’un **nouvelle colonne** que vous voulez `group by` ou `filter by`. Le [Création de colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md) Ce tutoriel aborde les principes de base de la plupart des cas d’utilisation, mais vous souhaiterez peut-être que la colonne calculée soit un peu plus complexe que ce que le Gestionnaire de Data Warehouse peut créer.
+De nombreuses analyses que vous souhaitez peut-être créer impliquent l’utilisation d’un **nouvelle colonne** que vous voulez `group by` ou `filter by`. La variable [Création de colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md) Ce tutoriel aborde les principes de base de la plupart des cas d’utilisation, mais vous souhaiterez peut-être que la colonne calculée soit un peu plus complexe que ce que le Gestionnaire de Data Warehouse peut créer.
 { : #top}
 
 Ces types de colonnes peuvent être créés par l’équipe Adobe des analystes de Data Warehouse. Pour définir une nouvelle colonne calculée, renseignez les informations suivantes :
 
-1. Le **`definition`** de cette colonne (y compris les entrées, les formules ou la mise en forme)
-1. Le **`table`** que vous souhaitez créer la colonne sur
+1. La variable **`definition`** de cette colonne (y compris les entrées, les formules ou la mise en forme)
+1. La variable **`table`** que vous souhaitez créer la colonne sur
 1. Quelconque **`example data points`** qui décrivent ce que la colonne doit contenir
 
 Voici quelques exemples courants de colonnes calculées avancées que les utilisateurs trouvent souvent utiles :
@@ -56,7 +56,7 @@ Vous souhaitez que la colonne Numéro de commande du client soit en action ? Cli
 Pour créer ce type de colonne calculée, vous devez savoir :
 
 * Le tableau sur lequel vous souhaitez créer cette colonne
-* Champ qui identifie le propriétaire des événements (`owner\_id` dans cet exemple)
+* Le champ qui identifie le propriétaire des événements (`owner\_id` dans cet exemple)
 * Le champ par lequel vous souhaitez classer les événements (`timestamp` dans cet exemple)
 
 [Haut de page](#top)
@@ -108,7 +108,7 @@ Une comparaison d’événements séquentiels peut être utilisée pour trouver 
 Pour créer ce type de colonne calculée, vous devez savoir :
 
 * Le tableau sur lequel vous souhaitez créer cette colonne
-* Champ qui identifie le propriétaire des événements (`owner\_id` dans l’exemple)
+* Le champ qui identifie le propriétaire des événements (`owner\_id` dans l’exemple)
 * Champ de valeur dans lequel vous souhaitez voir la différence entre pour chaque événement séquentiel (`timestamp` dans cet exemple)
 
 [Haut de page](#top)
@@ -159,9 +159,9 @@ Pour créer ce type de colonne calculée, vous devez savoir :
 
 ## J&#39;essaie de faire quelque chose qui n&#39;est pas listé ici. {#else}
 
-Ne vous inquiétez pas. Ce n&#39;est pas parce qu&#39;il n&#39;est pas répertorié ici que ce n&#39;est pas possible. L’équipe Adobe d’analystes Data Warehouse peut vous aider.
+Pas de quoi s&#39;inquiéter. Ce n&#39;est pas parce qu&#39;il n&#39;est pas répertorié ici que ce n&#39;est pas possible. L’équipe Adobe d’analystes Data Warehouse peut vous aider.
 
-Pour définir une nouvelle colonne calculée, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) avec des détails précis sur ce que vous souhaitez créer.
+Pour définir une nouvelle colonne calculée, [envoyer un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) avec des détails précis sur ce que vous souhaitez créer.
 
 ## Documentation connexe
 

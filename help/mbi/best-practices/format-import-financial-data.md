@@ -19,7 +19,7 @@ Un tableau de données à deux dimensions sur plusieurs onglets est souvent le f
 
 ![](../../mbi/assets/crosstab.png)
 
-Pour importer et analyser ces données dans [!DNL Commerce Intelligence], le tableau doit être aplati dans une liste unidimensionnelle. Une fois aplatie, chaque valeur de données est classée par plusieurs libellés qui se trouvent tous dans une seule ligne, où chaque ligne est unique ou aurait un identifiant unique, par exemple une Principale colonne de clé.
+Pour importer et analyser ces données dans [!DNL Commerce Intelligence], le tableau doit être aplati dans une liste unidimensionnelle. Une fois aplatie, chaque valeur de données est classée par plusieurs libellés qui se trouvent tous dans une seule ligne, où chaque ligne est unique ou aurait un identifiant unique, par exemple une colonne de clé primaire.
 
 ![](../../mbi/assets/flattened.png)
 

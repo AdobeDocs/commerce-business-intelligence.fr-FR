@@ -48,7 +48,7 @@ Une fois la mesure créée, vous pouvez **création d’un tableau de bord** en 
 
 >[!NOTE]
 >
->Activé **[!UICONTROL Time Period:]**, la période de chaque rapport est répertoriée comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, comme par exemple `All time`, `Year-to-date`ou `Last 365 days`.
+>Activé **[!UICONTROL Time Period:]**, la période de chaque rapport est répertoriée comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, comme par exemple `All time`, `Year-to-date`, ou `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -77,7 +77,7 @@ Une fois la mesure créée, vous pouvez **création d’un tableau de bord** en 
      [!UICONTROL Type de graphique]: `Line`
    * Décocher `Multiple Y-Axes`
 
-* **LTV par nombre de commandes au cours de la durée de vie**
+* **LTV par nombre de commandes au cours de la vie**
    * Mesure `1`: `Avg lifetime revenue`
    * Mesure `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
@@ -93,4 +93,4 @@ Une fois la mesure créée, vous pouvez **création d’un tableau de bord** en 
 
 * Ajoutez le [!UICONTROL Avg customer lifetime revenue by cohort] rapport.
 
-Une fois les rapports créés, reportez-vous à l’image en haut de cette rubrique pour savoir comment organiser les rapports sur votre tableau de bord.
+Une fois les rapports créés, reportez-vous à l’image dans la partie supérieure de cette rubrique pour savoir comment organiser les rapports sur votre tableau de bord.

@@ -19,13 +19,13 @@ Imaginez que vous êtes dans le `Report Builder` création d’une `Revenue by S
 
 ## Comment cela pourrait-il se produire ?
 
-Malheureusement, un manque de normalisation peut parfois entraîner des problèmes de données et de têtes lors de la création de rapports. Dans cet exemple, il se peut qu’il n’y ait pas eu de menu déroulant ni de méthode normalisée permettant à vos clients de saisir les informations d’état de facturation. Cela entraîne diverses valeurs : `pa`, `PA`, `penna`, `pennsylvania`, et `Pennsylvania` - tous pour le même état, ce qui donne des résultats étranges dans la `Report Builder`.
+Malheureusement, l’absence de normalisation peut parfois entraîner des problèmes de données et de têtes lors de la création de rapports. Dans cet exemple, il se peut qu’il n’y ait pas eu de menu déroulant ni de méthode normalisée permettant à vos clients de saisir les informations d’état de facturation. Cela entraîne diverses valeurs : `pa`, `PA`, `penna`, `pennsylvania`, et `Pennsylvania` - tous pour le même état, ce qui donne des résultats étranges dans la `Report Builder`.
 
-Il est possible qu’une ressource technique vous aide à nettoyer les données ou à insérer les colonnes dont vous avez besoin directement dans votre base de données. Sinon, il existe une autre solution : **la table de mappage**. Un tableau de mappage vous permet de nettoyer et de normaliser rapidement et facilement les données désordonnées en mappant les données à une seule sortie.
+Il est possible qu’une ressource technique vous aide à nettoyer les données ou à insérer les colonnes dont vous avez besoin directement dans votre base de données. Si ce n&#39;est pas le cas, il existe une autre solution : **la table de mappage**. Un tableau de mappage vous permet de nettoyer et de normaliser rapidement et facilement les données désordonnées en mappant les données à une seule sortie.
 
 >[!NOTE]
 >
->Vous ne pouvez pas créer de tableau de mappage pour les tables consolidées sans l’aide de l’équipe d’assistance à l’Adobe.
+>Vous ne pouvez pas créer de tableau de mappage pour les tables consolidées sans l’aide de l’équipe d’assistance Adobe.
 
 ## Comment puis-je le créer ? {#how}
 
@@ -49,9 +49,9 @@ Dans la seconde colonne, saisissez les valeurs correspondantes. **should**. Si v
 
 ## Que dois-je faire dans [!DNL Commerce Intelligence] pour l’utiliser ? {#use}
 
-Une fois la création de la table de mappage terminée, vous devez [télécharger le fichier](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) into [!DNL Commerce Intelligence] et [création d’une colonne jointe](../../data-analyst/data-warehouse-mgr/calc-column-types.md) qui relocalise le nouveau champ dans la table souhaitée. Vous pouvez effectuer cette opération une fois que le fichier a été synchronisé avec votre Data Warehouse.
+Après avoir créé la table de mappage, vous devez [télécharger le fichier](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) into [!DNL Commerce Intelligence] et [création d’une colonne jointe](../../data-analyst/data-warehouse-mgr/calc-column-types.md) qui relocalise le nouveau champ dans la table souhaitée. Vous pouvez effectuer cette opération une fois que le fichier a été synchronisé avec votre Data Warehouse.
 
-Cet exemple déplace la colonne que vous avez créée sur le `mapping_state` tableau (`state_input`) au `customer_address` à l’aide d’une colonne jointe. Cela nous permet de regrouper en fonction du nettoyage `state_input` au lieu de la colonne `state` colonne .
+Cet exemple déplace la colonne que vous avez créée sur le `mapping_state` tableau (`state_input`) à la variable `customer_address` à l’aide d’une colonne jointe. Cela nous permet de regrouper en fonction du nettoyage `state_input` au lieu de la colonne `state` colonne .
 
 Pour créer la variable `joined` , accédez au tableau vers lequel le champ sera déplacé dans le Gestionnaire de Data Warehouse. Dans cet exemple, il s’agit de la variable `customer_address` table.
 
@@ -60,7 +60,7 @@ Pour créer la variable `joined` , accédez au tableau vers lequel le champ sera
 1. Attribuez à la colonne un nom qui la différencie du `state` dans votre base de données. Nommer la colonne `billing state (mapped)` vous pouvez ainsi déterminer la colonne à utiliser lors de la segmentation dans le créateur de rapports.
 1. Le chemin dont vous avez besoin pour connecter les tables n’existe pas. Vous devez donc en créer une. Cliquez sur **[!UICONTROL Create new path]**  dans le `Select a table and column` menu déroulant.
 
-   Si vous ne savez pas quelle est la relation de la table ou comment définir correctement les clés Principale et étrangère, extrayez-vous. [le tutoriel](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) pour de l&#39;aide.
+   Si vous ne savez pas quelle est la relation de la table ou comment définir correctement les clés principale et étrangère, extrayez-vous. [le tutoriel](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) pour de l&#39;aide.
 
    * Sur le `Many` côté, sélectionnez la table vers laquelle vous déplacez le champ (encore une fois, pour nous, il s&#39;agit de `customer_address`) et la variable `Foreign Key` ou `state` , dans l’exemple.
    * Sur le `One` côté , sélectionnez la variable `mapping` et le `Primary key` colonne . Dans ce cas, vous devez sélectionner la variable `state_input` de la colonne `mapping_state` table.
@@ -78,7 +78,7 @@ Une fois le cycle de mise à jour terminé, vous pourrez utiliser la nouvelle co
 
 ![](../../assets/Clean_State_Segments.png)
 
-Les tableaux de mappage sont pratiques pour tout moment où vous souhaitez nettoyer certaines données potentiellement dangereuses dans votre Data Warehouse. Cependant, les tableaux de mappage peuvent également être utilisés pour d’autres cas pratiques, comme [en répliquant votre [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Les tableaux de mappage sont pratiques pour tout moment où vous souhaitez nettoyer certaines données potentiellement dangereuses dans votre Data Warehouse. Cependant, les tableaux de mappage peuvent également être utilisés pour d’autres cas pratiques, comme [en répliquant [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### Associé
 

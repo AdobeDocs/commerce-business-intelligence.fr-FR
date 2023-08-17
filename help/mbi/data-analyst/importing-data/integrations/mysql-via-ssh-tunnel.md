@@ -33,14 +33,14 @@ Pour connecter votre [!DNL MySQL] vers la base de données [!DNL Commerce Intell
 1. Saisissez les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]
 
 
-## Récupération de la variable [!DNL Commerce Intelligence] clé publique {#retrieve}
+## Récupération de la [!DNL Commerce Intelligence] clé publique {#retrieve}
 
-Le `public key` est utilisé pour autoriser la variable [!DNL Commerce Intelligence] `Linux` utilisateur. Dans la section suivante, vous allez créer l’utilisateur et importer la clé.
+La variable `public key` est utilisé pour autoriser la variable [!DNL Commerce Intelligence] `Linux` utilisateur. Dans la section suivante, vous allez créer l’utilisateur et importer la clé.
 
 1. Accédez à **[!UICONTROL Manage Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**.
-1. Cliquez sur le bouton `MySQL` icône .
+1. Cliquez sur le bouton `MySQL` Icône
 1. Après la `MySQL credentials` s’ouvre, définissez `Encrypted` bascule vers `Yes`. Le formulaire de configuration SSH s’affiche alors.
-1. Le `public key` se trouve sous ce formulaire.
+1. La variable `public key` se trouve sous ce formulaire.
 
 Laissez cette page ouverte tout au long du tutoriel. Vous en aurez besoin dans la section suivante et à la fin.
 
@@ -93,28 +93,28 @@ Votre organisation peut nécessiter un processus différent, mais la méthode la
     GRANT SELECT ON *.* TO 'rjmetric'@'localhost' IDENTIFIED BY '<secure password here>';
 ```
 
-Remplacer `secure password here` avec un mot de passe sécurisé, qui peut différer de la variable `SSH` mot de passe.
+Remplacer `secure password here` avec un mot de passe sécurisé, qui peut différer de la variable `SSH` password.
 
 Pour empêcher cet utilisateur d’accéder aux données de bases de données, tables ou colonnes spécifiques, vous pouvez exécuter des requêtes GRANT qui autorisent uniquement l’accès aux données que vous autorisez.
 
 ## Saisie des informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence] {#finish}
 
-Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté le `MySQL credentials` ouverture de la page ? Si ce n’est pas le cas, accédez à **[!UICONTROL Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis la variable [!DNL MySQL] icône . N’oubliez pas de définir la variable `Encrypted` bascule vers `Yes`.
+Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté le `MySQL credentials` ouverture de la page ? Dans le cas contraire, accédez à **[!UICONTROL Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis la variable [!DNL MySQL] Icône N’oubliez pas de définir la variable `Encrypted` bascule vers `Yes`.
 
 Renseignez les informations suivantes dans cette page, en commençant par le `Database Connection` section :
 
-* `Username`: Nom d’utilisateur de la variable [!DNL Commerce Intelligence] [!DNL MySQL] user
-* `Password`: Le mot de passe du [!DNL Commerce Intelligence] [!DNL MySQL] user
+* `Username`: nom d’utilisateur de la variable [!DNL Commerce Intelligence] [!DNL MySQL] user
+* `Password`: mot de passe de la variable [!DNL Commerce Intelligence] [!DNL MySQL] user
 * `Port`: [!DNL MySQL] port sur votre serveur (3306 par défaut)
-* `Host` Par défaut, il s’agit de localhost. En général, il s’agit de la valeur de l’adresse de liaison pour votre [!DNL MySQL] server, qui est par défaut `127.0.0.1 (localhost)`, mais peut également être une adresse réseau locale (par exemple, `192.168.0.1`) ou l’adresse IP publique de votre serveur.
+* `Host` Par défaut, il s’agit de localhost. En général, il s’agit de la valeur de l’adresse de liaison pour votre [!DNL MySQL] server, qui est, par défaut, `127.0.0.1 (localhost)`, mais peut également être une adresse réseau locale (par exemple, `192.168.0.1`) ou l’adresse IP publique de votre serveur.
 
-  La valeur se trouve dans votre `my.cnf` (situé à l’emplacement `/etc/my.cnf`) sous la ligne qui indique `\[mysqld\]`. Si la ligne d’adresse de liaison est commentée dans ce fichier, votre serveur est sécurisé suite à des tentatives de connexion externes.
+  La valeur se trouve dans votre `my.cnf` (situé à l’emplacement `/etc/my.cnf`) sous la ligne qui indique : `\[mysqld\]`. Si la ligne d’adresse de liaison est commentée dans ce fichier, votre serveur est sécurisé suite à des tentatives de connexion externes.
 
 Dans le `SSH Connection` section :
 
-* `Remote Address`: Adresse IP ou nom d’hôte du serveur [!DNL Commerce Intelligence] tunnel
-* `Username`: Nom d’utilisateur de la variable [!DNL Commerce Intelligence] SSH ([!DNL Linux]) user
-* `SSH Port`: Port SSH sur votre serveur (22 par défaut)
+* `Remote Address`: adresse IP ou nom d’hôte du serveur [!DNL Commerce Intelligence] tunnel into
+* `Username`: nom d’utilisateur de la variable [!DNL Commerce Intelligence] SSH ([!DNL Linux]) user
+* `SSH Port`: port SSH sur votre serveur (22 par défaut)
 
 Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save & Test]** pour terminer la configuration.
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migration des données
 
-La migration vers une nouvelle base de données, un nouveau serveur ou une nouvelle base de données de rapports n’a pas à être stressante. Le [[!DNL Adobe] Équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre une assistance en matière de migration.
+La migration vers une nouvelle base de données, un nouveau serveur ou une nouvelle base de données de rapports n’a pas à être stressante. La variable [[!DNL Adobe] Équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre une assistance en matière de migration.
 
 Pour garantir une transition aussi fluide que possible, vous devez être le plus détaillé possible lors de l’envoi de votre demande de migration. Cette rubrique contient tous les éléments dont vous avez besoin pour envoyer une demande et commencer la migration. Nous fournir une image complète de vos besoins vous garantit que votre projet est correctement ciblé et que l’estimation est exacte.
 
@@ -51,7 +51,7 @@ Si vous vous sentez à l’aise d’effectuer la correspondance, suivez ces inst
 
 1. Dans chaque onglet, créez une colonne pour toutes les colonnes existantes qui doivent être migrées. Adobe recommande de lui donner un nom du type `Existing column name`.
 
-1. Vous devez également créer une autre colonne pour les équivalents de colonne dans la nouvelle base de données dans chaque onglet de la feuille de calcul. Adobe recommande d’attribuer un nom à la colonne, par exemple `New column name`.
+1. Vous devez également créer une autre colonne pour les équivalents de colonne dans la nouvelle base de données dans chaque onglet de la feuille de calcul. Adobe recommande de nommer la colonne de la manière suivante : `New column name`.
 
 1. Renseignez les colonnes existantes et leurs équivalents. Si une colonne existante ne comporte pas un nouvel équivalent, saisissez `N/A`.
 
@@ -67,7 +67,7 @@ Voici un exemple :
 
 ## Comment envoyer une demande ? {#submitreq}
 
-Vous pouvez nous contacter par vous-même [envoi d’une demande d’assistance ;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Vous pouvez nous contacter par vous-même [envoi d’une demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Si vous avez suivi les étapes de la section précédente pour créer la feuille de calcul correspondante aux colonnes, n’oubliez pas de la joindre.
 

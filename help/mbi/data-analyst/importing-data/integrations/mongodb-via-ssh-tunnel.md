@@ -25,14 +25,14 @@ Pour connecter votre [!DNL MongoDB] vers la base de données [!DNL Commerce Inte
 >
 >En raison de la nature technique de cette configuration, Adobe vous recommande de faire une boucle dans un développeur pour vous aider si vous ne l’avez pas fait auparavant.
 
-## Récupération de la variable [!DNL Commerce Intelligence] clé publique {#retrieve}
+## Récupération de la [!DNL Commerce Intelligence] clé publique {#retrieve}
 
-Le `public key` est utilisé pour autoriser la variable [!DNL Commerce Intelligence] `Linux` utilisateur. La section suivante vous guide tout au long de la création de l’utilisateur et de l’importation des clés.
+La variable `public key` est utilisé pour autoriser la variable [!DNL Commerce Intelligence] `Linux` utilisateur. La section suivante vous guide tout au long de la création de l’utilisateur et de l’importation des clés.
 
 1. Accédez à **[!UICONTROL Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**.
-1. Cliquez sur le bouton [!DNL MONGODB] icône .
+1. Cliquez sur le bouton [!DNL MONGODB] Icône
 1. Après la [!DNL MongoDB] la page des informations d’identification s’ouvre, modifiez `Encrypted` bascule vers `Yes`. Le formulaire de configuration SSH s’affiche alors.
-1. Le `public key` se trouve sous ce formulaire.
+1. La variable `public key` se trouve sous ce formulaire.
 
 Laissez cette page ouverte tout au long du tutoriel. Vous en aurez besoin dans la section suivante et à la fin.
 
@@ -86,7 +86,7 @@ Lors de la connexion à plusieurs bases de données, vous pouvez ajouter l’uti
 
 >[!NOTE]
 >
->Pour afficher toutes les bases de données disponibles, la variable [!DNL Commerce Intelligence] l’utilisateur a besoin des autorisations pour s’exécuter. `listDatabases.`
+>Pour afficher toutes les bases de données disponibles, la variable [!DNL Commerce Intelligence] l’utilisateur a besoin des autorisations pour s’exécuter `listDatabases.`
 
 Cette commande permet d’octroyer le [!DNL Commerce Intelligence] accès utilisateur `to all databases`:
 
@@ -126,21 +126,21 @@ Pour lier votre [!DNL MongoDB] sur une autre adresse du serveur, ajustez le nom 
 
 ## Saisie des informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence] {#finish}
 
-Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté le [!DNL MongoDB] la page des informations d’identification s’ouvre ? Si ce n’est pas le cas, accédez à **[!UICONTROL Data > Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis la variable [!DNL MongoDB] icône . N’oubliez pas de modifier la variable `Encrypted` bascule vers `Yes`.
+Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté le [!DNL MongoDB] la page des informations d’identification s’ouvre ? Dans le cas contraire, accédez à **[!UICONTROL Data > Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis la variable [!DNL MongoDB] Icône N’oubliez pas de modifier la variable `Encrypted` bascule vers `Yes`.
 
 Renseignez les informations suivantes dans cette page, en commençant par le `Database Connection` section :
 
 * `Host`: `127.0.0.1`
-* `Username`: Le [!DNL Commerce Intelligence] [!DNL MongoDB] nom d’utilisateur (doit être `rjmetric`)
-* `Password`: Le [!DNL Commerce Intelligence] [!DNL MongoDB] password
-* `Port`: Port de MongoDB sur votre serveur (`27017` par défaut)
-* `Database Name` (Facultatif) : Si vous n’avez autorisé l’accès qu’à une seule base de données, indiquez son nom ici.
+* `Username`: la variable [!DNL Commerce Intelligence] [!DNL MongoDB] nom d’utilisateur (doit être `rjmetric`)
+* `Password`: la variable [!DNL Commerce Intelligence] [!DNL MongoDB] password
+* `Port`: port de MongoDB sur votre serveur (`27017` par défaut)
+* `Database Name` (Facultatif) : si vous n’avez autorisé l’accès qu’à une base de données, indiquez son nom dans ce champ.
 
 Sous , `SSH Connection` section :
 
-* `Remote Address`: L’adresse IP ou le nom d’hôte du serveur vers lequel vous allez SSH
-* `Username`: Le [!DNL Commerce Intelligence] Nom d’utilisateur Linux (SSH) (doit être jmetric)
-* `SSH Port`: Le port SSH sur votre serveur (22 par défaut)
+* `Remote Address`: l’adresse IP ou le nom d’hôte du serveur dans lequel vous allez SSH.
+* `Username`: la variable [!DNL Commerce Intelligence] Nom d’utilisateur Linux (SSH) (doit être jmetric)
+* `SSH Port`: port SSH sur votre serveur (22 par défaut)
 
 Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save Test]** pour terminer la configuration.
 

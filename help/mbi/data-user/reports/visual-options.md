@@ -15,7 +15,7 @@ ht-degree: 0%
 
 La sélection de la bonne visualisation pour un jeu de données donné est un élément essentiel du processus d’analyse. Chaque ensemble de données a une histoire à raconter, mais l&#39;effet de cette histoire est souligné par son impact visuel et sa lisibilité.
 
-Le [!DNL Commerce Intelligence] [!DNL Visual Report Builder] offre 12 options de visualisation distinctes, chacune avec ses propres avantages et cas d’utilisation. Cette rubrique décrit les différentes options de visualisation dans [!DNL Commerce Intelligence], y compris les configurations de rapport requises, le cas échéant, et un exemple de cas d’utilisation. Les visualisations suivantes sont disponibles dans [!DNL Commerce Intelligence]:
+La variable [!DNL Commerce Intelligence] [!DNL Visual Report Builder] offre 12 options de visualisation distinctes, chacune avec ses propres avantages et cas d’utilisation. Cette rubrique décrit les différentes options de visualisation dans [!DNL Commerce Intelligence], y compris les configurations de rapport requises, le cas échéant, et un exemple de cas pratique. Les visualisations suivantes sont disponibles dans [!DNL Commerce Intelligence]:
 
 * `Scalar`
 * `Table`
@@ -37,7 +37,7 @@ Le [!DNL Commerce Intelligence] [!DNL Visual Report Builder] offre 12 options de
 
 ![](../../assets/blobid0.png)
 
-Pour enregistrer un rapport en tant qu’échelle, configurez vos filtres et paramètres temporels, puis cliquez sur **[!UICONTROL Save]** ou **[!UICONTROL Update]** dans la section supérieure droite du rapport. Sous , `Type` , choisissez le nombre : Nom de la mesure pour enregistrer le rapport en tant que valeur affichée sur la barre de gauche.
+Pour enregistrer un rapport en tant qu’échelle, configurez vos filtres et paramètres temporels, puis cliquez sur **[!UICONTROL Save]** ou **[!UICONTROL Update]** dans la section supérieure droite du rapport. Sous , `Type` dans la liste déroulante, sélectionnez Nombre : nom de la mesure pour enregistrer le rapport en tant que valeur affichée sur la barre de gauche.
 
 ![](../../assets/blobid1.png)
 
@@ -166,7 +166,7 @@ Pour enregistrer un rapport sous forme de graphique circulaire, définissez le r
 
 `Area` Les graphiques sont presque identiques aux graphiques à colonnes empilés, sauf que les colonnes sont affichées en continu. Tout comme les colonnes empilées, les diagrammes de surface sont mieux visualisés avec un nombre limité de groupes ou de mesures.
 
-Reprenons le même exemple de la fonction `stacked column` , le rapport ci-dessous présente la première fois par rapport aux recettes répétées avec la visualisation des graphiques à aires :
+En reprenant le même exemple de la fonction `stacked column` , le rapport ci-dessous présente la première fois par rapport aux recettes répétées avec la visualisation des graphiques à aires :
 
 ![](../../assets/blobid12.png)
 
@@ -186,7 +186,7 @@ Pour enregistrer un rapport sous forme d’histogramme, ajustez la variable `Typ
 
 Dans un rapport Entonnoir, la valeur relative d’une étape donnée de l’entonnoir est reflétée par la hauteur de l’étape. La configuration du rapport détermine l’ordre dans lequel les étapes sont affichées. Il existe deux façons de configurer un rapport Entonnoir :
 
-* `Single metric with one group by`: - Ordre des étapes déterminé par le paramètre &quot;Afficher le haut/bas&quot; du groupe. Par défaut, les étapes de l’entonnoir s’affichent dans l’ordre de la valeur la plus grande à la plus petite, mais vous pouvez également les trier par ordre alphabétique selon le groupe par nom.
+* `Single metric with one group by`: - Ordre des étapes déterminé par le paramètre &quot;Afficher le haut/bas&quot; du groupe par. Par défaut, les étapes de l’entonnoir s’affichent dans l’ordre de la valeur la plus grande à la plus petite, mais vous pouvez également les trier par ordre alphabétique selon le groupe par nom.
 
 * `Multiple metrics with no group by`: - Ordre des étapes déterminé par l’ordre dans lequel les mesures sont ajoutées au rapport.
 
@@ -207,7 +207,7 @@ A `scatter plot` est utilisé pour examiner la relation d’une mesure avec deux
 
 ![](../../assets/scatter-plot-1.png)
 
-![sans trendline](../../assets/scatter-plot-2.png)
+![sans tendance](../../assets/scatter-plot-2.png)
 
 ![](../../assets/scatter-plot-3.png)
 
@@ -229,7 +229,7 @@ Option 2 :
 
 ## `Bubble` chart
 
-A `bubble` le graphique peut afficher jusqu’à quatre dimensions de données pour lesquelles la variable `X` et `Y` Les axes spécifient l’emplacement des bulles. Le `Z` axe est la taille des bulles, et en incluant deux groupes, vous pouvez ajouter de la couleur aux bulles. Ce type de visualisation est préférable lorsque vous souhaitez tracer plusieurs dimensions de données dans un seul graphique.
+A `bubble` le graphique peut afficher jusqu’à quatre dimensions de données pour lesquelles la variable `X` et `Y` Les axes spécifient l’emplacement des bulles. La variable `Z` axe est la taille des bulles, et en incluant deux groupes, vous pouvez ajouter de la couleur aux bulles. Ce type de visualisation est préférable lorsque vous souhaitez tracer plusieurs dimensions de données dans un seul graphique.
 
 Par exemple, le graphique suivant montre le nombre de clients (taille de la bulle) regroupés selon une source d’acquisition spécifique (couleur de la bulle) et un état (différentes bulles d’une couleur spécifique), par rapport au total des recettes et aux commandes de durée de vie moyenne.
 

@@ -19,7 +19,7 @@ Cette rubrique décrit l’impact des commandes d’invités sur vos données et
 
 ## Impact des commandes d’invités sur les données
 
-Dans la base de données commerciale standard, il existe une `orders` table qui se joint à un `customers` table. Chaque ligne du `orders` comporte une `customer\_id` qui est propre à une ligne sur la colonne `customers` table.
+Il existe une `orders` table qui se joint à un `customers` table. Chaque ligne du `orders` comporte une `customer\_id` qui est propre à une ligne sur la colonne `customers` table.
 
 * **Si tous les clients sont enregistrés** et les commandes d’invités ne sont pas autorisées, ce qui signifie que chaque enregistrement dans la variable `orders` contient une valeur dans la variable `customer\_id` colonne . Par conséquent, chaque commande revient au `customers` table.
 
@@ -35,9 +35,9 @@ Dans la base de données commerciale standard, il existe une `orders` table qui 
 
 En règle générale, l’ingénieur commercial qui met en oeuvre votre compte prend en compte les commandes des invités lors de la création de la base de votre Data Warehouse.
 
-La méthode la plus optimale pour comptabiliser les commandes d’invités consiste à baser toutes les mesures au niveau du client sur la variable `orders` table. Cette configuration utilise un ID de client unique que tous les clients possèdent, y compris les invités (normalement, l’e-mail du client est utilisé). Cela ignore les données d’enregistrement de la variable `customers` table. Avec cette option, seuls les clients qui ont effectué au moins un achat sont inclus dans les rapports au niveau du client. Les utilisateurs enregistrés qui n’ont pas encore effectué un achat ne sont pas inclus. Avec cette option, votre `New customer` est basée sur la date de première commande du client dans la variable `orders` table.
+La méthode la plus optimale pour comptabiliser les commandes d’invités consiste à baser toutes les mesures au niveau du client sur la variable `orders` table. Cette configuration utilise un ID de client unique que tous les clients possèdent, y compris les invités (normalement, l’e-mail du client est utilisé). Les données d’enregistrement de la variable `customers` table. Avec cette option, seuls les clients qui ont effectué au moins un achat sont inclus dans les rapports au niveau du client. Les utilisateurs enregistrés qui n’ont pas encore effectué un achat ne sont pas inclus. Avec cette option, votre `New customer` est basée sur la date de première commande du client dans la variable `orders` table.
 
-Vous pouvez remarquer que la variable `Customers we count` le filtre défini dans ce type de configuration comporte un filtre pour `Customer's order number = 1`.
+Vous pouvez remarquer que la variable `Customers we count` un filtre est défini dans ce type de configuration pour `Customer's order number = 1`.
 
 ![](../../assets/guest-orders-filter-set.png)
 

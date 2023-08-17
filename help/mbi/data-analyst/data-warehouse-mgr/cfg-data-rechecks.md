@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Configuration des contrôles de données
 
-Dans une table de base de données, il peut y avoir des colonnes de données avec des valeurs modifiables. Par exemple, dans un `orders` tableau il peut y avoir une colonne appelée `status`. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur _pending_. L’ordre est répliqué dans votre [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) avec `pending` .
+Dans une table de base de données, il peut y avoir des colonnes de données avec des valeurs modifiables. Par exemple, dans un `orders` tableau il peut y avoir une colonne appelée `status`. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur _en attente_. L’ordre est répliqué dans votre [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) avec `pending` .
 
-Les statuts des commandes peuvent changer, bien qu’ils ne figurent pas toujours dans un `pending` statut. Finalement elle pourrait devenir `complete` ou `cancelled`. Pour vous assurer que votre Data Warehouse synchronise cette modification, la colonne doit être vérifiée à nouveau pour les nouvelles valeurs.
+Les statuts des commandes peuvent changer, bien qu’ils ne figurent pas toujours dans un `pending` statut. Finalement, il pourrait devenir `complete` ou `cancelled`. Pour vous assurer que votre Data Warehouse synchronise cette modification, la colonne doit être vérifiée à nouveau pour les nouvelles valeurs.
 
-En quoi cela s’intègre-t-il à la variable [méthodes de réplication](../data-warehouse-mgr/cfg-replication-methods.md) qui a été discuté ? Le traitement des nouvelles vérifications varie en fonction de la méthode de réplication choisie. Le `Modified\_At` la méthode de réplication est le meilleur choix pour le traitement des valeurs qui changent, car les nouvelles vérifications n’ont pas à être configurées. Le `Auto-Incrementing Primary Key` et `Primary Key Batch Monitoring` Les méthodes nécessitent une configuration de nouveau contrôle.
+En quoi cela s’intègre-t-il à la variable [méthodes de réplication](../data-warehouse-mgr/cfg-replication-methods.md) qui a été discuté ? Le traitement des nouvelles vérifications varie en fonction de la méthode de réplication choisie. La variable `Modified\_At` la méthode de réplication est le meilleur choix pour le traitement des valeurs qui changent, car les nouvelles vérifications n’ont pas à être configurées. La variable `Auto-Incrementing Primary Key` et `Primary Key Batch Monitoring` Les méthodes nécessitent une configuration de nouveau contrôle.
 
 Lors de l’utilisation de l’une de ces méthodes, les colonnes modifiables doivent être marquées pour la nouvelle vérification. Il existe trois façons de procéder :
 
@@ -29,7 +29,7 @@ Lors de l’utilisation de l’une de ces méthodes, les colonnes modifiables do
 
 1. Vous pouvez les définir vous-même en cochant la case en regard de la colonne dans le Gestionnaire de Data Warehouse, en cliquant sur **[!UICONTROL Set Recheck Frequency]**, et en choisissant un intervalle de temps approprié pour lequel vous devez vérifier les modifications.
 
-1. Un membre du [!DNL Adobe Commerce Intelligence] L’équipe de Data Warehouse peut marquer manuellement les colonnes à des fins de nouvelle vérification dans votre Data Warehouse. Si vous connaissez des colonnes modifiables, contactez l’équipe pour demander que les nouvelles vérifications soient définies. Incluez une liste de colonnes, ainsi que la fréquence, à votre requête.
+1. Un membre de la fonction [!DNL Adobe Commerce Intelligence] L’équipe de Data Warehouse peut marquer manuellement les colonnes à des fins de nouvelle vérification dans votre Data Warehouse. Si vous connaissez des colonnes modifiables, contactez l’équipe pour demander que les nouvelles vérifications soient définies. Incluez une liste de colonnes, ainsi que la fréquence, à votre requête.
 
 ## Fréquences de rechargement {#frequency}
 
@@ -43,10 +43,10 @@ Les options de fréquence sont les suivantes :
 * `always` - une nouvelle vérification survient à chaque mise à jour
 * `daily` - la première vérification a lieu après la mise à jour de minuit pour votre fuseau horaire déclaré
 * `weekly` - la vérification a lieu après 21 h, la mise à jour du vendredi a lieu chaque semaine pour votre fuseau horaire déclaré.
-* `monthly` - la vérification a lieu après 21 h, la mise à jour du vendredi toutes les quatre semaines pour le fuseau horaire déclaré
+* `monthly` - la vérification a lieu après 21 h, la mise à jour du vendredi toutes les quatre semaines pour le fuseau horaire déclaré.
 * `once` : ne se produit que lors de la prochaine mise à jour (actualisation ponctuelle)
 
-Comme les heures de mise à jour sont corrélées à la quantité de données à synchroniser, Adobe recommande de choisir une `daily`, `weekly`ou `monthly` revérifiez plutôt que chaque mise à jour.
+Comme les heures de mise à jour sont corrélées à la quantité de données à synchroniser, Adobe recommande de choisir une `daily`, `weekly`, ou `monthly` revérifiez plutôt que chaque mise à jour.
 
 ## Gestion des fréquences de recontrôle {#manage}
 

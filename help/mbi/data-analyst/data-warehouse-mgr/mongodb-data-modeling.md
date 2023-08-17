@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 When [!DNL Adobe Commerce Intelligence] extrait [!DNL MongoDB] données, ces données sont traduites dans un modèle relationnel.
 
-La mauvaise nouvelle : Bien que la plupart des modèles de données ne posent pas de problème, certains d’entre eux ne sont pas pris en charge par [!DNL Commerce Intelligence], en raison de la traduction en modèle relationnel.
+Mauvaise nouvelle : bien que la plupart des modèles de données ne posent pas problème, certains ne sont pas pris en charge par [!DNL Commerce Intelligence], en raison de la traduction en modèle relationnel.
 
-La bonne nouvelle : Tous ces modèles peuvent être évités.
+La bonne nouvelle : tous ces modèles peuvent être évités.
 
 ## Tableaux imbriqués {#subnested}
 
@@ -43,7 +43,7 @@ Si votre collection ressemble à l’exemple ci-dessous, [!DNL Commerce Intellig
 
 ## Clés d’objet variable {#varobjectkeys}
 
-Les collections qui incluent des objets avec des clés d’objet variables ne sont pas répliquées dans [!DNL Commerce Intelligence]. Par exemple :
+Les collections qui incluent des objets avec des clés d’objet variables ne sont pas répliquées dans [!DNL Commerce Intelligence]. Par exemple :
 
 ```bash
     {

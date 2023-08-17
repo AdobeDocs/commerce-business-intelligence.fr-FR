@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Gestion des autorisations utilisateur
 
-[!DNL Adobe Commerce Intelligence] est conçu pour être une source unique de vérité dans votre organisation. Chaque utilisateur dispose de son propre ensemble de tableaux de bord, qu’il peut [partager avec d’autres utilisateurs](../../data-user/dashboards/share-dashboard-with-users.md).
+[!DNL Adobe Commerce Intelligence] est conçu pour être une source unique de vérité dans l’ensemble de votre organisation. Chaque utilisateur dispose de son propre ensemble de tableaux de bord, qu’il peut [partager avec d’autres utilisateurs](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## Niveaux d’autorisation des utilisateurs
 
@@ -40,9 +40,9 @@ Ces autorisations permettent aux utilisateurs d’effectuer certaines actions ou
 | **Créer/modifier des mesures** | ✔ |   |   |
 | **Créer/modifier des jeux de filtres** | ✔ |   |   |
 | **Créer/modifier des colonnes calculées** | ✔ |   |   |
-| **Créer une liste de rapports dépendants** | ✔ |   |   |
+| **Création d’une liste de rapports dépendants** | ✔ |   |   |
 | **Résumé du système d’accès** | ✔ |   |   |
-| **Accès aux paramètres de fuseau horaire** | ✔ |   |   |
+| **Accéder aux paramètres de fuseau horaire** | ✔ |   |   |
 | **Facturation d’accès** | ✔ | ✔** |   |
 | **Contacter le support technique** | ✔ | ✔ | ✔ |
 
@@ -54,7 +54,7 @@ Ces autorisations permettent aux utilisateurs d’effectuer certaines actions ou
 >
 >**[!UICONTROL Standard] _Les utilisateurs peuvent accéder à la Facturation avec un paramètre d’autorisation supplémentaire._
 >
->**[!UICONTROL Read-Only]** Les utilisateurs peuvent uniquement _view_ les tableaux de bord qui ont été partagés avec eux ; ils ne peuvent rien créer ni modifier dans [!DNL Commerce Intelligence], ils ne peuvent pas non plus rechercher et ajouter de nouveaux tableaux de bord à leur compte. Adobe vous recommande de partager un ensemble spécifique de tableaux de bord avec **[!UICONTROL Read-Only]** utilisateurs que vous ou un autre membre de votre équipe maintenez. Ne clonez pas un ensemble de tableaux de bord à leur place.
+>**[!UICONTROL Read-Only]** Les utilisateurs peuvent uniquement _view_ Les tableaux de bord qui ont été partagés avec eux ne peuvent rien créer ni modifier dans [!DNL Commerce Intelligence], ils ne peuvent pas non plus rechercher et ajouter de nouveaux tableaux de bord à leur compte. Adobe vous recommande de partager un ensemble spécifique de tableaux de bord avec **[!UICONTROL Read-Only]** utilisateurs que vous ou un autre membre de votre équipe maintenez. Ne clonez pas un ensemble de tableaux de bord à leur place.
 
 ## Autorisations supplémentaires : Facturation et support technique {#billingtech}
 

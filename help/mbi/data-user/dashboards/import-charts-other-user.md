@@ -17,7 +17,7 @@ Vous pouvez modifier un graphique dont un autre utilisateur est propriétaire ou
 
 ## Rechercher le graphique
 
-Trouvez d’abord le graphique que vous souhaitez copier depuis l’autre utilisateur. Tous les tableaux de bord partagés avec vous se trouvent dans la section `Dashboard` barre latérale où elles sont marquées par une icône partagée. Cliquez sur le tableau de bord de votre choix.
+Trouvez d’abord le graphique que vous souhaitez copier depuis l’autre utilisateur. Tous les tableaux de bord partagés avec vous se trouvent dans la section `Dashboard` de la barre latérale où elles sont marquées par une icône partagée. Cliquez sur le tableau de bord souhaité.
 
 ## Cloner le graphique
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Gérer les données permet d’accéder à divers outils de gestion des intégrations, des données de rapports et de graphiques, des tableaux de bord et des exportations.
 
-## Pour accéder à [!DNL Manage Data]:
+## Pour accéder [!DNL Manage Data]:
 
 1. Dans le menu, cliquez sur **[!DNL Manage Data]**.
 

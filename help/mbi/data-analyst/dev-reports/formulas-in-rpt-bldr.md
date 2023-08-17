@@ -21,37 +21,37 @@ Dans le `Report Builder`, un `formula` n’est qu’une combinaison d’une ou d
 
 ![](../../assets/formula-example.png)
 
-Dans cet exemple, vous utilisez une `Number of orders metric (A)` et un `Distinct buyers metric (B)`, et l’objectif est de répondre à la question : quel est le nombre moyen de commandes que mes acheteurs font chaque mois ? Les paramètres de la formule sont les suivants :
+Dans cet exemple, vous utilisez une `Number of orders metric (A)` et un `Distinct buyers metric (B)`et l&#39;objectif est de répondre à la question : quel est le nombre moyen de commandes que mes acheteurs font chaque mois ? Les paramètres de la formule sont les suivants :
 
-* `Definition`: Ici, vous appliquez des maths aux mesures d’entrée. Dans cet exemple, diviser le nombre de commandes par le nombre d’acheteurs distincts indique le nombre moyen de commandes. Par conséquent, la définition est (A/B).
+* `Definition`: ici, vous appliquez des maths aux mesures d’entrée. Dans cet exemple, diviser le nombre de commandes par le nombre d’acheteurs distincts indique le nombre moyen de commandes. Par conséquent, la définition est (A/B).
 
-* `Format`: Votre formule renvoie-t-elle un nombre, une période ou un montant en devise ? Une liste déroulante se trouve à côté de la définition de la formule, que vous pouvez utiliser pour spécifier le format du retour. Dans ce cas, il s’agit d’un nombre.
+* `Format`: votre formule renvoie-t-elle un nombre, une période ou un montant en devise ? Une liste déroulante se trouve à côté de la définition de la formule, que vous pouvez utiliser pour spécifier le format du retour. Dans ce cas, il s’agit d’un nombre.
 
-* `Miscellaneous`: L’horodatage, les regroupements, les perspectives et les filtres de la formule sont tous hérités par ses mesures d’entrée. Il n&#39;y a rien à faire ici !
+* `Miscellaneous`: l’horodatage, les regroupements, les perspectives et les filtres de la formule sont tous hérités par ses mesures d’entrée. Il n&#39;y a rien à faire ici !
 
 ## Comment utiliser `formulas` dans mes rapports ? {#how}
 
 Maintenant que vous avez couvert les bases, regardez quelques exemples.
 
-### Exemple : Je veux découvrir quel pourcentage de mes recettes peut être attribué aux premières commandes.
+### Exemple : je veux savoir quel pourcentage de mes recettes peut être attribué aux premières commandes.
 
 ![Utilisation de formules pour rechercher le pourcentage de recettes attribué aux premières commandes](../../assets/first_time_orders.gif)
 
 Dans cet exemple, vous avez utilisé la méthode `Revenue` et `Revenue (first time orders)` mesures. En divisant la variable `Revenue (first time orders)(B)` par la mesure `Revenue metric (A)` et définir le format de retour sur `Percent`, vous pouvez trouver le pourcentage de recettes pouvant être attribué aux premières commandes.
 
-### Exemple : Je veux savoir quel est le chiffre d’affaires moyen par commande lorsque j’offre et ne propose pas de `promo code`.
+### Exemple : je veux connaître le chiffre d’affaires moyen par commande lorsque j’offre ou non une `promo code`.
 
 ![Utilisation de formules pour trouver les recettes moyennes par commande avec et sans code promotion](../../assets/promo_code.gif)
 
-Dans cet exemple, vous avez utilisé la méthode `Revenue` et `Number of orders` mesures. La réponse à cette question comporte deux étapes : `Revenue (A)` par le `Number of orders (B)` et définir le format de retour sur `Currency`. Ensuite, vous avez uniquement autorisé le résultat de la formule (`Avg. Revenue per order`) pour afficher et regrouper les résultats par `Promo code`.
+Dans cet exemple, vous avez utilisé la méthode `Revenue` et `Number of orders` mesures. La réponse à cette question comporte deux étapes : la division `Revenue (A)` par le `Number of orders (B)` et définir le format de retour sur `Currency`. Ensuite, vous avez uniquement autorisé le résultat de la formule (`Avg. Revenue per order`) pour afficher et regrouper les résultats par `Promo code`.
 
-### Exemple : Je veux connaître la distribution des sources de gestion dynamique des balises de mes nouveaux clients.
+### Exemple : je veux connaître la distribution des sources UTM de mes nouveaux clients.
 
 ![Utilisation de formules pour trouver la distribution des sources UTM des nouveaux clients](../../assets/distro.gif)
 
-La réponse à cette question comporte quelques étapes :
+Pour trouver la réponse à cette question, procédez comme suit :
 
-1. Tout d’abord, vous avez ajouté la variable `New Customers` puis regroupées par `utm_source - all`. Cette mesure `A`ou `New Customers (grouped)`.
+1. Tout d’abord, vous avez ajouté la variable `New Customers` puis regroupées par `utm_source - all`. Cette mesure `A`, ou `New Customers (grouped)`.
 
 1. Ensuite, vous avez dupliqué le `New Customers (grouped)` et définissez-la pour utiliser une dimension indépendante. Mesure `B` - `New customers (ungrouped)` - indique le nombre total de nouveaux clients.
 
@@ -63,6 +63,6 @@ Dans cet exemple, vous avez utilisé la méthode `Stacked Columns` perspective p
 
 ## Remplissage {#wrapup}
 
-Avez-vous remarqué dans les exemples ci-dessus que la variable `timestamp`, `groupings`, `perspectives`, et `filters` sont-elles héritées de ses mesures d’entrée ? Gardez à l’esprit que les formules peuvent être utilisées `perspectives` et [options d’heure indépendantes](../../tutorials/time-options-visual-rpt-bldr.md){ : target=&quot;_blank&quot;}, comme le peuvent les mesures.
+Avez-vous remarqué dans les exemples ci-dessus que la variable `timestamp`, `groupings`, `perspectives`, et `filters` sont-elles héritées de ses mesures d’entrée ? N’oubliez pas que les formules peuvent être utilisées `perspectives` et [options d’heure indépendantes](../../tutorials/time-options-visual-rpt-bldr.md){ : target=&quot;_blank&quot;}, comme le peuvent les mesures.
 
 Si vous avez d’autres questions sur l’utilisation des formules dans la variable `Report Builder`, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

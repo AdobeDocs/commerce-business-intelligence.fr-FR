@@ -25,7 +25,7 @@ Cela s’avère utile si vous souhaitez recréer un ensemble de graphiques exist
 
    Par exemple, vous clonez un tableau de bord nommé `Customer Activity`. Ce tableau de bord contenait des informations sur l’activité des clients pour votre emplacement Philadelphie, mais vous souhaitez maintenant créer un tableau de bord pour votre nouvel emplacement à New York. Ce tableau de bord peut être nommé `New York City - Customer Activity`.
 
-1. Utilisez la variable `Chart Title Find` et `Chart Title Replace` champs pour trouver tous les graphiques avec `Philadelphia` dans le titre et remplacez-le par `New York City`.
+1. Utilisez la variable `Chart Title Find` et `Chart Title Replace` champs permettant de trouver tous les graphiques avec `Philadelphia` dans le titre et remplacez-le par `New York City`.
 
    Si vous ne saisissez aucune valeur dans ces champs, une `(2)` ajoute automatiquement à la fin de tous les titres de graphique dans le nouveau tableau de bord.
 

@@ -37,13 +37,13 @@ Voir [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-know
 
    Par exemple, si vous souhaitez uniquement inclure des commandes dont l’état est Terminé dans votre `Total number of orders` , vous appliquez un filtre qui exclut toutes les commandes qui n’ont pas d’état = `complete`.
 
-1. Vérifiez la logique de votre filtre et assurez-vous que les parenthèses et les opérateurs sont correctement placés : par exemple, `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
+1. Vérifiez la logique de votre filtre et que les parenthèses et les opérateurs sont correctement placés : par exemple, `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
    Un filtre incorrect est souvent la cause d’incohérences entre les données [!DNL Commerce Intelligence] rapports et les résultats attendus.
 
 1. Enregistrez le `Filter Set`.
 
-Une fois un jeu de filtres enregistré, vous pouvez l’appliquer à toute mesure qui utilise le même tableau. Par exemple, si vous avez créé une `Filter Set` sur le `orders` tableau, vous pouvez l’appliquer à *toute mesure* sur cette table, par exemple `Revenue`.
+Une fois un jeu de filtres enregistré, vous pouvez l’appliquer à toute mesure qui utilise le même tableau. Si vous avez créé une `Filter Set` sur le `orders` tableau, vous pouvez l’appliquer à *toute mesure* sur cette table, par exemple `Revenue`.
 
 >[!NOTE]
 >

@@ -15,11 +15,11 @@ ht-degree: 0%
 
 ## Que sont les canaux ? {#channels}
 
-La création de segments personnalisés pour déterminer les performances du trafic et observer les tendances est l’une des utilisations les plus puissantes de la fonction [!DNL Google Analytics]. Une classe de segments qui existe par défaut dans [!DNL Google Analytics] are `Channels`. Les canaux sont un ensemble de méthodes courantes par lesquelles les visiteurs se rendent sur votre site.  [!DNL Google Analytics] trie automatiquement les nombreuses façons dont vous acquérez un utilisateur (qu’il s’agisse de liens de médias sociaux, de paiement par clic, d’e-mail ou de référence) et les regroupe dans un compartiment ou un canal.
+La création de segments personnalisés pour déterminer les performances du trafic et observer les tendances est l’une des utilisations les plus puissantes de la fonction [!DNL Google Analytics]. Une classe de segments qui existe par défaut dans [!DNL Google Analytics] are `Channels`. Les canaux sont un ensemble de méthodes courantes par lesquelles les visiteurs accèdent à votre site.  [!DNL Google Analytics] trie automatiquement les nombreuses façons dont vous acquérez un utilisateur (qu’il s’agisse de liens de médias sociaux, de paiement par clic, d’e-mail ou de référence) et les regroupe dans un compartiment ou un canal.
 
 ## Pourquoi je ne vois pas mon `channels` dans Commerce Intelligence ? {#nochannels}
 
-`Channels` sont des regroupements de données simples et agrégés. Pour classer vos acquisitions en compartiments de canal, procédez comme suit : [!DNL Google] définit des règles et des définitions distinctes à l’aide de paramètres spécifiques : une combinaison d&#39;acquisition [Source](https://support.google.com/analytics/answer/1033173?hl=en) (l’origine de votre trafic) et l’acquisition [Volume moyen](https://support.google.com/analytics/answer/6099206?hl=en) (catégorie générale de la source).
+`Channels` sont des regroupements de données simples et agrégés. Pour classer vos acquisitions en compartiments de canal, procédez comme suit : [!DNL Google] définit des règles et des définitions distinctes à l’aide de paramètres spécifiques : une combinaison d’acquisition. [Source](https://support.google.com/analytics/answer/1033173?hl=en) (origine du trafic) et l’acquisition [Volume moyen](https://support.google.com/analytics/answer/6099206?hl=en) (catégorie générale de la source).
 
 Bien que ces compartiments puissent vous aider à comprendre d’où provient votre trafic, ces données ne sont pas balisées par canal, mais par une combinaison de source et de support. Parce que [!DNL Google] envoie des informations sur les canaux en tant que deux points de données distincts ; les regroupements de canaux ne s’affichent pas automatiquement dans [!DNL Commerce Intelligence].
 
@@ -34,7 +34,7 @@ Par défaut, [!DNL Google] configure huit canaux différents. Les règles qui d�
 | Référent | Trafic provenant d’un lien externe qui n’est pas une recherche organique ou de sites web qui ne sont pas des réseaux sociaux. | Moyen = `referral` |
 | Recherche payante | Trafic qui comporte un code de suivi UTM dans lequel le support est &quot;cpc&quot;, &quot;ppc&quot; ou &quot;paidsearch&quot; ET est un réseau de distribution d’annonces qui ne correspond pas à &quot;Content&quot;. | Moyen = `^(cpc|ppc|paidsearch)$`<br>ET ≠ réseau de distribution de publicités `Content` |
 | Social | Trafic référent provenant d’une partie ou d’une partie approximativement [400 réseaux sociaux](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) et ne sont pas balisés en tant que publicités. | Référence de la source sociale = `Yes`<br>OU Moyen = `^(social|social-network|social-media|sm|social network|social media)$` |
-| Email | Trafic des sessions balisées avec un support de &quot;courrier électronique&quot;. | Code de suivi UTM de Medium = `email` |
+| Email | Trafic des sessions balisées avec un support &quot;email&quot;. | Code de suivi UTM de Medium = `email` |
 | Affichage | Trafic qui comporte un code de suivi UTM où le support est affiché ou cpm. Inclut également les interactions AdWords où le réseau de distribution d’annonces correspond à &quot;Contenu&quot; | Moyen = `^(display|cpm|banner)$`<br>OU Réseau de distribution d’annonces = `Content`<br>ET Format de publicité ≠ `Text` |
 | Autre | Sessions provenant d’autres canaux publicitaires (à l’exclusion de la recherche payante) qui sont balisées avec un support de &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm&quot;, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affilié&quot;. | Moyen = `^(cpv|cpa|cpp|content-text)$` |
 
@@ -46,7 +46,7 @@ Maintenant que vous savez que les canaux ne sont que des combinaisons de sources
 
 1. **Activez vos[!DNL Google ECommerce]integration**
 
-   [Lorsque activé](../importing-data/integrations/google-ecommerce.md), veillez à [synchronisation](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) la variable **medium** et **source** dans votre Data Warehouse. Une fois cette étape terminée, les données d’acquisition de sources et moyennes seront introduites dans votre Data Warehouse.
+   [Lorsque activé](../importing-data/integrations/google-ecommerce.md), veillez à [synchronisation](..{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) la variable **medium** et **source** dans votre Data Warehouse. Une fois cette étape terminée, les données d’acquisition de sources et moyennes seront introduites dans votre Data Warehouse.
 
 1. **Chargement d’un mappage des regroupements de canaux Google**
 

@@ -283,7 +283,7 @@ Avant de commencer, vous souhaitez connecter votre [[!DNL Zendesk]](../integrati
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ### Rapports
 

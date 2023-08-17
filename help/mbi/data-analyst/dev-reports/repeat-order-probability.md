@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Lorsque est `Incremental Event Probability` perspective disponible ?
 
-Le `incremental event probability` La perspective n’est disponible que lorsque les filtres utilisent des dimensions égales pour toutes les commandes (par exemple, celle de l’utilisateur `gender`, de l’utilisateur `age` ou de l’utilisateur `source`).
+La variable `incremental event probability` La perspective n’est disponible que lorsque les filtres utilisent des dimensions égales pour toutes les commandes (par exemple, celle de l’utilisateur `gender`, de l’utilisateur `age` ou de l’utilisateur `source`).
 
 En effet, cette perspective repose sur une dimension appelée `User's order number` pour la segmentation, qui comptabilise les achats d’un utilisateur (par exemple, les 1re, 2e et 3e commandes de John).
 
@@ -40,4 +40,4 @@ Les nombres qui constituent un tel graphique peuvent ensuite être exportés pou
 | Nombre de clients qui ont effectué un achat au cours de leur vie | `90` |
 | Nombre de clients qui ont effectué deux achats au cours de leur vie | `30` |
 | Nombre de clients ayant effectué trois achats au cours de leur vie | `10` |
-| Probabilité des commandes répétées pour les clients qui ont effectué un achat au cours de leur vie afin d’effectuer un second achat. | `(30 + 10) / (30+10+90) = 30.77%` |
+| Probabilité des commandes répétées pour les clients qui ont effectué un achat au cours de leur vie pour effectuer un second achat. | `(30 + 10) / (30+10+90) = 30.77%` |

@@ -47,7 +47,7 @@ Ce tableau comprend une entrée pour chaque combinaison campagne/jeu/publicité 
 
 ### `facebook _ads insights_ (account-id)_~\_actions`
 
-Il s’agit d’un sous-tableau de la variable `facebook_ads_insights_{account_id}` table. Elle inclut des données de conversion pour les actions qui se produisent en fonction de différentes campagnes.
+Il s’agit d’un sous-tableau du `facebook_ads_insights_{account_id}` table. Elle inclut des données de conversion pour les actions qui se produisent en fonction de différentes campagnes.
 
 ### `facebook _ads insights country_ (account-id)`
 

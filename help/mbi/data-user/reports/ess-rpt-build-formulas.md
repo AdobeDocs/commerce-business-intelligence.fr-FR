@@ -17,7 +17,7 @@ Une formule combine plusieurs mesures et une logique mathématique pour répondr
 
 ![Ventes de vacances sur le tableau de bord](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
-## Étape 1 : Création d’un rapport de base
+## Étape 1 : création du rapport de base
 
 1. Dans le menu, choisissez `Report Builder`.
 
@@ -41,9 +41,9 @@ Une formule combine plusieurs mesures et une logique mathématique pour répondr
 
 1. Dans le graphique, passez la souris sur quelques points de données de chaque ligne pour afficher les montants associés à chaque mesure.
 
-## Étape 2 : Ajouter une formule
+## Etape 2 : Ajouter une formule
 
-1. Dans la partie supérieure de la barre latérale, cliquez sur **[!UICONTROL Add Formula]**.
+1. En haut de la barre latérale, cliquez sur **[!UICONTROL Add Formula]**.
 
    La zone de formule affiche les mesures sous forme d’entrées disponibles. `A` et `B`et comprend une zone de saisie dans laquelle vous pouvez saisir la formule.
 
@@ -59,7 +59,7 @@ Une formule combine plusieurs mesures et une logique mathématique pour répondr
 
    ![Paramètres de formule](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
 
-1. Une fois l’opération terminée, cliquez sur **[!UICONTROL Apply]**.
+1. Lorsque vous avez terminé, cliquez sur **[!UICONTROL Apply]**.
 
    Le rapport comporte maintenant une nouvelle ligne pour la formule, `New Customer Revenue`et la barre latérale affiche le montant total des recettes générées par les nouveaux clients.
 
@@ -79,17 +79,17 @@ Une formule combine plusieurs mesures et une logique mathématique pour répondr
 
      ![Période fixe](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
-   * Une fois l’opération terminée, cliquez sur **[!UICONTROL Apply]**.
+   * Lorsque vous avez terminé, cliquez sur **[!UICONTROL Apply]**.
 
    Le rapport est désormais limité à la période des fêtes, avec un point de données pour chaque jour.
 
    ![Période fixe](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range-report.png)
 
-## Étape 4 : Enregistrer le rapport
+## Étape 4 : enregistrer le rapport
 
 Au cours de cette étape, vous enregistrez le rapport sous forme de graphique et sous forme de tableau.
 
-1. Cliquez sur `Untitled Report` en haut de la page, puis saisissez un titre descriptif. Dans cet exemple, le titre du rapport est : `2017 Holiday Sales`.
+1. Cliquez sur `Untitled Report` en haut de la page et saisissez un titre descriptif. Dans cet exemple, le titre du rapport est : `2017 Holiday Sales`.
 
    Ensuite, procédez comme suit :
 

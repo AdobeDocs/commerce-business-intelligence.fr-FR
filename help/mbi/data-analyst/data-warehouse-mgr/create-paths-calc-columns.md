@@ -18,9 +18,9 @@ ht-degree: 0%
 When [création de colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md) dans votre Data Warehouse, vous êtes invité à définir un chemin décrivant la manière dont le tableau sur lequel vous créez une colonne est associé au tableau à partir duquel vous extrayez des informations. Pour créer un chemin, vous devez connaître deux éléments :
 
 1. Comment les tables de vos bases de données se relient les unes aux autres
-1. Clés Principale et étrangère qui définissent cette relation
+1. Clés primaire et étrangère qui définissent cette relation
 
-Si vous connaissez ces informations, vous pouvez facilement créer un chemin suivant les instructions de cette rubrique. Vous pouvez contacter un expert technique de votre entreprise ou contacter le [Équipe des services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si vous connaissez ces informations, vous pouvez facilement créer un chemin suivant les instructions de cette rubrique. Vous pouvez demander à un expert technique de votre entreprise ou contacter le [Équipe des services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Rafraîchissements sur les relations de table et les types clés {#refresher}
 
@@ -38,13 +38,13 @@ Les tableaux peuvent être associés les uns aux autres de trois façons :
 
 {style="table-layout:auto"}
 
-Lorsqu’une relation entre deux tables est comprise, elle peut être utilisée pour déterminer le chemin à créer afin d’apporter des informations d’une table à une autre. Cette étape suivante nécessite de connaître les clés Principales et étrangères qui facilitent une relation de tableau.
+Lorsqu’une relation entre deux tables est comprise, elle peut être utilisée pour déterminer le chemin à créer afin d’apporter des informations d’une table à une autre. Cette étape suivante nécessite de connaître les clés primaires et étrangères qui facilitent une relation de tableau.
 
-### Principale et clés étrangères {#keys}
+### Principal et clés étrangères {#keys}
 
 A `Primary Key` est une colonne ou un ensemble de colonnes immuable qui produit des valeurs uniques dans un tableau. Par exemple, lorsqu’un client effectue une commande sur un site web, une nouvelle ligne est ajoutée à la variable `orders` dans votre panier, avec une nouvelle `order_id`. Ceci `order_id` permet au client et à l’entreprise de suivre l’avancement de cette commande spécifique. Comme l’ID de commande est unique, il s’agit généralement de la variable `Primary Key` de `orders` table.
 
-A `Foreign Key` est une colonne créée dans un tableau lié à la variable `Primary Key` d’une autre table. Les clés étrangères créent des références entre les tables, ce qui permet aux analystes de rechercher et de lier facilement des enregistrements. Dites que vous vouliez savoir quelles commandes appartiennent à chacun de vos clients. Le `customer id` column (`Primary Key` de `customers` ) et la variable `order_id` column (`Foreign Key` dans le `customers` table, référençant la variable `Primary Key` de `orders` ) nous permet de lier et d&#39;analyser ces informations. Lors de la création d’un chemin, vous êtes invité à définir les deux `Primary Key` et `Foreign Key`.
+A `Foreign Key` est une colonne créée dans un tableau lié à la variable `Primary Key` d’une autre table. Les clés étrangères créent des références entre les tables, ce qui permet aux analystes de rechercher et de lier facilement des enregistrements. Dites que vous vouliez savoir quelles commandes appartiennent à chacun de vos clients. La variable `customer id` column (`Primary Key` de `customers` ) et la variable `order_id` column (`Foreign Key` dans le `customers` table, référençant la variable `Primary Key` de `orders` ) nous permet de lier et d&#39;analyser ces informations. Lors de la création d’un chemin, vous êtes invité à définir les deux `Primary Key` et `Foreign Key`.
 
 ## Création d’un chemin {#createpath}
 
@@ -52,9 +52,9 @@ Lors de la création d’une colonne dans votre Data Warehouse, vous devez défi
 
 Utiliser la relation entre **clients** et **commandes** pour vous montrer comment c’est fait. Répartition :
 
-* La relation est `one-to-many` - un client peut avoir plusieurs commandes, mais une commande ne peut avoir qu’un seul client. Cela nous indique l’orientation de la relation ou l’endroit où la colonne calculée doit être créée. Dans ce cas, cela signifie que des informations provenant de la variable `orders` peut être placé dans la table `customers` table.
-* Le `primary key` vous souhaitez utiliser est `customers.customerid`, ou la variable `customer ID` dans la colonne `customers` table.
-* Le `foreign key` vous souhaitez utiliser est `orders.customerid`, ou la variable `customer ID` dans la colonne `orders` table.
+* La relation est : `one-to-many` - un client peut avoir plusieurs commandes, mais une commande ne peut avoir qu’un seul client. Cela nous indique l’orientation de la relation ou l’endroit où la colonne calculée doit être créée. Dans ce cas, cela signifie que des informations provenant de la variable `orders` peut être placé dans la table `customers` table.
+* La variable `primary key` vous souhaitez utiliser est `customers.customerid`, ou la variable `customer ID` dans la colonne `customers` table.
+* La variable `foreign key` vous souhaitez utiliser est `orders.customerid`, ou la variable `customer ID` dans la colonne `orders` table.
 
 Vous pouvez maintenant créer le chemin.
 
@@ -65,9 +65,9 @@ Vous pouvez maintenant créer le chemin.
 1. Sélectionnez la définition de la colonne. Consultez la section [Guide des colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md) pour un aide-mémoire pratique.
 1. Dans le [!UICONTROL Select table and column] dans la liste déroulante, cliquez sur **[!UICONTROL Create new path]** .
 
-   ![Création de chemins pour le modal de colonnes calculées](../../assets/Creating_Paths_modal.png)
+   ![Création de chemins d’accès pour le modal de colonnes calculées](../../assets/Creating_Paths_modal.png)
 
-1. Dans les listes déroulantes, sélectionnez les clés Principale et étrangère pour chaque table.
+1. Dans les listes déroulantes, sélectionnez les clés primaire et étrangère pour chaque table.
 
    Sur le `Many` côté, sélectionnez `orders.customerid` - souvenez-vous que les clients peuvent avoir de nombreuses commandes.
 
@@ -77,19 +77,19 @@ Vous pouvez maintenant créer le chemin.
 
 ### Limites de la création de chemins {#limits}
 
-* **[!DNL Commerce Intelligence]ne peut pas deviner les relations de clé Principale/étrangère**. Vous ne souhaitez pas introduire des données incorrectes dans votre compte. Par conséquent, la création de chemins d’accès doit être effectuée manuellement.
+* **[!DNL Commerce Intelligence]ne peut pas deviner les relations de clé primaire/étrangère**. Vous ne souhaitez pas introduire des données incorrectes dans votre compte. Par conséquent, la création de chemins d’accès doit être effectuée manuellement.
 
-* **Actuellement, les chemins ne peuvent être spécifiés que entre deux tables différentes.**. La logique que vous essayez de recréer implique-t-elle plus de deux tables ? Il peut alors être judicieux (1) de joindre d’abord les colonnes à une table intermédiaire, puis à la table &quot;destination finale&quot;, ou (2) de consulter la [Équipe des services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour trouver la meilleure approche pour vos objectifs.
+* **Actuellement, les chemins ne peuvent être spécifiés que entre deux tables différentes.**. La logique que vous essayez de recréer implique-t-elle plus de deux tables ? Il peut alors s’avérer judicieux (1) de joindre d’abord les colonnes à une table intermédiaire, puis à la table &quot;destination finale&quot;, ou (2) de consulter la [Équipe des services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour trouver la meilleure approche pour vos objectifs.
 
-* **Une colonne ne peut être la référence de clé étrangère que pour un seul chemin à la fois.**. Par exemple, si `order_items.order_id` pointe vers `orders.id`, puis `order_items.order_id` ne peut pointer vers rien d’autre.
+* **Une colonne ne peut être la référence de clé étrangère que pour un seul chemin à la fois**. Par exemple, si `order_items.order_id` pointe vers `orders.id`, puis `order_items.order_id` ne peut pointer vers rien d’autre.
 
 * **`Many-to-many`les chemins peuvent techniquement être créés, mais produisent souvent des données incorrectes car aucun côté n’est vrai. `one-to-many` clé étrangère**. La meilleure façon d’aborder ces chemins dépend toujours de l’analyse spécifique souhaitée. Consultez l’équipe d’analystes RJ pour découvrir la meilleure solution.
 
-Si vous ne pouvez pas créer de colonne calculée en raison d’une ou de plusieurs des restrictions ci-dessus, contactez l’assistance avec une description de la colonne que vous êtes.
+Si vous ne pouvez pas créer de colonne calculée en raison d’une ou de plusieurs des restrictions ci-dessus, contactez l’assistance technique avec une description de la colonne que vous êtes.
 
 ## Suppression d’un chemin de colonne calculé {#delete}
 
-Création d’un chemin d’accès incorrect dans votre Data Warehouse ? Ou peut-être que vous faites un petit ménage de printemps et que vous voulez ranger ? Si vous devez supprimer un chemin d’accès de votre compte, vous pouvez [envoyer un ticket à des analystes de l’assistance Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Veillez à inclure le nom du chemin.**
+Création d’un chemin incorrect dans votre Data Warehouse ? Ou peut-être que vous faites un petit ménage de printemps et que vous voulez ranger ? Si vous devez supprimer un chemin d’accès de votre compte, vous pouvez [envoyer un ticket à des analystes de l’assistance Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Veillez à inclure le nom du chemin.**
 
 ## Remplissage {#wrapup}
 

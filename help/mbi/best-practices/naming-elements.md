@@ -36,7 +36,7 @@ Recettes
 
 C&#39;est vague et ça ne nous dit pas grand chose.
 
-**Bons exemples :**
+**Bonnes illustrations :**
 Recettes (total général de base + frais) Pays d’expédition de l’utilisateur
 
 Ces exemples sont spécifiques, ce qui réduit le risque de confusion.
@@ -49,7 +49,7 @@ C&#39;est vraiment une question de préférence, mais la chose à retenir est d&
 
 ### Cohérence des entités {#entity}
 
-Vous avez probablement déjà une nomenclature en place dans votre société. Veillez à ce que les mesures et dimensions mises en place soient cohérentes avec celles utilisées dans d’autres bases de données et outils. Par exemple :
+Vous avez probablement déjà une nomenclature en place dans votre société. Veillez à ce que les mesures et dimensions mises en place soient cohérentes avec celles utilisées dans d’autres bases de données et outils. Par exemple :
 
 * Utilisateur par rapport au client par rapport au membre par rapport au compte
 * Société ou compte ou organisation
@@ -61,7 +61,7 @@ Assurez-vous de vérifier votre orthographe et n’oubliez pas ces possessifs ag
 
 ## Graphiques {#charts}
 
-Lors de l’attribution d’un nom [Graphiques](../tutorials/using-visual-report-builder.md), il est plus utile de suivre cette formule : **(Perspective des données) + (Mesure) + (Période) + (Intervalle temporel)**
+Lors du nommage [Graphiques](../tutorials/using-visual-report-builder.md), il est plus utile de suivre cette formule : **(Perspective des données) + (Mesure) + (Période) + (Intervalle temporel)**
 
 **Mauvais exemple :**
 Recettes
@@ -81,7 +81,7 @@ Inversement, si votre tableau de bord est un endroit où vous testez différents
 
 ## Dimensions (colonnes calculées) {#dimensions}
 
-Lors de l’attribution d’un nouveau nom [dimensions](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), il est plus utile de suivre cette formule : **(Entité) + (énième) + (période) + (calcul) + (commentaires)**. Par exemple :
+Lors de l’attribution d’un nouveau nom [dimensions](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), il est plus utile de suivre cette formule : **(Entité) + (énième) + (période) + (calcul) + (commentaires)**. Par exemple :
 
 Chiffre d’affaires des 30 premiers jours de l’utilisateur
 * Numéro de commande de l’utilisateur
@@ -93,7 +93,7 @@ Chiffre d’affaires des 30 premiers jours de l’utilisateur
 
 ## Mesures {#metrics}
 
-[Mesures](../data-user/reports/ess-manage-data-metrics.md) sont essentiellement des questions auxquelles vous voulez des réponses régulières. Quel était le nombre de commandes au cours du dernier mois ? Quelle est la valeur de durée de vie moyenne de vos clients ? Il est recommandé de nommer les mesures en fonction de la réponse donnée aux utilisateurs. En outre, si la même mesure est filtrée pour un magasin ou un département spécifique, elle doit être étiquetée comme telle. Par exemple :
+[Mesures](../data-user/reports/ess-manage-data-metrics.md) sont essentiellement des questions auxquelles vous voulez des réponses régulières. Quel était le nombre de commandes au cours du dernier mois ? Quelle est la valeur de durée de vie moyenne de vos clients ? Il est recommandé de nommer les mesures en fonction de la réponse donnée aux utilisateurs. En outre, si la même mesure est filtrée pour un magasin ou un département spécifique, elle doit être étiquetée comme telle. Par exemple :
 
 Client moyen LTV (30 premiers jours) Nom de la boutique - Recettes
 
@@ -103,4 +103,4 @@ Recettes (expédié\_at) Recettes (créé\_at)
 
 ## Remplissage {#wrapup}
 
-La définition précoce des conventions de style et d’appellation vous aide à vous préparer à la réussite de votre [!DNL Commerce Intelligence] compte . Rappelez-vous des trois C : clarté, cohérence et crédibilité.
+La définition précoce des conventions de style et d’appellation vous aide à vous préparer à la réussite de votre [!DNL Commerce Intelligence] compte . Souvenez-vous des trois C : clarté, cohérence et crédibilité.

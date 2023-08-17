@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ![](../../../assets/Prestashop-logo.png)
 
-Vous souhaitez découvrir les performances de votre entreprise ou trouver vos sources et canaux d’acquisition les plus précieux ? Connectez-vous à [!DNL PrestaShop] data to [!DNL Commerce Intelligence] vous permettent de répondre à ces questions, etc.
+Vous souhaitez découvrir les performances de votre entreprise ou trouver vos sources et canaux d’acquisition les plus précieux ? Connexion à [!DNL PrestaShop] data to [!DNL Commerce Intelligence] vous permettent de répondre à ces questions, etc.
 
-Le [!DNL PrestaShop] La base de données est basée sur [!DNL MySQL], vous pouvez la connecter à [!DNL Commerce Intelligence] à [connexion directe](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)ou [via un `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe recommande d’utiliser la variable `SSH` , car il s’agit de la méthode la plus sécurisée.
+La variable [!DNL PrestaShop] La base de données est basée sur [!DNL MySQL], vous pouvez la connecter à [!DNL Commerce Intelligence] par le biais d’une [connexion directe](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), ou [via un `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe recommande d’utiliser la variable `SSH` , car il s’agit de la méthode la plus sécurisée.
 
 ## Documentation connexe
 

@@ -12,14 +12,14 @@ ht-degree: 0%
 ---
 
 
-# [!DNL Commerce Intelligence] Guide de l’utilisateur {#mbi}
+# [!DNL Commerce Intelligence] Guide d’utilisation {#mbi}
 
-- [[!DNL Commerce Intelligence] Guide de l’utilisateur](guide-overview.md)
+- [[!DNL Commerce Intelligence] Guide d’utilisation](guide-overview.md)
 - [[!DNL Commerce Intelligence] Introduction](getting-started/getting-started.md)
 - Prise en main {#start}
    - [Intégration](getting-started/onboarding.md)
    - [Activez votre [!DNL Commerce Intelligence] Compte](getting-started/onpremise-activation.md)
-   - [Connectez-vous à [!DNL Commerce Intelligence] Compte](getting-started/sign-in.md)
+   - [Se connecter à [!DNL Commerce Intelligence] Compte](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials contre Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - Administrateur {#administrator}
    - Gestion de compte {#acct-mgmt}
@@ -70,7 +70,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - Report Builder SQL {#sql}
+   - REPORT BUILDER SQL {#sql}
       - [En utilisant la variable [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [En utilisant la variable [!DNL Cohort Report Builder] pour les cohortes non basées sur des dates](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Créer une analyse qualitative des cohortes](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -154,7 +154,7 @@ ht-degree: 0%
       - [Définition de la perte de clientèle](data-analyst/analysis/define-cust-churn.md)
       - [[!DNL Expected Lifetime Value (LTV)] analysis (de base)](data-analyst/analysis/ess-expected-ltv.md)
       - [[!DNL Expected Lifetime Value (LTV)] analysis (avancé)](data-analyst/analysis/expected-customer-ltv.md)
-      - [Présentation du suivi des données de source d’acquisition des utilisateurs](data-analyst/analysis/google-track-user-acq.md)
+      - [Présentation du suivi des données de source d’acquisition d’utilisateurs](data-analyst/analysis/google-track-user-acq.md)
       - [Suivi des données de navigateur et de périphérique utilisateur dans votre base de données](data-analyst/analysis/track-usr-dev-browser.md)
       - [Analyse du comportement de réachat des clients](data-analyst/analysis/repurchase-behavior.md)
       - [Analyse de l’activité du site web et des taux de conversion des clients](data-analyst/analysis/web-act-cust-conversion.md)
@@ -165,7 +165,7 @@ ht-degree: 0%
       - [Année après année, mois après mois, semaine après semaine](data-analyst/analysis/year-month-week.md)
       - [Analyse des performances de la saison des fêtes](data-analyst/analysis/holiday-season-perf.md)
       - [Analyse de l’atténuation et de l’attrition des probabilités de répétition](data-analyst/analysis/repeat-decay-churn.md)
-      - [Compréhension et création d’une analyse de base](data-analyst/analysis/basic-analytics.md)
+      - [Présentation et création d’une analyse de base](data-analyst/analysis/basic-analytics.md)
       - [Identifier vos sources et canaux marketing les plus précieux](data-analyst/analysis/most-value-source-channel.md)
       - [Compréhension [!DNL Google Analytics] Attribution UTM](data-analyst/analysis/utm-attributes.md)
       - [Analyse des niveaux de stock](data-analyst/analysis/analyze-inventory-level.md)
@@ -225,13 +225,13 @@ ht-degree: 0%
       - [Optimisation de vos [!DNL SQL] Requêtes](best-practices/optimizing-your-sql-queries.md)
       - [Comprendre votre [!DNL Commerce Intelligence] Environnement](best-practices/understanding-magento.md)
    - Organisation du projet {#project}
-      - [Attribution de noms aux rapports et aux éléments dans [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
+      - [Nommage des rapports et des éléments dans [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Consolidation des tableaux](best-practices/consolidating-your-tables.md)
       - [Désencombrez vos [!DNL Commerce Intelligence] account](best-practices/declutter-account.md)
    - Utilisation des tableaux de bord {#working-dashboards}
       - [Partage de tableaux de bord](best-practices/share-dashboard-best-practice.md)
       - [Création d’un tableau de bord pour les investisseurs](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- Tutoriels {#tutorials}
    - [En utilisant la variable [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Utilisation des options d’heure dans la variable [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Création de visualisations pour une [!DNL SQL] Requête](tutorials/create-visuals-from-sql.md)

@@ -15,31 +15,31 @@ ht-degree: 0%
 
 L’objectif de ce tutoriel est de vous familiariser avec la terminologie utilisée dans la section [!DNL SQL Report Builder] et vous donner des bases solides pour la création `SQL visualizations`.
 
-Le [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) est un créateur de rapports avec des options : vous pouvez exécuter une requête dans le seul but de récupérer un tableau de données ou transformer ces résultats en rapport. Ce tutoriel explique comment créer une visualisation à partir d’une requête SQL.
+La variable [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) est un créateur de rapports avec des options : vous pouvez exécuter une requête dans le seul but de récupérer un tableau de données ou transformer ces résultats en rapport. Ce tutoriel explique comment créer une visualisation à partir d’une requête SQL.
 
 ## Terminologie
 
-Avant de commencer ce tutoriel, reportez-vous à la terminologie suivante utilisée dans la section `SQL Report Builder`.
+Avant de commencer ce tutoriel, reportez-vous à la terminologie suivante utilisée dans le `SQL Report Builder`.
 
-- `Series`: La colonne que vous souhaitez mesurer est appelée Série dans le Report Builder SQL. Les exemples courants sont les suivants : `revenue`, `items sold`, et `marketing spend`. Au moins une colonne doit être définie comme `Series` pour créer une visualisation.
+- `Series`: la colonne que vous souhaitez mesurer est appelée Série dans le Report Builder SQL. Les exemples courants sont les suivants : `revenue`, `items sold`, et `marketing spend`. Au moins une colonne doit être définie comme `Series` pour créer une visualisation.
 
-- `Category`: La colonne que vous souhaitez utiliser pour segmenter vos données est appelée une `Category` C’est comme si la variable `Group By` de la fonction [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Par exemple, si vous souhaitez segmenter les recettes sur la durée de vie de vos clients selon leur source d’acquisition, la colonne contenant la source d’acquisition est spécifiée comme `Category`. Plusieurs colonnes peuvent être définies sous la forme d’une `Category`.
+- `Category`: la colonne que vous souhaitez utiliser pour segmenter vos données est appelée une `Category` C’est comme si la variable `Group By` de la fonction [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Par exemple, si vous souhaitez segmenter les recettes sur la durée de vie de vos clients selon leur source d’acquisition, la colonne contenant la source d’acquisition est spécifiée comme `Category`. Plusieurs colonnes peuvent être définies sous la forme `Category`.
 
 >[!NOTE]
 >
 >Les dates et les horodatages peuvent également être utilisés comme `Categories`. Il ne s’agit que d’une autre colonne de données de votre requête et il doit être formaté et ordonné selon vos besoins dans la requête elle-même.
 
-- `Labels`: Ils sont appliqués en tant qu’étiquettes sur l’axe X. Lors de l’analyse des tendances des données au fil du temps, les colonnes &quot;année&quot; et &quot;mois&quot; sont spécifiées sous forme de libellés. Plusieurs colonnes peuvent être définies comme libellé.
+- `Labels`: elles sont appliquées en tant que libellés d’axe X. Lors de l’analyse des tendances des données au fil du temps, les colonnes &quot;année&quot; et &quot;mois&quot; sont spécifiées sous forme de libellés. Vous pouvez définir plusieurs colonnes sur Libellé.
 
-## Étape 1 : Écrire la requête
+## Etape 1 : Ecriture de la requête
 
 Gardez à l’esprit les points suivants :
 
-- Le [!DNL SQL Report Builder] uses [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- La variable [!DNL SQL Report Builder] uses [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
 - Si vous créez un rapport avec une série temporelle, veillez à `ORDER BY` la ou les colonnes d’horodatage. Cela permet de s’assurer que les horodatages sont mappés dans le bon ordre sur le rapport.
 
-- Le `EXTRACT` est très utile pour analyser le jour, la semaine, le mois ou l’année de l’horodatage. Cela s’avère utile lorsque la variable `time interval` que vous souhaitez utiliser sur le rapport est `daily`, `weekly`, `monthly`ou `yearly`.
+- La variable `EXTRACT` est très utile pour analyser le jour, la semaine, le mois ou l’année de l’horodatage. Cela s’avère utile lorsque la variable `time interval` que vous souhaitez utiliser sur le rapport est `daily`, `weekly`, `monthly`, ou `yearly`.
 
 Pour commencer, ouvrez le [!DNL SQL Report Builder] en cliquant **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
@@ -60,9 +60,9 @@ Cette requête renvoie cette table de résultats :
 
 ![](../assets/SQL_results_table.png)
 
-## Étape 2 : Création de la visualisation
+## Étape 2 : création de la visualisation
 
-Avec ces résultats, *comment créer la visualisation ?* Pour commencer, cliquez sur le bouton **[!UICONTROL Chart]** dans le `Results` volet. Cette fenêtre affiche le `Chart settings` .
+Grâce à ces résultats, *comment créer la visualisation ?* Pour commencer, cliquez sur le bouton **[!UICONTROL Chart]** dans le `Results` volet. Cette fenêtre affiche le `Chart settings` .
 
 Lors de la première exécution d’une requête, le rapport peut sembler impénétrable, car toutes les colonnes de la requête sont tracées sous la forme d’une série :
 
@@ -70,11 +70,11 @@ Lors de la première exécution d’une requête, le rapport peut sembler impén
 
 Pour cet exemple, vous souhaitez qu’il s’agisse d’un graphique en courbes qui évolue au fil du temps. Pour le créer, utilisez les paramètres suivants :
 
-- `Series`: Sélectionnez la `Items sold` en tant que `Series` car vous voulez le mesurer. Après avoir défini une `Series` une seule ligne est tracée dans le rapport.
+- `Series`: sélectionnez la variable `Items sold` en tant que `Series` car vous voulez le mesurer. Après avoir défini une `Series` une seule ligne est tracée dans le rapport.
 
-- `Category`: Pour cet exemple, vous souhaitez afficher chaque produit sous la forme d’une ligne différente dans le rapport. Pour ce faire, définissez `Product name` comme la propriété `Category`.
+- `Category`: pour cet exemple, vous souhaitez afficher chaque produit sous la forme d’une ligne différente dans le rapport. Pour ce faire, définissez `Product name` comme la propriété `Category`.
 
-- `Labels`: Utiliser les colonnes `year` et `month` comme libellés sur l’axe X pour pouvoir afficher `Items Sold` comme tendance au fil du temps.
+- `Labels`: utilisation des colonnes `year` et `month` comme libellés sur l’axe X pour pouvoir afficher `Items Sold` comme tendance au fil du temps.
 
 >[!NOTE]
 >
@@ -84,13 +84,13 @@ Vous trouverez ci-dessous un aperçu rapide de la manière dont vous avez créé
 
 ![](../assets/SQL_report_settings.gif)
 
-## Étape 3 : Sélectionnez une `Chart Type`
+## Étape 3 : sélectionnez une `Chart Type`
 
-Cet exemple utilise la méthode `Line` type de graphique. Pour utiliser un `chart type`, cliquez sur les icônes situées au-dessus de la section options du graphique pour le modifier :
+Cet exemple utilise la méthode `Line` type de graphique. Pour utiliser une variable `chart type`, cliquez sur les icônes situées au-dessus de la section options du graphique pour le modifier :
 
 ![](../assets/Chart_types.png)
 
-## Étape 4 : Enregistrement de la visualisation
+## Étape 4 : enregistrer la visualisation
 
 Si vous souhaitez réutiliser ce rapport, attribuez-lui un nom, puis cliquez sur **[!UICONTROL Save]** dans le coin supérieur droit.
 

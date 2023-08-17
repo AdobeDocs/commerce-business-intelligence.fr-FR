@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ![](../../../assets/spree-commerce-logo.png)
 
-Vous souhaitez découvrir les performances de votre entreprise ou trouver vos sources et canaux d’acquisition les plus précieux ? Connectez-vous à [!DNL Spree] data to [!DNL Commerce Intelligence] vous permettent de répondre à ces questions, etc.
+Vous souhaitez découvrir les performances de votre entreprise ou trouver vos sources et canaux d’acquisition les plus précieux ? Connexion à [!DNL Spree] data to [!DNL Commerce Intelligence] vous permettent de répondre à ces questions, etc.
 
-Le [!DNL Spree] La base de données est basée sur [!DNL PostgreSQL], vous pouvez la connecter à [!DNL Commerce Intelligence] en utilisant la variable [les mêmes étapes que pour une [!DNL Postgres] connection](../integrations/postgresql.md).
+La variable [!DNL Spree] La base de données est basée sur [!DNL PostgreSQL], vous pouvez la connecter à [!DNL Commerce Intelligence] en utilisant la variable [les mêmes étapes que pour une [!DNL Postgres] connection](../integrations/postgresql.md).
 
 ## Documentation connexe
 

@@ -17,7 +17,7 @@ Cette rubrique décrit l’objectif et les utilisations de la fonction `Date Dif
 
 **Explication**
 
-Le `Date Difference` Le type de colonne calcule la durée entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement. La valeur brute calculée dans cette colonne est exprimée en secondes, mais elle est automatiquement convertie en minutes, heures, jours, etc., pour affichage dans les rapports. Cependant, lorsqu’il est utilisé comme filtre/groupe par , vous souhaitez utiliser la valeur en secondes.
+La variable `Date Difference` Le type de colonne calcule la durée entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement. La valeur brute calculée dans cette colonne est exprimée en secondes, mais elle est automatiquement convertie en minutes, heures, jours, etc., pour affichage dans les rapports. Cependant, lorsqu’il est utilisé comme filtre/groupe par , vous souhaitez utiliser la valeur en secondes.
 
 A `date difference` la colonne calculée peut être utilisée pour créer une mesure qui calcule la durée moyenne ou médiane entre deux événements, comme la durée moyenne entre l’enregistrement des clients et leurs premières commandes.
 
@@ -46,7 +46,7 @@ Les étapes suivantes décrivent comment créer une `Date Difference` colonne .
    * Sélectionner `Starting DATETIME` column** > Choisir le champ datetime de début, qui est généralement l’événement qui se produit plus tôt
 
 1. Attribuez un nom à la colonne et cliquez sur **[!UICONTROL Save]**.
-1. La colonne peut être utilisée *immédiatement*.
+1. La colonne peut être utilisée. *immédiatement*.
 
 Par exemple, l’exemple suivant est configuré pour calculer la variable `Seconds between order date and customer's creation date`:
 

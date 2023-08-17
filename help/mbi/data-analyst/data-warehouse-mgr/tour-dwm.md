@@ -34,11 +34,11 @@ Le côté gauche de `Data Warehouse Manager` contient la liste des tableaux, ce 
 
 Dans la liste des tableaux, les tableaux sont regroupés par source de connexion. Ces sources sont ajoutées sous [!UICONTROL Manage Data > Integrations] et peut être soit une base de données, soit une [API](https://developer.adobe.com/commerce/services/reporting/)ou un connecteur tiers. En haut de la liste des tableaux se trouve une zone de recherche qui vous permet de trouver facilement les tableaux de votre choix.
 
-Deux options s’affichent sous la zone de recherche : `All Tables` et `Synced Tables`. Le `All Tables` répertorie toutes les tables que vous avez mises à la disposition de votre Data Warehouse, qui comprennent les tables synchronisées et non synchronisées.
+Deux options s’affichent sous la zone de recherche : `All Tables` et `Synced Tables`. La variable `All Tables` répertorie toutes les tables que vous avez mises à la disposition de votre Data Warehouse, qui comprennent les tables synchronisées et non synchronisées.
 
-Le `Synced Tables` affiche tous les tableaux qui ont déjà été ajoutés à votre Data Warehouse et dont les données sont répliquées à partir des colonnes sélectionnées.
+La variable `Synced Tables` affiche tous les tableaux qui ont déjà été ajoutés à votre Data Warehouse et dont les données sont répliquées à partir des colonnes sélectionnées.
 
-Ne pas voir le tableau que vous recherchez dans le `All Tables` liste ? Il existe plusieurs raisons à cela :
+Ne pas voir le tableau que vous recherchez dans la variable `All Tables` liste ? Il existe plusieurs raisons à cela :
 
 * La source de données n’a pas encore été ajoutée
 * La source de données est une base de données et la variable [!DNL Commerce Intelligence] l’utilisateur que vous avez créé n’a pas accès. Dans ce cas, vous ou votre administrateur de base de données devez accorder l’accès.
@@ -50,9 +50,9 @@ Ne pas voir le tableau que vous recherchez dans le `All Tables` liste ? Il exist
 
 Le Gestionnaire de Data Warehouse vous permet non seulement d’afficher et de gérer facilement vos sources de données, mais aussi de sélectionner les tables et colonnes individuelles à synchroniser.
 
-1. Cliquez sur le bouton `All Tables` et localisez la table que vous souhaitez synchroniser.
-1. Cliquez sur le nom de la table pour prévisualiser le schéma. Si le tableau est nouveau, toutes les colonnes s’affichent sous la forme `Unsynced`.
-1. Vérifiez les colonnes que vous souhaitez synchroniser.
+1. Cliquez sur le bouton `All Tables` et localisez la table à synchroniser.
+1. Cliquez sur le nom de la table pour prévisualiser le schéma. Si le tableau est nouveau, toutes les colonnes s’affichent comme `Unsynced`.
+1. Vérifiez les colonnes à synchroniser.
 
    >[!NOTE]
    >
@@ -60,7 +60,7 @@ Le Gestionnaire de Data Warehouse vous permet non seulement d’afficher et de g
 
 1. Assurez-vous de vérifier la variable `Primary Key` colonnes : ces colonnes comportent un symbole clé en regard du nom de la colonne. A `Primary Key` est nécessaire pour synchroniser correctement les données dans le Data Warehouse.
 
-   Si vous synchronisez une table qui provient directement de votre base de données, il est possible que `Primary Keys` peut ne pas être identifié. Dans ce cas, contactez votre administrateur de base de données pour demander qu’une ou plusieurs clés Principales soient ajoutées au tableau.
+   Si vous synchronisez une table qui provient directement de votre base de données, il est possible que `Primary Keys` peut ne pas être identifié. Dans ce cas, contactez votre administrateur de base de données pour demander qu’une ou plusieurs clés primaires soient ajoutées à la table.
 1. Lorsque vous avez terminé, cliquez sur le ![button](../../assets/button.png) bouton .
 
 A *Succès !* s’affiche et le statut passe à `Pending` pour les colonnes sélectionnées. Une fois la prochaine mise à jour complète terminée, les tableaux et colonnes nouvellement synchronisés pourront être utilisés dans les rapports. Vous pouvez également définir de nouvelles [méthodes de réplication](./cfg-replication-methods.md) après la synchronisation initiale.
@@ -79,13 +79,13 @@ Pour vous assurer que cela se produit, vous devez sélectionner la variable `Sav
 
 Votre Data Warehouse ne détecte pas automatiquement les nouvelles sources, tables ou colonnes au moment de leur ajout. Un processus de synchronisation s’exécute toute la semaine pour rechercher de nouveaux ajouts et les rendre disponibles, mais vous pouvez forcer la synchronisation d’une structure si vous souhaitez accéder aux tables et colonnes nouvellement ajoutées avant l’exécution du processus.
 
-Une `Check for new tables and columns` lien. Cliquez sur ce lien pour forcer le démarrage du processus de synchronisation de la structure. les nouveaux ajouts sont généralement disponibles après 10 minutes. Actualisez la page pour afficher la nouvelle source, le nouveau tableau ou la nouvelle colonne.
+La barre de recherche située sous la liste du tableau contient une `Check for new tables and columns` lien. Cliquez sur ce lien pour forcer le démarrage du processus de synchronisation de la structure. Les nouveaux ajouts sont généralement disponibles au bout de 10 minutes. Actualisez la page pour afficher la nouvelle source, le nouveau tableau ou la nouvelle colonne.
 
 ## Création de colonnes calculées {#calculated}
 
 Il est beaucoup plus facile d’obtenir des informations sur votre entreprise en étant simplement en mesure de consulter et de gérer les données provenant de toutes vos sources. Mais dans le Gestionnaire de Data Warehouse, vous pouvez aller plus loin en créant des colonnes calculées dans vos tableaux. `Calculated` les colonnes obtiennent de nouvelles informations de vos données existantes.
 
-Dites que vous souhaitez ajouter `user's lifetime revenue` à `users` pour rechercher des utilisateurs à forte valeur ajoutée. Ou, si vous souhaitez segmenter les recettes par sexe, vous pouvez ajouter `customer's gender` à `orders` table.
+Dites que vous souhaitez ajouter `user's lifetime revenue` à votre `users` pour rechercher des utilisateurs à forte valeur ajoutée. Ou, si vous souhaitez segmenter les recettes par sexe, vous pouvez ajouter `customer's gender` à votre `orders` table.
 
 Pour plus d’informations, consultez cette section [tutoriel](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
@@ -115,7 +115,7 @@ Voici un aperçu rapide de la suppression d’une colonne :
 
 ## Alors, quand puis-je utiliser mes nouvelles colonnes ? {#when}
 
-De nouvelles colonnes synchronisées et de nouvelles colonnes calculées/mises à jour seront prêtes à être utilisées une fois la prochaine mise à jour complète terminée. Si une mise à jour n’est pas déjà en cours, vous pouvez forcer une mise à jour en cliquant sur **[!UICONTROL Force update]** affiché en haut de la page `Data Warehouse` ou `Integrations` page. Vous pouvez également planifier une notification par courrier électronique une fois la mise à jour terminée en cliquant sur **[!UICONTROL Email me when complete]**.
+De nouvelles colonnes synchronisées et de nouvelles colonnes calculées/mises à jour seront prêtes à être utilisées une fois la prochaine mise à jour complète terminée. Si une mise à jour n’est pas déjà en cours, vous pouvez la forcer en cliquant sur **[!UICONTROL Force update]** affiché en haut de la page `Data Warehouse` ou `Integrations` page. Vous pouvez également planifier une notification par courrier électronique une fois la mise à jour terminée en cliquant sur **[!UICONTROL Email me when complete]**.
 
 Lorsque vous êtes prêt à utiliser vos nouvelles colonnes dans les rapports, [vous devez d’abord les ajouter aux mesures.](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Bien que les données ne soient pas disponibles tant qu’une mise à jour n’est pas terminée, vous pouvez tout de même utiliser de nouvelles colonnes dans les rapports. Les données du rapport s’affichent lorsque la mise à jour est terminée.
 

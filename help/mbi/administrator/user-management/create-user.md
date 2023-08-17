@@ -15,7 +15,7 @@ ht-degree: 0%
 
 1. Cliquez sur le nom de votre société dans le coin supérieur droit, puis sélectionnez **[!UICONTROL Invite User]** dans la liste déroulante.
 1. Saisissez le nom et l’adresse électronique de l’utilisateur.
-1. Définissez la variable **[!UICONTROL general permission level]**: `Admin`, `Standard`ou `Read Only`.
+1. Définissez la variable **[!UICONTROL general permission level]**: `Admin`, `Standard`, ou `Read Only`.
 1. Indiquez si ce nouvel utilisateur doit également être responsable de **[!UICONTROL billing]** ou **[!UICONTROL technical]** en cochant les cases appropriées.
 
    >[!NOTE]
@@ -40,4 +40,4 @@ Si vous devez renvoyer l’invitation, sur la page [page de connexion](https://d
 
 >[!IMPORTANT]
 >
->Chaque compte a un nombre contractuel de licences, ou de sièges. Si vous atteignez votre limite ou souhaitez en savoir plus, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>Chaque compte a un nombre contractuel de licences, ou de sièges. Si vous atteignez votre limite ou souhaitez en savoir plus, [envoyer un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

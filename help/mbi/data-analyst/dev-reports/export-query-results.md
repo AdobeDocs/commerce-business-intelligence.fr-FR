@@ -1,6 +1,6 @@
 ---
 title: Exporter mes résultats de requête
-description: Découvrez comment exporter vos résultats de données.
+description: Découvrez comment exporter les résultats de vos données.
 exl-id: 7c5672af-ca60-47c5-9054-ff36e2887497
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Concentration des clients
+# Concentration de la clientèle
 
 Cette rubrique explique comment configurer un tableau de bord qui vous aide à mesurer la répartition du total des recettes entre votre base de clients. Identifiez le pourcentage de clients qui contribuent aux recettes et créez des listes segmentées afin de mieux commercialiser et de conserver vos clients ayant un fort taux de contribution.
 
@@ -19,7 +19,7 @@ Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv
 
 ## Prise en main
 
-Vous devez d’abord charger un fichier contenant une clé Principale dont la valeur est de 1. Cela permet de créer certaines colonnes calculées nécessaires à l’analyse.
+Vous devez d’abord télécharger un fichier contenant uniquement une clé primaire dont la valeur est de 1. Cela permet de créer certaines colonnes calculées nécessaires à l’analyse.
 
 Vous pouvez utiliser [Chargeur de fichiers](../importing-data/connecting-data/using-file-uploader.md) et l’image ci-dessous pour formater votre fichier.
 
@@ -81,7 +81,7 @@ Colonnes à créer
 
 >[!NOTE]
 >
->Les centiles utilisés sont des divisions d’instances de clients, représentant le Xe percentile de votre base de clients. Chaque client est associé à un entier compris entre 1 et 100, qui peut être considéré comme le chiffre d’affaires de sa durée de vie. *rank*. Par exemple, si le centile de revenu du client pour un client spécifique est **5**, ce client se trouve dans la variable ***cinquième centile*** de tous les clients en termes de recettes sur la durée de vie.
+>Les centiles utilisés sont des divisions d’événements, représentant le centile Xème de votre base de clients. Chaque client est associé à un entier compris entre 1 et 100, qui peut être considéré comme le chiffre d’affaires de sa durée de vie. *rank*. Par exemple, si le centile de revenu du client pour un client spécifique est **5**, ce client se trouve dans la variable ***cinquième centile*** de tous les clients en termes de recettes sur la durée de vie.
 
 ## Mesures
 
@@ -141,7 +141,7 @@ Colonnes à créer
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **concentration inférieure de 10 %**
+* **Concentration inférieure de 10 %**
 * [!UICONTROL Filter]: `Customer's revenue percentile > 90`
 
 * Mesure `A`: `Total customer lifetime revenue`

@@ -21,7 +21,7 @@ Les colonnes ne dépendent pas des cycles de mise à jour. Il n’est donc plus 
 
 >[!IMPORTANT]
 >
->Les colonnes que vous créez à l’aide du [!DNL SQL] ne sont pas enregistrés dans votre Data Warehouse. Vous avez toujours accès à la requête contenant la colonne, mais si vous souhaitez utiliser la colonne dans plusieurs rapports, vous devez la recréer dans la requête pour chaque rapport. Cela signifie que les colonnes créées à l’aide de la variable [!DNL SQL] ne peut pas être utilisé dans les [!DNL Report Builder].
+>Les colonnes que vous créez à l’aide de la propriété [!DNL SQL] ne sont pas enregistrés dans votre Data Warehouse. Vous avez toujours accès à la requête contenant la colonne, mais si vous souhaitez utiliser la colonne dans plusieurs rapports, vous devez la recréer dans la requête pour chaque rapport. Cela signifie que les colonnes créées à l’aide de la variable [!DNL SQL] ne peut pas être utilisé dans les [!DNL Report Builder].
 
 ## Colonnes dans le Gestionnaire de Data Warehouse
 

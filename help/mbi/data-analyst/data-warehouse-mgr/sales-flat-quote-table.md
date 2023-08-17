@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Tableau de citations
 
-Le `quote` tableau (`sales_flat_quote` sur M1) contient des enregistrements sur chaque panier créé dans votre boutique, qu’ils aient été abandonnés ou convertis en achat. Chaque ligne représente un panier. En raison de la taille potentielle de ce tableau, Adobe vous recommande de supprimer régulièrement les enregistrements si certains critères sont remplis, par exemple s’il existe des paniers non convertis de plus de 60 jours.
+La variable `quote` tableau (`sales_flat_quote` sur M1) contient des enregistrements sur chaque panier créé dans votre boutique, qu’ils aient été abandonnés ou convertis en achat. Chaque ligne représente un panier. En raison de la taille potentielle de ce tableau, Adobe vous recommande de supprimer régulièrement les enregistrements si certains critères sont remplis, par exemple s’il existe des paniers non convertis de plus de 60 jours.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Le `quote` tableau (`sales_flat_quote` sur M1) contient des enregistrements sur 
 | `customer_id` | `Foreign key` associé à la propriété `customer_entity` , si le client est enregistré. Rejoindre à `customer_entity.entity_id` pour déterminer les attributs du client associés à l’utilisateur qui a créé le panier. Si le panier a été créé par le biais de l’extraction d’invité, ce champ est `NULL` |
 | `entity_id` (PK) | Identifiant unique de la table, généralement utilisé dans les jointures à d’autres tables dans l’instance Commerce. |
 | `is_active` | Champ booléen qui renvoie &quot;1&quot; si le panier a été créé par un client et n’a pas encore été converti en commande. Renvoie &quot;0&quot; pour les paniers convertis ou les paniers créés via l’administrateur |
-| `items_qty` | Somme de la quantité totale de tous les articles inclus dans le panier |
+| `items_qty` | Somme de la quantité totale de tous les articles du panier |
 | `reserved_order_id` | `Foreign key` associé à la propriété `sales_order` table. Rejoindre à `sales_order.increment_id` pour déterminer les détails de commande associés à un panier converti. Pour les paniers qui ne sont pas associés à une commande convertie, la variable `reserved_order_id` restes `NULL` |
 | `store_id` | `Foreign key` associé à la propriété `store` table. Rejoindre à `store`.`store_id` pour déterminer quelle vue de magasin Commerce est associée au panier |
 
@@ -42,7 +42,7 @@ Le `quote` tableau (`sales_flat_quote` sur M1) contient des enregistrements sur 
 | **Nom de la colonne** | **Description** |
 |---|---|
 | `Order date` | Horodatage reflétant la date de création des commandes pour les paniers convertis. Calculé par la jointure `quote.reserved_order_id` to `sales_order.increment_id` et le renvoi de la variable `sales_order.created_at` field |
-| `Seconds between cart creation and order` | Délai écoulé entre la création du panier et la création de la commande. Calculé par soustraction `created_at` de `Order date`, renvoyé sous la forme d’un nombre entier de secondes |
+| `Seconds between cart creation and order` | Délai écoulé entre la création du panier et la création de la commande. Calculé par soustraction `created_at` de `Order date`, renvoyé en tant que nombre entier de secondes |
 | `Seconds since cart creation` | Délai écoulé entre la date de création du panier et maintenant. Calculé par soustraction `created_at` de l’horodatage du serveur au moment de l’exécution de la requête, renvoyé sous la forme d’un nombre entier de secondes. Le plus souvent utilisé pour identifier l’âge d’un panier |
 | `Store name` | Nom de la boutique Commerce associée à cette commande. Calculé par la jointure `quote.store_id` to `store.store_id` et le renvoi de la variable `name` field |
 

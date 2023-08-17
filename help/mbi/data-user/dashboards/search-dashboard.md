@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Recherche d’un tableau de bord
 
-Cette rubrique vous explique comment utiliser la variable [[!DNL Global Search] fonctionnalité](#global) pour rechercher des tableaux de bord et comment les rechercher [Tableaux de bord détenus par d’autres utilisateurs](#other).
+Cette rubrique vous explique comment utiliser la variable [[!DNL Global Search] fonctionnalité](#global) pour rechercher des tableaux de bord et comment rechercher [Tableaux de bord détenus par d’autres utilisateurs](#other).
 
 ## Recherche globale {#global}
 
-Le [!DNL Global Search] vous permet de rechercher et de sélectionner des tableaux de bord à afficher.
+La variable [!DNL Global Search] vous permet de rechercher et de sélectionner des tableaux de bord à afficher.
 
 * *Pour afficher la liste de vos tableaux de bord existants*, cliquez sur le tableau de bord.
 

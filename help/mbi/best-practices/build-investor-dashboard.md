@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Créer le tableau de bord des investisseurs
 
-De nombreux clients travaillent avec des investisseurs et doivent partager des informations à partir de la plateforme, mais les tableaux de bord que vous créez pour prendre des décisions commerciales quotidiennes ne sont peut-être pas ce qu’un investisseur recherche. Vous trouverez ci-dessous quelques bonnes pratiques pour créer un tableau de bord complet mais simple, idéal pour le partage avec des investisseurs principaux et potentiels.
+De nombreux clients travaillent avec des investisseurs et doivent partager des informations à partir de la plateforme, mais les tableaux de bord que vous créez pour prendre des décisions commerciales quotidiennes ne sont peut-être pas ce qu’un investisseur recherche. Vous trouverez ci-dessous quelques bonnes pratiques pour créer un tableau de bord complet mais simple, idéal pour le partage avec des investisseurs actifs et potentiels.
 
 Voici ce que vous devez créer pour le tableau de bord de votre investisseur :
 
@@ -25,7 +25,7 @@ Voici ce que vous devez créer pour le tableau de bord de votre investisseur :
 * **[!UICONTROL AOV]**
 * **[!UICONTROL Items sold]**
 
-## Rapports visuels
+## Rapports Visuels
 
 * **[!UICONTROL Revenue by quarter]**
    * Mesure - Recettes
@@ -64,7 +64,7 @@ Avec [!DNL Google Analytics] intégration, vous pouvez inclure des rapports sur 
 * Visites du site
 * Taux de conversion
 
-Avec le [Services d’enrichissement des données de commerce](https://business.adobe.com/products/magento/magento-commerce.html), vous pouvez inclure des rapports sur :
+Avec la variable [Services d’enrichissement des données de commerce](https://business.adobe.com/products/magento/magento-commerce.html), vous pouvez inclure des rapports sur les éléments suivants :
 
 * Clients uniques par état/région, âge, genre.
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Intégration [!DNL Adobe Commerce Intelligence]
 
-Les questions relatives à l’intégration liées à `store` et `database` assurez-vous de configurer correctement vos rapports. Grâce à ces réponses, Adobe diffuse vos rapports qui sont précisément adaptés à la configuration de votre magasin.
+Les questions relatives à l’intégration liées à `store` et `database` assurez-vous que vous configurez correctement vos rapports. Grâce à ces réponses, Adobe diffuse vos rapports qui sont précisément adaptés à la configuration de votre magasin.
 
 ## Paramètres de magasin
 
@@ -33,4 +33,4 @@ Les questions relatives à l’intégration liées à `store` et `database` assu
 
 - `Database name` - Qu’est-ce que la variable *nom du [!DNL MySQL] base* où résident vos données transactionnelles Commerce ?
 
-- `Table prefix (optional)` - Les tables contenues dans votre base de données Commerce sont-elles précédées de tout élément (par exemple : `store_`) ? Ce n’est pas le cas normalement, mais il s’agit d’une personnalisation qui peut être effectuée.
+- `Table prefix (optional)` - Les tables contenues dans votre base de données Commerce sont-elles précédées de tout élément (par exemple : `store_`) ? Normalement, ce n’est pas le cas, mais il s’agit d’une personnalisation qui peut être effectuée.

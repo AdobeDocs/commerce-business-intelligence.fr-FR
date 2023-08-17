@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Définition d’un tableau de bord par défaut
+# Définir un tableau de bord par défaut
 
 Le tableau de bord par défaut est le premier tableau de bord que vous voyez à l’ouverture. [!DNL Commerce Intelligence].
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Pour [!DNL Commerce Intelligence] Les utilisateurs qui souhaitent afficher leurs tableaux de bord et leurs rapports sur les écrans dans tout le bureau disposent de différentes options matérielles qui peuvent facilement activer cette configuration.
 
-Voici la liste recommandée des éléments dont vous avez besoin pour l’option :
+Voici la liste recommandée des éléments dont vous avez besoin pour cette option :
 
 1. **Un téléviseur ou un écran avec une entrée HDMI** pour diffuser vers .
 
@@ -23,6 +23,6 @@ Voici la liste recommandée des éléments dont vous avez besoin pour l’option
 
 1. **Clavier et souris USB** pour contrôler votre dongle.
 
-1. **Extension de navigateur pour qu’elle alterne à la fois entre plusieurs onglets.** Vous pouvez ainsi configurer les tableaux de bord sélectionnés qui s’affichent dans un onglet unique. Adobe de recommander [Onglets Revolver](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) extension si vous utilisez [!DNL Chrome].
+1. **Extension de navigateur pour qu’elle alterne à la fois entre plusieurs onglets.** Vous pouvez ainsi configurer les tableaux de bord sélectionnés qui s’affichent dans un onglet unique. Adobe de recommander le [Onglets Revolver](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) extension si vous utilisez [!DNL Chrome].
 
 Une fois que vous disposez du matériel ci-dessus, vous pouvez ouvrir une fenêtre de navigateur sur votre écran avec un tableau de bord spécifique que vous souhaitez afficher dans chaque onglet. Enfin, configurez votre navigateur pour qu’il fasse pivoter chaque tableau de bord à la fréquence souhaitée.

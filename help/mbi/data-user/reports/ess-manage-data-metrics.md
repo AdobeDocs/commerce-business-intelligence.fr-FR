@@ -33,7 +33,7 @@ Lorsqu’elles sont utilisées dans des rapports, les mesures peuvent être anal
 
 1. Nommez votre mesure.
 
-   Adobe recommande un nom qui, d’un coup d’oeil, vous indique la mesure. Par exemple : `Average Order Revenue`.
+   Adobe recommande un nom qui, d’un coup d’oeil, vous indique la mesure. Par exemple: `Average Order Revenue`.
 
 1. L’étape suivante consiste à définir l’action de votre mesure. À l’aide des menus déroulants, définissez l’opération de la mesure, la variable `operation` et une `date` dimension :
 
@@ -48,19 +48,19 @@ Lorsqu’elles sont utilisées dans des rapports, les mesures peuvent être anal
       * `First and Third Quartiles` - Ces opérations calculent respectivement les 25e et 75e percentiles des valeurs de colonne de données.
       * `Tenth and Ninetieth Percentiles` - Ces opérations calculent respectivement les 10e et 90e percentiles des valeurs de colonne de données.
 
-   * Sélectionnez une colonne sur laquelle effectuer l’opération. Par exemple, si vous souhaitez obtenir le total de vos recettes, vous devez effectuer une opération de somme sur la variable `order total` colonne .
+   * Sélectionnez une colonne sur laquelle effectuer l’opération. Par exemple, si vous souhaitez obtenir le total de vos recettes, effectuez une opération de somme sur la variable `order total` colonne .
 
      Si vous modifiez une mesure existante, vous pouvez également [modifier le tableau opérationnel de la mesure ;](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) dans cette section.
 
-   * Sélectionnez une dimension de date pouvant être utilisée pour suivre la tendance de la mesure. Par exemple : `order date`.
+   * Sélectionnez une dimension de date pouvant être utilisée pour suivre la tendance de la mesure. Par exemple, `order date`.
 
 ## Ajout de filtres {#filters}
 
-Le `Filter` permet de créer un filtre ou d’appliquer un [jeu de filtres enregistré](../../data-user/reports/ess-manage-data-filters.md) à votre mesure.
+La variable `Filter` permet de créer un filtre ou d’appliquer un [jeu de filtres enregistré](../../data-user/reports/ess-manage-data-filters.md) à votre mesure.
 
 Pour le `average order revenue` , vous ne souhaitez pas inclure de commandes de test qui auraient pu être effectuées lors de la configuration de votre magasin ; cela nous donnerait un résultat inexact. Peut appliquer un jeu de filtres pour supprimer ces commandes du jeu de données. Une fois le filtre créé, il s’applique à tous les graphiques créés à l’aide de cette mesure.
 
-Le `Filter Logic` vous permet de définir plus précisément le comportement d’une mesure.
+La variable `Filter Logic` vous permet de définir plus précisément le comportement d’une mesure.
 
 * &quot;\[`A`\] ou \[`B`\]&quot; autorise les données qui répondent aux filtres \[`A`\] OU \[`B`\]
 * &quot;\[`A`\] et \[`B`\]&quot; autorise uniquement les données qui répondent aux deux filtres \[`A`\] et \[`B`\]
@@ -68,7 +68,7 @@ Le `Filter Logic` vous permet de définir plus précisément le comportement d�
 
 ## Ajout de Dimensions {#dimensions}
 
-Le [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) présente toutes les dimensions de données disponibles pour le filtrage ou le regroupement ; par défaut, toutes les colonnes de données disponibles sont répertoriées en tant que dimensions. Si vous souhaitez segmenter vos recettes par source de référence dans l’exemple suivant, vous pouvez le faire ici.
+La variable [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) affiche toutes les dimensions de données disponibles pour le filtrage ou le regroupement ; par défaut, toutes les colonnes de données disponibles sont répertoriées en tant que dimensions. Si vous souhaitez segmenter vos recettes par source de référence dans l’exemple suivant, vous pouvez le faire ici.
 
 En plus de répertorier toutes les colonnes de données disponibles sous forme de dimensions, [!DNL Commerce Intelligence] devinettes à partir desquelles les colonnes peuvent être regroupées. *Pour segmenter ou regrouper des données dans des rapports*, les colonnes doivent être marquées comme pouvant être regroupées.
 

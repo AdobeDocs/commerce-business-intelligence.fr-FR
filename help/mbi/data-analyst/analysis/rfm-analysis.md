@@ -16,7 +16,7 @@ ht-degree: 0%
 Cette rubrique explique comment configurer un tableau de bord qui vous permet de segmenter vos clients selon leur récence, leur fréquence et leur classement monétaire. L’analyse RFM est une technique marketing qui prend en compte les comportements des clients pour vous aider à déterminer la segmentation pour la diffusion. Il comporte trois aspects :
 
 1. Récence des achats récemment réalisés par un client sur votre boutique
-1. Fréquence d’achat des clients
+1. Fréquence à laquelle ils vous effectuent des achats
 1. Montant monétaire des dépenses du client
 
 ![](../../assets/blobid0.png)
@@ -25,7 +25,7 @@ L’analyse RFM ne peut être configurée que si vous disposez de la variable [!
 
 ## Prise en main
 
-Vous devez d’abord charger un fichier contenant une clé Principale dont la valeur est de 1. Cela permet de créer certaines colonnes calculées nécessaires à l’analyse.
+Vous devez d’abord télécharger un fichier contenant uniquement une clé primaire dont la valeur est de 1. Cela permet de créer certaines colonnes calculées nécessaires à l’analyse.
 
 Vous pouvez utiliser [article](../importing-data/connecting-data/using-file-uploader.md) et l’image ci-dessous pour formater votre fichier.
 
@@ -55,7 +55,7 @@ Colonnes à créer
 * 
   [!UICONTROL Type de données]: `Integer`
 
-* **Référence des nombres** (il s’agit du fichier que vous avez téléchargé avec le numéro &quot;1&quot;)
+* **Référence de comptage** (il s’agit du fichier que vous avez téléchargé avec le numéro &quot;1&quot;)
 * Nombre de clients
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` OU `customer_entity.(input)reference > Count Reference`. `Primary Key`
@@ -72,7 +72,7 @@ Colonnes à créer
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's lifetime revenue`
 
-* Classement par chiffre d’affaires sur la durée de vie des clients
+* Classement par chiffre d’affaires total des clients
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
@@ -124,7 +124,7 @@ Colonnes à créer
 * 
   [!UICONTROL Type de données]: String
 
-* **Référence des nombres** table
+* **Référence de comptage** table
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key` OU `customer_entity.(input)reference > Customer Concentration.Primary Key`
@@ -174,7 +174,7 @@ Aucune nouvelle mesure !
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ## Rapports
 

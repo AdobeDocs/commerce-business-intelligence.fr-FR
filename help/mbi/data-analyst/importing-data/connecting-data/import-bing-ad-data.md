@@ -22,7 +22,7 @@ Pour exporter votre [!DNL Bing Ads] data, vous devez disposer des [!DNL Bing Ads
 ## [!DNL Bing Ads] Exportation de données
 
 1. Dans le `Browser` volet [!DNL Bing Ads Editor], cliquez avec le bouton droit sur la campagne ou le groupe publicitaire à exporter, puis cliquez sur **[!UICONTROL Export]**.
-1. Dans le `Export` boîte de dialogue, cliquez sur **[!UICONTROL Export]**.
+1. Dans le `Export` , cliquez sur **[!UICONTROL Export]**.
 1. Dans le `Save As` , cliquez sur le dossier dans lequel vous souhaitez enregistrer votre fichier d’exportation.
 1. Dans le `File name` , choisissez un nom pour votre exportation de fichier.
 1. Cliquez sur **[!UICONTROL Save]**.

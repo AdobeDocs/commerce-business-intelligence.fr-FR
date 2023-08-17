@@ -17,11 +17,11 @@ Cette rubrique décrit l’objectif et les utilisations de la fonction `Sequenti
 
 **Explication**
 
-Le `Sequential Comparison` type de colonne : trouve la différence entre les événements consécutifs. Le type le plus courant de `Sequential Comparison` est la colonne `Seconds since previous order` colonne . Trois entrées sont nécessaires pour cette colonne :
+La variable `Sequential Comparison` type de colonne : permet de trouver la différence entre les événements consécutifs. Le type le plus courant de `Sequential Comparison` est la colonne `Seconds since previous order` colonne . Trois entrées sont nécessaires pour cette colonne :
 
-1. `Event Owner`: Cette entrée détermine l’entité pour laquelle les lignes sont regroupées. Par exemple, dans la variable `Seconds since previous order` , le propriétaire de l’événement est le client, car vous souhaitez trouver le nombre de secondes depuis la commande précédente du même client.
-1. `Event Date`: Cette entrée applique la séquence d’événements. Dans les cas de `Seconds since previous order`, la colonne contenant l’horodatage de la commande doit être la valeur `Event Date`. Cette entrée est toujours un horodatage.
-1. `Value to Compare`: Cette entrée est la valeur réelle à comparer. Elle soustrait la valeur de la ligne précédente de la valeur de la ligne actuelle. Par conséquent, une colonne qui recherche l’écart temporel entre les commandes successives d’un client est appelée `Seconds since previous order`. Cette entrée ne doit pas nécessairement être un horodatage. Un exemple non horodaté consiste à trouver la différence de valeur de commande entre les commandes successives d’un client.
+1. `Event Owner`: cette entrée détermine l’entité pour laquelle les lignes sont regroupées. Par exemple, dans la variable `Seconds since previous order` , le propriétaire de l’événement est le client, car vous souhaitez trouver le nombre de secondes depuis la commande précédente du même client.
+1. `Event Date`: cette entrée applique la séquence d’événements. Dans les cas de `Seconds since previous order`, la colonne contenant l’horodatage de l’ordre doit être la valeur `Event Date`. Cette entrée est toujours un horodatage.
+1. `Value to Compare`: cette entrée est la valeur réelle à comparer. Elle soustrait la valeur de la ligne précédente de la valeur de la ligne actuelle. Par conséquent, une colonne qui recherche l’écart temporel entre les commandes successives d’un client est appelée `Seconds since previous order`. Cette entrée ne doit pas nécessairement être un horodatage. Un exemple non horodaté consiste à trouver la différence de valeur de commande entre les commandes successives d’un client.
 
 **Exemple**
 
@@ -33,7 +33,7 @@ Le `Sequential Comparison` type de colonne : trouve la différence entre les év
 | **`4`** | A | 2015-01-02 13:00:00 | 126000 |
 | **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
-Dans l’exemple ci-dessus, `Seconds since owner's previous event` est la valeur `Sequential Comparison` colonne calculée. Pour le `owner_id = A`, il identifie d’abord une séquence basée sur la variable `timestamp` , puis soustrait le de l’événement précédent `timestamp` de l’horodatage de l’événement actuel. Sur la troisième ligne du tableau, la deuxième ligne pour `owner_id A` - la valeur de `Seconds since owner's previous event` est le nombre de secondes entre &quot;2015-01-01 02:00&quot; et &quot;2015-01-01 00:00:00&#39;. Cette différence est égale à deux heures = 7 200 secondes.
+Dans l’exemple ci-dessus, `Seconds since owner's previous event` est la valeur `Sequential Comparison` colonne calculée. Pour le `owner_id = A`, il identifie d’abord une séquence en fonction de la variable `timestamp` , puis soustrait le de l’événement précédent `timestamp` de l’horodatage de l’événement actuel. Sur la troisième ligne du tableau, la deuxième ligne pour `owner_id A` - la valeur de `Seconds since owner's previous event` est le nombre de secondes entre &quot;2015-01-01 02:00&quot; et &quot;2015-01-01 00:00:00&#39;. Cette différence est égale à deux heures = 7 200 secondes.
 
 Pour ce type de colonne calculé, la ligne correspondant au premier événement du propriétaire comporte une `NULL` .
 
@@ -60,6 +60,6 @@ Pour créer une **Numéro d’événement** column :
 
 1. Attribuez un nom à la colonne en haut de la page, puis cliquez sur **[!UICONTROL Save]**.
 
-1. La colonne peut être utilisée *immédiatement*.
+1. La colonne peut être utilisée. *immédiatement*.
 
 ![SEC](../../assets/SEC_new.png)

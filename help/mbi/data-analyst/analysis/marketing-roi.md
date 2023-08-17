@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cette rubrique contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la [nouvelle architecture](../../administrator/account-management/new-architecture.md) Si la section &quot;Vues Data Warehouse&quot; est disponible après avoir sélectionné &quot;Gérer les données&quot; dans la barre d’outils principale.
+>Cette rubrique contient des instructions destinées aux clients qui utilisent l’architecture d’origine et la nouvelle architecture. Vous êtes sur la page [nouvelle architecture](../../administrator/account-management/new-architecture.md) Si la section &quot;Vues Data Warehouse&quot; est disponible après avoir sélectionné &quot;Gérer les données&quot; dans la barre d’outils principale.
 
 Si vous dépensez de l’argent dans la publicité en ligne, vous souhaitez suivre votre retour sur cette dépense et prendre des décisions basées sur les données sur d’autres investissements. Cette rubrique explique comment configurer un tableau de bord qui effectue le suivi de l’analyse de vos canaux, y compris le retour sur investissement agrégé et par campagne.
 
@@ -52,13 +52,13 @@ Colonnes à créer
       * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
 
    * **`Order's GA medium`**
-      * Sélectionnez une définition : Colonne jointe
+      * Sélectionner une définition : Colonne jointe
       * Sélectionnez une [!UICONTROL table]: `ecommerce####`
       * Sélectionnez une [!UICONTROL column]: `medium`
       * [!UICONTROL Path]: sales_plat_order.incrément_id = ecommerce####.transactionId
 
    * **`Order's GA source`**
-      * Sélectionnez une définition : Colonne jointe
+      * Sélectionner une définition : Colonne jointe
       * Sélectionnez une [!UICONTROL table]: `ecommerce####`
       * Sélectionnez une [!UICONTROL column]: `source`
       * [!UICONTROL Path]: sales_plat_order.incrément_id = ecommerce#####.transactionId ^
@@ -99,7 +99,7 @@ Colonnes à créer
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA source`**
-   * Sélectionnez une définition : Colonne jointe
+   * Sélectionner une définition : Colonne jointe
    * Sélectionnez une [!UICONTROL table]: `customer_entity`
    * Sélectionnez une [!UICONTROL column]: `Customer's first order GA source`
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
@@ -132,14 +132,14 @@ Colonnes à créer
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ## Rapports
 
-* **Dépense publicitaire (tout le temps)**
-   * [!UICONTROL Metric]: Dépenses publicitaires
+* **Dépenses publicitaires (tout le temps)**
+   * [!UICONTROL Metric]: dépenses publicitaires
 
-* Mesure `A`: Dépenses publicitaires
+* Mesure `A`: dépenses publicitaires
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL Intervalle]: `None`
@@ -163,7 +163,7 @@ Colonnes à créer
   [!UICONTROL Chart Type]: `Scalar`
 
 * **ROI publicitaire**
-   * [!UICONTROL Metric]: Dépenses publicitaires
+   * [!UICONTROL Metric]: dépenses publicitaires
 
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filters]:
@@ -173,7 +173,7 @@ Colonnes à créer
       * `User's first order's medium IN cpc, ppc`
       * Logique de filtre : ([`A`] OU [`B`] OU [`C`]) ET [`D`]
 
-   * [!UICONTROL Metric]: Chiffre d’affaires moyen
+   * [!UICONTROL Metric]: recettes moyennes sur la durée
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -217,7 +217,7 @@ Colonnes à créer
       * `User's first order's medium IN cpc, ppc`
       * Logique de filtre : ([`A`] OU [`B`] OU [`C`]) ET [`D`]
 
-   * [!UICONTROL Metric]: Chiffre d’affaires moyen
+   * [!UICONTROL Metric]: recettes moyennes sur la durée
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -225,7 +225,7 @@ Colonnes à créer
       * `User's first order's medium IN cpc, ppc`
       * Logique de filtre : ([`A`] OU [`B`] OU [`C`]) ET [`D`]
 
-   * [!UICONTROL Metric]: Durée de vie moyenne des commandes
+   * [!UICONTROL Metric]: nombre moyen de commandes pendant la durée de vie
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`

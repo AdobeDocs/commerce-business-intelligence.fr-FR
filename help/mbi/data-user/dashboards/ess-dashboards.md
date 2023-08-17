@@ -23,9 +23,9 @@ Il est facile de créer un rapport, de l’ajouter à un tableau de bord et d’
 
 Les tableaux de bord sont des compartiments à thème partageables pour les analyses que vous créez dans les Reports Builder. C’est ainsi que vous pouvez encourager votre équipe à collaborer et à maintenir une source unique de vérité dans l’ensemble de votre organisation.
 
-*Si vous êtes un administrateur ou un utilisateur standard*, vous pouvez créer un tableau de bord en cliquant sur le bouton `Dashboard Options` menu déroulant et choix `Create New dashboard`.
+*Si vous êtes administrateur ou utilisateur standard*, vous pouvez créer un tableau de bord en cliquant sur le bouton `Dashboard Options` menu déroulant et choix `Create New dashboard`.
 
-Ce à quoi ressemblent les tableaux de bord que vous créez dépend entièrement de vous. Vous pouvez organiser et redimensionner les éléments du tableau de bord comme vous le souhaitez, selon vos besoins et votre workflow.
+Ce à quoi ressemblent les tableaux de bord que vous créez dépend entièrement de vous. Vous pouvez organiser et redimensionner les éléments du tableau de bord de la manière qui vous convient le mieux à vos besoins et à votre workflow.
 
 ![organiser le redimensionnement de l’élément de tableau de bord](../../assets/arrange_resize_dashboard_element.gif)
 
@@ -61,7 +61,7 @@ Ce à quoi ressemblent les tableaux de bord que vous créez dépend entièrement
 
      ![Ajouter un rapport](../../assets/magento-bi-dashboard-create-add-report.png)
 
-1. Cliquez sur **[!UICONTROL Create Report]** pour afficher le **[!UICONTROL Report Builder Options]**.
+1. Cliquez sur **[!UICONTROL Create Report]** pour afficher la variable **[!UICONTROL Report Builder Options]**.
 
    ![Options de Report Builder](../../assets/magento-bi-report-builder.png)
 
@@ -69,7 +69,7 @@ Ce à quoi ressemblent les tableaux de bord que vous créez dépend entièrement
 
 * Pour redimensionner un graphique ou un rapport, faites glisser le coin inférieur droit vers la nouvelle taille.
 
-* Pour déplacer un graphique ou un rapport, passez la souris sur le titre ou l’en-tête jusqu’à ce que le curseur se transforme en croix. Ensuite, faites-le glisser à sa position.
+* Pour déplacer un graphique ou un rapport, passez la souris sur le titre ou l’en-tête jusqu’à ce que le curseur se transforme en croix. Ensuite, faites-le glisser jusqu’à sa position.
 
 ## Gestion des tableaux de bord {#managedash}
 
@@ -109,7 +109,7 @@ Lorsque vous partagez un tableau de bord, vous pouvez attribuer des autorisation
       * `Edit`
       * `None`
 
-   1. Lorsque vous êtes invité à confirmer l’opération, cliquez sur **[!UICONTROL OK]** pour mettre à jour le niveau d’autorisation de chaque utilisateur.
+   1. Lorsque vous êtes invité à confirmer, cliquez sur **[!UICONTROL OK]** pour mettre à jour le niveau d’autorisation de chaque utilisateur.
 
    1. Pour modifier le niveau d’autorisation d’une personne, recherchez l’utilisateur dans la liste et modifiez le niveau d’autorisation. La modification est enregistrée automatiquement.
 

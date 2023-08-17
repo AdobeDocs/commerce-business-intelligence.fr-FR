@@ -19,11 +19,11 @@ Il est facile de s’assurer que chaque utilisateur a accès aux tableaux de bor
 
 1. La liste des utilisateurs s’affiche. Le tout premier utilisateur de la liste sera votre organisation. Cochez la case en regard de son nom.
 
-1. Définissez le niveau de `Permissions` vous souhaitez que d’autres utilisateurs disposent de - `View`, `Edit`ou `None`.
+1. Définissez le niveau de `Permissions` vous souhaitez que d’autres utilisateurs disposent de - `View`, `Edit`, ou `None`.
 
 1. Cliquez sur **[!UICONTROL Save Changes]**.
 
-   If `Permissions` étaient définies sur `View` ou `Edit` et que les utilisateurs recherchent votre tableau de bord, celui-ci s’affiche dans les résultats de la recherche.
+   If `Permissions` étaient définies sur . `View` ou `Edit` et que les utilisateurs recherchent votre tableau de bord, celui-ci s’affiche dans les résultats de la recherche.
 
 Exemple :
 

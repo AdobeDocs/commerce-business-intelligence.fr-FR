@@ -40,7 +40,7 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) a `.csv` version du c
 ## Colonnes à créer
 
 * **sales\_order** table
-   * `INPUT` `created\_at` (aaaa-mm-jj 00:00:00)
+   * `INPUT` `created\_at` (aaaa-mm-jj 00:00:00
       * [!UICONTROL Column type]: – `Same table > Calculation`
       * [!UICONTROL Inputs]: – `created\_at`
       * [!UICONTROL Datatype]: – `Datetime`
@@ -56,7 +56,7 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) a `.csv` version du c
 
         >[!NOTE]
         >
-        >Le `now()` La fonction ci-dessus est spécifique à PostgreSQL. Bien que [!DNL Commerce Intelligence] Les entrepôts de données sont hébergés sur PostgreSQL, certains peuvent l’être sur Redshift. Si le calcul ci-dessus renvoie une erreur, vous devrez peut-être utiliser la fonction Redshift `getdate()` au lieu de `now()`.
+        >La variable `now()` La fonction ci-dessus est spécifique à PostgreSQL. Bien que [!DNL Commerce Intelligence] Les entrepôts de données sont hébergés sur PostgreSQL, certains peuvent l’être sur Redshift. Si le calcul ci-dessus renvoie une erreur, vous devrez peut-être utiliser la fonction Redshift `getdate()` au lieu de `now()`.
 
    * **Current retail year** (Doit être créé par l’analyste de support)
       * [!UICONTROL Column type]: E`vent Counter`
@@ -94,7 +94,7 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) a `.csv` version du c
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
       * Path -
          * [!UICONTROL Many]: sales\_order.\[INPUT\] created\_at (aaaa-mm-jj 00:00:00
-         * [!UICONTROL One]: Calendrier de vente au détail.Date Retail
+         * [!UICONTROL One]: calendrier de vente au détail.Date Retail
       * Sélectionnez une [!UICONTROL table]: `Retail Calendar`
       * Sélectionnez une [!UICONTROL column]: `Week Retail`
    * **Created\_at (mois de vente au détail)**
@@ -108,14 +108,14 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) a `.csv` version du c
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
       * Path -
          * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]: Vente au détail `Calendar.Date Retail`
+         * [!UICONTROL One]: vente au détail `Calendar.Date Retail`
       * Sélectionnez une [!UICONTROL table]: `Retail Calendar`
       * Sélectionnez une [!UICONTROL column]: `Include in previous retail year? (Yes/No)`
    * **Inclure dans l’année de vente actuelle ? (Oui/Non)**
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
       * Path -
          * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]: Vente au détail `Calendar.Date Retail`
+         * [!UICONTROL One]: vente au détail `Calendar.Date Retail`
       * Sélectionnez une [!UICONTROL table]: `Retail Calendar`
       * Sélectionnez une [!UICONTROL column]: `Include in current retail year? (Yes/No)`
 
@@ -127,11 +127,11 @@ Remarque : Aucune nouvelle mesure n’est nécessaire pour cette analyse. Veille
 
 * **Commandes hebdomadaires - calendrier de vente au détail (YoY)**
    * Mesure `A`: `2017`
-      * [!UICONTROL Metric]: Nombre de commandes
+      * [!UICONTROL Metric]: nombre de commandes
       * [!UICONTROL Filter]:
          * Created\_at (année de vente) = 2017
    * Mesure `B`: `2016`
-      * [!UICONTROL Metric]: Nombre de commandes
+      * [!UICONTROL Metric]: nombre de commandes
       * [!UICONTROL Filter]:
          * Created\_at (année de vente) = 2016
    * Mesure `C`: `2015`
@@ -180,7 +180,7 @@ Remarque : Aucune nouvelle mesure n’est nécessaire pour cette analyse. Veille
          * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Mesure `B`: `Orders`
-      * [!UICONTROL Metric]: Nombre de commandes
+      * [!UICONTROL Metric]: nombre de commandes
       * [!UICONTROL Filter]:
          * 
            [!UICONTROL Include current retail year?]: `Yes`
@@ -199,8 +199,8 @@ Remarque : Aucune nouvelle mesure n’est nécessaire pour cette analyse. Veille
 
 ## Étapes suivantes
 
-La section ci-dessus décrit comment configurer un calendrier de vente au détail pour qu’il soit compatible avec toute mesure créée sur votre `sales\_order` (par exemple, `Revenue` ou `Orders`). Vous pouvez également l’étendre afin de prendre en charge le calendrier de vente au détail pour les mesures créées sur n’importe quel tableau. La seule condition requise est que ce tableau comporte un champ date-time valide qui peut être utilisé pour la jointure à la table Calendrier de vente au détail.
+La section ci-dessus décrit comment configurer un calendrier de vente au détail pour qu’il soit compatible avec toute mesure créée sur votre `sales\_order` (par exemple `Revenue` ou `Orders`). Vous pouvez également l’étendre afin de prendre en charge le calendrier de vente au détail pour les mesures créées sur n’importe quel tableau. La seule condition requise est que ce tableau comporte un champ date-time valide qui peut être utilisé pour la jointure à la table Calendrier de vente au détail.
 
-Par exemple, pour afficher les mesures au niveau du client sur un calendrier de vente au détail 4-5-4, créez une `Same Table` dans le `customer\_entity` tableau, similaire à `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` décrits ci-dessus. Vous pouvez ensuite utiliser cette colonne pour reproduire la variable `One to Many` calculs JOINED\_COLUMN (comme `Created_at (retail year)`) et `Include in previous retail year? (Yes/No)` en rejoignant la `customer\_entity` au `Retail Calendar` table.
+Par exemple, pour afficher les mesures au niveau du client sur un calendrier de vente au détail 4-5-4, créez une `Same Table` dans le `customer\_entity` tableau, similaire à `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` décrits ci-dessus. Vous pouvez ensuite utiliser cette colonne pour reproduire la variable `One to Many` calculs JOINED\_COLUMN (comme `Created_at (retail year)`) et `Include in previous retail year? (Yes/No)` en joignant la `customer\_entity` au `Retail Calendar` table.
 
-N&#39;oubliez pas de [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+N&#39;oubliez pas de [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.

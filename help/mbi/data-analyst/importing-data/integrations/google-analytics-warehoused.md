@@ -1,5 +1,5 @@
 ---
-title: Connexion à Google Analytics Warehouse
+title: Connexion à l’entrepôt de Google Analytics
 description: Découvrez comment les visiteurs utilisent votre site, quel contenu est attrayant, où les visiteurs quittent, etc.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Data Architect, Data Engineer, User
@@ -29,7 +29,7 @@ Regarder [!DNL Google Analytics] campagnes publicitaires pour un exemple de ce q
 
 L’aspect de combinaison permet [!DNL Google Analytics] données à associer à d&#39;autres données afin de mener des analyses. Par exemple, prenez `Total Time On Site By Ad Campaign` des données provenant de [!DNL Google Analytics] et rejoignez-le contre `Total Spent Per Campaign` des données provenant de [!DNL Facebook Ads] pour obtenir une vue d’ensemble de l’engagement qui vous coûte.
 
-Avec le [!DNL Google Analytics Live] d’autre part, chaque [!DNL Google Analytics] Le graphique est comme un petit silo qui n’est pas stocké dans votre Data Warehouse.
+Avec la variable [!DNL Google Analytics Live] d’autre part, toutes les [!DNL Google Analytics] Le graphique est comme un petit silo qui n’est pas stocké dans votre Data Warehouse.
 
 ## Connexion [!DNL Google Analytics Warehoused]
 
@@ -39,7 +39,7 @@ Avec le [!DNL Google Analytics Live] d’autre part, chaque [!DNL Google Analyti
 
 1. Accédez au `Connections` page sous **[!UICONTROL Admin** > **Integrations]**.
 1. Cliquez sur **[!UICONTROL Add an Integration]**, situé sur le côté droit.
-1. Cliquez sur le bouton [!DNL Google Analytics Warehoused] icône . Cela ouvre la fenêtre [!DNL Google Analytics] informations d’identification.
+1. Cliquez sur le bouton [!DNL Google Analytics Warehoused] Icône Cela ouvre la fenêtre [!DNL Google Analytics] informations d’identification.
 1. Saisissez votre [!DNL Google Analytics] informations d’identification. Une fois le processus d’autorisation terminé, vous êtes redirigé vers [!DNL Commerce Intelligence].
 1. Une liste des identifiants de profil s’affiche. Vérifiez les profils auxquels vous souhaitez vous connecter. [!DNL Commerce Intelligence]. Si vous disposez de plusieurs profils et que vous avez besoin d’aide pour identifier lequel, reportez-vous à la section Connexion à plusieurs [!DNL Google Analytics] profils ci-dessous.
 
@@ -51,7 +51,7 @@ Pour identifier les [!DNL Google Analytics] Identifiant du profil :
 
 1. Se connecter [!DNL Google Analytics]
 1. Accédez au [!DNL Google Analytics] tableau de bord
-1. Examinez l’URL : l’identifiant du profil correspond aux huit chiffres suivants : `p` à la fin de la ligne
+1. Examinez l’URL : l’identifiant du profil correspond aux huit chiffres suivants : `p` en fin de ligne
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 

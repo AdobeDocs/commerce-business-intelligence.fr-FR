@@ -25,7 +25,7 @@ Une fois que vous avez connecté votre [[!DNL Google Analytics] account](../../d
 
 1. Après avoir choisi la mesure, vous pouvez poursuivre l’utilisation de ce graphique comme s’il s’agissait d’un autre graphique en sélectionnant l’option `time period`, `interval`, et données `perspectives` que vous aimeriez voir.
 
-1. La seule différence majeure ici est que `√` utilise des expressions régulières pour les filtres. Une expression régulière (expression régulière pour abréviation) est une chaîne de texte spéciale pour décrire un modèle de recherche. Voir des exemples de syntaxe d’expression régulière dans la section [[!DNL Google] Guide sur les expressions régulières Analytics](https://support.google.com/analytics/answer/1034324?hl=en).
+1. La seule différence majeure ici est que `√` utilise des expressions régulières pour les filtres. Une expression régulière (expression régulière pour abréviation) est une chaîne de texte spéciale pour décrire un modèle de recherche. Voir des exemples de syntaxe regex dans la section [[!DNL Google] Guide sur les expressions régulières Analytics](https://support.google.com/analytics/answer/1034324?hl=en).
 
 >[!NOTE]
 >

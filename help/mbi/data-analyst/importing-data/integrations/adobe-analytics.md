@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/adobe-analytic-slogo.png)
 
-Le [!DNL Adobe Analytics] intégration pour [!DNL Adobe Commerce Intelligence] vous permet de rassembler le point de mire du parcours client de bout en bout de la [!DNL Adobe Analytics] et l’accent eCommerce sur lequel vous vous fiez [!DNL Commerce Intelligence]. Vous obtenez ainsi une vue d’ensemble des performances de votre magasin.
+La variable [!DNL Adobe Analytics] intégration pour [!DNL Adobe Commerce Intelligence] vous permet de rassembler le point de mire du parcours client de bout en bout de la [!DNL Adobe Analytics] et l’accent eCommerce sur lequel vous vous fiez [!DNL Commerce Intelligence]. Vous obtenez ainsi une vue d’ensemble complète des performances générales de votre magasin.
 
 Plus précisément, la [!DNL Adobe Analytics] intégration pour [!DNL Commerce Intelligence] offre aux commerçants la possibilité de commencer à combiner leurs [!DNL Adobe Commerce] et [!DNL Adobe Analytics] ensembles de données.
 
@@ -51,7 +51,7 @@ Les informations suivantes sont nécessaires pour se connecter :
 
 1. Saisissez votre [!DNL Adobe Analytics] informations d’identification. Après une autorisation réussie, vous êtes redirigé vers [!DNL Commerce Intelligence].
 
-1. Une liste des suites de rapports disponibles s’affiche. Sélectionnez la suite de rapports à partir de laquelle vous souhaitez importer les données, puis cliquez sur **[!UICONTROL Continue]**.
+1. Une liste des suites de rapports disponibles s’affiche. Sélectionnez la suite de rapports à partir de laquelle importer les données, puis cliquez sur **[!UICONTROL Continue]**.
 
 1. L’écran de sélection des mesures et des dimensions s’affiche. Sélectionnez au moins une mesure et au moins une dimension, pour un total combiné de 25 mesures et dimensions. Recherchez par nom ou faites défiler l’écran pour trouver vos composants, puis cochez les cases à cocher à sélectionner. Cliquez sur **[!UICONTROL Continue]**.
 

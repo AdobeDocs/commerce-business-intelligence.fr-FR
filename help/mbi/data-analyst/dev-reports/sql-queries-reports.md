@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Traduire les requêtes SQL dans Commerce Intelligence
 
-Vous êtes déjà demandé comment les requêtes SQL sont traduites dans [colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md), [mesures](../../data-user/reports/ess-manage-data-metrics.md), et [rapports](../../tutorials/using-visual-report-builder.md) vous utilisez dans [!DNL Commerce Intelligence]? Si vous êtes un utilisateur SQL lourd, comprenez comment SQL est traduit dans [!DNL Commerce Intelligence] vous permet de travailler plus intelligemment dans le [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md) et tirez le meilleur parti de [!DNL Commerce Intelligence] plateforme.
+Vous êtes déjà demandé comment les requêtes SQL sont traduites dans [colonnes calculées](../data-warehouse-mgr/creating-calculated-columns.md), [mesures](../../data-user/reports/ess-manage-data-metrics.md), et [rapports](../../tutorials/using-visual-report-builder.md) vous utilisez dans [!DNL Commerce Intelligence]? Si vous êtes un utilisateur SQL lourd, comprenez comment SQL est traduit dans [!DNL Commerce Intelligence] vous permet de travailler plus intelligemment dans la variable [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md) et tirez le meilleur parti de [!DNL Commerce Intelligence] plateforme.
 
 À la fin de cette rubrique, vous trouverez un **matrice de traduction** pour les clauses de requête SQL et [!DNL Commerce Intelligence] éléments .
 
@@ -42,7 +42,7 @@ Consultez un exemple pour chacun des cas ci-dessus.
 
 Une mesure est requise lors de l’agrégation `within a single table`. Par exemple, la variable `SUM(b)` la fonction d’agrégat de la requête ci-dessus serait probablement représentée par une mesure qui additionne les colonnes `B`. 
 
-Examinez un exemple spécifique de la manière dont une `Total Revenue` peut être définie dans [!DNL Commerce Intelligence]. Examinez la requête ci-dessous que vous essayez de traduire :
+Examinez un exemple spécifique de la manière dont une `Total Revenue` peut être définie dans [!DNL Commerce Intelligence]. Examinez la requête ci-dessous que vous tentez de traduire :
 
 | | |
 |--- |--- |
@@ -51,7 +51,7 @@ Examinez un exemple spécifique de la manière dont une `Total Revenue` peut êt
 | `FROM orders` | `Metric source` table |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | Mesure `filter` |
-| `AND created_at < X`<br><br>`AND created_at >= Y` | Mesure `timestamp` (et création de rapports) `time range`) |
+| `AND created_at < X`<br><br>`AND created_at >= Y` | Mesure `timestamp` (et création de rapports `time range`) |
 
 Accédez au créateur de mesures en cliquant sur **[!UICONTROL Manage Data** > ** Mesures **> **Créer une mesure]**, vous devez d’abord sélectionner la `source` qui, dans ce cas, correspond à la variable `orders` table. La mesure est ensuite configurée comme illustré ci-dessous :
 
@@ -75,7 +75,7 @@ La requête de cette agrégation peut ressembler à ce qui suit :
 
 Configuration de [!DNL Commerce Intelligence] nécessite l’utilisation de votre gestionnaire de Data Warehouse, où vous créez un chemin entre vos `orders` et `customers` puis créer une colonne appelée `Customer LTV` dans la table de votre client.
 
-Découvrez comment établir un nouveau chemin entre les `customers` et `orders`. L’objectif final est de créer une colonne agrégée dans la variable `customers` , accédez donc d’abord à la `customers` dans votre Data Warehouse, puis cliquez sur **[!UICONTROL Create a Column** > ** Sélectionner une définition **> **SUM]**.
+Découvrez comment établir un nouveau chemin entre les `customers` et `orders`. L’objectif final est de créer une colonne agrégée dans la variable `customers` , accédez donc d’abord à la `customers` dans votre Data Warehouse, puis cliquez sur **[!UICONTROL Create a Column** > ** Sélection d’une définition **> **SUM]**.
 
 Vous devez ensuite sélectionner la table source. S’il existe un chemin d’accès à votre `orders` , sélectionnez-la simplement dans la liste déroulante. Cependant, si vous créez un chemin, cliquez sur **[!UICONTROL Create new path]** et l’écran ci-dessous s’affiche :
 
@@ -112,7 +112,7 @@ Commencez par la requête ci-dessous :
 | `FROM orders` | `Metric source` table |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | Mesure `filter` |
-| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | Mesure `timestamp` (et création de rapports) `time range`) |
+| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | Mesure `timestamp` (et création de rapports `time range`) |
 | `GROUP BY coupon_code` | Rapport `group by` |
 
 >[!NOTE]
@@ -143,7 +143,7 @@ Revenez en arrière et examinez la requête globale pour `Average order value`:
 | `FROM orders` | Mesure `source` table |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | Mesure `filter` |
-| `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | Horodatage des mesures (et période de création de rapports) |
+| `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | Horodatage des mesures (et période des rapports) |
 
 Maintenant, supposons que des mesures sont déjà configurées pour calculer la variable `Total Revenue` et `Number of orders`. Comme ces mesures existent, vous pouvez simplement ouvrir la variable `Report Builder` et créer un calcul à la demande à l’aide du `Formula` fonctionnalité :
 

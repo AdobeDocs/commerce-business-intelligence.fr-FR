@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Pour éviter des résultats inattendus ou absurdes, vérifiez que toutes les dimensions utilisées sont [compatible avec une ou plusieurs mesures](https://ga-dev-tools.google/dimensions-metrics-explorer/) vous utilisez dans la variable `Report Builder`.
+>Pour éviter des résultats inattendus ou absurdes, vérifiez que toutes les dimensions que vous utilisez sont [compatible avec une ou plusieurs mesures](https://ga-dev-tools.google/dimensions-metrics-explorer/) vous utilisez dans la variable `Report Builder`.
 
 Une seule table, appelée `report` - est créé dans votre Data Warehouse.
 
@@ -42,11 +42,11 @@ Le tableau ressemble à l’exemple ci-dessous.
 |-----|-----|
 | `\_id` | Cette colonne correspond au `primary key`. |
 | `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] identifiant unique. Cette colonne est créée par [!DNL Commerce Intelligence]. |
-| `\_updated\_at` | Cette colonne contient la dernière fois que la ligne de données a été mise à jour. Cette colonne est créée par [!DNL Commerce Intelligence]. |
+| `\_updated\_at` | Cette colonne contient la dernière mise à jour de la ligne de données. Cette colonne est créée par [!DNL Commerce Intelligence]. |
 | `start-date` | Identification du jour de la ligne. |
 | `end-date` | Identification du jour de la ligne. |
-| `month` | Dimension sélectionnée : Mois de la session, entier à deux chiffres compris entre 01 et 12. |
-| `users` | Mesure sélectionnée : Nombre total d’utilisateurs pour la période demandée. |
+| `month` | Dimension sélectionnée : mois de la session, entier à deux chiffres compris entre 01 et 12. |
+| `users` | Mesure sélectionnée : nombre total d’utilisateurs pour la période demandée. |
 
 {style="table-layout:auto"}
 
@@ -58,7 +58,7 @@ Regarder [!DNL Google Analytics] campagnes publicitaires pour un exemple de ce q
 
 L’aspect de combinaison permet [!DNL Google Analytics] données à associer à d&#39;autres données afin de mener des analyses. Par exemple, prenez `Total Time On Site By Ad Campaign` des données provenant de [!DNL Google Analytics] et rejoignez-le contre `Total Spent Per Campaign` des données provenant de [!DNL Facebook Ads] pour obtenir une vue d’ensemble de l’engagement qui vous coûte.
 
-Avec le [!DNL Google Analytics Live] d’autre part, chaque [!DNL Google Analytics] Le graphique est comme un petit silo qui n’est pas stocké dans votre [!DNL Commerce Intelligence] Data Warehouse.
+Avec la variable [!DNL Google Analytics Live] d’autre part, toutes les [!DNL Google Analytics] Le graphique est comme un petit silo qui n’est pas stocké dans votre [!DNL Commerce Intelligence] Data Warehouse.
 
 ## En rapport :
 

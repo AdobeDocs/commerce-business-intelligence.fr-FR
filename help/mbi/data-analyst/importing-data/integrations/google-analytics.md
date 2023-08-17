@@ -27,7 +27,7 @@ Commencez en saisissant [!DNL Google Analytics] informations d’identification 
 
 1. Cliquez sur **[!UICONTROL Add Integration]**, situé sur le côté droit de l’écran.
 
-1. Cliquez sur le bouton [!DNL Google Analytics] icône . Cela ouvre la fenêtre [!DNL Google Analytics] informations d’identification.
+1. Cliquez sur le bouton [!DNL Google Analytics] Icône Cela ouvre la fenêtre [!DNL Google Analytics] informations d’identification.
 
 1. Saisissez votre [!DNL Google Analytics] informations d’identification. Une fois le processus d’autorisation terminé, vous êtes redirigé vers [!DNL Commerce Intelligence].
 

@@ -61,7 +61,7 @@ Selon votre modèle d’entreprise, vous pouvez choisir un seuil différent, com
 
 En fin de compte, l’objectif est de sélectionner le seuil où il est logique de passer de la rétention aux efforts de réactivation. Les efforts de rétention peuvent impliquer des emails pour réengager les clients existants avec des suggestions d’achats de relance à effectuer, tandis que les efforts de réactivation peuvent impliquer des emails pour les clients obsolètes avec des bons et des offres.
 
-## Quelles questions dois-je considérer ?
+## Quelles questions dois-je prendre en compte ?
 
 Pour vous aider à comprendre la probabilité de répétition d’ordre telle qu’elle s’applique à votre entreprise, Adobe vous suggère de prendre en compte ces questions lorsque vous explorez vos propres données :
 

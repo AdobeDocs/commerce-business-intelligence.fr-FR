@@ -32,7 +32,7 @@ Les mises à jour régulières **scheduled** processus pendant que les mises à 
 
 ## Pourquoi le cycle de mise à jour prend-il beaucoup de temps ? {#updatecycletime}
 
-De nombreux facteurs peuvent ajouter à un temps de mise à jour déjà long. Certain [méthodes de réplication](../data-warehouse-mgr/cfg-replication-methods.md), [fréquences de recontrôle supérieures](../data-warehouse-mgr/cfg-data-rechecks.md), et le nombre de tableaux de bord et de graphiques ne représente que quelques contributeurs. Adobe recommande [reconfiguration de certains de vos paramètres](../../best-practices/reduce-update-cycle-time.md) et [optimisation de la base de données pour les analyses](../../best-practices/opt-db-analysis.md) pour réduire les temps de mise à jour.
+De nombreux facteurs peuvent ajouter à un temps de mise à jour déjà long. Certain [méthodes de réplication](../data-warehouse-mgr/cfg-replication-methods.md), [fréquences de recontrôle supérieures](../data-warehouse-mgr/cfg-data-rechecks.md), et le nombre de tableaux de bord et de graphiques ne représente que quelques contributeurs. Adobe recommande [reconfiguration de certains de vos paramètres](../../best-practices/reduce-update-cycle-time.md) et [optimisation de votre base de données pour l’analyse](../../best-practices/opt-db-analysis.md) pour réduire les temps de mise à jour.
 
 ## Puis-je être informé de la fin d’un cycle de mise à jour ? {#notifyupdate}
 

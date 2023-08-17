@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Guillemet_élément Table
 
-Le `quote_item` tableau (`sales_flat_quote_item` sur M1) contient des enregistrements sur chaque article ajouté à un panier, que le panier ait été abandonné ou converti en achat. Chaque ligne représente un article de panier. En raison de la taille potentielle de ce tableau, Adobe vous recommande de supprimer régulièrement les enregistrements si certains critères sont remplis, par exemple s’il existe des paniers non convertis de plus de 60 jours.
+La variable `quote_item` tableau (`sales_flat_quote_item` sur M1) contient des enregistrements sur chaque article ajouté à un panier, que le panier ait été abandonné ou converti en achat. Chaque ligne représente un article de panier. En raison de la taille potentielle de ce tableau, Adobe vous recommande de supprimer régulièrement les enregistrements si certains critères sont remplis, par exemple s’il existe des paniers non convertis de plus de 60 jours.
 
 >[!NOTE]
 >
@@ -23,13 +23,13 @@ Le `quote_item` tableau (`sales_flat_quote_item` sur M1) contient des enregistr
 
 | **Nom de la colonne** | **Description** |
 |---|---|
-| `base_price` | Prix d’une unité individuelle d’un produit au moment de l’ajout de l’article dans un panier, après [catalogue des règles de prix, remises échelonnées et prix spécial](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) sont appliquées et avant toute application des taxes, des frais d’expédition ou des remises sur le panier. Il est représenté dans la devise de base du magasin. |
+| `base_price` | Prix d’une unité de produit au moment de l’ajout de l’article dans un panier, après [catalogue des règles de prix, remises échelonnées et prix spécial](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) sont appliquées et avant toute application des taxes, des frais d’expédition ou des remises sur le panier. Il est représenté dans la devise de base du magasin. |
 | `created_at` | Horodatage de création de l’article de panier, stocké localement en UTC. Selon votre configuration dans [!DNL Commerce Intelligence], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL Commerce Intelligence] qui diffère du fuseau horaire de votre base de données |
 | `item_id` (PK) | Identifiant unique du tableau |
 | `name` | Nom de texte de l’élément de commande. |
-| `parent_item_id` | `Foreign key` qui associe un produit simple à son lot parent ou à un produit configurable. Rejoindre à `quote_item.item_id` pour déterminer les attributs de produit parents associés à un produit simple. Pour les éléments de panier parents (c’est-à-dire les types de produits regroupés ou configurables), la variable `parent_item_id` is `NULL` |
+| `parent_item_id` | `Foreign key` qui associe un produit simple à son lot parent ou à un produit configurable. Rejoindre à `quote_item.item_id` pour déterminer les attributs de produit parents associés à un produit simple. Pour les éléments de panier parent (c’est-à-dire les types de produits regroupés ou configurables), la variable `parent_item_id` is `NULL` |
 | `product_id` | `Foreign key` associé à la propriété `catalog_product_entity` table. Rejoindre à `catalog_product_entity.entity_id` pour déterminer les attributs de produit associés à l’article de commande |
-| `product_type` | Type de produit ajouté au panier. Potentiel [types de produits](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) inclure : simple, configurable, groupé, virtuel, groupé et téléchargeable |
+| `product_type` | Type de produit ajouté au panier. Potentiel [types de produits](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) inclure : simple, configurable, groupé, virtuel, groupé et téléchargeable ; |
 | `qty` | Nombre d’unités incluses dans le panier pour l’article particulier du panier |
 | `quote_id` | `Foreign key` associé à la propriété `quote` table. Rejoindre à `quote.entity_id` pour déterminer les attributs de panier associés à l’élément de panier |
 | `sku` | Identifiant unique de l’élément de panier |

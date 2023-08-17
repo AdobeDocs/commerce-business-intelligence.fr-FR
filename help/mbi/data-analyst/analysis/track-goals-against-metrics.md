@@ -17,7 +17,7 @@ La plupart des clients souhaitent effectuer le suivi de leurs **objectifs commer
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Avant de commencer, vous devez consulter la section [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et assurez-vous d’avoir défini vos objectifs commerciaux pour une période donnée.
+Avant de commencer, consultez la section [téléchargement de fichier](../importing-data/connecting-data/using-file-uploader.md) et assurez-vous d’avoir défini vos objectifs commerciaux pour une période donnée.
 
 ## Prise en main
 
@@ -67,7 +67,7 @@ Il est utile de disposer d’un mélange de valeurs statiques et de graphiques v
 * 
   [!UICONTROL Format]: `Number`
 
-* [!UICONTROL Time period]: (Quelle que soit la période appropriée que vous souhaitez)
+* [!UICONTROL Time period]: (quelle que soit la période appropriée que vous souhaitez)
 * 
   [!UICONTROL Interval]: `Month`
 * 
@@ -86,14 +86,14 @@ Il est utile de disposer d’un mélange de valeurs statiques et de graphiques v
   [!UICONTROL Mesure]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
-* [!UICONTROL Formula]: (Ce mois l’an dernier)
+* [!UICONTROL Formula]: (ce mois l’an dernier)
 * 
   [!UICONTROL Formule]: `(A-C)`
 * 
   [!UICONTROL Format]: `Currency`
 
 * Désactiver `Multiple Y-Axes`
-* [!UICONTROL Time period]: (Quelle que soit la période appropriée que vous souhaitez)*
+* [!UICONTROL Time period]: (quelle que soit la période appropriée que vous souhaitez)*
 * 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`

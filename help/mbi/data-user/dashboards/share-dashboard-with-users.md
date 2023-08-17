@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Partage des tableaux de bord avec d’autres utilisateurs
 
-Le partage de tableaux de bord est un excellent moyen de maintenir votre équipe au courant et d’encourager la discussion collaborative. En créant et en partageant un tableau de bord central, vous pouvez fournir à votre équipe les informations dont elle a besoin tout en conservant le contrôle. [[!DNL Adobe] recommande](../../best-practices/share-dashboard-best-practice.md){ : target=&quot;_blank&quot;} que vous accordez `Edit` droits d’accès à quelques-uns pour minimiser les modifications accidentelles.
+Le partage de tableaux de bord est un excellent moyen de maintenir votre équipe au courant et d’encourager la discussion collaborative. En créant et en partageant un tableau de bord central, vous pouvez fournir à votre équipe les informations dont elle a besoin tout en conservant le contrôle. [[!DNL Adobe] recommande](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que vous accordez `Edit` droits d’accès à quelques-uns pour minimiser les modifications accidentelles.
 
 >[!NOTE]
 >
->Si le tableau de bord que vous partagez contient des rapports créés avec des mesures auxquelles un utilisateur spécifique n’a pas accès, les rapports affichent une `Error Loading Data` message. Si vous souhaitez que les données s’affichent pour l’utilisateur spécifique, une [utilisateur administrateur](../../administrator/user-management/user-management.md) doit accorder l’accès à toutes les mesures utilisées dans ces rapports.
+>Si le tableau de bord que vous partagez contient des rapports créés avec des mesures auxquelles un utilisateur spécifique n’a pas accès, les rapports affichent une `Error Loading Data` message. Si vous souhaitez que les données s’affichent pour l’utilisateur spécifique, une [utilisateur admin](../../administrator/user-management/user-management.md) doit accorder l’accès à toutes les mesures utilisées dans ces rapports.
 
 ## Partage d’un tableau de bord
 

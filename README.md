@@ -2,7 +2,7 @@
 source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 # Article sur les contributions
@@ -11,7 +11,7 @@ Nous acceptons les contributions de notre communauté ainsi que des employés d�
 
 ## Adobe de code de conduite Open Source
 
-Ce projet a adopté la méthode [Adobe de code de conduite Open Source](../code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, voir [Contribution](../contributing.md) rubrique.
+Ce projet respecte le [Code de conduite d’Adobe Open Source](../code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, voir [Contribution](../contributing.md) rubrique.
 
 ## À propos de vos contributions pour Adobe du contenu
 
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Modifications majeures par les employés d’Adobe
 
-Si vous êtes rédacteur technique, chef de programme ou développeur de l’équipe produit d’une solution Adobe Experience Cloud et qu’il vous incombe de contribuer ou de rédiger des articles techniques, vous devez utiliser le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`.
+Si vous êtes rédacteur technique, chef de programme ou développeur de l’équipe produit d’une solution Adobe Experience Cloud et qu’il vous incombe de contribuer ou de rédiger des articles techniques, utilisez le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -56,5 +56,5 @@ Tous les articles de ce référentiel utilisent GitHub Flavored Markdown. Si vou
 
 Dans le référentiel public, des étiquettes automatisées sont attribuées aux demandes d’extraction afin de nous aider à gérer le workflow de demande d’extraction et de vous aider à savoir ce qui se passe avec votre demande d’extraction :
 
-* **Modification envoyée à l’auteur**: L’auteur a été informé de la demande d’extraction en attente.
-* **ready-to-merge**: Prêt à être examiné par notre équipe d’examen des demandes d’extraction.
+* **Modification envoyée à l’auteur**: l’auteur a été informé de la demande d’extraction en attente.
+* **ready-to-merge**: prêt à être analysé par notre équipe d’examen des demandes d’extraction.

@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Stockage des données dans [!DNL Adobe Commerce]
 
-Le [!DNL Adobe Commerce] platform enregistre et organise une grande variété de données commerciales importantes sur des centaines de tables. Cette rubrique décrit :
+La variable [!DNL Adobe Commerce] platform enregistre et organise une grande variété de données commerciales importantes sur des centaines de tables. Cette rubrique décrit :
 
 * comment ces données sont générées
 * ce qui entraîne l’insertion d’une nouvelle ligne dans l’une des [Tables de commerce principales](../data-warehouse-mgr/common-mage-tables.md)
@@ -35,12 +35,12 @@ Satisfait à tous les paramètres pour `Throwback Bellbottoms`, l’employé cli
 | 206 | 4 | 8 | Pants11 | 2016/09/22 09:18:17 |
 | 207 | 4 | 12 | Shirts6 | 2016/09/22 09:24:02 |
 
-* `entity_id` - Il s’agit de la clé Principale de la variable `catalog_product_entity` , ce qui signifie que chaque ligne du tableau doit avoir une `entity_id`. Chaque `entity_id` sur cette table ne peut être associé qu’à un seul produit et chaque produit ne peut être associé qu’à un seul. `entity_id`
+* `entity_id` - Il s’agit de la clé primaire de la variable `catalog_product_entity` , ce qui signifie que chaque ligne du tableau doit avoir une `entity_id`. Chaque `entity_id` sur cette table ne peut être associé qu’à un seul produit et chaque produit ne peut être associé qu’à un seul. `entity_id`
    * La ligne supérieure du tableau ci-dessus, `entity_id` = 205, est la nouvelle ligne créée pour &quot;Throwback Bellbouteilles.&quot; Partout `entity_id` = 205 apparaît dans la plateforme Commerce, il fait référence au produit &quot;Throwback Bellbas&quot;
 * `entity_type_id` - Commerce possède plusieurs catégories d’objets (comme des clients, des adresses et des produits pour n’en nommer que quelques-unes). Cette colonne est utilisée pour indiquer la catégorie dans laquelle se trouve cette ligne particulière.
    * Il s’agit du `catalog_product_entity` , chaque ligne possède le même type d’entité : produit. Dans Adobe Commerce, la variable `entity_type_id` pour le produit est 4, c’est pourquoi les trois nouveaux produits créés renvoient 4 pour cette colonne.
 * `attribute_set_id` - Les ensembles d’attributs sont utilisés pour identifier les produits qui ont le même type de descripteurs.
-   * Les deux premières lignes du tableau sont les suivantes : `Throwback Bellbottoms` et `Straight Leg Jeans` les produits, qui sont tous deux des pantalons. Ces produits auraient les mêmes descripteurs (par exemple, nom, insertion, ligne de style) et, par conséquent, auraient les mêmes `attribute_set_id`. Le troisième élément, `V-Neck T-Shirt` a une variable `attribute_set_id` parce qu&#39;il n&#39;aurait pas les mêmes descripteurs que le pantalon; les chemises n&#39;ont ni lingettes ni crayons.
+   * Les deux premières lignes du tableau sont les suivantes : `Throwback Bellbottoms` et `Straight Leg Jeans` les produits, qui sont tous deux des pantalons. Ces produits auraient les mêmes descripteurs (par exemple, nom, insertion, ligne de style) et, par conséquent, auraient les mêmes `attribute_set_id`. Le troisième élément, `V-Neck T-Shirt` a une variable `attribute_set_id` parce qu&#39;il n&#39;aurait pas les mêmes descripteurs que le pantalon ; les chemises n&#39;ont pas de linge ou d&#39;encre.
 * `sku` - Il s’agit de valeurs uniques attribuées à chaque produit par l’utilisateur lors de la création d’un produit dans Adobe Commerce.
 * `created_at` - Cette colonne renvoie l’horodatage de la création de chaque produit.
 
@@ -52,7 +52,7 @@ Peu après l&#39;ajout des trois nouveaux produits, un nouveau client, `Sammy Cu
 |---|---|---|---|
 | `214` | `1` | `sammy.customer@gmail.com` | `2016/09/23 15:27:12` |
 
-* `entity_id` - Tout comme la table précédente, `entity_id` est la clé Principale de la variable `customer_entity` table.
+* `entity_id` - Tout comme la table précédente, `entity_id` est la clé primaire de la variable `customer_entity` table.
    * When `Sammy Customer` a créé un compte et la ligne ci-dessus a été écrite dans la variable `customer_entity` table, le client a été affecté `entity_id` = 214. Dans tous les tableaux, le client s’est identifié comme `entity_id` = 214 fait toujours référence à l’utilisateur Sammy Customer
 * `entity_type_id` - Cette colonne identifie le type d’entité répertorié dans ce tableau et fonctionne de la même manière que dans la variable `catalog_product_entity` table
    * Chaque ligne du `customer_entity` est un client et Commerce définit les clients comme `entity_type_id` 1 par défaut
@@ -67,10 +67,10 @@ Une fois la création du compte terminée, `Sammy Customer` est prêt à commenc
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
-* `entity_id` - il s’agit de la clé Principale de la variable `sales_flat_order` table.
+* `entity_id` : il s’agit de la clé primaire de la variable `sales_flat_order` table.
    * Lorsque Sammy Customer a passé cette commande, la ligne ci-dessus a été écrite dans la variable `sales_flat_order` table, la commande a été affectée. `entity_id` = 227.
 * `customer_id` - Cette colonne est l’identifiant unique du client qui a passé cette commande particulière.
-   * Le `customer_id` associé à cette commande est 214, qui est la variable `entity_id` sur le `customer_entity` table.
+   * La variable `customer_id` associé à cette commande est 214, qui est la variable `entity_id` sur le `customer_entity` table.
 * `subtotal` - Cette colonne est le montant total imputé à un client pour la commande.
    * Les deux paires &quot;Throwback Bellbouteilles&quot; et &quot;V-Neck T-Shirt&quot; coûtent 94,85 dollars au total.
 * `created_at` - Cette colonne renvoie l’horodatage de la création de chaque commande.
@@ -86,7 +86,7 @@ En plus de la seule ligne de la `Sales\_flat\_order` table, lorsque `Sammy Custo
 | 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39.95 |
 | 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
-* `item_id` - Cette colonne est la clé Principale de la variable `sales_flat_order_item` table
+* `item_id` - Cette colonne est la clé primaire de la variable `sales_flat_order_item` table
    * `Sammy Customer`La commande de a créé deux lignes sur cette table, car elle contenait deux produits distincts.
 * `name` - Cette colonne correspond au nom du produit.
 * `product_id` - Cette colonne est l’identifiant unique du produit auquel cette ligne fait référence.
@@ -96,4 +96,4 @@ En plus de la seule ligne de la `Sales\_flat\_order` table, lorsque `Sammy Custo
 * `qty_ordered` - Cette colonne correspond au nombre d’unités du produit incluses dans cet ordre spécifique.
    * `Sammy Customer`L’ordre de contient deux paires `Throwback Bellbottoms`
 * `price` - Cette colonne est le prix d’une unité de l’article de commande
-   * Le `subtotal` de `Sammy Customer`dans l’ordre `sales_flat_order` était de 94,85, ce qui représente la somme de deux paires de `Throwback Bellbottoms` à 39,95 $ chacune et 1 `V-Neck T-Shirt` à 14,95 $.
+   * La variable `subtotal` de `Sammy Customer`dans l’ordre `sales_flat_order` était de 94,85, ce qui représente la somme de deux paires de `Throwback Bellbottoms` à 39,95 $ chacune et 1 `V-Neck T-Shirt` à 14,95 $.

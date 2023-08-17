@@ -65,7 +65,7 @@ Pour supprimer une ou plusieurs dimensions de plusieurs mesures :
 
 >[!NOTE]
 >
->Toute dimension dont vous souhaitez filtrer ou regrouper les éléments doit déjà faire l’objet d’un suivi dans [!DNL Commerce Intelligence]. Si vous ne trouvez pas la dimension souhaitée, vous devrez peut-être commencer le suivi d’une nouvelle colonne de données dans votre base de données via la variable [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
+>Toute dimension dont vous souhaitez filtrer ou regrouper les éléments doit déjà être suivie dans [!DNL Commerce Intelligence]. Si vous ne trouvez pas la dimension souhaitée, vous devrez peut-être commencer le suivi d’une nouvelle colonne de données dans votre base de données via la variable [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
 
 
 **Pour supprimer une ou plusieurs dimensions d’une mesure :**

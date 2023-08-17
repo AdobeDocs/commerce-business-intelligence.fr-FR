@@ -22,7 +22,7 @@ L’analyse de la manière dont les clients utilisent vos coupons peut fournir d
 
 Répondez à ces questions en vous concentrant sur [comparaison des clients ayant souscrit des coupons avec les clients n&#39;ayant pas obtenu de bons](#compare), [analyse des détails de première commande à partir des acquisitions de coupons](#firstorder), et [examiner les attributs des clients qui utilisent des bons dans leur première commande.](#attributes)
 
-Commencez !
+Prise en main!
 
 ## Comparaison des clients ayant obtenu un bon et des clients n’ayant pas obtenu un bon {#compare}
 
@@ -34,7 +34,7 @@ Cette mesure indique le nombre de clients ayant obtenu un bon et de clients n’
 
 ### Chiffre d’affaires moyen
 
-Cette mesure vous montre les recettes moyennes sur la durée de vie des clients ayant souscrit un coupon ou un autre coupon. Cela peut aider à déterminer si la valeur de durée de vie d’un client varie en fonction de son type d’acquisition.
+Cette mesure vous montre les recettes moyennes sur la durée de vie des clients ayant souscrit un coupon ou un autre coupon. Cela peut vous aider à déterminer si la valeur de durée de vie d’un client varie en fonction de son type d’acquisition.
 
 ### Nombre de commandes répétées
 
@@ -81,7 +81,7 @@ Cette section porte uniquement sur **les premières commandes issues des acquisi
 
 ### Nombre de commandes/clients
 
-Cette mesure indique le nombre de premières commandes pour chaque coupon ou le nombre de clients qui ont utilisé ce coupon dans leur première commande. Cela peut vous aider à déterminer si un certain coupon encourage plus d’achats pour la première fois que d’autres coupons.
+Cette mesure indique le nombre de premières commandes pour chaque coupon ou le nombre de clients qui ont utilisé ce coupon dans leur première commande. Cela peut vous aider à déterminer si un certain coupon encourage plus d’achats pour la première fois que les autres.
 
 ### Chiffre d’affaires brut
 
@@ -120,7 +120,7 @@ Examinez maintenant un exemple impliquant trois bons différents utilisés pour 
 Que peut-on en tirer ? Tout d’abord, le coupon &quot;20 % de réduction&quot; a eu le plus grand nombre de premières commandes. Cependant, le nombre de commandes associées à chaque coupon peut varier en fonction de plusieurs facteurs, notamment :
 
 * le montant de la publicité pour chaque coupon.
-* durée pendant laquelle les coupons ont été proposés.
+* la durée pendant laquelle les coupons ont été proposés.
 * l’heure du jour/de la semaine/du mois/de l’année où les bons ont été proposés.
 * la saison pendant laquelle les coupons ont été proposés, en fonction de l&#39;activité.
 
@@ -129,9 +129,9 @@ Que peut-on en tirer ? Tout d’abord, le coupon &quot;20 % de réduction&quot; 
 
   **Exemple :** le coupon &quot;10% de réduction&quot; n&#39;est proposé qu&#39;aux clients qui achètent un manteau d&#39;hiver dans la même commande.
 
-Le **revenu brut** pour le coupon &quot;25 % de 100 $ ou plus&quot; est beaucoup plus élevé que le revenu brut du coupon &quot;10 $ de réduction&quot;. Cependant, le coupon &quot;$10 off&quot; est beaucoup plus grand. **nombre de commandes**. Analyser la variable **valeur de commande moyenne** fournit des informations sur ces différences. Même si le coupon &quot;25 % de 100 $ ou plus&quot; avait moins de commandes, la valeur de commande moyenne est plus de trois fois supérieure à celle du coupon &quot;10 $ de réduction&quot;. Ainsi, un revenu brut plus élevé est attribué au coupon &quot;25 % de 100 $ ou plus&quot;.
+La variable **revenu brut** pour le coupon &quot;25 % de 100 $ ou plus&quot; est beaucoup plus élevé que le revenu brut du coupon &quot;10 $ de réduction&quot;. Cependant, le coupon &quot;$10 off&quot; est beaucoup plus grand. **nombre de commandes**. Analyser la variable **valeur de commande moyenne** fournit des informations sur ces différences. Même si le coupon &quot;25 % de 100 $ ou plus&quot; avait moins de commandes, la valeur de commande moyenne est plus de trois fois supérieure à celle du coupon &quot;10 $ de réduction&quot;. Ainsi, un revenu brut plus élevé est attribué au coupon &quot;25 % de 100 $ ou plus&quot;.
 
-Le **remises** et **revenu net** pour les coupons &quot;25 % de 100 $ ou plus&quot; et &quot;20 % de réduction&quot; sont proches de leur valeur. Même si la valeur de commande moyenne pour &quot;25 % de 100 $ ou plus&quot; est près de deux fois la valeur de commande moyenne pour &quot;20 % de réduction&quot;, ce dernier coupon a un peu moins de trois fois le nombre de commandes.
+La variable **remises** et **revenu net** pour les coupons &quot;25 % de 100 $ ou plus&quot; et &quot;20 % de réduction&quot; sont proches de leur valeur. Même si la valeur de commande moyenne pour &quot;25 % de 100 $ ou plus&quot; est près de deux fois la valeur de commande moyenne pour &quot;20 % de réduction&quot;, ce dernier coupon a un peu moins de trois fois le nombre de commandes.
 
 ## Attributs des clients qui utilisent des bons dans leur première commande {#attributes}
 

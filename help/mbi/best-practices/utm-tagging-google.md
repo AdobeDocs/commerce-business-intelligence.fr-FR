@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Suivi UTM
 
-`UTM` le suivi est une convention de balisage des URL qui vous permet d’analyser d’où viennent vos utilisateurs. Si vous observez les URL sur lesquelles vous cliquez dans la plupart des bannières ou courriers électroniques marketing, le balisage UTM s’affiche. Ce sont ces liens longs qui se terminent par des choses comme `utm\_source` et `utm\_medium`.
+`UTM` le suivi est une convention de balisage des URL qui vous permet d’analyser d’où viennent vos utilisateurs. Si vous observez les URL sur lesquelles vous cliquez dans la plupart des bannières publicitaires ou des emails marketing, le balisage UTM s’affiche. Ce sont ces liens longs qui se terminent par des choses comme `utm\_source` et `utm\_medium`.
 
 [!DNL Google Analytics] uses `UTM` balisage pour savoir d’où provient votre trafic. Certaines de ces informations proviennent du [Référent HTTP](https://en.wikipedia.org/wiki/HTTP_referer) mais le reste, vous devez vous fournir `UTM` paramètres. Lorsque vous voyez `google adwords` ou `email marketing`, cela signifie que `UTM` paramètres enregistrés à partir du clic sur le lien d’origine, puis stockés dans les cookies des utilisateurs. De là, [!DNL Google Analytics] utilise ces données pour [comportements intéressants des attributs](../data-analyst/analysis/google-track-user-acq.md) sur votre site. Comprendre ces paramètres vous aide à comprendre comment configurer et utiliser au mieux le balisage UTM.
 
@@ -35,9 +35,9 @@ Il est important de se rappeler que la balise `utm\_source=adwords` est une bali
 
 ### 4. Stockez les valeurs des paramètres UTM dans votre base de données.
 
-Chaque fois qu’une transaction ou un événement se produit, vous souhaitez évaluer les performances de vos activités marketing. Pour ce faire, vous pouvez lire les valeurs des paramètres UTM à partir de la variable [[!DNL Google Analytics] cookie dans votre base de données](../data-analyst/analysis/google-track-user-acq.md).
+Chaque fois qu’une transaction ou un événement se produit, vous souhaitez évaluer les performances de vos activités marketing. Pour ce faire, vous pouvez lire les valeurs des paramètres UTM à partir de la variable [[!DNL Google Analytics] dans votre base de données](../data-analyst/analysis/google-track-user-acq.md).
 
-### 5. Attribuez un nom aux campagnes.
+### 5. Comment nommer des campagnes
 
 Afin de suivre l’amélioration de vos efforts marketing au fil du temps, vous devez être intelligent sur vos conventions d’affectation des noms. Restez simple et minimisez autant que possible. Les systèmes de nommage compliqués sont plus difficiles à gérer.
 

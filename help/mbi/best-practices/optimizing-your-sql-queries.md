@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Optimisation des requêtes SQL
 
-Le [!DNL SQL Report Builder] vous permet d’interroger et d’effectuer une itération sur ces requêtes à un moment donné. Cela s’avère utile lorsque vous devez modifier une requête sans avoir à attendre la fin d’un cycle de mise à jour avant de réaliser une colonne ou un rapport que vous avez créé qui doit être mis à jour.
+La variable [!DNL SQL Report Builder] vous permet d’interroger et d’effectuer une itération sur ces requêtes à un moment donné. Cela s’avère utile lorsque vous devez modifier une requête sans avoir à attendre la fin d’un cycle de mise à jour avant de réaliser une colonne ou un rapport que vous avez créé qui doit être mis à jour.
 
 Avant l&#39;exécution d&#39;une requête, [[!DNL Commerce Intelligence] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Le coût prend en compte le temps et le nombre de ressources nécessaires à l’exécution d’une requête. Si ce coût est jugé trop élevé ou si le nombre de lignes renvoyé dépasse [!DNL Commerce Intelligence] , la requête échoue. Pour interroger votre [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), qui vous permet d’écrire les requêtes les plus simples possible, Adobe recommande ce qui suit.
 
@@ -91,7 +91,7 @@ Cela ne veut pas dire que `ORDER BY` ne peut pas être utilisé ; il doit simple
 
 ## Utilisation de GROUP BY et ORDER BY
 
-Il peut y avoir certaines situations où cette approche ne se conforme pas à ce que vous essayez de faire. En règle générale, si vous utilisez un `GROUP BY` et `ORDER BY`, vous devez placer les colonnes des deux clauses dans le même ordre. Par exemple :
+Il peut y avoir certaines situations où cette approche ne se conforme pas à ce que vous essayez de faire. En règle générale, si vous utilisez un `GROUP BY` et `ORDER BY`, vous devez placer les colonnes des deux clauses dans le même ordre. Par exemple :
 
 | **Au lieu de ça...** | **Essayez ceci !** |
 |-----|-----|

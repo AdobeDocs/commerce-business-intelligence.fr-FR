@@ -19,31 +19,31 @@ Cette rubrique décrit l’objectif et les utilisations de la fonction `Calculat
 
 Dans le passé, colonnes considérées `advanced` ne peut être effectué que par un analyste de l’équipe du succès client à l’adresse [!DNL Adobe Commerce Intelligence]. Désormais, toute la puissance est entre les mains de l’utilisateur final, et des colonnes avancées peuvent être créées sous la forme de `SQL Calculation` sur la nouvelle [!DNL Commerce Intelligence] l’architecture.
 
-Le `Calculation` Le type de colonne, désormais disponible en tant qu’option dans Data Warehouse Manager, est une même opération de table qui permet de transformer les colonnes d’un tableau à l’aide de la logique PostgreSQL. Documentation sur les fonctions et opérateurs pouvant être utilisés dans le `Calculation` Le type de colonne est disponible sur le site web PostgreSQL [here](https://www.postgresql.org/docs/9.6/functions.html).
+La variable `Calculation` Le type de colonne, désormais disponible en tant qu’option dans Data Warehouse Manager, est une même opération de table qui permet de transformer les colonnes d’un tableau à l’aide de la logique PostgreSQL. Documentation sur les fonctions et opérateurs pouvant être utilisés dans le `Calculation` Le type de colonne est disponible sur le site web PostgreSQL [here](https://www.postgresql.org/docs/9.6/functions.html).
 
 Les différentes colonnes qui peuvent être créées avec l’objet `Calculation` sont pratiquement illimitées, mais la plupart des colonnes peuvent être créées à l’aide d’instructions IF-THEN et d’une arithmétique de base, qui est utilisée dans les exemples ci-dessous.
 
-**Exemple 1 : La dernière commande du client ?**
+**Exemple 1 : la dernière commande du client est-elle ?**
 
 La plupart des comptes comportent une colonne appelée `Is customer's last order?` sur leur `orders` pour effectuer des analyses sur les taux d’achat répétés et les clients connectés. Si votre compte repose sur la nouvelle architecture, cette colonne est créée à l’aide d’une `Calculation` et sont visibles dans la capture d’écran ci-dessous :
 
 ![](../../assets/Is_customer_s_last_order.png)
 
-Le `Is customer's last order?` La colonne utilise les entrées `Customer's lifetime number of orders` et `Customer's order number` alias `A` et `B` respectivement.
+La variable `Is customer's last order?` La colonne utilise les entrées `Customer's lifetime number of orders` et `Customer's order number` alias `A` et `B` respectivement.
 
 Ligne par ligne, la signification du PostgreSQL est :
 
-* Cas : Cela commence une série d’instructions If - Then
-* when `A` est nul ou `B` est nul puis nul : Si l’une des entrées est vide, la sortie doit également être vide. Cela permet d’éviter les erreurs SQL.
-* when `A=B` then `Yes`: If `Customer's lifetime number of orders` est égal à `Customer's order number` pour cette ligne, puis renvoyer `Yes`. Ainsi, si un client a passé quatre commandes, la ligne correspondant à sa quatrième commande est renvoyée. `Yes` pour `Is customer's last order?`
-* else `No`: Si aucune des autres conditions lorsque des instructions sont satisfaites, renvoie `No`
-* end : Cela met fin aux instructions If - Then
+* case : cela commence une série d’instructions If - Then
+* when `A` est nul ou `B` est nul puis nul : si l’entrée est vide, la sortie doit également être vide. Cela permet d’éviter les erreurs SQL.
+* when `A=B` then `Yes`: Si `Customer's lifetime number of orders` est égal à `Customer's order number` pour cette ligne, puis renvoyer `Yes`. Ainsi, si un client a passé quatre commandes, la ligne correspondant à sa quatrième commande est renvoyée `Yes` pour `Is customer's last order?`
+* else `No`: si aucune des autres conditions n’est remplie, renvoie `No`
+* end : cela met fin aux instructions if - Then
 
 Les valeurs possibles qui peuvent être renvoyées par cette colonne (`NULL`, `Yes`, `No`) contiennent des caractères non numériques, donc le type de données ici est Chaîne.
 
-**Exemple 2 : Valeur totale de l’élément de commande (quantité * prix)**
+**Exemple 2 : valeur totale de l’élément de commande (quantité * prix)**
 
-De nombreux clients aiment analyser les recettes au niveau de l’élément, en les divisant par des champs comme `product name` ou `category`. La plupart des bases de données ne donnent pas réellement les recettes d’un produit dans une commande ; au lieu de cela, ils indiquent la quantité vendue dans la commande et le prix de l’article.
+De nombreux clients aiment analyser les recettes au niveau de l’élément, en les divisant par des champs comme `product name` ou `category`. La plupart des bases de données ne donnent pas réellement les recettes d’un produit dans une commande ; elles indiquent plutôt la quantité vendue dans la commande et le prix de l’article.
 
 Pour activer l’analyse des recettes de produits, la plupart des comptes comportent une colonne intitulée `Order item total value (quantity * price)` sur leur `Orders Items` table. Si votre compte repose sur la nouvelle architecture, cette colonne est également créée à l’aide d’une `Calculation` et sont visibles dans la capture d’écran ci-dessous :
 
@@ -70,7 +70,7 @@ Vous pouvez créer un `Calculation` en suivant les étapes ci-dessous :
 1. Dans la fenêtre, saisissez la logique PostgreSQL pour votre nouvelle colonne à l’aide des alias de lettre de vos entrées. Le calcul SQL doit être limité à une seule définition de colonne, incluant toute la logique entre les instructions SELECT et FROM d’une requête SQL. Les mots-clés SQL utilisant l’une des lettres d’entrée doivent être en minuscules. Par exemple, lors de l’utilisation de la variable `CASE` , il doit être écrit en minuscules - `case`. Le système suppose qu’il s’agit d’une majuscule `A` fait référence à l’une des entrées.
 1. Choisissez le type de données approprié.
    * `Integer` - Nombre entier
-   * `Decimal(10,2)` : nombre décimal contenant 10 chiffres totaux, dont 2 situés à droite du point décimal
+   * `Decimal(10,2)` : nombre décimal contenant 10 chiffres au total, dont 2 situés à droite du point décimal
    * `String` - Tout type de texte ou série de caractères qui n’utilisent pas de nombres
    * `Datetime` - aaaa-MM-jj hh:mm:format ss
 

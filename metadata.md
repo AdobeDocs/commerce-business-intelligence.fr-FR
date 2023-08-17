@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Métadonnées à usage interne
 
-Le `metadata.md` comprend des métadonnées au niveau du référentiel qui sont transmises au guide de l’utilisateur. `TOC.md` dans le référentiel. Si vous souhaitez modifier le contenu metadata.md pour n’importe quel guide de l’utilisateur, faites-le dans n’importe quel `TOC.md` fichier .
+La variable `metadata.md` comprend des métadonnées au niveau du référentiel qui sont transmises au guide de l’utilisateur. `TOC.md` dans le référentiel. Si vous souhaitez modifier le contenu metadata.md pour n’importe quel guide de l’utilisateur, faites-le dans n’importe quel `TOC.md` fichier .
 
 | metadata | ce qu’il fait |
 |--- |--- |

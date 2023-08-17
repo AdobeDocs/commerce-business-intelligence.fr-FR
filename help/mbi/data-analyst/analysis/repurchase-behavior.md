@@ -40,15 +40,15 @@ Cette mesure vous permet de déterminer si les clients qui achètent des article
 
 ### Temps jusqu’à la commande suivante
 
-Cette mesure indique la fréquence de commande du client ou le temps nécessaire pour que le client effectue une nouvelle commande. Si le délai de la prochaine commande est plus court pour un article que pour d’autres, cela signifie que les personnes qui achètent cet article ont tendance à revenir plus tôt.
+Cette mesure indique la fréquence de commande du client ou le temps nécessaire pour que le client effectue une nouvelle commande. Si le délai de la prochaine commande est plus court pour un article que pour d’autres articles, cela signifie que les personnes qui achètent cet article ont tendance à revenir plus tôt.
 
-## Exemple d’aujourd’hui : produits du café
+## Exemple d&#39;aujourd&#39;hui : les produits du café
 
 En gardant à l’esprit les mesures ci-dessus, prenez un exemple concernant les produits à base de café.
 
 | **Nom du produit** | **Probabilité de répétition de l’ordre** | **Nombre moyen de commandes pendant la durée de vie** | **Chiffre d’affaires moyen de la durée de vie** | **Temps moyen jusqu’à la commande suivante** |
 |-----|-----|-----|-----|-----|
-| Petit-déjeuner | 94.98% | 7.92 | $549.82 | 57,01 jours |
+| Passe-café en une tasse | 94.98% | 7.92 | $549.82 | 57,01 jours |
 | Capsules de café | 93.82% | 8.68 | $479.98 | 63,48 jours |
 | Les fèves de café | 41.92% | 6.07 | $99.82 | 27,31 jours |
 

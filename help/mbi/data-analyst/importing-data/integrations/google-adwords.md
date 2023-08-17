@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ![](../../../assets/Google_Adwords_logo.png)
 
-Vous avez fait vos recherches, créé vos publicités, lancé vos [!DNL Google] campaign. Il est maintenant temps d’analyser vos données de dépenses publicitaires et de voir si votre argent est dépensé efficacement. En utilisant vos données de dépenses publicitaires, vous pouvez : [mesurez le retour sur investissement de la campagne en associant le coût de la publicité et la valeur de durée de vie du client (CLV).](../../analysis/roi-ad-camp.md) des utilisateurs acquis à partir de vos campagnes.
+Vous avez fait vos recherches, créé vos publicités, lancé vos [!DNL Google] campaign. Il est maintenant temps d’analyser vos données de dépenses publicitaires et de voir si votre argent est dépensé efficacement. En utilisant vos données de dépenses publicitaires, vous pouvez : [mesurer le retour sur investissement de la campagne en associant le coût de la publicité et la valeur de durée de vie du client ;](../../analysis/roi-ad-camp.md) des utilisateurs acquis à partir de vos campagnes.
 
 Commencez en saisissant [!DNL Google Adwords] informations d’identification [!DNL Commerce Intelligence].
 
 1. Accédez au `Connections` page sous **Gérer les données > Intégrations**.
 1. Cliquez sur **Ajouter une intégration**, situé dans le coin supérieur droit de l’écran.
-1. Cliquez sur le bouton **[!DNL Google Adwords]** icône . Cela ouvre la fenêtre [!DNL Google Adwords] informations d’identification.
+1. Cliquez sur le bouton **[!DNL Google Adwords]** Icône Cela ouvre la fenêtre [!DNL Google Adwords] informations d’identification.
 1. Saisissez votre [!DNL Google Analytics] informations d’identification. Une fois le processus d’autorisation terminé, vous êtes redirigé vers [!DNL Commerce Intelligence].
 1. Une liste des identifiants de profil s’affiche. Vérifiez les profils auxquels vous souhaitez vous connecter. [!DNL Commerce Intelligence].
 

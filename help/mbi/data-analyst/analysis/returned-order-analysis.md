@@ -138,7 +138,7 @@ Colonnes à créer
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ### Rapports
 
@@ -155,7 +155,7 @@ Colonnes à créer
    * `Is customer's last order? (1=yes/0=no) = 0`
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* Formule : Probabilité de répétition de l’ordre
+* Formule : probabilité de répétition de l&#39;ordre
 * [!UICONTROL Formula]: `B / A`
 * 
   [!UICONTROL Format]: `Percentage`
@@ -222,7 +222,7 @@ Colonnes à créer
 
 * **Taux de retour par élément**
 * Mesure `A`: `Returned items` (Masquer)
-* [!UICONTROL Metric]: Éléments renvoyés
+* [!UICONTROL Metric]: éléments renvoyés
 
 * Mesure `B`: `Items sold` (Masquer)
 * [!UICONTROL Metric]: `Number of orders`

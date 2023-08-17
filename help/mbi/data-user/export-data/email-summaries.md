@@ -30,7 +30,7 @@ Les résumés d’emails sont un puissant outil de communication que vous pouvez
 
 1. Saisissez le nom du résumé.
 
-   Choisissez un nom qui véhicule ce qui est inclus dans le résumé. Par exemple : `AOV Comparison`.
+   Choisissez un nom qui véhicule ce qui est inclus dans le résumé. Par exemple, `AOV Comparison`.
 
 1. Dans le `Choose Content` , sélectionnez les rapports à inclure dans le résumé.
 
@@ -44,7 +44,7 @@ Les résumés d’emails sont un puissant outil de communication que vous pouvez
 
 1. Pour inclure d’autres utilisateurs dans le courrier électronique, saisissez leurs adresses électroniques dans la variable `Add Email Recipients` champ séparé par des virgules, des espaces, des onglets ou des points-virgules.
 
-## Planification : résumé des emails
+## Planification - Récapitulatif des e-mails
 
 Dans le `Set when to send the Email Summary` vous pouvez indiquer le moment auquel envoyer les résumés des emails. Les options sont les suivantes :
 
@@ -74,7 +74,7 @@ Dans le `Set when to send the Email Summary` vous pouvez indiquer le moment auqu
 
 1. Sélectionner `Repeating` de la `Set when to send the Email Summary` champ .
 
-1. Dans le `Set Frequency` champ, sélectionnez `Daily`, `Weekly`ou `Monthly`.
+1. Dans le `Set Frequency` champ, sélectionnez `Daily`, `Weekly`, ou `Monthly`.
 
 1. Indiquez la date de début dans la variable `Select Start Date` calendrier.
 

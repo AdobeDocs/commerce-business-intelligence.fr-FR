@@ -21,17 +21,17 @@ ht-degree: 0%
 
 Avec [!DNL Mixpanel], vous pouvez analyser la manière dont les utilisateurs naviguent et utilisent vos sites web et vos applications. En examinant de près les données sur le comportement des utilisateurs, vous obtenez une conception et des décisions de développement plus intelligentes, ce qui signifie qu’un meilleur produit dans son ensemble. Connexion [!DNL Mixpanel] to [!DNL Commerce Intelligence] vous permet d’analyser le comportement de vos utilisateurs et la manière dont ce comportement se traduit en recettes.
 
-Connectez-vous à [!DNL Mixpanel] data to [!DNL Commerce Intelligence] un processus simple en trois étapes :
+Connexion à [!DNL Mixpanel] data to [!DNL Commerce Intelligence] un processus simple en trois étapes :
 
 1. [Ouvrez le [!DNL Mixpanel] page des informations d’identification [!DNL Commerce Intelligence]](#stepone)
-1. [Récupérez vos [!DNL Mixpanel] Informations d’identification de l’API](#steptwo)
-1. [Saisissez votre [!DNL Mixpanel] Informations d’identification de l’API dans [!DNL Commerce Intelligence]](#stepthree)
+1. [Récupérez vos [!DNL Mixpanel] Informations d’identification API](#steptwo)
+1. [Saisissez votre [!DNL Mixpanel] Identifiants d’API dans [!DNL Commerce Intelligence]](#stepthree)
 
 Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navigateur, l’un pour [!DNL Commerce Intelligence] et l’autre pour votre [!DNL Mixpanel] compte .
 
 ## Ouverture de la [!DNL Mixpanel] page des informations d’identification {#stepone}
 
-Prise en main :
+Prise en main:
 
 1. Accédez au `Connections` page sous **[!DNL Manage Data** > **Connections]**.
 
@@ -41,7 +41,7 @@ Prise en main :
 
 Laissez cette page ouverte pour l’instant et passez à la fenêtre du navigateur avec votre [!DNL Mixpanel] compte .
 
-## Récupération de votre [!DNL Mixpanel] Informations d’identification de l’API {#steptwo}
+## Récupération de votre [!DNL Mixpanel] Informations d’identification API {#steptwo}
 
 Si vous n’êtes pas connecté à votre [!DNL Mixpanel] mais, faites-le, puis procédez comme suit :
 
@@ -55,7 +55,7 @@ Si vous n’êtes pas connecté à votre [!DNL Mixpanel] mais, faites-le, puis p
 
 Gardez ceci ouvert, vous avez besoin qu&#39;il termine ceci.
 
-## Saisissez votre [!DNL Mixpanel] Informations d’identification de l’API dans [!DNL Commerce Intelligence] {#stepthree}
+## Saisissez votre [!DNL Mixpanel] Identifiants d’API dans [!DNL Commerce Intelligence] {#stepthree}
 
 1. Copiez le `API Key` et `Secret` dans la [!DNL Mixpanel] page des informations d’identification [!DNL Commerce Intelligence].
 1. Cliquez sur **[!UICONTROL Connect to Mixpanel]** pour terminer la configuration.

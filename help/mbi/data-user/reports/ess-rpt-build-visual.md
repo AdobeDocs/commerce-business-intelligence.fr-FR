@@ -31,7 +31,7 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
    * Choisissez la [metric](../../data-user/reports/ess-manage-data-metrics.md) qui décrit le jeu de données à utiliser pour le rapport.
 
-     Le `New Customers` La mesure utilisée dans cet exemple comptabilise tous les clients et trie la liste par date d’inscription du client à un compte. Le rapport initial comprend un graphique linéaire simple, suivi du tableau de données.
+     La variable `New Customers` La mesure utilisée dans cet exemple comptabilise tous les clients et trie la liste par date d’inscription du client à un compte. Le rapport initial comprend un graphique linéaire simple, suivi du tableau de données.
 
      Le résumé sur la gauche affiche le nom de la mesure actuelle, suivi du résultat de tous les calculs sur les données de colonne spécifiées dans la mesure. Dans cet exemple, le résumé affiche le nombre total de clients.
 
@@ -43,7 +43,7 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
    **`Group By`**
 
-   Le `Group By` contrôle vous permet d’ajouter plusieurs dimensions par groupe ou segment. Les Dimensions sont des colonnes du tableau qui peuvent être utilisées pour regrouper les données.
+   La variable `Group By` contrôle vous permet d’ajouter plusieurs dimensions par groupe ou segment. Les Dimensions sont des colonnes du tableau qui peuvent être utilisées pour regrouper les données.
 
    * Sélectionnez l’une des dimensions disponibles dans la liste de `Group By` options.
 
@@ -51,7 +51,7 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
      ![Group by](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-     Le `Group By` Le détail répertorie chaque coupon utilisé par les clients. Les coupons utilisés pour passer la commande initiale sont marqués d’une case à cocher. Le graphique comporte désormais plusieurs lignes colorées représentant chaque coupon utilisé pour une première commande. La légende est codée par couleur pour correspondre à chaque ligne de données.
+     La variable `Group By` Le détail répertorie chaque coupon utilisé par les clients. Les coupons utilisés pour passer la commande initiale sont marqués d’une case à cocher. Le graphique comporte désormais plusieurs lignes colorées représentant chaque coupon utilisé pour une première commande. La légende est codée par couleur pour correspondre à chaque ligne de données.
 
    * Cliquez sur **[!UICONTROL Apply]** pour fermer le Group By détail.
 
@@ -65,13 +65,13 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
    * Cliquez sur Transposer (![](../../assets/magento-bi-btn-transpose.png)) dans le coin supérieur droit du tableau pour modifier l’orientation des données.
 
-     L’axe des données est inversé et le tableau comporte désormais une colonne pour chaque code de coupon et une ligne pour chaque mois. Il se peut que vous trouviez cette orientation plus facile à lire.
+     L’axe des données est inversé et le tableau comporte désormais une colonne pour chaque code de coupon et une ligne pour chaque mois. Cette orientation peut être plus facile à lire.
 
      ![Données transférées](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
 
    **`Date Range`**
 
-   Le `Date Range` Le contrôle affiche la période actuelle et les paramètres d’intervalle de temps. Il se trouve juste au-dessus du graphique à droite.
+   La variable `Date Range` Le contrôle affiche la période actuelle et les paramètres d’intervalle de temps. Il se trouve juste au-dessus du graphique à droite.
 
    * Cliquez sur le bouton `Date Range` control, qui dans cet exemple est défini sur `All-Time by Month`.
 
@@ -81,7 +81,7 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
       * Pour effectuer un zoom avant afin d’obtenir une vue plus étroite, définissez la période sur `Last Full Quarter`.
       * Sous `Select Time Interval`, choisissez `Week`.
-      * Une fois l’opération terminée, cliquez sur **[!UICONTROL Save]**.
+      * Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save]**.
 
      Le rapport inclut désormais uniquement les données du dernier trimestre, par semaine.
 

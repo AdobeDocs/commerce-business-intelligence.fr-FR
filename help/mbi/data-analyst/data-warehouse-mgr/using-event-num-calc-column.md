@@ -17,7 +17,7 @@ Cette rubrique décrit l’objectif et les utilisations de la fonction `Event Nu
 
 **Explication**
 
-Le `Event Number` type de colonne identifie la séquence dans laquelle des événements se sont produits pour un **propriétaire d’événement**, comme un `customer` ou `user`. Si vous maîtrisez SQL, ce type de colonne est identique au `RANK` fonction . Il peut être utilisé pour observer des différences de comportement entre les premiers événements, les événements de répétition ou les énièmes événements dans vos données.
+La variable `Event Number` type de colonne identifie la séquence dans laquelle des événements se sont produits pour un **propriétaire d’événement**, comme un `customer` ou `user`. Si vous maîtrisez SQL, ce type de colonne est identique au `RANK` de la fonction Il peut être utilisé pour observer des différences de comportement entre les premiers événements, les événements de répétition ou les énièmes événements dans vos données.
 
 En cas d&#39;égalité, cette colonne contient la même **rank** pour les événements liés et ignore les nombres suivants. Par exemple, s’il classait les nombres 5,8,10,10,12, les grades seraient de 1,2,3,3,5.
 
@@ -45,7 +45,7 @@ Voici quelques instructions sur la création d’un `Event Number` column :
 
 1. Accédez au tableau sur lequel vous souhaitez créer cette colonne.
 
-1. Cliquez sur **[!UICONTROL Create a Column]** et sélectionnez la variable `EVENT_NUMBER (…)` type de colonne : sous le `Same Table` .
+1. Cliquez sur **[!UICONTROL Create a Column]** et sélectionnez la variable `EVENT_NUMBER (…)` type de colonne : sous `Same Table` .
 
 1. Première liste déroulante `Event Owner` spécifie l’entité pour laquelle le rang doit être déterminé. Dans le cas où une `Customer's order number`, un identifiant de client tel que `customer_id` ou `customer_email` serait `Event Owner`.
 
@@ -55,4 +55,4 @@ Voici quelques instructions sur la création d’un `Event Number` column :
 
 1. Attribuez un nom à la colonne et cliquez sur **[!UICONTROL Save]**.
 
-1. La colonne peut être utilisée _immédiatement._
+1. La colonne peut être utilisée. _immédiatement._

@@ -32,15 +32,15 @@ Si vous utilisez l’architecture d’origine (par exemple, si vous ne disposez 
 * **`sales_flat_order`** table
    * Ce calcul crée des intervalles par incréments par rapport aux tailles de panier standard. Cela peut être compris entre 5, 10, 50 et 100.
 
-* **`Order subtotal (buckets)`** Architecture originale : créé par un analyste dans le cadre de votre `[FREE SHIPPING ANALYSIS]` ticket
+* **`Order subtotal (buckets)`** Architecture d’origine : créée par un analyste dans le cadre de votre `[FREE SHIPPING ANALYSIS]` ticket
 * **`Order subtotal (buckets)`** Nouvelle architecture :
-   * Comme mentionné ci-dessus, ce calcul crée des intervalles par incréments par rapport aux tailles de panier standard. Si vous disposez d’une colonne de sous-total native, telle que `base_subtotal`, qui peut être utilisé comme base de cette nouvelle colonne. Dans le cas contraire, il peut s’agir d’une colonne calculée qui exclut les frais d’expédition et les remises des recettes.
+   * Comme mentionné ci-dessus, ce calcul crée des intervalles par incréments par rapport aux tailles de panier standard. Si vous avez une colonne de sous-total native, telle que `base_subtotal`, qui peut être utilisé comme base de cette nouvelle colonne. Dans le cas contraire, il peut s’agir d’une colonne calculée qui exclut les frais d’expédition et les remises des recettes.
 
   >[!NOTE]
   >
   >Les tailles de &quot;compartiment&quot; dépendent de ce qui vous convient en tant que client. Vous pouvez commencer par votre `average order value` et créer des intervalles inférieurs ou supérieurs à cette quantité. Lorsque vous regardez le calcul ci-dessous, vous pouvez facilement copier une partie de la requête, la modifier et créer des intervalles supplémentaires. L’exemple est effectué par incréments de 50.
 
-   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`ou `calculated column`, `Datatype`: `Integer`
+   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`, ou `calculated column`, `Datatype`: `Integer`
    * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
 when `A< 200` et `A <= 250` then `201 - 250`
 when `A<251` et `A<= 300` then `251 - 300`
@@ -56,7 +56,7 @@ Aucune nouvelle mesure!!!
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ## Rapports
 
@@ -75,7 +75,7 @@ Aucune nouvelle mesure!!!
 
   >[!NOTE]
   >
-  >Vous pouvez couper l’extrémité de la queue en affichant la partie supérieure. `X` `sorted by` `Order subtotal` (intervalles) dans la variable `Show top/bottom`.
+  >Vous pouvez couper l’extrémité de la queue en affichant le haut `X` `sorted by` `Order subtotal` (intervalles) dans la variable `Show top/bottom`.
 
 * Mesure `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`

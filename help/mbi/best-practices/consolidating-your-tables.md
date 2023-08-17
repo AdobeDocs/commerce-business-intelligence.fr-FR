@@ -29,15 +29,15 @@ L’exemple suivant indique à quel moment il peut être approprié d’utiliser
 
 Si vous vendez vos produits sous différentes marques et différents sites web, il est probable que les tableaux de chaque marque ou site web soient structurés de la même manière.
 
-Par exemple, vous pouvez avoir une `orders` tableau pour le site web `A` et une `orders` tableau pour le site web `B`. Dans ce cas, il peut s’avérer utile de consolider le `orders` tableaux du site web `A` et `B`. Vous pouvez ainsi consulter les recettes consolidées et le nombre de commandes provenant du site web. `A` et `B`, en plus de pouvoir segmenter les mesures en fonction de ces deux sites web.
+Par exemple, vous pouvez avoir une `orders` tableau pour le site web `A` et un autre, mais similaire, `orders` tableau pour le site web `B`. Dans ce cas, il peut s’avérer utile de consolider le `orders` tableaux du site web `A` et `B`. Vous pouvez ainsi consulter les recettes consolidées et le nombre de commandes provenant du site web. `A` et `B`, en plus de pouvoir segmenter les mesures en fonction de ces deux sites web.
 
 ### Intégration de données héritées
 
-De nombreuses entreprises ont restructuré leurs bases de données à un moment ou un autre, et les données de l&#39;ancienne base de données ne sont pas toujours converties vers le nouveau système. Vous pouvez utiliser des tableaux consolidés pour joindre les colonnes clés des tableaux hérités à celles du système principal. Cela vous permet d’effectuer une analyse unifiée de vos données tout au long de l’histoire.
+De nombreuses entreprises ont restructuré leurs bases de données à un moment ou un autre, et les données de l&#39;ancienne base de données ne sont pas toujours converties vers le nouveau système. Vous pouvez utiliser des tableaux consolidés pour joindre les colonnes clés des tableaux hérités à celles du système actif. Cela vous permet d’effectuer une analyse unifiée de vos données tout au long de l’histoire.
 
-### Combinaison d’événements pour les Principales analyses utilisateur
+### Combinaison d’événements pour les analyses utilisateur actives
 
-Imaginez un site web sur lequel les utilisateurs peuvent réaliser plusieurs actions : prenez une enquête, jouez à un jeu, effectuez un achat, consultez un ami, etc. En règle générale, chacun de ces événements est stocké dans sa propre table. Il est donc difficile d’analyser le nombre d’utilisateurs distincts qui ont effectué au moins une action, quelle qu’elle soit, au cours d’une période donnée.
+Imaginez un site web sur lequel les utilisateurs peuvent faire plusieurs choses : répondre à un questionnaire, jouer à un jeu, faire un achat, contacter un ami, etc. En règle générale, chacun de ces événements est stocké dans sa propre table. Il est donc difficile d’analyser le nombre d’utilisateurs distincts qui ont effectué au moins une action, quelle qu’elle soit, au cours d’une période donnée.
 
 Vous pouvez utiliser des tableaux consolidés pour créer une liste unifiée de tous les utilisateurs et le moment où l’un de ces événements s’est produit. Vous pouvez ensuite exécuter des requêtes sur la table consolidée pour réaliser facilement une telle analyse.
 
@@ -49,4 +49,4 @@ Si vous souhaitez ajouter une table consolidée à votre Data Warehouse, contact
 
 >[!NOTE]
 >
->Parce que les tableaux consolidés ne sont pas visibles dans la variable `Data Warehouse Manager`, l’affichage et la mise à jour de ces tableaux ne peuvent être effectués que par [!DNL Commerce Intelligence] prise en charge.
+>Parce que les tableaux consolidés ne sont pas visibles dans la variable `Data Warehouse Manager`, l’affichage et la mise à jour de ces tableaux ne peuvent être effectués que par [!DNL Commerce Intelligence] la prise en charge.

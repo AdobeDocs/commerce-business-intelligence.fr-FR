@@ -118,7 +118,7 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
       * 
         [!UICONTROL Datatype]: `Decimal`
       * Définition :
-         * Cas où A est nul ou B est nul ou B = 0,0 puis nul autre arrondi (A ::décimal/B,2)
+         * Cas où A est nul ou B est nul ou B = 0,0 alors nul autre arrondi (A ::décimal/B,2)
 
 +++
 +++ Architecture héritée

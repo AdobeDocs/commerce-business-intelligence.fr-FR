@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Créer des colonnes calculées
 
-Lors de l’analyse de vos données, il est utile de consolider des données provenant de différentes sources. Souhaitez regrouper les recettes par source d’acquisition, en liant les données de votre `orders` table et [!DNL Google Analytics] données ? Vous souhaitez peut-être regrouper les recettes par sexe de client ou associer un attribut du client aux données de transaction pour la segmentation. Cette rubrique explique comment le faire.
+Lors de l’analyse de vos données, il est utile de consolider des données provenant de différentes sources. Souhaitez regrouper les recettes par source d’acquisition, en liant les données de votre `orders` table et [!DNL Google Analytics] données ? Vous souhaitez peut-être regrouper les recettes par sexe de client ou associer un attribut du client aux données de transaction pour la segmentation. Cette rubrique explique comment faire précisément cela.
 
 Avant de commencer, Adobe vous recommande de consulter la section [Guide sur les types de colonne calculés](../../data-analyst/data-warehouse-mgr/calc-column-types.md) pour plus d’informations sur les types de colonnes que vous pouvez créer dans Data Warehouse Manager, ainsi que leurs définitions et exemples.
 
@@ -23,7 +23,7 @@ Avant de commencer, Adobe vous recommande de consulter la section [Guide sur les
 
 1. Le modèle de tableau s’affiche. Cliquez sur **[!UICONTROL Create New Column]**.
 
-1. Attribuez un nom à votre colonne. Par exemple : `Customer Gender`.
+1. Attribuez un nom à votre colonne. Par exemple, `Customer Gender`.
 
 1. Sélectionnez la définition de la colonne. C’est là que le [Guide sur les types de colonne calculés](../data-warehouse-mgr/calc-column-types.md) c&#39;est pratique !
 
@@ -31,13 +31,13 @@ Avant de commencer, Adobe vous recommande de consulter la section [Guide sur les
 
    * Pour `One to Many` (joint) et `Many to One` (agrégé) , vous devez sélectionner les tableaux et les colonnes.
 
-   * Pour un `Same Table calculation`, vous devez sélectionner le champ de date de votre choix dans la liste déroulante.
+   * Pour un `Same Table calculation`, vous devez sélectionner le champ de date souhaité dans la liste déroulante.
 
 Si vous créez une `One to Many` (joint) ou `Many to One` (agrégé) , vous devez sélectionner un chemin pour connecter les deux tables. Au cours de cette étape, vous pouvez utiliser un chemin existant ou en créer un.
 
 >[!NOTE]
 >
->Pensez à définir correctement le tableau comme plusieurs ou un seul !
+>N’oubliez pas de définir correctement le tableau comme plusieurs ou un seul !
 
 * Si vous le souhaitez, vous pouvez appliquer des [filtres](../../data-user/reports/ess-manage-data-filters.md) à la nouvelle colonne.
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Après [vous avez connecté votre [!DNL Mixpanel] account](../integrations/mixpanel.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
 
-Cette rubrique explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Mixpanel] dans [!DNL Commerce Intelligence] compte . Les tableaux suivants seront créés dans votre Data Warehouse après la connexion. [!DNL Mixpanel]. Pour visualiser tous les champs disponibles pour le tracking, cliquez sur les liens de la colonne du nom du tableau.
+Cette rubrique explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Mixpanel] dans votre [!DNL Commerce Intelligence] compte . Les tableaux suivants seront créés dans votre Data Warehouse après la connexion. [!DNL Mixpanel]. Pour visualiser tous les champs disponibles pour le tracking, cliquez sur les liens de la colonne du nom du tableau.
 
 >[!NOTE]
 >

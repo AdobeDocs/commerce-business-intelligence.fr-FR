@@ -13,6 +13,6 @@ ht-degree: 0%
 
 # Utilisation des données
 
-[!DNL Adobe Commerce Intelligence] vous permet d’importer des données provenant de plusieurs sources. Dans cette section, découvrez les bonnes pratiques relatives à l’organisation et à l’utilisation de ces données.
+[!DNL Adobe Commerce Intelligence] vous permet d’importer des données provenant de plusieurs sources. Dans cette section, découvrez les bonnes pratiques pour organiser et utiliser ces données.
 
 Vous découvrez comment optimiser votre base de données et vos requêtes SQL, comment vérifier l’état du cycle de mise à jour et comment réduire la durée du cycle de mise à jour.

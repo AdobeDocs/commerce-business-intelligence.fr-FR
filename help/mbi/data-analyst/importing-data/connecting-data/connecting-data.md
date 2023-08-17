@@ -19,7 +19,7 @@ Les intégrations sont ajoutées et gérées à l’aide de la variable `Connect
 
 * liste de toutes les intégrations connectées à votre compte
 
-* le type d’intégration ;
+* le type d’intégration
 
 * status ([!DNL Google Analytics] et [!DNL Data Import API] les connexions ont des champs d’état vides)
 
@@ -29,13 +29,13 @@ Les intégrations sont ajoutées et gérées à l’aide de la variable `Connect
 
 ## Types d’intégrations
 
-Il existe quatre façons de transférer vos données dans [!DNL Commerce Intelligence]: connexion à une base de données, connexion à une intégration SaaS, chargement d’un `.csv` ou utilisez l’API Adobe.
+Il existe quatre façons de transférer vos données dans [!DNL Commerce Intelligence]: connectez une base de données, connectez-vous à une intégration SaaS, chargez un `.csv` ou utilisez l’API Adobe.
 
 ## Intégrations de base de données
 
 ![Database\_icons.jpg](../../../assets/Database_icons.jpg)
 
-[!DNL Commerce Intelligence] prend en charge les bases de données SQL et NoSQL, telles que [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md), et [PostgreSQL](../integrations/postgresql.md).
+[!DNL Commerce Intelligence] prend en charge les bases de données SQL et NoSQL, telles que [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [MICROSOFT SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md), et [PostgreSQL](../integrations/postgresql.md).
 
 Vous pouvez connecter directement votre base de données à [!DNL Commerce Intelligence] à l’aide des informations d’identification de base de données, Adobe vous recommande d’utiliser une méthode de chiffrement éprouvée comme un tunnel SSH. Cela garantit la sécurité et la sécurité de vos données lors de leur entrée dans votre Data Warehouse.
 
@@ -59,7 +59,7 @@ Si vous préférez automatiser la récupération des données à partir d’une 
 
 L’utilisation de l’API nécessite un peu d’expertise technique : une personne qui sait écrire et gérer un petit script Ruby ou PHP est plus que qualifiée.
 
-Pour en savoir plus sur la prise en main de la méthode `Import API`, extrayez le [Site de développement](https://developer.adobe.com/commerce/services/reporting/) et [Comment générer une clé API](https://developer.adobe.com/commerce/services/reporting/import-api/).
+Pour en savoir plus sur la prise en main de la méthode `Import API`, extrayez le [Site destiné aux développeurs](https://developer.adobe.com/commerce/services/reporting/) et [Comment générer une clé API](https://developer.adobe.com/commerce/services/reporting/import-api/).
 
 ## Ajout d’une intégration
 
@@ -70,6 +70,6 @@ Pour ajouter une intégration, cliquez sur **[!UICONTROL Manage Data** > **Conne
 * [Consolidation des tableaux](../../../best-practices/consolidating-your-tables.md)
 * [Limitation de l’accès à votre base de données](../../../administrator/account-management/restrict-db-access.md)
 
-**Vous ne voyez pas une intégration que vous souhaitez ?** Certaines intégrations doivent être activées pour qu’elles soient visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais il n&#39;est pas répertorié, [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+**Vous ne voyez pas une intégration que vous souhaitez ?** Certaines intégrations doivent être activées pour qu’elles soient visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais il n&#39;est pas répertorié, [envoyer un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Si un état d’erreur s’affiche pour une intégration**, extrayez le [Section de dépannage](https://support.magento.com/hc/en-us/sections/360003078151) pour obtenir de l’aide.

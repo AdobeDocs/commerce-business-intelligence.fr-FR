@@ -29,6 +29,6 @@ Pour importer [!DNL CJ Affiliate (Commission Junction)] données dans [!DNL Adob
 
    ![exportation des données affiliées cj](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 
-1. Une fois le fichier téléchargé, vous pouvez : [télécharger le fichier](../connecting-data/using-file-uploader.md) à [!DNL Commerce Intelligence] Data Warehouse.
+1. Une fois le fichier téléchargé, vous pouvez : [télécharger le fichier](../connecting-data/using-file-uploader.md) à votre [!DNL Commerce Intelligence] Data Warehouse.
 
    Cela crée un tableau dans votre [!DNL Commerce Intelligence] Data Warehouse que vous pouvez continuer à charger des données actualisées périodiquement dans . Lors du téléchargement du fichier, respectez les exigences de mise en forme répertoriées dans la section [Utilisation du téléchargeur de fichiers](../connecting-data/using-file-uploader.md).
