@@ -4,14 +4,14 @@ description: Découvrez les types de données qui sont partagés avec Google Com
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3f16484f189f6b4a8b072d2e3514d2f170993d60
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
 
 ---
 
-# Valeur attendue[!DNL Google ECommerce] data
+# Valeur attendue [!DNL Google ECommerce] data
 
 Après votre [!DNL Google ECommerce] le compte est connecté à [!DNL Commerce Intelligence], le système commence à importer des données dans un tableau intitulé `ecommerce`. Ce tableau enregistre une ligne de données pour chaque transaction. Cela inclut les colonnes de données au niveau de l’ordre suivantes :
 
