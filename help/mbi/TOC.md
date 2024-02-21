@@ -4,7 +4,7 @@ description: Découvrez comment utiliser [!DNL Commerce Intelligence] fonctionna
 breadcrumb-title: Guide de l’utilisateur de Commerce Intelligence
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 ---
 
 
-# [!DNL Commerce Intelligence] Guide d’utilisation {#mbi}
+# [!DNL Commerce Intelligence] Guide de l’utilisateur {#mbi}
 
-- [[!DNL Commerce Intelligence] Guide d’utilisation](guide-overview.md)
+- [[!DNL Commerce Intelligence] Guide de l’utilisateur](guide-overview.md)
 - [[!DNL Commerce Intelligence] Introduction](getting-started/getting-started.md)
 - Prise en main {#start}
    - [Intégration](getting-started/onboarding.md)
@@ -57,10 +57,10 @@ ht-degree: 0%
       - [Normalisation des données avec les tableaux de mappage](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
       - [Traduire les requêtes SQL en [!DNL Commerce Intelligence] rapports](data-analyst/dev-reports/sql-queries-reports.md)
       - [Présentation et évaluation des relations entre les tables](data-analyst/data-warehouse-mgr/table-relationships.md)
-      - [Utilisation de la différence de date calculée](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
+      - [Utilisation de la différence de date calculée](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [Utilisation du filtrage à l’échelle du tableau de bord](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [Utilisation de la colonne calculée Nombre d’événements](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
-      - [Utilisation de la colonne calculée de comparaison séquentielle](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column-.md)
+      - [Utilisation de la colonne calculée de comparaison séquentielle](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
    - Tableaux de commerce courants {#tables}
       - [Introduction](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
@@ -231,7 +231,7 @@ ht-degree: 0%
    - Utilisation des tableaux de bord {#working-dashboards}
       - [Partage de tableaux de bord](best-practices/share-dashboard-best-practice.md)
       - [Création d’un tableau de bord pour les investisseurs](best-practices/build-investor-dashboard.md)
-- Tutoriels {#tutorials}
+- Tutorials {#tutorials}
    - [En utilisant la variable [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Utilisation des options d’heure dans la variable [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Création de visualisations pour une [!DNL SQL] Requête](tutorials/create-visuals-from-sql.md)
