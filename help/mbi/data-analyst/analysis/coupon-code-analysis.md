@@ -4,9 +4,9 @@ description: Découvrez comment analyser les performances de vos coupons.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -507,3 +507,9 @@ Colonnes supplémentaires à créer si les commandes d’invités NE SONT PAS pr
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de la page.
 
 Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+
+>[!NOTE]
+>
+>Depuis Adobe Commerce 2.4.7, les clients peuvent utiliser la variable **quote_coupons** et **sales_order_coupons** des tableaux pour obtenir des informations sur la manière dont les clients utilisent plusieurs bons.
+
+![](../../assets/multicoupon_relationship_tables.png)

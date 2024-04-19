@@ -4,9 +4,9 @@ description: Découvrez les performances des coupons de votre entreprise est un 
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Tout d’abord, une note sur le suivi des codes de coupon. Si un client a appliq
 * Une remise est répercutée dans la variable `base_grand_total` quantité (votre `Revenue` mesure dans Commerce Intelligence)
 * Le code de coupon est stocké dans la variable `coupon_code` champ . Si ce champ est NULL (vide), aucun coupon n’est associé à la commande.
 * Le montant escompté est stocké dans `base_discount_amount`. Selon votre configuration, cette valeur peut apparaître négative ou positive.
+
+Depuis Commerce 2.4.7, un client peut appliquer plusieurs codes de bon à une commande. Dans ce cas :
+
+* Tous les codes de bon appliqués sont stockés dans la variable `coupon_code` champ de `sales_order_coupons`. Le premier code de coupon appliqué est également stocké dans la variable `coupon_code` champ de `sales_order`. Si ce champ est NULL (vide), aucun coupon n’est associé à la commande.
 
 ## Création d’une mesure
 
@@ -196,3 +200,9 @@ La première étape consiste à créer une mesure en procédant comme suit :
    * [!UICONTROL Chart type]: `Stacked Column`
 
 Une fois les rapports créés, reportez-vous à l’image dans la partie supérieure de cette rubrique pour savoir comment organiser les rapports sur votre tableau de bord.
+
+>[!NOTE]
+>
+>Depuis Adobe Commerce 2.4.7, les clients peuvent utiliser la variable **quote_coupons** et **sales_order_coupons** des tableaux pour obtenir des informations sur la manière dont les clients utilisent plusieurs bons.
+
+![](../../assets/multicoupon_relationship_tables.png)
