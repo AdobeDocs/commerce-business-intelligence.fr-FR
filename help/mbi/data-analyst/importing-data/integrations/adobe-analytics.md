@@ -1,12 +1,12 @@
 ---
 title: Connexion à Adobe Analytics
-description: Découvrez comment rassembler le point de mire du parcours client de bout en bout de la [!DNL Adobe Analytics] et l’accent eCommerce sur lequel vous vous fiez [!DNL Commerce Intelligence].
+description: Découvrez comment rassembler la mise au point de parcours client de bout en bout de [!DNL Adobe Analytics] et la mise au point de commerce électronique sur laquelle vous vous fiez à partir de [!DNL Commerce Intelligence].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -19,44 +19,44 @@ ht-degree: 0%
 
 ![](../../../assets/adobe-analytic-slogo.png)
 
-La variable [!DNL Adobe Analytics] intégration pour [!DNL Adobe Commerce Intelligence] vous permet de rassembler le point de mire du parcours client de bout en bout de la [!DNL Adobe Analytics] et l’accent eCommerce sur lequel vous vous fiez [!DNL Commerce Intelligence]. Vous obtenez ainsi une vue d’ensemble complète des performances générales de votre magasin.
+L&#39;intégration [!DNL Adobe Analytics] pour [!DNL Adobe Commerce Intelligence] vous permet de rassembler la concentration de parcours client de bout en bout de [!DNL Adobe Analytics] et la concentration eCommerce sur laquelle vous vous fiez à partir de [!DNL Commerce Intelligence]. Vous obtenez ainsi une vue d’ensemble complète des performances générales de votre magasin.
 
-Plus précisément, la [!DNL Adobe Analytics] intégration pour [!DNL Commerce Intelligence] offre aux commerçants la possibilité de commencer à combiner leurs [!DNL Adobe Commerce] et [!DNL Adobe Analytics] ensembles de données.
+Plus précisément, l’intégration [!DNL Adobe Analytics] pour [!DNL Commerce Intelligence] permet aux commerçants de commencer à combiner leurs jeux de données [!DNL Adobe Commerce] et [!DNL Adobe Analytics].
 
-- Créer une connexion à partir de votre [!DNL Adobe Analytics] compte dans [!DNL Commerce Intelligence].
+- Créez une connexion à partir de votre compte [!DNL Adobe Analytics] existant vers [!DNL Commerce Intelligence].
 
 - Sélectionnez jusqu’à 25 mesures et dimensions dans une suite de rapports pour effectuer une réplication dans votre Data Warehouse.
 
-- Utiliser toutes les normes [!DNL Commerce Intelligence] fonctionnalité permettant de transformer, de rejoindre et de créer des rapports sur les produits répliqués. [!DNL Adobe Analytics] data.
+- Utilisez toutes les fonctionnalités [!DNL Commerce Intelligence] standard pour transformer, rejoindre et générer des rapports sur les données [!DNL Adobe Analytics] répliquées.
 
 ## Conditions préalables à la connexion
 
 Les informations suivantes sont nécessaires pour se connecter :
 
-- [!DNL Adobe Analytics] informations de connexion
+- [!DNL Adobe Analytics] identifiants de connexion
 
-- `Name` et/ou `ID` de [!DNL Adobe Analytics] suite de rapports à partir de laquelle répliquer les données
+- `Name` et/ou `ID` de la suite de rapports [!DNL Adobe Analytics] pour répliquer les données de
 
 - Liste des mesures et des dimensions à répliquer dans [!DNL Commerce Intelligence]
 
-## Connexion de la variable [!DNL Adobe Analytics] Intégration pour [!DNL Commerce Intelligence]
+## Connexion de l’intégration [!DNL Adobe Analytics] pour [!DNL Commerce Intelligence]
 
-1. Accédez au `Integrations` page sous **[!DNL Manage Data** > **Integrations]**.
+1. Accédez à la page `Integrations` sous **[!DNL Manage Data** > **Integrations]**.
 
 1. Cliquez sur **[!UICONTROL Add an Integration]**.
 
-1. Cliquez sur le bouton **[!UICONTROL Adobe Analytics]** pour accéder à la page qui vous permet d’autoriser votre [!DNL Adobe Analytics] connexion au compte.
+1. Cliquez sur l&#39;icône **[!UICONTROL Adobe Analytics]** pour accéder à la page qui vous permet d&#39;autoriser la connexion à votre compte [!DNL Adobe Analytics].
 
 1. Cliquez sur **[!UICONTROL Authorize with Adobe Analytics]**.
 
-1. Saisissez votre [!DNL Adobe Analytics] informations d’identification. Après une autorisation réussie, vous êtes redirigé vers [!DNL Commerce Intelligence].
+1. Saisissez vos informations d’identification [!DNL Adobe Analytics]. Après une autorisation réussie, vous êtes redirigé vers [!DNL Commerce Intelligence].
 
-1. Une liste des suites de rapports disponibles s’affiche. Sélectionnez la suite de rapports à partir de laquelle importer les données, puis cliquez sur **[!UICONTROL Continue]**.
+1. Une liste des suites de rapports disponibles s’affiche. Sélectionnez la suite de rapports à partir de laquelle vous souhaitez importer les données, puis cliquez sur **[!UICONTROL Continue]**.
 
 1. L’écran de sélection des mesures et des dimensions s’affiche. Sélectionnez au moins une mesure et au moins une dimension, pour un total combiné de 25 mesures et dimensions. Recherchez par nom ou faites défiler l’écran pour trouver vos composants, puis cochez les cases à cocher à sélectionner. Cliquez sur **[!UICONTROL Continue]**.
 
 1. La suite de rapports sélectionnée s’affiche dans un tableau. Cliquez sur **[!UICONTROL Save]** pour confirmer votre sélection.
 
-1. Informer le [!DNL Commerce Intelligence] [Équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) que votre intégration est autorisée et qu’ils exécutent le processus de connexion initial pour vous.
+1. Informez l&#39; [!DNL Commerce Intelligence] [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) que votre intégration est autorisée et qu&#39;ils exécutent le processus de connexion initial pour vous.
 
-Une fois le processus de connexion initial exécuté, votre tableau sera disponible dans la page du Data Warehouse, sous la `All Tables` . Sélectionnez les colonnes que vous souhaitez répliquer et les données apparaîtront après la prochaine mise à jour complète.
+Une fois le processus de connexion initial exécuté, votre table sera disponible dans la page du Data Warehouse, sous l’onglet `All Tables`. Sélectionnez les colonnes que vous souhaitez répliquer et les données apparaîtront après la prochaine mise à jour complète.

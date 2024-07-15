@@ -6,16 +6,16 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-# Valeur attendue [!DNL Stripe] data
+# Données [!DNL Stripe] attendues
 
-Après [vous avez connecté votre [!DNL Stripe] account](../integrations/stripe.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
+Une fois [que vous avez connecté votre  [!DNL Stripe] compte](../integrations/stripe.md), vous pouvez utiliser le [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour facilement suivre les champs de données pertinents à des fins d’analyse.
 
-Cette rubrique explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Stripe] into [!DNL Commerce Intelligence]. Une fois la configuration terminée, les tableaux suivants sont créés dans votre Data Warehouse. Cliquez sur les liens de la colonne Nom du tableau pour en savoir plus sur les attributs de chaque tableau.
+Cette rubrique explore les tables de données principales que vous pouvez importer de [!DNL Stripe] dans [!DNL Commerce Intelligence]. Une fois la configuration terminée, les tableaux suivants sont créés dans votre Data Warehouse. Cliquez sur les liens de la colonne Nom du tableau pour en savoir plus sur les attributs de chaque tableau.
 
 | **Nom de la table** | **Description** |
 |-----|-----|
@@ -25,13 +25,13 @@ Cette rubrique explore les principaux tableaux de données à partir desquels vo
 | [`Invoices`](https://stripe.com/docs/billing/migration/invoice-states) | Ce tableau contient des informations sur les factures, notamment le montant dû, les abonnements, les éléments de facture, les éventuels ajustements automatiques des frais de propriété, etc. |
 | [`Plans`](https://stripe.com/docs/api/plans/object) | Ce tableau contient les informations de tarification pour les différents produits et niveaux de fonctionnalités de votre site. Par exemple, vous pouvez avoir un abonnement de 10 $ par mois pour les fonctions de base et un abonnement de 20 $ par mois pour les fonctions Premium. |
 | [`Subscriptions`](https://stripe.com/docs/api/subscriptions/object) | Ce tableau contient les détails des plans d’abonnement auxquels vos clients appartiennent. Les attributs incluent l’ID de client, l’état, l’annulation/la fin aux dates, le pourcentage d’impôts, les informations d’évaluation, etc. |
-| [`Events`](https://stripe.com/docs/development/dashboard/events) | Les événements vous informent sur quelque chose d’intéressant qui s’est produit dans un compte. [Lorsqu’un événement intéressant se produit](https://stripe.com/docs/api/events/types), un nouvel objet d’événement est créé. Par exemple, lorsqu’une charge réussit `charge.succeeded` est créé ; ou lorsqu’une facture ne peut pas être soldée par un événement `invoice.payment\_failed` est créé. |
+| [`Events`](https://stripe.com/docs/development/dashboard/events) | Les événements vous informent sur quelque chose d’intéressant qui s’est produit dans un compte. [Lorsqu&#39;un événement intéressant se produit ](https://stripe.com/docs/api/events/types), un nouvel objet d&#39;événement est créé. Par exemple, lorsqu’un événement de succès `charge.succeeded` est créé, ou lorsqu’une facture ne peut pas être payée, un événement `invoice.payment\_failed` est créé. |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->De nombreuses demandes d’API peuvent entraîner la création de plusieurs événements. Par exemple, si vous créez un abonnement pour un client, vous recevez à la fois une `customer.subscription.created` et un  `charge.succeeded` .
+>De nombreuses demandes d’API peuvent entraîner la création de plusieurs événements. Par exemple, si vous créez un abonnement pour un client, vous recevez à la fois un événement `customer.subscription.created` et un événement `charge.succeeded`.
 
 ## En rapport :
 

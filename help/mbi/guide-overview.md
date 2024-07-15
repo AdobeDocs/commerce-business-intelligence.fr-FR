@@ -13,7 +13,7 @@ ht-degree: 2%
 ---
 
 
-# [!DNL Adobe Commerce Intelligence] Guide de l’utilisateur
+# Guide de l’utilisateur [!DNL Adobe Commerce Intelligence]
 
 >[!NOTE]
 >
@@ -28,34 +28,34 @@ Les administrateurs de données ont deux zones :
 
 Ce guide contient les sections suivantes, organisées en fonction du rôle que vous pouvez avoir au sein de votre organisation.
 
-- [Utilisateur de données](data-user.md): vous utilisez les données pour vous aider à prendre des décisions commerciales. Vous pouvez recevoir des rapports et des tableaux de bord d’un analyste de données de votre équipe, mais vous souhaitez également apprendre à créer ces rapports et tableaux de bord.
-- [Analyste de données](data-analyst.md): vous vous sentez à l’aise dans la conception de requêtes et vous êtes la personne idéale pour l’analyse des données. Vous savez comment trouver des réponses spécifiques à des questions de données et vous souhaitez faciliter l’expérience en libre-service pour vos collègues.
-- Administrateur : vous gérez le [!DNL Commerce Intelligence] compte comprenant la licence, l’ajout et la suppression d’utilisateurs, ainsi que la gestion des tâches administratives essentielles.
+- [Utilisateur de données](data-user.md) : vous utilisez les données pour vous aider à prendre des décisions commerciales. Vous pouvez recevoir des rapports et des tableaux de bord d’un analyste de données de votre équipe, mais vous souhaitez également apprendre à créer ces rapports et tableaux de bord.
+- [Analyste de données](data-analyst.md) : vous vous sentez à l’aise dans la conception de requêtes et vous êtes la personne de choix pour l’analyse des données. Vous savez comment trouver des réponses spécifiques à des questions de données et vous souhaitez faciliter l’expérience en libre-service pour vos collègues.
+- Administrateur : vous gérez le compte [!DNL Commerce Intelligence], notamment les licences, l’ajout et la suppression d’utilisateurs, ainsi que la gestion des tâches administratives essentielles.
 
 Outre les workflows basés sur les rôles ci-dessus, ce guide contient également :
 
-- Bonnes pratiques : [!UICONTROL Commerce Intelligence] est une plateforme robuste et flexible, ce qui signifie qu’il existe de nombreuses façons différentes d’effectuer des tâches similaires. Cette section regroupe les [!DNL Commerce Intelligence] méthodes recommandées pour capturer, analyser et visualiser vos données.
+- Bonnes pratiques : [!UICONTROL Commerce Intelligence] est une plateforme robuste et flexible qui permet d’effectuer des tâches similaires de différentes manières. Cette section rassemble les méthodes [!DNL Commerce Intelligence] recommandées pour capturer, analyser et afficher vos données.
 - Tutorials : Suivez ces tutoriels autonomes pour découvrir la puissance de [!DNL Commerce Intelligence].
 
 ## Accès à l’aide
 
-Contactez le [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si vous avez des questions et souhaitez profiter de certains de vos services professionnels ou si vous rencontrez des problèmes avec votre compte.
+Contactez l’ [équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si vous avez des questions et souhaitez profiter de certains de vos services professionnels ou si vous rencontrez des problèmes avec votre compte.
 
 ### Stratégies de service
 
-Voir [liste des services fournis par l’équipe d’assistance clientèle](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Consultez la [liste des services que l’équipe d’assistance clientèle fournit](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Envoi d’un ticket d’assistance
 
-Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter l’équipe d’assistance, Adobe vous demande d’utiliser la variable [instructions relatives aux tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
+Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter l’équipe d’assistance, Adobe vous demande d’utiliser les [ instructions relatives aux tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
 
 ## Documentation disponible
 
 | Ressource de documentation | Description |
 |----------------------- | ----------- |
-| [Documentation du marché Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
-| [Documentation des services pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | Documentation pour prendre en charge un ensemble de services qui aident les marchands à intégrer les composants clés de leur entreprise à leur magasin. |
+| [ {Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
+| [Documentation sur les services pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | Documentation pour prendre en charge un ensemble de services qui aident les marchands à intégrer les composants clés de leur entreprise à leur magasin. |
 | [Guides opérationnels Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Documentation système sur les concepts, processus, outils et bonnes pratiques permettant de développer, déployer et gérer des projets déployés sur des plateformes Adobe Commerce et Magento Open Source. |
-| [Documentation destinée aux développeurs Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |
+| [Documentation pour les développeurs Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |
 
 {style="table-layout:auto"}

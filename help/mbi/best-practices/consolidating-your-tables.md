@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Si vous utilisez plusieurs fronts de magasins ou sur plusieurs marchés, vous pouvez avoir des bases de données similaires stockées séparément. Dans [!DNL Adobe Commerce Intelligence], il est facile de consolider des tables similaires à partir de différentes bases de données.
 
-Par exemple, vous pouvez avoir une `orders` table pour `Market A`, et un `orders` table pour `Market B`. [!DNL Commerce Intelligence] peut consolider les deux tableaux et vous permettre de consulter les données de l’ordre des agrégats des deux `Market A` et `B`, en plus de la segmenter selon un marché spécifique.
+Par exemple, vous pouvez avoir une table `orders` pour `Market A` et une table `orders` similaire pour `Market B`. [!DNL Commerce Intelligence] peut consolider les deux tables et vous permettre de consulter les données de commande agrégées des `Market A` et `B`, en plus de les segmenter par marché spécifique.
 
-Pour que la consolidation des tables fonctionne, les tables d’entrée doivent être **structurée de manière similaire**. En d’autres termes, tous les tableaux d’entrée doivent contenir les colonnes de données requises dans le tableau consolidé.
+Pour que la consolidation des tables fonctionne, les tables d’entrée doivent être **structurées de manière similaire**. En d’autres termes, tous les tableaux d’entrée doivent contenir les colonnes de données requises dans le tableau consolidé.
 
 Cette rubrique décrit certains des cas d’utilisation les plus courants pour les tableaux consolidés et les étapes suivantes nécessaires à la création des vôtres.
 
@@ -29,7 +29,7 @@ L’exemple suivant indique à quel moment il peut être approprié d’utiliser
 
 Si vous vendez vos produits sous différentes marques et différents sites web, il est probable que les tableaux de chaque marque ou site web soient structurés de la même manière.
 
-Par exemple, vous pouvez avoir une `orders` tableau pour le site web `A` et un autre, mais similaire, `orders` tableau pour le site web `B`. Dans ce cas, il peut s’avérer utile de consolider le `orders` tableaux du site web `A` et `B`. Vous pouvez ainsi consulter les recettes consolidées et le nombre de commandes provenant du site web. `A` et `B`, en plus de pouvoir segmenter les mesures en fonction de ces deux sites web.
+Par exemple, vous pouvez avoir une table `orders` pour le site web `A` et une table `orders` distincte, mais similaire, pour le site web `B`. Dans ce cas, il peut être utile de consolider les tables `orders` des sites web `A` et `B`. Vous pouvez ainsi consulter les recettes consolidées et le nombre de commandes provenant des sites web `A` et `B`, en plus de pouvoir segmenter les mesures par ces deux sites web.
 
 ### Intégration de données héritées
 
@@ -49,4 +49,4 @@ Si vous souhaitez ajouter une table consolidée à votre Data Warehouse, contact
 
 >[!NOTE]
 >
->Parce que les tableaux consolidés ne sont pas visibles dans la variable `Data Warehouse Manager`, l’affichage et la mise à jour de ces tableaux ne peuvent être effectués que par [!DNL Commerce Intelligence] la prise en charge.
+>Comme les tables consolidées ne sont pas visibles dans `Data Warehouse Manager`, l’affichage et la mise à jour de ces tables ne peuvent être effectués que par la prise en charge de [!DNL Commerce Intelligence].

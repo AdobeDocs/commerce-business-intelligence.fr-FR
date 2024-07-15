@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 2%
+source-wordcount: '1177'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Vous demandez-vous quel impact a l’offre de coupons sur votre activité ? Vous
 
 ## Mesures recommandées {#metrics}
 
-Lorsque vous analysez l’utilisation des coupons, pensez à utiliser ([ou construction](../../data-user/reports/ess-manage-data-metrics.md)) ces mesures :
+Lors de l’analyse de l’utilisation des coupons, pensez à utiliser ([ou à créer](../../data-user/reports/ess-manage-data-metrics.md)) ces mesures :
 
 ### Nombre de commandes
 
@@ -65,26 +65,26 @@ Cette mesure permet d’évaluer la fidélité et les recettes moyennes génér�
 
 Maintenant que vous savez quelles mesures examiner, prenez un exemple impliquant trois bons différents : 10 % de réduction, 20 $ de 100 $ ou plus et 10 $ de remise.
 
-| **Bon** | **Nombre de commandes** | **Chiffre d’affaires brut** | **Remises brutes sur les coupons** | **Chiffre d’affaires net** | **Pourcentage de réduction** |
+| **Coupon** | **# de commandes** | **Chiffre d&#39;affaires brut** | **Remises brutes des coupons** | **Chiffre d’affaires net** | **Pourcentage de réduction** |
 |-----|-----|-----|-----|-----|-----|
-| **10 % de remise** | 79 | $19,757.02 | $1,975.70 | $17,781.32 | 10.00% |
-| **20 $ sur plus de 100 $** | 101 | $13,928.91 | $2,020.00 | $11,908.91 | 14.50% |
-| **10 $ de réduction** | 201 | $14,542.35 | $2,010.00 | $12,532.35 | 13.82% |
+| **10 % de remise** | 79 | 19 757,02 $ | 1 975,70 $ | 17 781,32 $ | 10,00 % |
+| **$20 sur $100+** | 101 | 13 928,91 $ | 2 020,00 $ | 11 908,91 $ | 14,50 % |
+| **$10 off** | 201 | 14 542,35 $ | 2 010,00 $ | 12 532,35 $ | 13,82 % |
 
 {style="table-layout:auto"}
 
 
-| **Bon** | **Durée valeur nette de la commande** | **Durée réduction sur commande** | **Acheteurs distincts** | **Durée revenu total** |
+| **Coupon** | **Durée valeur de commande nette** | **Durée remise de commande** | **{acheteurs distincts** | **Durée revenu de durée de vie** |
 |-----|-----|-----|-----|-----|
-| **10 % de remise** | $225.08 | $25.01 | 79 | $361.50 |
-| **20 $ sur plus de 100 $** | $117.91 | $20.00 | 95 | $218.76 |
-| **10 $ de réduction** | $62.35 | $10.00 | 199 | $84.27 |
+| **10 % de remise** | 225,08 $ | 25,01 $ | 79 | 361,50 $ |
+| **$20 sur $100+** | 117,91 $ | 20,00 $ | 95 | 218,76 $ |
+| **$10 off** | 62,35 $ | 10,00 $ | 199 | 84,27 $ |
 
 {style="table-layout:auto"}
 
 ## Que pouvez-vous en retirer ?
 
-Environ 80 commandes ont été passées avec le coupon &quot;10 % de réduction&quot;, 100 commandes avec le coupon &quot;20 $ de moins 100 $&quot; et 200 commandes avec le coupon &quot;10 $ de réduction&quot;. La variable **nombre de commandes** Les attributs associés à chaque coupon peuvent varier en fonction de plusieurs facteurs, notamment :
+Environ 80 commandes ont été passées avec le coupon &quot;10 % de réduction&quot;, 100 commandes avec le coupon &quot;20 $ de moins 100 $&quot; et 200 commandes avec le coupon &quot;10 $ de réduction&quot;. Le **nombre de commandes** associé à chaque coupon peut varier en fonction de plusieurs facteurs, notamment :
 
 * la durée pendant laquelle les coupons ont été proposés.
 * l’heure du jour/de la semaine/du mois/de l’année où les bons ont été proposés.
@@ -97,15 +97,15 @@ Environ 80 commandes ont été passées avec le coupon &quot;10 % de réduction&
 
 * le comportement d’achat typique du client.
 
-Lorsque la variable **remises brutes** pour les trois coupons sont similaires (environ 2 000 $), le nombre de commandes pour chaque coupon est différent. L’analyse des remises par commande permet d’expliquer les raisons de ces nombres contrastés. Le coupon &quot;10 % de réduction&quot; a le moins de commandes, mais un **réduction moyenne des commandes** de 25 dollars environ. Bien que ce coupon ait un petit nombre de commandes, sa valeur de remise moyenne élevée entraîne un montant de remise brut d’environ 2 000 $.
+Bien que les **remises brutes** pour les trois coupons soient similaires (environ 2 000 $), le nombre de commandes pour chaque coupon est différent. L’analyse des remises par commande permet d’expliquer les raisons de ces nombres contrastés. Le coupon &quot;10 % de réduction&quot; a le moins de commandes, mais une **remise moyenne de commande** d’environ 25 $. Bien que ce coupon ait un petit nombre de commandes, sa valeur de remise moyenne élevée entraîne un montant de remise brut d’environ 2 000 $.
 
-**Chiffre d&#39;affaires brut et net** fournissent une idée globale de la valeur complète des commandes associées à chaque coupon. Toutefois, cette image globale ne permet pas de comprendre les différents comportements liés à chaque coupon. Une fois que vous observez la base de la commande, vous pouvez constater que le coupon &quot;10 % de réduction&quot; a une valeur élevée. **commande nette moyenne** qui, à son tour, mène à sa valeur élevée **revenu net**.
+**Le chiffre d&#39;affaires brut et le chiffre d&#39;affaires net** donnent une idée globale de la valeur totale des commandes associées à chaque coupon. Toutefois, cette image globale ne permet pas de comprendre les différents comportements liés à chaque coupon. Une fois que vous observez la base de la commande, vous pouvez constater que le coupon &quot;10 % de réduction&quot; a une valeur **moyenne de commande nette** élevée, ce qui à son tour entraîne son **chiffre d&#39;affaires net** élevé.
 
-En revanche, le coupon &quot;10 % de réduction&quot; a une valeur de remise moyenne élevée (25,01 $), mais la plus faible **pourcentage actualisé**. Cela est logique lorsque vous tenez compte de sa valeur de commande nette moyenne de 225,08 $. Le coupon &quot;10 % de réduction&quot; a une faible remise d’un bon de remise d’une grande valeur moyenne nette de la commande, donc la remise moyenne de la commande est un grand montant.
+D’un autre côté, le coupon &quot;10 % de réduction&quot; a une valeur de remise moyenne élevée (25,01 $), mais le plus faible **pourcentage de remise**. Cela est logique lorsque vous tenez compte de sa valeur de commande nette moyenne de 225,08 $. Le coupon &quot;10 % de réduction&quot; a une faible remise d’un bon de remise d’une grande valeur moyenne nette de la commande, donc la remise moyenne de la commande est un grand montant.
 
-Consultez la **acheteurs distincts** et **revenu moyen** pour chaque coupon. Le coupon &quot;10 % de réduction&quot; a le même nombre de commandes que les acheteurs distincts. Cela peut être dû au fait que chaque client est limité à un coupon. D’un autre côté, les coupons &quot;$20 de 100 $ ou plus&quot; et &quot;$10 de moins&quot; ont moins d’acheteurs distincts que le nombre de commandes, ce qui implique que certains clients ont utilisé ces coupons plusieurs fois.
+Regardez les **acheteurs distincts** et les **recettes de durée de vie moyenne** pour chaque coupon. Le coupon &quot;10 % de réduction&quot; a le même nombre de commandes que les acheteurs distincts. Cela peut être dû au fait que chaque client est limité à un coupon. D’un autre côté, les coupons &quot;$20 de 100 $ ou plus&quot; et &quot;$10 de moins&quot; ont moins d’acheteurs distincts que le nombre de commandes, ce qui implique que certains clients ont utilisé ces coupons plusieurs fois.
 
-Pour les recettes de durée de vie moyenne, vous pouvez constater que la moyenne des recettes sur la durée de vie de chaque coupon est supérieure aux recettes respectives. **commande nette moyenne** . Cela signifie que les clients ont effectué des achats répétés et/ou que leur valeur de commande était beaucoup plus élevée que la valeur de commande nette moyenne.
+Pour les recettes de durée de vie moyenne, vous pouvez constater que les recettes de durée de vie moyenne pour chaque coupon sont supérieures à la valeur **moyenne de la commande nette** correspondante. Cela signifie que les clients ont effectué des achats répétés et/ou que leur valeur de commande était beaucoup plus élevée que la valeur de commande nette moyenne.
 
 ## Que puis-je analyser d&#39;autre ? {#otheranalyses}
 

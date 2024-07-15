@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # Supprimer un graphique d’un tableau de bord
 
-Pour supprimer un graphique d’un tableau de bord, cliquez sur l’engrenage (![](../../assets/gear-icon.png)) dans le coin supérieur droit du graphique, puis cliquez sur **[!UICONTROL Remove from Dashboard]**.
+Pour supprimer un graphique d’un tableau de bord, cliquez sur l’icône d’engrenage (![](../../assets/gear-icon.png)) dans le coin supérieur droit du graphique, puis cliquez sur **[!UICONTROL Remove from Dashboard]**.
 
 >[!NOTE]
 >
->La suppression d’un graphique n’est pas la même chose que [la supprimer](../../data-user/dashboards/delete-chart.md). En outre, [un graphique peut être lu dans un tableau de bord ;](../../data-user/dashboards/add-charts-dashboard.md) à tout moment.
+>La suppression d&#39;un graphique n&#39;est pas la même chose que [sa suppression](../../data-user/dashboards/delete-chart.md). En outre, [un graphique peut être lu dans un tableau de bord](../../data-user/dashboards/add-charts-dashboard.md) à tout moment.
 
-![supprimer le graphique](../../assets/Removing_Charts_from_Dashboards.gif)
+![remove chart](../../assets/Removing_Charts_from_Dashboards.gif)

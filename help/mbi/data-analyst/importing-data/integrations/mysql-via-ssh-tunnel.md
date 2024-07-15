@@ -1,62 +1,62 @@
 ---
-title: Connexion [!DNL MySQL] via le tunnel SSH
-description: Découvrez comment vous connecter [!DNL MySQL] via le tunnel SSH.
+title: Connexion  [!DNL MySQL]  via un tunnel SSH
+description: Découvrez comment se connecter à  [!DNL MySQL] via le tunnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
-# Connexion [!DNL MySQL] via [!DNL SSH Tunnel]
+# Connecter [!DNL MySQL] via [!DNL SSH Tunnel]
 
-* [Récupération de la variable [!DNL Commerce Intelligence] clé publique](#retrieve)
-* [Autoriser l’accès au [!DNL Commerce Intelligence] Adresse IP](#allowlist)
+* [Récupération de la clé publique  [!DNL Commerce Intelligence] ](#retrieve)
+* [Autoriser l’accès à l’adresse IP  [!DNL Commerce Intelligence] ](#allowlist)
 * [Création d’un utilisateur Linux pour [!DNL Commerce Intelligence]](#linux)
-* [Créez un [!DNL MySQL] user pour [!DNL Commerce Intelligence]](#mysql)
-* [Saisissez les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]](#finish)
+* [Créer un  [!DNL MySQL] utilisateur pour [!DNL Commerce Intelligence]](#mysql)
+* [Saisissez les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence].](#finish)
 
 ## ACCÉDER À
 
 * [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-Pour connecter votre [!DNL MySQL] vers la base de données [!DNL Commerce Intelligence] via un `SSH tunnel`, vous devez effectuer quelques opérations :
+Pour connecter votre base de données [!DNL MySQL] à [!DNL Commerce Intelligence] via un `SSH tunnel`, vous devez effectuer les opérations suivantes :
 
-1. Récupération de la variable [!DNL Commerce Intelligence] `public key`
-1. Autoriser l’accès au [!DNL Commerce Intelligence] `IP address`
-1. Créez un `Linux` user pour [!DNL Commerce Intelligence]
-1. Créez un `MySQL` user pour [!DNL Commerce Intelligence]
-1. Saisissez les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]
+1. Récupérez le [!DNL Commerce Intelligence] `public key`
+1. Autoriser l&#39;accès à [!DNL Commerce Intelligence] `IP address`
+1. Créer un utilisateur `Linux` pour [!DNL Commerce Intelligence]
+1. Créer un utilisateur `MySQL` pour [!DNL Commerce Intelligence]
+1. Saisissez les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence].
 
 
-## Récupération de la [!DNL Commerce Intelligence] clé publique {#retrieve}
+## Récupération de la clé publique [!DNL Commerce Intelligence] {#retrieve}
 
-La variable `public key` est utilisé pour autoriser la variable [!DNL Commerce Intelligence] `Linux` utilisateur. Dans la section suivante, vous allez créer l’utilisateur et importer la clé.
+`public key` est utilisé pour autoriser l’utilisateur [!DNL Commerce Intelligence] `Linux`. Dans la section suivante, vous allez créer l’utilisateur et importer la clé.
 
 1. Accédez à **[!UICONTROL Manage Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**.
-1. Cliquez sur le bouton `MySQL` Icône
-1. Après la `MySQL credentials` s’ouvre, définissez `Encrypted` bascule vers `Yes`. Le formulaire de configuration SSH s’affiche alors.
-1. La variable `public key` se trouve sous ce formulaire.
+1. Cliquez sur l’icône `MySQL` .
+1. Une fois la page `MySQL credentials` ouverte, définissez le bouton bascule `Encrypted` sur `Yes`. Le formulaire de configuration SSH s’affiche alors.
+1. `public key` se trouve sous ce formulaire.
 
 Laissez cette page ouverte tout au long du tutoriel. Vous en aurez besoin dans la section suivante et à la fin.
 
-Voici comment naviguer [!DNL Commerce Intelligence] pour récupérer la clé :
+Voici comment parcourir [!DNL Commerce Intelligence] pour récupérer la clé :
 
 ![](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
-## Autoriser l’accès au [!DNL Commerce Intelligence] Adresse IP {#allowlist}
+## Autoriser l’accès à l’adresse IP [!DNL Commerce Intelligence] {#allowlist}
 
-Pour que la connexion soit établie, vous devez configurer votre pare-feu pour autoriser l’accès à partir de vos adresses IP. Ils sont `54.88.76.97` et `34.250.211.151` mais ils sont également sur la `MySQL credentials` page. Voir la zone bleue dans le GIF ci-dessus.
+Pour que la connexion soit établie, vous devez configurer votre pare-feu pour autoriser l’accès à partir de vos adresses IP. Ils sont `54.88.76.97` et `34.250.211.151` mais ils se trouvent également sur la page `MySQL credentials`. Voir la zone bleue dans le GIF ci-dessus.
 
-## Création d’un [!DNL Linux] user pour [!DNL Commerce Intelligence] {#linux}
+## Création d’un utilisateur [!DNL Linux] pour [!DNL Commerce Intelligence] {#linux}
 
-Il peut s’agir d’une machine de production ou secondaire, à condition qu’elle contienne des données en temps réel (ou fréquemment mises à jour). Vous pouvez [restreindre cet utilisateur](../../../administrator/account-management/restrict-db-access.md) de toute façon, tant qu’il conserve le droit de se connecter à la variable `MySQL` serveur.
+Il peut s’agir d’une machine de production ou secondaire, à condition qu’elle contienne des données en temps réel (ou fréquemment mises à jour). Vous pouvez [restreindre cet utilisateur](../../../administrator/account-management/restrict-db-access.md) comme vous le souhaitez, à condition qu&#39;il conserve le droit de se connecter au serveur `MySQL`.
 
-1. Pour ajouter le nouvel utilisateur, exécutez les commandes suivantes en tant que root sur votre [!DNL Linux] server :
+1. Pour ajouter le nouvel utilisateur, exécutez les commandes suivantes en tant que root sur votre serveur [!DNL Linux] :
 
 ```bash
         adduser rjmetric -p<password>
@@ -64,16 +64,16 @@ Il peut s’agir d’une machine de production ou secondaire, à condition qu’
         mkdir /home/rjmetric/.ssh
 ```
 
-1. Mémoriser `public key` avez-vous récupéré dans la première section ? Pour vous assurer que l’utilisateur a accès à la base de données, vous devez importer la clé dans `authorized\_keys`.
+1. Vous vous souvenez du `public key` que vous avez récupéré dans la première section ? Pour vous assurer que l’utilisateur a accès à la base de données, vous devez importer la clé dans `authorized\_keys`.
 
-   Copiez la clé entière dans le `authorized\_keys` comme suit :
+   Copiez la clé entière dans le fichier `authorized\_keys` comme suit :
 
 ```bash
         touch /home/rjmetric/.ssh/authorized_keys
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. Pour terminer la création de l’utilisateur, modifiez les autorisations de la variable `/home/rjmetric` pour autoriser l’accès via `SSH`:
+1. Pour terminer la création de l’utilisateur, modifiez les autorisations du répertoire `/home/rjmetric` afin d’autoriser l’accès via `SSH` :
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -83,38 +83,38 @@ Il peut s’agir d’une machine de production ou secondaire, à condition qu’
 
 >[!IMPORTANT]
 >
->Si la variable `sshd\_config` Le fichier associé au serveur n’est pas défini sur l’option par défaut, seuls certains utilisateurs disposent d’un accès au serveur, ce qui empêche une connexion réussie à [!DNL Commerce Intelligence]. Dans ce cas, il est nécessaire d’exécuter une commande comme `AllowUsers` pour autoriser le `rjmetric` accès utilisateur au serveur.
+>Si le fichier `sshd\_config` associé au serveur n’est pas défini sur l’option par défaut, seuls certains utilisateurs disposent d’un accès au serveur, ce qui empêche une connexion réussie à [!DNL Commerce Intelligence]. Dans ce cas, il est nécessaire d’exécuter une commande du type `AllowUsers` pour permettre à l’utilisateur `rjmetric` d’accéder au serveur.
 
-## Création d’un [!DNL MySQL] user pour [!DNL Commerce Intelligence] {#mysql}
+## Création d’un utilisateur [!DNL MySQL] pour [!DNL Commerce Intelligence] {#mysql}
 
-Votre organisation peut nécessiter un processus différent, mais la méthode la plus simple pour créer cet utilisateur consiste à exécuter la requête suivante lorsqu’elle est connectée. [!DNL MySQL] en tant qu’utilisateur disposant du droit d’accorder des privilèges :
+Votre organisation peut nécessiter un processus différent, mais la méthode la plus simple pour créer cet utilisateur consiste à exécuter la requête suivante lorsqu’elle est connectée à [!DNL MySQL] en tant qu’utilisateur ayant le droit d’accorder des privilèges :
 
 ```sql
     GRANT SELECT ON *.* TO 'rjmetric'@'localhost' IDENTIFIED BY '<secure password here>';
 ```
 
-Remplacer `secure password here` avec un mot de passe sécurisé, qui peut différer de la variable `SSH` password.
+Remplacez `secure password here` par un mot de passe sécurisé, qui peut être différent du mot de passe `SSH`.
 
 Pour empêcher cet utilisateur d’accéder aux données de bases de données, tables ou colonnes spécifiques, vous pouvez exécuter des requêtes GRANT qui autorisent uniquement l’accès aux données que vous autorisez.
 
 ## Saisie des informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence] {#finish}
 
-Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté le `MySQL credentials` ouverture de la page ? Dans le cas contraire, accédez à **[!UICONTROL Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis la variable [!DNL MySQL] Icône N’oubliez pas de définir la variable `Encrypted` bascule vers `Yes`.
+Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous laissé la page `MySQL credentials` ouverte ? Dans le cas contraire, accédez à **[!UICONTROL Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis sur l’icône [!DNL MySQL]. N’oubliez pas de définir la bascule `Encrypted` sur `Yes`.
 
-Renseignez les informations suivantes dans cette page, en commençant par le `Database Connection` section :
+Renseignez les informations suivantes dans cette page, en commençant par la section `Database Connection` :
 
-* `Username`: nom d’utilisateur de la variable [!DNL Commerce Intelligence] [!DNL MySQL] user
-* `Password`: mot de passe de la variable [!DNL Commerce Intelligence] [!DNL MySQL] user
-* `Port`: [!DNL MySQL] port sur votre serveur (3306 par défaut)
-* `Host` Par défaut, il s’agit de localhost. En général, il s’agit de la valeur de l’adresse de liaison pour votre [!DNL MySQL] server, qui est, par défaut, `127.0.0.1 (localhost)`, mais peut également être une adresse réseau locale (par exemple, `192.168.0.1`) ou l’adresse IP publique de votre serveur.
+* `Username` : nom d’utilisateur de l’utilisateur [!DNL Commerce Intelligence] [!DNL MySQL]
+* `Password` : mot de passe de l’utilisateur [!DNL Commerce Intelligence] [!DNL MySQL]
+* `Port` : [!DNL MySQL] port sur votre serveur (3306 par défaut)
+* `Host` Par défaut, il s’agit de localhost. En général, il s’agit de la valeur de l’adresse de liaison de votre serveur [!DNL MySQL], qui par défaut est `127.0.0.1 (localhost)`, mais qui peut également être une adresse réseau locale (par exemple, `192.168.0.1`) ou l’adresse IP publique de votre serveur.
 
-  La valeur se trouve dans votre `my.cnf` (situé à l’emplacement `/etc/my.cnf`) sous la ligne qui indique : `\[mysqld\]`. Si la ligne d’adresse de liaison est commentée dans ce fichier, votre serveur est sécurisé suite à des tentatives de connexion externes.
+  La valeur se trouve dans votre fichier `my.cnf` (situé à l’emplacement `/etc/my.cnf`) sous la ligne qui indique `\[mysqld\]`. Si la ligne d’adresse de liaison est commentée dans ce fichier, votre serveur est sécurisé suite à des tentatives de connexion externes.
 
-Dans le `SSH Connection` section :
+Dans la section `SSH Connection` :
 
-* `Remote Address`: adresse IP ou nom d’hôte du serveur [!DNL Commerce Intelligence] tunnel into
-* `Username`: nom d’utilisateur de la variable [!DNL Commerce Intelligence] SSH ([!DNL Linux]) user
-* `SSH Port`: port SSH sur votre serveur (22 par défaut)
+* `Remote Address` : l’adresse IP ou le nom d’hôte du serveur [!DNL Commerce Intelligence] va s’introduire dans
+* `Username` : nom d’utilisateur de l’utilisateur [!DNL Commerce Intelligence] SSH ([!DNL Linux])
+* `SSH Port` : port SSH sur votre serveur (22 par défaut)
 
 Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save & Test]** pour terminer la configuration.
 

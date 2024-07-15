@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 1%
+source-wordcount: '849'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Cette rubrique explore les analyses qui peuvent vous aider à répondre aux questions suivantes.
 
-Parmi les clients qui achètent une *élément spécifique*,
+Parmi les clients qui achètent un *article spécifique*,
 
 * Quelle est la probabilité qu&#39;ils effectuent un autre achat ?
 * Combien de temps leur faut-il pour faire un autre achat ?
@@ -46,11 +46,11 @@ Cette mesure indique la fréquence de commande du client ou le temps nécessaire
 
 En gardant à l’esprit les mesures ci-dessus, prenez un exemple concernant les produits à base de café.
 
-| **Nom du produit** | **Probabilité de répétition de l’ordre** | **Nombre moyen de commandes pendant la durée de vie** | **Chiffre d’affaires moyen de la durée de vie** | **Temps moyen jusqu’à la commande suivante** |
+| **Nom du produit** | **Probabilité de répétition de l’ordre** | **Nombre moyen de commandes sur toute la durée de vie** | **Chiffre d’affaires moyen de la durée de vie** | **Temps médian jusqu’à la commande suivante** |
 |-----|-----|-----|-----|-----|
-| Passe-café en une tasse | 94.98% | 7.92 | $549.82 | 57,01 jours |
-| Capsules de café | 93.82% | 8.68 | $479.98 | 63,48 jours |
-| Les fèves de café | 41.92% | 6.07 | $99.82 | 27,31 jours |
+| Passe-café en une tasse | 94,98 % | 7,92 | 549,82 $ | 57,01 jours |
+| Capsules de café | 93,82 % | 8,68 | 479,98 $ | 63,48 jours |
+| Les fèves de café | 41,92 % | 6,07 | 99,82 $ | 27,31 jours |
 
 {style="table-layout:auto"}
 
@@ -76,10 +76,10 @@ Parmi les clients qui ont acheté des capsules de café, la moitié font une com
 
 ## Quelles autres analyses puis-je construire ?
 
-En utilisant les mesures décrites dans cette rubrique, vous pouvez également créer d’autres analyses de réachat utiles. Par exemple, vous pouvez également voir comment les clients effectuent un rachat **le même élément ;** - par exemple, s’ils achètent des renforts régulièrement. Les capsules et les haricots peuvent être achetés régulièrement, mais il serait inattendu que les clients effectuent des achats répétés du brasseur de café. Si votre entreprise se concentre sur les rechargements ou le redémarrage, cette analyse serait utile.
+En utilisant les mesures décrites dans cette rubrique, vous pouvez également créer d’autres analyses de réachat utiles. Par exemple, vous pouvez également voir comment les clients rachètent **le même article**, par exemple, s’ils achètent des rechargements régulièrement. Les capsules et les haricots peuvent être achetés régulièrement, mais il serait inattendu que les clients effectuent des achats répétés du brasseur de café. Si votre entreprise se concentre sur les rechargements ou le redémarrage, cette analyse serait utile.
 
 Outre l’analyse du comportement de réachat de vos clients, vous pouvez également créer des analyses portant sur la fidélité de vos clients. Envisagez d’analyser les schémas de perte de clientèle : où vos clients quittent votre site et ne reviennent pas ? À quelle vitesse cela se produit-il ?
 
-Une fois que vous avez identifié les raisons de l’attrition, vous pouvez utiliser votre analyse pour créer une `reactivation` campaign. Grâce à ces données, vous pouvez identifier les utilisateurs devenus inactifs, la durée écoulée depuis leur dernière visite, le dernier achat effectué, etc. Cela vous permet de prendre des décisions pratiques qui incitent vos clients à revenir.
+Une fois que vous avez identifié la raison de l’attrition, vous pouvez utiliser votre analyse pour créer une campagne `reactivation`. Grâce à ces données, vous pouvez identifier les utilisateurs devenus inactifs, la durée écoulée depuis leur dernière visite, le dernier achat effectué, etc. Cela vous permet de prendre des décisions pratiques qui incitent vos clients à revenir.
 
-Pour obtenir de l’aide sur l’analyse, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Pour obtenir de l’aide sur l’analyse, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

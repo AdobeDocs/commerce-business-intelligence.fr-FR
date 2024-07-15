@@ -17,8 +17,8 @@ Il est simple de mettre à jour les nouveaux utilisateurs à grande vitesse.
 
 ## Nouvel utilisateur
 
-Une fois qu’un nouvel utilisateur a créé son mot de passe, une liste des tableaux de bord partagés les plus populaires s’affiche. Ils peuvent sélectionner les tableaux de bord à afficher dans leur tableau de bord et cliquer sur **[!UICONTROL Done]**.
+Une fois qu’un nouvel utilisateur a créé son mot de passe, une liste des tableaux de bord partagés les plus populaires s’affiche. Ils peuvent sélectionner les tableaux de bord à afficher sur leur tableau de bord et cliquer sur **[!UICONTROL Done]**.
 
 ## Utilisateurs existants
 
-Pour afficher à nouveau la liste des tableaux de bord partagés, les utilisateurs peuvent cliquer sur **[!UICONTROL Find]** dans le `Global Search` .
+Pour afficher à nouveau la liste des tableaux de bord partagés, les utilisateurs peuvent cliquer sur **[!UICONTROL Find]** dans le menu `Global Search`.

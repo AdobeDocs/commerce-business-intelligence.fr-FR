@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 2%
+source-wordcount: '1382'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,9 @@ L’analyse de la manière dont les clients utilisent vos coupons peut fournir d
 * En quoi le revenu moyen sur la durée de vie diffère-t-il entre les clients rachetés par des coupons et les clients non rachetés par des coupons ?
 * Les clients achetés à partir de coupons effectuent-ils des achats répétés avec des coupons ?
 
-Répondez à ces questions en vous concentrant sur [comparaison des clients ayant souscrit des coupons avec les clients n&#39;ayant pas obtenu de bons](#compare), [analyse des détails de première commande à partir des acquisitions de coupons](#firstorder), et [examiner les attributs des clients qui utilisent des bons dans leur première commande.](#attributes)
+Répondez à ces questions en vous concentrant sur la [comparaison des clients ayant acheté des coupons avec des clients n’ayant pas acheté des coupons](#compare), l’ [ analyse des détails de première commande à partir des acquisitions de coupons](#firstorder) et la [consultation des attributs des clients qui utilisent des coupons dans leur première commande](#attributes).
 
-Prise en main!
+Commencez !
 
 ## Comparaison des clients ayant obtenu un bon et des clients n’ayant pas obtenu un bon {#compare}
 
@@ -46,10 +46,10 @@ Cela indique le nombre de commandes répétées effectuées avec un coupon appli
 
 Comparez les mesures d’acquisition de coupons à celles des autres types de données :
 
-| **Acquisition client** | **Nombre de nouveaux clients** | **Chiffre d’affaires moyen** | **Nombre de commandes répétées** | **Nombre de commandes répétées avec coupon** | **% des commandes répétées avec coupon** |
+| **Acquisition client** | **Nombre de nouveaux clients** | **Chiffre d’affaires moyen de la durée de vie** | **Nombre de commandes répétées** | **Nombre de commandes répétées avec coupon** | **% des commandes répétées avec coupon** |
 |-----|-----|-----|-----|-----|-----|
-| Bon | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
-| Non-coupon | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
+| Bon | 1 206 | 356,91 $ | 2 570 | 1 248 | 48,56 % |
+| Non-coupon | 11 561 | 498,30 $ | 20 145 | 3 251 | 16,14 % |
 
 {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ Les clients non-coupon acquis ont un pourcentage beaucoup plus faible de command
 
 ## Analyse des détails de première commande à partir des acquisitions de coupons {#firstorder}
 
-Cette section porte uniquement sur **les premières commandes issues des acquisitions de coupons, segmentées par coupon.** Utilisez ces mesures dans votre analyse :
+Cette section se concentre uniquement sur les **premières commandes issues des acquisitions de coupons, segmentées par coupon.** Utilisez ces mesures dans votre analyse :
 
 ### Nombre de commandes/clients
 
@@ -109,11 +109,11 @@ Cette mesure permet d’évaluer la fidélité et les recettes moyennes génér�
 
 Examinez maintenant un exemple impliquant trois bons différents utilisés pour la première commande d’un client :
 
-| **Bon** | **Premières commandes (FTO)** | **Chiffre d&#39;affaires brut de FTO** | **Remises appliquées à FTO** | **Chiffre d’affaires net de FTO** | **Valeur de commande moyenne pour FTO** |
+| **Coupon** | **Premières commandes (FTO)** | **Chiffre d&#39;affaires brut de FTO** | **Remises appliquées à FTO** | **Chiffre d’affaires net de FTO** | **Valeur de commande moyenne pour FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25 % de remise de 100 $ ou plus** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
-| **10 $ de réduction** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
-| **20 % de remise** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
+| **25 % de remise de 100 $ ou plus** | 56 | 8 531,04 $ | 2 132,76 $ | 6 398,28 $ | 152,34 $ |
+| **$10 off** | 87 | 3 707,07 $ | 426,10 $ | 3 280,97 $ | 42,61 $ |
+| **20 % de remise** | 145 | 10 975,05 $ | 2 195,01 $ | 8 780,04 $ | 75,69 $ |
 
 {style="table-layout:auto"}
 
@@ -124,31 +124,31 @@ Que peut-on en tirer ? Tout d’abord, le coupon &quot;20 % de réduction&quot; 
 * l’heure du jour/de la semaine/du mois/de l’année où les bons ont été proposés.
 * la saison pendant laquelle les coupons ont été proposés, en fonction de l&#39;activité.
 
-  **Exemple :** le coupon &quot;20% de réduction&quot; a été proposé pendant les mois d&#39;été, mais l&#39;entreprise vend des vêtements d&#39;hiver.
+  **Exemple :** le coupon &quot;20 % de réduction&quot; a été offert pendant les mois d’été, mais l’entreprise vend des vêtements d’hiver.
 * les restrictions sur les coupons.
 
-  **Exemple :** le coupon &quot;10% de réduction&quot; n&#39;est proposé qu&#39;aux clients qui achètent un manteau d&#39;hiver dans la même commande.
+  **Exemple :** le coupon &quot;10 % de réduction&quot; n’est offert qu’aux clients qui achètent un manteau d’hiver dans la même commande.
 
-La variable **revenu brut** pour le coupon &quot;25 % de 100 $ ou plus&quot; est beaucoup plus élevé que le revenu brut du coupon &quot;10 $ de réduction&quot;. Cependant, le coupon &quot;$10 off&quot; est beaucoup plus grand. **nombre de commandes**. Analyser la variable **valeur de commande moyenne** fournit des informations sur ces différences. Même si le coupon &quot;25 % de 100 $ ou plus&quot; avait moins de commandes, la valeur de commande moyenne est plus de trois fois supérieure à celle du coupon &quot;10 $ de réduction&quot;. Ainsi, un revenu brut plus élevé est attribué au coupon &quot;25 % de 100 $ ou plus&quot;.
+Le **revenu brut** du coupon &quot;25 % de 100 $ ou plus&quot; est beaucoup plus élevé que le revenu brut du coupon &quot;10 $ de réduction&quot;. Cependant, le coupon &quot;$10 off&quot; a un nombre de commandes **beaucoup plus important**. L’analyse de la **valeur de commande moyenne** permet d’analyser ces différences. Même si le coupon &quot;25 % de 100 $ ou plus&quot; avait moins de commandes, la valeur de commande moyenne est plus de trois fois supérieure à celle du coupon &quot;10 $ de réduction&quot;. Ainsi, un revenu brut plus élevé est attribué au coupon &quot;25 % de 100 $ ou plus&quot;.
 
-La variable **remises** et **revenu net** pour les coupons &quot;25 % de 100 $ ou plus&quot; et &quot;20 % de réduction&quot; sont proches de leur valeur. Même si la valeur de commande moyenne pour &quot;25 % de 100 $ ou plus&quot; est près de deux fois la valeur de commande moyenne pour &quot;20 % de réduction&quot;, ce dernier coupon a un peu moins de trois fois le nombre de commandes.
+Les **remises** et les **recettes nettes** pour les coupons &quot;25 % de remise de 100 $ ou plus&quot; et &quot;20 % de remise&quot; ont une valeur proche. Même si la valeur de commande moyenne pour &quot;25 % de 100 $ ou plus&quot; est près de deux fois la valeur de commande moyenne pour &quot;20 % de réduction&quot;, ce dernier coupon a un peu moins de trois fois le nombre de commandes.
 
 ## Attributs des clients qui utilisent des bons dans leur première commande {#attributes}
 
 Maintenant que vous avez examiné les commandes, consultez les clients qui utilisent des coupons dans leurs premières commandes :
 
-| **Coupon de première commande du client** | **Nombre de clients** | **Durée de vie moyenne des commandes** | **Chiffre d’affaires moyen** |
+| **Coupon de première commande du client** | **Nombre de clients** | **Nombre moyen de commandes pendant la durée de vie** | **Chiffre d’affaires moyen de la durée de vie** |
 |-----|-----|-----|-----|
-| **25 % de remise de 100 $ ou plus** | 56 | 2.8 | $554.54 |
-| **10 $ de réduction** | 87 | 1.9 | $115.50 |
-| **20 % de remise** | 145 | 1.3 | $103.75 |
+| **25 % de remise de 100 $ ou plus** | 56 | 2,8 | 554,54 $ |
+| **$10 off** | 87 | 1,9 | 115,50 $ |
+| **20 % de remise** | 145 | 1,3 | 103,75 $ |
 
 {style="table-layout:auto"}
 
 Vous remarquerez que le nombre de premières commandes est le même que le nombre de clients pour chaque coupon. Cela est logique, car chaque client ne peut avoir qu’une seule première commande.
 
-Le plus grand nombre de clients a été racheté via le coupon &quot;20% de réduction&quot;. Cependant, ces clients ont le plus faible **durée de vie moyenne des commandes** et **revenu moyen**; en règle générale, la plupart des clients achetés par coupon ne font aucune commande répétée. De plus, les clients qui ont obtenu le coupon &quot;25 % de réduction de 100 $ ou plus&quot; sont plus nombreux. **durée de vie moyenne des commandes** et, à leur tour, plus élevé **revenu moyen**. En règle générale, les utilisateurs qui ont été achetés via ce coupon reviennent généralement et effectuent davantage d’achats répétés.
+Le plus grand nombre de clients a été racheté via le coupon &quot;20% de réduction&quot;. Cependant, ces clients ont le **nombre de commandes moyen le plus faible** et le **chiffre d’affaires de durée de vie moyenne** ; en règle générale, la plupart des clients ayant obtenu un coupon n’effectuent aucune commande répétée. En outre, les clients acquis par le biais du coupon &quot;25 % de réduction de 100 $ ou plus&quot; génèrent des **commandes de durée de vie moyenne** plus élevées et, à leur tour, des **recettes de durée de vie moyenne** plus élevées. En règle générale, les utilisateurs qui ont été achetés via ce coupon reviennent généralement et effectuent davantage d’achats répétés.
 
 ## Remplissage {#wrapup}
 
-Vous pouvez créer une multitude d’analyses pour mieux comprendre l’utilisation des bons par vos clients. Avez-vous déjà réfléchi à la manière dont vos clients utilisent vos coupons ou au temps nécessaire à leur utilisation ? Qu’en est-il de la recherche du montant de remise optimal : quel montant encourage les acheteurs réguliers, une valeur de commande moyenne plus élevée et des recettes de durée de vie plus élevées ? Pour obtenir de l’aide sur ces types de questions, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Vous pouvez créer une multitude d’analyses pour mieux comprendre l’utilisation des bons par vos clients. Avez-vous déjà réfléchi à la manière dont vos clients utilisent vos coupons ou au temps nécessaire à leur utilisation ? Qu’en est-il de la recherche du montant de remise optimal : quel montant encourage les acheteurs réguliers, une valeur de commande moyenne plus élevée et des recettes de durée de vie plus élevées ? Pour obtenir de l’aide sur ces types de questions, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

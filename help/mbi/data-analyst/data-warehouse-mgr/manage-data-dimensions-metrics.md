@@ -29,11 +29,11 @@ Pour ajouter une ou plusieurs dimensions à plusieurs mesures à la fois :
 
 1. Sélectionnez la table contenant les dimensions.
 
-1. Dans le `Choose Metric(s) to Add Dimensions` , sélectionnez les mesures auxquelles vous souhaitez ajouter des dimensions. Une fois la sélection effectuée, la fonction `Choose Dimensions to Add` s’affiche à droite. Cochez les dimensions que vous souhaitez ajouter à la mesure sélectionnée.
+1. Dans la colonne `Choose Metric(s) to Add Dimensions`, sélectionnez les mesures auxquelles vous souhaitez ajouter des dimensions. Une fois sélectionnée, la colonne `Choose Dimensions to Add` s’affiche à droite. Cochez les dimensions que vous souhaitez ajouter à la mesure sélectionnée.
 
    ![](../../assets/Add_Dimensions.png)
 
-1. Si vous souhaitez segmenter ou regrouper en fonction de l’une des dimensions de données des rapports, veillez à indiquer qu’elles sont _Groupable_.
+1. Si vous souhaitez segmenter ou regrouper en fonction de l’une des dimensions de données dans les rapports, veillez à indiquer qu’elles sont _Groupable_.
 
 1. Cliquez sur **[!UICONTROL Add]**.
 
@@ -55,30 +55,30 @@ Pour supprimer une ou plusieurs dimensions de plusieurs mesures :
 
 ## Gestion des dimensions dans les mesures
 
-**Pour ajouter une ou plusieurs dimensions à une mesure :**
+**Pour ajouter une ou plusieurs dimensions dans une mesure :**
 
 1. Accédez à **[!UICONTROL Data > Metrics]**.
 
-1. Cliquez sur **[!UICONTROL Edit]** sur la mesure, vous souhaitez une nouvelle dimension.
+1. Cliquez sur **[!UICONTROL Edit]** sur la mesure dont vous souhaitez créer une nouvelle dimension.
 
-1. Dans le `Dimensions` , utilisez la fonction `Add a dimension` pour sélectionner une dimension à ajouter.
+1. Dans la section `Dimensions` , utilisez la liste déroulante `Add a dimension` pour sélectionner une dimension à ajouter.
 
 >[!NOTE]
 >
->Toute dimension dont vous souhaitez filtrer ou regrouper les éléments doit déjà être suivie dans [!DNL Commerce Intelligence]. Si vous ne trouvez pas la dimension souhaitée, vous devrez peut-être commencer le suivi d’une nouvelle colonne de données dans votre base de données via la variable [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
+>Toute dimension dont vous souhaitez filtrer ou regrouper les éléments doit déjà être suivie dans [!DNL Commerce Intelligence]. Si vous ne trouvez pas la dimension souhaitée, vous devrez peut-être commencer le suivi d’une nouvelle colonne de données dans votre base de données via la page [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
 
 
 **Pour supprimer une ou plusieurs dimensions d’une mesure :**
 
 1. Accédez à **[!UICONTROL Manage Data > Metrics]**.
 
-1. Cliquez sur **[!UICONTROL Edit]** sur la mesure, vous souhaitez une nouvelle dimension.
+1. Cliquez sur **[!UICONTROL Edit]** sur la mesure dont vous souhaitez créer une nouvelle dimension.
 
-1. Sous , `Dimensions` , cochez la case dans la colonne de suppression en regard de la ou des dimensions que vous souhaitez supprimer.
+1. Sous la section `Dimensions` , cochez la case dans la colonne de suppression en regard de la ou des dimensions que vous souhaitez supprimer.
 
 >[!NOTE]
 >
->Même après la suppression d’une dimension, elle existe toujours sous la forme d’une colonne sur votre table dans votre Data Warehouse. Vous pouvez la réajouter à n’importe quelle mesure et créer de nouvelles mesures à l’aide de ces dimensions. Pour supprimer la colonne de données à partir de laquelle correspond une dimension [!DNL Commerce Intelligence], il vous suffit d’annuler le suivi de la colonne de données via l’événement [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) page.
+>Même après la suppression d’une dimension, elle existe toujours sous la forme d’une colonne sur votre table dans votre Data Warehouse. Vous pouvez la réajouter à n’importe quelle mesure et créer de nouvelles mesures à l’aide de ces dimensions. Pour supprimer de [!DNL Commerce Intelligence] la colonne de données à laquelle correspond une dimension, il vous suffit d’annuler le suivi de la colonne de données via la page [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) .
 
 ## Documentation connexe
 

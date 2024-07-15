@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
 source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Nouvelle architecture
 
-[!DNL Adobe Commerce Intelligence] Les équipes produit et ingénierie se sont concentrées sur les améliorations les plus radicales et les plus demandées possibles au cours de l’année écoulée. Adobe est ravi d&#39;annoncer la disponibilité d&#39;un nouveau [!DNL Commerce Intelligence] architecture de produit qui rend ces améliorations réelles.
+[!DNL Adobe Commerce Intelligence] Les équipes produit et ingénierie se sont concentrées sur les améliorations les plus radicales et les plus demandées possibles au cours de l’année écoulée. Adobe est ravi d’annoncer la disponibilité d’une nouvelle architecture de produit [!DNL Commerce Intelligence] qui rend ces améliorations concrètes.
 
 ## Avantages de la nouvelle architecture
 
@@ -45,7 +45,7 @@ Une fois cette opération terminée, vous savez quelles données vous devez sync
 
 ### Obtention d’aide
 
-La variable [!DNL Adobe Commerce Intelligence] [Équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) Vous pouvez effectuer votre remise en oeuvre pour un coût supplémentaire. Contactez votre [Équipe du compte Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) et être prêt à fournir une liste de tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte.
+L’ [!DNL Adobe Commerce Intelligence] [équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) peut effectuer votre remise en oeuvre pour un coût supplémentaire. Contactez votre [ équipe de compte d’Adobe ](../../guide-overview.md#Submitting-a-Support-Ticket) et soyez prêt à fournir une liste de tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte.
 
 ### Rester avec l’architecture existante
 

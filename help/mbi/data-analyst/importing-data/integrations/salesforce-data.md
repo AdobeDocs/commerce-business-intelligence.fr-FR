@@ -6,24 +6,24 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-# Valeur attendue [!DNL Salesforce] data
+# Données [!DNL Salesforce] attendues
 
-Après la [[!DNL Salesforce] setup](../integrations/salesforce.md) est terminé, un tableau pour chaque table de requête [objet](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - named `sf_/\{sobject-name}` - est créé dans votre Data Warehouse.
+Une fois [[!DNL Salesforce] setup](../integrations/salesforce.md) terminé, un tableau pour chaque objet [queryable ](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - appelé `sf_/\{sobject-name}` - est créé dans votre Data Warehouse.
 
 >[!NOTE]
 >
 >La structure (colonnes) de chaque tableau dépend des champs contenus dans l’objet.
 
-Pour obtenir une liste des objets mis à la disposition de votre entreprise, reportez-vous à la section [!DNL Salesforce] [Obtention d’une documentation de liste d’objets](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). Une fois que vous disposez d’une liste d’objets, extrayez le [Diagramme de relation d’entité (ERD)](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) de [!DNL Salesforce] documentation pour découvrir comment les entités se connectent entre elles.
+Pour obtenir une liste des objets disponibles pour votre organisation, reportez-vous à la [!DNL Salesforce] [documentation Obtenir une liste d’objets](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). Une fois que vous disposez d’une liste d’objets, consultez la section [Diagramme de relation d’entité (ERD)](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) de la documentation [!DNL Salesforce] pour voir comment les entités se connectent les unes aux autres.
 
 ## Objets non pris en charge
 
-Actuellement, [!DNL Salesforce] n’expose actuellement pas les objets suivants dans leur API :
+Actuellement, [!DNL Salesforce] n’expose pas actuellement les objets suivants dans son API :
 
 * `Announcement`
 * `Attachment`

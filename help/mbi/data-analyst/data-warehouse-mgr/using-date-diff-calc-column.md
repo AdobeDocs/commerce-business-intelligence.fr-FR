@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Colonne calculée Différence de date
 
-Cette rubrique décrit l’objectif et les utilisations de la fonction `Date Difference` colonne calculée disponible dans la **[!DNL Manage Data > Data Warehouse]** page. Vous trouverez ci-dessous une explication de ce qu&#39;il fait, suivie d&#39;un exemple, et des mécanismes de sa création.
+Cette rubrique décrit l’objectif et les utilisations de la colonne calculée `Date Difference` disponible dans la page **[!DNL Manage Data > Data Warehouse]**. Vous trouverez ci-dessous une explication de ce qu&#39;il fait, suivie d&#39;un exemple, et des mécanismes de sa création.
 
 **Explication**
 
-La variable `Date Difference` Le type de colonne calcule la durée entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement. La valeur brute calculée dans cette colonne est exprimée en secondes, mais elle est automatiquement convertie en minutes, heures, jours, etc., pour affichage dans les rapports. Cependant, lorsqu’il est utilisé comme filtre/groupe par , vous souhaitez utiliser la valeur en secondes.
+Le type de colonne `Date Difference` calcule la durée entre deux événements appartenant à un seul enregistrement, en fonction des horodatages de l’événement. La valeur brute calculée dans cette colonne est exprimée en secondes, mais elle est automatiquement convertie en minutes, heures, jours, etc., pour affichage dans les rapports. Cependant, lorsqu’il est utilisé comme filtre/groupe par , vous souhaitez utiliser la valeur en secondes.
 
-A `date difference` la colonne calculée peut être utilisée pour créer une mesure qui calcule la durée moyenne ou médiane entre deux événements, comme la durée moyenne entre l’enregistrement des clients et leurs premières commandes.
+Une colonne calculée `date difference` peut être utilisée pour créer une mesure qui calcule la durée moyenne ou médiane entre deux événements, comme la durée moyenne entre l’enregistrement du client et ses premières commandes.
 
 **Exemple**
 
@@ -31,23 +31,23 @@ A `date difference` la colonne calculée peut être utilisée pour créer une me
 {style="table-layout:auto"}
 
 
-Dans l’exemple ci-dessus, la variable `Date Difference` est la colonne `Seconds between timestamp_2 and timestamp_1` colonne . Il effectue le calcul `timestamp_2 minus timestamp_1`.
+Dans l’exemple ci-dessus, la colonne `Date Difference` est la colonne `Seconds between timestamp_2 and timestamp_1`. Il effectue le calcul `timestamp_2 minus timestamp_1`.
 
 **Mécanique**
 
-Les étapes suivantes décrivent comment créer une `Date Difference` colonne .
+Les étapes suivantes décrivent comment créer une colonne `Date Difference`.
 
-1. Accédez au **[!DNL Manage Data > Data Warehouse]** page.
+1. Accédez à la page **[!DNL Manage Data > Data Warehouse]**.
 1. Accédez au tableau sur lequel vous souhaitez créer cette colonne.
 1. Cliquez sur **[!UICONTROL Create a Column]** et configurez votre colonne comme suit :
-   * Sélectionner `Column Definition Type` > `Same Table`
-   * Sélectionner `Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
-   * Sélectionner `Ending DATETIME` column > Choisir le champ date et heure de fin, qui est généralement l’événement qui se produit ultérieurement
-   * Sélectionner `Starting DATETIME` column** > Choisir le champ datetime de début, qui est généralement l’événement qui se produit plus tôt
+   * Sélectionnez `Column Definition Type` > `Same Table`
+   * Sélectionnez `Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
+   * Sélectionnez la colonne `Ending DATETIME` > Choisissez le champ date et heure de fin, qui est généralement l’événement qui se produit plus tard.
+   * Sélectionnez `Starting DATETIME` colonne** > Choisissez le champ datetime de début, qui est généralement l’événement qui se produit plus tôt.
 
 1. Attribuez un nom à la colonne et cliquez sur **[!UICONTROL Save]**.
-1. La colonne peut être utilisée. *immédiatement*.
+1. La colonne peut utiliser *immédiatement*.
 
-Par exemple, l’exemple suivant est configuré pour calculer la variable `Seconds between order date and customer's creation date`:
+Par exemple, l’exemple suivant est configuré pour calculer le `Seconds between order date and customer's creation date` :
 
 ![](../../assets/date_diff.png)

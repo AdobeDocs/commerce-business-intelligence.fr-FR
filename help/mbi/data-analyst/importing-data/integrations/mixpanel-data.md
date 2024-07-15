@@ -1,25 +1,25 @@
 ---
 title: Données de panneau mixte attendues
-description: Explorez les principaux tableaux de données que vous pouvez importer à partir de Mixpanel dans votre [!DNL Commerce Intelligence] compte .
+description: Explorez les tables de données principales que vous pouvez importer depuis Mixpanel dans votre compte  [!DNL Commerce Intelligence] .
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-# Valeur attendue [!DNL Mixpanel] data
+# Données [!DNL Mixpanel] attendues
 
-Après [vous avez connecté votre [!DNL Mixpanel] account](../integrations/mixpanel.md), vous pouvez utiliser la variable [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents à des fins d’analyse.
+Une fois [que vous avez connecté votre  [!DNL Mixpanel] compte](../integrations/mixpanel.md), vous pouvez utiliser le [Gestionnaire de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) pour facilement suivre les champs de données pertinents à des fins d’analyse.
 
-Cette rubrique explore les principaux tableaux de données à partir desquels vous pouvez importer des [!DNL Mixpanel] dans votre [!DNL Commerce Intelligence] compte . Les tableaux suivants seront créés dans votre Data Warehouse après la connexion. [!DNL Mixpanel]. Pour visualiser tous les champs disponibles pour le tracking, cliquez sur les liens de la colonne du nom du tableau.
+Cette rubrique explore les tables de données principales que vous pouvez importer de [!DNL Mixpanel] dans votre compte [!DNL Commerce Intelligence]. Les tables suivantes seront créées dans votre Data Warehouse après la connexion à [!DNL Mixpanel]. Pour visualiser tous les champs disponibles pour le tracking, cliquez sur les liens de la colonne du nom du tableau.
 
 >[!NOTE]
 >
->En raison des limites de la variable [!DNL Mixpanel] API, données historiques : données datant de plus de sept (7) jours à compter de la date de connexion à [!DNL Commerce Intelligence] - n’est pas répliqué.
+>En raison des limites de l’API [!DNL Mixpanel], les données historiques - données datant de plus de sept (7) jours à compter de la date de connexion à [!DNL Commerce Intelligence] - ne sont pas répliquées.
 
 | **Nom de la table** | **Description** |
 |-----|-----|

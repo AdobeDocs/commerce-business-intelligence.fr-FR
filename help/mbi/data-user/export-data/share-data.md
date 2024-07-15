@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Partage de données
 
-Il est essentiel de communiquer le statut et les tendances de votre entreprise. Dans cette section, découvrez comment exporter et partager des données d’un graphique vers un `.csv` ou `Excel` fichier . Découvrez également comment configurer et envoyer automatiquement des résumés de vos données par e-mail aux principales parties prenantes.
+Il est essentiel de communiquer le statut et les tendances de votre entreprise. Dans cette section, découvrez comment exporter et partager des données d’un graphique vers un fichier `.csv` ou `Excel`. Découvrez également comment configurer et envoyer automatiquement des résumés de vos données par e-mail aux principales parties prenantes.

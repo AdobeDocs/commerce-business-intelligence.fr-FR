@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # Quitter (annuler le partage) un tableau de bord
 
-Changement d’équipe ? Au milieu du printemps, faites le ménage [!DNL Commerce Intelligence] compte ? Pour quitter un tableau de bord ou en annuler le partage, cliquez sur **[!UICONTROL Shared]** dans la partie supérieure de l’écran lorsque vous êtes dans le tableau de bord, vous souhaitez le laisser. Cliquez sur **[!UICONTROL Leave this Dashboard]** pour vous supprimer.
+Changement d’équipe ? Au milieu du printemps, nettoyez votre compte [!DNL Commerce Intelligence] ? Pour quitter ou annuler le partage à partir d’un tableau de bord, cliquez sur **[!UICONTROL Shared]** en haut de l’écran pendant que vous souhaitez quitter le tableau de bord. Cliquez sur **[!UICONTROL Leave this Dashboard]** pour vous supprimer.
 
 Exemple :
 
-![quitter le tableau de bord](../../assets/Leave_Dashboard.gif)
+![laisser le tableau de bord](../../assets/Leave_Dashboard.gif)

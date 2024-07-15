@@ -13,15 +13,15 @@ ht-degree: 1%
 
 # [!DNL MongoDB] Modélisation des données
 
-When [!DNL Adobe Commerce Intelligence] extrait [!DNL MongoDB] données, ces données sont traduites dans un modèle relationnel.
+Lorsque [!DNL Adobe Commerce Intelligence] extrait des données [!DNL MongoDB], ces données sont converties en modèle relationnel.
 
-Mauvaise nouvelle : bien que la plupart des modèles de données ne posent pas problème, certains ne sont pas pris en charge par [!DNL Commerce Intelligence], en raison de la traduction en modèle relationnel.
+Mauvaise nouvelle : bien que la plupart des modèles de données ne posent pas problème, il y en a quelques-uns qui ne sont pas pris en charge par [!DNL Commerce Intelligence], en raison de la traduction vers un modèle relationnel.
 
 La bonne nouvelle : tous ces modèles peuvent être évités.
 
 ## Tableaux imbriqués {#subnested}
 
-Si votre collection ressemble à l’exemple ci-dessous, [!DNL Commerce Intelligence] ne réplique que les données du tableau d’éléments. Les données du tableau de sous-éléments ne sont pas extraites.
+Si votre collection ressemble à l’exemple ci-dessous, [!DNL Commerce Intelligence] ne reproduit que les données du tableau d’éléments. Les données du tableau de sous-éléments ne sont pas extraites.
 
 ```bash
     {
@@ -43,7 +43,7 @@ Si votre collection ressemble à l’exemple ci-dessous, [!DNL Commerce Intellig
 
 ## Clés d’objet variable {#varobjectkeys}
 
-Les collections qui incluent des objets avec des clés d’objet variables ne sont pas répliquées dans [!DNL Commerce Intelligence]. Par exemple :
+Les collections qui incluent des objets avec des clés d’objet de variable ne sont pas répliquées dans [!DNL Commerce Intelligence]. Par exemple :
 
 ```bash
     {

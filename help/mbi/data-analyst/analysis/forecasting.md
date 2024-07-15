@@ -17,4 +17,4 @@ ht-degree: 0%
 
 Dans cette section, vous découvrirez la valeur de durée de vie de vos clients actuels et vous prévoyez comment la valeur de durée de vie augmente avec davantage de commandes.
 
-Voir aussi : [Analyse de base de la valeur de durée de vie attendue (LTV)](../../data-analyst/analysis/ess-expected-ltv.md)
+Voir aussi : [Analyse de la valeur de durée de vie attendue (LTV) (de base)](../../data-analyst/analysis/ess-expected-ltv.md)

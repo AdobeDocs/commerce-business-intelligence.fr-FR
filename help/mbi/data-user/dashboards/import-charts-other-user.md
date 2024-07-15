@@ -17,12 +17,12 @@ Vous pouvez modifier un graphique dont un autre utilisateur est propriétaire ou
 
 ## Rechercher le graphique
 
-Trouvez d’abord le graphique que vous souhaitez copier depuis l’autre utilisateur. Tous les tableaux de bord partagés avec vous se trouvent dans la section `Dashboard` de la barre latérale où elles sont marquées par une icône partagée. Cliquez sur le tableau de bord souhaité.
+Trouvez d’abord le graphique que vous souhaitez copier depuis l’autre utilisateur. Tous les tableaux de bord partagés avec vous se trouvent dans la barre latérale `Dashboard` où ils sont marqués par une icône partagée. Cliquez sur le tableau de bord souhaité.
 
 ## Cloner le graphique
 
-Dans le tableau de bord partagé, sélectionnez le graphique à copier dans votre propre compte. Cliquez sur l’engrenage (![](../../assets/gear-icon.png)), puis cliquez sur **[!UICONTROL Save As]**.
+Dans le tableau de bord partagé, sélectionnez le graphique à copier dans votre propre compte. Cliquez sur l’icône représentant un engrenage (![](../../assets/gear-icon.png)), puis sur **[!UICONTROL Save As]**.
 
-Vous êtes invité à nommer votre copie du graphique et à l’ajouter à l’un de vos tableaux de bord existants. Si vous ne sélectionnez pas de tableau de bord, il est ajouté à la liste des graphiques existants et vous pouvez : [l’ajouter ultérieurement ;](../../data-user/dashboards/add-charts-dashboard.md).
+Vous êtes invité à nommer votre copie du graphique et à l’ajouter à l’un de vos tableaux de bord existants. Si vous ne sélectionnez pas de tableau de bord, il est ajouté à la liste des graphiques existants et vous pouvez [l’ajouter ultérieurement](../../data-user/dashboards/add-charts-dashboard.md).
 
-![total des clients](../../assets/total-customers.png)
+![nombre total de clients](../../assets/total-customers.png)

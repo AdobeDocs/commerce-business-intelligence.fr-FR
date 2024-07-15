@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Informations sur les données du graphique
 
-Choisissez : anglais brut ou définition de mesure. Les utilisateurs peuvent annoter des graphiques et afficher les mesures et les formules d’un graphique en cliquant sur le bouton _Informations_ dans le coin supérieur droit d’un graphique.
+Choisissez : anglais brut ou définition de mesure. Les utilisateurs peuvent annoter des graphiques et afficher les mesures et les formules dans un graphique en cliquant sur l’icône _Informations_ dans le coin supérieur droit de n’importe quel graphique.
 
 ## En rapport :
 

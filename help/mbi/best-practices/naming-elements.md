@@ -1,12 +1,12 @@
 ---
 title: Nommer des rapports et des éléments dans Commerce Intelligence
-description: Découvrez les bonnes pratiques pour nommer les rapports et les éléments dans [!DNL Commerce Intelligence].
+description: Découvrez les bonnes pratiques pour nommer les rapports et les éléments dans  [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
 role: Admin, User
 feature: Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Avant de commencer la création dans [!DNL Adobe Commerce Intelligence], Adobe s
 
 ## Pourquoi la nomenclature est-elle importante ? {#why}
 
-La manière dont vous nommez vos colonnes, mesures et rapports calculés détermine la facilité avec laquelle les différents utilisateurs peuvent naviguer dans vos [!DNL Commerce Intelligence] compte . Lors de l’attribution de noms à ces fonctionnalités, gardez à l’esprit les trois Cs :
+La manière dont vous nommez vos colonnes, mesures et rapports calculés détermine la facilité avec laquelle les différents utilisateurs peuvent naviguer dans votre compte [!DNL Commerce Intelligence]. Lors de l’attribution de noms à ces fonctionnalités, gardez à l’esprit les trois Cs :
 
 * **CLARITÉ** - Vous pouvez ainsi visualiser en un coup d’oeil ce qu’un rapport affiche, ce qu’une mesure fait, etc.
-* **COHÉRENCE** - afin que vous (et l’équipe d’assistance Adobe) puissiez facilement trouver et comprendre les éléments et les rapports de votre compte.
-* **CRÉDIBILITÉ** - Pour inspirer et autonomiser d&#39;autres personnes motivées par les données [!DNL Commerce Intelligence] utilisateurs, vous devez inspirer confiance dans la manière dont ils comprennent et utilisent les données !
+* **COHÉRENCE** - Pour que vous (et l’équipe d’assistance d’Adobe) puissiez facilement trouver et comprendre les éléments et les rapports de votre compte.
+* **CRÉDIBILITÉ** - Pour inspirer et autonomiser d’autres utilisateurs [!DNL Commerce Intelligence] pilotés par les données, vous devez inspirer confiance dans la manière dont ils comprennent et utilisent les données !
 
 Lisez la suite pour des conseils avisés sur la nomenclature !
 
@@ -36,14 +36,15 @@ Recettes
 
 C&#39;est vague et ça ne nous dit pas grand chose.
 
-**Bonnes illustrations :**
-Recettes (total général de base + frais) Pays d’expédition de l’utilisateur
+**Bonnes exemples :**
+Recettes (total général de base + frais)
+Pays d’expédition de l’utilisateur
 
 Ces exemples sont spécifiques, ce qui réduit le risque de confusion.
 
 ### Respecter la casse {#capitalize}
 
-[!DNL Adobe] recommande la première lettre, en majuscule, avec le reste des caractères, en minuscules, sauf si le style de majuscule approprié est le nom . Par exemple : **Numéro de commande de l’utilisateur** plutôt que **Numéro de commande de l’utilisateur.**
+[!DNL Adobe] recommande la première lettre en majuscule avec le reste des caractères en minuscules, sauf si le style de majuscule approprié est le nom . Par exemple, **Numéro de commande de l’utilisateur** plutôt que **Numéro de commande de l’utilisateur.**
 
 C&#39;est vraiment une question de préférence, mais la chose à retenir est d&#39;être cohérent avec ce que vous choisissez.
 
@@ -61,7 +62,7 @@ Assurez-vous de vérifier votre orthographe et n’oubliez pas ces possessifs ag
 
 ## Graphiques {#charts}
 
-Lors du nommage [Graphiques](../tutorials/using-visual-report-builder.md), il est plus utile de suivre cette formule : **(Perspective des données) + (Mesure) + (Période) + (Intervalle temporel)**
+Lors de l’attribution d’un nom aux [graphiques](../tutorials/using-visual-report-builder.md), il est plus utile de suivre cette formule : **(Perspective de données) + (Mesure) + (Période) + (Intervalle temporel)**
 
 **Mauvais exemple :**
 Recettes
@@ -71,17 +72,17 @@ Cela ne nous dit rien du rapport, ce qui est mauvais.
 **Bon exemple :**
 Chiffre d’affaires cumulé des 30 derniers jours par mois
 
-Cela nous dit ceci : **what** ce qu&#39;il y a dans le rapport, qui est fantastique.
+Cela nous dit **exactement** ce qui est dans le rapport, ce qui est fantastique.
 
 ## Tableaux de bord {#dashboards}
 
-Les tableaux de bord doivent être nommés de manière à représenter par thème les rapports qu’ils contiennent. Si, par exemple, votre tableau de bord contient uniquement des informations relatives aux recettes et aux commandes, pensez à nommer ce dernier par exemple. **Nom de la boutique : recettes et commandes.**
+Les tableaux de bord doivent être nommés de manière à représenter par thème les rapports qu’ils contiennent. Par exemple, si votre tableau de bord contient uniquement des informations relatives aux recettes et aux commandes, pensez à lui donner un nom du type **Nom du magasin - Recettes et commandes.**
 
-Inversement, si votre tableau de bord est un endroit où vous testez différents rapports, pensez à le nommer. **Sandbox de votre nom** vous savez donc que les rapports contenus dans sont des brouillons.
+À l’inverse, si votre tableau de bord est un endroit où vous testez différents rapports, pensez à le nommer **Sandbox de votre nom** afin que vous sachiez que les rapports contenus dans sont des brouillons.
 
 ## Dimensions (colonnes calculées) {#dimensions}
 
-Lors de l’attribution d’un nouveau nom [dimensions](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), il est plus utile de suivre cette formule : **(Entité) + (énième) + (période) + (calcul) + (commentaires)**. Par exemple :
+Lorsque vous nommez de nouvelles [dimensions](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), il est très utile de suivre cette formule : **(entité) + (énième) + (période) + (calcul) + (commentaires)**. Par exemple :
 
 Chiffre d’affaires des 30 premiers jours de l’utilisateur
 * Numéro de commande de l’utilisateur
@@ -89,18 +90,20 @@ Chiffre d’affaires des 30 premiers jours de l’utilisateur
 
 ## Visionneuses de filtres {#filterset}
 
-[Jeux de filtres](../data-user/reports/ess-manage-data-filters.md) sont généralement nommés de manière à expliquer les informations qu’ils incluent ou excluent. Par exemple, nommer un jeu de filtres **Éléments de commande que nous comptons** permet à n’importe quel utilisateur d’entrer, d’afficher la logique du jeu de filtres et de comprendre les informations de commande qui déterminent ce qui est compté dans l’ensemble de l’entreprise. N’oubliez pas que les jeux de filtres peuvent être appliqués aux colonnes calculées et aux mesures et doivent être faciles à comprendre.
+Les [ensembles de filtres](../data-user/reports/ess-manage-data-filters.md) sont généralement nommés d’une manière qui explique les informations qu’ils incluent ou excluent. Par exemple, l’attribution d’un nom à un ensemble de filtres **articles de commande que nous comptabilisons** permet à n’importe quel utilisateur d’y accéder, d’afficher la logique du jeu de filtres et de comprendre quelles informations de commande déterminent ce qui est comptabilisé dans l’ensemble de l’entreprise. N’oubliez pas que les jeux de filtres peuvent être appliqués aux colonnes calculées et aux mesures et doivent être faciles à comprendre.
 
 ## Mesures {#metrics}
 
-[Mesures](../data-user/reports/ess-manage-data-metrics.md) sont essentiellement des questions auxquelles vous voulez des réponses régulières. Quel était le nombre de commandes au cours du dernier mois ? Quelle est la valeur de durée de vie moyenne de vos clients ? Il est recommandé de nommer les mesures en fonction de la réponse donnée aux utilisateurs. En outre, si la même mesure est filtrée pour un magasin ou un département spécifique, elle doit être étiquetée comme telle. Par exemple :
+[Les mesures](../data-user/reports/ess-manage-data-metrics.md) sont essentiellement des questions auxquelles vous souhaitez obtenir régulièrement des réponses. Quel était le nombre de commandes au cours du dernier mois ? Quelle est la valeur de durée de vie moyenne de vos clients ? Il est recommandé de nommer les mesures en fonction de la réponse donnée aux utilisateurs. En outre, si la même mesure est filtrée pour un magasin ou un département spécifique, elle doit être étiquetée comme telle. Par exemple :
 
-Client moyen LTV (30 premiers jours) Nom de la boutique - Recettes
+LTV client moyen (30 premiers jours)
+Nom de la boutique - Recettes
 
 Enfin, la même mesure peut parfois être organisée selon différents horodatages, selon la manière dont les utilisateurs la calculent. Si tel est le cas, veillez à inclure l’horodatage dans le nom :
 
-Recettes (expédié\_at) Recettes (créé\_at)
+Recettes (expédié\_at)
+Recettes (created\_at)
 
 ## Remplissage {#wrapup}
 
-La définition précoce des conventions de style et d’appellation vous aide à vous préparer à la réussite de votre [!DNL Commerce Intelligence] compte . Souvenez-vous des trois C : clarté, cohérence et crédibilité.
+L’établissement précoce de conventions de style et d’appellation vous aide à configurer la réussite de votre compte [!DNL Commerce Intelligence]. Souvenez-vous des trois C : clarté, cohérence et crédibilité.

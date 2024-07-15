@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# Accéder à [!DNL Adobe Commerce Intelligence] account
+# Accéder à votre compte [!DNL Adobe Commerce Intelligence] activé
 
-Après avoir activé votre [!DNL Commerce Intelligence] compte soit [on-premise ou cloud](../getting-started/onpremise-activation.md) et que vous avez travaillé avec votre équipe de compte d’Adobe pour finaliser les étapes de configuration, vous pouvez maintenant vous connecter à votre compte.
+Après avoir activé votre compte [!DNL Commerce Intelligence] pour [on-premise ou cloud](../getting-started/onpremise-activation.md) et avoir travaillé avec votre équipe de compte d’Adobe pour finaliser les étapes de configuration, vous pouvez vous connecter à votre compte.
 
-## Connectez-vous à l’aide de [!DNL Adobe ID]
+## Connectez-vous en utilisant votre [!DNL Adobe ID]
 
 1. Cliquez sur **[!UICONTROL Sign in with Adobe ID]**.
 
    ![connexion-à-adobe](../assets/sign-in-adobe.png)
 
-1. Entrez l’adresse électronique que vous avez utilisée lors de la création de votre [!DNL Commerce Intelligence] compte . Si vous ne disposez pas déjà d’un compte Adobe, cliquez sur **[!UICONTROL Create an account]** et saisissez vos informations. Pensez à utiliser l’adresse électronique que vous avez utilisée lors de la création de votre [!DNL Commerce Intelligence] compte . L’adresse électronique est la clé dont vous avez besoin pour accéder à votre compte Adobe.
+1. Entrez l’adresse électronique que vous avez utilisée lors de la création de votre compte [!DNL Commerce Intelligence]. Si vous n&#39;avez pas encore de compte d&#39;Adobe, cliquez sur **[!UICONTROL Create an account]** et saisissez vos informations. N&#39;oubliez pas d&#39;utiliser l&#39;adresse électronique que vous avez utilisée lors de la création de votre compte [!DNL Commerce Intelligence]. L’adresse électronique est la clé dont vous avez besoin pour accéder à votre compte Adobe.
 
 >[!NOTE]
 >
->Si vous vous connectez en utilisant votre [!DNL Adobe ID], vous ne pouvez pas modifier votre [!DNL Commerce Intelligence] mot de passe du profil.
+>Si vous vous connectez à l’aide de votre [!DNL Adobe ID], vous ne pouvez pas modifier votre mot de passe de profil [!DNL Commerce Intelligence].
 
 ## Connexion à l’aide de vos nom d’utilisateur et mot de passe
 
-Saisissez votre adresse électronique et votre mot de passe, puis cliquez sur **[!UICONTROL Sign In]**.
+Saisissez votre adresse email et votre mot de passe, puis cliquez sur **[!UICONTROL Sign In]**.
 
 Vous avez désormais accès à [!DNL Commerce Intelligence].

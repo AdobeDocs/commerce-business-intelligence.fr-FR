@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Exporter mes résultats de requête
 
-Cliquez sur **[!UICONTROL Export Data]** dans le `Results` pour exporter vos résultats vers un `.csv` fichier .
+Cliquez sur **[!UICONTROL Export Data]** dans le volet `Results` pour exporter vos résultats vers un fichier `.csv`.

@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Formatage et import de données
 
-Si vous utilisez une intégration qui n’est actuellement pas prise en charge par [!DNL Adobe Commerce Intelligence], vous pouvez toujours utiliser la variable [Fonction de téléchargement de fichier](using-file-uploader.md) pour intégrer vos données dans votre Data Warehouse. Cette rubrique couvre les formats de données idéaux à utiliser pour le transfert de données de commerce électronique.
+Si vous utilisez une intégration qui n’est actuellement pas prise en charge par [!DNL Adobe Commerce Intelligence], vous pouvez toujours utiliser la [fonctionnalité de téléchargement de fichier](using-file-uploader.md) pour intégrer vos données dans votre Data Warehouse. Cette rubrique couvre les formats de données idéaux à utiliser pour le transfert de données de commerce électronique.
 
 ## `Orders` table
 
-La variable `orders` La table doit contenir une ligne pour chaque transaction effectuée par l’entreprise. Les colonnes potentielles sont les suivantes :
+La table `orders` doit contenir une ligne pour chaque transaction effectuée par l’entreprise. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|
@@ -25,7 +25,7 @@ La variable `orders` La table doit contenir une ligne pour chaque transaction ef
 | `Customer` | Le client qui a passé la commande. |
 | `Order total` | Total de la commande. Il peut s’agir d’une colonne basée sur des calculs, dans laquelle les valeurs d’autres colonnes, telles que le sous-total et l’expédition, constituent le total de cette colonne. |
 | `Currency` | Devise dans laquelle la commande a été payée. Inclure si nécessaire. |
-| ` Order status` | État de la commande, tel que `In Progress`, `Refunded`, ou `Complete`. La valeur de cette colonne change (si elle n’est pas terminée). Les données nouvelles et mises à jour peuvent être importées à l’aide de la variable [Fonction d’ajout de données](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) sur le `File Uploads` page. |
+| ` Order status` | État de la commande, par exemple `In Progress`, `Refunded` ou `Complete`. La valeur de cette colonne change (si elle n’est pas terminée). Les données nouvelles et mises à jour peuvent être importées à l’aide de la [fonction d’ajout de données](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) sur la page `File Uploads`. |
 | `Acquisition/marketing channel` | Canal d’acquisition ou marketing duquel le client qui a passé la commande a été référencé. |
 | `Order datetime` | Date et heure de création de la commande. |
 | `Order updated at` | Date et heure de la dernière modification de l’enregistrement de commande. |
@@ -34,11 +34,11 @@ La variable `orders` La table doit contenir une ligne pour chaque transaction ef
 
 ## `Order detail/items` table {#itemstable}
 
-La variable `order_detail / items` Le tableau doit contenir une ligne pour chaque élément distinct dans chaque ordre. Les colonnes potentielles sont les suivantes :
+Le tableau `order_detail / items` doit contenir une ligne pour chaque élément distinct dans chaque ordre. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|
-| `Order item ID` | L’identifiant de l’élément de commande doit être unique pour chaque ligne du tableau. Il s’agit généralement de la variable `primary key` pour la table. |
+| `Order item ID` | L’identifiant de l’élément de commande doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement du `primary key` de la table. |
 | `Order ID` | L’identifiant de la commande. |
 | `Product ID` | ID du produit. |
 | `Product name` | Nom du produit. |
@@ -47,7 +47,7 @@ La variable `order_detail / items` Le tableau doit contenir une ligne pour chaqu
 
 ## `Customers` table {#customerstable}
 
-La variable `customers` Le tableau doit contenir une ligne pour chaque compte client. Les colonnes potentielles sont les suivantes :
+Le tableau `customers` doit contenir une ligne pour chaque compte client. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|
@@ -60,7 +60,7 @@ La variable `customers` Le tableau doit contenir une ligne pour chaque compte cl
 
 ## `Subscription payments` table
 
-La variable `subscriptions` le tableau doit contenir une ligne pour chaque paiement d’abonnement. Les colonnes potentielles sont les suivantes :
+La table `subscriptions` doit contenir une ligne pour chaque paiement d’abonnement. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|

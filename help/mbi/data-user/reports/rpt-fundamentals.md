@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Utiliser un rapport
 
-Utilisation des rapports dans [!DNL Adobe Commerce Intelligence] pour vous aider à répondre aux questions d’entreprise, que vous souhaitiez simplement consulter les recettes de ce mois par rapport à l’année précédente ou comprendre vos coûts d’acquisition pour vos dernières [!DNL Google AdWords] campaign.
+Utilisez les rapports de [!DNL Adobe Commerce Intelligence] pour vous aider à répondre aux questions professionnelles, que vous souhaitiez simplement consulter les recettes du mois par rapport à l’année dernière ou comprendre les coûts d’acquisition pour votre dernière campagne [!DNL Google AdWords].
 
 A quoi ressemble exactement cette voie de question à réponse ?
 
@@ -45,26 +45,26 @@ Ventilez votre mesure dans ses composants principaux. Vous devez connaître le n
 
 * Le tableau qui enregistre une ligne de données chaque fois qu’une personne enregistre
 * Le tableau qui enregistre une ligne de données chaque fois qu’une personne effectue un achat
-* La colonne qui peut être utilisée pour joindre ou référencer le `purchase` au `customer` table : permet de savoir qui a effectué un achat.
+* La colonne pouvant être utilisée pour joindre ou référencer la table `purchase` à la table `customer` : nous permet de savoir qui a effectué un achat.
 
 À un niveau plus granulaire, vous devez identifier les champs de données exacts utilisés pour cette analyse :
 
-* Le tableau de données et la colonne contenant la date d’enregistrement d’un client, par exemple : `user.created\_at`
-* Le tableau de données et la colonne contenant une date d’achat, par exemple : `order.created\_at`
+* La table de données et la colonne contenant la date d&#39;enregistrement d&#39;un client : par exemple `user.created\_at`
+* La table de données et la colonne contenant une date d’achat : par exemple `order.created\_at`
 
 ## Création de colonnes de données à analyser
 
 Outre les colonnes de données natives décrites ci-dessus, vous avez également besoin d’un ensemble de champs de données calculées pour permettre cette analyse, notamment :
 
-* `Customer's first purchase date` qui renvoie un `MIN(order.created_at`)
+* `Customer's first purchase date` qui renvoie un `MIN(order.created_at` d’utilisateur spécifique)
 
 Il est ensuite utilisé pour créer :
 
-* `Time between a customer's registration date and first purchase date`, qui renvoie l’intervalle d’un utilisateur spécifique entre l’enregistrement et la date du premier achat. C’est la base de votre mesure ultérieurement.
+* `Time between a customer's registration date and first purchase date`, qui renvoie le délai d’un utilisateur spécifique écoulé entre l’enregistrement et la date du premier achat. C’est la base de votre mesure ultérieurement.
 
-Ces deux champs doivent être créés au niveau de l’utilisateur (par exemple, sur la variable `user` ). Cela permet à l’analyse moyenne d’être normalisée par les utilisateurs (en d’autres termes, le dénominateur dans ce calcul de moyenne est le nombre d’utilisateurs).
+Ces deux champs doivent être créés au niveau de l’utilisateur (par exemple, sur la table `user`). Cela permet à l’analyse moyenne d’être normalisée par les utilisateurs (en d’autres termes, le dénominateur dans ce calcul de moyenne est le nombre d’utilisateurs).
 
-C’est là que [!DNL Commerce Intelligence] entrez ! Vous pouvez utiliser [!DNL Commerce Intelligence] Data Warehouse pour créer les colonnes ci-dessus. Contactez l’équipe d’analystes d’Adobe et fournissez-nous la définition spécifique de vos nouvelles colonnes à créer. Vous pouvez également utiliser la variable [Éditeur de colonnes](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+C’est là que [!DNL Commerce Intelligence] entre en scène ! Vous pouvez utiliser votre Data Warehouse [!DNL Commerce Intelligence] pour créer les colonnes ci-dessus. Contactez l’équipe d’analystes d’Adobe et fournissez-nous la définition spécifique de vos nouvelles colonnes à créer. Vous pouvez également utiliser l’ [éditeur de colonnes](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Il est recommandé d’éviter de créer directement ces champs de données calculés dans votre base de données, car cela impose une charge inutile à vos serveurs de production.
 
@@ -77,11 +77,11 @@ Ici, vous souhaitez effectuer le calcul suivant :
 
 _[SOMME de `Time between a customer's registration date and first purchase date`] / [Nombre total de clients qui se sont inscrits et ont acheté]_
 
-Et vous souhaitez voir ce calcul tracé au fil du temps, ou tendance, en fonction de la date d’enregistrement d’un client. Et voici comment [créer cette mesure](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
+Et vous souhaitez voir ce calcul tracé au fil du temps, ou tendance, en fonction de la date d’enregistrement d’un client. Et voici comment [créer cette mesure](../../data-user/reports/ess-manage-data-metrics.md) dans [!DNL Commerce Intelligence] :
 
-1. Accédez à **[!UICONTROL Data]** et sélectionnez la variable `Metrics` .
-1. Cliquez sur **[!UICONTROL Add New Metric]** et sélectionnez la variable `user` (où vous avez créé les dimensions ci-dessus).
-1. Dans la liste déroulante, sélectionnez `Average` sur le`Time between a customer's registration date and first purchase date` dans la colonne `user` tableau trié par la variable `Customer's registration date`  colonne .
+1. Accédez à **[!UICONTROL Data]** et sélectionnez l’onglet `Metrics` .
+1. Cliquez sur **[!UICONTROL Add New Metric]** et sélectionnez la table `user` (dans laquelle vous avez créé les dimensions ci-dessus).
+1. Dans la liste déroulante, sélectionnez `Average` sur la colonne `Time between a customer's registration date and first purchase date` de la table `user` triée par la colonne `Customer's registration date`.
 1. Ajoutez les filtres ou jeux de filtres appropriés.
 
 Cette mesure est maintenant prête.
@@ -90,16 +90,16 @@ Cette mesure est maintenant prête.
 
 Une fois la nouvelle mesure configurée, vous pouvez l’utiliser pour créer des rapports sur la durée moyenne entre l’enregistrement et la date du premier achat par date d’enregistrement.
 
-Accédez simplement à n’importe quel tableau de bord et [créer un rapport ;](../../data-user/reports/ess-manage-data-metrics.md) en utilisant la mesure créée ci-dessus.
+Il vous suffit d’accéder à n’importe quel tableau de bord et de [créer un rapport](../../data-user/reports/ess-manage-data-metrics.md) à l’aide de la mesure créée ci-dessus.
 
 ### `Visual Report Builder` {#visualrb}
 
-[La variable `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) est le moyen le plus simple de visualiser vos données. Si vous ne connaissez pas SQL ou si vous souhaitez créer rapidement un rapport, le Report Builder visuel est votre meilleur choix. En quelques clics seulement, vous pouvez ajouter des mesures, segmenter vos données et créer des rapports pour l’ensemble de votre organisation. Cette option est idéale pour les débutants comme pour les experts, car elle ne nécessite aucune expertise technique.
+[ `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) est le moyen le plus simple de visualiser vos données. Si vous ne connaissez pas SQL ou si vous souhaitez créer rapidement un rapport, le Report Builder visuel est votre meilleur choix. En quelques clics seulement, vous pouvez ajouter des mesures, segmenter vos données et créer des rapports pour l’ensemble de votre organisation. Cette option est idéale pour les débutants comme pour les experts, car elle ne nécessite aucune expertise technique.
 
 |  |  |
 |--- |--- |
-| **C&#39;est parfait pour...** | **Ce n&#39;est pas si bien pour...** |
-| - Tous les niveaux d’analyse/d’expérience technologique<br>- Création rapide de rapports<br>- Créer des analyses à partager avec d&#39;autres utilisateurs | - Analyses nécessitant des fonctions spécifiques à SQL<br>- Test de nouvelles colonnes : les colonnes calculées dépendent des cycles de mise à jour de la population initiale de données, contrairement à celles créées à l’aide de SQL. |
+| **C&#39;est parfait pour...** | **Ce n&#39;est pas très bien pour...** |
+| - Tous les niveaux d’analyse/d’expérience technologique<br> - Création rapide de rapports<br> - Création d’analyses à partager avec d’autres utilisateurs | - Analyses nécessitant des fonctions spécifiques SQL<br> - Test de nouvelles colonnes - les colonnes calculées dépendent des cycles de mise à jour de la population de données initiale, contrairement à celles créées à l’aide de SQL. |
 
 {style="table-layout:auto"}
 
@@ -109,7 +109,7 @@ Accédez simplement à n’importe quel tableau de bord et [créer un rapport ;]
 
 Lors de la création de rapports partagés avec d’autres membres de votre équipe, Adobe recommande d’ajouter des descriptions qui permettent à d’autres utilisateurs de mieux comprendre votre analyse.
 
-1. Cliquez sur **[!UICONTROL i]** dans la partie supérieure de tout rapport.
+1. Cliquez sur **[!UICONTROL i]** en haut d’un rapport.
 1. Saisissez une description dans la zone de texte.
 1. Cliquez sur **[!UICONTROL Save Description]**.
 
@@ -119,7 +119,7 @@ Voir ci-dessous :
 
 #### Exporter des rapports sous forme d’images
 
-Vous devez inclure un rapport dans une présentation ou un document ? Tout rapport peut être enregistré sous forme d’image (au format PNG, PDF ou SVG) à l’aide de la variable `Report Options` dans le coin supérieur droit de chaque rapport.
+Vous devez inclure un rapport dans une présentation ou un document ? Tout rapport peut être enregistré sous forme d’image (au format PNG, PDF ou SVG) à l’aide du menu `Report Options`, situé dans le coin supérieur droit de chaque rapport.
 
 1. Cliquez sur l’icône d’engrenage dans le coin supérieur droit d’un rapport.
 1. Dans la liste déroulante, sélectionnez `Enlarge`.

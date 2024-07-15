@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Cette rubrique explique comment configurer un tableau de bord qui vous aide à d
 
 ![](../../assets/churn-deashboard.png)
 
-Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
+Cette analyse contient [des colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Colonnes calculées
 
@@ -26,29 +26,29 @@ Colonnes à créer
 * `customer_entity` table
 * `Customer's lifetime number of orders`
 * Sélectionnez une définition : `Count`
-* Sélectionnez une [!UICONTROL table]: `sales_flat_order`
-* Sélectionnez une [!UICONTROL column]: **`entity_id`**
-* [!UICONTROL Path]: sales_plat_order.customer_id = customer_entity.entity_id
-* [!UICONTROL Filter]:
+* Sélectionnez un [!UICONTROL table] : `sales_flat_order`
+* Sélectionnez un [!UICONTROL column] : **`entity_id`**
+* [!UICONTROL Path] : sales_plat_order.customer_id = customer_entity.entity_id
+* [!UICONTROL Filter] :
 * Commandes comptabilisées
 
 * `sales_flat_order` table
 * `Customer's lifetime number of orders`
 * Sélectionner une définition : Colonne associée
-* Sélectionnez une [!UICONTROL table]: `customer_entity`
-* Sélectionnez une [!UICONTROL column]: `Customer's lifetime number of orders`
-* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]: `Orders we count`
+* Sélectionnez un [!UICONTROL table] : `customer_entity`
+* Sélectionnez un [!UICONTROL column] : `Customer's lifetime number of orders`
+* [!UICONTROL Path] : `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter] : `Orders we count`
 
 * `Seconds since created_at`
 * Sélectionnez une définition : `Age`
-* Sélectionnez une [!UICONTROL column]: `created_at`
+* Sélectionnez un [!UICONTROL column] : `created_at`
 
-* **`Customer's order number`** est créé par un analyste dans le cadre de votre **[DÉFINITION DE L’URL]** ticket
-* **`Is customer's last order`** est créé par un analyste dans le cadre de votre **[DÉFINITION DE L’URL]** ticket
-* **`Seconds since previous order`** est créé par un analyste dans le cadre de votre **[DÉFINITION DE L’URL]** ticket
-* **`Months since order`** est créé par un analyste dans le cadre de votre **[DÉFINITION DE L’URL]** ticket
-* **`Months since previous order`** est créé par un analyste dans le cadre de votre **[DÉFINITION DE L’URL]** ticket
+* **`Customer's order number`** est créé par un analyste dans le cadre de votre ticket **[DEFINING CHURN]**
+* **`Is customer's last order`** est créé par un analyste dans le cadre de votre ticket **[DEFINING CHURN]**
+* **`Seconds since previous order`** est créé par un analyste dans le cadre de votre ticket **[DEFINING CHURN]**
+* **`Months since order`** est créé par un analyste dans le cadre de votre ticket **[DEFINING CHURN]**
+* **`Months since previous order`** est créé par un analyste dans le cadre de votre ticket **[DEFINING CHURN]**
 
 ## Mesures
 
@@ -56,25 +56,25 @@ Aucune nouvelle mesure !
 
 >[!NOTE]
 >
->Veillez à [ajouter toutes les nouvelles colonnes comme dimensions aux mesures ;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
+>Veillez à [ajouter toutes les nouvelles colonnes en tant que dimensions aux mesures](../data-warehouse-mgr/manage-data-dimensions-metrics.md) avant de créer de nouveaux rapports.
 
 ## Rapports
 
-* **Probabilité initiale de l’ordre de répétition**
+* **Probabilité initiale de répétition**
 * Mesure A : commandes répétées toutes les heures
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric] : `Number of orders`
+* [!UICONTROL Filter] : `Customer's order number greater than 1`
 
 * Mesure B : Commandes en temps réel
-* [!UICONTROL Metric]: nombre de commandes
+* [!UICONTROL Metric] : nombre de commandes
 
-* [!UICONTROL Formula]: probabilité initiale de l’ordre de répétition
+* [!UICONTROL Formula] : probabilité initiale de l’ordre de répétition
 * 
   [!UICONTROL Formule]: `A/B`
 * 
   [!UICONTROL Format]: `Percent`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period] : `All time`
 * 
   [!UICONTROL Interval]: `None`
 * 
@@ -82,41 +82,41 @@ Aucune nouvelle mesure !
 
 * **Probabilité de répétition de l’ordre exprimée en mois depuis la commande**
 * Mesure A : commandes répétées par mois depuis la commande précédente (masquer)
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric] : `Number of orders`
 * 
   [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Filter] : `Customer's order number greater than 1`
 
 * Mesure B : Dernières commandes par mois depuis la commande (masquer)
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric] : `Number of orders`
 * 
   [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Filter] : `Is customer's last order? (Yes/No) = Yes`
 
 * Mesure C : commandes répétées toutes les heures (masquer)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric] : `Number of orders`
+* [!UICONTROL Filter] : `Customer's order number greater than 1`
 
 * 
   [!UICONTROL Groupe par]: `Independent`
 
 * Mesure D : Dernières commandes toutes les heures (masquer)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric] : `Number of orders`
+* [!UICONTROL Filter] : `Is customer's last order? (Yes/No) = Yes`
 
 * 
   [!UICONTROL Groupe par]: `Independent`
 
-* [!UICONTROL Formula]: probabilité initiale de l’ordre de répétition
+* [!UICONTROL Formula] : probabilité initiale de l’ordre de répétition
 * 
   [!UICONTROL Formule]: `(C-A)/(C+D-A-B)`
 * 
   [!UICONTROL Format]: `Percent`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period] : `All time`
 * 
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Months since previous order`
+* [!UICONTROL Group by] : `Months since previous order`
 * Afficher top.bottom : 24 premières catégories, triées par nom de catégorie
 
 * 
@@ -132,4 +132,4 @@ Une fois que vous avez créé votre tableau de bord, la question la plus courant
 
 Après avoir compilé tous les rapports, vous pouvez les organiser dans le tableau de bord suivant vos besoins. Le résultat peut ressembler à l’image en haut de la page.
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement faire appel à l&#39;équipe des services professionnels, [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

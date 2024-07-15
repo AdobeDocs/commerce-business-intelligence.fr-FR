@@ -7,28 +7,28 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-# Importer [!DNL Linkshare] data
+# Importer les données [!DNL Linkshare]
 
-Pour apporter votre [!DNL Linkshare] données dans [!DNL Adobe Commerce Intelligence], vous devez effectuer deux opérations :
+Pour importer vos données [!DNL Linkshare] dans [!DNL Adobe Commerce Intelligence], vous devez faire deux choses :
 
 1. [Exportation des données Linkshare dans ](#export)
-1. [Chargement de la feuille de calcul [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
+1. [Télécharger la feuille de calcul dans [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Exporter des données depuis Linkshare {#export}
 
-1. Dans votre [!DNL Linkshare] compte, accédez à **[!UICONTROL Reports** > **Run Reports].**
+1. Dans votre compte [!DNL Linkshare], accédez à **[!UICONTROL Reports** > **Run Reports].**
 
-1. Dans le `Report` menu déroulant, sélectionnez **[!UICONTROL Sales & Activity Report]**.
+1. Dans la liste déroulante `Report`, sélectionnez **[!UICONTROL Sales & Activity Report]**.
 
 1. Conservez toutes les autres options de liste déroulante comme sélection par défaut.
 
-1. Dans le `Date Range` dans la liste déroulante, sélectionnez n’importe quelle option (`Sun - Sat`, `Mon - Sun`) correspond à votre `Start of Week` paramètres dans [!DNL Commerce Intelligence].
+1. Dans la liste déroulante `Date Range`, sélectionnez l’option (`Sun - Sat`, `Mon - Sun`) qui correspond à vos paramètres `Start of Week` dans [!DNL Commerce Intelligence].
 
-1. Effacez la variable `Compare Year-Over-Year Data` .
+1. Décochez la case `Compare Year-Over-Year Data` .
 
 1. Sous `Data Type`, sélectionnez `Transaction Date`.
 
@@ -38,6 +38,6 @@ Pour apporter votre [!DNL Linkshare] données dans [!DNL Adobe Commerce Intellig
 
 1. Cliquez sur **[!UICONTROL Download]**.
 
-   À ce stade, une `.csv` et téléchargé.
+   À ce stade, un fichier `.csv` et a été téléchargé.
 
-Une fois le fichier téléchargé, vous pouvez le charger dans [!DNL Commerce Intelligence] en utilisant la variable [`File Upload` fonctionnalité](../connecting-data/using-file-uploader.md).
+Une fois le fichier téléchargé, vous pouvez le télécharger vers [!DNL Commerce Intelligence] à l’aide de la fonction [`File Upload`](../connecting-data/using-file-uploader.md).

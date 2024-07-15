@@ -15,20 +15,20 @@ ht-degree: 0%
 
 Outre la définition des niveaux d’autorisation utilisateur, vous pouvez également restreindre l’accès aux mesures utilisateur par utilisateur. Par exemple, si vous souhaitez que votre service de comptabilité ait accès aux mesures liées aux recettes, mais pas aux mesures d’acquisition d’utilisateurs, vous pouvez restreindre l’accès à ces mesures.
 
-Dans de tels cas, Adobe recommande de définir le compte de cet utilisateur sur **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** les autorisations doivent être accordées aux utilisateurs qui n’ont pas besoin de créer ou modifier des mesures, des colonnes calculées, des intégrations ou des utilisateurs, mais qui n’ont pas besoin d’accéder aux données du Data Warehouse. Si vous souhaitez restreindre entièrement l’accès aux données, utilisez la variable **[!UICONTROL Read Only]** autorisations à la place.
+Dans de tels cas, Adobe recommande de définir le compte de cet utilisateur sur **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** des autorisations doivent être accordées aux utilisateurs qui n’ont pas besoin de créer ou modifier des mesures, des colonnes calculées, des intégrations ou des utilisateurs, mais qui n’ont pas besoin d’accéder aux données dans le Data Warehouse. Si vous souhaitez restreindre entièrement l’accès aux données, utilisez plutôt les autorisations **[!UICONTROL Read Only]** .
 
-Après avoir défini le niveau d’autorisation, vous pouvez sélectionner les mesures sous la forme **[!UICONTROL Standard]** L’utilisateur peut y accéder en procédant comme suit :
+Après avoir défini le niveau d’autorisation, vous pouvez sélectionner les mesures auxquelles un utilisateur **[!UICONTROL Standard]** peut accéder en procédant comme suit :
 
 1. Accédez à **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. Sélectionnez le compte d’utilisateur de votre choix.
-1. La variable **[!UICONTROL Metrics]** affiche une liste des mesures disponibles. Vérifiez les mesures auxquelles l’utilisateur doit avoir accès et désélectionnez celles auxquelles il ne doit pas avoir accès.
+1. L’onglet **[!UICONTROL Metrics]** affiche une liste des mesures disponibles. Vérifiez les mesures auxquelles l’utilisateur doit avoir accès et désélectionnez celles auxquelles il ne doit pas avoir accès.
 1. [!DNL Adobe Commerce Intelligence] enregistre automatiquement les modifications. Si la modification est réussie, [!DNL Commerce Intelligence] affiche **[!UICONTROL Saved!]** en haut de la page.
 
 >[!NOTE]
 >
->Tous les utilisateurs avec **[!UICONTROL Standard]** Les autorisations peuvent accéder à toutes les données du Data Warehouse par l’intermédiaire de l’exportation de données en plus de toutes les mesures issues de [!DNL Google Analytics].
+>Tous les utilisateurs disposant d’autorisations **[!UICONTROL Standard]** peuvent accéder à toutes les données du Data Warehouse via l’exportation de données en plus de toutes les mesures de [!DNL Google Analytics].
 
-Vous pouvez également restreindre l’accès à une mesure en la modifiant et en **[!UICONTROL Standard]** en sélectionnant des utilisateurs dans le **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** .
+Vous pouvez également restreindre l&#39;accès à une mesure en la modifiant et en **[!UICONTROL Standard]** en sélectionnant des utilisateurs dans la section **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**.
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Partage d’un tableau de bord
 
-Le partage de tableaux de bord signifie que vous et votre équipe avez les mêmes informations à tout moment, ce qui vous permet de collaborer et de discuter. Voici quelques recommandations pour partager les tableaux de bord et conserver vos [!DNL Adobe Commerce Intelligence] n&#39;est pas encombrée.
+Le partage de tableaux de bord signifie que vous et votre équipe avez les mêmes informations à tout moment, ce qui vous permet de collaborer et de discuter. Voici quelques recommandations pour partager les tableaux de bord et garder votre compte [!DNL Adobe Commerce Intelligence] en toute simplicité.
 
 ## Éviter les tableaux de bord en double
 
@@ -26,8 +26,8 @@ Pour savoir qui possède un tableau de bord, cliquez sur la liste déroulante du
 Pour supprimer tous les tableaux de bord en double :
 
 1. Synchronisez-vous avec votre équipe et identifiez la personne qui doit gérer le tableau de bord.
-1. [Ne vous partagez pas](../data-user/dashboards/leave-dashboard.md) de tous les tableaux de bord similaires, à l’exception de celui partagé par l’utilisateur principal.
-1. Si vous disposez d’une copie du tableau de bord, [supprimer](../data-user/dashboards/deleting-dashboard.md).
+1. [Départagez-vous](../data-user/dashboards/leave-dashboard.md) de tous les tableaux de bord similaires, à l’exception de celui partagé par l’utilisateur principal.
+1. Si vous disposez d’une copie du tableau de bord, [supprimez-la](../data-user/dashboards/deleting-dashboard.md).
 1. Demandez aux autres de supprimer leur version du tableau de bord.
 
 ## Création d’un ensemble principal de tableaux de bord
@@ -36,11 +36,11 @@ Lorsque de nouveaux utilisateurs sont créés, ils ne possèdent aucun tableau d
 
 ## Partage de tableaux de bord avec les nouveaux utilisateurs
 
-Les nouveaux utilisateurs peuvent également bénéficier d’un accès à certains tableaux de bord qui ne sont pas partagés à l’échelle de l’entreprise. Dans ce cas, Adobe recommande aux propriétaires de tableaux de bord de [partager les tableaux de bord pertinents ;](../data-user/dashboards/share-dashboard-with-users.md) avec les nouveaux utilisateurs lors de la création de leurs comptes.
+Les nouveaux utilisateurs peuvent également bénéficier d’un accès à certains tableaux de bord qui ne sont pas partagés à l’échelle de l’entreprise. Dans ce cas, Adobe recommande aux propriétaires de tableaux de bord [ de partager les tableaux de bord concernés](../data-user/dashboards/share-dashboard-with-users.md) avec de nouveaux utilisateurs lors de la création de leurs comptes.
 
 ## Soyez sélectif avec les autorisations de modification
 
-`Edit` les autorisations donnent aux utilisateurs beaucoup de pouvoir. Mais avec une grande puissance vient une grande responsabilité. Pour éviter toute modification accidentelle de vos graphiques et tableaux de bord, Adobe vous recommande d’être sélectif sur les données que vous fournissez. `Edit` autorisations pour .
+Les autorisations `Edit` donnent aux utilisateurs beaucoup de pouvoir. Mais avec une grande puissance vient une grande responsabilité. Pour éviter toute modification accidentelle de vos graphiques et tableaux de bord, Adobe vous recommande de choisir avec qui vous accordez des autorisations `Edit`.
 
 ## Annotation des graphiques
 

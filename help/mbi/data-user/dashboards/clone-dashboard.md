@@ -21,16 +21,16 @@ Cela s’avère utile si vous souhaitez recréer un ensemble de graphiques exist
 
 1. Dans la liste déroulante , cliquez sur **[!UICONTROL Save As]**.
 
-1. Lorsque vous y êtes invité, saisissez la variable `New Dashboard Name`. Adobe recommande les noms qui vous indiquent, en un coup d’oeil, les informations contenues dans le tableau de bord.
+1. Lorsque vous y êtes invité, saisissez le `New Dashboard Name`. Adobe recommande les noms qui vous indiquent, en un coup d’oeil, les informations contenues dans le tableau de bord.
 
    Par exemple, vous clonez un tableau de bord nommé `Customer Activity`. Ce tableau de bord contenait des informations sur l’activité des clients pour votre emplacement Philadelphie, mais vous souhaitez maintenant créer un tableau de bord pour votre nouvel emplacement à New York. Ce tableau de bord peut être nommé `New York City - Customer Activity`.
 
-1. Utilisez la variable `Chart Title Find` et `Chart Title Replace` champs permettant de trouver tous les graphiques avec `Philadelphia` dans le titre et remplacez-le par `New York City`.
+1. Utilisez les champs `Chart Title Find` et `Chart Title Replace` pour trouver tous les graphiques dont le titre contient `Philadelphia` et les remplacer par `New York City`.
 
-   Si vous ne saisissez aucune valeur dans ces champs, une `(2)` ajoute automatiquement à la fin de tous les titres de graphique dans le nouveau tableau de bord.
+   Si vous ne saisissez aucune valeur dans ces champs, un `(2)` est automatiquement ajouté à la fin de tous les titres des graphiques dans le nouveau tableau de bord.
 
 1. Cliquez sur **[!UICONTROL Save]** pour cloner le tableau de bord.
 
 Exemple :
 
-![tableau de bord des clones](../../assets/datgif.gif)
+![tableau de bord de clone](../../assets/datgif.gif)

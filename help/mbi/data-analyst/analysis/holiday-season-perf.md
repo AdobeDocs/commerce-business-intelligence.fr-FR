@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Vous pouvez avoir de l’expérience à n’importe quel moment de l’année ; 
 
 ## Mesures recommandées
 
-Lors de l’analyse des performances de la saison des fêtes, pensez à analyser ([ou construction](../../data-user/reports/ess-manage-data-metrics.md)) ces mesures :
+Lors de l’analyse des performances de la saison des fêtes, envisagez d’analyser ([ou de créer](../../data-user/reports/ess-manage-data-metrics.md)) ces mesures :
 
 ### Nombre de nouveaux clients, Nombre de commandes, Recettes
 
@@ -33,7 +33,7 @@ Cette mesure affiche la valeur moyenne globale de la commande durant les saisons
 
 Maintenant que vous savez quelles mesures analyser, vous pouvez consulter des données d’exemple sur les recettes au cours des mois de novembre et décembre de la période des fêtes pour les années 2014 et 2015.
 
-![Recettes quotidiennes de la saison des fêtes pour 2014 et 2015](../../assets/Analyzing_holiday_season.png)
+![Chiffre d&#39;affaires de la saison des fêtes quotidiennes pour 2014 et 2015](../../assets/Analyzing_holiday_season.png)
 
 Dans cet exemple, les recettes pour 2014 et 2015 présentent deux importantes hausses : celles-ci coïncident avec le Black Friday et le Cyber Monday. Remarquez que les pics ne sont pas le même jour pour 2014 et 2015. C&#39;est parce que le Vendredi noir est tombé le 27 novembre 2014 et le 28 novembre 2015. De même, le Lundi cybernétique était le 30 novembre 2014 et le 1er décembre 2015.
 
@@ -58,7 +58,7 @@ Une option consiste à analyser le comportement d’achat de vos clients pendant
 
 Une autre option consiste à analyser votre retour sur investissement par campagne pendant les saisons de vacances. Votre ROI est-il plus élevé pour certaines campagnes qui s’exécutent pendant la période des fêtes ? Devriez-vous augmenter les dépenses pour les campagnes avec un retour sur investissement élevé au cours de ces saisons ?
 
-De plus, vous pouvez analyser le nombre de commandes à prix réduit par rapport au nombre total de commandes à prix plein. [La plupart des clients attendent-ils une vente aux commandes d’achat ?](../analysis/coupon-usage.md) pendant vos vacances ou achètent-ils des articles à prix plein ?
+De plus, vous pouvez analyser le nombre de commandes à prix réduit par rapport au nombre total de commandes à prix plein. [ La plupart des clients attendent-ils la vente de commandes](../analysis/coupon-usage.md) pendant la période des fêtes ou achètent-ils des articles à prix plein ?
 
 ### Associé
 

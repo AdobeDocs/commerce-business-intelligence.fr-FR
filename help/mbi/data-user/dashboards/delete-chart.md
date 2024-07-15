@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Suppression définitive d’un graphique
 
-Même si vous [suppression d’un graphique du tableau de bord](../../data-user/dashboards/remove-charts-dashboard.md), il existe toujours dans votre [!DNL Commerce Intelligence] compte .
+Même si vous [ supprimez un graphique du tableau de bord ](../../data-user/dashboards/remove-charts-dashboard.md), il existe toujours dans votre compte [!DNL Commerce Intelligence].
 
 Pour supprimer définitivement un graphique :
 
@@ -33,4 +33,4 @@ Pour supprimer définitivement un graphique :
 
 Exemple :
 
-![suppression d’un graphique](../../assets/deletechart.gif)<!--{: width="630" height="402"}-->
+![supprimer un graphique](../../assets/deletechart.gif)<!--{: width="630" height="402"}-->

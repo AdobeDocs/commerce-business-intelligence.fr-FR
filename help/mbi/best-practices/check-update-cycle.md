@@ -6,30 +6,30 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
 # Progression du cycle de mise à jour
 
-Lorsque vous vous connectez à [!DNL Adobe Commerce Intelligence] tableau de bord, vous pouvez vérifier le statut de votre dernier cycle de mise à jour de plusieurs façons. Tout dépend du type de [permissions utilisateur](../administrator/user-management/user-management.md) que vous avez.
+Lorsque vous vous connectez à votre tableau de bord [!DNL Adobe Commerce Intelligence], il existe plusieurs façons de vérifier l’état de votre dernier cycle de mise à jour. Tout dépend du type de [permissions utilisateur](../administrator/user-management/user-management.md) dont vous disposez.
 
 ## Pourquoi dois-je vérifier l’état du cycle de mise à jour ?
 
-Il est utile de vérifier le cycle de mise à jour du statut lorsque vous contrôlez les données de votre [!DNL Commerce Intelligence] compte . Si vous voyez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez sur votre plateforme d’e-commerce ou dans votre [[!DNL Google] recettes liées au commerce électronique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
+La vérification du cycle de mise à jour du statut est utile lorsque vous contrôlez les données de votre compte [!DNL Commerce Intelligence]. Si vous voyez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez sur votre plateforme d’e-commerce ou dans vos [[!DNL Google] recettes d’e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
 
-## [!UICONTROL Read-Only] et [!UICONTROL Standard] Utilisateurs
+## [!UICONTROL Read-Only] et [!UICONTROL Standard] utilisateurs
 
-`Read-only` les utilisateurs peuvent se connecter à leur tableau de bord et voir à quel point les données ont été mises à jour récemment en pointant sur l’icône en haut à droite de la page. Cela indique le moment où le dernier point de données a été extrait.
+Les utilisateurs de `Read-only` peuvent se connecter à leur tableau de bord et voir combien de temps les données ont été mises à jour en pointant sur l’icône en haut à droite de la page. Cela indique le moment où le dernier point de données a été extrait.
 
 ![](../../mbi/assets/last-success-data.png)
 
-## [!UICONTROL Admin] Utilisateurs
+## [!UICONTROL Admin] utilisateurs
 
-`Admin` les utilisateurs peuvent se connecter au tableau de bord et voir le dernier point de données ci-dessus, ainsi qu’une brève icône d’état des intégrations de leur compte.
+Les utilisateurs de `Admin` peuvent se connecter au tableau de bord et voir le dernier point de données ci-dessus, ainsi qu’une brève icône d’état de leurs intégrations de compte.
 
-Pour plus d’informations, les utilisateurs administrateurs peuvent cliquer sur **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**.
+Pour plus de détails, les utilisateurs administrateurs peuvent cliquer sur **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**.
 
 ![](../../mbi/assets/detail-manage-data-integrations.png)
 
@@ -41,4 +41,4 @@ Si aucune mise à jour n’est en cours, un lien s’affiche pour forcer le dém
 
 >[!NOTE]
 >
->Si vous avez des heures d’interruption (heure à laquelle vous ne souhaitez pas [!DNL Commerce Intelligence] pour mettre à jour vos données), forcer une mise à jour déclenche un cycle de mise à jour qui ne respecte pas les limitations de ces heures de blackout.
+>Si vous avez des heures d’interruption (heure à laquelle vous ne souhaitez pas que [!DNL Commerce Intelligence] mette à jour vos données), forcer une mise à jour déclenche un cycle de mise à jour qui ne respecte pas les limites de ces heures d’interruption.

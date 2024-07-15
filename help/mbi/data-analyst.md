@@ -16,10 +16,10 @@ ht-degree: 0%
 Vous êtes à l’aise avec la conception de requêtes et vous êtes la personne de référence pour l’analyse des données. Vous savez comment trouver des réponses spécifiques à des questions de données et vous souhaitez faciliter l’expérience en libre-service pour vos collègues.
 
 Cette section explique comment :
-* connecter et importer des données dans [!DNL Commerce Intelligence]
+* connecter et importer des données vers [!DNL Commerce Intelligence]
 * afficher la manière dont vos données sont stockées et structurées dans votre Data Warehouse ;
 * analyser vos données
-* utilisez la méthode [!DNL SQL Report Builder]
+* utilisez le [!DNL SQL Report Builder]
 
 ## Associé
 

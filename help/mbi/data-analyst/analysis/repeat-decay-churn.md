@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Cette rubrique explore les analyses qui peuvent vous aider à répondre aux ques
 
 ## Mesures recommandées
 
-Lors de l’analyse de l’atténuation et de l’attrition des probabilités de répétition, pensez à utiliser ([ou construction](../../data-user/reports/ess-manage-data-metrics.md)) ces mesures :
+Lors de l’analyse de l’atténuation et de l’attrition des probabilités de répétition, pensez à utiliser ([ou à créer](../../data-user/reports/ess-manage-data-metrics.md)) ces mesures :
 
 ### Probabilité initiale de l’ordre de répétition
 
@@ -43,7 +43,7 @@ Comprendre le pourcentage de clients qui sont censés effectuer des achats rép�
 
 Examinez la probabilité de récidive pour une activité de commerce électronique classique.
 
-![Probabilité initiale de répétition de l’ordre probabilité de répétition de l’ordre donnée des mois depuis l’ordre.](../../assets/Order_probability_reports.png)
+![ La probabilité initiale de répétition de l’ordre la probabilité de répétition de l’ordre donnée des mois depuis la commande.{1](../../assets/Order_probability_reports.png)
 
 ### Probabilité initiale de l’ordre de répétition
 
@@ -78,7 +78,7 @@ Après avoir créé l’analyse ci-dessus et déterminé un seuil de perte de cl
 
 Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Vous voulez en savoir plus ? Consultez ce tutoriel pour découvrir le comportement d’achat de durée de vie des cohortes de clients en fonction de produits spécifiques qu’ils ont achetés.
 
-Cette bonne pratique est fournie par [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contacter le support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour plus d’informations.
+Cette bonne pratique est fournie par [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour plus d’informations.
 
 ### Associé
 

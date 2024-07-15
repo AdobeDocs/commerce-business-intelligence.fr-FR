@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Voici ce que vous devez créer pour le tableau de bord de votre investisseur :
       * A/B
 * **[!UICONTROL All-time revenue by source]**
    * Mesure - Recettes
-   * Groupe par client `utm_source`
+   * Groupe par `utm_source` du client
 * **[!UICONTROL Revenue from top 10 products]**
    * Mesure - Chiffre d’affaires des produits
       * Masquer le graphique
@@ -59,20 +59,20 @@ Voici ce que vous devez créer pour le tableau de bord de votre investisseur :
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sessions
 
-Avec [!DNL Google Analytics] intégration, vous pouvez inclure des rapports sur les éléments suivants :
+Avec une intégration [!DNL Google Analytics], vous pouvez inclure des rapports sur :
 
 * Visites du site
 * Taux de conversion
 
-Avec la variable [Services d’enrichissement des données de commerce](https://business.adobe.com/products/magento/magento-commerce.html), vous pouvez inclure des rapports sur les éléments suivants :
+Avec les [services d’enrichissement de données Commerce](https://business.adobe.com/products/magento/magento-commerce.html), vous pouvez inclure des rapports sur les éléments suivants :
 
 * Clients uniques par état/région, âge, genre.
 
 ## Autres conseils
 
-* Utiliser une ligne claire et concise [convention de dénomination](../best-practices/naming-elements.md)
+* Utiliser une [convention d&#39;appellation](../best-practices/naming-elements.md) claire et concise
 * Partage du tableau de bord avec les utilisateurs investisseurs
-* Ou l’envoyer via **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
+* Ou envoyez-le via **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
 * Créez un seul tableau de bord. Cela facilite la maintenance du contenu, et vous savez exactement ce que voient vos investisseurs.
 
 Organisez vos rapports avec soin et prêtez attention aux détails. Une fois l’opération terminée, le tableau de bord se présente comme suit :

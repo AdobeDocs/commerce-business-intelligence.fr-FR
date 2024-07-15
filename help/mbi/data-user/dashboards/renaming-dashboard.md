@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Nécessite [Administration](../../administrator/user-management/user-management.md) ou `Standard` autorisations pour exécuter ces fonctions. Si vous êtes un `Standard` utilisateur, vous avez également besoin `Edit` autorisations d’accès au tableau de bord.
+>Nécessite des autorisations [Admin](../../administrator/user-management/user-management.md) ou `Standard` pour exécuter ces fonctions. Si vous êtes un utilisateur `Standard`, vous avez également besoin d’autorisations `Edit` sur le tableau de bord.
 
 Parfois, les noms ne correspondent plus. Il est facile et rapide de renommer un tableau de bord.
 
-1. Dans le tableau de bord, cliquez sur l’icône **[!UICONTROL Dashboard Options]** dans la partie supérieure de l’écran, en regard de l’option `Global Search` .
+1. Dans le tableau de bord, cliquez sur le menu **[!UICONTROL Dashboard Options]** en haut de l’écran, situé en regard du menu `Global Search`.
 
 1. Cliquez sur **[!UICONTROL Rename]** dans la liste déroulante.
 

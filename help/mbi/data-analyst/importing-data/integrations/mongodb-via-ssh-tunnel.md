@@ -1,60 +1,60 @@
 ---
 title: Connexion [!DNL MongoDB] via le tunnel SSH
-description: Découvrez comment vous connecter [!DNL MongoDB] via le tunnel SSH.
+description: Découvrez comment se connecter à  [!DNL MongoDB] via un tunnel SSH.
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
-# Connexion [!DNL MongoDB] via le tunnel SSH
+# Connexion de [!DNL MongoDB] via le tunnel SSH
 
-Pour connecter votre [!DNL MongoDB] vers la base de données [!DNL Commerce Intelligence] via un tunnel SSH, il faut faire quelques opérations :
+Pour connecter votre base de données [!DNL MongoDB] à [!DNL Commerce Intelligence] via un tunnel SSH, vous devez procéder comme suit :
 
-1. [Récupération de la variable [!DNL Commerce Intelligence] clé publique](#retrieve)
-1. [Autoriser l’accès au [!DNL Commerce Intelligence] Adresse IP](#allowlist)
+1. [Récupération de la clé publique  [!DNL Commerce Intelligence] ](#retrieve)
+1. [Autoriser l’accès à l’adresse IP  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Création d’un utilisateur Linux pour Commerce Intelligence](#linux)
-1. [Créez un [!DNL MongoDB] utilisateur pour Commerce Intelligence](#mongodb)
-1. [Saisissez les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]](#finish)
+1. [Création d’un utilisateur  [!DNL MongoDB] pour Commerce Intelligence](#mongodb)
+1. [Saisissez les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence].](#finish)
 
 >[!NOTE]
 >
 >En raison de la nature technique de cette configuration, Adobe vous recommande de faire une boucle dans un développeur pour vous aider si vous ne l’avez pas fait auparavant.
 
-## Récupération de la [!DNL Commerce Intelligence] clé publique {#retrieve}
+## Récupération de la clé publique [!DNL Commerce Intelligence] {#retrieve}
 
-La variable `public key` est utilisé pour autoriser la variable [!DNL Commerce Intelligence] `Linux` utilisateur. La section suivante vous guide tout au long de la création de l’utilisateur et de l’importation des clés.
+`public key` est utilisé pour autoriser l’utilisateur [!DNL Commerce Intelligence] `Linux`. La section suivante vous guide tout au long de la création de l’utilisateur et de l’importation des clés.
 
 1. Accédez à **[!UICONTROL Data** > **Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**.
-1. Cliquez sur le bouton [!DNL MONGODB] Icône
-1. Après la [!DNL MongoDB] la page des informations d’identification s’ouvre, modifiez `Encrypted` bascule vers `Yes`. Le formulaire de configuration SSH s’affiche alors.
-1. La variable `public key` se trouve sous ce formulaire.
+1. Cliquez sur l’icône [!DNL MONGODB] .
+1. Une fois la page des informations d’identification [!DNL MongoDB] ouverte, remplacez le bouton d’activation/désactivation `Encrypted` par `Yes`. Le formulaire de configuration SSH s’affiche alors.
+1. `public key` se trouve sous ce formulaire.
 
 Laissez cette page ouverte tout au long du tutoriel. Vous en aurez besoin dans la section suivante et à la fin.
 
-Si vous êtes un peu perdu, voici comment naviguer [!DNL Commerce Intelligence] pour récupérer la clé :
+Si vous êtes un peu perdu, voici comment parcourir [!DNL Commerce Intelligence] pour récupérer la clé :
 
 ![Récupération de la clé publique RJMetrics](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
 
-## Autoriser l’accès au [!DNL Commerce Intelligence] Adresse IP {#allowlist}
+## Autoriser l’accès à l’adresse IP [!DNL Commerce Intelligence] {#allowlist}
 
-Pour que la connexion soit établie, vous devez configurer votre pare-feu pour autoriser l’accès à partir de vos adresses IP. Ils sont `54.88.76.97` et `34.250.211.151`, mais il est également activé sur la variable [!DNL MongoDB] page des informations d’identification :
+Pour que la connexion soit établie, vous devez configurer votre pare-feu pour autoriser l’accès à partir de vos adresses IP. Ils sont `54.88.76.97` et `34.250.211.151`, mais il se trouve également sur la page des informations d’identification [!DNL MongoDB] :
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## Création d’un `Linux` user pour [!DNL Commerce Intelligence] {#linux}
+## Création d’un utilisateur `Linux` pour [!DNL Commerce Intelligence] {#linux}
 
 >[!IMPORTANT]
 >
->Si la variable `sshd_config` Le fichier associé au serveur n’est pas défini sur l’option par défaut, seuls certains utilisateurs disposent d’un accès au serveur, ce qui empêche une connexion réussie à [!DNL Commerce Intelligence]. Dans ce cas, il est nécessaire d’exécuter une commande comme `AllowUsers` pour autoriser le `rjmetric` accès utilisateur au serveur.
+>Si le fichier `sshd_config` associé au serveur n’est pas défini sur l’option par défaut, seuls certains utilisateurs disposent d’un accès au serveur, ce qui empêche une connexion réussie à [!DNL Commerce Intelligence]. Dans ce cas, il est nécessaire d’exécuter une commande du type `AllowUsers` pour permettre à l’utilisateur `rjmetric` d’accéder au serveur.
 
-Il peut s’agir d’une machine de production ou secondaire, à condition qu’elle contienne des données en temps réel (ou fréquemment mises à jour). Vous pouvez restreindre cet utilisateur comme vous le souhaitez tant qu&#39;il conserve le droit de se connecter au [!DNL MongoDB] serveur.
+Il peut s’agir d’une machine de production ou secondaire, à condition qu’elle contienne des données en temps réel (ou fréquemment mises à jour). Vous pouvez restreindre cet utilisateur comme vous le souhaitez tant qu&#39;il conserve le droit de se connecter au serveur [!DNL MongoDB].
 
-Pour ajouter le nouvel utilisateur, exécutez les commandes suivantes en tant que root sur votre `Linux` server :
+Pour ajouter le nouvel utilisateur, exécutez les commandes suivantes en tant que root sur votre serveur `Linux` :
 
 ```bash
     adduser rjmetric -p
@@ -62,7 +62,7 @@ Pour ajouter le nouvel utilisateur, exécutez les commandes suivantes en tant qu
     mkdir /home/rjmetric/.ssh
 ```
 
-Mémoriser `public key` avez-vous récupéré dans la première section ? Pour vous assurer que l’utilisateur a accès à la base de données, vous devez importer la clé dans `authorized_keys`. Copiez la clé entière dans le `authorized_keys` comme suit :
+Vous vous souvenez du `public key` que vous avez récupéré dans la première section ? Pour vous assurer que l’utilisateur a accès à la base de données, vous devez importer la clé dans `authorized_keys`. Copiez la clé entière dans le fichier `authorized_keys` comme suit :
 
 ```bash
     touch /home/rjmetric/.ssh/authorized_keys
@@ -76,26 +76,26 @@ Pour terminer la création de l’utilisateur, modifiez les autorisations du ré
     chmod -R 700 /home/rjmetric/.ssh
 ```
 
-## Création d’une [!DNL Commerce Intelligence] [!DNL MongoDB] user {#mongodb}
+## Création d&#39;un utilisateur [!DNL Commerce Intelligence] [!DNL MongoDB] {#mongodb}
 
-[!DNL MongoDB] Les serveurs comportent deux modes d’exécution : [une avec l’option &quot;auth&quot;](#auth) `(mongod -- auth)` et un sans, [qui est la valeur par défaut](#default). Les étapes de création d’un [!DNL MongoDB] l’utilisateur varie en fonction du mode utilisé par votre serveur. Veillez à vérifier le mode avant de continuer.
+[!DNL MongoDB] serveurs ont deux modes d&#39;exécution : [un avec l&#39;option &quot;auth&quot;](#auth) `(mongod -- auth)` et un sans, [qui est la valeur par défaut](#default). Les étapes de création d’un utilisateur [!DNL MongoDB] varient en fonction du mode utilisé par votre serveur. Veillez à vérifier le mode avant de continuer.
 
-### Si votre serveur utilise la variable `Auth` Option : {#auth}
+### Si votre serveur utilise l’option `Auth` : {#auth}
 
 Lors de la connexion à plusieurs bases de données, vous pouvez ajouter l’utilisateur en vous connectant à [!DNL MongoDB] en tant qu’utilisateur administrateur et en exécutant les commandes suivantes.
 
 >[!NOTE]
 >
->Pour afficher toutes les bases de données disponibles, la variable [!DNL Commerce Intelligence] l’utilisateur a besoin des autorisations pour s’exécuter `listDatabases.`
+>Pour afficher toutes les bases de données disponibles, l’utilisateur [!DNL Commerce Intelligence] a besoin des autorisations pour exécuter `listDatabases.`.
 
-Cette commande permet d’octroyer le [!DNL Commerce Intelligence] accès utilisateur `to all databases`:
+Cette commande permet à l’utilisateur [!DNL Commerce Intelligence] d’accéder à `to all databases` :
 
 ```bash
     use admin
     db.createUser('rjmetric', '< secure password here >', true)
 ```
 
-Utilisez cette commande pour accorder la variable [!DNL Commerce Intelligence] accès utilisateur `to a single database`:
+Utilisez cette commande pour accorder l&#39;accès [!DNL Commerce Intelligence] à l&#39;utilisateur `to a single database` :
 
 ```bash
     use < database name >
@@ -115,32 +115,32 @@ Cela imprime une réponse qui ressemble à ceci :
 
 ### Si votre serveur utilise l’option par défaut {#default}
 
-Si votre serveur n’utilise pas `auth` , votre [!DNL MongoDB] est accessible même sans nom d’utilisateur ni mot de passe. Cependant, vous devez vous assurer que la variable `mongodb.conf` fichier `(/etc/mongodb.conf)` contient les lignes suivantes. dans le cas contraire, redémarrez votre serveur une fois que vous les avez ajoutées.
+Si votre serveur n&#39;utilise pas le mode `auth`, votre serveur [!DNL MongoDB] est accessible même sans nom d&#39;utilisateur et mot de passe. Cependant, vous devez vous assurer que le fichier `mongodb.conf` `(/etc/mongodb.conf)` comporte les lignes suivantes - si ce n&#39;est pas le cas, redémarrez votre serveur après les avoir ajoutés.
 
 ```bash
     bind_ip = 127.0.0.1
     noauth = true
 ```
 
-Pour lier votre [!DNL MongoDB] sur une autre adresse du serveur, ajustez le nom d’hôte de la base de données en conséquence à l’étape suivante.
+Pour lier votre serveur [!DNL MongoDB] à une autre adresse, ajustez le nom d’hôte de la base de données à l’étape suivante en conséquence.
 
 ## Saisie des informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence] {#finish}
 
-Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous quitté le [!DNL MongoDB] la page des informations d’identification s’ouvre ? Dans le cas contraire, accédez à **[!UICONTROL Data > Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis la variable [!DNL MongoDB] Icône N’oubliez pas de modifier la variable `Encrypted` bascule vers `Yes`.
+Pour terminer, vous devez saisir les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]. Avez-vous laissé la page des informations d’identification [!DNL MongoDB] ouverte ? Dans le cas contraire, accédez à **[!UICONTROL Data > Connections]** et cliquez sur **[!UICONTROL Add New Data Source]**, puis sur l’icône [!DNL MongoDB]. N’oubliez pas de remplacer la bascule `Encrypted` par `Yes`.
 
-Renseignez les informations suivantes dans cette page, en commençant par le `Database Connection` section :
+Renseignez les informations suivantes dans cette page, en commençant par la section `Database Connection` :
 
-* `Host`: `127.0.0.1`
-* `Username`: la variable [!DNL Commerce Intelligence] [!DNL MongoDB] nom d’utilisateur (doit être `rjmetric`)
-* `Password`: la variable [!DNL Commerce Intelligence] [!DNL MongoDB] password
-* `Port`: port de MongoDB sur votre serveur (`27017` par défaut)
+* `Host` : `127.0.0.1`
+* `Username` : nom d’utilisateur [!DNL Commerce Intelligence] [!DNL MongoDB] (doit être `rjmetric`)
+* `Password` : mot de passe [!DNL Commerce Intelligence] [!DNL MongoDB]
+* `Port` : port de MongoDB sur votre serveur (`27017` par défaut)
 * `Database Name` (Facultatif) : si vous n’avez autorisé l’accès qu’à une base de données, indiquez son nom dans ce champ.
 
-Sous , `SSH Connection` section :
+Sous la section `SSH Connection` :
 
-* `Remote Address`: l’adresse IP ou le nom d’hôte du serveur dans lequel vous allez SSH.
-* `Username`: la variable [!DNL Commerce Intelligence] Nom d’utilisateur Linux (SSH) (doit être jmetric)
-* `SSH Port`: port SSH sur votre serveur (22 par défaut)
+* `Remote Address` : l’adresse IP ou le nom d’hôte du serveur dans lequel vous allez SSH
+* `Username` : nom d’utilisateur [!DNL Commerce Intelligence] Linux (SSH) (doit être jmetric)
+* `SSH Port` : port SSH sur votre serveur (22 par défaut)
 
 Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save Test]** pour terminer la configuration.
 

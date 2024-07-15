@@ -19,7 +19,7 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
 ## Pour créer un rapport simple :
 
-1. Dans le [!DNL Commerce Intelligence] , cliquez sur **[!UICONTROL Report Builder]**.
+1. Dans le menu [!DNL Commerce Intelligence], cliquez sur **[!UICONTROL Report Builder]**.
 
 1. Sous [!UICONTROL Visual Report Builder], cliquez sur **[!UICONTROL Create Report]** et procédez comme suit :
 
@@ -29,9 +29,9 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
      ![Report Builder visuel](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
-   * Choisissez la [metric](../../data-user/reports/ess-manage-data-metrics.md) qui décrit le jeu de données à utiliser pour le rapport.
+   * Sélectionnez la [mesure](../../data-user/reports/ess-manage-data-metrics.md) qui décrit l’ensemble de données à utiliser pour le rapport.
 
-     La variable `New Customers` La mesure utilisée dans cet exemple comptabilise tous les clients et trie la liste par date d’inscription du client à un compte. Le rapport initial comprend un graphique linéaire simple, suivi du tableau de données.
+     La mesure `New Customers` utilisée dans cet exemple comptabilise tous les clients et trie la liste par date d’inscription du client à un compte. Le rapport initial comprend un graphique linéaire simple, suivi du tableau de données.
 
      Le résumé sur la gauche affiche le nom de la mesure actuelle, suivi du résultat de tous les calculs sur les données de colonne spécifiées dans la mesure. Dans cet exemple, le résumé affiche le nombre total de clients.
 
@@ -43,17 +43,17 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
    **`Group By`**
 
-   La variable `Group By` contrôle vous permet d’ajouter plusieurs dimensions par groupe ou segment. Les Dimensions sont des colonnes du tableau qui peuvent être utilisées pour regrouper les données.
+   Le contrôle `Group By` vous permet d’ajouter plusieurs dimensions par groupe ou segment. Les Dimensions sont des colonnes du tableau qui peuvent être utilisées pour regrouper les données.
 
-   * Sélectionnez l’une des dimensions disponibles dans la liste de `Group By` options.
+   * Sélectionnez l’une des dimensions disponibles dans la liste des options `Group By`.
 
      Pour cet exemple, le système a trouvé cinq codes de bon utilisés par les clients lors de leur première commande.
 
      ![Group by](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-     La variable `Group By` Le détail répertorie chaque coupon utilisé par les clients. Les coupons utilisés pour passer la commande initiale sont marqués d’une case à cocher. Le graphique comporte désormais plusieurs lignes colorées représentant chaque coupon utilisé pour une première commande. La légende est codée par couleur pour correspondre à chaque ligne de données.
+     Le détail `Group By` répertorie chaque coupon utilisé par les clients. Les coupons utilisés pour passer la commande initiale sont marqués d’une case à cocher. Le graphique comporte désormais plusieurs lignes colorées représentant chaque coupon utilisé pour une première commande. La légende est codée par couleur pour correspondre à chaque ligne de données.
 
-   * Cliquez sur **[!UICONTROL Apply]** pour fermer le Group By détail.
+   * Cliquez sur **[!UICONTROL Apply]** pour fermer le Groupe par détail.
 
      ![Plusieurs Dimensions](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
@@ -61,9 +61,9 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
    * Le tableau de données comporte désormais une dimension d’ajout, avec une colonne pour chaque mois et une ligne pour chaque code de coupon.
 
-     ![Regrouper par données de tableau](../../assets/magento-bi-report-builder-group-by-table-data.png)
+     ![Group by Table Data](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Cliquez sur Transposer (![](../../assets/magento-bi-btn-transpose.png)) dans le coin supérieur droit du tableau pour modifier l’orientation des données.
+   * Cliquez sur la commande Transposer (![](../../assets/magento-bi-btn-transpose.png)) dans le coin supérieur droit du tableau pour modifier l’orientation des données.
 
      L’axe des données est inversé et le tableau comporte désormais une colonne pour chaque code de coupon et une ligne pour chaque mois. Cette orientation peut être plus facile à lire.
 
@@ -71,21 +71,21 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
    **`Date Range`**
 
-   La variable `Date Range` Le contrôle affiche la période actuelle et les paramètres d’intervalle de temps. Il se trouve juste au-dessus du graphique à droite.
+   Le contrôle `Date Range` affiche la période actuelle et les paramètres d’intervalle de temps. Il se trouve juste au-dessus du graphique à droite.
 
-   * Cliquez sur le bouton `Date Range` control, qui dans cet exemple est défini sur `All-Time by Month`.
+   * Cliquez sur le contrôle `Date Range`, qui dans cet exemple est défini sur `All-Time by Month`.
 
-     ![Période](../../assets/magento-bi-report-builder-date-range.png)
+     ![Plage de dates](../../assets/magento-bi-report-builder-date-range.png)
 
    * Apportez les modifications suivantes :
 
       * Pour effectuer un zoom avant afin d’obtenir une vue plus étroite, définissez la période sur `Last Full Quarter`.
       * Sous `Select Time Interval`, choisissez `Week`.
-      * Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save]**.
+      * Une fois l’opération terminée, cliquez sur **[!UICONTROL Save]**.
 
      Le rapport inclut désormais uniquement les données du dernier trimestre, par semaine.
 
-     ![Rapport pour le dernier trimestre par semaine](../../assets/magento-bi-report-builder-date-range-quarter-by-week-chart.png)
+     ![Rapport du dernier trimestre par semaine](../../assets/magento-bi-report-builder-date-range-quarter-by-week-chart.png)
 
    **Type de graphique**
 
@@ -106,22 +106,22 @@ L’exemple suivant montre comment créer un rapport simple, regrouper les donn�
 
      {style="table-layout:auto"}
 
-1. Pour attribuer au rapport un `title`, remplacez la fonction `Untitled Report` texte en haut de la page avec un titre descriptif.
+1. Pour attribuer au rapport un `title`, remplacez le texte `Untitled Report` en haut de la page par un titre descriptif.
 
 1. Dans le coin supérieur droit, cliquez sur **[!UICONTROL Save]** et procédez comme suit :
 
    * Pour `Type`, acceptez le paramètre par défaut, `Chart`.
 
-   * Choisissez la `Dashboard` où le rapport doit être disponible.
+   * Sélectionnez l’ `Dashboard` où le rapport doit être disponible.
 
    * Cliquez sur **[!UICONTROL Save to Dashboard]**.
 
-     ![Enregistrer dans le tableau de bord](../../assets/magento-bi-report-builder-save-to-dashboard.png)
+     ![Enregistrer sur le tableau de bord](../../assets/magento-bi-report-builder-save-to-dashboard.png)
 
 1. Pour afficher le graphique dans un tableau de bord, effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL Go to Dashboard]** dans le message en haut de la page.
 
-   * Dans le menu, choisissez `Dashboards` et cliquez sur le nom du tableau de bord en cours pour afficher la liste. Cliquez ensuite sur le nom du tableau de bord dans lequel le rapport a été enregistré.
+   * Dans le menu, choisissez `Dashboards` et cliquez sur le nom du tableau de bord actuel pour afficher la liste. Cliquez ensuite sur le nom du tableau de bord dans lequel le rapport a été enregistré.
 
      ![Rapport dans le tableau de bord](../../assets/magento-bi-report-builder-my-dashboard.png)

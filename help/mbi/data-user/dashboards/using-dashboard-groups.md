@@ -29,27 +29,27 @@ Les groupes de tableaux de bord peuvent être créés de deux façons :
 
 1. Lors de la création d’un tableau de bord :
 
-   ![créer un groupe de tableaux de bord](../../assets/create-dashboard-groups-new-dashboard.png)
+   ![créer un groupe de tableau de bord](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. Lors de la modification du groupe d’un tableau de bord existant, dans la variable `Manage Data > Dashboards` page :
+1. Lors de la modification du groupe d’un tableau de bord existant, sur la page `Manage Data > Dashboards` :
 
    1. Cliquez sur le tableau de bord pour lequel vous souhaitez créer le groupe.
 
-   1. Sous `Dashboard Group (optional)`, le groupe de tableau de bord actif s’affiche.
+   1. Sous `Dashboard Group (optional)`, le groupe de tableau de bord actuel s’affiche.
 
    1. Pour créer un groupe, saisissez le nom du nouveau groupe, puis cliquez en dehors de la zone.
 
-      ![créer un groupe de tableaux de bord](../../assets/create-dashboard-groups-existing-dashboard.png)
+      ![créer un groupe de tableau de bord](../../assets/create-dashboard-groups-existing-dashboard.png)
 
 ## Ajout de tableaux de bord existants à des groupes existants
 
-1. Sur le `Manage Data > Dashboards` , sélectionnez le tableau de bord pour lequel modifier le groupe.
+1. Sur la page `Manage Data > Dashboards`, sélectionnez le tableau de bord pour lequel modifier le groupe.
 
-1. Le texte sous `Dashboard Group (optional)` affiche le groupe de tableaux de bord actuel du tableau de bord.
+1. Le texte sous `Dashboard Group (optional)` affiche le groupe de tableau de bord actuel du tableau de bord.
 
-1. Pour modifier le groupe du tableau de bord, choisissez un autre groupe dans la liste, ici : `PS`, `Campaigns`.
+1. Pour modifier le groupe du tableau de bord, choisissez un autre groupe dans la liste, ici `PS`, `Campaigns`.
 
-   ![tableau de bord du groupe de modifications](../../assets/add-existing-dashboard-existing-group.png)
+   ![ Modifier le tableau de bord du groupe ](../../assets/add-existing-dashboard-existing-group.png)
 
 ## Suppression de groupes de tableaux de bord
 

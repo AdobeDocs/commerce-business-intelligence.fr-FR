@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Modifier l’accès aux tableaux de bord partagés
 
-Vous pouvez modifier à tout moment l’accès aux tableaux de bord en procédant de la même manière que pour [partager initialement le tableau de bord ;](../../data-user/dashboards/share-dashboard-with-users.md){ : target=&quot;_blank&quot;}. Dans la liste des utilisateurs qui s’affiche dans la variable `Share Dashboard` , mettez à jour les autorisations utilisateur/organisation selon les besoins, puis cliquez sur **[!UICONTROL Save Changes]** pour mettre à jour.
+L’accès aux tableaux de bord peut être modifié à tout moment en utilisant les mêmes étapes que pour [partager initialement le tableau de bord](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. Dans la liste des utilisateurs qui s&#39;affiche dans le menu `Share Dashboard`, mettez à jour les autorisations utilisateur/organisation selon les besoins, puis cliquez sur **[!UICONTROL Save Changes]** pour mettre à jour.

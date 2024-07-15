@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->L’accès à ces tableaux de bord dépend du type de compte et du niveau d’accès. Si ces tableaux de bord ne s’affichent pas, contactez [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>L’accès à ces tableaux de bord dépend du type de compte et du niveau d’accès. Si vous ne voyez pas ces tableaux de bord, contactez [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilité des rapports
 
-Pour le `Customers` et `Executive Summary` Dans les tableaux de bord, certains rapports ne sont disponibles que selon la configuration de passage en caisse de votre boutique. Plus précisément, si votre boutique autorise le passage en caisse des invités ou n’autorise pas le passage en caisse des invités.
+Pour les tableaux de bord `Customers` et `Executive Summary`, certains rapports ne sont disponibles que selon la configuration de passage en caisse de votre boutique. Plus précisément, si votre boutique autorise le passage en caisse des invités ou n’autorise pas le passage en caisse des invités.
 
 ## Clients (passage en caisse autorisé pour les invités)
 
@@ -42,7 +42,7 @@ Le tableau de bord Clients (passage en caisse autorisé) fournit des information
 | `Time Between Orders` | Le temps moyen et médian pris par les clients entre les commandes, ventilé par numéro de commande (c’est-à-dire le temps entre les commandes un et deux, deux et trois, etc.). |
 | `Number of Customers - Lifetime Orders` | Pour un nombre donné de commandes passées dans la durée de vie d’un client, le nombre de clients qui ont passé autant de commandes et le pourcentage de l’ensemble de la base de clients représentée par ce nombre. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Les clients qui ont effectué leur premier et unique achat il y a de trois à six mois. |
-| `Avg LTV by First Order` | Compare les recettes cumulées moyennes sur la durée de vie des clients entre les cohortes. Les cohortes sont définies par le mois au cours duquel un client a effectué un premier achat. Par exemple, un `Jan 2020` cohorte présente la moyenne cumulée des télévisions pour les clients dont le premier achat a eu lieu en janvier 2020. |
+| `Avg LTV by First Order` | Compare les recettes cumulées moyennes sur la durée de vie des clients entre les cohortes. Les cohortes sont définies par le mois au cours duquel un client a effectué un premier achat. Par exemple, une cohorte de `Jan 2020` affiche la moyenne cumulée des télévisions pour les clients dont le premier achat a eu lieu en janvier 2020. |
 | `Customer's First 30 Day vs Lifetime Revenue` | Comparaison des recettes moyennes des clients dans les 30 jours suivant leur premier achat et dans l’ensemble de leur vie. Chaque bulle correspond à une région d’expédition, et la taille de chaque bulle représente le nombre de clients acquis de cette région. |
 
 ## Clients (aucun passage en caisse autorisé pour les invités)
@@ -133,7 +133,7 @@ Le tableau de bord Commandes fournit des informations sur le volume transactionn
 
 ## Produits
 
-Le tableau de bord Produits présente les performances générales du produit en termes de produits commandés, de leur valeur brute de marchandisage (GMV) et des principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, ainsi qu’à déterminer le succès et la popularité du produit. Votre boutique doit être [configuré pour suivre les remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) pour que ces graphiques soient renseignés.
+Le tableau de bord Produits présente les performances générales du produit en termes de produits commandés, de leur valeur brute de marchandisage (GMV) et des principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, ainsi qu’à déterminer le succès et la popularité du produit. Votre magasin doit être [ configuré pour effectuer le suivi des remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) pour que ces graphiques soient renseignés.
 
 >[!NOTE]
 >
