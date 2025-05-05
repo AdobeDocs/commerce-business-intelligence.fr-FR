@@ -17,7 +17,7 @@ Lorsque vous vous connectez à votre tableau de bord [!DNL Adobe Commerce Intell
 
 ## Pourquoi dois-je vérifier l’état du cycle de mise à jour ?
 
-La vérification du cycle de mise à jour du statut est utile lorsque vous contrôlez les données de votre compte [!DNL Commerce Intelligence]. Si vous voyez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez sur votre plateforme d’e-commerce ou dans vos [[!DNL Google] recettes d’e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
+La vérification du cycle de mise à jour du statut est utile lorsque vous contrôlez les données de votre compte [!DNL Commerce Intelligence]. Si vous voyez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez sur votre plateforme d’e-commerce ou dans vos [[!DNL Google] recettes d’e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=fr), vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
 
 ## [!UICONTROL Read-Only] et [!UICONTROL Standard] utilisateurs
 

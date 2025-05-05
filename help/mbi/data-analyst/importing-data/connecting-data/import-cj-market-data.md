@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Importer les données [!DNL CJ Affiliate]
 
-Pour importer des données [!DNL CJ Affiliate (Commission Junction)] dans [!DNL Adobe Commerce Intelligence], suivez les étapes ci-dessous et joignez le fichier obtenu à un [ ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Adobe configure le tableau de données de votre compte et vous permet de continuer à charger les données indépendamment.
+Pour importer des données [!DNL CJ Affiliate (Commission Junction)] dans [!DNL Adobe Commerce Intelligence], suivez les étapes ci-dessous et joignez le fichier obtenu à un [ ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr). Adobe configure le tableau de données de votre compte et vous permet de continuer à charger les données indépendamment.
 
 ## Exporter les données [!DNL CJ Affiliate]
 

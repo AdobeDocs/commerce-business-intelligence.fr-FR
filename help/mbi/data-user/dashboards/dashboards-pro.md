@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->L’accès à ces tableaux de bord dépend du type de compte et du niveau d’accès. Si vous ne voyez pas ces tableaux de bord, contactez [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>L’accès à ces tableaux de bord dépend du type de compte et du niveau d’accès. Si vous ne voyez pas ces tableaux de bord, contactez [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
 
 ## Disponibilité des rapports
 
@@ -133,7 +133,7 @@ Le tableau de bord Commandes fournit des informations sur le volume transactionn
 
 ## Produits
 
-Le tableau de bord Produits présente les performances générales du produit en termes de produits commandés, de leur valeur brute de marchandisage (GMV) et des principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, ainsi qu’à déterminer le succès et la popularité du produit. Votre magasin doit être [ configuré pour effectuer le suivi des remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) pour que ces graphiques soient renseignés.
+Le tableau de bord Produits présente les performances générales du produit en termes de produits commandés, de leur valeur brute de marchandisage (GMV) et des principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, ainsi qu’à déterminer le succès et la popularité du produit. Votre magasin doit être [ configuré pour effectuer le suivi des remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=fr) pour que ces graphiques soient renseignés.
 
 >[!NOTE]
 >

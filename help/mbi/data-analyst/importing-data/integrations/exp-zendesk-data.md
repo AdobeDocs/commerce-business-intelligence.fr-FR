@@ -35,4 +35,4 @@ Cette rubrique explore les tables de données principales que vous pouvez import
 ## Associé
 
 * [Connexion à Zendesk](../integrations/zendesk.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)

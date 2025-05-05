@@ -62,4 +62,4 @@ Pour visualiser tous les champs disponibles pour le tracking, cliquez sur les li
 ## En rapport :
 
 * [Connexion [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)

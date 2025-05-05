@@ -82,4 +82,4 @@ Outre l’analyse du comportement de réachat de vos clients, vous pouvez égale
 
 Une fois que vous avez identifié la raison de l’attrition, vous pouvez utiliser votre analyse pour créer une campagne `reactivation`. Grâce à ces données, vous pouvez identifier les utilisateurs devenus inactifs, la durée écoulée depuis leur dernière visite, le dernier achat effectué, etc. Cela vous permet de prendre des décisions pratiques qui incitent vos clients à revenir.
 
-Pour obtenir de l’aide sur l’analyse, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Pour obtenir de l’aide sur l’analyse, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).

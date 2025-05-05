@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Analyse des niveaux de stock
 
-Cette rubrique explique comment configurer un tableau de bord qui fournit des informations sur votre inventaire actuel et contient des instructions destinées aux clients sur l’architecture héritée ou la nouvelle architecture. Vous vous trouvez sur l’architecture héritée si vous ne disposez pas de l’option **[!UICONTROL Data Warehouse Views]** sous le menu **[!UICONTROL Manage Data]**. Si vous utilisez l’architecture héritée, envoyez une [nouvelle demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) avec l’objet **[!UICONTROL INVENTORY ANALYSIS]** une fois que vous avez atteint la section désignée dans les instructions _Colonnes calculées_ ci-dessous.
+Cette rubrique explique comment configurer un tableau de bord qui fournit des informations sur votre inventaire actuel et contient des instructions destinées aux clients sur l’architecture héritée ou la nouvelle architecture. Vous vous trouvez sur l’architecture héritée si vous ne disposez pas de l’option **[!UICONTROL Data Warehouse Views]** sous le menu **[!UICONTROL Manage Data]**. Si vous utilisez l’architecture héritée, envoyez une [nouvelle demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) avec l’objet **[!UICONTROL INVENTORY ANALYSIS]** une fois que vous avez atteint la section désignée dans les instructions _Colonnes calculées_ ci-dessous.
 
 ## Colonnes à suivre :
 
@@ -267,4 +267,4 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
      [!UICONTROL Chart type]: `Table`
 
-Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).

@@ -65,4 +65,4 @@ Dans cet exemple, vous avez utilisé la perspective `Stacked Columns` pour affic
 
 Avez-vous remarqué dans les exemples ci-dessus que les `timestamp`, `groupings`, `perspectives` et `filters` de la formule sont hérités de ses mesures d’entrée ? Gardez à l’esprit que les formules peuvent être utilisées pour utiliser `perspectives` et les [options d’heure indépendantes](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, comme le peuvent les mesures.
 
-Si vous avez des questions supplémentaires sur l&#39;utilisation des formules dans `Report Builder`, [contactez le support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si vous avez des questions supplémentaires sur l&#39;utilisation des formules dans `Report Builder`, [contactez le support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).

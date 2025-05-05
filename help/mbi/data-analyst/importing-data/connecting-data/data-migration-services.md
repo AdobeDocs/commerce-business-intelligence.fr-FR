@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migration des données
 
-La migration vers une nouvelle base de données, un nouveau serveur ou une nouvelle base de données de rapports n’a pas à être stressante. L’ [[!DNL Adobe] équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre une assistance pour la migration.
+La migration vers une nouvelle base de données, un nouveau serveur ou une nouvelle base de données de rapports n’a pas à être stressante. L’ [[!DNL Adobe] équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) offre une assistance pour la migration.
 
 Pour garantir une transition aussi fluide que possible, vous devez être le plus détaillé possible lors de l’envoi de votre demande de migration. Cette rubrique contient tous les éléments dont vous avez besoin pour envoyer une demande et commencer la migration. Nous fournir une image complète de vos besoins vous garantit que votre projet est correctement ciblé et que l’estimation est exacte.
 
@@ -67,7 +67,7 @@ Voici un exemple :
 
 ## Comment envoyer une demande ? {#submitreq}
 
-Vous pouvez nous contacter en [envoyant une demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Vous pouvez nous contacter en [envoyant une demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
 
 Si vous avez suivi les étapes de la section précédente pour créer la feuille de calcul correspondante aux colonnes, n’oubliez pas de la joindre.
 

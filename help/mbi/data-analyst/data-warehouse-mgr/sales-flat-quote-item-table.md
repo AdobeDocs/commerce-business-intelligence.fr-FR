@@ -23,13 +23,13 @@ La table `quote_item` (`sales_flat_quote_item` sur M1) contient des enregistreme
 
 | **Nom de colonne** | **Description** |
 |---|---|
-| `base_price` | Le prix d’une unité individuelle d’un produit au moment de l’ajout de l’article dans un panier, après l’application des [règles de prix catalogue, remises à niveau et prix spécial](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) et avant l’application des taxes, frais de livraison ou remises sur le panier. Il est représenté dans la devise de base du magasin. |
+| `base_price` | Le prix d’une unité individuelle d’un produit au moment de l’ajout de l’article dans un panier, après l’application des [règles de prix catalogue, remises à niveau et prix spécial](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=fr) et avant l’application des taxes, frais de livraison ou remises sur le panier. Il est représenté dans la devise de base du magasin. |
 | `created_at` | Horodatage de création de l’article de panier, stocké localement en UTC. Selon votre configuration dans [!DNL Commerce Intelligence], cet horodatage peut être converti en fuseau horaire de création de rapports dans [!DNL Commerce Intelligence] qui diffère du fuseau horaire de votre base de données. |
 | `item_id` (PK) | Identifiant unique du tableau |
 | `name` | Nom de texte de l’élément de commande. |
 | `parent_item_id` | `Foreign key` qui associe un produit simple à son lot parent ou à un produit configurable. Rejoignez `quote_item.item_id` pour déterminer les attributs de produit parents associés à un produit simple. Pour les éléments de panier parent (c’est-à-dire, les types de produits regroupés ou configurables), le `parent_item_id` est `NULL` |
 | `product_id` | `Foreign key` associé à la table `catalog_product_entity`. Rejoignez `catalog_product_entity.entity_id` pour déterminer les attributs de produit associés à l’élément de commande |
-| `product_type` | Type de produit ajouté au panier. Les [ types de produits potentiels](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) incluent : simple, configurable, groupé, virtuel, groupé et téléchargeable. |
+| `product_type` | Type de produit ajouté au panier. Les [ types de produits potentiels](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=fr#product-types) incluent : simple, configurable, groupé, virtuel, groupé et téléchargeable. |
 | `qty` | Nombre d’unités incluses dans le panier pour l’article particulier du panier |
 | `quote_id` | `Foreign key` associé à la table `quote`. Rejoindre `quote.entity_id` pour déterminer les attributs de panier associés à l’élément de panier |
 | `sku` | Identifiant unique de l’élément de panier |
@@ -43,7 +43,7 @@ La table `quote_item` (`sales_flat_quote_item` sur M1) contient des enregistreme
 |---|---|
 | `Cart creation date` | Horodatage associé à la date de création du panier. Calculé en associant `quote_item.quote_id` à `quote.entity_id` et en renvoyant l’horodatage `created_at` |
 | `Cart is active? (1/0)` | Champ booléen qui renvoie &quot;1&quot; si le panier a été créé par un client et n’a pas encore été converti en commande. Renvoie &quot;0&quot; pour les paniers convertis ou les paniers créés via l’administrateur. Calculé en associant `quote_item.quote_id` à `quote.entity_id` et en renvoyant le champ `is_active` |
-| `Cart item total value (qty * base_price)` | Valeur totale d’un article au moment de son ajout dans un panier, après l’application des [règles de prix du catalogue, des remises à niveau et des prix spéciaux](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) et avant l’application des taxes, des frais d’expédition ou des remises sur le panier. Calculé en multipliant le `qty` par le `base_price` |
+| `Cart item total value (qty * base_price)` | Valeur totale d’un article au moment de son ajout dans un panier, après l’application des [règles de prix du catalogue, des remises à niveau et des prix spéciaux](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=fr) et avant l’application des taxes, des frais d’expédition ou des remises sur le panier. Calculé en multipliant le `qty` par le `base_price` |
 | `Seconds since cart creation` | Délai écoulé entre la date de création du panier et maintenant. Calculé en associant `quote_item.quote_id` à `quote.entity_id` et en renvoyant le champ `Seconds since cart creation` |
 | `Store name` | Nom de la boutique Commerce associée à l’élément de commande. Calculé en associant `sales_order_item.store_id` à `store.store_id` et en renvoyant le champ `name` |
 
@@ -72,7 +72,7 @@ La table `quote_item` (`sales_flat_quote_item` sur M1) contient des enregistreme
 
 `quote_item`
 
-* Rejoignez `quote_item` pour créer des colonnes qui associent les détails du SKU configurable parent ou du bundle au produit simple. [Contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour obtenir de l’aide sur la configuration de ces calculs, en cas de création dans le gestionnaire de Data Warehouse.
+* Rejoignez `quote_item` pour créer des colonnes qui associent les détails du SKU configurable parent ou du bundle au produit simple. [Contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l’aide sur la configuration de ces calculs, en cas de création dans le gestionnaire de Data Warehouse.
    * Chemin : `quote_item.parent_item_id` (plusieurs) => `quote_item.item_id` (un)
 
 `store`

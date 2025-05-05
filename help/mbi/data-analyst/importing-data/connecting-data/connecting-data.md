@@ -70,6 +70,6 @@ Pour ajouter une intégration, cliquez sur **[!UICONTROL Manage Data** > **Conne
 * [Consolidation des tableaux](../../../best-practices/consolidating-your-tables.md)
 * [Limitation de l’accès à votre base de données](../../../administrator/account-management/restrict-db-access.md)
 
-**Vous ne voyez pas une intégration que vous souhaitez ?** Certaines intégrations doivent être activées pour qu’elles soient visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais qu&#39;il n&#39;est pas répertorié, [soumettez un ticket d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+**Vous ne voyez pas une intégration que vous souhaitez ?** Certaines intégrations doivent être activées pour qu’elles soient visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais qu&#39;il n&#39;est pas répertorié, [soumettez un ticket d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
 
 **Si vous voyez un état d’erreur pour une intégration**, consultez la [section de dépannage](https://support.magento.com/hc/en-us/sections/360003078151) pour obtenir de l’aide.

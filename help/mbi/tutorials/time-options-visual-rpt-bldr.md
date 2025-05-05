@@ -66,7 +66,7 @@ Vous pouvez voir à quel point chaque mois a eu un impact l&#39;année dernière
 
 ## Comparaison de la même mesure sur différentes périodes {#difftimerange}
 
-Cet exemple utilise une dimension personnalisée appelée `Day number of the month`. Si vous souhaitez créer ce rapport et que vous ne disposez pas déjà de cette dimension dans votre Data Warehouse, [contactez l&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour obtenir de l&#39;aide.
+Cet exemple utilise une dimension personnalisée appelée `Day number of the month`. Si vous souhaitez créer ce rapport et que vous ne disposez pas déjà de cette dimension dans votre Data Warehouse, [contactez l&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l&#39;aide.
 
 Les deux exemples les plus courants dans cette catégorie sont (1) la comparaison des mesures de croissance (recettes d’une année à l’autre ou d’un mois à l’autre) et (2) une meilleure compréhension des tendances récentes de ventes d’inventaire ou d’article.
 

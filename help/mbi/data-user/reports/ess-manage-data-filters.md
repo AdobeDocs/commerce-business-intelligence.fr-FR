@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Si plusieurs mesures de [!DNL Commerce Intelligence] doivent être filtrées de la même manière (par exemple, filtrer les commandes de test), vous pouvez créer des visionneuses de filtres enregistrées et les appliquer aux mesures. Cela vous permet de gagner du temps, car vous n’avez pas à ajouter de filtres individuels lors de la création ou de la modification d’une mesure.
 
-Pour plus d’informations, consultez la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) .
+Pour plus d’informations, consultez la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=fr) .
 
 >[!NOTE]
 >

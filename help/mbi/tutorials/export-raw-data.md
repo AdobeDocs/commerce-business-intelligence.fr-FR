@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Exporter les données brutes
 
-Grâce aux exportations de données brutes, vous pouvez exporter des enregistrements de votre Data Warehouse afin d’examiner de plus près ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider à [identifier les incohérences de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
+Grâce aux exportations de données brutes, vous pouvez exporter des enregistrements de votre Data Warehouse afin d’examiner de plus près ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider à [identifier les incohérences de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=fr).
 
 Les exportations de données brutes permettent d’accéder à des colonnes et dimensions supplémentaires générées par la normalisation et la pré-agrégation des mesures pertinentes. Par exemple, `User's first order date` est une dimension que vous pouvez exporter pour chaque utilisateur de [!DNL Commerce Intelligence], mais qui peut ne pas être disponible dans votre base de données.
 

@@ -26,4 +26,4 @@ Pour exporter vos données [!DNL Bing Ads], [!DNL Bing Ads Editor] doit être in
 1. Dans la boîte de dialogue `Save As`, cliquez sur le dossier dans lequel vous souhaitez enregistrer votre fichier d’exportation.
 1. Dans la zone `File name`, choisissez un nom pour votre exportation de fichiers.
 1. Cliquez sur **[!UICONTROL Save]**.
-1. Une fois le fichier téléchargé, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour effectuer un premier téléchargement en votre nom et configurer les dimensions principales nécessaires.
+1. Une fois le fichier téléchargé, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour effectuer un premier téléchargement en votre nom et configurer les dimensions principales nécessaires.

@@ -58,7 +58,7 @@ Assurez-vous que vous effectuez le suivi des campagnes [!DNL Facebook] dans [!DN
 
 ## Associé
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
 * [Connectez-vous à votre compte  [!DNL Google Adwords] ](../integrations/google-ecommerce.md)
 * [Suivi de la source de référence de commande via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Suivi de la source de référence des utilisateurs dans votre base de données](../../analysis/google-track-user-acq.md)

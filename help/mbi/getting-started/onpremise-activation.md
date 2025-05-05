@@ -23,7 +23,7 @@ Pour créer votre compte, contactez votre équipe de compte d’Adobe ou votre c
 
 Une fois votre compte créé, recherchez dans votre courrier électronique de notification de compte provenant de [!DNL The Magento BI Team@rjmetrics.com]. Utilisez le lien fourni dans l&#39;email pour accéder à votre compte [!DNL Commerce Intelligence] et créer votre mot de passe. Accédez à votre boîte de réception et vérifiez votre adresse électronique.
 
-Si vous n&#39;avez pas reçu de courrier électronique, [contactez le support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si vous n&#39;avez pas reçu de courrier électronique, [contactez le support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
 
 ![](../assets/create-account-4.png)
 
@@ -170,7 +170,7 @@ Une fois la configuration terminée, [connectez-vous](../getting-started/sign-in
 
 <!---# Activate your [!DNL Commerce Intelligence] Account 
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
 
 >[!NOTE]
 >

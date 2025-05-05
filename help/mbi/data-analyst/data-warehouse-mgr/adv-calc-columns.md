@@ -161,7 +161,7 @@ Pour créer ce type de colonne calculée, vous devez savoir :
 
 Pas de quoi s&#39;inquiéter. Ce n&#39;est pas parce qu&#39;il n&#39;est pas répertorié ici que ce n&#39;est pas possible. L’équipe Adobe d’analystes Data Warehouse peut vous aider.
 
-Pour définir une nouvelle colonne calculée, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) avec des détails précis sur ce que vous souhaitez créer.
+Pour définir une nouvelle colonne calculée, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) avec des détails précis sur ce que vous souhaitez créer.
 
 ## Documentation connexe
 

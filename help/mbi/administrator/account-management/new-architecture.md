@@ -45,7 +45,7 @@ Une fois cette opération terminée, vous savez quelles données vous devez sync
 
 ### Obtention d’aide
 
-L’ [!DNL Adobe Commerce Intelligence] [équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) peut effectuer votre remise en oeuvre pour un coût supplémentaire. Contactez votre [ équipe de compte d’Adobe ](../../guide-overview.md#Submitting-a-Support-Ticket) et soyez prêt à fournir une liste de tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte.
+L’ [!DNL Adobe Commerce Intelligence] [équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) peut effectuer votre remise en oeuvre pour un coût supplémentaire. Contactez votre [ équipe de compte d’Adobe ](../../guide-overview.md#Submitting-a-Support-Ticket) et soyez prêt à fournir une liste de tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte.
 
 ### Rester avec l’architecture existante
 

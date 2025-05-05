@@ -43,4 +43,4 @@ Outre la réévaluation des fréquences de contrôle, des méthodes de réplicat
 
 ## Remplissage
 
-Si le temps de mise à jour semble encore long même après la mise en oeuvre de ces recommandations, [contactez l&#39;équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si le temps de mise à jour semble encore long même après la mise en oeuvre de ces recommandations, [contactez l&#39;équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).

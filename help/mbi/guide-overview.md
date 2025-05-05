@@ -39,23 +39,23 @@ Outre les workflows basés sur les rôles ci-dessus, ce guide contient égalemen
 
 ## Accès à l’aide
 
-Contactez l’ [équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si vous avez des questions et souhaitez profiter de certains de vos services professionnels ou si vous rencontrez des problèmes avec votre compte.
+Contactez l’ [équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) si vous avez des questions et souhaitez profiter de certains de vos services professionnels ou si vous rencontrez des problèmes avec votre compte.
 
 ### Stratégies de service
 
-Consultez la [liste des services que l’équipe d’assistance clientèle fournit](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Consultez la [liste des services que l’équipe d’assistance clientèle fournit](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
 
 ### Envoi d’un ticket d’assistance
 
-Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter l’équipe d’assistance, Adobe vous demande d’utiliser les [ instructions relatives aux tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
+Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défaut ou un problème de connexion s’est produit ? Si vous devez contacter l’équipe d’assistance, Adobe vous demande d’utiliser les [ instructions relatives aux tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr). Ces directives indiquent que l’Adobe d’informations doit résoudre le problème.
 
 ## Documentation disponible
 
 | Ressource de documentation | Description |
 |----------------------- | ----------- |
-| [ &lbrace;Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
-| [Documentation sur les services pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | Documentation pour prendre en charge un ensemble de services qui aident les marchands à intégrer les composants clés de leur entreprise à leur magasin. |
-| [Guides opérationnels Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Documentation système sur les concepts, processus, outils et bonnes pratiques permettant de développer, déployer et gérer des projets déployés sur des plateformes Adobe Commerce et Magento Open Source. |
+| [ &lbrace;Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr) | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
+| [Documentation sur les services pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=fr) | Documentation pour prendre en charge un ensemble de services qui aident les marchands à intégrer les composants clés de leur entreprise à leur magasin. |
+| [Guides opérationnels Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr) | Documentation système sur les concepts, processus, outils et bonnes pratiques permettant de développer, déployer et gérer des projets déployés sur des plateformes Adobe Commerce et Magento Open Source. |
 | [Documentation pour les développeurs Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |
 
 {style="table-layout:auto"}

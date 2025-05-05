@@ -36,4 +36,4 @@ La connexion de vos données [!DNL Salesforce] permet d’effectuer diverses ana
 Si vous êtes un peu plus féru de technologie, la [[!DNL Salesforce] documentation de l’API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) peut être une ressource utile pour en savoir plus sur la façon dont Salesforce est intégré à [!DNL Commerce Intelligence].
 
 * [Données  [!DNL Salesforce] attendues](../integrations/salesforce-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)

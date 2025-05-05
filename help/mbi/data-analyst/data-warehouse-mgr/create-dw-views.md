@@ -136,7 +136,7 @@ Plutôt que de créer un ensemble distinct de mesures marketing pour chaque sour
 
 **Vous recherchez une aide supplémentaire ?**
 
-L’écriture de SQL et la création de `Data Warehouse Views` ne sont pas incluses dans le support technique. Cependant, l’ [équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre une assistance pour la création de vues. Pour tout savoir sur la migration d’une base de données héritée avec une nouvelle base de données afin de créer une vue de Data Warehouse unique aux fins d’une analyse spécifique, l’équipe d’assistance peut vous aider.
+L’écriture de SQL et la création de `Data Warehouse Views` ne sont pas incluses dans le support technique. Cependant, l’ [équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) offre une assistance pour la création de vues. Pour tout savoir sur la migration d’une base de données héritée avec une nouvelle base de données afin de créer une vue de Data Warehouse unique aux fins d’une analyse spécifique, l’équipe d’assistance peut vous aider.
 
 En règle générale, la création d’un nouveau `Data Warehouse View` dans le but de consolider 2 à 3 tables structurées de la même manière nécessite cinq heures de service, ce qui représente environ 1 250 $ de travail. Vous trouverez ci-dessous quelques facteurs courants susceptibles d’accroître l’investissement attendu nécessaire :
 

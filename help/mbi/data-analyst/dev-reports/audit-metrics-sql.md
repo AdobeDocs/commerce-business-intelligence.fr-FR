@@ -48,4 +48,4 @@ Vous pouvez également écrire des requêtes personnalisées et exporter les ré
 
 >[!NOTE]
 >
->Si vous constatez une incohérence après le contrôle de vos données, consultez la rubrique d’assistance [Contacter l’assistance : écarts de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) pour plus d’informations sur les prochaines actions à entreprendre.
+>Si vous constatez une incohérence après le contrôle de vos données, consultez la rubrique d’assistance [Contacter l’assistance : écarts de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=fr) pour plus d’informations sur les prochaines actions à entreprendre.

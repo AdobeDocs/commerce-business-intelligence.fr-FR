@@ -54,4 +54,4 @@ Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navig
 ## En rapport :
 
 * [Données  [!DNL Zendesk] attendues](../integrations/exp-zendesk-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)

@@ -25,6 +25,6 @@ Dans certains cas, vous pouvez décider de modifier le tableau de données utili
 
    ![](../../assets/change-metrics-2.png)
 
-1. Si la nouvelle table ne contient pas de colonne correspondante, vous pouvez **la créer dans votre table de données** ou [contacter l&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) s&#39;il s&#39;agit d&#39;une colonne de calcul ou d&#39;une dimension effectuée par [!DNL Commerce Intelligence]. Vous pouvez également **supprimer la dimension de la mesure**. Pour supprimer une dimension dont vous n’avez plus besoin, revenez simplement à l’éditeur de mesures et sélectionnez les dimensions à supprimer sous `Dimensions`.
+1. Si la nouvelle table ne contient pas de colonne correspondante, vous pouvez **la créer dans votre table de données** ou [contacter l&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) s&#39;il s&#39;agit d&#39;une colonne de calcul ou d&#39;une dimension effectuée par [!DNL Commerce Intelligence]. Vous pouvez également **supprimer la dimension de la mesure**. Pour supprimer une dimension dont vous n’avez plus besoin, revenez simplement à l’éditeur de mesures et sélectionnez les dimensions à supprimer sous `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

@@ -57,6 +57,6 @@ Les informations suivantes sont nécessaires pour se connecter :
 
 1. La suite de rapports sélectionnée s’affiche dans un tableau. Cliquez sur **[!UICONTROL Save]** pour confirmer votre sélection.
 
-1. Informez l&#39; [!DNL Commerce Intelligence] [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) que votre intégration est autorisée et qu&#39;ils exécutent le processus de connexion initial pour vous.
+1. Informez l&#39; [!DNL Commerce Intelligence] [équipe d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) que votre intégration est autorisée et qu&#39;ils exécutent le processus de connexion initial pour vous.
 
 Une fois le processus de connexion initial exécuté, votre table sera disponible dans la page du Data Warehouse, sous l’onglet `All Tables`. Sélectionnez les colonnes que vous souhaitez répliquer et les données apparaîtront après la prochaine mise à jour complète.

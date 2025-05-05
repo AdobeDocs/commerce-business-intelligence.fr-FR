@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Le [!DNL SQL Report Builder] vous permet d’interroger et d’itérer sur ces requêtes à un moment donné. Cela s’avère utile lorsque vous devez modifier une requête sans avoir à attendre la fin d’un cycle de mise à jour avant de réaliser une colonne ou un rapport que vous avez créé qui doit être mis à jour.
 
-Avant l&#39;exécution d&#39;une requête, [[!DNL Commerce Intelligence] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Le coût prend en compte le temps et le nombre de ressources nécessaires à l’exécution d’une requête. Si ce coût est considéré comme trop élevé ou si le nombre de lignes renvoyées dépasse les limites de [!DNL Commerce Intelligence], la requête échoue. Pour interroger votre [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), ce qui vous permet d’écrire les requêtes les plus simples possible, Adobe recommande ce qui suit.
+Avant l&#39;exécution d&#39;une requête, [[!DNL Commerce Intelligence] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=fr). Le coût prend en compte le temps et le nombre de ressources nécessaires à l’exécution d’une requête. Si ce coût est considéré comme trop élevé ou si le nombre de lignes renvoyées dépasse les limites de [!DNL Commerce Intelligence], la requête échoue. Pour interroger votre [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), ce qui vous permet d’écrire les requêtes les plus simples possible, Adobe recommande ce qui suit.
 
 ## Utilisation de l’option SELECT (Sélectionner) ou Sélectionner toutes les colonnes
 

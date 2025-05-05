@@ -25,7 +25,7 @@ Si vous avez ajouté un filtre qui utilise une dimension différente de toutes l
 
 Dans certains cas, vous pouvez transformer une dimension `order-specific` en une dimension `user-specific` à ajouter en tant que filtre dans le graphique `Repeat Order Probability`. Dans ce cas, vous renvoyez l’attribut de commande de la première commande ou de la dernière commande d’un utilisateur (par exemple, le nom de la région de première commande de l’utilisateur).
 
-Si vous souhaitez créer une telle nouvelle dimension, [contactez le support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si vous souhaitez créer une telle nouvelle dimension, [contactez le support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
 
 ## Comparaison de la probabilité de répétition des commandes avec différents attributs
 
