@@ -76,19 +76,22 @@ Colonnes à créer
 * **Taux de perte de clientèle**
    * [!UICONTROL Metric] : Nouveaux clients (par date de première commande)
    * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
+
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric] : `New customers (by last order date)`
    * [!UICONTROL Filter] :
-   * Secondes depuis la date de la dernière commande du client >= [Votre coupure auto-définie pour les clients connectés ]**`^`**
+   * Secondes depuis la date de la dernière commande du client >= [Votre coupure auto-définie pour les clients connectés ]&#x200B;**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric] : `New customers (by last order date)`
    * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
+
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula] : `(B / ((A + B) - C)`
-   * 
+   * &#x200B;
+
      [!UICONTROL Format]: Percentage
 
 * *Mesure `A` :`New customers cumulative`*

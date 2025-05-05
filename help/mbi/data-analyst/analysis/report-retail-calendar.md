@@ -50,7 +50,8 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) une version `.csv` du
    * **Date actuelle**
       * [!UICONTROL Column type] : `Same table > Calculation`
       * [!UICONTROL Inputs] : `Date Retail`
-      * 
+      * &#x200B;
+
         [!UICONTROL Type de données]: `Datetime`
       * [!UICONTROL Calculation] : `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
@@ -62,7 +63,8 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) une version `.csv` du
       * [!UICONTROL Column type] : E`vent Counter`
       * [!UICONTROL Local Key] : `Current date`
       * [!UICONTROL Remote Key] : `Retail calendar.Date Retail`
-      * 
+      * &#x200B;
+
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value] : `Year Retail`
    * **Inclus dans l’année de vente au détail actuelle ? (Oui/Non)**
@@ -70,7 +72,8 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) une version `.csv` du
       * [!UICONTROL Inputs] :
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
+
         [!UICONTROL Type de données]: `String`
       * [!UICONTROL Calculation] : `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **Inclus dans l’année de vente au détail précédente ? (Oui/Non)**
@@ -78,7 +81,8 @@ Vous pouvez [télécharger](../../assets/454-calendar.csv) une version `.csv` du
       * [!UICONTROL Inputs] :
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
+
         [!UICONTROL Type de données]: String
       * [!UICONTROL Calculation] : `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -139,62 +143,79 @@ Remarque : Aucune nouvelle mesure n’est nécessaire pour cette analyse. Veille
       * [!UICONTROL Filter] :
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period] : `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Line`
       * Désactiver `multiple Y-axes`
 
 * **Présentation du calendrier de vente au détail (année de vente en cours par mois)**
    * Mesure `A` : `Revenue`
-      * 
+      * &#x200B;
+
         [!UICONTROL Mesure]: `Revenue`
       * [!UICONTROL Filter] :
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * Mesure `B` : `Orders`
       * [!UICONTROL Metric] : `Number of orders`
       * [!UICONTROL Filter] :
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * Mesure `C` : `Avg order value`
       * [!UICONTROL Metric] : `Avg order value`
       * [!UICONTROL Filter] :
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period] : `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Line`
 
 * **Présentation du calendrier de vente au détail (année de vente précédente par mois)**
    * Mesure `A` : `Revenue`
-      * 
+      * &#x200B;
+
         [!UICONTROL Mesure]: `Revenue`
       * [!UICONTROL Filter] :
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * Mesure `B` : `Orders`
       * [!UICONTROL Metric] : nombre de commandes
       * [!UICONTROL Filter] :
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * Mesure `C` : `Avg order value`
       * [!UICONTROL Metric] : `Avg order value`
       * [!UICONTROL Filter] :
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period] : `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Line`
 
 ## Étapes suivantes

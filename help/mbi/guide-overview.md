@@ -53,7 +53,7 @@ Vous avez besoin d’aide pour créer une colonne calculée avancée ? Un défau
 
 | Ressource de documentation | Description |
 |----------------------- | ----------- |
-| [ {Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
+| [ &lbrace;Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
 | [Documentation sur les services pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | Documentation pour prendre en charge un ensemble de services qui aident les marchands à intégrer les composants clés de leur entreprise à leur magasin. |
 | [Guides opérationnels Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Documentation système sur les concepts, processus, outils et bonnes pratiques permettant de développer, déployer et gérer des projets déployés sur des plateformes Adobe Commerce et Magento Open Source. |
 | [Documentation pour les développeurs Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |

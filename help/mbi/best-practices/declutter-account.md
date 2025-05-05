@@ -41,7 +41,7 @@ L’étape suivante du contrôle de votre compte consiste à supprimer les table
 
 >[!NOTE]
 >
->Pour ce faire, vous avez besoin de `Admin` ou de `Standard` [ ](../administrator/user-management/user-management.md) autorisations utilisateur.
+>Pour ce faire, vous avez besoin de `Admin` ou de `Standard` [&#128279;](../administrator/user-management/user-management.md) autorisations utilisateur.
 
 Chaque utilisateur disposant d’un accès `Admin` ou `Standard` peut créer des rapports et des tableaux de bord. Pour cette raison, toute personne disposant de ces autorisations doit suivre les étapes ci-dessous pour identifier et supprimer les rapports inutilisés.
 

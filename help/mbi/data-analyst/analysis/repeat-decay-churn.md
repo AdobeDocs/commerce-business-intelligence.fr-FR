@@ -43,7 +43,7 @@ Comprendre le pourcentage de clients qui sont censés effectuer des achats rép�
 
 Examinez la probabilité de récidive pour une activité de commerce électronique classique.
 
-![ La probabilité initiale de répétition de l’ordre la probabilité de répétition de l’ordre donnée des mois depuis la commande.{1](../../assets/Order_probability_reports.png)
+![ La probabilité initiale de répétition de l’ordre la probabilité de répétition de l’ordre donnée des mois depuis la commande.&lbrace;1](../../assets/Order_probability_reports.png)
 
 ### Probabilité initiale de l’ordre de répétition
 

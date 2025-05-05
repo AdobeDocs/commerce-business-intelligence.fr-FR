@@ -69,27 +69,27 @@ Aucune nouvelle mesure !
 * [!UICONTROL Metric] : nombre de commandes
 
 * [!UICONTROL Formula] : probabilité initiale de l’ordre de répétition
-* 
+* &#x200B;
   [!UICONTROL Formule]: `A/B`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilité de répétition de l’ordre exprimée en mois depuis la commande**
 * Mesure A : commandes répétées par mois depuis la commande précédente (masquer)
 * [!UICONTROL Metric] : `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter] : `Customer's order number greater than 1`
 
 * Mesure B : Dernières commandes par mois depuis la commande (masquer)
 * [!UICONTROL Metric] : `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter] : `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ Aucune nouvelle mesure !
 * [!UICONTROL Metric] : `Number of orders`
 * [!UICONTROL Filter] : `Customer's order number greater than 1`
 
-* 
+* &#x200B;
   [!UICONTROL Groupe par]: `Independent`
 
 * Mesure D : Dernières commandes toutes les heures (masquer)
 * [!UICONTROL Metric] : `Number of orders`
 * [!UICONTROL Filter] : `Is customer's last order? (Yes/No) = Yes`
 
-* 
+* &#x200B;
   [!UICONTROL Groupe par]: `Independent`
 
 * [!UICONTROL Formula] : probabilité initiale de l’ordre de répétition
-* 
+* &#x200B;
   [!UICONTROL Formule]: `(C-A)/(C+D-A-B)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Months since previous order`
 * Afficher top.bottom : 24 premières catégories, triées par nom de catégorie
 
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 Le rapport de probabilité d’ordre de répétition initial représente le total des commandes répétées / total des commandes. Chaque commande est une opportunité d’effectuer une commande répétée ; le nombre de commandes répétées est le sous-ensemble de celles qui le font réellement.

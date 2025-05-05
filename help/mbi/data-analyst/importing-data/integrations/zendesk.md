@@ -31,7 +31,7 @@ Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navig
 
 ## Ouvrez la page [!DNL Zendesk] des informations d’identification dans [!DNL Commerce Intelligence]. {#stepone}
 
-1. Accédez à la page `Integrations` sous **[!UICONTROL Manage Data** > ** Sources de données **> **Intégrations]**.
+1. Accédez à la page `Integrations` sous **[!UICONTROL Manage Data** > **&#x200B; Sources de données &#x200B;**> **Intégrations]**.
 1. Cliquez sur **[!UICONTROL Add Integration]**, situé sur le côté droit de l’écran.
 1. Cliquez sur l’icône [!DNL Zendesk] . Cela ouvre la page des informations d’identification [!DNL Zendesk].
 

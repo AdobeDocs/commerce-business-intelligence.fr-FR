@@ -27,19 +27,19 @@ Colonnes à créer sur la table **commandes** si vous utilisez **30 jours de moi
 
 * [!UICONTROL Column name] : `Months between first order and this order`
 * [!UICONTROL Column type] : `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input] : A = `Seconds between customer's first order date and this order`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * **Définition :**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name] : `Months since order`
 * [!UICONTROL Column type] : `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input] : A = `created_at`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * Définition : `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
@@ -47,31 +47,31 @@ Colonnes à créer sur la table **`orders`** en cas d&#39;utilisation de **calen
 
 * [!UICONTROL Column name] : `Calendar months between first order and this order`
 * [!UICONTROL Column type] : `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs] :
    * `A` = `created_at`
    * `B` = `Customer's first order date`
 
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * Définition : `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name] : `Calendar months since order`
 * [!UICONTROL Column type] : `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input] : `A` = `created_at`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * **Définition :**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name] : `Is in current month? (Yes/No)`
 * [!UICONTROL Column type] : `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input] : A = `created_at`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `String`
 * Définition : `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
@@ -103,7 +103,7 @@ Mesures à créer
    * `Calendar months between first order and this order` `<= X` (Choisissez un nombre raisonnable pour X, par exemple, 24 mois)
    * `Is in current month?` = `No`
 
-* 
+* &#x200B;
   [!UICONTROL Mesure]: `Revenue`
 * [!UICONTROL Filter] :
 
@@ -122,7 +122,7 @@ Mesures à créer
 
 * [!UICONTROL Formula] : `Expected revenue`
 * [!UICONTROL Formula] : `A / (B - C)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 Autres détails du graphique
@@ -139,7 +139,7 @@ Autres détails du graphique
 **Chiffre d’affaires moyen par mois par cohorte**
 
 * Mesure `A` : `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date] : `Customer's first order date`
 * [!UICONTROL Perspective] : `Average value per cohort member`
@@ -147,7 +147,7 @@ Autres détails du graphique
 **Chiffre d’affaires moyen cumulé par mois par cohorte**
 
 * Mesure `A` : `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date] : `Customer's first order date`
 * [!UICONTROL Perspective] : `Cumulative average value per cohort member`

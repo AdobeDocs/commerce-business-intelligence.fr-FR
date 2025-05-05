@@ -48,7 +48,7 @@ Chaque ligne de la table `enterprise_rma` (souvent appelée `magento_rma` dans A
 |---|---|---|
 | `Number of returns` | Nombre de retours demandés. | `Operation` column : `entity id`<br>`Operation` : `Count`<br>`Timestamp` Column : `date requested` |
 | `Total returned amount` | Montant monétaire total renvoyé. | `Operation `Colonne : `Return's total value`<br>`Operation` : Somme<br>`Timestamp` Colonne : date demandée |
-| `Average returned amount` | Montant monétaire moyen renvoyé. | `Operation`` Column: Return's total value`<br>`Operation` : `Average`<br>`Timestamp` Colonne : `date requested` |
+| `Average returned amount` | Montant monétaire moyen renvoyé. | `Operation` ` Column: Return's total value`<br>`Operation` : `Average`<br>`Timestamp` Colonne : `date requested` |
 | `Average time to return` | Temps moyen entre le retour de la commande. | `Operation` Colonne : secondes entre la date de création de la commande et la date de retour demandée<br>`Operation` : `Average`<br>`Timestamp` Colonne : `date requested` |
 
 {style="table-layout:auto"}

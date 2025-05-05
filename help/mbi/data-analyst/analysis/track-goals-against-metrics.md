@@ -55,46 +55,46 @@ Il est utile de disposer d’un mélange de valeurs statiques et de graphiques v
 
 * **Recettes restantes pour atteindre la cible**
 * Mesure `A` : `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Mesure]: `Revenue`
 
 * Mesure `B` : `Target Revenue`
 * [!UICONTROL Metric] : `Monthly Revenue Target`
 
 * [!UICONTROL Formula] : `Revenue left to achieve target`
-* 
+* &#x200B;
   [!UICONTROL Formule]: `(B-A)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period] : (quelle que soit la période appropriée que vous souhaitez)
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Scalar`
 
 * **Cibles de recettes**
 * Mesure `A` : `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Mesure]: `Revenue`
 
 * Mesure `B` : `Target Revenue`
 * [!UICONTROL Metric] : `Monthly Revenue Target`
 
 * Mesure `C` : `Revenue (amount change since previous year)` (masquer)
-* 
+* &#x200B;
   [!UICONTROL Mesure]: `Revenue`
 * [!UICONTROL Perspective] : `Amount change vs. Previous year`
 
 * [!UICONTROL Formula] : (ce mois l’année dernière)
-* 
+* &#x200B;
   [!UICONTROL Formule]: `(A-C)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 * Désactiver `Multiple Y-Axes`
 * [!UICONTROL Time period] : (quelle que soit la période appropriée que vous souhaitez)*
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type] : `Line Chart`
 

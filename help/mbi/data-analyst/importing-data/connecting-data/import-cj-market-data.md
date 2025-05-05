@@ -1,6 +1,6 @@
 ---
 title: Importation des données marketing des affiliés CJ (Commission Junction)
-description: Découvrez comment importer des données d’affilié CJ (Commission Junction) dans  [!DNL Commerce Intelligence].L Commerce Intelligence].
+description: Découvrez comment importer des données d’affilié CJ (Commission Junction) dans  [!DNL Commerce Intelligence].L Commerce Intelligence&rbrack;.
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt

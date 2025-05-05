@@ -53,7 +53,7 @@ Examinez un exemple spécifique de la manière dont une mesure `Total Revenue` p
 | `email NOT LIKE '%@magento.com'` | Mesure `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Mesure `timestamp` (et rapport `time range`) |
 
-Accédez au créateur de mesures en cliquant sur **[!UICONTROL Manage Data** > ** Mesures **> **Créer une mesure]**, vous devez d’abord sélectionner la table `source` appropriée, qui dans ce cas est la table `orders`. La mesure est ensuite configurée comme illustré ci-dessous :
+Accédez au créateur de mesures en cliquant sur **[!UICONTROL Manage Data** > **&#x200B; Mesures &#x200B;**> **Créer une mesure]**, vous devez d’abord sélectionner la table `source` appropriée, qui dans ce cas est la table `orders`. La mesure est ensuite configurée comme illustré ci-dessous :
 
 ![Agrégation des mesures](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ La requête de cette agrégation peut ressembler à ce qui suit :
 
 La configuration de cette fonctionnalité dans [!DNL Commerce Intelligence] nécessite l’utilisation de votre gestionnaire de Data Warehouse, où vous créez un chemin entre votre table `orders` et `customers`, puis créez une colonne appelée `Customer LTV` dans la table de votre client.
 
-Découvrez comment établir un nouveau chemin entre `customers` et `orders`. L’objectif final est de créer une nouvelle colonne agrégée dans la table `customers`. Vous devez donc d’abord accéder à la table `customers` de votre Data Warehouse, puis cliquer sur **[!UICONTROL Create a Column** > ** Sélectionner une définition **> **SUM]**.
+Découvrez comment établir un nouveau chemin entre `customers` et `orders`. L’objectif final est de créer une nouvelle colonne agrégée dans la table `customers`. Vous devez donc d’abord accéder à la table `customers` de votre Data Warehouse, puis cliquer sur **[!UICONTROL Create a Column** > **&#x200B; Sélectionner une définition &#x200B;**> **SUM]**.
 
 Vous devez ensuite sélectionner la table source. S’il existe un chemin d’accès à votre table `orders`, sélectionnez-le simplement dans la liste déroulante. Cependant, si vous créez un chemin d’accès, cliquez sur **[!UICONTROL Create new path]** et l’écran ci-dessous s’affiche :
 

@@ -19,9 +19,9 @@ Cette rubrique explique comment configurer un tableau de bord qui effectuera le 
 
 ## Conditions préalables
 
-**Importez vos données de coût de publicité** - Connectez [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) à [!DNL Adobe Commerce Intelligence] - cela synchronise automatiquement vos [!DNL AdWords] dépenses dans Commerce Intelligence.
+**Importez vos données de coût de publicité** - Connectez [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md) à [!DNL Adobe Commerce Intelligence] - cela synchronise automatiquement vos [!DNL AdWords] dépenses dans Commerce Intelligence.
 
-**Tracker les données du canal d’acquisition des utilisateurs** - Pour lier vos [!DNL Google AdWords] données à des commandes spécifiques de votre base de données, vous devez [ ](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Vous pouvez ainsi connecter chaque commande à une source et un support utm.
+**Tracker les données du canal d’acquisition des utilisateurs** - Pour lier vos [!DNL Google AdWords] données à des commandes spécifiques de votre base de données, vous devez [&#128279;](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Vous pouvez ainsi connecter chaque commande à une source et un support utm.
 
 ## Campagnes d’acquisition d’utilisateurs
 

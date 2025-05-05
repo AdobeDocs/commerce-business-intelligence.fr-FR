@@ -74,7 +74,7 @@ Maintenant que vous savez quelles mesures examiner, prenez un exemple impliquant
 {style="table-layout:auto"}
 
 
-| **Coupon** | **Durée valeur de commande nette** | **Durée remise de commande** | **{acheteurs distincts** | **Durée revenu de durée de vie** |
+| **Coupon** | **Durée valeur de commande nette** | **Durée remise de commande** | **&lbrace;acheteurs distincts** | **Durée revenu de durée de vie** |
 |-----|-----|-----|-----|-----|
 | **10 % de remise** | 225,08 $ | 25,01 $ | 79 | 361,50 $ |
 | **$20 sur $100+** | 117,91 $ | 20,00 $ | 95 | 218,76 $ |

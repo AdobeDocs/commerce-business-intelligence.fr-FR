@@ -36,7 +36,8 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 * table **[!UICONTROL catalog_product_entity]** :
    * **`Product's most recent order date`**
       * [!UICONTROL Column type] : `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path] : `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `created_at`
@@ -45,7 +46,8 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
    * **`Product's first order date`**
       * [!UICONTROL Column type] : `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path] : `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `created_at`
@@ -54,13 +56,15 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type] : `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `AGE`
       * Sélectionner [!UICONTROL DATETIME column] : `Product's most recent order date`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type] : `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path] : `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `qty_ordered`
@@ -69,12 +73,14 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type] : `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] entrées :
          * A : `Product's lifetime number of items sold`
          * B : `Product's first order date`
-      * 
+      * &#x200B;
+
         [!UICONTROL Datatype]: `Decimal`
       * Définition :
          * Cas où A est nul ou B est nul puis nul autre arrondi(A::decimal/(extract(epoch from (current_timestamp - B)))::decimal/604800.0),2).
@@ -82,40 +88,46 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 * table **[!UICONTROL cataloginventory_stock_item]** :
    * **`Sku`**
       * [!UICONTROL Column type] : `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path] : `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type] : `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path] : `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type] : `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path] : `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type] : `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path] : `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
       * [!UICONTROL Column type] : `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] entrées :
          * A : `qty`
          * B : `Avg products sold per week (all time)`
-      * 
+      * &#x200B;
+
         [!UICONTROL Datatype]: `Decimal`
       * Définition :
          * Cas où A est nul ou B est nul ou B = 0,0 alors nul autre arrondi (A ::décimal/B,2)
@@ -126,7 +138,8 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 * table **[!UICONTROL catalog_product_entity]** :
    * **`Product's most recent order date`**
       * [!UICONTROL Column type] : `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path] : `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `created_at`
@@ -135,7 +148,8 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
    * **`Product's first order date`**
       * [!UICONTROL Column type] : `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path] : `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `created_at`
@@ -144,13 +158,15 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type] : `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `AGE`
       * Sélectionnez la colonne DATETIME : **`Product's most recent order date`**
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type] : `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path] : **`sales_order_item.product_id => catalog_product_entity.entity_id`**
       * Sélectionnez un [!UICONTROL column] : **`qty_ordered`**
@@ -163,28 +179,32 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 * table **[!UICONTROL cataloginventory_stock_item]** :
    * **`Sku`**
       * [!UICONTROL Column type] : `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path] : `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type] : `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path] : `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type] : `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path] : `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type] : `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path] : `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Sélectionnez un [!UICONTROL column] : `Avg products sold per week (all time)`
@@ -215,7 +235,8 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
    * [!UICONTROL Group by] :
       * `Sku`
       * `Weeks on hand`
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with less than 2 weeks on hand (order now)`**
@@ -225,9 +246,11 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
    * [!UICONTROL Time period] : `All time`
    * Intervalle de temps : `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Groupe par]: `Sku`
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with more than 26 weeks on hand (put on sale)`**
@@ -237,9 +260,11 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit des in
 
    * [!UICONTROL Time period] : `All time`
    * Intervalle de temps : `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Groupe par]: `Sku`
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Table`
 
 Si vous rencontrez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

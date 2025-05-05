@@ -14,7 +14,7 @@ ht-degree: 0%
 # Sélection d’un créateur de rapports
 
 >[!NOTE]
->>Nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md).
+>&#x200B;>Nécessite [Autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
 Maintenant que vous disposez d’options supplémentaires pour la création d’analyses, il peut parfois être difficile de savoir exactement quelle version du créateur de rapports correspond à vos besoins. Cette rubrique vous guide tout au long du choix du meilleur moyen de créer votre analyse.
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Vous avez fait des recherches sur votre audience, créé votre campagne, investi dans quelques canaux marketing. Maintenant que le temps est écoulé, comment ces canaux fonctionnent-ils ? Quel canal a attiré les nouveaux utilisateurs ? Quelle source a le plus contribué à vos recettes totales ?
 
-Avec [!DNL Adobe Commerce Intelligence], vous pouvez facilement segmenter vos recettes et vos utilisateurs par source de référence, qu’ils correspondent à [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) ou à des champs de données personnalisés. Cette segmentation vous permet de trouver les canaux les plus performants et d’investir davantage votre budget marketing.
+Avec [!DNL Adobe Commerce Intelligence], vous pouvez facilement segmenter vos recettes et vos utilisateurs par source de référence, qu’ils correspondent à [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) ou à des champs de données personnalisés. Cette segmentation vous permet de trouver les canaux les plus performants et d’investir davantage votre budget marketing.
 
 Cette rubrique explore certains rapports que vous pouvez utiliser pour découvrir vos canaux marketing les plus précieux :
 

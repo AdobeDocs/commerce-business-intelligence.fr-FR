@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Campagnes Advertising et retour sur investissement
 
-[!DNL Adobe Commerce Intelligence] vous permet de [ facilement {marier les données de coût de publicité et les données de recettes](../../data-analyst/importing-data/integrations/google-adwords.md) de votre base de données. Vous pouvez ainsi identifier les campagnes qui génèrent le meilleur retour sur investissement. Cette rubrique explore quelques différentes méthodes d’évaluation des performances de votre campagne.
+[!DNL Adobe Commerce Intelligence] vous permet de [ facilement &lbrace;marier les données de coût de publicité et les données de recettes](../../data-analyst/importing-data/integrations/google-adwords.md) de votre base de données. Vous pouvez ainsi identifier les campagnes qui génèrent le meilleur retour sur investissement. Cette rubrique explore quelques différentes méthodes d’évaluation des performances de votre campagne.
 
 ## Conditions préalables
 

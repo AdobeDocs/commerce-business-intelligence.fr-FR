@@ -66,9 +66,9 @@ Aucune nouvelle mesure!!!
 
 * Mesure `A` : `Average Order Value`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Nombre de commandes par sous-total de lots avec la règle d’expédition A**
@@ -80,53 +80,58 @@ Aucune nouvelle mesure!!!
 
 * Mesure `A` : `Number of orders`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Column`
 
 * **Pourcentage de commandes par sous-total avec la règle d’expédition A**
    * [!UICONTROL Metric] : `Number of orders`
 
    * [!UICONTROL Metric] : `Number of orders`
-   * 
+   * &#x200B;
+
      [!UICONTROL Groupe par]: `Independent`
    * [!UICONTROL Formula] : `(A / B)`
-   * 
+   * &#x200B;
+
      [!UICONTROL Format]: `%`
 
 * Mesure `A` : `Number of orders by subtotal (hide)`
 * Mesure `B` : `Total number of orders (hide)`
 * [!UICONTROL Formula] : `% of orders`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **Pourcentage de commandes dont le sous-total dépasse la règle d’expédition A**
    * [!UICONTROL Metric] : `Number of orders`
-   * 
+   * &#x200B;
+
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric] : `Number of orders`
-   * 
+   * &#x200B;
+
      [!UICONTROL Groupe par]: `Independent`
 
    * [!UICONTROL Formula] : `1- (A / B)`
-   * 
+   * &#x200B;
+
      [!UICONTROL Format]: `%`
 
 * Mesure `A` : `Number of orders by subtotal`
 * Mesure `B` : `Total number of orders (hide)`
 * [!UICONTROL Formula] : `% of orders`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 
