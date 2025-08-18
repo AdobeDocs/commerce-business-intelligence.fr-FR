@@ -43,4 +43,4 @@ En plus de réévaluer la fréquence des vérifications, les méthodes de répli
 
 ## Conclusion
 
-Si le temps nécessaire à la mise à jour semble toujours lent, même après l’implémentation de ces recommandations, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si le temps nécessaire à la mise à jour semble toujours lent, même après l’implémentation de ces recommandations, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).

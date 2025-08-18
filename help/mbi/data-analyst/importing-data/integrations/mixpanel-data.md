@@ -32,4 +32,4 @@ Cette rubrique explore les principaux tableaux de données que vous pouvez impor
 ## Documentation connexe
 
 * [Connexion  [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)

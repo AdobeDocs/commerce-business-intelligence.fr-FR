@@ -65,4 +65,4 @@ Si la connexion est établie, un _Succès !_ message s’affiche en haut de la p
 ### Connexe
 
 * [Données  [!DNL Mixpanel] ](../integrations/mixpanel-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)

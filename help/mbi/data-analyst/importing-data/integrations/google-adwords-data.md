@@ -89,4 +89,4 @@ Grâce à ces données, vous pouvez commencer à créer des [mesures](../../../d
 
 Si vous ne disposez pas d’une table consolidée et que vous créez un beau tableau de bord sur la table `adwords`, vous devez répliquer les rapports ou créer des mesures en double pour comparer ces données à vos données [!DNL Facebook Ads]. L’utilisation d’un tableau consolidé vous permet d’incorporer facilement des données [!DNL Facebook Ads] à vos rapports [!DNL Adwords] existants. Vous pouvez également segmenter par plateforme publicitaire.
 
-Si vous avez déjà synchronisé les champs ci-dessus, [contactez-nous](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour consolider vos dépenses publicitaires.
+Si vous avez déjà synchronisé les champs ci-dessus, [contactez-nous](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour consolider vos dépenses publicitaires.

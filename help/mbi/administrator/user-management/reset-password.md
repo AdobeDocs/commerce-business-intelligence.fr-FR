@@ -17,4 +17,4 @@ Pour réinitialiser votre mot de passe, cliquez sur **[!UICONTROL Reset Password
 
 Vous pouvez également modifier votre mot de passe dans [!DNL Commerce Intelligence] à l’aide de la page **[!UICONTROL Personal Settings]** .
 
-Si vous réinitialisez votre mot de passe et que votre compte reste verrouillé, suivez [ces conseils](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) pour identifier le problème.
+Si vous réinitialisez votre mot de passe et que votre compte reste verrouillé, suivez [ces conseils](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=fr) pour identifier le problème.

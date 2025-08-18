@@ -40,4 +40,4 @@ Si vous devez renvoyer l’invitation, sur la [page de connexion](https://dashbo
 
 >[!IMPORTANT]
 >
->Chaque compte dispose d’un nombre contracté de licences, ou places. Si vous avez atteint votre limite ou souhaitez en savoir plus, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>Chaque compte dispose d’un nombre contracté de licences, ou places. Si vous avez atteint votre limite ou souhaitez en savoir plus, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).

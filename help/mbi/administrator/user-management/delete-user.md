@@ -26,5 +26,5 @@ Vous pouvez réactiver l’utilisateur en créant un utilisateur avec la même a
 Si vous avez uniquement besoin que les tableaux de bord de cet utilisateur soient intégrés dans le compte d’un autre utilisateur, procédez comme suit :
 
 1. Utilisez l’adresse e-mail de l’utilisateur supprimé pour créer un nouvel utilisateur [!DNL Commerce Intelligence].
-1. [Notifier l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) après avoir créé l’utilisateur. La prise en charge transfère les tableaux de bord vers votre compte .
+1. [Notifier l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) après avoir créé l’utilisateur. La prise en charge transfère les tableaux de bord vers votre compte .
 1. Une fois que l’assistance Adobe vous a notifié du transfert, vous pouvez supprimer à nouveau l’utilisateur.
