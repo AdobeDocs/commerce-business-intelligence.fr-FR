@@ -1,6 +1,6 @@
 ---
 title: Données Salesforce attendues
-description: Découvrez les objets pris en charge et non pris en charge dans les données Salesforce.
+description: Découvrez les objets pris et non pris en charge dans les données Salesforce.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# Données [!DNL Salesforce] attendues
+# Données de [!DNL Salesforce] attendues
 
-Une fois [[!DNL Salesforce] setup](../integrations/salesforce.md) terminé, un tableau pour chaque objet [queryable ](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - appelé `sf_/\{sobject-name}` - est créé dans votre Data Warehouse.
+Une fois la [[!DNL Salesforce] configuration](../integrations/salesforce.md) terminée, une table pour chaque [objet](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) interrogeable, nommée `sf_/\{sobject-name}`, est créée dans votre Data Warehouse.
 
 >[!NOTE]
 >
->La structure (colonnes) de chaque tableau dépend des champs contenus dans l’objet.
+>La structure (colonnes) de chaque tableau dépend des champs contenus dans l’objet .
 
-Pour obtenir une liste des objets disponibles pour votre organisation, reportez-vous à la [!DNL Salesforce] [documentation Obtenir une liste d’objets](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). Une fois que vous disposez d’une liste d’objets, consultez la section [Diagramme de relation d’entité (ERD)](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) de la documentation [!DNL Salesforce] pour voir comment les entités se connectent les unes aux autres.
+Pour obtenir la liste des objets disponibles pour votre organisation, reportez-vous à la documentation [!DNL Salesforce] [Obtenir une liste d’objets](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). Une fois que vous disposez d’une liste d’objets, consultez la section [Diagramme de relation d’entité (ERD)](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) de [!DNL Salesforce] documentation pour voir comment les entités sont liées les unes aux autres.
 
 ## Objets non pris en charge
 
-Actuellement, [!DNL Salesforce] n’expose pas actuellement les objets suivants dans son API :
+Actuellement, [!DNL Salesforce] n’expose pas les objets suivants dans leur API :
 
 * `Announcement`
 * `Attachment`
 * `ContentDocumentLink`
-* `External objects` - [Qu’est-ce qu’un objet externe ?](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_external_objects.htm)
+* `External objects` - [Qu&#39;est-ce qu&#39;un objet externe ?](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_external_objects.htm)
 * `CollaborationGroupRecord`
 * `ContentDocument`
 * `ContentDocumentLink`
@@ -47,7 +47,7 @@ Actuellement, [!DNL Salesforce] n’expose pas actuellement les objets suivants 
 * `UserProfileFeed`
 * `Vote`
 
-## En rapport :
+## Connexe :
 
-* [Connexion [!DNL Salesforce]](../integrations/salesforce.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Connexion  [!DNL Salesforce]](../integrations/salesforce.md)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

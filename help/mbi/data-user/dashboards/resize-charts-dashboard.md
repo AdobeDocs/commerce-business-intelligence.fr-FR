@@ -1,6 +1,6 @@
 ---
 title: Redimensionnement et réorganisation des graphiques dans un tableau de bord
-description: Découvrez comment redimensionner et réorganiser les graphiques pour créer votre espace de travail idéal.
+description: Découvrez comment redimensionner et réorganiser les graphiques pour créer l’espace de travail idéal.
 exl-id: 0abbb845-6713-421e-95e0-c0b43cf7dad4
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -13,12 +13,12 @@ ht-degree: 0%
 
 # Utilisation de graphiques dans les tableaux de bord
 
-Numéros scalaires. Graphiques en barres. Graphiques couvrant de longues périodes. Chaque graphique affiche les informations différemment, ce qui signifie que la taille et l’emplacement des graphiques ne sont pas une solution universelle. Dans [!DNL Commerce Intelligence], vous pouvez redimensionner et réorganiser les graphiques pour créer votre espace de travail idéal.
+Nombres scalaires. Graphiques à barres. Graphiques s’étendant sur de longues périodes. Chaque graphique affiche les informations différemment, ce qui signifie que la taille et l&#39;emplacement des graphiques ne sont pas une solution universelle. En [!DNL Commerce Intelligence], vous pouvez redimensionner et réorganiser les graphiques pour créer l’espace de travail idéal.
 
-*Pour redimensionner un graphique*, cliquez et faites glisser le coin inférieur droit d’un graphique.
+*Pour redimensionner un graphique* cliquez sur le coin inférieur droit d’un graphique et faites-le glisser.
 
 ![redimensionner le graphique](../../assets/Resize_Chart_in_Dashboard.gif)
 
-*Pour déplacer un graphique*, passez la souris sur le haut du graphique jusqu’à ce que le curseur `Move` s’affiche. Cliquez et maintenez la touche enfoncée, puis faites glisser le graphique jusqu’à l’emplacement souhaité. Cliquez à nouveau sur pour positionner le graphique.
+*Pour déplacer un graphique* pointez sur le haut du graphique jusqu’à ce que le curseur de `Move` s’affiche. Cliquez et maintenez la touche enfoncée, puis faites glisser le graphique à l’emplacement souhaité. Relâchez le clic pour placer le graphique.
 
 ![déplacer le graphique](../../assets/Move_Chart_in_Dashboard.gif)

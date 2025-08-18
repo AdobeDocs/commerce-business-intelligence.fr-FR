@@ -1,5 +1,5 @@
 ---
-title: Google Analytics - Présentation des données Source d’acquisition d’utilisateurs
+title: Google Analytics - Présentation des données Source de suivi d’acquisition d’utilisateurs
 description: Découvrez comment segmenter vos données par source d’acquisition d’utilisateurs.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
@@ -17,64 +17,64 @@ ht-degree: 1%
 >
 >Le processus ci-dessous ne prend pas en charge [!DNL Google Universal Analytics].
 
-La possibilité de segmenter vos données par source d’acquisition d’utilisateurs est essentielle pour gérer efficacement votre plan marketing. Connaître la source d’acquisition des nouveaux utilisateurs indique les canaux qui génèrent les meilleurs retours et permet à votre équipe d’allouer les dollars marketing en toute confiance.
+La possibilité de segmenter vos données par source d’acquisition d’utilisateurs est essentielle pour gérer efficacement votre plan marketing. Connaître la source d’acquisition des nouveaux utilisateurs montre quels canaux génèrent les meilleurs rendements et permet à votre équipe d’allouer les fonds marketing en toute confiance.
 
-Si vous ne suivez pas déjà les sources d&#39;acquisition d&#39;utilisateurs dans votre base de données, [!DNL Adobe Commerce Intelligence] peut vous aider à démarrer :
+Si vous n’effectuez pas déjà le suivi des sources d’acquisition d’utilisateurs dans votre base de données, [!DNL Adobe Commerce Intelligence] pouvez commencer par :
 
 ## Suivi de la source d’acquisition des utilisateurs
 
-[!DNL Adobe] recommande deux méthodes pour suivre les données de source de référence en fonction de votre configuration :
+[!DNL Adobe] recommande deux méthodes pour effectuer le suivi des données de la source de référence en fonction de votre configuration :
 
-### (Option 1) Suivi des données source de référence de commande via [!DNL Google Analytics E-Commerce]
+### (Option 1) Suivre les données de la source de référence des commandes via [!DNL Google Analytics E-Commerce]
 
-Si vous utilisez [!DNL Google Analytics E-Commerce] pour suivre les données de commande et de vente, vous pouvez utiliser le [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) pour synchroniser les données de source de référence de chaque commande. Vous pouvez ainsi segmenter les recettes et les commandes par source de référence (par exemple, `utm_source` ou `utm_medium`). Vous obtenez également une idée des sources d’acquisition de clients via [!DNL Commerce Intelligence] dimensions personnalisées telles que `User's first order source`.
+Si vous utilisez [!DNL Google Analytics E-Commerce] pour suivre les données de commande et de vente, vous pouvez utiliser le [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) pour synchroniser les données de la source de référence de chaque commande. Vous pouvez ainsi segmenter le chiffre d’affaires et les commandes par source de référence (par exemple, `utm_source` ou `utm_medium`). Vous pouvez également vous faire une idée des sources d’acquisition de clients grâce à [!DNL Commerce Intelligence] dimensions personnalisées telles que `User's first order source`.
 
-### (Option 2) Enregistrement des données source d’acquisition [!DNL Google Analytics] dans votre base de données
+### (Option 2) Enregistrement des données sources d&#39;acquisition des [!DNL Google Analytics] dans votre base de données
 
-Cette rubrique explique comment enregistrer les informations du canal d’acquisition [!DNL Google Analytics] dans votre propre base de données, à savoir les paramètres `source`, `medium`, `term`, `content`, `campaign` et `gclid` présents lors de la première visite d’un utilisateur sur votre site web. Pour une explication de ces paramètres, consultez la [[!DNL Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Ensuite, vous explorez certaines des puissantes analyses marketing qui peuvent être effectuées avec ces informations dans [!DNL Commerce Intelligence].
+Cette rubrique explique comment enregistrer [!DNL Google Analytics] informations sur le canal d’acquisition dans votre propre base de données, à savoir les paramètres `source`, `medium`, `term`, `content`, `campaign` et `gclid` qui étaient présents lors de la première visite d’un utilisateur ou d’une utilisatrice sur votre site web. Pour une explication de ces paramètres, consultez la [[!DNL Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Ensuite, vous explorez certaines des puissantes analyses marketing qui peuvent être effectuées avec ces informations dans [!DNL Commerce Intelligence].
 
 #### Pourquoi ?
 
-Si vous vous contentez d’examiner les mesures de conversion et d’acquisition par défaut [!DNL Google Analytics], vous n’obtenez pas l’image complète. Bien qu’il soit intéressant de voir le nombre de conversions du référencement organique par rapport au référencement payant, que pouvez-vous faire avec ces informations ? Devriez-vous dépenser plus d&#39;argent en recherche payante ? Cela dépend de la valeur des clients provenant de ce canal, ce qui n’est pas ce que les Google Analytics fournissent.
+Si vous regardez simplement les mesures de conversion et d’acquisition [!DNL Google Analytics] par défaut, vous n’obtenez pas une vue d’ensemble. Bien que le nombre de conversions d’un référencement organique par rapport à un référencement payant soit intéressant, que pouvez-vous faire avec cette information ? Devriez-vous dépenser plus d&#39;argent sur le référencement payant ? Cela dépend de la valeur des clients provenant de ce canal, ce qui n’est pas quelque chose que Google Analytics fournit.
 
 >[!NOTE]
 >
->[[!DNL Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) résout ce problème en stockant les données de transaction dans [!DNL Google Analytics], mais cette solution ne fonctionne pas pour les sites autres que eCommerce. En outre, certains outils tels que l’analyse des cohortes ne sont pas faciles à utiliser dans l’interface [!DNL Google Analytics].
+>[[!DNL Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) atténue ce problème en stockant les données de transaction dans [!DNL Google Analytics], mais cette solution ne fonctionne pas pour les sites hors eCommerce. En outre, certains outils tels que l’analyse des cohortes ne sont pas faciles à utiliser dans l’interface [!DNL Google Analytics].
 
-Que se passe-t-il si vous souhaitez envoyer par courrier électronique une offre de relance à tous les clients acquis à partir d’une certaine campagne par courrier électronique ? Ou intégrer les données d’acquisition à votre système CRM ? Cela est impossible dans [!DNL Google Analytics] - en fait, il est contraire aux Conditions d’utilisation de [!DNL Google Analytics] de stocker toutes les données qui identifient un individu. Mais vous pouvez stocker ces données vous-même.
+Que se passe-t-il si vous souhaitez envoyer par e-mail une offre de relance à tous les clients acquis à partir d’une certaine campagne par e-mail ? Ou intégrer des données d&#39;acquisition à votre système CRM ? Ceci est impossible en [!DNL Google Analytics] - en fait, il est contraire aux Conditions d&#39;utilisation pour [!DNL Google Analytics] de stocker toute donnée qui identifie un individu. Mais vous pouvez stocker ces données vous-même.
 
-#### Méthode
+#### La Méthode
 
-[!DNL Google Analytics] stocke les informations de référence des visiteurs dans un cookie appelé `__utmz`. Une fois ce cookie défini (par le code de suivi [!DNL Google Analytics]), son contenu sera envoyé à chaque demande ultérieure de cet utilisateur vers votre domaine. Ainsi, en PHP, par exemple, vous pouvez extraire le contenu de `$_COOKIE['__utmz']` et vous verrez une chaîne qui ressemble à ceci :
+[!DNL Google Analytics] stocke les informations de référence des visiteurs dans un cookie appelé `__utmz`. Une fois ce cookie défini (par le code de suivi [!DNL Google Analytics]), son contenu est envoyé avec chaque requête ultérieure à votre domaine de cet utilisateur. Donc en PHP, par exemple, vous pouvez vérifier le contenu de `$_COOKIE['__utmz']` et vous verrez une chaîne qui ressemble à quelque chose comme ceci :
 
 `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
-Il existe clairement des données source d’acquisition codées dans la chaîne. Ceci est testé afin de confirmer qu’il s’agit de la dernière source d’acquisition du visiteur et des données de campagne associées. Vous devez maintenant savoir comment extraire les données.
+Il existe clairement des données source d’acquisition codées dans la chaîne. Il est testé pour confirmer qu’il s’agit de la dernière source d’acquisition du visiteur et des données de campagne associées. Vous devez maintenant savoir comment extraire les données.
 
-Ce code a été traduit en une [bibliothèque PHP hébergée sur github](https://github.com/RJMetrics/referral-grabber-php). Pour utiliser la bibliothèque, `include` une référence à `ReferralGrabber.php`, puis appelez
+Ce code a été traduit en [bibliothèque PHP hébergée sur github](https://github.com/RJMetrics/referral-grabber-php). Pour utiliser la bibliothèque, `include` une référence à `ReferralGrabber.php`, puis appelez
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
-Le tableau `$data` renvoyé est une carte des clés `source`, `medium`, `term`, `content`, `campaign`, `gclid` et leurs valeurs respectives.
+Le tableau de `$data` renvoyé est un mappage des clés `source`, `medium`, `term`, `content`, `campaign`, `gclid` et de leurs valeurs respectives.
 
-Adobe recommande d&#39;ajouter à votre base de données un tableau appelé, par exemple, `user_referral`, avec des colonnes du type : `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Chaque fois qu’un utilisateur s’inscrit, prenez les informations de référence et stockez-les dans ce tableau.
+Adobe recommande d’ajouter à votre base de données une table appelée par exemple `user_referral`, avec des colonnes telles que : `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Chaque fois qu’un utilisateur s’inscrit, saisissez les informations de référence et enregistrez-les dans cette table.
 
 #### Utilisation de ces données
 
-Maintenant que vous enregistrez la source d’acquisition utilisateur, comment pouvez-vous l’utiliser ?
+Maintenant que vous enregistrez la source d’acquisition d’utilisateurs, comment pouvez-vous l’utiliser ?
 
-Supposons que vous utilisez une base de données SQL et que vous ayez une table `users` avec la structure suivante :
+Supposons que vous utilisiez une base de données SQL et que vous ayez une table `users` avec la structure suivante :
 
-| ID | EMAIL | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
+| ID | E-MAIL | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
-| 1 | john@abc.com | 2012-01-24 | google | organique |
-| 2 | jim@abc.com | 2012-01-24 | google | cpc |
-| 3 | joe@def.com | 2012-01-25 | direct | - |
-| 4 | jess@ghi.com | 2012-01-26 | référence | techcrunch.com |
-| 5 | jen@ghi.net | 2012-01-30 | other | organique |
-| .. | .. | .. | .. | .. |
+| 1 | john@abc.com | 24/01/2012 | google | organique |
+| 2 | jim@abc.com | 24/01/2012 | google | cpc |
+| 3 | joe@def.com | 25/01/2012 | direct | - |
+| 4 | jess@ghi.com | 26/01/2012 | recommandation | techcrunch.com |
+| 5 | jen@ghi.net | 30/01/2012 | autres frais | organique |
+| ... | ... | ... | ... | ... |
 
-Pour commencer, vous pouvez comptabiliser le nombre d&#39;utilisateurs provenant de chaque canal de référence en exécutant la requête suivante sur votre base de données :
+Pour commencer, vous pouvez compter le nombre d’utilisateurs provenant de chaque canal de référence en exécutant la requête suivante sur votre base de données :
 
 `SELECT acq_source, COUNT(id) as user_count FROM users GROUP BY acq_source;`
 
@@ -84,21 +84,21 @@ Le résultat ressemble à ceci :
 |--- |--- |
 | google | 294 |
 | direct | 156 |
-| référence | 55 |
-| other | 16 |
+| recommandation | 55 |
+| autres frais | 16 |
 
-C&#39;est intéressant, mais d&#39;usage limité. Ce que vous souhaitez vraiment savoir est :
+C&#39;est intéressant, mais d&#39;une utilité limitée. Ce que vous souhaitez savoir, c&#39;est :
 
-* Le taux de croissance de ces nombres au fil du temps
-* Montant des recettes générées par chaque source d’acquisition
-* Une [analyse des cohortes](https://en.wikipedia.org/wiki/Cohort_analysis) d’utilisateurs provenant de chaque source
-* La probabilité qu’un utilisateur de l’un de ces canaux revienne comme client à l’avenir
+* Le taux de croissance de ces chiffres au fil du temps
+* Le montant des revenus générés par chaque source d&#39;acquisition
+* Une [ analyse des cohortes ](https://en.wikipedia.org/wiki/Cohort_analysis) utilisateurs provenant de chaque source
+* Probabilité qu’un utilisateur de l’un de ces canaux revienne en tant que client à l’avenir
 
-Les requêtes nécessaires à ces analyses sont complexes. Grâce à ces informations, vous pouvez déterminer vos canaux d’acquisition les plus rentables et concentrer le temps et l’argent marketing en conséquence.
+Les requêtes nécessaires à ces analyses sont complexes. Avec ces informations, vous pouvez déterminer vos canaux d’acquisition les plus rentables et concentrer le temps et l’argent marketing en conséquence.
 
-### Associé
+### Connexe
 
 * **[Découvrez vos sources et canaux d’acquisition les plus précieux](../analysis/most-value-source-channel.md)**
-* **[Connectez votre  [!DNL Google Adwords] compte](../importing-data/integrations/google-adwords.md)**
+* **[Connecter votre [!DNL Google Adwords] compte](../importing-data/integrations/google-adwords.md)**
 * **[Augmentez le retour sur investissement de vos campagnes publicitaires](../analysis/roi-ad-camp.md)**
-* **[Comment fonctionne l’attribution UTM  [!DNL Google Analytics] UTM ?](../analysis/utm-attributes.md)**
+* **[Comment l’attribution UTM fonctionne [!DNL Google Analytics] elle ?](../analysis/utm-attributes.md)**

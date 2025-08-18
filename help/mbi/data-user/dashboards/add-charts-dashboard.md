@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Ajout de graphiques aux tableaux de bord
 
-Les graphiques existants peuvent être ajoutés aux tableaux de bord à l’aide de la fonction [!UICONTROL Add Report], située dans la zone supérieure droite de l’écran. Le même graphique peut être ajouté à plusieurs tableaux de bord, ce qui signifie que si le graphique est modifié, tous les tableaux de bord comportant ce graphique reflètent la modification.
+Les graphiques existants peuvent être ajoutés aux tableaux de bord à l’aide de la fonction [!UICONTROL Add Report] , située dans la zone supérieure droite de l’écran. Le même graphique peut être ajouté à plusieurs tableaux de bord, ce qui signifie que si le graphique est modifié, tous les tableaux de bord comportant ce graphique reflètent le changement.
 
 >[!NOTE]
 >
 >Cliquer sur **[!UICONTROL Add Report]** n’est pas la même chose que cliquer sur **[!UICONTROL Save As]** dans l’éditeur de graphiques. `Add Report` ajoute simplement le graphique au tableau de bord alors que `Save As` crée une version d’un graphique existant.
 
-## Ajout d’un graphique
+## Ajouter un graphique
 
-1. Cliquez sur **[!UICONTROL Add Report]**. Une liste des graphiques existants s&#39;affiche.
+1. Cliquez sur **[!UICONTROL Add Report]**. Une liste des graphiques existants s’affiche.
 
 1. Recherchez ou cliquez sur le nom du graphique à ajouter.
 

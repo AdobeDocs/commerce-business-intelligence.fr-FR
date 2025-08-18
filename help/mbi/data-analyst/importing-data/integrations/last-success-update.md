@@ -1,5 +1,5 @@
 ---
-title: Présentation des résultats entre la base de données et SQL Editor
+title: Comprendre les résultats entre la base de données et l'éditeur SQL
 description: Découvrez comment comprendre les résultats entre la base de données et l’éditeur SQL.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
 role: Admin, Data Architect, Data Engineer, User
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# Résultats de la base de données et [!DNL SQL Editor] résultats
+# Résultats de la base de données par rapport aux résultats [!DNL SQL Editor]
 
-Vous êtes peut-être curieux de savoir quel champ `Last successful update began` se trouve dans votre page `Integrations` :
+Vous êtes peut-être curieux de savoir quel est le champ `Last successful update began` dans votre page `Integrations` :
 
-![Last_success_update.png](../../../assets/Last_successful_update.png)
+![Last_successful_update.png](../../../assets/Last_successful_update.png)
 
 ## Comprendre le champ `timestamp`
 
-Il affiche le début `timestamp` (dans le fuseau horaire défini sur votre compte) du _dernier cycle de mise à jour réussi_ de votre compte.
+Elle affiche la `timestamp` de début (dans le fuseau horaire défini sur votre compte) du _dernier cycle de mise à jour réussi_ sur votre compte.
 
-- Si l’une des tables synchronisées a rencontré un problème au cours du dernier cycle de mise à jour, cet horodatage est *non mis à jour*.
-- Par conséquent, il peut arriver que des rapports aient été mis à jour avec de nouvelles données, mais la *dernière mise à jour réussie commencée* est toujours en retard.
+- Si l&#39;une des tables synchronisées rencontre un problème lors du dernier cycle de mise à jour, cet horodatage n&#39;est *pas mis à jour*.
+- Par conséquent, il peut y avoir des cas où les rapports ont été mis à jour avec des données récentes, mais où la *Dernière mise à jour réussie a commencé* est toujours en retard.
 
-## Identifier le dernier point de données &quot;réel&quot;
+## Identifier le dernier point de données « réel »
 
-Le dernier point de données pour une intégration particulière est déterminé par l’horodatage `Last Data Point Received` situé à droite de chaque intégration. Cet horodatage fait référence au dernier point où votre Data Warehouse a bien reçu des points de données de cette source, qu’il s’agisse d’une base de données, d’une API ou d’une intégration tierce.
+Le dernier point de données d’une intégration spécifique est déterminé par l’horodatage `Last Data Point Received` situé à droite de chaque intégration. Cet horodatage fait référence au dernier point auquel votre Data Warehouse a reçu avec succès des points de données de cette source, qu’il s’agisse d’une base de données, d’une API ou d’une intégration tierce.
 
-Pour vérifier l&#39;actualisation des données provenant de *tables spécifiques*, Adobe recommande de créer un [[!DNL SQL] rapport](../../dev-reports/sql-rpt-bldr.md) rapide qui exécute un `MAX(timestamp)` sur la table la plus importante de votre compte. La comparaison de cet horodatage à `Last Data Point` indique si le problème a affecté l’ensemble du compte ou un sous-ensemble des tables. Adobe recommande de le faire pour trois à quatre tables importantes, couramment utilisées.
+Pour vérifier l’actualisation des données de *tableaux spécifiques*, Adobe recommande de créer un rapport [[!DNL SQL]  rapide](../../dev-reports/sql-rpt-bldr.md) qui effectue une `MAX(timestamp)` sur le tableau le plus important de votre compte. La comparaison de cet horodatage avec le `Last Data Point` indique si le problème a affecté l’ensemble du compte ou un sous-ensemble des tables. Adobe recommande de le faire pour trois à quatre tableaux importants couramment utilisés.
 
-- Si les valeurs `MAX(timestamp)` sont plus récentes que `Last Data Point Received`, cela signifie qu’un sous-ensemble des tables a été affecté, mais que le cycle de mise à jour global du compte est stable.
-- Si les valeurs `MAX(timestamp)` sont égales ou antérieures à `Last Data Point Received`, cela signifie que le cycle de mise à jour du compte a été affecté. Dans ce cas, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+- Si les valeurs `MAX(timestamp)` sont plus récentes que `Last Data Point Received`, cela signifie qu’un sous-ensemble des tables a été affecté, mais que le cycle de mise à jour du compte global est stable.
+- Si les valeurs `MAX(timestamp)` sont égales ou antérieures à `Last Data Point Received`, cela signifie que le cycle de mise à jour du compte a été affecté. Dans ce cas, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

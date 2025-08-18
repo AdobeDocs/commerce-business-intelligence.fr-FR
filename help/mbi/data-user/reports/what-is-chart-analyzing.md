@@ -1,6 +1,6 @@
 ---
 title: Informations sur les données du graphique
-description: Découvrez comment utiliser les options Visualisation dans le Report Builder Visuel.
+description: Découvrez comment utiliser les options de visualisation dans Visual Report Builder.
 exl-id: 865efc8b-1e1a-4033-9e42-cbd03b220260
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Informations sur les données du graphique
 
-Choisissez : anglais brut ou définition de mesure. Les utilisateurs peuvent annoter des graphiques et afficher les mesures et les formules dans un graphique en cliquant sur l’icône _Informations_ dans le coin supérieur droit de n’importe quel graphique.
+Choisissez l’anglais brut ou la définition de la mesure. Les utilisateurs peuvent annoter des graphiques et afficher les mesures et les formules d’un graphique en cliquant sur l’icône _Informations_ dans le coin supérieur droit de n’importe quel graphique.
 
-## En rapport :
+## Connexe :
 
 * [Analyses de base](../../data-analyst/analysis/basic-analytics.md)
 * [[!DNL Visual Report Builder]](../../data-user/reports/ess-rpt-build-visual.md)

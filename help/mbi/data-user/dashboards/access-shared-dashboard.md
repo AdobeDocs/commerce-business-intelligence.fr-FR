@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Accès aux tableaux de bord partagés
 
-Il est simple de mettre à jour les nouveaux utilisateurs à grande vitesse.
+La mise à niveau des nouveaux utilisateurs et utilisatrices est une tâche simple.
 
 ## Nouvel utilisateur
 
-Une fois qu’un nouvel utilisateur a créé son mot de passe, une liste des tableaux de bord partagés les plus populaires s’affiche. Ils peuvent sélectionner les tableaux de bord à afficher sur leur tableau de bord et cliquer sur **[!UICONTROL Done]**.
+Une fois qu’un nouvel utilisateur a créé son mot de passe, une liste des tableaux de bord populaires partagés s’affiche. Ils peuvent sélectionner les tableaux de bord à afficher dans leur tableau de bord et cliquer sur **[!UICONTROL Done]**.
 
 ## Utilisateurs existants
 

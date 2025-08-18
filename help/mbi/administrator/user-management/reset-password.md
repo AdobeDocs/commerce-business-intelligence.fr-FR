@@ -11,10 +11,10 @@ ht-degree: 0%
 
 ---
 
-# Réinitialisation de votre mot de passe
+# Réinitialiser votre mot de passe
 
-Pour réinitialiser votre mot de passe, cliquez sur **[!UICONTROL Reset Password]** sous le champ de mot de passe de la page de connexion [!DNL Adobe Commerce Intelligence]. Saisissez l’adresse électronique du compte utilisateur et un courrier électronique contenant un lien de réinitialisation de mot de passe est envoyé.
+Pour réinitialiser votre mot de passe, cliquez sur **[!UICONTROL Reset Password]** sous le champ du mot de passe sur votre page de connexion [!DNL Adobe Commerce Intelligence]. Saisissez l’adresse e-mail du compte d’utilisateur et un e-mail contenant un lien de réinitialisation du mot de passe est envoyé.
 
-Vous pouvez également modifier votre mot de passe dans [!DNL Commerce Intelligence] à l’aide de la page **[!UICONTROL Personal Settings]**.
+Vous pouvez également modifier votre mot de passe dans [!DNL Commerce Intelligence] à l’aide de la page **[!UICONTROL Personal Settings]** .
 
-Si vous réinitialisez votre mot de passe et restez verrouillé de votre compte, suivez [ces conseils](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=fr) pour vous aider à résoudre le problème.
+Si vous réinitialisez votre mot de passe et que votre compte reste verrouillé, suivez [ces conseils](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) pour identifier le problème.

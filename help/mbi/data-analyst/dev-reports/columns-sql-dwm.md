@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # Différences entre [!DNL SQL] et [!DNL Data Warehouse Manager]
 
-Il existe deux différences clés entre les colonnes créées dans le [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) et celles créées à l’aide du [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). L’une est la dépendance aux cycles de mise à jour, l’autre est la manière dont les colonnes sont enregistrées dans votre compte.
+Il existe deux différences majeures entre les colonnes créées dans le [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) et celles créées à l’aide du [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md) . L’un est la dépendance aux cycles de mise à jour, l’autre est la manière dont les colonnes sont enregistrées dans votre compte.
 
-## Colonnes dans le [!DNL SQL Report Builder]
+## Colonnes de la [!DNL SQL Report Builder]
 
-Les colonnes ne dépendent pas des cycles de mise à jour. Il n’est donc plus nécessaire d’attendre qu’une colonne soit terminée avant de pouvoir effectuer une itération sur votre colonne. Si vous commettez une erreur, il suffit de quelques touches pour la corriger - plus d’attendre que deux mises à jour soient terminées avant de pouvoir reprendre le travail.
+Les colonnes ne dépendent pas des cycles de mise à jour. Il n’est donc plus nécessaire d’attendre qu’une colonne soit terminée avant de pouvoir effectuer une itération sur votre colonne. Si vous faites une erreur, il suffit de quelques touches pour la corriger - plus besoin d&#39;attendre que deux mises à jour se terminent avant de pouvoir reprendre le travail.
 
 >[!IMPORTANT]
 >
->Les colonnes que vous créez à l’aide de l’éditeur [!DNL SQL] ne sont pas enregistrées dans votre Data Warehouse. Vous avez toujours accès à la requête contenant la colonne, mais si vous souhaitez utiliser la colonne dans plusieurs rapports, vous devez la recréer dans la requête pour chaque rapport. Cela signifie que les colonnes créées à l’aide de l’éditeur [!DNL SQL] ne peuvent pas être utilisées dans le [!DNL Report Builder] traditionnel.
+>Les colonnes créées à l’aide de l’éditeur de [!DNL SQL] ne sont pas enregistrées dans votre Data Warehouse. Vous avez toujours accès à la requête contenant la colonne, mais si vous souhaitez utiliser la colonne dans plusieurs rapports, vous devez la recréer dans la requête pour chaque rapport. Cela signifie que les colonnes créées à l’aide de l’éditeur de [!DNL SQL] ne peuvent pas être utilisées dans le [!DNL Report Builder] traditionnel.
 
-## Colonnes dans le Gestionnaire de Data Warehouse
+## Colonnes du gestionnaire Data Warehouse
 
-Les colonnes dépendent des cycles de mise à jour. Un cycle complet doit donc être terminé avant d’être modifié. Ces colonnes sont enregistrées dans le Gestionnaire de Data Warehouse et peuvent être utilisées dans les [!DNL Report Builder] ou [!DNL SQL Report Builder] traditionnels.
+Les colonnes dépendent des cycles de mise à jour. Par conséquent, un cycle complet doit être terminé avant de pouvoir être modifiées. Ces colonnes sont enregistrées dans le gestionnaire Data Warehouse et peuvent être utilisées dans le [!DNL Report Builder] ou le [!DNL SQL Report Builder] traditionnel.

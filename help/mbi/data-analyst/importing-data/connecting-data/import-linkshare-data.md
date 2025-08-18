@@ -1,5 +1,5 @@
 ---
-title: Importation de données Linkshare
+title: Importer des données Linkshare
 description: Découvrez comment importer des données Linkshare dans [!DNL Commerce Intelligence].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
 role: Admin, Data Architect, Data Engineer, User
@@ -7,16 +7,16 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Importer les données [!DNL Linkshare]
 
-Pour importer vos données [!DNL Linkshare] dans [!DNL Adobe Commerce Intelligence], vous devez faire deux choses :
+Pour importer vos données [!DNL Linkshare] dans [!DNL Adobe Commerce Intelligence], vous devez effectuer deux opérations :
 
-1. [Exportation des données Linkshare dans ](#export)
-1. [Télécharger la feuille de calcul dans [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
+1. [Exporter les données Linkshare dans ](#export)
+1. [Chargez la feuille de calcul dans  [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Exporter des données depuis Linkshare {#export}
 
@@ -24,9 +24,9 @@ Pour importer vos données [!DNL Linkshare] dans [!DNL Adobe Commerce Intelligen
 
 1. Dans la liste déroulante `Report`, sélectionnez **[!UICONTROL Sales & Activity Report]**.
 
-1. Conservez toutes les autres options de liste déroulante comme sélection par défaut.
+1. Laissez toutes les autres options de liste déroulante comme sélection par défaut.
 
-1. Dans la liste déroulante `Date Range`, sélectionnez l’option (`Sun - Sat`, `Mon - Sun`) qui correspond à vos paramètres `Start of Week` dans [!DNL Commerce Intelligence].
+1. Dans la liste déroulante `Date Range` , sélectionnez l’option (`Sun - Sat`, `Mon - Sun`) qui correspond à vos paramètres `Start of Week` dans [!DNL Commerce Intelligence].
 
 1. Décochez la case `Compare Year-Over-Year Data` .
 
@@ -38,6 +38,6 @@ Pour importer vos données [!DNL Linkshare] dans [!DNL Adobe Commerce Intelligen
 
 1. Cliquez sur **[!UICONTROL Download]**.
 
-   À ce stade, un fichier `.csv` et a été téléchargé.
+   À ce stade, un fichier `.csv` et téléchargé.
 
-Une fois le fichier téléchargé, vous pouvez le télécharger vers [!DNL Commerce Intelligence] à l’aide de la fonction [`File Upload`](../connecting-data/using-file-uploader.md).
+Une fois le fichier téléchargé, vous pouvez le charger dans [!DNL Commerce Intelligence] à l’aide de la fonction [`File Upload`](../connecting-data/using-file-uploader.md).

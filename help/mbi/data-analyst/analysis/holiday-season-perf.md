@@ -1,6 +1,6 @@
 ---
-title: Analyse des performances de la saison des vacances
-description: Apprenez et comprenez comment le modèle de croissance de cette année se compare aux années précédentes.
+title: Analyse des performances des fêtes de fin d’année
+description: Apprenez et comprenez comment se compare la croissance de cette année à celle des années précédentes.
 exl-id: 328f30b8-0db6-48fd-8d97-95f0bc7e4803
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -13,54 +13,54 @@ ht-degree: 0%
 
 # Analyse des achats de vacances
 
-Pour vos affaires, les vacances peuvent être l&#39;un des moments les plus fréquentés de l&#39;année. Pour les commerçants disposant d&#39;une clientèle américaine importante, la période des fêtes s&#39;étend généralement sur les mois entre Thanksgiving et le Nouvel An.
+Pour votre entreprise, les vacances sont peut-être l&#39;une des périodes les plus chargées de l&#39;année. Pour les détaillants qui ont une clientèle importante aux États-Unis, la saison des fêtes s&#39;étend habituellement sur les mois entre Thanksgiving et le Nouvel An.
 
-Vous pouvez avoir de l’expérience à n’importe quel moment de l’année ; par exemple, si votre entreprise vend des shorts ou des provisions en pool, vous risquez de vous précipiter pendant l’été. Cette rubrique explore les analyses qui vous aident à comparer vos hautes saisons sur différentes années.
+Il peut y avoir des embouteillages à tout moment de l&#39;année ; par exemple, si votre entreprise vend des shorts ou des fournitures de piscine, vous pourriez être pris d&#39;assaut pendant l&#39;été. Cette rubrique explore les analyses qui vous aident à comparer vos hautes saisons sur différentes années.
 
 ## Mesures recommandées
 
-Lors de l’analyse des performances de la saison des fêtes, envisagez d’analyser ([ou de créer](../../data-user/reports/ess-manage-data-metrics.md)) ces mesures :
+Lors de l’analyse des performances de la saison des fêtes, pensez à analyser ([ou à créer](../../data-user/reports/ess-manage-data-metrics.md)) les mesures suivantes :
 
-### Nombre de nouveaux clients, Nombre de commandes, Recettes
+### Nombre de nouveaux clients, Nombre de commandes, Chiffre d’affaires
 
-Pour vous aider à comprendre comment le modèle de croissance de cette année se compare aux années précédentes, pensez à analyser ces mesures. Le nombre de nouveaux clients, le nombre de nouvelles commandes et le montant des recettes indiquent les performances quotidiennes de votre entreprise pendant la période (période des fêtes) que vous indiquez. Vous pouvez également analyser ces mesures à l’aide d’une perspective cumulée afin de visualiser l’évolution de la mesure au fil du temps.
+Pour vous aider à comprendre comment la croissance de cette année se compare à celle des années précédentes, pensez à analyser ces mesures. Le nombre de nouveaux clients, le nombre de nouvelles commandes et le montant des revenus vous montrent le rendement de votre entreprise jour après jour pour la période (saison des fêtes) que vous spécifiez. Vous pouvez également analyser ces mesures à l’aide d’une perspective cumulative pour voir comment la mesure change au fil du temps.
 
 ### Valeur de commande moyenne
 
-Cette mesure affiche la valeur moyenne globale de la commande durant les saisons des fêtes.
+Cette mesure affiche la valeur de commande moyenne globale au cours de vos saisons de vacances.
 
-## Exemple : recettes de la saison des fêtes quotidiennes
+## Exemple : chiffre d’affaires quotidien de la saison des fêtes
 
-Maintenant que vous savez quelles mesures analyser, vous pouvez consulter des données d’exemple sur les recettes au cours des mois de novembre et décembre de la période des fêtes pour les années 2014 et 2015.
+Maintenant que vous savez quels indicateurs analyser, vous pouvez consulter quelques exemples de données relatives aux revenus pendant les mois de novembre et décembre de la saison des fêtes, pour 2014 et 2015.
 
-![Chiffre d&#39;affaires de la saison des fêtes quotidiennes pour 2014 et 2015](../../assets/Analyzing_holiday_season.png)
+![Chiffre d’affaires quotidien de la saison des fêtes pour 2014 et 2015](../../assets/Analyzing_holiday_season.png)
 
-Dans cet exemple, les recettes pour 2014 et 2015 présentent deux importantes hausses : celles-ci coïncident avec le Black Friday et le Cyber Monday. Remarquez que les pics ne sont pas le même jour pour 2014 et 2015. C&#39;est parce que le Vendredi noir est tombé le 27 novembre 2014 et le 28 novembre 2015. De même, le Lundi cybernétique était le 30 novembre 2014 et le 1er décembre 2015.
+Dans cet exemple, il y a deux fortes hausses de revenus pour 2014 et 2015 : ces hausses coïncident avec le Black Friday et le Cyber Monday. Remarquez que les pics ne surviennent pas le même jour en 2014 et 2015. En effet, le Black Friday est tombé le 27 novembre 2014 et le 28 novembre 2015. De même, le Cyber Monday était le 30 novembre 2014 et le 1er décembre 2015.
 
-En outre, il y a un pic des recettes pour 2015 le 19 décembre qui n&#39;apparaît pas en 2014. Il est possible qu&#39;une vente ait été proposée ce samedi particulier qui n&#39;était pas disponible l&#39;année précédente.
+En outre, il y a une hausse des revenus pour 2015 le 19 décembre qui n&#39;apparaît pas en 2014. Il est possible qu&#39;une vente ait été proposée ce samedi-ci et qu&#39;elle n&#39;ait pas été offerte l&#39;année précédente.
 
-Outre les quelques dates mentionnées ci-dessus, les recettes de ces deux années sont cumulées.
+Mis à part les quelques dates mentionnées ci-dessus, les revenus de ces deux années suivent ensemble.
 
 ## Quelles questions dois-je prendre en compte ?
 
-Pour vous aider à comprendre les tendances saisonnières de votre entreprise, voici quelques questions que vous devez garder à l’esprit lorsque vous explorez vos propres données :
+Pour mieux comprendre les tendances saisonnières de votre entreprise, voici quelques questions à garder à l&#39;esprit lorsque vous explorez vos propres données :
 
-* Les tendances sont-elles attendues d&#39;une année à l&#39;autre ?
-* Les tendances reflètent-elles vos attentes en termes de variations d’une saison à l’autre ?
-* Y a-t-il des différences d&#39;une année à l&#39;autre ? Ces différences peuvent-elles être expliquées ?
-* Des promotions ont-elles été proposées au cours d’une année spécifique ?
+* Les tendances d&#39;une année à l&#39;autre sont-elles prévues?
+* Les tendances reflètent-elles vos attentes en matière de variations selon les saisons ?
+* Y a-t-il des différences d&#39;une année à l&#39;autre? Peut-on expliquer ces différences ?
+* Des promotions ont-elles été offertes au cours d&#39;une année donnée?
 * Les prix ont-ils augmenté au cours d&#39;une année donnée ?
-* Les dépenses publicitaires ont-elles été augmentées pour une année spécifique ?
+* Les dépenses publicitaires ont-elles augmenté pour une année donnée?
 
-## Que dois-je analyser d&#39;autre ?
+## Que dois-je analyser d’autre ?
 
-Une option consiste à analyser le comportement d’achat de vos clients pendant la période des fêtes. Les clients acquis pendant la période des fêtes dépensent-ils plus ou achètent-ils plus fréquemment que les clients acquis en dehors de la période des fêtes ?
+Une option consiste à analyser le comportement d&#39;achat de vos clients pendant la saison des fêtes. Les clients acquis pendant la période des fêtes dépensent-ils plus ou achètent-ils plus fréquemment que les clients acquis en dehors de la période des fêtes ?
 
-Une autre option consiste à analyser votre retour sur investissement par campagne pendant les saisons de vacances. Votre ROI est-il plus élevé pour certaines campagnes qui s’exécutent pendant la période des fêtes ? Devriez-vous augmenter les dépenses pour les campagnes avec un retour sur investissement élevé au cours de ces saisons ?
+Une autre option consiste à analyser votre retour sur investissement par campagne pendant les périodes de fêtes. Votre retour sur investissement est-il plus élevé pour certaines campagnes exécutées pendant la saison des fêtes ? Devriez-vous augmenter les dépenses pour les campagnes avec un retour sur investissement élevé au cours de ces saisons ?
 
-De plus, vous pouvez analyser le nombre de commandes à prix réduit par rapport au nombre total de commandes à prix plein. [ La plupart des clients attendent-ils la vente de commandes](../analysis/coupon-usage.md) pendant la période des fêtes ou achètent-ils des articles à prix plein ?
+De plus, vous pouvez analyser le nombre de commandes à prix réduit par rapport aux commandes à prix plein. [La plupart des clients attendent-ils une vente pour passer des commandes](../analysis/coupon-usage.md) pendant vos vacances ou achètent-ils des articles au prix plein ?
 
-### Associé
+### Connexe
 
-* [Analyse de l&#39;impact des coupons sur l&#39;acquisition et la fidélisation des clients](../analysis/coupon-impact.md)
-* [Analyse du comportement de réachat des clients](../analysis/repurchase-behavior.md)
+* [Analyse de l’impact des coupons sur l’acquisition et la fidélisation des clients](../analysis/coupon-impact.md)
+* [Analyse du comportement de rachat des clients](../analysis/repurchase-behavior.md)

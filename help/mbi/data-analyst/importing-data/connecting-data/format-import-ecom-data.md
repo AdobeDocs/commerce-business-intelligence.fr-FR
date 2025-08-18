@@ -1,6 +1,6 @@
 ---
 title: Formatage et importation de données eCommerce
-description: Découvrez les formats de données idéaux à utiliser pour le transfert de données eCommerce.
+description: Découvrez les formats de données idéaux à utiliser pour charger des données eCommerce.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# Formatage et import de données
+# Formatage et importation de données
 
-Si vous utilisez une intégration qui n’est actuellement pas prise en charge par [!DNL Adobe Commerce Intelligence], vous pouvez toujours utiliser la [fonctionnalité de téléchargement de fichier](using-file-uploader.md) pour intégrer vos données dans votre Data Warehouse. Cette rubrique couvre les formats de données idéaux à utiliser pour le transfert de données de commerce électronique.
+Si vous utilisez une intégration qui n’est actuellement pas prise en charge par [!DNL Adobe Commerce Intelligence], vous pouvez tout de même utiliser la fonctionnalité [Chargement de fichier](using-file-uploader.md) pour intégrer vos données dans votre Data Warehouse. Cette rubrique couvre les formats de données idéaux à utiliser pour charger des données d’e-commerce.
 
 ## `Orders` table
 
-La table `orders` doit contenir une ligne pour chaque transaction effectuée par l’entreprise. Les colonnes potentielles sont les suivantes :
+Le tableau `orders` doit contenir une ligne pour chaque transaction effectuée par l&#39;entreprise. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|
-| `Order ID` | L’identifiant de commande doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé primaire de la table. |
-| `Customer` | Le client qui a passé la commande. |
-| `Order total` | Total de la commande. Il peut s’agir d’une colonne basée sur des calculs, dans laquelle les valeurs d’autres colonnes, telles que le sous-total et l’expédition, constituent le total de cette colonne. |
-| `Currency` | Devise dans laquelle la commande a été payée. Inclure si nécessaire. |
-| ` Order status` | État de la commande, par exemple `In Progress`, `Refunded` ou `Complete`. La valeur de cette colonne change (si elle n’est pas terminée). Les données nouvelles et mises à jour peuvent être importées à l’aide de la [fonction d’ajout de données](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) sur la page `File Uploads`. |
-| `Acquisition/marketing channel` | Canal d’acquisition ou marketing duquel le client qui a passé la commande a été référencé. |
+| `Order ID` | L’ID de commande doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé primaire de la table. |
+| `Customer` | Client qui a passé la commande. |
+| `Order total` | Total de la commande. Il peut s&#39;agir d&#39;une colonne basée sur des calculs, où les valeurs d&#39;autres colonnes, telles que sous-total et expédition, constituent le total de cette colonne. |
+| `Currency` | Devise dans laquelle la commande a été payée. Inclure si pertinent. |
+| ` Order status` | Statut de la commande, tel que `In Progress`, `Refunded` ou `Complete`. La valeur de cette colonne change (si elle est incomplète). Les données nouvelles et mises à jour peuvent être importées à l’aide de la fonction [Ajouter des données](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) sur la page `File Uploads`. |
+| `Acquisition/marketing channel` | Canal d’acquisition ou de marketing auprès duquel le client qui a passé la commande a été référencé. |
 | `Order datetime` | Date et heure de création de la commande. |
-| `Order updated at` | Date et heure de la dernière modification de l’enregistrement de commande. |
+| `Order updated at` | Date et heure de la dernière modification de l&#39;enregistrement de commande. |
 
 {style="table-layout:auto"}
 
@@ -38,12 +38,12 @@ Le tableau `order_detail / items` doit contenir une ligne pour chaque élément 
 
 | Nom de la colonne | Description |
 |----|----|
-| `Order item ID` | L’identifiant de l’élément de commande doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement du `primary key` de la table. |
-| `Order ID` | L’identifiant de la commande. |
-| `Product ID` | ID du produit. |
+| `Order item ID` | L’ID d’élément de commande doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la `primary key` du tableau. |
+| `Order ID` | Identifiant de la commande. |
+| `Product ID` | Identifiant du produit. |
 | `Product name` | Nom du produit. |
-| `Product's unit price` | Le prix d’une seule unité du produit. |
-| `Quantity` | La quantité du produit dans la commande. |
+| `Product's unit price` | Prix d’une seule unité du produit. |
+| `Quantity` | Quantité du produit dans la commande. |
 
 ## `Customers` table {#customerstable}
 
@@ -54,18 +54,18 @@ Le tableau `customers` doit contenir une ligne pour chaque compte client. Les co
 | `Customer ID` | L’ID de client doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé primaire de la table. |
 | `Customer created at` | Date et heure de création du compte du client. |
 | `Customer modified at` | Date et heure de la dernière modification du compte du client. |
-| `Acquisition/marketing channel source` | Canal d’acquisition ou marketing à partir duquel le client a été référencé. |
-| `Demographic info` | Les informations démographiques telles que la tranche d’âge et le sexe peuvent être utilisées pour segmenter vos rapports. |
-| `Acquisition/marketing channel` | Canal d’acquisition ou marketing duquel le client qui a passé la commande a été référencé. |
+| `Acquisition/marketing channel source` | Canal d’acquisition ou de marketing duquel le client a été référencé. |
+| `Demographic info` | Des informations démographiques telles que la tranche d’âge et le sexe peuvent être utilisées pour segmenter vos rapports. |
+| `Acquisition/marketing channel` | Canal d’acquisition ou de marketing auprès duquel le client qui a passé la commande a été référencé. |
 
 ## `Subscription payments` table
 
-La table `subscriptions` doit contenir une ligne pour chaque paiement d’abonnement. Les colonnes potentielles sont les suivantes :
+La table `subscriptions` doit contenir une ligne pour chaque paiement d&#39;abonnement. Les colonnes potentielles sont les suivantes :
 
 | Nom de la colonne | Description |
 |----|----|
 | `Subscription ID` | L’ID d’abonnement doit être unique pour chaque ligne du tableau. En outre, il s’agit généralement de la clé primaire de la table. |
-| `Customer ID` | L’identifiant du client qui a effectué le paiement. |
-| `Payment amount` | Le montant du paiement d’abonnement. |
+| `Customer ID` | Identifiant du client qui a effectué le paiement. |
+| `Payment amount` | Montant du paiement de l’abonnement. |
 | `Start date` | Date et heure de début de la période couverte par le paiement. |
 | `End date` | Date et heure de fin de la période couverte par le paiement. |

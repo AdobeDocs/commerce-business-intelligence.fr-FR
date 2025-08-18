@@ -15,33 +15,33 @@ ht-degree: 0%
 
 * [Pourquoi mes données ont-elles changé ?](#datachange)
 * [Quelle est la différence entre une mise à jour régulière et forcée ?](#regularforcedupdates)
-* [Pourquoi le cycle de mise à jour prend-il beaucoup de temps ?](#updatecycletime)
-* [Puis-je être informé de la fin d’un cycle de mise à jour ?](#notifyupdate)
-* [Pourquoi  [!DNL Google ECommerce] données est-il différent de ma base de données ?](#ecommdatabase)
-* [Comment résoudre un problème d’incohérence des données ?](#datadiscrepancy)
+* [Pourquoi le cycle de mise à jour est-il long ?](#updatecycletime)
+* [Puis-je être averti à la fin d’un cycle de mise à jour ?](#notifyupdate)
+* [Pourquoi les données sont [!DNL Google ECommerce] elles différentes de ma base de données ?](#ecommdatabase)
+* [Comment résoudre un problème lié à une incohérence des données ?](#datadiscrepancy)
 
 ## Pourquoi mes données ont-elles changé ? {#datachange}
 
-Les valeurs du graphique peuvent changer tout au long de la journée en raison de la synchronisation de nouvelles données avec votre Data Warehouse. En outre, les valeurs des colonnes de données existantes peuvent changer en raison de [rechecks](../data-warehouse-mgr/cfg-data-rechecks.md). Un nouveau contrôle est un processus qui recherche les valeurs modifiées dans les colonnes de données, comme un état de commande passant de `open` à `shipped`.
+Les valeurs du graphique peuvent changer tout au long de la journée en raison de la synchronisation de nouvelles données avec votre Data Warehouse. En outre, les valeurs des colonnes de données existantes peuvent changer en raison de [nouvelles vérifications](../data-warehouse-mgr/cfg-data-rechecks.md). Une revérification est un processus qui recherche les valeurs modifiées dans les colonnes de données, comme un statut de commande passant de `open` à `shipped`.
 
-Il existe plusieurs manières de [ vérifier l’état de votre cycle de mise à jour ](../../best-practices/check-update-cycle.md), en fonction des paramètres d’autorisation de l’utilisateur.
+Il existe plusieurs façons différentes [pour vérifier le statut de votre cycle de mise à jour](../../best-practices/check-update-cycle.md), en fonction des paramètres d’autorisations de l’utilisateur ou de l’utilisatrice.
 
 ## Quelle est la différence entre une mise à jour régulière et forcée ? {#regularforcedupdates}
 
-Les mises à jour régulières sont des processus **planifiés** tandis que les mises à jour forcées sont des **processus manuels initiés par vous**. Si vous avez des heures d’interruption (ou une période pendant laquelle [!DNL Commerce Intelligence] ne doit pas mettre à jour vos données), forcer une mise à jour lance un cycle qui ne respecte pas les limites de la période d’interruption.
+Les mises à jour régulières sont des processus **planifiés** tandis que les mises à jour forcées sont **des processus manuels que vous lancez**. Si vous avez des heures d&#39;interruption (ou une période pendant laquelle [!DNL Commerce Intelligence] ne devez pas mettre à jour vos données), forcer une mise à jour lance un cycle qui ne respecte pas les limites de la période d&#39;interruption.
 
-## Pourquoi le cycle de mise à jour prend-il beaucoup de temps ? {#updatecycletime}
+## Pourquoi le cycle de mise à jour est-il long ? {#updatecycletime}
 
-De nombreux facteurs peuvent ajouter à un temps de mise à jour déjà long. Certaines [méthodes de réplication](../data-warehouse-mgr/cfg-replication-methods.md), [fréquences de contrôle supérieures](../data-warehouse-mgr/cfg-data-rechecks.md) et le nombre de tableaux de bord et de graphiques ne sont que quelques contributeurs. Adobe recommande de [reconfigurer certains de vos paramètres](../../best-practices/reduce-update-cycle-time.md) et [optimiser votre base de données pour l’analyse](../../best-practices/opt-db-analysis.md) afin de réduire les temps de mise à jour.
+De nombreux facteurs peuvent s’ajouter à une durée de mise à jour déjà longue. Certaines [méthodes de réplication](../data-warehouse-mgr/cfg-replication-methods.md), [fréquence de vérification plus élevée](../data-warehouse-mgr/cfg-data-rechecks.md) et le nombre de tableaux de bord et de graphiques ne sont que quelques-unes des contributions. Adobe recommande de [reconfigurer certains de vos paramètres](../../best-practices/reduce-update-cycle-time.md) et [optimiser votre base de données pour analyse](../../best-practices/opt-db-analysis.md) afin de réduire le temps de mise à jour.
 
-## Puis-je être informé de la fin d’un cycle de mise à jour ? {#notifyupdate}
+## Puis-je être averti à la fin d’un cycle de mise à jour ? {#notifyupdate}
 
-Si une mise à jour est en cours, il existe un lien sur la page `Connections` que vous pouvez utiliser pour demander une notification par courrier électronique une fois le cycle terminé.
+Si une mise à jour est en cours, la page `Connections` contient un lien que vous pouvez utiliser pour demander une notification par e-mail une fois le cycle terminé.
 
-## Pourquoi [!DNL Google ECommerce]données est-il différent de ma base de données ? {#ecommdatabase}
+## Pourquoi les données sont[!DNL Google ECommerce]elles différentes de ma base de données ? {#ecommdatabase}
 
-Les disparités entre [!DNL Google Analytics] et votre base de données peuvent survenir pour diverses raisons. Le suivi n’étant pas correctement activé, les utilisateurs qui visitent incognito et les événements de clic ne fonctionnent pas correctement sont quelques exemples. Si vos recettes et commandes ne semblent pas correctes, [consultez cette rubrique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=fr) pour diagnostiquer un problème.
+Des incohérences entre [!DNL Google Analytics] et votre base de données peuvent survenir pour diverses raisons. Le suivi n’étant pas correctement activé, les utilisateurs qui visitent en navigation privée et les événements de clics ne fonctionnent pas correctement ne sont que quelques exemples. Si votre chiffre d’affaires et vos commandes ne vous semblent pas corrects, [consultez cette rubrique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) pour diagnostiquer un problème.
 
-## Comment résoudre un problème d’incohérence des données ? {#datadiscrepancy}
+## Comment résoudre un problème lié à une incohérence des données ? {#datadiscrepancy}
 
-Adobe sait que voir des données incohérentes peut être une expérience frustrante. Essayez d’utiliser le [tutoriel sur l’écart des données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=fr) ou le [tutoriel sur les exportations de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=fr) pour diagnostiquer le problème. Si vous êtes toujours en panne, [contactez l&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Adobe sait que voir des données incohérentes peut être une expérience frustrante. Essayez d’utiliser la [Liste de contrôle des incohérences de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) ou le tutoriel [Exportations de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) pour diagnostiquer le problème. Si vous êtes toujours bloqué, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

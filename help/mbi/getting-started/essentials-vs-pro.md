@@ -1,5 +1,5 @@
 ---
-title: Commerce Intelligence Essentials vs. Pro
+title: Commerce Intelligence Essentials et Pro
 description: Découvrez en quoi Commerce Intelligence Essentials diffère de Commerce Intelligence Pro.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
 role: Admin, Data Architect, Data Engineer, Leader, User
@@ -7,30 +7,30 @@ feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
-# [!DNL Commerce Intelligence Essentials] contre [!DNL Commerce Intelligence Pro]
+# [!DNL Commerce Intelligence Essentials] vs [!DNL Commerce Intelligence Pro]
 
-Le tableau suivant décrit les éléments inclus avec un compte `Essentials` hérité par rapport à un compte Commerce Intelligence actif. Adobe n&#39;offre plus `Essentials`.
+Le tableau suivant décrit les éléments inclus dans un compte `Essentials` hérité par rapport à un compte Commerce Intelligence actuel. Adobe n’offre plus de `Essentials`.
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
-| `Pre-Defined Reports` | Jusqu’à 100 | Personnalisé |
-| `Pre-Defined Dashboards` | 5-6 | Personnalisé |
+| `Pre-Defined Reports` | Jusqu’à 100 | Valeur personnalisée |
+| `Pre-Defined Dashboards` | 5-6 | Valeur personnalisée |
 | `New Custom Report Creation` | Oui | Oui |
-| `Commerce Tables` | 4-6 | Illimitées |
+| `Commerce Tables` | 4-6 | Illimité |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | Oui | Oui |
-| `Data Warehouse Manager` | Non disponible | Disponible |
+| `Data Warehouse Manager` | Indisponible | Available |
 | `Email Reports` | Oui | Oui |
 | `Cohort Report Builder` | Oui | Oui |
-| `Google Analytics Live Integration` | Oui | Illimitées |
-| `3rd Party Integrations` | Non disponible | Disponible |
+| `Google Analytics Live Integration` | Oui | Illimité |
+| `3rd Party Integrations` | Indisponible | Available |
 | `Full API Access` | Non | Oui |
 | `Access to CS, AM, or Analysts` | Non | Oui |
-| `Professional Services` | Disponible | Disponible |
+| `Professional Services` | Available | Available |
 
 {style="table-layout:auto"}
 

@@ -1,6 +1,6 @@
 ---
-title: Prévisionnel
-description: Prévisionnel
+title: Prévision
+description: Prévision
 exl-id: 61e0516a-941c-4e32-b051-6ff664962198
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports
@@ -11,10 +11,10 @@ ht-degree: 0%
 
 ---
 
-# Prévisionnel
+# Prévision
 
-Être en mesure de prévoir la valeur de durée de vie des clients lorsqu’ils passent davantage de commandes est l’un des aspects les plus importants de toute entreprise, quelle que soit sa taille.
+Être en mesure de prévoir la valeur à vie des clients lorsqu&#39;ils passent plus de commandes est l&#39;un des aspects les plus importants de toute entreprise, quelle que soit sa taille.
 
-Dans cette section, vous découvrirez la valeur de durée de vie de vos clients actuels et vous prévoyez comment la valeur de durée de vie augmente avec davantage de commandes.
+Dans cette section, vous découvrez la valeur de durée de vie de vos clients actuels et prévoyez comment la valeur de durée de vie augmente avec le nombre de commandes.
 
-Voir aussi : [Analyse de la valeur de durée de vie attendue (LTV) (de base)](../../data-analyst/analysis/ess-expected-ltv.md)
+Voir aussi : [Analyse de la valeur de durée de vie attendue (VVC) (de base)](../../data-analyst/analysis/ess-expected-ltv.md)

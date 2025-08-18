@@ -1,6 +1,6 @@
 ---
-title: Suivi UTM en Google Analytics
-description: Découvrez les bonnes pratiques relatives au suivi UTM (balisage) en Google Analytics.
+title: Suivi UTM dans Google Analytics
+description: Découvrez les bonnes pratiques relatives au suivi UTM (balisage) dans Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -13,32 +13,32 @@ ht-degree: 0%
 
 # Suivi UTM
 
-Le suivi `UTM` est une convention de balisage pour les URL qui vous permet d’analyser d’où viennent vos utilisateurs. Si vous observez les URL sur lesquelles vous cliquez dans la plupart des bannières publicitaires ou des emails marketing, le balisage UTM s’affiche. Ce sont ces liens longs qui se terminent par des éléments comme `utm\_source` et `utm\_medium`.
+Le tracking `UTM` est une convention de balisage des URL qui vous permet d’analyser la provenance de vos utilisateurs et utilisatrices. Si vous regardez sur les URL sur lesquelles vous cliquez dans la plupart des e-mails marketing ou des bannières publicitaires, vous verrez le balisage UTM. Ce sont ces longs liens qui se terminent par des choses comme `utm\_source` et `utm\_medium`.
 
-[!DNL Google Analytics] utilise le balisage `UTM` pour savoir d’où provient votre trafic. Certaines de ces informations proviennent du [référent HTTP](https://en.wikipedia.org/wiki/HTTP_referer), mais le reste de ces informations nécessite des paramètres `UTM`. Lorsque vous voyez `google adwords` ou `email marketing`, cela signifie que ces `UTM` paramètres sont enregistrés à partir du clic sur le lien d’origine, puis stockés dans les cookies des utilisateurs. À partir de là, [!DNL Google Analytics] utilise ces données pour [attribuer des comportements intéressants](../data-analyst/analysis/google-track-user-acq.md) sur votre site. Comprendre ces paramètres vous aide à comprendre comment configurer et utiliser au mieux le balisage UTM.
+[!DNL Google Analytics] utilise le balisage `UTM` pour savoir d’où vient votre trafic. Certaines de ces informations proviennent du [ référent HTTP ](https://en.wikipedia.org/wiki/HTTP_referer), mais le reste vous devez vous fournir des paramètres de `UTM`. Lorsque vous voyez `google adwords` ou `email marketing`, cela signifie que ces paramètres de `UTM` sont enregistrés à partir du clic sur le lien d’origine, puis stockés dans les cookies des utilisateurs. Ensuite, [!DNL Google Analytics] utilise ces données pour [attribuer des comportements intéressants](../data-analyst/analysis/google-track-user-acq.md) sur votre site. Comprendre à quoi servent ces paramètres vous aide à comprendre la meilleure façon de configurer et d’utiliser le balisage UTM.
 
 ## Bonnes pratiques relatives au balisage UTM
 
-Vous trouverez ci-dessous les cinq éléments les plus importants à retenir lors de la configuration de vos URL avec un balisage `UTM`.
+Vous trouverez ci-dessous la liste des cinq éléments les plus importants à retenir lors de la configuration de vos URL avec le balisage `UTM`.
 
-### 1. Visez à baliser toutes les URL que vous pouvez contrôler en provenance de votre site.
+### &#x200B;1. Visez à baliser chaque URL que vous pouvez contrôler en accédant à votre site
 
-Chaque fois que vous demandez aux personnes de cliquer sur un lien, vous devez configurer le balisage `UTM`. Cela inclut tous vos liens de courrier électronique (votre fournisseur de service de messagerie peut probablement baliser automatiquement vos URL), liens publicitaires, articles de presse, billets de blog.
+Chaque fois que vous demandez à des personnes de cliquer sur un lien, vous devez configurer le balisage `UTM`. Cela inclut tous vos liens d’e-mail (votre fournisseur de services de messagerie dispose probablement d’un moyen de baliser automatiquement vos URL), ainsi que les liens, articles de presse et articles de blog.
 
-### 2. Utilisez un outil pour créer l’URL
+### &#x200B;2. Utiliser un outil pour créer l’URL
 
-Les URL balisées de `UTM` peuvent être fastidieuses. Au lieu d&#39;essayer de les taper longuement, utilisez un outil [comme celui-ci](https://support.google.com/analytics/answer/1033867?hl=en) pour vous aider. Vous avez ainsi la garantie de réfléchir en ajoutant tous les paramètres appropriés à l’URL, et vous obtenez l’URL à copier-coller immédiatement. Pour gérer les liens sociaux, des outils tels que [!DNL Hootsuite] incluent l’option permettant d’ajouter des paramètres d’URL personnalisés à tous vos liens.
+Les URL avec balisage `UTM` peuvent être fastidieuses. Au lieu d’essayer de les taper à la main, utilisez un outil [comme celui-ci](https://support.google.com/analytics/answer/1033867?hl=en) pour vous aider. Cela vous permet de réfléchir à l’ajout de tous les paramètres sensibles à l’URL et d’obtenir l’URL à copier-coller directement à partir de celle-ci. Pour gérer les liens de réseaux sociaux, des outils tels que [!DNL Hootsuite] incluent la possibilité d’ajouter des paramètres d’URL personnalisés à tous vos liens.
 
-### 3. Assurez-vous d’être sensible à la casse dans les valeurs de paramètre.
+### &#x200B;3. Veillez à respecter la casse dans les valeurs de paramètre
 
-Il est important de rappeler que la balise `utm\_source=adwords` est une balise différente de `utm\_source=Adwords`. Pensez à tout mettre en minuscules.
+Il est important de se rappeler que la balise `utm\_source=adwords` est une balise différente de `utm\_source=Adwords`. Pensez à tout mettre en minuscules.
 
-### 4. Stockez les valeurs des paramètres UTM dans votre base de données.
+### &#x200B;4. Stockez les valeurs de paramètre UTM dans votre base de données
 
-Chaque fois qu’une transaction ou un événement se produit, vous souhaitez évaluer les performances de vos activités marketing. Pour ce faire, vous pouvez lire les valeurs des paramètres UTM du cookie [[!DNL Google Analytics] dans votre base de données](../data-analyst/analysis/google-track-user-acq.md).
+Chaque fois qu’une transaction ou un événement se produit, vous devez évaluer les performances de vos activités marketing. Pour ce faire, lisez les valeurs des valeurs des paramètres UTM du [[!DNL Google Analytics]  cookie dans votre base de données](../data-analyst/analysis/google-track-user-acq.md).
 
-### 5. Comment nommer des campagnes
+### &#x200B;5. Pensez à la manière dont vous nommez les campagnes
 
-Afin de suivre l’amélioration de vos efforts marketing au fil du temps, vous devez être intelligent sur vos conventions d’affectation des noms. Restez simple et minimisez autant que possible. Les systèmes de nommage compliqués sont plus difficiles à gérer.
+Pour suivre l’amélioration de vos efforts marketing au fil du temps, vous devez connaître intelligemment vos conventions de nommage. Restez simple et minimisez autant que possible. Les systèmes de nommage complexes sont plus difficiles à gérer.
 
-Une fois que vous capturez ces données dans votre base de données, vous pouvez évaluer les performances de votre marketing et de votre publicité par une analyse plus sophistiquée, y compris [Valeur de durée de vie du client](../data-analyst/analysis/ess-expected-ltv.md), [Taux d’achat répétés](../data-analyst/analysis/repurchase-behavior.md) et [Valeur de commande moyenne](../data-analyst/analysis/basic-analytics.md).
+Une fois que vous avez capturé ces données dans votre base de données, vous pouvez évaluer les performances de vos campagnes marketing et publicitaires à l’aide d’une analyse plus sophistiquée, notamment [Valeur durée de vie du client](../data-analyst/analysis/ess-expected-ltv.md), [Taux d’achat répétés](../data-analyst/analysis/repurchase-behavior.md) et [Valeur moyenne de la commande](../data-analyst/analysis/basic-analytics.md).

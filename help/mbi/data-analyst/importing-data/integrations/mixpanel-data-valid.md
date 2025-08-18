@@ -1,6 +1,6 @@
 ---
 title: Validation des données dans Mixpanel
-description: Découvrez comment vérifier que vous avez synchronisé toutes les mêmes données disponibles directement dans Mixpanel.
+description: Découvrez comment vérifier que vous avez synchronisé toutes les données qui sont disponibles directement dans Mixpanel.
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Validation des données dans [!DNL Mixpanel]
 
-Lorsque [!DNL Adobe Commerce Intelligence] se connecte pour la première fois à vos données [!DNL Mixpanel], votre gestionnaire de compte ou votre analyste peut vous demander de fournir des exportations de données depuis [!DNL Mixpanel] à des fins de validation. Cela vous permet de confirmer que vous avez synchronisé toutes les mêmes données disponibles directement dans [!DNL Mixpanel].
+Lorsque [!DNL Adobe Commerce Intelligence] se connecte pour la première fois à vos données [!DNL Mixpanel], votre gestionnaire de compte ou votre analyste peut vous demander de fournir des exportations de données à partir de [!DNL Mixpanel] à des fins de validation. Vous pouvez ainsi confirmer que vous avez synchronisé toutes les données qui sont disponibles pour vous directement dans [!DNL Mixpanel].
 
 ## Processus d’exportation des données : `Events`
 
-1. Visitez votre section `Segmentation` et affichez `Your Top Events`.
+1. Consultez votre section `Segmentation` et affichez les `Your Top Events`.
 
    ![](../../../assets/your-top-events.png)
 
@@ -25,7 +25,7 @@ Lorsque [!DNL Adobe Commerce Intelligence] se connecte pour la première fois à
 
    ![](../../../assets/past-96-hours.png)
 
-1. Accédez à la partie inférieure droite du rapport et exportez un fichier `.csv` :
+1. Faites défiler jusqu’à la partie inférieure droite du rapport et exportez un fichier `.csv` :
 
    ![](../../../assets/export-csv-mixpanel.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Définition d’un tableau de bord par défaut
+title: Définir un tableau de bord par défaut
 description: Découvrez comment définir un tableau de bord par défaut.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
 role: Admin, Data Architect, Data Engineer, User
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Définir un tableau de bord par défaut
 
-Le tableau de bord par défaut est le premier tableau de bord que vous voyez à l’ouverture de [!DNL Commerce Intelligence].
+Le tableau de bord par défaut est le premier tableau de bord que vous voyez à l’ouverture du [!DNL Commerce Intelligence].
 
-1. Dans le tableau de bord, cliquez sur **[!UICONTROL Dashboard Options]** situé en haut de l’écran.
+1. Dans le tableau de bord, cliquez sur **[!UICONTROL Dashboard Options]** dans la partie supérieure de l’écran.
 
 1. Cliquez sur **[!UICONTROL Make Default]** dans la liste déroulante.
 

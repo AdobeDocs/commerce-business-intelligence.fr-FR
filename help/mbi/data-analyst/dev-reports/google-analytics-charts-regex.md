@@ -11,25 +11,25 @@ ht-degree: 0%
 
 ---
 
-# Créer [!DNL Google Analytics] graphiques
+# Créer des graphiques [!DNL Google Analytics]
 
 (avec l’aide de la syntaxe regex)
 
 Après avoir connecté votre [[!DNL Google Analytics] compte](../../data-analyst/importing-data/integrations/google-analytics.md), vous pouvez créer des graphiques avec vos données [!DNL Google Analytics].
 
-## Créer [!DNL Google Analytics] graphiques
+## Créer Des Graphiques [!DNL Google Analytics]
 
 1. Cliquez sur **[!UICONTROL Add Chart** > **Create New Chart]**.
 
-1. Lors de la sélection d’une mesure dans le `Chart Builder`, faites défiler la liste jusqu’au bas de la liste pour trouver une section contenant vos profils [!DNL Google Analytics]. Une deuxième liste déroulante de mesures s’affiche. Vous pouvez y choisir la mesure que vous souhaitez analyser.
+1. Lors de la sélection d’une mesure dans la `Chart Builder`, faites défiler la liste vers le bas pour trouver une section comprenant vos profils de [!DNL Google Analytics]. Une deuxième liste déroulante de mesures s’affiche. Vous pouvez y choisir la mesure à analyser.
 
-1. Après avoir choisi la mesure, vous pouvez poursuivre avec ce graphique comme s’il s’agissait de n’importe quel autre graphique en sélectionnant les `time period`, `interval` et les données `perspectives` que vous souhaitez voir.
+1. Après avoir choisi la mesure, vous pouvez continuer à utiliser ce graphique comme s’il s’agissait de n’importe quel autre graphique en sélectionnant les `time period` de `interval`, de `perspectives` et de données que vous souhaitez afficher.
 
-1. La différence majeure ici est que `√` utilise des expressions régulières pour les filtres. Une expression régulière (expression régulière pour abréviation) est une chaîne de texte spéciale pour décrire un modèle de recherche. Voir des exemples de syntaxe regex dans le [[!DNL Google] guide sur les expressions régulières Analytics](https://support.google.com/analytics/answer/1034324?hl=en).
+1. La principale différence ici est que `√` utilise des expressions régulières pour les filtres. Une expression régulière (regex pour abréger) est une chaîne de texte spéciale pour décrire un modèle de recherche. Consultez des exemples de syntaxe RegEx dans le [[!DNL Google] guide sur les expressions régulières Analytics](https://support.google.com/analytics/answer/1034324?hl=en).
 
 >[!NOTE]
 >
->Les seuls caractères spéciaux qui doivent être précédés d’une séquence d’échappement à l’aide du caractère \ sont les métacaractères ci-dessous :
+>Les seuls caractères spéciaux qui doivent être placés dans une séquence d’échappement à l’aide du caractère \ sont les métacaractères ci-dessous :
 
 | | | | | |
 |-----|-----|-----|-----|-----|

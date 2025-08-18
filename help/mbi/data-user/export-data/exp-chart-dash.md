@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Exporter les données du graphique
 
-Si vous souhaitez afficher les données derrière un graphique, cliquez sur l’icône en forme d’engrenage dans le coin supérieur droit d’un graphique.
+Si vous souhaitez afficher les données derrière un graphique, cliquez sur l’icône d’engrenage dans le coin supérieur droit d’un graphique.
 
 Sélectionnez l’une des options suivantes :
 
@@ -22,6 +22,6 @@ Sélectionnez l’une des options suivantes :
 - `Full Excel Export`
 - `Raw Export`
 
-Vous pouvez également définir la table [et les colonnes que vous souhaitez inclure dans l’export](../../tutorials/export-raw-data.md).
+Vous pouvez également définir le [tableau et les colonnes à inclure dans l’exportation](../../tutorials/export-raw-data.md).
 
-Si vous devez inclure un graphique dans une présentation ou un document, vous pouvez l’exporter sous la forme d’une image au format PNG, PDF ou SVG. Cliquez sur l’icône d’engrenage dans le coin supérieur droit d’un graphique. Sélectionnez l’option `Enlarge` dans la liste déroulante, puis cliquez sur **[!UICONTROL Download]** pour terminer l’exportation.
+Si vous devez inclure un graphique dans une présentation ou un document, vous pouvez l&#39;exporter sous forme d&#39;image au format PNG, PDF ou SVG. Cliquez sur l’icône d’engrenage dans le coin supérieur droit d’un graphique. Sélectionnez l’option `Enlarge` dans la liste déroulante, puis cliquez sur **[!UICONTROL Download]** pour terminer l’exportation.

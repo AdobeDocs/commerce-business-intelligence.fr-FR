@@ -11,27 +11,27 @@ ht-degree: 0%
 
 ---
 
-# Données [!DNL Google Analytics] attendues
+# Données de [!DNL Google Analytics] attendues
 
-Une fois que vous avez connecté une intégration [!DNL Google Analytics], vous pouvez interagir avec vos [!DNL Google Analytics] mesures *immédiatement dans le`Visual Report Builder`*. Lorsque vous saisissez le `Visual Report Builder`, si vous cliquez sur **[!UICONTROL Add a Metric]**, une série de mesures de votre profil [!DNL Google Analytics] s’affiche dans une liste déroulante juste en dessous des mesures de votre Data Warehouse.
+Après avoir connecté une intégration [!DNL Google Analytics], vous pouvez interagir avec vos mesures [!DNL Google Analytics] *immédiatement dans le`Visual Report Builder`*. Lorsque vous saisissez la `Visual Report Builder`, si vous cliquez sur **[!UICONTROL Add a Metric]**, une série de mesures de votre profil [!DNL Google Analytics] s’affiche dans une liste déroulante juste en dessous des mesures de votre Data Warehouse.
 
-L’intégration [!DNL Google Analytics] est *live* — cela signifie que `Report Builder` demande des données de [!DNL Google Analytics] *immédiatement* lorsque vous ajoutez une mesure à votre rapport. Cela signifie également que les mesures auxquelles vous pouvez accéder sont définies exactement comme elles le sont dans [!DNL Google Analytics] et que ces valeurs ne sont pas *stockées* dans votre compte [!DNL Commerce Intelligence] ; elles ne sont affichées que visuellement dans vos rapports.
+L’intégration [!DNL Google Analytics] est *en ligne* — cela signifie que le `Report Builder` demande immédiatement des données à [!DNL Google Analytics] ** lorsque vous ajoutez une mesure à votre rapport. Cela signifie également que les mesures auxquelles vous pouvez accéder sont définies exactement comme elles le sont dans [!DNL Google Analytics] et que ces valeurs ne sont pas *stockées* dans votre compte [!DNL Commerce Intelligence], mais affichées visuellement dans vos rapports.
 
-+++Mesures et Dimensions prises en charge (Google Analytics 3 ou Universal Analytics)
-
->[!NOTE]
->
->Le 1er juillet 2023, les propriétés standard Universal Analytics ([!DNL Google Analytics] 3) ne traiteront plus les données. Vous pourrez consulter vos rapports Analytics universels pour une période postérieure au 1er juillet 2023. Toutefois, les nouvelles données ne seront transmises que dans les propriétés [!DNL Google Analytics] 4.
-
-Les intégrations [!DNL Google Analytics] de [!DNL Commerce Intelligence] utilisent l’ [!DNL Google Analytics] [API Core Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/) et prennent en charge les mesures et dimensions suivantes.
++++Mesures et dimensions prises en charge (Google Analytics 3 ou Universal Analytics)
 
 >[!NOTE]
 >
->Pour éviter des résultats inattendus ou absurdes, vérifiez que toutes les dimensions que vous utilisez sont compatibles avec une ou plusieurs mesures que vous utilisez dans le `Report Builder`. Vous pouvez vérifier [ici](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>À compter du 1er juillet 2023, les propriétés Universal Analytics ([!DNL Google Analytics] 3) standard ne traiteront plus les données. Vous pourrez voir vos rapports Universal Analytics pendant une période postérieure au 1er juillet 2023. Toutefois, les nouvelles données ne seront transmises qu’aux propriétés [!DNL Google Analytics] 4.
+
+[!DNL Google Analytics] intégrations dans [!DNL Commerce Intelligence] utilisent l’[!DNL Google Analytics] [API Core Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/) et prennent en charge les mesures et dimensions suivantes.
+
+>[!NOTE]
+>
+>Pour éviter des résultats inattendus ou absurdes, vérifiez que toutes les dimensions utilisées sont compatibles avec une ou plusieurs mesures utilisées dans le `Report Builder`. Vous pouvez vérifier [ici](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Mesures prises en charge
 
-| [!DNL Commerce Intelligence] Nom d’affichage | [!DNL Google Analytics] Nom/formule |
+| Nom d’affichage [!DNL Commerce Intelligence] | Nom / Formule [!DNL Google Analytics] |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -85,7 +85,7 @@ Les intégrations [!DNL Google Analytics] de [!DNL Commerce Intelligence] utilis
 
 ## Dimensions prises en charge
 
-| [!DNL Commerce Intelligence] Nom d’affichage | [!DNL Google Analytics] Nom/formule | Groupable ? |
+| Nom d’affichage [!DNL Commerce Intelligence] | Nom / Formule [!DNL Google Analytics] | Regroupable ? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -154,14 +154,14 @@ Les intégrations [!DNL Google Analytics] de [!DNL Commerce Intelligence] utilis
 
 +++
 
-+++Mesures et Dimensions prises en charge (Google Analytics 4)
++++Mesures et dimensions prises en charge (Google Analytics 4)
 
-[!DNL Google Analytics] les intégrations dans [!DNL Commerce Intelligence] utilisent l’ [!DNL Google Analytics] [API de données v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+[!DNL Google Analytics] intégrations dans [!DNL Commerce Intelligence] utilisent le [!DNL Google Analytics] [API de données v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
 
 >[!NOTE]
 >
-> Commerce Intelligence ne prend pas en charge les dimensions suivantes : `cohort`, `cohortNthDay`, `cohortNthMonth` et `cohortNthWeek`.
+> Commerce Intelligence ne prend pas en charge les dimensions `cohort`, `cohortNthDay`, `cohortNthMonth` et `cohortNthWeek`.
 >
->Pour éviter des résultats inattendus ou absurdes, vérifiez que toutes les dimensions que vous utilisez sont compatibles avec une ou plusieurs mesures que vous utilisez dans le `Visual Report Builder`. Vous pouvez vérifier l’[Explorateur de Dimensions et de mesures GA4](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+>Pour éviter des résultats inattendus ou absurdes, vérifiez que toutes les dimensions utilisées sont compatibles avec une ou plusieurs mesures utilisées dans le `Visual Report Builder`. Vous pouvez vérifier l’explorateur de dimensions et de mesures [GA4](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
 
 +++

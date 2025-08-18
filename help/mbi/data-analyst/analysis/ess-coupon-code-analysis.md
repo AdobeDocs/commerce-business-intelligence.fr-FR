@@ -1,6 +1,6 @@
 ---
-title: Analyse du code de bon (de base)
-description: Découvrez les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre les habitudes des clients.
+title: Analyse du code coupon (de base)
+description: En savoir plus sur la performance des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre les habitudes des clients.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 ---
 
-# Analyse de base du code de bon
+# Analyse du code de coupon de base
 
-Comprendre les performances des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre les habitudes des clients.
+Comprendre la performance des coupons de votre entreprise est un moyen intéressant de segmenter vos commandes et de mieux comprendre les habitudes des clients.
 
-Cette rubrique décrit les étapes nécessaires à la création de cette analyse pour comprendre les performances des clients achetés par coupon, afficher les tendances et suivre l’utilisation du code de coupon individuel.
+Cette rubrique décrit les étapes requises pour créer cette analyse afin de comprendre les performances des clients dotés de coupons, de voir les tendances et de suivre l’utilisation du code de coupon individuel.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
 ## Prise en main
 
-Tout d’abord, une note sur le suivi des codes de coupon. Si un client a appliqué un coupon à une commande, trois choses se produisent :
+Tout d’abord, une note sur la façon dont les codes de coupon sont suivis. Si un client a appliqué un coupon à une commande, trois choses se produisent :
 
-* Une remise est répercutée dans le montant `base_grand_total` (votre mesure `Revenue` dans Commerce Intelligence)
-* Le code de coupon est stocké dans le champ `coupon_code` . Si ce champ est NULL (vide), aucun coupon n’est associé à la commande.
-* La valeur actualisée est stockée dans `base_discount_amount`. Selon votre configuration, cette valeur peut apparaître négative ou positive.
+* Une remise est reflétée dans le montant `base_grand_total` (votre mesure `Revenue` dans Commerce Intelligence)
+* Le code de coupon est stocké dans le champ `coupon_code` . Si ce champ est NULL (vide), aucun coupon n&#39;est associé à la commande.
+* Le montant actualisé est stocké dans `base_discount_amount`. Selon votre configuration, cette valeur peut sembler négative ou positive.
 
-Depuis Commerce 2.4.7, un client peut appliquer plusieurs codes de bon à une commande. Dans ce cas :
+Depuis Commerce version 2.4.7, un client peut appliquer plusieurs codes de coupon à une commande. Dans ce cas :
 
-* Tous les codes de coupon appliqués sont stockés dans le champ `coupon_code` de `sales_order_coupons`. Le premier code de coupon appliqué est également stocké dans le champ `coupon_code` de `sales_order`. Si ce champ est NULL (vide), aucun coupon n’est associé à la commande.
+* Tous les codes de coupon appliqués sont stockés dans le champ `coupon_code` de `sales_order_coupons`. Le premier code de coupon appliqué est également stocké dans le champ `coupon_code` de `sales_order`. Si ce champ est NULL (vide), aucun coupon n&#39;est associé à la commande.
 
 ## Création d’une mesure
 
@@ -38,18 +38,18 @@ La première étape consiste à créer une mesure en procédant comme suit :
 * Accédez à **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
 * Sélectionnez le `sales_order`.
-* Cette mesure exécute une **Somme** sur la colonne **base_discount_amount**, triée par **created_at**.
+* Cette mesure effectue une **Somme** sur la colonne **base_discount_amount**, triée par **created_at**.
    * [!UICONTROL Filters] :
-      * Ajouter le `Orders we count` (jeu de filtres enregistrés)
-      * Ajoutez ce qui suit :
-         * `coupon_code`**IS NOT**`[NULL]`
+      * Ajouter le `Orders we count` (jeu de filtres enregistré)
+      * Ajoutez le code suivant :
+         * `coupon_code`**N’EST PAS**`[NULL]`
       * Attribuez un nom à la mesure, par exemple `Coupon discount amount`.
 
 ## Création de votre tableau de bord
 
 * Une fois la mesure créée :
    * Accédez à [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
-   * Attribuez au tableau de bord un nom tel que `_Coupon Analysis_`.
+   * Attribuez un nom tel que `_Coupon Analysis_` au tableau de bord.
 
 * C’est là que vous créez et ajoutez tous les rapports.
 
@@ -59,156 +59,139 @@ La première étape consiste à créer une mesure en procédant comme suit :
 
 >[!NOTE]
 >
->Le [!UICONTROL Time Period]** pour chaque rapport est répertorié comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, par exemple `All time`, `Year-to-date` ou `Last 365 days`.
+>La [!UICONTROL Time Period]** de chaque rapport est répertoriée comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, par exemple `All time`, `Year-to-date` ou `Last 365 days`.
 
 * **Commandes avec coupons**
-   * &#x200B;
-
-     [!UICONTROL Mesure]: `Orders`
+   * 
+     [!UICONTROL Metric]: `Orders`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Commandes sans coupons**
-   * &#x200B;
-
-     [!UICONTROL Mesure]: `Orders`
+   * 
+     [!UICONTROL Metric]: `Orders`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
-* **Chiffre d&#39;affaires net des commandes avec coupons**
-   * &#x200B;
-
-     [!UICONTROL Mesure]: `Revenue`
+* **Chiffre d’affaires net des commandes avec coupons**
+   * 
+     [!UICONTROL Metric]: `Revenue`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
-* **Remises sur les coupons**
+* **Remises sur coupons**
    * [!UICONTROL Metric] : `Coupon discount amount`
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
-* **Chiffre d&#39;affaires moyen de la durée de vie : clients acquis par un bon**
+* **Chiffre d’affaires moyen sur la durée de vie : coupon acquis par les clients**
    * [!UICONTROL Metric] : `Avg lifetime revenue`
       * Ajouter un filtre :
-         * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
-* **Chiffre d&#39;affaires moyen de la durée de vie : clients non-coupons acquis**
+* **Chiffre d’affaires moyen sur la durée de vie : clients acquis sans coupon**
    * [!UICONTROL Metric] : `Avg lifetime revenue`
       * Ajouter un filtre :
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
-* **Détails de l’utilisation du coupon (premières commandes)**
-   * Mesure `1` : `Orders`
+* **Informations sur l’utilisation des coupons (premières commandes)**
+   * `1` de mesure : `Orders`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT**`[NULL]`
-         * [`B`] `Customer's order number` **Égal à** `1`
+         * [`A`] `coupon_code` **NON**`[NULL]`
+         * [`B`] `Customer's order number` **égal à** `1`
 
-   * Mesure `2` : `Revenue`
+   * `2` de mesure : `Revenue`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT**`[NULL]`
-         * [`B`] `Customer's order number` **Égal à** `1`
+         * [`A`] `coupon_code` **NON**`[NULL]`
+         * [`B`] `Customer's order number` **égal à** `1`
 
       * Renommer : `Net revenue`
 
-   * Mesure `3` : `Coupon discount amount`
+   * `3` de mesure : `Coupon discount amount`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS NOT**`[NULL]`
-         * [`B`] `Customer's order number` **Égal à** `1`
+         * [`A`] `coupon_code` **NON**`[NULL]`
+         * [`B`] `Customer's order number` **égal à** `1`
 
    * Créer une formule : `Gross revenue`
       * [!UICONTROL Formula] : `(B – C)`
-      * &#x200B;
-
+      * 
         [!UICONTROL Format]: `Currency`
 
-   * Créer une formule :**% réduits**
+   * Créer une formule : **% de remise**
       * Formule : `(C / (B - C))`
-      * &#x200B;
-
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * Créer une formule : `Average order discount`
       * [!UICONTROL Formula] : `(C / A)`
-      * &#x200B;
-
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Intervalle]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Type de graphique]: `Table`
 
-* **Chiffre d&#39;affaires moyen de la durée de vie par coupon de première commande**
-   * [!UICONTROL Metric] : **Chiffre d’affaires moyen de la durée de vie**
+* **Chiffre d’affaires moyen sur la durée de vie par coupon de première commande**
+   * [!UICONTROL Metric]:**Chiffre d’affaires moyen sur la durée de vie**
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS**`[NULL]`
+         * [`A`] `coupon_code` **EST**`[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
-* **Détails de l’utilisation du coupon (premières commandes)**
+* **Informations sur l’utilisation des coupons (premières commandes)**
    * [!UICONTROL Metric] : `Avg lifetime revenue`
       * Ajouter un filtre :
-         * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Group by] : `Customer's first order's coupon_code`
-   * &#x200B;
-
+   * 
      [!UICONTROL Type de graphique]: **Column**
 
-* **Nouveaux clients par acquisition de coupon/non-coupon**
-   * Mesure `1` : `New customers`
+* **Nouveaux clients par acquisition de coupon/hors coupon**
+   * `1` de mesure : `New customers`
       * Ajouter un filtre :
-         * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **N’EST PAS** `[NULL]`
 
       * [!UICONTROL Rename] : `Coupon acquisition customer`
 
-   * Mesure `2` : `New customers`
+   * `2` de mesure : `New customers`
       * Ajouter un filtre :
-         * [`A`] `coupon_code` **IS**`[NULL]`
+         * [`A`] `coupon_code` **EST**`[NULL]`
 
       * [!UICONTROL Rename] : `Non-coupon acquisition customer`
 
@@ -216,10 +199,10 @@ La première étape consiste à créer une mesure en procédant comme suit :
    * [!UICONTROL Interval] : `By Month`
    * [!UICONTROL Chart type] : `Stacked Column`
 
-Une fois les rapports créés, reportez-vous à l’image dans la partie supérieure de cette rubrique pour savoir comment organiser les rapports sur votre tableau de bord.
+Une fois les rapports créés, reportez-vous à l’image en haut de cette rubrique pour savoir comment organiser les rapports sur votre tableau de bord.
 
 >[!NOTE]
 >
->Depuis Adobe Commerce 2.4.7, les clients peuvent utiliser les tables **quote_coupons** et **ventes_order_coupons** pour obtenir des informations sur la manière dont les clients utilisent plusieurs coupons.
+>Depuis Adobe Commerce 2.4.7, les clients peuvent utiliser les tables **quote_coupons** et **sales_order_coupons** pour obtenir des informations sur la manière dont les clients utilisent plusieurs coupons.
 
 ![](../../assets/multicoupon_relationship_tables.png)

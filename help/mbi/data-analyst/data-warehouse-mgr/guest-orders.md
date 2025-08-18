@@ -1,6 +1,6 @@
 ---
 title: Commandes des invités
-description: Découvrez l’impact des commandes d’invités sur vos données et les options que vous devez correctement tenir compte des commandes d’invités dans votre  [!DNL Commerce Intelligence] Data Warehouse.
+description: Découvrez l'impact des commandes d'invités sur vos données et les options dont vous disposez pour comptabiliser correctement les commandes d'invités dans votre [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -13,39 +13,39 @@ ht-degree: 0%
 
 # Commandes d’invités
 
-Lors de la révision de vos commandes, si vous constatez que de nombreuses valeurs `customer\_id` sont nulles ou n’ont pas de valeur à associer à la table `customers`, cela indique que votre boutique autorise les commandes d’invités. Cela signifie que votre table `customers` ne comprend probablement pas tous vos clients.
+Lors de la révision de vos commandes, si vous constatez que de nombreuses valeurs de `customer\_id` sont nulles ou ne disposent pas d’une valeur à joindre à la table `customers`, cela indique que votre boutique autorise les commandes de clients. Cela signifie que votre tableau de `customers` n’inclut probablement pas tous vos clients.
 
-Cette rubrique décrit l’impact des commandes d’invités sur vos données et les options que vous devez correctement tenir compte des commandes d’invités dans votre Data Warehouse [!DNL Commerce Intelligence].
+Cette rubrique aborde l’impact des commandes des invités sur vos données et les options dont vous disposez pour tenir correctement compte des commandes des invités dans votre [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Impact des commandes d’invités sur les données
 
-Dans la base de données commerciale classique, il existe une table `orders` qui rejoint une table `customers`. Chaque ligne de la table `orders` comporte une colonne `customer\_id` propre à une ligne de la table `customers`.
+Dans la base de données commerciale type, il existe une table `orders` qui se joint à une table `customers`. Chaque ligne du tableau `orders` comporte une colonne `customer\_id` qui est propre à une ligne du tableau `customers`.
 
-* **Si tous les clients sont enregistrés** et que les commandes d’invités ne sont pas autorisées, cela signifie que chaque enregistrement de la table `orders` a une valeur dans la colonne `customer\_id`. Par conséquent, chaque commande revient à la table `customers`.
+* **Si tous les clients sont enregistrés** et que les commandes des invités ne sont pas autorisées, cela signifie que chaque enregistrement de la table `orders` a une valeur dans la colonne `customer\_id`. Par conséquent, chaque commande est rattachée à la table `customers`.
 
   ![](../../assets/guest-orders-4.png)
 
-* **Si les commandes d’invités sont autorisées**, cela signifie que certaines commandes n’ont pas de valeur dans la colonne `customer\_id`. Seuls les clients enregistrés reçoivent une valeur pour la colonne `customer\_id` de la table `orders`. Les clients qui ne sont pas enregistrés reçoivent une valeur `NULL` (ou vide) pour cette colonne. Par conséquent, tous les enregistrements de commande n’ont pas les enregistrements correspondants dans la table `customers`.
+* **Si les commandes de produits invités sont autorisées**, cela signifie que certaines commandes n&#39;ont pas de valeur dans la colonne `customer\_id`. Seuls les clients enregistrés reçoivent une valeur pour la colonne `customer\_id` dans le tableau `orders`. Les clients qui ne sont pas enregistrés reçoivent une valeur `NULL` (ou vide) pour cette colonne. Par conséquent, tous les enregistrements de commande n&#39;ont pas d&#39;enregistrements correspondants dans la table `customers`.
 
   >[!NOTE]
   >
-  >Pour identifier l’individu unique qui a effectué la commande, un autre attribut utilisateur unique doit être associé à une commande en regard de `customer\_id`. En règle générale, l’adresse électronique du client est utilisée.
+  >Pour identifier la personne unique qui a passé la commande, il doit y avoir un autre attribut utilisateur unique en plus des `customer\_id` associés à une commande. En règle générale, l’adresse e-mail du client est utilisée.
 
-## Comment tenir compte des commandes d’invités dans la configuration du Data Warehouse
+## Comment comptabiliser les commandes des invités dans la configuration de Data Warehouse
 
-En règle générale, l’ingénieur commercial qui met en oeuvre votre compte prend en compte les commandes des invités lors de la création de la base de votre Data Warehouse.
+En règle générale, l’ingénieur des ventes qui implémente votre compte prend en compte les commandes des invités lors de la création des bases de votre Data Warehouse.
 
-La manière la plus optimale de comptabiliser les commandes d’invités est de baser toutes les mesures au niveau du client sur la table `orders`. Cette configuration utilise un ID de client unique que tous les clients possèdent, y compris les invités (normalement, l’e-mail du client est utilisé). Cela ignore les données d&#39;enregistrement de la table `customers`. Avec cette option, seuls les clients qui ont effectué au moins un achat sont inclus dans les rapports au niveau du client. Les utilisateurs enregistrés qui n’ont pas encore effectué un achat ne sont pas inclus. Avec cette option, votre mesure `New customer` est basée sur la date de première commande du client dans la table `orders`.
+La méthode la plus optimale pour prendre en compte les commandes de produits invités consiste à baser toutes les mesures au niveau du client sur la table `orders`. Cette configuration utilise un ID de client unique que tous les clients possèdent, y compris les invités (normalement, l’adresse e-mail du client est utilisée). Cette option ignore les données d’enregistrement de la table `customers`. Avec cette option, seuls les clients qui ont effectué au moins un achat sont inclus dans les rapports au niveau du client. Les utilisateurs enregistrés qui n’ont pas encore effectué un seul achat ne sont pas inclus. Avec cette option, votre mesure de `New customer` est basée sur la date de première commande du client dans la table des `orders`.
 
-Vous pouvez remarquer que le filtre `Customers we count` défini dans ce type de configuration comporte un filtre pour `Customer's order number = 1`.
+Vous remarquerez peut-être que le filtre `Customers we count` défini dans ce type de configuration comporte un filtre pour les `Customer's order number = 1`.
 
 ![](../../assets/guest-orders-filter-set.png)
 
-En l’absence de commandes d’invités, chaque client existe comme une ligne unique dans la table des clients (voir Image 1). Une mesure telle que `New customers` peut simplement comptabiliser l’identifiant de cette table en fonction de la date `created\_at` pour comprendre les nouveaux clients en fonction de la date d’enregistrement.
+Dans une situation sans commandes d’invités, chaque client existe sous la forme d’une ligne unique dans le tableau des clients (voir l’image 1). Une mesure telle que `New customers` peut simplement compter l’identifiant de cette table en fonction de `created\_at` date pour comprendre les nouveaux clients en fonction de la date d’enregistrement.
 
-Dans une configuration de commandes d’invités où toutes les mesures de clients sont basées sur la table `orders` pour tenir compte des commandes d’invités, vous devez vous assurer que vous êtes `not counting customers twice`. Si vous comptez l’identifiant de la table des commandes, vous comptez chaque commande. Si vous comptabilisez plutôt l&#39;identifiant sur la table `orders` et utilisez un filtre, `Customer's order number = 1`, alors vous allez compter chaque client unique `only one time`. Cela s’applique à toutes les mesures au niveau des clients, telles que `Customer's lifetime revenue` ou `Customer's lifetime number of orders`.
+Dans une configuration de commandes client dans laquelle toutes les mesures client sont basées sur la table `orders` pour tenir compte des commandes client, vous devez vous assurer que vous êtes `not counting customers twice`. Si vous comptez l&#39;identifiant de la table des commandes, vous comptez chaque commande. Si, à la place, vous comptez l’identifiant sur la table `orders` et utilisez un filtre, `Customer's order number = 1`, vous allez compter chaque `only one time` client unique. Cela s’applique à toutes les mesures au niveau du client, telles que `Customer's lifetime revenue` ou `Customer's lifetime number of orders`.
 
-Vous pouvez voir ci-dessus qu’il existe une valeur nulle `customer\_ids` dans la table `orders`. Si vous utilisez `customer\_email` pour identifier des clients uniques, vous pouvez constater que `erin@test.com` a passé trois (3) commandes. Par conséquent, vous pouvez créer une mesure `New customers` sur votre table `orders` en fonction des conditions suivantes :
+Vous pouvez voir ci-dessus qu’il y a des `customer\_ids` nulles dans le tableau `orders`. Si vous utilisez l’`customer\_email` pour identifier les clients uniques, vous pouvez constater que `erin@test.com` a passé trois (3) commandes. Par conséquent, vous pouvez créer une mesure de `New customers` sur votre tableau de `orders` en fonction des conditions suivantes :
 
 * `Operation table = orders`
 * `Operation column = id`

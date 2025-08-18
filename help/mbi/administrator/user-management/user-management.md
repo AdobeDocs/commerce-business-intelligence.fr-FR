@@ -6,18 +6,18 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # Gestion des autorisations utilisateur
 
-[!DNL Adobe Commerce Intelligence] est conçu pour être une source unique de vérité dans votre organisation. Chaque utilisateur dispose de son propre jeu de tableaux de bord qu&#39;il peut [partager avec d&#39;autres utilisateurs](../../data-user/dashboards/share-dashboard-with-users.md).
+[!DNL Adobe Commerce Intelligence] est conçu pour être une source unique de vérité pour l’ensemble de votre organisation. Chaque utilisateur possède son propre jeu de tableaux de bord qu’il peut [partager avec d’autres utilisateurs](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## Niveaux d’autorisation des utilisateurs
 
-Dans [!DNL Commerce Intelligence], trois niveaux d’autorisation généraux s’appliquent aux utilisateurs. Ils sont sélectionnés lors de la création d’un compte :
+En [!DNL Commerce Intelligence], trois niveaux d’autorisation généraux s’appliquent aux utilisateurs et utilisatrices, et sont sélectionnés lors de la création d’un compte :
 
 * `Admin`
 * `Standard`
@@ -28,50 +28,50 @@ Ces autorisations permettent aux utilisateurs d’effectuer certaines actions ou
 |   | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
 | **Créer/gérer des utilisateurs** | ✔ |   |   |
-| **Créer des résumés d’emails** | ✔ | ✔ |   |
+| **Créer des résumés d’e-mail** | ✔ | ✔ |   |
 | **Créer/modifier/partager des tableaux de bord** | ✔ | ✔ |   |
 | **Afficher les tableaux de bord** | ✔ | ✔ | ✔ |
 | **Créer/modifier/supprimer des rapports visuels** | ✔ | ✔* |   |
 | **Créer/modifier/supprimer des rapports SQL** | ✔ |  |   |
-| **Cloner les tableaux de bord** | ✔ |   |   |
+| **Cloner des tableaux de bord** | ✔ |   |   |
 | **Ajouter/gérer des intégrations** | ✔ |   |   |
-| **Accès au Gestionnaire de Data Warehouse** | ✔ |   |   |
-| **Tables et colonnes de synchronisation/désynchronisation** | ✔ |   |   |
+| **Accéder au gestionnaire Data Warehouse** | ✔ |   |   |
+| **Synchroniser/désynchroniser les tables et les colonnes** | ✔ |   |   |
 | **Créer/modifier des mesures** | ✔ |   |   |
-| **Créer/modifier des ensembles de filtres** | ✔ |   |   |
+| **Créer/modifier des jeux de filtres** | ✔ |   |   |
 | **Créer/modifier des colonnes calculées** | ✔ |   |   |
 | **Créer une liste de rapports dépendants** | ✔ |   |   |
-| **Résumé du système d’accès** | ✔ |   |   |
+| **Accéder au résumé du système** | ✔ |   |   |
 | **Accéder aux paramètres de fuseau horaire** | ✔ |   |   |
-| **Facturation d’accès** | ✔ | ✔** |   |
-| **Contacter l’assistance** | ✔ | ✔ | ✔ |
+| **Accéder à la facturation** | ✔ | ✔** |   |
+| **Contactez l’assistance** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->_Vous pouvez limiter l&#39;accès [ d&#39;un utilisateur à des mesures spécifiques](../../administrator/user-management/restrict-metric-access.md)._&#x200B;**[!UICONTROL Standard]**
+>_Vous pouvez limiter l’accès d’un utilisateur **[!UICONTROL Standard]**[ à des mesures spécifiques](../../administrator/user-management/restrict-metric-access.md)._
 >
->**[!UICONTROL Standard] _utilisateurs peuvent accéder à la facturation avec un paramètre d’autorisation supplémentaire._
+>**[!UICONTROL Standard] _les utilisateurs peuvent accéder à la facturation avec un paramètre d’autorisation supplémentaire._
 >
->Les utilisateurs de **[!UICONTROL Read-Only]** peuvent uniquement _afficher_ les tableaux de bord qui ont été partagés avec eux ; ils ne peuvent ni créer ni modifier quoi que ce soit dans [!DNL Commerce Intelligence], ni rechercher et ajouter de nouveaux tableaux de bord à leur compte. Adobe vous recommande de partager un ensemble spécifique de tableaux de bord avec des utilisateurs **[!UICONTROL Read-Only]** que vous ou un autre membre de votre équipe maintenez. Ne clonez pas un ensemble de tableaux de bord à leur place.
+>Les utilisateurs **[!UICONTROL Read-Only]** peuvent uniquement _afficher_ les tableaux de bord qui ont été partagés avec eux ; ils ne peuvent rien créer ni modifier dans [!DNL Commerce Intelligence], pas plus qu’ils ne peuvent rechercher et ajouter de nouveaux tableaux de bord à leur compte. Adobe vous recommande de partager un ensemble spécifique de tableaux de bord avec **[!UICONTROL Read-Only]** utilisateurs que vous ou un autre membre de votre équipe conservez. Ne clonez pas un ensemble de tableaux de bord pour eux.
 
-## Autorisations supplémentaires : Facturation et support technique {#billingtech}
+## Autorisations supplémentaires : Facturation et technique {#billingtech}
 
-Outre les niveaux d’autorisation généraux, deux autres désignations d’utilisateur existent également : `Billing` et `Technical`. Ces désignations doivent être utilisées avec les niveaux d’autorisation généraux.
+Outre les niveaux d’autorisation généraux, il existe également deux autres désignations d’utilisateur : `Billing` et `Technical`. Ces désignations doivent être utilisées avec les niveaux d’autorisation généraux.
 
 ### Facturation
 
-Les utilisateurs de `Billing` ont accès à la page de facturation et peuvent modifier les informations de paiement. Ils peuvent également être contactés par Adobe pour des questions de facturation.
+`Billing` utilisateurs ont accès à la page de facturation et peuvent modifier les informations de paiement. En outre, Adobe peut également contacter cette personne pour toute question sur la facturation.
 
-Par défaut, les utilisateurs de `Admin` ont accès à l’onglet `Billing`, mais les utilisateurs de `Standard` peuvent également y accéder s’ils ont coché la case `Billing` sur leur profil.
+`Admin` utilisateurs et utilisatrices ont accès par défaut à l’onglet `Billing` , mais `Standard` utilisateurs et utilisatrices peuvent également y accéder si la case à cocher `Billing` est sélectionnée sur leur profil.
 
-![billing](../../assets/billing.png)<!--{: width="550" height="363"}-->
+![facturation](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### Technique
 
-Les utilisateurs de `Technical` ne disposent d’aucune autorisation spécifique : ce paramètre marque simplement un contact technique au sein de votre organisation. Ces utilisateurs peuvent être contactés par Adobe pour des questions techniques.
+`Technical` utilisateurs ne disposent d’aucune autorisation spécifique qui leur soit spécifique. Ce paramètre marque simplement un contact technique au sein de votre organisation. Adobe peut contacter ces utilisateurs pour toute question technique.
 
-`Admin` utilisateurs peuvent ajouter de nouveaux utilisateurs à leur compte en cliquant sur **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** et en suivant les invites. Une fois l’utilisateur créé dans [!DNL Commerce Intelligence], la personne chanceuse que vous invitez recevra des instructions par e-mail sur la manière de terminer le processus de configuration du compte.
+`Admin` utilisateurs peuvent ajouter de nouveaux utilisateurs à leur compte en cliquant sur **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** et en suivant les invites. Une fois l’utilisateur créé dans [!DNL Commerce Intelligence], la personne chanceuse que vous invitez recevra par e-mail des instructions sur la façon de terminer le processus de configuration du compte.
 
-À tout moment, `Admins` peut afficher tous les utilisateurs de son compte en cliquant sur **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. Cette page affiche les autorisations de l’utilisateur, ainsi que les mesures et les tableaux de bord auxquels il peut accéder.
+À tout moment, `Admins` pouvez afficher tous les utilisateurs de leur compte en cliquant sur **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. Cette page affiche les autorisations de l’utilisateur et les mesures et tableaux de bord auxquels il peut accéder.

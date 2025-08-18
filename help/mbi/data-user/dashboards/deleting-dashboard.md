@@ -7,17 +7,17 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Suppression d’un tableau de bord
 
-Si vous souhaitez éviter que votre liste de tableaux de bord ne devienne trop encombrée, vous pouvez supprimer un tableau de bord s’il n’est plus nécessaire. Cela peut se faire de deux façons :
+Pour éviter que la liste des tableaux de bord ne soit trop encombrée, vous pouvez supprimer un tableau de bord s’il n’est plus nécessaire. Vous pouvez le faire de deux façons :
 
-1. [Via la `Account Settings` page](#account) - Cette méthode nécessite [des autorisations d’administrateur](../../administrator/user-management/user-management.md).
+1. [Via la page `Account Settings`](#account) - cette méthode nécessite des autorisations [Administrateur](../../administrator/user-management/user-management.md).
 
-1. [Via le menu `Dashboard Options`](#do) : cette méthode nécessite que vous possédiez le tableau de bord ou que vous disposiez des autorisations `Edit`.
+1. [Via le menu `Dashboard Options`](#do) - cette méthode nécessite que vous possédiez le tableau de bord ou que vous disposiez des autorisations `Edit`.
 
 ## Supprimer le tableau de bord via la page `Account Settings` {#account}
 
@@ -37,7 +37,7 @@ Exemple :
 
 1. Dans la liste déroulante, cliquez sur **[!UICONTROL Delete]**.
 
-1. Lorsque vous êtes invité à confirmer l’opération, cliquez sur **[!UICONTROL Delete]**.
+1. Lorsque vous êtes invité à confirmer, cliquez sur **[!UICONTROL Delete]**.
 
 Exemple :
 

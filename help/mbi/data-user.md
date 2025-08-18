@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Utilisateur de données
 
-Vous utilisez les données pour vous aider à prendre des décisions professionnelles. Vous pouvez recevoir des rapports et des tableaux de bord d’un analyste de données de votre équipe, mais vous souhaitez également apprendre à créer ces rapports et tableaux de bord.
+Vous utilisez des données pour prendre des décisions commerciales. Il se peut que vous receviez des rapports et des tableaux de bord d’un analyste de données de votre équipe, mais vous souhaitez également savoir comment créer ces rapports et tableaux de bord.
 
 Cette section explique comment :
-* acquérir et afficher des données dans [!DNL Commerce Intelligence] à l’aide de rapports et de tableaux de bord
-* partager ces données avec les parties prenantes par le biais de fichiers de messagerie et `.csv`
+* acquérir et afficher des données dans des [!DNL Commerce Intelligence] à l’aide de rapports et de tableaux de bord
+* partagez ces données avec les parties prenantes par e-mail et au moyen de fichiers `.csv`
 
-## Associé
+## Connexe
 
 * [Création de rapports](../mbi/data-user/reports/rpt-fundamentals.md)
 * [Création de tableaux de bord](../mbi/data-user/dashboards/ess-dashboards.md)

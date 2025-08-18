@@ -1,6 +1,6 @@
 ---
 title: Analyse de l’activité du site web et des taux de conversion des clients
-description: Découvrez comment configurer un tableau de bord qui effectuera le suivi de l’activité de votre site web (notamment des pages vues, des sessions et des utilisateurs) et de votre taux de conversion client au fil du temps.
+description: Découvrez comment configurer un tableau de bord qui suivra l’activité de votre site web, notamment les pages vues, les sessions et les utilisateurs, ainsi que votre taux de conversion client au fil du temps.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
 role: Admin, User
 feature: Reports, Data Integration
@@ -13,65 +13,65 @@ ht-degree: 0%
 
 # Analyse de l’activité du site web
 
-[!DNL Adobe Commerce Intelligence] vous permet d’intégrer facilement vos données de coûts publicitaires au reste de vos données. Cela vous permet non seulement de comprendre l’activité de votre site web, mais également d’obtenir le pourcentage de visiteurs de votre site web qui deviennent un utilisateur enregistré ou effectuent un achat.
+[!DNL Adobe Commerce Intelligence] vous permet d’intégrer facilement vos données de coûts publicitaires au reste de vos données. Cela vous permet non seulement de comprendre l’activité de votre site web, mais également d’obtenir le pourcentage de visiteurs et visiteuses sur votre site web qui deviennent un utilisateur ou une utilisatrice enregistré(e) ou effectuent un achat.
 
-Cette rubrique explique comment configurer un tableau de bord qui effectuera le suivi de l’activité de votre site web (y compris les pages vues, les sessions et les utilisateurs) et du taux de conversion de vos clients au fil du temps.
+Cette rubrique explique comment configurer un tableau de bord qui suivra l’activité de votre site web, notamment les pages vues, les sessions et les utilisateurs, ainsi que votre taux de conversion client au fil du temps.
 
 ## Conditions préalables
 
-**Importez vos données de coût de publicité** - Connectez [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md) à [!DNL Adobe Commerce Intelligence] - cela synchronise automatiquement vos [!DNL AdWords] dépenses dans Commerce Intelligence.
+**Importer vos données de coût publicitaire** - Connecter [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) à [!DNL Adobe Commerce Intelligence] - synchronise automatiquement vos dépenses [!DNL AdWords] dans Commerce Intelligence.
 
-**Tracker les données du canal d’acquisition des utilisateurs** - Pour lier vos [!DNL Google AdWords] données à des commandes spécifiques de votre base de données, vous devez [&#128279;](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Vous pouvez ainsi connecter chaque commande à une source et un support utm.
+**Suivre les données du canal d’acquisition d’utilisateurs** - Pour lier vos données [!DNL Google AdWords] à des commandes spécifiques dans votre base de données, vous devez [suivre l’acquisition d’utilisateurs](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Vous pouvez ainsi connecter chaque commande à une source et un support utm.
 
 ## Campagnes d’acquisition d’utilisateurs
 
 Cette collection de rapports est créée à l’aide des éléments suivants :
 
-* Mesures générées automatiquement lors de la connexion de vos données [!DNL Google AdWords]
+* Mesures générées automatiquement lorsque vous connectez vos données [!DNL Google AdWords]
 * Mesures de base qui doivent déjà être disponibles sur votre compte, telles que `Number of orders` et `New users`
-* Dimensions créées lors de l’association de vos données [!DNL Google Analytics Ecommerce] à votre base de données, comme la source utm de la commande et le support utm de la commande. Contactez l’équipe d’assistance si ces champs ne sont pas actuellement disponibles dans votre compte.
+* Dimensions créées lors de la jonction de vos données [!DNL Google Analytics Ecommerce] à votre base de données, telles que la source utm de la commande et le support utm de la commande. Contactez l’équipe d’assistance si ces champs ne sont pas actuellement disponibles dans votre compte
 
 ## Création de rapports
 
-**Commencez par créer un rapport qui affiche le nombre de pages vues, de sessions et d&#39;utilisateurs au fil du temps :**
+**Commencez par créer un rapport qui indique le nombre de pages vues, de sessions et d’utilisateurs au fil du temps :**
 
 1. Créez un rapport.
 1. Cliquez sur **[!UICONTROL Add Metric]**, puis placez le pointeur de la souris sur la section [!DNL Google Analytics] au bas de la liste déroulante et sélectionnez `Page Views`.
-1. Ajoutez une autre mesure, en pointant à nouveau sur la section [!DNL Google Analytics], en sélectionnant cette fois `Sessions`.
-1. Ajoutez une troisième mesure, en pointant à nouveau sur la section [!DNL Google Analytics], en sélectionnant cette fois `Users`.
-1. Maintenant, remplacez votre période par une période glissante, d’il y a 31 jours à il y a 1 jour, et ajustez l’intervalle de temps sur `by day`.
+1. Ajoutez une autre mesure en pointant à nouveau la souris sur la section [!DNL Google Analytics], cette fois en sélectionnant `Sessions`.
+1. Ajoutez une troisième mesure, en pointant à nouveau la souris sur la section [!DNL Google Analytics], cette fois en sélectionnant `Users`.
+1. Maintenant, définissez la période sur une plage mobile, comprise entre 31 jours et 1 jour auparavant, puis définissez l’intervalle sur `by day`.
 1. Attribuez un nom à votre rapport (par exemple, `Page views, sessions and users by day`), puis cliquez sur **[!UICONTROL Save]**.
 
 **Le deuxième rapport examine le nombre de pages vues au cours de l’année écoulée :**
 
 1. Créez un rapport.
-1. Cliquez sur **[!UICONTROL Add Metric]**, placez le pointeur de la souris sur la section [!DNL Google Analytics] au bas de la liste déroulante et sélectionnez _Pages vues_.
-1. Remplacez votre période par une période glissante, d’il y a 13 mois à il y a 1 mois, puis ajustez l’intervalle sur `by month`.
-1. Nommez votre rapport, par exemple `Page views by month,` et cliquez sur **[!UICONTROL Save]**.
+1. Cliquez sur **[!UICONTROL Add Metric]**, placez le pointeur de la souris sur la section [!DNL Google Analytics] en bas de la liste déroulante, puis sélectionnez _Pages vues_.
+1. Définissez la période sur une plage mobile, comprise entre 13 mois et 1 mois auparavant, puis définissez l’intervalle sur `by month`.
+1. Donnez un nom à votre rapport, par exemple `Page views by month,` et Cliquez sur **[!UICONTROL Save]**.
 
-**Le troisième graphique examine le taux de rebond de l’année passée :**
+**Le troisième graphique examine le taux de rebond au cours de l’année écoulée :**
 
 1. Créez un rapport.
-1. Cliquez sur **[!UICONTROL Add Metric]**, placez le pointeur de la souris sur la section [!DNL Google Analytics] au bas de la liste déroulante et sélectionnez _Taux de rebond_.
-1. Remplacez votre période par une période glissante, d’il y a 13 mois à il y a 1 mois, puis ajustez l’intervalle sur `by month`.
-1. Nommez votre rapport, par exemple `Bounce rate by month`, puis cliquez sur **[!UICONTROL Save]**.
+1. Cliquez sur **[!UICONTROL Add Metric]**, placez le pointeur de la souris sur la section [!DNL Google Analytics] en bas de la liste déroulante, puis sélectionnez _Taux de rebond_.
+1. Définissez la période sur une plage mobile, comprise entre 13 mois et 1 mois auparavant, puis définissez l’intervalle sur `by month`.
+1. Donnez un nom à votre rapport, comme `Bounce rate by month`, puis cliquez sur **[!UICONTROL Save]**.
 
 **Maintenant, regardez la durée de session moyenne des nouveaux visiteurs par rapport aux visiteurs récurrents :**
 
 1. Créez un rapport.
-1. Cliquez sur **UICONTROL Add Metric** (Ajouter une mesure), placez le pointeur de la souris sur la section [!DNL Google Analytics] au bas de la liste déroulante, puis sélectionnez `Average Session Length`.
-1. Remplacez votre période par une période glissante, d’il y a 13 mois à il y a 1 mois, puis ajustez l’intervalle de temps sur `by month` ?
+1. Cliquez sur **UICONTROL Ajouter une mesure**, placez le pointeur de la souris sur la section [!DNL Google Analytics] au bas de la liste déroulante, puis sélectionnez `Average Session Length`.
+1. Remplacez votre période par une période mobile, comprise entre 13 mois et 1 mois auparavant, puis définissez l’intervalle sur `by month` ?
 1. Ajoutez un `Group by` et sélectionnez `New or returning visitor`.  Cochez la case `Show All`, puis cliquez sur **[!UICONTROL Apply]**.
-1. Nommez votre rapport, par exemple `Average session length`, puis cliquez sur **[!UICONTROL Save]**.
+1. Donnez un nom à votre rapport, comme `Average session length`, puis cliquez sur **[!UICONTROL Save]**.
 
-**Ensuite, consultez vos principaux domaines référents au cours des 30 derniers jours :**
+**Ensuite, examinez vos principaux domaines référents au cours des 30 derniers jours :**
 
 1. Créez un rapport.
-1. Cliquez sur **[!UICONTROL Add Metric]**, placez le pointeur de la souris sur la section [!DNL Google Analytics] au bas de la liste déroulante et sélectionnez `Sessions`.
-1. Remplacez votre période par une période glissante, de 31 jours il y a 1 jour, puis ajustez l’intervalle sur `none`.
+1. Cliquez sur **[!UICONTROL Add Metric]**, placez le pointeur de la souris sur la section [!DNL Google Analytics] au bas de la liste déroulante, puis sélectionnez `Sessions`.
+1. Définissez la période sur une plage mobile, comprise entre 31 jours et 1 jour auparavant, puis définissez l’intervalle sur `none`.
 1. Ajoutez un `Group by` et sélectionnez `ga:source`.  Cochez la case _Tout afficher_, puis cliquez sur **[!UICONTROL Apply]**.
 1. Ajoutez un autre `group by` et sélectionnez `ga:medium`. Cochez à nouveau la case `Show All`, puis cliquez sur **[!UICONTROL Apply]**.
-1. Attribuez un nom à votre rapport, par exemple `Top 20 Referring Domains, 30 Days`, puis cliquez sur **[!UICONTROL Save]**.
+1. Attribuez un nom à votre rapport, comme `Top 20 Referring Domains, 30 Days`, puis cliquez sur **[!UICONTROL Save]**.
 
 **Enfin, regardez la conversion :**
 
@@ -79,30 +79,30 @@ Cette collection de rapports est créée à l’aide des éléments suivants :
 1. Ajoutez les mesures suivantes :
 
 * `New users`
-   * Cliquez sur **[!UICONTROL Hide]** sous le nom de la mesure.
+   * Cliquez sur **[!UICONTROL Hide]** sous le nom de la mesure
 
 * `Number of orders`
    * Ajoutez un filtre pour `Customer's order number` = 1 et cliquez sur **[!UICONTROL Apply]**
-   * Renommez la mesure en cliquant sur le nom de la mesure, en l’appelant `Number of first orders`, puis cliquez sur **[!UICONTROL Hide]**
+   * Renommez la mesure en cliquant sur son nom, en l’appelant `Number of first orders`, puis en cliquant sur **[!UICONTROL Hide]**
 
 * `Number of orders`
-   * **[!UICONTROL Hide]** de la mesure
+   * **[!UICONTROL Hide]** la mesure
 
 * `Users`
-   * **[!UICONTROL Hide]** de la mesure
-   * Modifiez la période sur `24 months ago to now` et réglez l’intervalle de temps sur `by month`.
+   * **[!UICONTROL Hide]** la mesure
+   * Remplacez la période par `24 months ago to now` et l’intervalle par `by month`.
    * Ajoutez les formules suivantes en cliquant sur **[!UICONTROL Formula]**.
    * A/D puis cliquez sur **[!UICONTROL Apply]**
-   * Renommez la formule `Registration conversion`
+   * Renommer le `Registration conversion` de formule
    * B/D puis cliquez sur **[!UICONTROL Apply]**
-   * Renommez la formule `First order conversion`
-   * C/D puis cliquez sur **[!UICONTROL Apply]**
-   * Renommez la formule `Any order conversion`
+   * Renommer le `First order conversion` de formule
+   * C/D, puis cliquez sur **[!UICONTROL Apply]**
+   * Renommer le `Any order conversion` de formule
 
-* Attribuez maintenant un nom à votre rapport, par exemple `Conversion by month`, puis cliquez sur **[!UICONTROL Save]**.
+* Attribuez maintenant un nom à votre rapport, comme `Conversion by month`, puis cliquez sur **[!UICONTROL Save]**.
 
 ## Étapes suivantes
 
-Maintenant que vous avez accès aux données relatives au trafic web et aux taux de conversion, vous pouvez commencer à les exploiter pour prendre des décisions professionnelles, telles que Quels sites sont les mieux placés pour diriger le trafic vers votre site ? ou laquelle de vos campagnes est la plus efficace pour acquérir des clients avec une valeur de durée de vie élevée ?
+Maintenant que vous avez accès aux données sur votre trafic web et vos taux de conversion, vous pouvez commencer à les exploiter pour prendre des décisions commerciales, telles que Quels sites sont les mieux à même de générer du trafic vers votre site ? ou laquelle de vos campagnes est la plus efficace pour acquérir des clients avec une valeur de durée de vie élevée ?
 
-Au fur et à mesure que vous ajustez les dépenses publicitaires et la stratégie marketing, vous pouvez continuer à suivre les résultats dans [!DNL Commerce Intelligence], en itérant sur ce tableau de bord pour répondre aux priorités changeantes de votre entreprise.
+À mesure que vous ajustez les dépenses publicitaires et la stratégie marketing, vous pouvez continuer à suivre les résultats dans [!DNL Commerce Intelligence], en effectuant une itération sur ce tableau de bord pour répondre aux priorités changeantes de votre entreprise.

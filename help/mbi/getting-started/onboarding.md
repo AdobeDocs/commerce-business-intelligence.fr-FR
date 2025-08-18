@@ -1,6 +1,6 @@
 ---
-title: Intégration à Adobe Commerce Intelligence
-description: En savoir plus sur l’intégration à Adobe Commerce Intelligence.
+title: Adobe Commerce Intelligence d’intégration
+description: En savoir plus sur l’intégration de Adobe Commerce Intelligence.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -11,26 +11,26 @@ ht-degree: 0%
 
 ---
 
-# Intégration [!DNL Adobe Commerce Intelligence]
+# [!DNL Adobe Commerce Intelligence] d’intégration
 
-Les questions d&#39;intégration liées aux paramètres `store` et `database` vous permettent de configurer correctement vos rapports. Grâce à ces réponses, Adobe diffuse vos rapports qui sont précisément adaptés à la configuration de votre magasin.
+Les questions d’intégration relatives aux paramètres de `store` et de `database` vous permettent de configurer correctement les rapports. Grâce à ces réponses, Adobe diffuse vos rapports qui sont précisément adaptés à la configuration de votre boutique.
 
-## Paramètres de magasin
+## Paramètres de la boutique
 
-- *Votre boutique accepte-t-elle le passage en caisse des invités ?* - Sélectionnez **oui** si vous autorisez les clients à effectuer un achat sur votre boutique sans s’inscrire pour un compte.
+- *Votre boutique accepte-t-elle le passage en caisse des invités ?* - Sélectionnez **oui** si vous autorisez les clients à effectuer un achat dans votre boutique sans s’inscrire à un compte.
 
-- `Timezone` - Sélectionnez le `timezone` dans lequel vous souhaitez afficher vos rapports.
+- `Timezone` - Sélectionnez les `timezone` dans lesquelles vous souhaitez afficher vos rapports.
 
-- `Currency` - Sélectionnez le `currency` dans lequel votre magasin fonctionne.
+- `Currency` - Sélectionnez le `currency` dans lequel votre boutique opère.
 
 - `Your week starts on...` - Sélectionnez le jour de la semaine qui doit être le début de la semaine dans vos rapports.
 
-- *Quelle version de Commerce utilisez-vous ?* - Sélectionnez le `currency` dans lequel votre magasin fonctionne.
+- *Quelle version de Commerce utilisez-vous ?* - Sélectionnez le `currency` dans lequel votre boutique opère.
 
-- *Votre boutique est-elle basée dans l’Union européenne ?* - Si vous répondez `Yes` à cette question, Adobe héberge votre Data Warehouse et toutes vos données dans l’Union européenne, conformément au RGPD.
+- *Votre magasin est-il basé dans l&#39;Union européenne ?* - Si vous répondez `Yes` cette question, Adobe hébergera votre Data Warehouse et toutes vos données dans l’Union européenne, conformément au RGPD.
 
-## Paramètres de base de données
+## Paramètres de la base de données
 
 - `Database name` - Quel est le *nom de la base de données [!DNL MySQL]* où se trouvent vos données transactionnelles Commerce ?
 
-- `Table prefix (optional)` - Les tables contenues dans votre base de données Commerce sont-elles précédées de quelque chose (par exemple, `store_`) ? Normalement, ce n’est pas le cas, mais il s’agit d’une personnalisation qui peut être effectuée.
+- `Table prefix (optional)` - Les tables contenues dans votre base de données Commerce sont-elles précédées d’un préfixe (par exemple, `store_`) ? Ce n’est normalement pas le cas, mais il s’agit d’une personnalisation qui peut être effectuée.

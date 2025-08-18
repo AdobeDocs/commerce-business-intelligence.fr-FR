@@ -1,6 +1,6 @@
 ---
 title: Nouvelle architecture
-description: Découvrez les avantages liés au passage à une nouvelle architecture.
+description: Découvrez les avantages de la transition vers une nouvelle architecture.
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
@@ -13,40 +13,40 @@ ht-degree: 0%
 
 # Nouvelle architecture
 
-[!DNL Adobe Commerce Intelligence] Les équipes produit et ingénierie se sont concentrées sur les améliorations les plus radicales et les plus demandées possibles au cours de l’année écoulée. Adobe est ravi d’annoncer la disponibilité d’une nouvelle architecture de produit [!DNL Commerce Intelligence] qui rend ces améliorations concrètes.
+[!DNL Adobe Commerce Intelligence] équipes Produit et Ingénierie se sont concentrées sur les améliorations les plus importantes et les plus demandées possibles au cours de l’année écoulée. Adobe est ravi d’annoncer la disponibilité d’une nouvelle architecture de produit [!DNL Commerce Intelligence] qui concrétise ces améliorations.
 
 ## Avantages de la nouvelle architecture
 
-* Créez des types de colonnes dans le Data Warehouse, y compris des colonnes calculées avec SQL.
-* De nouvelles colonnes sont disponibles immédiatement.
+* Création de types de colonnes dans le Data Warehouse, y compris les colonnes calculées avec SQL.
+* De nouvelles colonnes sont immédiatement disponibles.
 * La latence des données a été considérablement améliorée.
 
 ## Avantages techniques
 
-Les principales différences sont répertoriées ci-dessus, mais la principale modification est la façon dont les calculs sont effectués pendant le cycle de mise à jour. Les calculs ne sont plus exécutés sur chaque colonne à chaque mise à jour ; ils le sont plutôt sur demande à partir du Report Builder visuel.
+Les principales différences sont répertoriées ci-dessus, mais la principale modification concerne la manière dont les calculs sont effectués pendant le cycle de mise à jour. Les calculs ne sont plus exécutés sur chaque colonne à chaque mise à jour ; ils sont exécutés à la demande depuis Visual Report Builder.
 
-### Passage à la nouvelle architecture
+### Passage à une nouvelle architecture
 
-Comme les comptes sont créés de manière fondamentalement différente, il n’existe aucun processus automatique pour migrer votre Data Warehouse ou vos rapports vers un nouveau compte d’architecture. Le passage à la nouvelle architecture nécessite une nouvelle mise en oeuvre de votre compte existant.
+Comme les comptes sont créés fondamentalement différemment, il n’existe aucun processus automatique pour migrer vos Data Warehouse ou rapports vers un compte doté d’une nouvelle architecture. Le passage à la nouvelle architecture nécessite une nouvelle implémentation de votre compte existant.
 
-### Coût de la transition vers la nouvelle architecture
+### Coût de la migration vers la nouvelle architecture
 
-Aucun coût supplémentaire ! Adobe va créer ce nouveau compte pour que vous puissiez recommencer la mise en oeuvre, ce qui est gratuit pendant au moins un mois. Cela vous permet de disposer du temps nécessaire pour que les deux comptes soient ouverts afin que vous puissiez plus facilement effectuer la remise en oeuvre et que votre équipe ne dispose pas d’une interruption de service.
+Aucun coût supplémentaire ! Adobe créera ce compte pour que vous puissiez commencer la nouvelle implémentation, qui est gratuite pendant au moins un mois. Vous aurez ainsi le temps d’ouvrir les deux comptes afin de pouvoir effectuer plus facilement la nouvelle implémentation et de vous assurer que votre équipe ne présente pas d’interruption de service.
 
-### Temps nécessaire pour réimplémenter le compte dans la nouvelle architecture
+### Temps nécessaire à la réimplémentation du compte dans la nouvelle architecture
 
-Les délais de mise en oeuvre varient en fonction de ce que vous souhaitez recréer. Adobe vous recommande d’effectuer les étapes suivantes dans votre compte existant afin d’obtenir une idée de ce qui serait impliqué dans votre mise en oeuvre à nouveau :
+Les délais de réimplémentation varient en fonction de ce que vous souhaitez recréer. Adobe vous recommande d’effectuer les étapes suivantes dans votre compte existant pour avoir une idée de ce qui serait impliqué dans votre nouvelle implémentation :
 
-* Identifiez un ensemble principal de rapports/tableaux de bord.
-* Identifiez les mesures et dimensions requises pour créer ces rapports.
+* Identifiez un ensemble de base de rapports/tableaux de bord.
+* Identifiez les mesures et les dimensions requises pour créer ces rapports.
 * Identifiez les colonnes requises pour recréer ces mesures et dimensions.
 
-Une fois cette opération terminée, vous savez quelles données vous devez synchroniser avec le nouveau Data Warehouse d’architecture afin de reconstruire ces rapports principaux.
+Une fois cette opération terminée, vous savez quelles données vous devez synchroniser avec la nouvelle architecture Data Warehouse afin de recréer ces rapports de base.
 
-### Obtention d’aide
+### Accès à l’aide
 
-L’ [!DNL Adobe Commerce Intelligence] [équipe des services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) peut effectuer votre remise en oeuvre pour un coût supplémentaire. Contactez votre [ équipe de compte d’Adobe ](../../guide-overview.md#Submitting-a-Support-Ticket) et soyez prêt à fournir une liste de tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte.
+L’équipe [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) peut effectuer votre nouvelle implémentation moyennant un coût supplémentaire. Contactez l’équipe chargée de votre compte [Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) et préparez-vous à fournir une liste des tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte
 
-### Rester avec l’architecture existante
+### Conservation de l’architecture existante
 
-Si ces fonctionnalités ne sont pas importantes pour vous, vous pouvez vous en tenir à votre compte existant. La conservation de votre compte existant n’entraîne aucuns frais supplémentaires. Adobe continue à prendre en charge ces comptes sans modification.
+Si ces fonctionnalités ne sont pas importantes pour vous, vous pouvez vous en tenir à votre compte existant. La conservation de votre compte existant n’entraîne aucun frais supplémentaire. Adobe continue à prendre en charge ces comptes sans modification.

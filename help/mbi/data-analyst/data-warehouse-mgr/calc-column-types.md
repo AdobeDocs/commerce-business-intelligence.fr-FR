@@ -1,110 +1,110 @@
 ---
-title: Types de colonne calculés
-description: Découvrez comment créer des colonnes afin d’augmenter et d’optimiser vos données d’analyse.
+title: Types de colonnes calculées
+description: Découvrez comment créer des colonnes pour augmenter et optimiser vos données à analyser.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
 
-# Types de colonne calculés
+# Types de colonnes calculées
 
-* [Mêmes calculs de tableau](#sametable)
-* [Un ou plusieurs calculs](#onetomany)
-* [Plusieurs à un calcul](#manytoone)
+* [Mêmes calculs de table](#sametable)
+* [Calculs un à plusieurs](#onetomany)
+* [Calculs plusieurs à un](#manytoone)
 * [Carte de référence pratique](#map)
 * [Colonnes calculées avancées](#advanced)
 
-Dans le [Gestionnaire de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), vous pouvez créer des colonnes afin d’augmenter et d’optimiser vos données pour l’analyse. [Cette fonctionnalité](../data-warehouse-mgr/creating-calculated-columns.md) est accessible en sélectionnant n’importe quelle table dans le Gestionnaire de Data Warehouse et en cliquant sur **[!UICONTROL Create New Column]**.
+Dans [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md), vous pouvez créer des colonnes pour augmenter et optimiser vos données pour l&#39;analyse. [Cette fonctionnalité](../data-warehouse-mgr/creating-calculated-columns.md) est accessible en sélectionnant n’importe quel tableau dans le gestionnaire Data Warehouse et en cliquant sur **[!UICONTROL Create New Column]**.
 
-Cette rubrique décrit les types de colonnes que vous pouvez créer à l’aide du Gestionnaire de Data Warehouse. Il couvre également la description, une présentation visuelle de cette colonne et une [carte de référence](#map) de toutes les entrées requises pour créer une colonne. Il existe trois manières de créer des colonnes calculées :
+Cette rubrique décrit les types de colonnes que vous pouvez créer avec Data Warehouse Manager. Elle comprend également la description, une présentation visuelle de cette colonne et un [mappage de référence](#map) de toutes les entrées requises pour créer une colonne. Vous pouvez créer des colonnes calculées de trois manières différentes :
 
-1. [Même tableau que les colonnes calculées](#sametable)
-1. [Colonnes calculées de type &quot;un à plusieurs&quot;](#onetomany)
+1. [Mêmes colonnes calculées dans le tableau](#sametable)
+1. [Colonnes calculées de type « un à plusieurs »](#onetomany)
 1. [Colonnes calculées multiples-à-un](#manytoone)
 
-## Même tableau que les colonnes calculées {#sametable}
+## Mêmes colonnes calculées dans le tableau {#sametable}
 
-Ces colonnes sont construites à l’aide de colonnes d’entrée du même tableau.
+Ces colonnes sont créées à partir des colonnes d’entrée du même tableau.
 
-### Age {#age}
+### Âge {#age}
 
-Une colonne calculée d’âge renvoie le nombre de secondes entre l’heure actuelle et une heure d’entrée.
+Une colonne calculée sur l’âge renvoie le nombre de secondes entre l’heure actuelle et une heure d’entrée.
 
-L’exemple ci-dessous crée `Seconds since customer's most recent order` dans la table `customers`. Vous pouvez l’utiliser pour créer des listes d’utilisateurs de clients qui n’ont pas effectué d’achats (parfois appelés &quot;perte&quot;) dans `X days`.
+L’exemple ci-dessous crée des `Seconds since customer's most recent order` dans le tableau `customers` . Vous pouvez l’utiliser pour créer des listes d’utilisateurs et d’utilisatrices de clients et clientes qui n’ont pas effectué d’achats (parfois appelées résiliation) dans `X days`.
 
 ![](../../assets/age.gif)
 
 ### Convertisseur de devises
 
-Une colonne calculée de conversion de devise convertit la devise native d’une colonne en la nouvelle devise souhaitée.
+Une colonne calculée du convertisseur de devises convertit la devise native d’une colonne en une nouvelle devise souhaitée.
 
-L’exemple ci-dessous crée `base\_grand\_total In AED`, en convertissant `base\_grand\_total` à partir de sa devise native en AED dans la table `sales\_flat\_order`. Cette colonne fonctionne bien pour les magasins avec plusieurs devises qui souhaitent générer des rapports dans leur devise locale.
+L’exemple ci-dessous crée des `base\_grand\_total In AED`, en convertissant la `base\_grand\_total` de sa devise native en AED dans le tableau `sales\_flat\_order` . Cette colonne fonctionne bien pour les magasins qui utilisent plusieurs devises et qui souhaitent générer des rapports dans leur devise locale.
 
 Pour les clients Commerce, le champ `base\_currency\_code` stocke généralement les devises natives. Le champ `Spot Time` doit correspondre à la date utilisée dans vos mesures.
 
 ![](../../assets/currency_converter.png)
 
-## Colonnes calculées de type &quot;un à plusieurs&quot; {#onetomany}
+## Colonnes calculées de type « un à plusieurs » {#onetomany}
 
-`One-to-Many` colonnes [ utilisez un chemin entre deux tables](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). Ce chemin implique toujours une seule table, où réside un attribut, et une grande table, où cet attribut est &quot;déplacé&quot; vers. Le chemin peut être décrit comme une relation `foreign key--primary key`.
+`One-to-Many` colonnes [utilisez un chemin entre deux tableaux](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). Ce chemin d’accès implique toujours une table unique, où réside un attribut, et une table multiple, où cet attribut est « déplacé » vers le bas. Le chemin d’accès peut être décrit comme une relation `foreign key--primary key`.
 
-### Colonne liée {#joined}
+### Colonne jointe {#joined}
 
-Une colonne &quot;joint&quot; relocalise un attribut sur la seule table *vers* la table multiple. L’exemple classique d’un/de plusieurs est le nombre de clients (un) et de commandes (plusieurs).
+Une colonne jointe déplace un attribut sur une table *vers* la table multiple. L’exemple classique de un/plusieurs est clients (un) et commandes (plusieurs).
 
-Dans l’exemple ci-dessous, la dimension `Customer's group\_id` est associée à la table `orders`.
+Dans l’exemple ci-dessous, la dimension `Customer's group\_id` est intégrée dans le tableau `orders`.
 
 ![](../../assets/joined_column.gif)
 
 ## Colonnes calculées multiples-à-un {#manytoone}
 
-Ces colonnes utilisent les mêmes chemins que les colonnes de type &quot;un à plusieurs&quot;, mais elles pointent les données dans la direction opposée. La colonne est créée d’un côté du chemin, par opposition au côté multiple. En raison de cette relation, la valeur de la colonne doit être une agrégation, c’est-à-dire une opération mathématique effectuée sur les points de données du côté multiple. Il existe de nombreux cas d’utilisation à cet effet. Quelques-uns sont répertoriés ci-dessous.
+Ces colonnes utilisent les mêmes chemins que les colonnes de type « un à plusieurs », mais elles orientent les données dans la direction opposée. La colonne est créée d’un côté du chemin, par opposition au côté « plusieurs ». En raison de cette relation, la valeur de la colonne doit être une agrégation, c’est-à-dire une opération mathématique effectuée sur les points de données du côté multiple. Il existe de nombreux cas d’utilisation à cet effet, dont certains sont répertoriés ci-dessous.
 
-### Count {#count}
+### Nombre {#count}
 
-Ce type de colonne calculée renvoie le nombre de valeurs sur la table *sur* la seule table.
+Ce type de colonne calculée renvoie le nombre de valeurs sur le tableau multiple *sur* le seul tableau.
 
-Dans l’exemple ci-dessous, la dimension `Customer's lifetime number of canceled orders` est créée sur la table `customers` (avec un filtre pour `orders.status`).
+Dans l’exemple ci-dessous, la dimension `Customer's lifetime number of canceled orders` est créée dans le tableau `customers` (avec un filtre pour les `orders.status`).
 
-![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Somme {#sum}
 
-Une colonne de somme calculée est la somme des valeurs de la table `many` sur la seule table.
+Une colonne calculée de somme est la somme des valeurs du tableau `many` sur le tableau unique.
 
-Vous pouvez l’utiliser pour créer des dimensions au niveau du client telles que `Customer's lifetime revenue`.
+Vous pouvez l’utiliser pour créer des dimensions au niveau du client comme `Customer's lifetime revenue`.
 
-### Min. ou Max. {#minmax}
+### Min ou Max {#minmax}
 
-Une colonne calculée min. ou max. renvoie le plus petit ou le plus grand enregistrement existant de plusieurs côtés.
+Une colonne calculée min ou max renvoie l’enregistrement le plus petit ou le plus grand qui existe sur le côté « plusieurs ».
 
-Vous pouvez l’utiliser pour créer des dimensions au niveau du client telles que `Customer's first order date`.
+Vous pouvez l’utiliser pour créer des dimensions au niveau du client comme `Customer's first order date`.
 
 ### Existe {#exists}
 
-Une colonne calculée est un test binaire déterminant la présence d’un enregistrement du côté multiple. En d’autres termes, la nouvelle colonne renvoie un `1` si le chemin connecte au moins une ligne dans chaque table et `0` si aucune connexion ne peut être établie.
+Une colonne calculée est un test binaire déterminant la présence d’un enregistrement du côté « plusieurs ». En d’autres termes, la nouvelle colonne renvoie une `1` si le chemin d’accès connecte au moins une ligne dans chaque tableau, et `0` si aucune connexion ne peut être établie.
 
-Ce type de dimension peut déterminer, par exemple, si un client a déjà acheté un produit particulier. En utilisant une jointure entre une table `customers` et une table `orders`, un filtre pour un produit spécifique, une dimension `Customer has purchased Product X?` peut être créée.
+Ce type de dimension peut déterminer, par exemple, si un client a déjà acheté un produit particulier. En utilisant une jointure entre une table de `customers` et `orders` table, un filtre pour un produit spécifique, un `Customer has purchased Product X?` de dimension peut être créé.
 
 ## Carte de référence pratique {#map}
 
-Si vous rencontrez des difficultés à vous souvenir de toutes les entrées lors de la création d’une colonne calculée, conservez cette carte de référence pratique lorsque vous créez :
+Si vous avez des difficultés à vous souvenir de toutes les entrées lors de la création d’une colonne calculée, gardez cette carte de référence à portée de main lorsque vous créez :
 
 ![](../../assets/merged_reference_map.png)
 
 ## Colonnes calculées avancées {#advanced}
 
-Dans votre quête d’analyse et de réponse aux questions sur votre entreprise, vous pouvez rencontrer une situation dans laquelle vous ne pouvez pas créer la colonne exacte que vous souhaitez.
+Dans votre quête d&#39;analyse et de réponses aux questions sur votre entreprise, vous pourriez être confronté à une situation où vous ne pouvez pas créer la colonne exacte que vous voulez.
 
-Pour garantir un rendu rapide, Adobe recommande de consulter le guide [Types de colonnes calculées avancés](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) pour déterminer le type de colonnes que l’équipe d’assistance Adobe peut créer. Cette rubrique couvre également les informations dont vous avez besoin pour créer la colonne, en l’incluant avec votre requête.
+Pour garantir une exécution rapide, Adobe recommande de consulter le guide [Types de colonnes calculées avancés](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) pour voir quels types de colonnes l’équipe d’assistance d’Adobe peut créer. Cette rubrique couvre également les informations dont vous avez besoin pour créer la colonne - incluez-la avec votre demande.
 
 ## Documentation connexe
 
 * [Créer des colonnes calculées](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)
-* [Création/suppression de chemins pour les colonnes calculées](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
-* [Comprendre et évaluer les relations entre les tables](../../data-analyst/data-warehouse-mgr/table-relationships.md)
+* [Création/suppression de chemins d’accès pour les colonnes calculées](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
+* [Compréhension et évaluation des relations entre les tables](../../data-analyst/data-warehouse-mgr/table-relationships.md)

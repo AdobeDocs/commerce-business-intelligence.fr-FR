@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Recherche d’un tableau de bord
+# Rechercher un tableau de bord
 
-Cette rubrique vous explique comment utiliser la [[!DNL Global Search] fonctionnalité](#global) pour rechercher des tableaux de bord et des [tableaux de bord appartenant à d’autres utilisateurs](#other).
+Cette rubrique vous explique comment utiliser la [[!DNL Global Search] fonctionnalité](#global) pour rechercher des tableaux de bord et comment rechercher des [tableaux de bord appartenant à d’autres utilisateurs](#other).
 
 ## Recherche globale {#global}
 
@@ -21,14 +21,14 @@ Le menu [!DNL Global Search] vous permet de rechercher et de sélectionner des t
 
 * *Pour afficher la liste de vos tableaux de bord existants*, cliquez sur le tableau de bord.
 
-* *Pour rechercher un tableau de bord*, entrez certains critères de recherche dans la barre de recherche après avoir cliqué sur la liste déroulante du tableau de bord. Si des tableaux de bord correspondent aux critères, ils s’affichent en premier dans la liste.
+* *Pour rechercher un tableau de bord* saisissez certains critères de recherche dans la barre de recherche après avoir cliqué sur la liste déroulante du tableau de bord. Si des tableaux de bord correspondent aux critères, ils s’affichent en premier dans la liste.
 
 Exemple :
 
-![recherche globale dans le tableau de bord](../../assets/dboard-global-search.gif)
+![recherche globale dans un tableau de bord](../../assets/dboard-global-search.gif)
 
-## Recherche de tableaux de bord détenus par d’autres utilisateurs {#other}
+## Rechercher des tableaux de bord appartenant à d&#39;autres utilisateurs {#other}
 
-Vous recherchez un tableau de bord détenu par un autre utilisateur ? Si le tableau de bord peut être affiché par d’autres utilisateurs, vous pouvez le rechercher en cliquant sur **[!UICONTROL Find]** dans la liste déroulante `Dashboard Options`.
+Vous recherchez un tableau de bord appartenant à un autre utilisateur ? Si le tableau de bord peut être consulté par d’autres personnes, vous pouvez le rechercher en cliquant sur **[!UICONTROL Find]** dans la liste déroulante `Dashboard Options` .
 
-![Trouver des tableaux de bord](../../assets/find-dboards-other-owners.png)
+![rechercher des tableaux de bord](../../assets/find-dboards-other-owners.png)
