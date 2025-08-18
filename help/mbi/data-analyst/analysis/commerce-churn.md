@@ -76,19 +76,19 @@ Colonnes à créer
 * **Taux de résiliation**
    * [!UICONTROL Metric] : Nouveaux clients (par date de première commande)
    * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric] : `New customers (by last order date)`
    * [!UICONTROL Filter] :
-   * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]**`^`**
+   * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]&#x200B;**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric] : `New customers (by last order date)`
    * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula] : `(B / ((A + B) - C)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: Percentage
 
 * *`A` de mesure :`New customers cumulative`*

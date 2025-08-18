@@ -40,7 +40,7 @@ Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv
    * `created_at (month)` [!UICONTROL Calculation] : **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation] : **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation] : **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation] : **to_char(A, &#39;hh24&#39;)**
+   * **`created_at (hour of the day)` [!UICONTROL Calculation] : &#x200B;** to_char(A, &#39;hh24&#39;)**
      ![](../../assets/new-arch-create-calc.png)
 
 ## Mesures
@@ -64,10 +64,10 @@ Aucune.
 * `A` de mesure : `This year`
 * `B` de mesure : `Last year`
 * [!UICONTROL Time period] : `1 year ago to 0 years ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `created_at (month-day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **Graphique MoM**
@@ -81,10 +81,10 @@ Aucune.
 * `A` de mesure : ce mois-ci*
 * `B` de mesure : mois dernier*
 * [!UICONTROL Time period] : il y a 1 mois à 0 mois
-* 
+* &#x200B;
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by] : `created_at (day of month)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: Line
 
 * **Graphique WoW**
@@ -98,10 +98,10 @@ Aucune.
 * `A` de mesure : `This week`
 * `B` de mesure : `Last week`
 * [!UICONTROL Time period] : `1 week ago to 0 weeks ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `created_at (day of week)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **Graphique DoD**
@@ -115,10 +115,10 @@ Aucune.
 * `A` de mesure : `Today`
 * Mesure B : `Yesterday`
 * [!UICONTROL Time period] : `1 day ago to 0 days ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `created_at (hour of day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’image en haut de cette page.

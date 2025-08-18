@@ -53,7 +53,7 @@ Une fois la mesure créée, vous pouvez **créer un tableau de bord** en procéd
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric] : `Avg lifetime revenue`
    * [!UICONTROL Time period] : `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart Type] : `Number (scalar)`
 
@@ -64,7 +64,7 @@ Une fois la mesure créée, vous pouvez **créer un tableau de bord** en procéd
          * [`B`] `Customer's lifetime number of orders` **Supérieur À**`0`
 
    * [!UICONTROL Time period] : `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart Type] : `Number (scalar)`
 
@@ -73,7 +73,7 @@ Une fois la mesure créée, vous pouvez **créer un tableau de bord** en procéd
    * `2` de mesure : `Median lifetime revenue`
    * [!UICONTROL Time period] : `All time`
    * [!UICONTROL Interval] : `By Month`
-   * 
+   * &#x200B;
      [!UICONTROL Type de graphique]: `Line`
    * Décocher la `Multiple Y-Axes`
 
@@ -81,10 +81,10 @@ Une fois la mesure créée, vous pouvez **créer un tableau de bord** en procéd
    * `1` de mesure : `Avg lifetime revenue`
    * `2` de mesure : `New customers`
    * [!UICONTROL Time period] : `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Group by] : `Customer's lifetime number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Type de graphique]: `Line`
 
   >[!NOTE]

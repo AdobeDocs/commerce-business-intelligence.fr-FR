@@ -101,7 +101,7 @@ Si vous décidez que la mesure n’est plus nécessaire, revenez à la page **[!
 
 La dernière étape consiste à évaluer les colonnes en cours de synchronisation dans votre Data Warehouse. Non seulement la désynchronisation des colonnes peut désencombrer votre compte, mais elle peut également potentiellement réduire le temps de mise à jour.
 
-Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intelligence]’assistance [](../guide-overview.md#Submitting-a-Support-Ticket). L’équipe d’assistance peut créer un rapport qui comprend toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour un utilisateur et qui ne sont pas utilisées dans les résumés d’e-mails, à l’exclusion des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide de sélection des colonnes à désynchroniser via le gestionnaire Data Warehouse.
+Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intelligence]’assistance [&#128279;](../guide-overview.md#Submitting-a-Support-Ticket). L’équipe d’assistance peut créer un rapport qui comprend toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour un utilisateur et qui ne sont pas utilisées dans les résumés d’e-mails, à l’exclusion des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide de sélection des colonnes à désynchroniser via le gestionnaire Data Warehouse.
 
 >[!NOTE]
 >

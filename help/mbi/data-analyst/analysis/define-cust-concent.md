@@ -58,7 +58,7 @@ Colonnes à créer
 * Centile de chiffre d’affaires du client
 * [!UICONTROL Column type] : - `Same table > Calculation`
 * [!UICONTROL Inputs] : - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 **
+* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 &#x200B;**
 * [!UICONTROL Datatype] : - `Decimal`
 
 * `Sales_flat_order` table
@@ -76,7 +76,7 @@ Colonnes à créer
 * Centile de chiffre d’affaires du client
 * [!UICONTROL Column type] : - `Same table > Calculation`
 * [!UICONTROL Inputs] : - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 **
+* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 &#x200B;**
 * [!UICONTROL Datatype] : - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ Colonnes à créer
 * [!UICONTROL Metric] : `Total customer lifetime value`
 * [!UICONTROL Filter] : `Customer's revenue percentile IS NOT NULL`
 
-* 
+* &#x200B;
   [!UICONTROL Regrouper par]: `Independent`
 * `A` de mesure : `Total customer lifetime revenue by percentile`
 * `B` de mesure : `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Customer's revenue percentile`
 * Afficher en haut/en bas : `100% of Customer's revenue percentile Name`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 * **Top 10% de concentration**
@@ -117,12 +117,12 @@ Colonnes à créer
 
 * `A` de mesure : `Total customer lifetime revenue`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * Masquer le graphique
-* 
+* &#x200B;
   [!UICONTROL Regrouper par]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **Concentration inférieure de 50 % avec un seul achat**
@@ -133,12 +133,12 @@ Colonnes à créer
 * [!UICONTROL Filter] :
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * Masquer le graphique
-* 
+* &#x200B;
   [!UICONTROL Regrouper par]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **Concentration inférieure de 10 %**
@@ -146,12 +146,12 @@ Colonnes à créer
 
 * `A` de mesure : `Total customer lifetime revenue`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * Masquer le graphique
-* 
+* &#x200B;
   [!UICONTROL Regrouper par]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.

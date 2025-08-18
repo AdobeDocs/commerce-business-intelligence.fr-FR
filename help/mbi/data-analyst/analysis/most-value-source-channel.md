@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Vous avez fait des recherches sur votre audience, vous avez créé votre campagne, vous avez investi dans quelques canaux marketing. Maintenant qu’un certain temps s’est écoulé, quelles sont les performances de ces canaux ? Quel canal a attiré le plus de nouveaux utilisateurs ? Quelle est la source qui a le plus contribué à votre chiffre d&#39;affaires total ?
 
-Avec [!DNL Adobe Commerce Intelligence], vous pouvez facilement segmenter votre chiffre d’affaires et vos utilisateurs et utilisatrices par source de référence, qu’il s’agisse de champs de données [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) ou personnalisés. Cette segmentation vous permet de trouver les canaux les plus performants et de mieux investir votre budget marketing.
+Avec [!DNL Adobe Commerce Intelligence], vous pouvez facilement segmenter votre chiffre d’affaires et vos utilisateurs et utilisatrices par source de référence, qu’il s’agisse de champs de données [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) ou personnalisés. Cette segmentation vous permet de trouver les canaux les plus performants et de mieux investir votre budget marketing.
 
 Cette rubrique explore certains rapports que vous pouvez utiliser pour découvrir vos canaux marketing les plus précieux :
 

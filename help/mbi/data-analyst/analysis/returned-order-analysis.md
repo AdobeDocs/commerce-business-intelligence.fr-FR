@@ -61,9 +61,9 @@ Colonnes à créer
 * **`Order's created at`**
 * Sélectionnez une définition : `Joined Column`
 * [!UICONTROL Create Path] :
-* 
+* &#x200B;
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* 
+* &#x200B;
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Sélectionner un [!UICONTROL table] : `sales_flat_order`
@@ -82,9 +82,9 @@ Colonnes à créer
 * **`return_date_requested`**
 * Sélectionnez une définition : `Joined Column`
 * [!UICONTROL Create Path] :
-   * 
+   * &#x200B;
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * 
+   * &#x200B;
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Sélectionner un [!UICONTROL table] : `enterprise_rma`
@@ -157,14 +157,14 @@ Colonnes à créer
 
 * Formule : probabilité d’ordre de répétition
 * [!UICONTROL Formula] : `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `Customer's order number`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Bar`
 
 * **Temps moyen de retour (toute heure)**
@@ -172,9 +172,9 @@ Colonnes à créer
 * [!UICONTROL Metric] : `Avg time between order and return`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Number`
 
 * **Pourcentage de commandes avec retour**
@@ -188,11 +188,11 @@ Colonnes à créer
 
 * Formule : % de commandes avec retour
 * [!UICONTROL Formula] : `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Chart Type] : `Number - % of orders with return`
 
@@ -202,7 +202,7 @@ Colonnes à créer
 
 * [!UICONTROL Time period] : `All time`
 * [!UICONTROL Interval] : `By month`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Line`
 
 * **Clients ayant effectué un retour et n’ayant pas effectué de nouvel achat**
@@ -213,11 +213,11 @@ Colonnes à créer
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Regrouper par]: `Customer_email`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Table`
 
 * **Taux de retour par article**
@@ -230,14 +230,14 @@ Colonnes à créer
 
 * [!UICONTROL Formula] : `Return %`
 * [!UICONTROL Formula] : `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `product_sku AND/OR product_name`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Table`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.

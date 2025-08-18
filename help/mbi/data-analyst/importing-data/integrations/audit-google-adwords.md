@@ -21,7 +21,7 @@ Vous avez trouvé quelque chose d&#39;étrange en [[!DNL Google Adwords]](../int
 
 1. Saisissez les informations de votre compte [!DNL Google Adwords].
 
-1. Une fois votre compte ajouté à [!DNL Google Adwords]’éditeur, sélectionnez **[!UICONTROL File** > ** Exporter une feuille de calcul (CSV)**> **Exporter l’intégralité du compte]**
+1. Une fois votre compte ajouté à [!DNL Google Adwords]’éditeur, sélectionnez **[!UICONTROL File** > **&#x200B; Exporter une feuille de calcul (CSV)**> **Exporter l’intégralité du compte]**
 
 Vous créez ainsi un fichier `.csv` contenant toutes les informations stockées dans votre compte [!DNL Google Adwords] actuel. À ce stade, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (veillez à joindre ce fichier) afin de pouvoir examiner vos données de plus près. Si le fichier est trop volumineux, partagez-le avec l’équipe [!DNL Commerce Intelligence] via [!DNL Dropbox] ou [!DNL Google Drive].
 

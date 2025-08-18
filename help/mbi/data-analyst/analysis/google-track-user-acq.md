@@ -27,7 +27,7 @@ Si vous n’effectuez pas déjà le suivi des sources d’acquisition d’utilis
 
 ### (Option 1) Suivre les données de la source de référence des commandes via [!DNL Google Analytics E-Commerce]
 
-Si vous utilisez [!DNL Google Analytics E-Commerce] pour suivre les données de commande et de vente, vous pouvez utiliser le [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) pour synchroniser les données de la source de référence de chaque commande. Vous pouvez ainsi segmenter le chiffre d’affaires et les commandes par source de référence (par exemple, `utm_source` ou `utm_medium`). Vous pouvez également vous faire une idée des sources d’acquisition de clients grâce à [!DNL Commerce Intelligence] dimensions personnalisées telles que `User's first order source`.
+Si vous utilisez [!DNL Google Analytics E-Commerce] pour suivre les données de commande et de vente, vous pouvez utiliser le [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) pour synchroniser les données de la source de référence de chaque commande. Vous pouvez ainsi segmenter le chiffre d’affaires et les commandes par source de référence (par exemple, `utm_source` ou `utm_medium`). Vous pouvez également vous faire une idée des sources d’acquisition de clients grâce à [!DNL Commerce Intelligence] dimensions personnalisées telles que `User's first order source`.
 
 ### (Option 2) Enregistrement des données sources d&#39;acquisition des [!DNL Google Analytics] dans votre base de données
 
