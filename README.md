@@ -15,7 +15,7 @@ Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.m
 
 ## À propos de vos contributions au contenu d’Adobe
 
-Consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 La façon dont vous contribuez dépend de qui vous êtes et du type de modifications que vous souhaitez apporter :
 
@@ -37,7 +37,7 @@ Si vous êtes rédacteur technique, responsable de programme ou développeur au 
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour apporter des modifications mineures, ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Comment utiliser Markdown pour formater votre rubrique
 
