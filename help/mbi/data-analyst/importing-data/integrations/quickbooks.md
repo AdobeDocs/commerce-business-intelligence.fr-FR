@@ -44,4 +44,4 @@ Après avoir cliqué sur **[!UICONTROL Connect to Quickbooks]**, connectez-vous 
 ## Connexe
 
 * [Données  [!DNL QuickBooks] ](../integrations/quickbooks-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
