@@ -99,7 +99,7 @@ Exécutez-vous des publicités spécifiques au produit ? Si tel est le cas, vous
 >
 >Cet exemple suppose que tous les coûts de campagne ont été utilisés exclusivement pour générer des achats de produit(s) spécifique(s). En supposant que l’intégralité du coût ait été dépensée pour générer des achats, le retour sur investissement qui en résulte prend en compte le pire scénario (coût le plus élevé par achat). Vous pouvez être sûr que votre retour sur investissement réel est supérieur à ce calcul. Exemple : en supposant que vous ayez dépensé 20 $ dans une campagne qui a généré 10 nouveaux utilisateurs et 10 achats, votre coût réel par achat est de 1 $. En supposant que tous les coûts aient servi à acquérir de nouveaux utilisateurs, le coût par achat est de 2 $.
 
-Avant de commencer, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
+Avant de commencer, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
 
 * Source de la commande (si vous suivez uniquement la source de référence au niveau de l’utilisateur, rejoignez la source de l’utilisateur).
 * Campagne de la commande (si vous suivez uniquement la source de référence au niveau de l’utilisateur, rejoignez la campagne de l’utilisateur)
