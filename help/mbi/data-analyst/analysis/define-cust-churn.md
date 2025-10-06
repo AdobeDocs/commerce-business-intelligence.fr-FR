@@ -69,27 +69,27 @@ Aucune nouvelle mesure!
 * [!UICONTROL Metric] : nombre de commandes
 
 * [!UICONTROL Formula] : probabilité d’ordre de répétition initiale
-* 
+* &#x200B;
   [!UICONTROL Formule]: `A/B`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilité de répétition de l’ordre donnée en mois depuis l’ordre**
 * Mesure A : commandes répétées par mois depuis la commande précédente (masquer)
 * [!UICONTROL Metric] : `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter] : `Customer's order number greater than 1`
 
 * Mesure B : dernières commandes par mois depuis la commande (masquer)
 * [!UICONTROL Metric] : `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter] : `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ Aucune nouvelle mesure!
 * [!UICONTROL Metric] : `Number of orders`
 * [!UICONTROL Filter] : `Customer's order number greater than 1`
 
-* 
+* &#x200B;
   [!UICONTROL Regrouper par]: `Independent`
 
 * ID de mesure : toutes les dernières commandes (masquer)
 * [!UICONTROL Metric] : `Number of orders`
 * [!UICONTROL Filter] : `Is customer's last order? (Yes/No) = Yes`
 
-* 
+* &#x200B;
   [!UICONTROL Regrouper par]: `Independent`
 
 * [!UICONTROL Formula] : probabilité d’ordre de répétition initiale
-* 
+* &#x200B;
   [!UICONTROL Formule]: `(C-A)/(C+D-A-B)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Months since previous order`
 * Afficher top.bottom : Top 24 des catégories, triées par nom de catégorie
 
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 L&#39;état de probabilité des ordres de répétition initial représente le total des ordres de répétition / total des ordres. Chaque ordre est une occasion de faire un ordre de répétition ; le nombre d&#39;ordres de répétition est le sous-ensemble de ceux qui le font réellement.
@@ -132,4 +132,4 @@ Une fois que vous avez créé votre tableau de bord, la question la plus courant
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’image en haut de la page
 
-Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

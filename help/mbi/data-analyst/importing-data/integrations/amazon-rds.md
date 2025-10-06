@@ -55,6 +55,6 @@ Pour terminer la création de la connexion, vous avez besoin des informations su
 
 Si vous utilisez une connexion chiffrée, remplacez le bouton `Encrypted` de la page des informations d’identification de la base de données par `Yes`. Un formulaire supplémentaire s’affiche pour configurer le chiffrement :
 
-Formulaire d&#39;intégration ![SQL avec chiffrement activé affichant l&#39;option Oui ](../../../assets/sql-integration-encrypted-yes.png)
+Formulaire d&#39;intégration ![SQL avec chiffrement activé affichant l&#39;option Oui &#x200B;](../../../assets/sql-integration-encrypted-yes.png)
 
 

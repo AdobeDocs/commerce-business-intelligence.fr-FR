@@ -19,7 +19,7 @@ Cette rubrique décrit l&#39;objectif et les utilisations du type de colonne `Ca
 
 Par le passé, les colonnes considérées comme `advanced` ne pouvaient être créées que par un analyste de l’équipe du succès client, ici à [!DNL Adobe Commerce Intelligence]. Désormais, toute la puissance est entre les mains de l’utilisateur final et des colonnes avancées peuvent être créées sous la forme de colonnes `SQL Calculation` sur la nouvelle architecture [!DNL Commerce Intelligence].
 
-Le type de colonne `Calculation`, désormais disponible sous forme d’option dans le gestionnaire Data Warehouse, est une même opération de table qui vous permet de transformer les colonnes d’une table à l’aide de la logique PostgreSQL. Vous trouverez sur le site web PostgreSQL `Calculation`ici[ de la documentation sur les fonctions et opérateurs pouvant être utilisés dans le type de colonne ](https://www.postgresql.org/docs/9.6/functions.html).
+Le type de colonne `Calculation`, désormais disponible sous forme d’option dans le gestionnaire Data Warehouse, est une même opération de table qui vous permet de transformer les colonnes d’une table à l’aide de la logique PostgreSQL. Vous trouverez sur le site web PostgreSQL `Calculation`ici[&#x200B; de la documentation sur les fonctions et opérateurs pouvant être utilisés dans le type de colonne &#x200B;](https://www.postgresql.org/docs/9.6/functions.html).
 
 Les différentes colonnes pouvant être créées avec la colonne `Calculation` sont presque illimitées, mais la plupart des colonnes peuvent être créées à l’aide d’instructions IF-THEN et de l’arithmétique de base, qui est utilisée dans les exemples ci-dessous.
 

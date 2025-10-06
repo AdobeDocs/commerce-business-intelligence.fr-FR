@@ -73,7 +73,7 @@ Certaines valeurs de votre fichier, telles que les codes postaux et les identifi
 
 Utilisez `US ZIP codes` comme exemple de modification de la mise en forme des nombres. Dans [!DNL Excel], mettez en surbrillance la colonne contenant `ZIP codes` et [modifiez le format des nombres](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) en `ZIP code`. Vous pouvez également sélectionner un format de nombre personnalisé, puis saisir des `Type` dans la fenêtre `00000`. Gardez à l&#39;esprit que cette méthode peut présenter des problèmes si certains codes sont formatés en `00000` et d&#39;autres en `00000-0000`.
 
-Le `Type` peut être [ formaté différemment pour s’adapter à d’autres types de données](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us) tels que les identifiants. Si un `ID` comporte neuf chiffres, par exemple, le `Type` peut être `000000000` ou `000-000-000`. Cela changerait `123456` en `000-123-456`.
+Le `Type` peut être [&#x200B; formaté différemment pour s’adapter à d’autres types de données](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us) tels que les identifiants. Si un `ID` comporte neuf chiffres, par exemple, le `Type` peut être `000000000` ou `000-000-000`. Cela changerait `123456` en `000-123-456`.
 
 Pour obtenir des ressources [!DNL Google Docs] et [!DNL Apple Numbers], reportez-vous à la liste [connexes](#related) au bas de cette page.
 
@@ -154,4 +154,4 @@ En outre, le téléchargement de fichiers n’est pas le seul moyen d’importer
 ## Ressources Tierces
 
 * [Guide de formatage des données numériques](http://www.dummies.com/how-to/content/how-to-choose-a-number-format-in-your-numbers-spre.html)
-* [[!DNL Google Docs]  Guide de formatage des données ](https://support.google.com/docs/answer/56470?hl=en)
+* [[!DNL Google Docs]  Guide de formatage des données &#x200B;](https://support.google.com/docs/answer/56470?hl=en)

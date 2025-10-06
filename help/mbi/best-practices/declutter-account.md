@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Que vous travailliez avec [!DNL Commerce Intelligence] depuis six mois ou six ans, il est essentiel que vous teniez un compte bien ordonné pour que votre entreprise puisse tirer le meilleur parti de la plateforme. Au fil du temps, il est naturel qu’il y ait des utilisateurs, des tableaux de bord, des rapports, des mesures et des colonnes dont on n’a plus besoin. Peut-être avez-vous créé un rapport à usage unique et l’avez-vous oublié, ou un utilisateur qui a quitté votre entreprise n’a jamais vu son compte désactivé.
 
-Grâce à la [dénomination claire et normalisée de tous les éléments](../best-practices/naming-elements.md)) de votre compte [!DNL Commerce Intelligence], les étapes d’audit de compte ci-dessous vous aident à réduire l’encombrement et les analyses inutiles pour vos utilisateurs et utilisatrices. Un autre avantage est [ cycles de mise à jour potentiellement plus rapides ](../best-practices/reduce-update-cycle-time.md).
+Grâce à la [dénomination claire et normalisée de tous les éléments](../best-practices/naming-elements.md)) de votre compte [!DNL Commerce Intelligence], les étapes d’audit de compte ci-dessous vous aident à réduire l’encombrement et les analyses inutiles pour vos utilisateurs et utilisatrices. Un autre avantage est [&#x200B; cycles de mise à jour potentiellement plus rapides &#x200B;](../best-practices/reduce-update-cycle-time.md).
 
 ## Étape 1 : Identifier Les Utilisateurs Non Actifs
 
@@ -101,7 +101,7 @@ Si vous décidez que la mesure n’est plus nécessaire, revenez à la page **[!
 
 La dernière étape consiste à évaluer les colonnes en cours de synchronisation dans votre Data Warehouse. Non seulement la désynchronisation des colonnes peut désencombrer votre compte, mais elle peut également potentiellement réduire le temps de mise à jour.
 
-Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intelligence]’assistance [](../guide-overview.md#Submitting-a-Support-Ticket). L’équipe d’assistance peut créer un rapport qui comprend toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour un utilisateur et qui ne sont pas utilisées dans les résumés d’e-mails, à l’exclusion des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide de sélection des colonnes à désynchroniser via le gestionnaire Data Warehouse.
+Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intelligence]’assistance [&#128279;](../guide-overview.md#Submitting-a-Support-Ticket). L’équipe d’assistance peut créer un rapport qui comprend toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour un utilisateur et qui ne sont pas utilisées dans les résumés d’e-mails, à l’exclusion des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide de sélection des colonnes à désynchroniser via le gestionnaire Data Warehouse.
 
 >[!NOTE]
 >

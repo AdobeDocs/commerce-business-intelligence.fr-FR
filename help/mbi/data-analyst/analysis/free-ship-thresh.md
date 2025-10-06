@@ -66,9 +66,9 @@ Aucune nouvelle mesure!!!
 
 * `A` de mesure : `Average Order Value`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Nombre de commandes par regroupement de sous-total avec règle d&#39;expédition A**
@@ -80,53 +80,53 @@ Aucune nouvelle mesure!!!
 
 * `A` de mesure : `Number of orders`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Column`
 
 * **Pourcentage de commandes par sous-total avec la règle d&#39;expédition A**
    * [!UICONTROL Metric] : `Number of orders`
 
    * [!UICONTROL Metric] : `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Regrouper par]: `Independent`
    * [!UICONTROL Formula] : `(A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * `A` de mesure : `Number of orders by subtotal (hide)`
 * `B` de mesure : `Total number of orders (hide)`
 * [!UICONTROL Formula] : `% of orders`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **Pourcentage de commandes dont le sous-total dépasse la règle d&#39;expédition A**
    * [!UICONTROL Metric] : `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric] : `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Regrouper par]: `Independent`
 
    * [!UICONTROL Formula] : `1- (A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * `A` de mesure : `Number of orders by subtotal`
 * `B` de mesure : `Total number of orders (hide)`
 * [!UICONTROL Formula] : `% of orders`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 

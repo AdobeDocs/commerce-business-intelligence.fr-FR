@@ -237,7 +237,7 @@ Voici quelques exemples courants de rapports et de mesures que vous pouvez trouv
 >
 > **Masquer toutes les mesures**
 
-![ Utilisation des coupons ](../../assets/Customers_by_coupon_usage_formula.png)<!--{: width="929"}-->
+![&#x200B; Utilisation des coupons &#x200B;](../../assets/Customers_by_coupon_usage_formula.png)<!--{: width="929"}-->
 
 ### Chiffre d’affaires moyen sur les 30 premiers jours
 

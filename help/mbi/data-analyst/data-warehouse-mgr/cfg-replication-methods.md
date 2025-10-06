@@ -135,6 +135,6 @@ Pour terminer, vous avez rassemblé ce tableau qui compare les différentes mét
 ## Documentation connexe
 
 * [Comprendre les revérifications de données](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Modification de la base de données pour la prise en charge de ](../../best-practices/mod-db-inc-replication.md)
+* [Modification de la base de données pour la prise en charge de &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [Optimisation de votre base de données pour l’analyse](../../best-practices/opt-db-analysis.md)
 * [Réduction Du Temps De Mise À Jour](../../best-practices/reduce-update-cycle-time.md)

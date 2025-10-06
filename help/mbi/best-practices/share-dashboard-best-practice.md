@@ -27,7 +27,7 @@ Pour supprimer tous les tableaux de bord en double :
 
 1. Synchronisez avec votre équipe et identifiez la personne qui doit gérer le tableau de bord.
 1. [Annulez votre partage](../data-user/dashboards/leave-dashboard.md) à partir de tous les tableaux de bord similaires, à l’exception de celui partagé par l’utilisateur principal.
-1. Si vous disposez d’une copie du tableau de bord, [ la supprimer](../data-user/dashboards/deleting-dashboard.md).
+1. Si vous disposez d’une copie du tableau de bord, [&#x200B; la supprimer](../data-user/dashboards/deleting-dashboard.md).
 1. Demander aux autres de supprimer leur version du tableau de bord.
 
 ## Créer un ensemble de tableaux de bord de base

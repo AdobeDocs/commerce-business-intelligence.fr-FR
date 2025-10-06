@@ -27,4 +27,4 @@ Dans certains cas, vous pouvez décider de modifier le tableau de données qu’
 
 1. Si la nouvelle table ne contient pas de colonne correspondante, vous pouvez la **créer dans votre table de données** ou [contacter l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) s’il s’agit d’une colonne de calcul ou d’une dimension créée par [!DNL Commerce Intelligence]. Vous pouvez également **supprimer la dimension de la mesure**. Pour supprimer une dimension dont vous n’avez plus besoin, revenez simplement à l’éditeur de la mesure et sélectionnez les dimensions à supprimer sous `Dimensions`.
 
-   ![ Menu déroulant de sélection de colonne opérationnelle ](../../assets/change-metrics-3.png)
+   ![&#x200B; Menu déroulant de sélection de colonne opérationnelle &#x200B;](../../assets/change-metrics-3.png)

@@ -21,7 +21,7 @@ Cette rubrique aborde ce qu’est une cohorte qualitative, pourquoi vous pourrie
 
 L’analyse des `Cohort` en général peut être définie de manière large comme l’analyse de groupes d’utilisateurs qui partagent des caractéristiques similaires tout au long de leur cycle de vie. Il vous permet d’identifier les tendances comportementales parmi différents groupes d’utilisateurs.
 
-Voir [ Analyse des cohortes ](https://www.cohortanalysis.com/).
+Voir [&#x200B; Analyse des cohortes &#x200B;](https://www.cohortanalysis.com/).
 
 La plupart des analyses `cohort` dans [!DNL Commerce Intelligence] regroupent les utilisateurs par une date commune (par exemple, l’ensemble de tous les clients qui ont effectué leur premier achat au cours d’un mois donné). Un `qualitative cohort` est un peu différent : il s’agit d’un groupe d’utilisateurs et d’utilisatrices défini par une caractéristique qui n’est pas temporelle. Voici quelques exemples :
 

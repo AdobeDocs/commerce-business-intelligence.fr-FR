@@ -167,7 +167,7 @@ Après avoir défini la mesure et la manière dont vous souhaitez l’analyser, 
 
 Juste au-dessus de la visualisation du rapport se trouve une liste déroulante des paramètres de `perspective`.
 
-Voir [ Perspectives ](#perspectives).
+Voir [&#x200B; Perspectives &#x200B;](#perspectives).
 
 ![Menu Cohorte en perspective présentant différentes options d’affichage](../../assets/Cohort_Perspective_Menu.png)
 

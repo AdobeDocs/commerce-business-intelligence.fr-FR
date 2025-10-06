@@ -98,4 +98,4 @@ Dans la liste déroulante, sélectionnez `Chart` comme `Type`, puis un tableau d
 
 ## Conclusion
 
-Vous voulez aller un peu plus loin ? Consultez les [ bonnes pratiques relatives à l’optimisation des requêtes ](../best-practices/optimizing-your-sql-queries.md).
+Vous voulez aller un peu plus loin ? Consultez les [&#x200B; bonnes pratiques relatives à l’optimisation des requêtes &#x200B;](../best-practices/optimizing-your-sql-queries.md).

@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
-Maintenant que vous avez terminé [connexion de votre compte[!DNL Google ECommerce] ](../../data-analyst/importing-data/integrations/google-ecommerce.md), que pouvez-vous faire avec ces données dans [!DNL Commerce Intelligence] ? Cette rubrique vous guide tout au long de la création de dimensions qui lient vos données eCommerce à vos données de commande et de client.
+Maintenant que vous avez terminé [connexion de votre compte[!DNL Google ECommerce] &#x200B;](../../data-analyst/importing-data/integrations/google-ecommerce.md), que pouvez-vous faire avec ces données dans [!DNL Commerce Intelligence] ? Cette rubrique vous guide tout au long de la création de dimensions qui lient vos données eCommerce à vos données de commande et de client.
 
 Les dimensions couvertes vous permettent de créer des analyses qui [répondent à des questions essentielles sur vos canaux et campagnes marketing](../../data-analyst/analysis/most-value-source-channel.md). Quel pourcentage du chiffre d’affaires provient de chaque source ? Comment la valeur à vie [!DNL Facebook] clients acquis se compare-t-elle à celle des clients [!DNL Google] ?
 
@@ -101,7 +101,7 @@ Ensuite, essayez de créer **le support de [!DNL Google Analytics] de la premiè
 
 ### Bonus : table Commandes, round 2
 
-Vous pouvez arrêter ici si vous le souhaitez, mais cette section permet une analyse plus approfondie en apportant dans le tableau **les dimensions [!DNL Google Analytics] de la** première commande du client[ que vous avez créées dans la ](#customers)dernière section`orders`. La création des dimensions dans cette section vous permet d’analyser toutes les mesures créées sur votre tableau de `orders` (`Revenue`, `Number of orders`, `Distinct buyers`, etc.) à l’aide des attributs [!DNL Google Analytics] de la première commande d’un client.
+Vous pouvez arrêter ici si vous le souhaitez, mais cette section permet une analyse plus approfondie en apportant dans le tableau **les dimensions [!DNL Google Analytics] de la** première commande du client[&#x200B; que vous avez créées dans la &#x200B;](#customers)dernière section`orders`. La création des dimensions dans cette section vous permet d’analyser toutes les mesures créées sur votre tableau de `orders` (`Revenue`, `Number of orders`, `Distinct buyers`, etc.) à l’aide des attributs [!DNL Google Analytics] de la première commande d’un client.
 
 Cet exemple montre comment joindre la dimension `Customer's first order's [!DNL Google Analytics] source` au tableau `orders`.
 
