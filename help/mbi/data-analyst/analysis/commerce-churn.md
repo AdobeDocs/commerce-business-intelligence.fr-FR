@@ -4,9 +4,9 @@ description: Découvrez comment générer et analyser votre taux de résiliation
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '338'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Cette rubrique explique comment calculer un **taux de résiliation** pour vos clients **Commerce**. Contrairement aux SaaS ou aux sociétés d’abonnement traditionnelles, les clients commerciaux ne disposent généralement pas d’un **concret « événement de perte de clientèle »** pour vous montrer qu’ils ne doivent plus compter parmi vos clients actifs. Pour cette raison, les instructions ci-dessous vous permettent de définir un client comme « résilié » en fonction d’un temps déterminé écoulé depuis sa dernière commande.
 
-![](../../assets/Churn_rate_image.png)
+![Visualisation du taux de résiliation présentant la fidélisation client au fil du temps](../../assets/Churn_rate_image.png)
 
 De nombreux clients souhaitent obtenir de l’aide pour commencer à conceptualiser le **délai** qu’ils doivent utiliser en fonction de leurs données. Si vous souhaitez utiliser l’historique du comportement des clients pour définir ce **délai d’attrition**, vous pouvez vous familiariser avec la rubrique [définition de l’attrition](../analysis/define-cust-churn.md). Vous pouvez ensuite utiliser les résultats dans la formule pour le taux de résiliation dans les instructions ci-dessous.
 
@@ -76,19 +76,19 @@ Colonnes à créer
 * **Taux de résiliation**
    * [!UICONTROL Metric] : Nouveaux clients (par date de première commande)
    * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric] : `New customers (by last order date)`
    * [!UICONTROL Filter] :
-   * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]&#x200B;**`^`**
+   * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric] : `New customers (by last order date)`
    * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula] : `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *`A` de mesure :`New customers cumulative`*

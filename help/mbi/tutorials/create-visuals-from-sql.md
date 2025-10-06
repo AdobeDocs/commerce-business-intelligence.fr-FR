@@ -4,9 +4,9 @@ description: Apprenez à vous familiariser avec la terminologie utilisée dans S
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Prenons l’exemple de cette requête qui renvoie le nombre total mensuel d’ar
 
 Cette requête renvoie cette table des résultats :
 
-![](../assets/SQL_results_table.png)
+![Tableau présentant les résultats des requêtes SQL avec les articles vendus par produit, année et mois](../assets/SQL_results_table.png)
 
 ## Étape 2 : création de la visualisation
 
@@ -66,7 +66,7 @@ Avec ces résultats, *comment créer la visualisation ?* Pour commencer, cliquez
 
 Lorsqu’une requête est exécutée pour la première fois, le rapport peut sembler impénétrable, car toutes les colonnes de la requête sont tracées sous la forme d’une série :
 
-![](../assets/SQL_initial_report_results.png)
+![Rapport SQL initial avec toutes les colonnes tracées en série](../assets/SQL_initial_report_results.png)
 
 Pour cet exemple, vous souhaitez qu’il s’agisse d’un graphique en courbes qui affiche une tendance au fil du temps. Pour le créer, utilisez les paramètres suivants :
 
@@ -82,13 +82,13 @@ Pour cet exemple, vous souhaitez qu’il s’agisse d’un graphique en courbes 
 
 Vous trouverez ci-dessous un aperçu rapide de la manière dont vous avez créé cette visualisation, depuis l’exécution de la requête jusqu’à la configuration du rapport :
 
-![](../assets/SQL_report_settings.gif)
+![Démonstration animée de la configuration des paramètres de visualisation des rapports SQL](../assets/SQL_report_settings.gif)
 
 ## Étape 3 : sélection d’un `Chart Type`
 
 Cet exemple utilise le type de graphique `Line`. Pour utiliser un autre `chart type`, cliquez sur les icônes situées au-dessus de la section des options du graphique pour le modifier :
 
-![](../assets/Chart_types.png)
+![Icônes de type graphique disponibles, notamment les options de visualisation Ligne, Barre, Zone et Autres](../assets/Chart_types.png)
 
 ## Étape 4 : enregistrer la visualisation
 

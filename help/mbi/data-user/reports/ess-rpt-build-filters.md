@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les filtres.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Un ou plusieurs filtres peuvent être ajoutés pour limiter les données utilis�
 
    Dans ce rapport, chaque point de données affiche le nombre total de clients pour le mois.
 
-1. Dans le panneau de gauche, cliquez sur l’icône Filtres (![](../../assets/magento-bi-btn-filter.png)) .
+1. Dans le panneau de gauche, cliquez sur l’icône Filtres (![icône Filtre](../../assets/magento-bi-btn-filter.png)) .
 
    ![Ajouter filtre](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -35,7 +35,7 @@ Un ou plusieurs filtres peuvent être ajoutés pour limiter les données utilis�
 
    Les filtres sont numérotés par ordre alphabétique et le premier est `[A]`. Les deux premières parties du filtre sont des options de liste déroulante, et la troisième partie est une valeur.
 
-   ![](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![Interface de filtre affichant l’option Ajouter un filtre](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * Cliquez sur la première partie du filtre et choisissez la colonne que vous souhaitez utiliser comme objet de l&#39;expression.
 

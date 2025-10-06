@@ -4,9 +4,9 @@ description: Découvrez comment créer des jeux de filtres enregistrés et les a
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Si plusieurs mesures dans [!DNL Commerce Intelligence] doivent être filtrées de la même manière (en filtrant les ordres de test, par exemple), vous pouvez créer des ensembles de filtres enregistrés et les appliquer aux mesures. Cela vous permet de gagner du temps, car vous n’avez pas à ajouter de filtres individuels lors de la création ou de la modification d’une mesure.
 
-Voir la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=fr) pour plus d’informations.
+Voir la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Voir la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-k
 
 1. Cliquez sur **[!DNL Manage Data** > **Filter Sets]** dans la barre latérale.
 
-   ![](../../assets/create-filter-sets.png)
+   ![Interface de création de jeux de filtres avec l’option Ajouter un jeu de filtres](../../assets/create-filter-sets.png)
 
 1. Cliquez sur **[!UICONTROL Add Filter Set]** en haut de la page.
 

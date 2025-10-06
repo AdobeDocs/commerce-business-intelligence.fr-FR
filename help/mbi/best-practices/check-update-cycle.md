@@ -4,9 +4,9 @@ description: Découvrez comment vérifier l’état du cycle de mise à jour.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Lorsque vous vous connectez à votre tableau de bord [!DNL Adobe Commerce Intell
 
 ## Pourquoi dois-je vérifier le statut du cycle de mise à jour ?
 
-La vérification du cycle de mise à jour de l’état est utile lorsque vous auditez les données de votre compte [!DNL Commerce Intelligence]. Si vous constatez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez dans votre plateforme d’e-commerce ou dans votre [[!DNL Google] chiffre d’affaires d’e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=fr) vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
+La vérification du cycle de mise à jour de l’état est utile lorsque vous auditez les données de votre compte [!DNL Commerce Intelligence]. Si vous constatez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez dans votre plateforme d’e-commerce ou dans votre [[!DNL Google] chiffre d’affaires d’e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
 
 ## [!UICONTROL Read-Only] et [!UICONTROL Standard] utilisateurs
 
 `Read-only` utilisateurs peuvent se connecter à leur tableau de bord et voir la date de la dernière mise à jour des données en pointant sur l’icône en haut à droite de la page. Indique à quel moment le dernier point de données a été extrait.
 
-![](../../mbi/assets/last-success-data.png)
+![Date et heure de la dernière mise à jour de données réussie affichée dans l’interface](../../mbi/assets/last-success-data.png)
 
 ## [!UICONTROL Admin] Users
 
@@ -31,7 +31,7 @@ La vérification du cycle de mise à jour de l’état est utile lorsque vous au
 
 Pour plus d’informations, les utilisateurs administrateurs peuvent cliquer sur **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**.
 
-![](../../mbi/assets/detail-manage-data-integrations.png)
+![Page Gérer les intégrations de données affichant les détails de connexion et le statut de mise à jour](../../mbi/assets/detail-manage-data-integrations.png)
 
 Cette page vous indique le statut actuel de la mise à jour et l&#39;heure de la dernière mise à jour terminée.
 

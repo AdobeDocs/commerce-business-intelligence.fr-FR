@@ -4,9 +4,9 @@ description: Découvrez les tenants et aboutissants de l’utilisation de SQL Re
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1397'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md) pour créer et modifier des graphiques SQL. `Standard` utilisateurs peuvent réorganiser ces graphiques sur les tableaux de bord et `Read-only` les utilisateurs bénéficient de la même expérience que les graphiques traditionnels. En outre, les utilisateurs `Read-only` n’ont pas accès au texte de la requête.
 
-Voir la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=fr) pour en savoir plus.
+Voir la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) pour en savoir plus.
 
 [!DNL SQL], ou langage de requête structuré, est un langage de programmation utilisé pour communiquer avec des bases de données. Dans [!DNL Commerce Intelligence], [!DNL SQL] est utilisé pour interroger ou récupérer des données à partir de votre Data Warehouse. Examinez les rapports de votre tableau de bord : en coulisses, chacun est alimenté par une requête [!DNL SQL].
 
 Vous pouvez utiliser l’[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) pour interroger directement votre Data Warehouse, afficher les résultats et les transformer en graphique. Vous pouvez commencer à créer un rapport avec le [!DNL SQL Report Builder] en cliquant sur **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-Voir la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=fr) pour en savoir plus.
+Voir la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) pour en savoir plus.
 
 Le [!DNL SQL Report Builder] vous permet d’interroger directement votre Data Warehouse, d’afficher les résultats et de les transformer rapidement en graphique. Le meilleur aspect de l’utilisation de [!DNL SQL] pour créer des rapports est que vous n’avez pas besoin d’attendre les cycles de mise à jour pour effectuer une itération sur les colonnes que vous créez. Si les résultats ne s’affichent pas correctement, vous pouvez rapidement modifier et réexécuter la requête jusqu’à ce que les éléments correspondent à vos attentes.
 
@@ -47,7 +47,7 @@ Pour commencer à créer un rapport [!DNL SQL], cliquez sur **[!UICONTROL Report
 
 ## Prise en main
 
-Pour modifier un rapport, cliquez sur l’icône d’engrenage (![](../../assets/gear-icon.png)) dans le coin supérieur droit d’un graphique basé sur des [!DNL SQL], puis cliquez sur **[!UICONTROL Edit]**.
+Pour modifier un rapport, cliquez sur l’icône d’engrenage (![icône d’engrenage](../../assets/gear-icon.png)) dans le coin supérieur droit d’un graphique basé sur des [!DNL SQL], puis cliquez sur **[!UICONTROL Edit]**.
 
 ## Écrire une requête {#writing}
 
@@ -97,7 +97,7 @@ Pour créer une visualisation avec les résultats de votre requête, cliquez sur
 
 Voici un aperçu rapide de ce à quoi ressemble le processus de visualisation :
 
-![](../../assets/SQL_RB_viz_overview.gif)
+![Démonstration animée de la visualisation SQL Report Builder](../../assets/SQL_RB_viz_overview.gif)
 
 Pour une présentation détaillée de la création d’une visualisation, reportez-vous au tutoriel [Création de visualisations à partir de requêtes SQL](../../tutorials/create-visuals-from-sql.md){: target="_blank"}.
 
@@ -107,7 +107,7 @@ Avant de pouvoir enregistrer votre travail, vous devez donner un nom au rapport.
 
 Cliquez sur **[!UICONTROL Save]** dans le coin supérieur droit de l’éditeur de [!DNL SQL] et sélectionnez le `Type` de rapport (`Chart` ou `Table`). Pour conclure, sélectionnez le tableau de bord dans lequel enregistrer le rapport et cliquez sur **[!UICONTROL Save to Dashboard]**.
 
-![](../../assets/SQL_Save_Report.gif)
+![Démonstration animée de l&#39;enregistrement d&#39;un rapport SQL dans un tableau de bord](../../assets/SQL_Save_Report.gif)
 
 ### Analyse des données
 
@@ -133,7 +133,7 @@ Les colonnes calculées créées à l’aide de [!DNL SQL] ne dépendent pas des
 
 La plupart du temps, les différences de résultats peuvent être attribuées aux cycles de mise à jour. Si [!DNL Commerce Intelligence] est en train de répliquer les données de votre base de données vers votre Data Warehouse, il se peut que vous obteniez des résultats différents même si vous utilisez la même requête.
 
-Les problèmes de connexion peuvent également entraîner des incohérences. Accédez à la page `Connections` en cliquant sur **[!DNL Manage Data** > **Connections]** pour l’extraire. L’intégration de base de données en question génère-t-elle une erreur ? Si tel est le cas, vous devrez peut-être [réauthentifier l’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr) pour que les choses fonctionnent à nouveau.
+Les problèmes de connexion peuvent également entraîner des incohérences. Accédez à la page `Connections` en cliquant sur **[!DNL Manage Data** > **Connections]** pour l’extraire. L’intégration de base de données en question génère-t-elle une erreur ? Si tel est le cas, vous devrez peut-être [réauthentifier l’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) pour que les choses fonctionnent à nouveau.
 
 Si toutes vos intégrations sont connectées avec succès et que vous n’êtes pas au milieu d’un cycle de mise à jour, une autre erreur peut se produire.
 

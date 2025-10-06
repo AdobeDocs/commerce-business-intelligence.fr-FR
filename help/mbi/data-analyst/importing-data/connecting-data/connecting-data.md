@@ -4,9 +4,9 @@ description: Découvrez comment parcourir les tables disponibles pour synchronis
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Selon la méthode de connexion et le type de base de données, une expertise tec
 
 ## Intégrations `SaaS`
 
-![](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
+![Icônes d’intégration SaaS présentant diverses plateformes prises en charge](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
 
 Les intégrations `SaaS` sont des services tels que [[!DNL Google Adwords]](../integrations/google-adwords.md), [[!DNL Salesforce]](../integrations/salesforce.md) et [[!DNL Zendesk]](../integrations/zendesk.md). Comme les données tierces résident sur le serveur du fournisseur, vous ne pouvez pas y accéder directement comme vous le pouvez avec les données de votre base de données.
 
@@ -70,6 +70,6 @@ Pour ajouter une intégration, cliquez sur **[!UICONTROL Manage Data** > **Conne
 * [Consolidation des tables](../../../best-practices/consolidating-your-tables.md)
 * [Limitation de l&#39;accès à votre base de données](../../../administrator/account-management/restrict-db-access.md)
 
-**Vous ne voyez pas d’intégration souhaitée ?** Certaines intégrations doivent être activées pour être visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais qui n’est pas répertorié, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+**Vous ne voyez pas d’intégration souhaitée ?** Certaines intégrations doivent être activées pour être visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais qui n’est pas répertorié, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Si le statut d’erreur d’une intégration s’affiche** consultez la [section de dépannage](https://support.magento.com/hc/en-us/sections/360003078151) pour obtenir de l’aide.

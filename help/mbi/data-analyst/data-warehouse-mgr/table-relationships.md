@@ -4,9 +4,9 @@ description: Découvrez comment comprendre combien d’occurrences possibles dan
 exl-id: e7256f46-879a-41da-9919-b700f2691013
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ Dans une relation `one-to-one`, un enregistrement de la table `B` n&#39;appartie
 
 Par exemple, dans la relation entre les personnes et les numéros de permis de conduire, une personne ne peut avoir qu&#39;un seul numéro de permis de conduire, et un numéro de permis de conduire appartient à une seule personne.
 
-![](../../assets/one-to-one.png)
+![Diagramme montrant la relation un-à-un entre deux entités](../../assets/one-to-one.png)
 
 ### `One-to-Many` {#onetomany}
 
 Dans une relation `one-to-many`, un enregistrement dans la table `A` peut potentiellement appartenir à plusieurs enregistrements dans la table `B`. Pensez à la relation entre `orders` et `items` : une commande peut contenir de nombreux éléments, mais un élément appartient à une seule commande. Dans ce cas, la table `orders` est le côté un et la table `items` est le côté plusieurs.
 
-![](../../assets/one-to-many_001.png)
+![Diagramme montrant la relation un-à-plusieurs entre les commandes et les articles](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
@@ -45,7 +45,7 @@ Dans une relation `many-to-many`, un enregistrement dans la table `B` peut poten
 
 Pensez à la relation entre **produits** et **catégories** : un produit peut appartenir à de nombreuses catégories, et une catégorie peut contenir de nombreux produits.
 
-![](../../assets/many-to-many.png)
+![Diagramme montrant la relation multiple-à-multiple entre les produits et les catégories](../../assets/many-to-many.png)
 
 ## Évaluation de vos tableaux {#eval}
 
@@ -75,7 +75,7 @@ Une personne donnée ne peut avoir qu&#39;un seul numéro de permis de conduire.
 
 Il s’agit d’une relation `one-to-one` où chaque table est un côté.
 
-![](../../assets/one-to-one3.png)
+![Diagramme conceptuel de la relation un-à-un entre la personne et le permis de conduire](../../assets/one-to-one3.png)
 
 ### `One-to-Many`
 
@@ -83,7 +83,7 @@ Une commande donnée peut contenir de nombreux éléments. Un article donné app
 
 Il s&#39;agit d&#39;une relation `one-to-many` où la table des commandes est le côté un et la table des éléments est le côté plusieurs.
 
-![](../../assets/one-to-many3.png)
+![Diagramme conceptuel de la relation un-à-plusieurs entre les commandes et les articles](../../assets/one-to-many3.png)
 
 ### `Many-to-Many`
 
@@ -91,7 +91,7 @@ Un produit donné peut éventuellement appartenir à de nombreuses catégories. 
 
 Il s’agit d’une relation `many-to-many` où chaque table a plusieurs côtés.
 
-![](../../assets/many-to-many3.png)
+![Schéma conceptuel de la relation multiple-à-multiple entre les produits et les catégories](../../assets/many-to-many3.png)
 
 ### Utilisation du schéma de la table {#schema}
 
@@ -105,7 +105,7 @@ Si les tables sont liées à l&#39;`primary key` des deux tables, la même entit
 
 Par exemple, une table `users` peut capturer la plupart des attributs utilisateur (tels que le nom), tandis qu’une table `user_source` supplémentaire capture les sources d’enregistrement des utilisateurs. Dans chaque tableau, une ligne représente un utilisateur.
 
-![](../../assets/one-to-one1.png)
+![Diagramme de schéma présentant une relation un-à-un à l’aide de clés primaires](../../assets/one-to-one1.png)
 
 ### `One-to-many`
 
@@ -115,17 +115,17 @@ Par exemple, une table `users` peut capturer la plupart des attributs utilisateu
 
 Lorsque des tables sont liées à l’aide d’un `Foreign key` pointant vers une `primary key`, cette configuration décrit une relation `one-to-many`. D’un côté, le tableau contenant les `primary key` ; de l’autre, le tableau contenant les `foreign key`.
 
-![](../../assets/one-to-many1.png)
+![Diagramme de schéma présentant une relation un-à-plusieurs à l’aide d’une clé étrangère](../../assets/one-to-many1.png)
 
 ### `Many-to-many`
 
 Si l’une des conditions suivantes est vraie, la relation est `many-to-many` :
 
 * `Non-primary key` colonnes sont utilisées pour lier deux tableaux
-  ![](../../assets/many-to-many1.png)
+  ![Diagramme de schéma présentant une relation multiple-à-multiple à l’aide de clés non primaires](../../assets/many-to-many1.png)
 * Partie d&#39;un `primary key` composite permettant de lier deux tables
 
-![](../../assets/many-to-mnay2.png)
+![Diagramme de schéma présentant une relation multiple-à-multiple à l’aide d’une clé primaire composite](../../assets/many-to-mnay2.png)
 
 ## Étapes suivantes
 

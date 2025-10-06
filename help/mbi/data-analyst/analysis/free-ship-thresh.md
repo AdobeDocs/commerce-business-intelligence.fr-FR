@@ -4,9 +4,9 @@ description: Découvrez comment configurer un tableau de bord qui suit les perfo
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
 role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
-source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cette rubrique explique comment configurer un tableau de bord qui suit les perfo
 
 Avant de commencer, vous devez identifier deux périodes distinctes pendant lesquelles vous avez défini des valeurs différentes pour le seuil d’expédition gratuite de votre magasin.
 
-![](../../assets/free_shipping_threshold.png)
+![Graphique présentant l’analyse du seuil d’expédition gratuite et la répartition de la valeur de commande](../../assets/free_shipping_threshold.png)
 
 Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -66,9 +66,9 @@ Aucune nouvelle mesure!!!
 
 * `A` de mesure : `Average Order Value`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Nombre de commandes par regroupement de sous-total avec règle d&#39;expédition A**
@@ -80,53 +80,53 @@ Aucune nouvelle mesure!!!
 
 * `A` de mesure : `Number of orders`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Column`
 
 * **Pourcentage de commandes par sous-total avec la règle d&#39;expédition A**
    * [!UICONTROL Metric] : `Number of orders`
 
    * [!UICONTROL Metric] : `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Regrouper par]: `Independent`
    * [!UICONTROL Formula] : `(A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * `A` de mesure : `Number of orders by subtotal (hide)`
 * `B` de mesure : `Total number of orders (hide)`
 * [!UICONTROL Formula] : `% of orders`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **Pourcentage de commandes dont le sous-total dépasse la règle d&#39;expédition A**
    * [!UICONTROL Metric] : `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric] : `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Regrouper par]: `Independent`
 
    * [!UICONTROL Formula] : `1- (A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * `A` de mesure : `Number of orders by subtotal`
 * `B` de mesure : `Total number of orders (hide)`
 * [!UICONTROL Formula] : `% of orders`
 * [!UICONTROL Time period] : `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 

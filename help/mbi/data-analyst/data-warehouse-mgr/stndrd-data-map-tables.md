@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les tables de mappage.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Imaginez que vous êtes en train de `Report Builder` un rapport `Revenue by State`. Tout se passe bien jusqu’à ce que vous essayiez d’ajouter un regroupement `billing state` à votre rapport et que vous voyiez ceci :
 
-![](../../assets/Messy_State_Segments.png)
+![Graphique présentant des segments d’état désordonnés avec des noms incohérents](../../assets/Messy_State_Segments.png)
 
 ## Comment cela a-t-il pu arriver ?
 
@@ -45,7 +45,7 @@ Dans la première colonne, saisissez les valeurs stockées dans votre base de do
 
 Dans la deuxième colonne, saisissez ce que ces valeurs **doivent être**. Pour poursuivre avec l’exemple d’état de facturation, si vous souhaitez que `pa`, `PA`, `Pennsylvania` et `pennsylvania` soient simplement `PA`, vous devez saisir `PA` dans cette colonne pour chaque valeur d’entrée.
 
-![](../../assets/Mapping_table_examples.jpg)
+![Exemple de tableau de correspondance présentant les valeurs d’origine et les valeurs normalisées](../../assets/Mapping_table_examples.jpg)
 
 ## Que dois-je faire pour l[!DNL Commerce Intelligence]utiliser ? {#use}
 
@@ -66,7 +66,7 @@ Pour créer la colonne `joined`, accédez à la table vers laquelle le champ ser
    * Sur le côté `One`, sélectionnez le tableau `mapping` et la colonne `Primary key` . Dans ce cas, vous devez sélectionner la colonne `state_input` dans le tableau `mapping_state` .
    * Voici à quoi ressemble le chemin :
 
-     ![](../../assets/State_Mapping_Path.png)
+     ![Data Warehouse Manager affichant le chemin de calcul du mappage d’état](../../assets/State_Mapping_Path.png)
 
 1. Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save]** pour créer le chemin d’accès.
 1. Le chemin d’accès peut ne pas être renseigné immédiatement après l’enregistrement. Si cela se produit, cliquez sur la zone de `Path` et sélectionnez le chemin d’accès que vous avez créé.
@@ -76,7 +76,7 @@ Pour créer la colonne `joined`, accédez à la table vers laquelle le champ ser
 
 Une fois le cycle de mise à jour terminé, vous pourrez utiliser votre nouvelle colonne jointe pour segmenter correctement vos données au lieu de la colonne désordonnée de votre base de données. Examinez vos options de regroupement maintenant - plus de stress :
 
-![](../../assets/Clean_State_Segments.png)
+![Graphique montrant les segments d’état nettoyés après normalisation](../../assets/Clean_State_Segments.png)
 
 Les tables de mappage sont pratiques si vous souhaitez nettoyer des données potentiellement désordonnées dans votre Data Warehouse. Cependant, les tables de mappage peuvent également être utilisées pour d’autres cas d’utilisation intéressants, comme la réplication de [votre [!DNL Google Analytics channels] dans [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 

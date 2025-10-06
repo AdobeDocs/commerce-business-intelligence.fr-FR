@@ -4,9 +4,9 @@ description: Découvrez comment utiliser Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ L&#39;exemple suivant montre comment créer un rapport simple, regrouper les don
 
      ![Regrouper par données de tableau](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Cliquez sur le contrôle Transposer (![](../../assets/magento-bi-btn-transpose.png)) dans le coin supérieur droit du tableau pour modifier l’orientation des données.
+   * Cliquez sur la commande Transposer (![icône Transposer](../../assets/magento-bi-btn-transpose.png)) dans le coin supérieur droit du tableau pour modifier l’orientation des données.
 
      L’axe des données est inversé et le tableau comporte désormais une colonne pour chaque code de coupon et une ligne pour chaque mois. Il se peut que vous trouviez cette orientation plus facile à lire.
 
@@ -95,14 +95,14 @@ L&#39;exemple suivant montre comment créer un rapport simple, regrouper les don
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | Graphique linéaire |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | Barre horizontale |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barres empilées horizontales |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | Barre verticale |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barres empilées verticales |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | Secteurs |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | Zone |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | Entonnoir |
+     | ![Icône de graphique linéaire](../../assets/magento-bi-btn-chart-line.png) | Graphique linéaire |
+     | ![Icône de barre horizontale](../../assets/magento-bi-btn-chart-horz-bar.png) | Barre horizontale |
+     | ![ Icône de barre empilée horizontale ](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barres empilées horizontales |
+     | ![Icône de barre verticale](../../assets/magento-bi-btn-chart-vert-bar.png) | Barre verticale |
+     | ![Icône de barre empilée verticale](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barres empilées verticales |
+     | ![Icône de graphique en secteurs](../../assets/magento-bi-btn-chart-pie.png) | Secteurs |
+     | ![Icône de graphique en aires](../../assets/magento-bi-btn-chart-area.png) | Zone |
+     | Icône de graphique Funnel ![](../../assets/magento-bi-btn-chart-funnel.png) | Entonnoir |
 
      {style="table-layout:auto"}
 

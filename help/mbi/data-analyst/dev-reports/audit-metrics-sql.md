@@ -4,9 +4,9 @@ description: Découvrez comment auditer les données et les mesures à l’aide 
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ Pour commencer, ouvrez le [!DNL SQL Report Builder] en accédant à **[!UICONTRO
 
 Pour avoir une vue plus claire de la requête, vous pouvez reformater son affichage dans le champ de requête. Une fois prêt, sélectionnez `Run Query`. Les résultats sont renseignés sous la forme d’un tableau dans le panneau de rapport sous la requête.
 
-![](../../assets/run-query-results.gif)
+![Démonstration animée de l’exécution d’une requête SQL et de l’affichage des résultats](../../assets/run-query-results.gif)
 
 ## Restreindre la requête
 
 Si vous tentez d’identifier une incohérence ou un ensemble de données spécifique, limitez la requête à un échantillon spécifique pour vérifier les performances de votre base de données locale. Vous pouvez le faire en modifiant la requête pour qu’elle corresponde aux restrictions souhaitées. Dans l’exemple suivant, vous limitez la requête pour inclure uniquement le chiffre d’affaires du 1er janvier 2013 ou ultérieur. Après avoir mis à jour la requête, sélectionnez à nouveau **[!UICONTROL Run Query]** pour mettre à jour les résultats.
 
-![](../../assets/restricting-query.gif)
+![Démonstration animée de la restriction de la requête avec des filtres](../../assets/restricting-query.gif)
 
 ## Enregistrement et exportation
 
@@ -40,7 +40,7 @@ Lorsque le rapport répond à vos besoins, attribuez-lui un nom distinct, clique
 
 Une fois le rapport enregistré, accédez à ce tableau de bord en sélectionnant `Go to Dashboard`. De là, vous pouvez exporter les données en recherchant le rapport et en sélectionnant **[!UICONTROL Options gear > Full `.csv`Exporter]** ou **[!UICONTROL Full Excel Export]**.
 
-![](../../assets/export-dboard-data.gif)
+![Démonstration animée de l’exportation des données du tableau de bord](../../assets/export-dboard-data.gif)
 
 ## Requêtes personnalisées
 
@@ -48,4 +48,4 @@ Vous pouvez également écrire des requêtes personnalisées et exporter les ré
 
 >[!NOTE]
 >
->Si vous constatez une incohérence après avoir vérifié vos données, reportez-vous à la rubrique de support [Contacter le support : incohérences des données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=fr) pour plus d’informations sur les actions à entreprendre ensuite.
+>Si vous constatez une incohérence après avoir vérifié vos données, reportez-vous à la rubrique de support [Contacter le support : incohérences des données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) pour plus d’informations sur les actions à entreprendre ensuite.

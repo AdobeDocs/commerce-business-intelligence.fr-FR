@@ -4,9 +4,9 @@ description: Découvrez vos canaux de recommandation les plus précieux.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/google-ecommerce-logo.png)
+Logo ![Google eCommerce](../../../assets/google-ecommerce-logo.png)
 
 Vous avez un flux constant de trafic et de commandes, ce qui signifie que vous atteignez et acquérez efficacement des clients. Mais quels sont vos canaux de référence les plus précieux ? Quelle est la valeur moyenne sur la durée de vie des clients acquis d&#39;une source par rapport à une autre ? En connectant vos données de source de référence de commande de [!DNL Google ECommerce] à [!DNL Commerce Intelligence], vous pouvez créer des analyses qui vous aident à identifier vos [canaux marketing les plus précieux](../../../data-analyst/analysis/most-value-source-channel.md).
 
@@ -35,7 +35,7 @@ Commencez par saisir vos informations d’identification [!DNL Google ECommerce]
 
    Si vous disposez de plusieurs profils et que vous avez besoin d’aide pour savoir lequel, reportez-vous à la section **Connexion de plusieurs profils de [!DNL Google Analytics] ci-dessous.
 
-   ![](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
+   ![Formulaire présentant les options de connexion de plusieurs profils Google Analytics](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
 1. Les modifications sont enregistrées automatiquement. Cliquez donc sur **[!UICONTROL Back to Connections]** lorsque vous avez terminé.
 
@@ -60,7 +60,7 @@ Pour identifier l’identifiant de profil [!DNL Google Analytics] d’un site we
 ## Connexe :
 
 * [Données  [!DNL Google ECommerce] ](../integrations/google-ecommerce-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Configuration [!DNL Google ECommerce] suivi](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../../analysis/most-value-source-channel.md)
 * [Augmenter le retour sur investissement de vos campagnes publicitaires](../../analysis/roi-ad-camp.md)

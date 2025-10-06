@@ -4,9 +4,9 @@ description: Découvrez comment utiliser et partager vos tableaux de bord.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Parfois, vous pouvez trouver plusieurs tableaux de bord portant le même nom, g�
 
 Pour afficher le propriétaire d’un tableau de bord, cliquez sur la liste déroulante Tableau de bord dans le coin supérieur gauche. Tous les tableaux de bord qui n’ont pas de nom sous eux vous appartiennent.
 
-![](../../mbi/assets/Dash_ownership.png)
+![Indicateur de propriété du tableau de bord affichant le créateur et les autorisations](../../mbi/assets/Dash_ownership.png)
 
 Pour supprimer tous les tableaux de bord en double :
 

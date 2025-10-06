@@ -4,9 +4,9 @@ description: Découvrez comment créer des colonnes avancées sous la forme de c
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Les différentes colonnes pouvant être créées avec la colonne `Calculation` s
 
 La plupart des comptes ont une colonne appelée `Is customer's last order?` dans leur tableau `orders` pour effectuer des analyses sur les taux d’achat répétés et les clients résiliés. Si votre compte utilise la nouvelle architecture, cette colonne est créée à l’aide d’une colonne `Calculation` et est visible dans la capture d’écran ci-dessous :
 
-![](../../assets/Is_customer_s_last_order.png)
+![définition de colonne calculée SQL pour identifier la dernière commande du client](../../assets/Is_customer_s_last_order.png)
 
 La colonne `Is customer's last order?` utilise les entrées `Customer's lifetime number of orders` et `Customer's order number` alias `A` et `B`, respectivement.
 
@@ -47,7 +47,7 @@ De nombreux clients aiment analyser le chiffre d’affaires au niveau de l’art
 
 Pour activer les analyses de chiffre d’affaires de produit, la plupart des comptes ont une colonne appelée `Order item total value (quantity * price)` dans leur table de `Orders Items`. Si votre compte utilise la nouvelle architecture, cette colonne est également créée à l’aide d’une colonne `Calculation` et est visible dans la capture d’écran ci-dessous :
 
-![](../../assets/Order_item_total_value.png)
+![Définition de colonne calculée SQL pour la valeur totale de l&#39;article de commande](../../assets/Order_item_total_value.png)
 
 Dans le schéma Commerce, la colonne `Order item total value (quantity * price)` utilise les entrées `qty ordered` et `base price` alias `A` et `B`, respectivement.
 
@@ -57,7 +57,7 @@ Les valeurs renvoyées par cette nouvelle colonne sont en dollars et en cents. L
 
 Vous pouvez ajouter une nouvelle colonne `Calculation` à un tableau en accédant à **[!DNL Manage Data > Data Warehouse]** comme illustré ci-dessous :
 
-![](../../assets/blobid2.png)
+![Vue Tableau affichant les résultats des colonnes calculées](../../assets/blobid2.png)
 
 À partir de là, vous pouvez créer une colonne `Calculation` en suivant les étapes ci-dessous :
 

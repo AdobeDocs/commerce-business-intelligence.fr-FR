@@ -4,9 +4,9 @@ description: Découvrez comment mesurer le ROI de la campagne en associant votre
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Google_Adwords_logo.png)
+Logo ![Google AdWords](../../../assets/Google_Adwords_logo.png)
 
 Vous avez fait vos recherches, vous avez créé vos publicités, vous avez lancé votre campagne [!DNL Google]. Il est maintenant temps d&#39;analyser vos données sur les dépenses publicitaires et de voir si votre argent est dépensé efficacement. À l’aide de vos données de dépenses publicitaires, vous pouvez [mesurer le retour sur investissement de la campagne en associant votre coût publicitaire et la valeur client à vie (CLV)](../../analysis/roi-ad-camp.md) des utilisateurs acquis à partir de vos campagnes.
 
@@ -29,7 +29,7 @@ Commencez par saisir vos informations d’identification [!DNL Google Adwords] d
 1. Saisissez vos informations d’identification [!DNL Google Analytics]. Une fois le processus d’autorisation terminé, vous êtes redirigé vers [!DNL Commerce Intelligence].
 1. Une liste des identifiants de profil s’affiche. Vérifiez les profils auxquels vous souhaitez vous connecter [!DNL Commerce Intelligence].
 
-   ![](../../../assets/cnnct-profile.png)
+   Boîte de dialogue de connexion à ![Google AdWords affichant la sélection du profil](../../../assets/cnnct-profile.png)
 
 1. Les modifications sont enregistrées automatiquement. Cliquez donc sur **[!UICONTROL Back to Connections]** lorsque vous avez terminé.
 
@@ -55,7 +55,7 @@ Plusieurs sites web peuvent être connectés à un seul compte [!DNL Google Anal
 
 ## Connexe
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Suivre la source de référence de commande via  [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Suivre la source de référence des utilisateurs dans votre base de données](../../analysis/google-track-user-acq.md)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../../analysis/most-value-source-channel.md)

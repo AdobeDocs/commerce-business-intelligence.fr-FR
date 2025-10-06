@@ -4,9 +4,9 @@ description: Découvrez comment choisir votre Report Builder.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Choisir un Report Builder
 
 >[!NOTE]
->&#x200B;>Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md).
+>>Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
 Maintenant que vous disposez d’un plus grand nombre d’options pour créer des analyses, il peut parfois être difficile de déterminer exactement la version du Report Builder qui correspond à vos besoins. Cette rubrique vous guide tout au long du choix de la meilleure manière de créer votre analyse.
 
@@ -53,7 +53,7 @@ Parfois, la structure de vos données peut faire du [!DNL SQL Report Builder] un
 
 Supposons qu’un seul produit soit considéré comme faisant partie de plusieurs catégories de produits et que vous souhaitiez afficher le chiffre d’affaires associé à chaque catégorie de chaque produit. Tenter de créer cette relation à l’aide de la gestion des ressources numériques peut s’avérer fastidieux et difficile, mais l’écriture d’une requête [!DNL SQL] peut s’avérer un peu plus simple :
 
-![](../../assets/When_should_I_use_the_RB_2.png)
+![Requête SQL affichant le chiffre d’affaires par catégorie de produit avec des relations de type « un à plusieurs »](../../assets/When_should_I_use_the_RB_2.png)
 
 ## Quand dois-je utiliser le Report Builder traditionnel ? {#whentraditionalrb}
 

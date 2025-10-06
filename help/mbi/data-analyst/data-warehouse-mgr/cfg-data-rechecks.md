@@ -4,9 +4,9 @@ description: Découvrez comment configurer des colonnes de données avec des val
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Les fréquences de revérification peuvent être gérées dans le Data Warehouse
 
 Pour modifier la fréquence de revérification, cochez la case en regard des colonnes à modifier. Cliquez ensuite sur la liste déroulante **[!UICONTROL Set Recheck Frequency]** et définissez la fréquence souhaitée.
 
-![](../../assets/dwm-recheck.png)
+![Data Warehouse Manager affiche les options de configuration de revérification](../../assets/dwm-recheck.png)
 
 Il se peut que vous voyiez parfois des `Paused` dans la colonne `Changes?` . Cette valeur s&#39;affiche lorsque la méthode de réplication [ de la table](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) est définie sur `Paused`.
 

@@ -4,9 +4,9 @@ description: Découvrez comment nettoyer votre  [!DNL Commerce Intelligence] .
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Une fois que vous avez accédé à vos tableaux de bord et rapports, vous pouvez
 
 Vous pouvez également sélectionner **[!UICONTROL Dashboard Options]**, puis **[!UICONTROL Delete]** dans le tableau de bord lui-même.
 
-![](../../mbi/assets/Delete_from_dashboard.png)
+![Option de suppression dans le menu d’engrenage du tableau de bord](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Vous pouvez également sélectionner **[!UICONTROL Dashboard Options]**, puis **
 
 Voici un aperçu du processus de suppression de rapports inutilisé :
 
-![](../../mbi/assets/unused_reports.png)
+![Liste des rapports inutilisés affichant des rapports qui ne figurent sur aucun tableau de bord](../../mbi/assets/unused_reports.png)
 
 ## Étape 3 : Supprimer les mesures inutilisées
 
@@ -93,7 +93,7 @@ Après avoir nettoyé votre liste d’utilisateurs, vos tableaux de bord et vos 
 1. Au bas de la page, vous voyez une section appelée **[!UICONTROL Dependent Charts]**. Cliquez sur le lien pour générer une liste de rapports dépendants pour cette mesure.
 1. Une fois la vérification terminée, [!DNL Commerce Intelligence] affiche une liste de tableaux de bord, de rapports et d’utilisateurs utilisant cette mesure.
 
-![](../../mbi/assets/report_dependecies.png)
+![Boîte de dialogue Dépendances des rapports indiquant quels rapports utilisent la colonne sélectionnée](../../mbi/assets/report_dependecies.png)
 
 Si vous décidez que la mesure n’est plus nécessaire, revenez à la page **[!UICONTROL Metrics]** en cliquant sur **[!UICONTROL Back to Metric List]** pour trouver la mesure à supprimer. Cliquez sur **[!UICONTROL Delete]**.
 
@@ -101,7 +101,7 @@ Si vous décidez que la mesure n’est plus nécessaire, revenez à la page **[!
 
 La dernière étape consiste à évaluer les colonnes en cours de synchronisation dans votre Data Warehouse. Non seulement la désynchronisation des colonnes peut désencombrer votre compte, mais elle peut également potentiellement réduire le temps de mise à jour.
 
-Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intelligence]’assistance [&#128279;](../guide-overview.md#Submitting-a-Support-Ticket). L’équipe d’assistance peut créer un rapport qui comprend toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour un utilisateur et qui ne sont pas utilisées dans les résumés d’e-mails, à l’exclusion des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide de sélection des colonnes à désynchroniser via le gestionnaire Data Warehouse.
+Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intelligence]’assistance [](../guide-overview.md#Submitting-a-Support-Ticket). L’équipe d’assistance peut créer un rapport qui comprend toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour un utilisateur et qui ne sont pas utilisées dans les résumés d’e-mails, à l’exclusion des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide de sélection des colonnes à désynchroniser via le gestionnaire Data Warehouse.
 
 >[!NOTE]
 >
@@ -112,6 +112,7 @@ Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intellige
 1. Allez à **[!DNL Manage Data]**, puis **[!UICONTROL Data Warehouse]**.
 1. Dans la liste **[!UICONTROL Synced Tables]**, accédez au tableau contenant la colonne.
 1. Cochez une ou plusieurs cases en regard d’une ou de plusieurs colonnes à désynchroniser.
+
    >[!NOTE]
    >
    >Vous ne pouvez pas désynchroniser une colonne de clé de Principal sans supprimer l’intégralité du tableau.
@@ -120,7 +121,7 @@ Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intellige
 
 Voici un aperçu de l’ensemble du processus :
 
-![](../../mbi/assets/drop_column.png)
+![Option Déposer la colonne dans Data Warehouse Manager](../../mbi/assets/drop_column.png)
 
 ## Conclusion
 

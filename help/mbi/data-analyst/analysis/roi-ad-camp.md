@@ -4,9 +4,9 @@ description: Découvrez quelques méthodes différentes pour évaluer les perfor
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Les analyses (1) et (2) ci-dessus sont explorées dans un tutoriel distinct sur 
 1. Sélectionnez `Add New Metric` et sélectionnez la table de [!DNL `Adwords...`] qui enregistre vos données de coûts [!DNL AdWords].
 1. Dans l’éditeur de mesures, attribuez un nom à votre mesure (par exemple, [!UICONTROL AdWord Cost])
 1. À l’aide des listes déroulantes, effectuez une **Somme** sur la colonne `adCost` du tableau [!DNL Adwords...] (Modification) triée par colonne `date`.
-   ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   ![Message de réussite après l’ajout d’une nouvelle mesure](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. Cliquez sur `Back to Metric List` dans la partie supérieure et accédez à n’importe quel tableau de bord.
 
 1. Créer un rapport qui segmente les dépenses par campagne
@@ -99,7 +99,7 @@ Exécutez-vous des publicités spécifiques au produit ? Si tel est le cas, vous
 >
 >Cet exemple suppose que tous les coûts de campagne ont été utilisés exclusivement pour générer des achats de produit(s) spécifique(s). En supposant que l’intégralité du coût ait été dépensée pour générer des achats, le retour sur investissement qui en résulte prend en compte le pire scénario (coût le plus élevé par achat). Vous pouvez être sûr que votre retour sur investissement réel est supérieur à ce calcul. Exemple : en supposant que vous ayez dépensé 20 $ dans une campagne qui a généré 10 nouveaux utilisateurs et 10 achats, votre coût réel par achat est de 1 $. En supposant que tous les coûts aient servi à acquérir de nouveaux utilisateurs, le coût par achat est de 2 $.
 
-Avant de commencer, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
+Avant de commencer, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
 
 * Source de la commande (si vous suivez uniquement la source de référence au niveau de l’utilisateur, rejoignez la source de l’utilisateur).
 * Campagne de la commande (si vous suivez uniquement la source de référence au niveau de l’utilisateur, rejoignez la campagne de l’utilisateur)
@@ -122,8 +122,8 @@ Avant de commencer, [soumettez un ticket d’assistance](https://experienceleagu
 1. Une fois ces mesures en place, ajoutez des formules :
 1. [!UICONTROL ROI] : saisissez la `\[A\]/\[B\]` de formule, si `\[A\]` représente `Revenue per campaign for specific product(s)` et `\[B\]` représente `Ad cost by campaigns`. Cette opération renvoie le ratio de (chiffre d’affaires pour un ou plusieurs produits spécifiques) / (coût de la campagne)
 1. [!UICONTROL Return] : saisissez le `\[A\]-\[B\]` de formule. Elle renvoie la marge moyenne réalisée sur un utilisateur en calculant (coût moyen par acquisition) - (coût moyen par utilisateur)
-1. (Facultatif) [!UICONTROL Revenue] : affichez la mesure `Revenue by items` pour afficher le chiffre d’affaires de produit(s) spécifique(s) par campagne
-1. (Facultatif) [!UICONTROL Cost] : affichez la mesure de `AdWords Cost` pour afficher le coût des campagnes
+   1. (Facultatif) [!UICONTROL Revenue] : affichez la mesure `Revenue by items` pour afficher le chiffre d’affaires de produit(s) spécifique(s) par campagne
+   1. (Facultatif) [!UICONTROL Cost] : affichez la mesure de `AdWords Cost` pour afficher le coût des campagnes
 
 1. Attribuez un nom à votre rapport et veillez à l’enregistrer sous forme de tableau
 

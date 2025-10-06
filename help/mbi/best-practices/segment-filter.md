@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques en matière de segmentation et de f
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Vous voulez savoir qui sont vos clients les plus précieux ? Quels sont vos cana
 
 Cette rubrique couvre les segments critiques qui sont souvent recommandés aux clients. Il explique également en détail les questions auxquelles ces segments peuvent vous aider à répondre. Techniquement, les segments sont des colonnes de données dans votre base de données. En [!DNL Adobe Commerce Intelligence], on parle de dimensions.
 
-![](../../mbi/assets/mbi-critical-segments.png)
+![Tableau de bord présentant les segments et filtres critiques des clients](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## Segments d’utilisateurs
@@ -71,7 +71,7 @@ Ce type d&#39;analyse est ce que les spécialistes du marketing des entreprises 
 
 La première étape pour segmenter vos mesures en fonction des dimensions ci-dessus est de vous assurer que vous suivez ces données dans votre base de données. Si elles ne sont pas suivies, rencontrez votre équipe technique et trouvez un moyen de commencer à suivre ces données.
 
-Une fois que vous avez confirmé que les données sont suivies dans votre base de données, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour intégrer les dimensions à vos mesures et graphiques [!DNL Commerce Intelligence]. Vous pouvez également utiliser l’outil *Gestion des champs* pour effectuer le suivi de ces champs dans [!DNL Commerce Intelligence].
+Une fois que vous avez confirmé que les données sont suivies dans votre base de données, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour intégrer les dimensions à vos mesures et graphiques [!DNL Commerce Intelligence]. Vous pouvez également utiliser l’outil *Gestion des champs* pour effectuer le suivi de ces champs dans [!DNL Commerce Intelligence].
 
 ## Connexe
 

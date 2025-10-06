@@ -4,9 +4,9 @@ description: Découvrez comment connecter Google Analytics à  [!DNL Commerce In
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/google-analytics-logo.png)
+Logo ![Google Analytics](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics] est le service d’analyse web le plus utilisé sur Internet. L’implémentation de [!DNL Google Analytics] sur votre site web vous permet de suivre la manière dont les visiteurs et visiteuses utilisent votre site, le contenu attrayant, l’endroit où ils quittent, etc. L’analyse de ces mesures dans [!DNL Commerce Intelligence], ainsi que d’autres données, améliore l’intégrité globale et la convivialité de votre site.
 
@@ -33,7 +33,7 @@ Commencez par saisir vos informations d’identification [!DNL Google Analytics]
 
 1. Une liste des identifiants de profil s’affiche. Vérifiez les profils auxquels vous souhaitez vous connecter [!DNL Commerce Intelligence]. Si vous disposez de plusieurs profils et que vous avez besoin d’aide pour savoir lequel, reportez-vous à la section Connexion de plusieurs profils [!DNL Google Analytics] ci-dessous.
 
-   ![](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
+   Page d’administration de ![Google Analytics affichant l’ID de profil dans l’URL](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
 
 1. Les modifications sont enregistrées automatiquement. Par conséquent, cliquez sur **Retour aux connexions** lorsque vous avez terminé.
 
@@ -57,7 +57,7 @@ Pour identifier l’identifiant de profil [!DNL Google Analytics] d’un site we
 
 ## Connexe :
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Connexion  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analyse de l’activité du site web et des taux de conversion des clients](../../analysis/web-act-cust-conversion.md)
 * [Suivi des données d’acquisition des utilisateurs à l’aide  [!DNL Google Analytics]  cookies](../../analysis/google-track-user-acq.md)

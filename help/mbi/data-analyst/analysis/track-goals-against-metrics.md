@@ -4,9 +4,9 @@ description: Découvrez comment configurer un tableau de bord qui vous aidera à
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 La plupart des clients aimeraient suivre leurs **objectifs commerciaux**, mais ne réalisent pas que c&#39;est possible en [!DNL Adobe Commerce Intelligence]. Cette rubrique explique comment configurer un tableau de bord qui vous aidera à comparer vos objectifs commerciaux et vos données réelles, notamment le chiffre d’affaires, les nouveaux utilisateurs enregistrés et les commandes, au fil du temps. Vous apprendrez également à comparer les performances d’une année sur l’autre, le tout dans un tableau de bord comme celui-ci :
 
-![](../../assets/Goals-_dashboard_2.png)
+![Tableau de bord affichant le suivi des objectifs par rapport aux performances des mesures réelles](../../assets/Goals-_dashboard_2.png)
 
 Avant de commencer, vous devez consulter le [téléchargeur de fichiers](../importing-data/connecting-data/using-file-uploader.md) et vous assurer d’avoir défini les objectifs de votre entreprise pour une période donnée.
 
@@ -25,7 +25,7 @@ Vous devez d&#39;abord télécharger un fichier contenant des cibles quotidienne
 
 Vous pouvez utiliser le [téléchargeur de fichier](../importing-data/connecting-data/using-file-uploader.md) et l’image ci-dessous pour formater votre fichier. Les cibles les plus courantes suivies par les clients dans [!DNL Commerce Intelligence] comprennent les commandes, le chiffre d’affaires et les nouveaux comptes enregistrés.
 
-![](../../assets/Goals-_Excel.png)
+![Modèle de feuille de calcul Excel pour le suivi des objectifs et des mesures](../../assets/Goals-_Excel.png)
 
 ## Mesures
 
@@ -55,46 +55,46 @@ Il est utile de combiner des valeurs statiques et des graphiques visuels lors de
 
 * **Chiffre d’affaires restant pour atteindre la cible**
 * `A` de mesure : `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 
 * `B` de mesure : `Target Revenue`
 * [!UICONTROL Metric] : `Monthly Revenue Target`
 
 * [!UICONTROL Formula] : `Revenue left to achieve target`
-* &#x200B;
+* 
   [!UICONTROL Formule]: `(B-A)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period] : (quelle que soit la période pertinente que vous souhaitez)
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
+* 
   [!UICONTROL Type de graphique]: `Scalar`
 
 * **Cibles de chiffre d’affaires**
 * `A` de mesure : `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 
 * `B` de mesure : `Target Revenue`
 * [!UICONTROL Metric] : `Monthly Revenue Target`
 
 * `C` de mesure : `Revenue (amount change since previous year)` (masquer)
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 * [!UICONTROL Perspective] : `Amount change vs. Previous year`
 
 * [!UICONTROL Formula] : (ce mois-ci l&#39;année dernière)
-* &#x200B;
+* 
   [!UICONTROL Formule]: `(A-C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 * Désactiver `Multiple Y-Axes`
 * [!UICONTROL Time period] : (quelle que soit la période pertinente que vous souhaitez)*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type] : `Line Chart`
 

@@ -4,16 +4,16 @@ description: Découvrez comment exporter des enregistrements de votre  [!DNL Com
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # Exporter les données brutes
 
-Grâce aux exportations de données brutes, vous pouvez exporter des enregistrements de votre Data Warehouse pour mieux comprendre ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider [à identifier les incohérences de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=fr).
+Grâce aux exportations de données brutes, vous pouvez exporter des enregistrements de votre Data Warehouse pour mieux comprendre ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider [à identifier les incohérences de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
 Les exportations de données brutes donnent accès à des colonnes et dimensions supplémentaires, générées par la dénormalisation et la pré-agrégation des mesures pertinentes. Par exemple, `User's first order date` est une dimension que vous pouvez exporter pour chaque utilisateur dans [!DNL Commerce Intelligence], même si elle n’est pas disponible dans votre base de données.
 
@@ -34,7 +34,7 @@ Vous pouvez exporter des données brutes de deux manières différentes dans [!D
 
 Si vous souhaitez exporter le tableau à partir de [!UICONTROL Manage Data] onglet, vous avez besoin d’autorisations [Admin](../administrator/user-management/user-management.md).
 
-1. Cliquez sur **[!UICONTROL Manage Data** > **&#x200B; Exporter les données &#x200B;**> **Exporter les données brutes]**.
+1. Cliquez sur **[!UICONTROL Manage Data** > ** Exporter les données **> **Exporter les données brutes]**.
 1. Un `Export List` des exportations de données récemment créées s’affiche, le cas échéant. Cliquez sur **[!UICONTROL Add Export]** pour créer une exportation.
 1. La boîte de dialogue `New Raw Data Export` s’affiche. Ici, vous pouvez personnaliser votre exportation en sélectionnant ou en désélectionnant les colonnes et les filtres :
 
@@ -61,7 +61,7 @@ Si vous souhaitez exporter le tableau à partir de [!UICONTROL Manage Data] ongl
 
 Examinez l’ensemble du processus au niveau des graphiques.
 
-![](../assets/Chart-level_export.gif)
+![Démonstration animée de l&#39;export de données brutes depuis un graphique](../assets/Chart-level_export.gif)
 
 ## Etape 2 : téléchargement de l&#39;export {#download}
 
@@ -69,7 +69,7 @@ Le traitement de l’exportation commencera immédiatement après avoir effectu�
 
 Pour vérifier si votre exportation est prête, cliquez sur **[!UICONTROL Raw Data Exports]** dans le coin supérieur droit de l’écran. Cliquez sur **[!UICONTROL Download]** pour télécharger un fichier `.csv` compressé de votre exportation.
 
-![](../assets/Downloading_export.gif)
+![Démonstration animée du téléchargement d’un fichier CSV exporté](../assets/Downloading_export.gif)
 
 ## Etape 3 : Accès Aux Exportations Historiques {#historical}
 

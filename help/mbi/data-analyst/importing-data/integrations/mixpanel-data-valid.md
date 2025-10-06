@@ -4,9 +4,9 @@ description: Découvrez comment vérifier que vous avez synchronisé toutes les 
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ Lorsque [!DNL Adobe Commerce Intelligence] se connecte pour la première fois à
 
 1. Consultez votre section `Segmentation` et affichez les `Your Top Events`.
 
-   ![](../../../assets/your-top-events.png)
+   ![Tableau de bord Mixpanel présentant vos principaux événements](../../../assets/your-top-events.png)
 
 1. Sélectionnez `Past 96 Hours` pour la période
 
-   ![](../../../assets/past-96-hours.png)
+   ![Sélecteur de période Mixpanel affichant l’option des 96 dernières heures](../../../assets/past-96-hours.png)
 
 1. Faites défiler jusqu’à la partie inférieure droite du rapport et exportez un fichier `.csv` :
 
-   ![](../../../assets/export-csv-mixpanel.png)
+   ![Option Exporter un panneau mixte au format CSV dans le menu](../../../assets/export-csv-mixpanel.png)
 
 1. Envoyez le fichier `.csv` au gestionnaire de compte ou à l’analyste avec lequel vous travaillez sur ce processus de validation.

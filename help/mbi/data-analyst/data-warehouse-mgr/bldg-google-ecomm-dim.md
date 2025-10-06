@@ -4,9 +4,9 @@ description: Découvrez comment créer des dimensions qui lient vos données e-c
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Pour créer les dimensions dans cette rubrique, vous avez besoin d’un tableau 
 
 Voici un aperçu rapide de la synchronisation des tableaux et des colonnes si vous avez besoin d’un rafraîchissement :
 
-![](../../assets/Syncing_New_Columns.gif)
+![Démonstration animée de la synchronisation de nouvelles colonnes dans Data Warehouse](../../assets/Syncing_New_Columns.gif)
 
 Après avoir créé une jointure de la table `orders` à la table [!DNL Google eCommerce], vous créez les trois premières dimensions dans la liste ci-dessous. Utilisez ensuite ces dimensions pour créer trois dimensions utilisateur/client dans le tableau `customers`. Pour terminer, joignez ces colonnes à la table `orders`.
 
@@ -65,7 +65,7 @@ Cet exemple crée la dimension **Source [!DNL Google Analytics] Order**.
 1. Dans la fenêtre qui s’affiche, définissez le côté `Many` sur `orders.order\_id` ou la colonne de la table `orders` contenant l’ID de commande.
 1. Sur le côté `One`, recherchez le tableau `Google ECommerce`, puis définissez la colonne sur `transactionID`.
 
-   ![](../../assets/google-ecommerce-table.png)
+   ![Structure de tableau Google eCommerce affichant les dimensions disponibles](../../assets/google-ecommerce-table.png)
 
 1. Cliquez sur **[!UICONTROL Save]** pour créer le chemin d’accès.
 1. Une fois le chemin ajouté, cliquez à nouveau sur la liste déroulante **[!UICONTROL Select table and column]** .
@@ -74,7 +74,7 @@ Cet exemple crée la dimension **Source [!DNL Google Analytics] Order**.
 
 Voici un aperçu de l’ensemble du processus :
 
-![](../../assets/help_center.gif)
+![Démonstration animée de la création de la dimension source Google Analytics](../../assets/help_center.gif)
 
 Ensuite, essayez de créer **le support [!DNL Google Analytics] de l’ordre** et `campaign`. Peu de modifications ont été apportées à ces dimensions. Réessayez. Mais si vous vous retrouvez coincé, vous pouvez consulter [la fin de cet article](#stuck) pour voir ce qui est différent.
 
@@ -115,7 +115,7 @@ Cet exemple montre comment joindre la dimension `Customer's first order's [!DNL 
 
 Voici un aperçu de l’ensemble du processus :
 
-![](../../assets/help_center2.gif)
+![Démonstration animée de la création de dimensions d’acquisition de clients](../../assets/help_center2.gif)
 
 Terminez en joignant les dimensions moyennes et `Customer's first order's` du `campaign` au tableau `orders`. Rejoignez les dimensions et, en cas de problème, consultez [la fin de l’article](#stuck) si vous avez besoin d’aide.
 

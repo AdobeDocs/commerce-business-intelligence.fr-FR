@@ -4,9 +4,9 @@ description: Découvrez quelques diagrammes ER pour vous aider à visualiser la 
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Un client peut passer plusieurs commandes. La relation entre ces deux tables est
 
 Dans [!DNL Commerce Intelligence], si le chemin d’accès entre ces deux tables n’existe pas, vous pouvez [créer le chemin d’accès](../data-warehouse-mgr/create-paths-calc-columns.md) dans l’onglet Data Warehouse . Lorsque vous êtes prêt à créer le chemin, il est défini comme suit :
 
-![](../../assets/SFO___CE_path.png)
+![Diagramme de relation d’entité présentant le chemin de sales_flat_order à customer_entity](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ Une commande peut contenir plusieurs éléments. La relation entre ces deux tabl
 
 En [!DNL Commerce Intelligence], si le chemin d’accès entre ces deux tables n’existe pas, vous pouvez [créer le chemin d’accès](../data-warehouse-mgr/create-paths-calc-columns.md) dans l’onglet Data Warehouse . Lorsque vous êtes prêt à créer le chemin d’accès, définissez-le comme illustré ci-dessous.
 
-![](../../assets/SFOI___SFO_path.png)
+![Diagramme de relation d’entité affichant le chemin de sales_flat_order_item à sales_flat_order](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ Un produit peut être acheté avec plusieurs articles. La relation entre ces deu
 
 Dans [!DNL Commerce Intelligence], si le chemin d’accès entre ces deux tables n’existe pas, vous pouvez [créer le chemin d’accès](../data-warehouse-mgr/create-paths-calc-columns.md) dans l’onglet Data Warehouse . Lorsque vous êtes prêt à créer le chemin d’accès, définissez-le comme illustré ci-dessous.
 
-![](../../assets/SFOI___CPE_path.png)
+![Diagramme de relation d’entité affichant le chemin de sales_flat_order_item à catalog_product_entity](../../assets/SFOI___CPE_path.png)

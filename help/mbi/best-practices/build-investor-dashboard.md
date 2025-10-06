@@ -4,9 +4,9 @@ description: Découvrez comment créer un tableau de bord pour les investisseurs
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Voici ce dont vous avez besoin pour créer des rapports pour votre tableau de bo
    * Mesure - Chiffre d’affaires
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * Mesure - Chiffre d’affaires de première commande
-   * Filtre - Le numéro de commande de l’utilisateur est égal à 1
+      * Filtre - Le numéro de commande de l’utilisateur est égal à 1
    * Mesure 2 - Chiffre d’affaires de commandes répétées
       * Filtre : le numéro de commande de l’utilisateur est supérieur à 1.
    * Décochez la case Plusieurs axes Y
@@ -77,4 +77,4 @@ Avec les [services d’enrichissement des données de Commerce](https://business
 
 Organisez vos rapports avec soin et faites attention aux détails. Une fois terminé, le tableau de bord ressemble à ce qui suit :
 
-![](../../mbi/assets/investor-dboard-example.png)
+![Créer un tableau de bord d’investisseur](../../mbi/assets/investor-dboard-example.png)

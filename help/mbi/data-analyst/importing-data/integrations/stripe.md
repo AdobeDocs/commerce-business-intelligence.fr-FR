@@ -4,9 +4,9 @@ description: Découvrez comment gérer et suivre les données de paiement et de 
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >
 >Nécessite des [autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/stripe-logo.png)
+Logo ![Stripe](../../../assets/stripe-logo.png)
 
 [!DNL Stripe] vous permet de gérer et de suivre les données de paiement et de facture de votre entreprise. La connexion de votre compte [!DNL Stripe] à [!DNL Commerce Intelligence] est un processus simple en deux étapes :
 
@@ -48,4 +48,4 @@ Après avoir cliqué sur **[!UICONTROL Connect with Stripe]**, une page de deman
 La [[!DNL Stripe] documentation de l’API](https://stripe.com/docs/api) peut être une ressource utile pour en savoir plus sur la façon dont [!DNL Stripe] est intégré à [!DNL Commerce Intelligence].
 
 * [Données  [!DNL Stripe] ](../integrations/stripe-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

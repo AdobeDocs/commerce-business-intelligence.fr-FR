@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la fonction de modification en masse da
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Cela dit, considérez ceci : *Ces changements doivent-ils être permanents ?* Da
 
 ## Utilisation de [!DNL Find/Replace] {#findreplace}
 
-1. Cliquez sur l’icône d’engrenage (![](../../assets/gear-icon.png)) en regard du nom de votre tableau de bord, puis sur la fenêtre de [!UICONTROL Bulk Edit Reports].
+1. Cliquez sur l’icône d’engrenage (![icône d’engrenage](../../assets/gear-icon.png)) en regard du nom de votre tableau de bord, puis sur la fenêtre de [!UICONTROL Bulk Edit Reports].
 
 1. Cliquez sur **[!UICONTROL Chart Title Find and Replace]** dans la fenêtre contextuelle.
 
@@ -45,7 +45,7 @@ Exemple :
 
 ## `Chart Names` en attente {#prepend}
 
-1. Cliquez sur l’icône d’engrenage (![](../../assets/gear-icon.png)) en regard du nom de votre tableau de bord, puis sur la fenêtre de [!UICONTROL Bulk Edit Reports].
+1. Cliquez sur l’icône d’engrenage (![icône d’engrenage](../../assets/gear-icon.png)) en regard du nom de votre tableau de bord, puis sur la fenêtre de [!UICONTROL Bulk Edit Reports].
 
 1. Cliquez sur **[!UICONTROL Prepend Report Names]** dans la fenêtre contextuelle.
 
@@ -59,7 +59,7 @@ Exemple :
 
 ## Modification des `Dates` {#dates}
 
-1. Cliquez sur l’icône d’engrenage (![](../../assets/gear-icon.png)) en regard du nom de votre tableau de bord, puis sélectionnez la fenêtre de [!UICONTROL Bulk Edit Reports].
+1. Cliquez sur l’icône d’engrenage (![icône d’engrenage](../../assets/gear-icon.png)) en regard du nom de votre tableau de bord, puis sélectionnez la fenêtre de [!UICONTROL Bulk Edit Reports].
 
 1. Cliquez sur **[!UICONTROL Change Dates]** dans la fenêtre pop-up.
 

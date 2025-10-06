@@ -4,9 +4,9 @@ description: Améliorez la visibilité des données, rationalisez les rapports, 
 role: Admin, User
 feature: User Management
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -460,7 +460,7 @@ Les utilisateurs administrateurs peuvent afficher les données du tableau de bor
 
 Cependant, les utilisateurs peuvent afficher les données du tableau de bord filtrées en fonction des magasins qui leur sont mappés lors de la configuration des utilisateurs.
 
-![Afficher l’administrateur du tableau de bord](../../assets/view-dashboard-user.png)
+![Afficher l’administrateur filtré du tableau de bord](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >

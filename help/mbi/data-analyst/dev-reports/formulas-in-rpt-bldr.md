@@ -4,9 +4,9 @@ description: Découvrez comment les formules peuvent être utilisées dans Repor
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Dans le [`Report Builder`](../../tutorials/using-visual-report-builder.md), vous
 
 Dans l’`Report Builder`, une `formula` est simplement une combinaison d’une ou de plusieurs mesures basées sur une logique mathématique. Voici un exemple type :
 
-![](../../assets/formula-example.png)
+![Exemple de formule montrant le calcul dans Report Builder](../../assets/formula-example.png)
 
 Dans cet exemple, vous utilisez un `Number of orders metric (A)` et un `Distinct buyers metric (B)`, et l’objectif est de répondre à la question suivante : quel est le nombre moyen de commandes passées par mes acheteurs chaque mois ? Les paramètres de la formule sont les suivants :
 
@@ -65,4 +65,4 @@ Dans cet exemple, vous avez utilisé la perspective `Stacked Columns` pour affic
 
 Avez-vous remarqué dans les exemples ci-dessus que les `timestamp`, `groupings`, `perspectives` et `filters` de la formule sont hérités de ses mesures d’entrée ? N’oubliez pas que les formules peuvent être utilisées pour utiliser des options de temps `perspectives` et [ indépendantes](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"} comme les mesures le peuvent.
 
-Si vous avez d’autres questions sur l’utilisation des formules dans le `Report Builder`, [contactez l’assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Si vous avez d’autres questions sur l’utilisation des formules dans le `Report Builder`, [contactez l’assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

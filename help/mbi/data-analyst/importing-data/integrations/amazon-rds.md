@@ -4,9 +4,9 @@ description: Découvrez les étapes de connexion de votre instance RDS.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Les étapes de connexion de votre instance [!DNL RDS] varient selon le type de b
 
 Sur la page des informations d’identification (**[!UICONTROL Manage Data** > **Integrations]**) de chaque base de données, une zone contenant les adresses IP que vous devez autoriser pour connecter R[!DNL RDS] à [!DNL Commerce Intelligence] : `54.88.76.97` et `34.250.211.151` s’affiche. Voici un aperçu de la page `MySQL credentials`, où vous avez mis en surbrillance la zone d’adresse IP :
 
-![](../../../assets/RDS_IP.png)
+![Paramètres du groupe de sécurité Amazon RDS affichant la configuration des adresses IP](../../../assets/RDS_IP.png)
 
 Pour [!DNL Commerce Intelligence] connecter correctement à votre instance [!DNL RDS], vous devez ajouter ces adresses IP au groupe de sécurité de base de données approprié via la console de gestion AWS. Ces adresses IP peuvent être ajoutées à un groupe existant ou vous pouvez en créer un. L’important est que le groupe soit autorisé à accéder à l’instance à laquelle vous souhaitez vous connecter [!DNL Commerce Intelligence].
 
@@ -55,6 +55,6 @@ Pour terminer la création de la connexion, vous avez besoin des informations su
 
 Si vous utilisez une connexion chiffrée, remplacez le bouton `Encrypted` de la page des informations d’identification de la base de données par `Yes`. Un formulaire supplémentaire s’affiche pour configurer le chiffrement :
 
-![](../../../assets/sql-integration-encrypted-yes.png)
+Formulaire d&#39;intégration ![SQL avec chiffrement activé affichant l&#39;option Oui ](../../../assets/sql-integration-encrypted-yes.png)
 
 

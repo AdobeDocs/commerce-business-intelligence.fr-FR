@@ -4,9 +4,9 @@ description: Découvrez comment créer et utiliser un tableau de bord.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ L’aspect des tableaux de bord que vous créez dépend entièrement de vous. Vo
 
 1. Dans le menu, cliquez sur **[!UICONTROL Dashboards]**.
 
-1. Le nom du tableau de bord par défaut s’affiche dans le coin supérieur gauche de l’en-tête du tableau de bord. Cliquez sur la flèche vers le bas (![](../../assets/magento-bi-btn-down.png)) pour afficher les options disponibles.
+1. Le nom du tableau de bord par défaut s’affiche dans le coin supérieur gauche de l’en-tête du tableau de bord. Cliquez sur la flèche vers le bas (![icône de flèche vers le bas](../../assets/magento-bi-btn-down.png)) pour afficher les options disponibles.
 
    ![Créer un tableau de bord](../../assets/magento-bi-dashboard-create.png)
 
@@ -49,7 +49,7 @@ L’aspect des tableaux de bord que vous créez dépend entièrement de vous. Vo
 
    ![ nom du tableau de bord ](../../assets/magento-bi-dashboard-create-name.png)
 
-   * Le nom de votre nouveau tableau de bord s’affiche dans le coin supérieur gauche. Cliquez sur la flèche vers le bas (![](../../assets/magento-bi-btn-down.png)) pour afficher les options. Si vous avez créé un groupe, le nouveau tableau de bord s’affiche sous le groupe dans la liste.
+   * Le nom de votre nouveau tableau de bord s’affiche dans le coin supérieur gauche. Cliquez sur la flèche vers le bas (![icône de flèche vers le bas](../../assets/magento-bi-btn-down.png)) pour afficher les options. Si vous avez créé un groupe, le nouveau tableau de bord s’affiche sous le groupe dans la liste.
 
 ### Ajout d’un rapport
 

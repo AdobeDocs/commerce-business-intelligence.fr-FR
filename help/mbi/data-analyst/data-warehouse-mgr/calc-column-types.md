@@ -4,9 +4,9 @@ description: Découvrez comment créer des colonnes pour augmenter et optimiser 
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Une colonne calculée sur l’âge renvoie le nombre de secondes entre l’heure
 
 L’exemple ci-dessous crée des `Seconds since customer's most recent order` dans le tableau `customers` . Vous pouvez l’utiliser pour créer des listes d’utilisateurs et d’utilisatrices de clients et clientes qui n’ont pas effectué d’achats (parfois appelées résiliation) dans `X days`.
 
-![](../../assets/age.gif)
+![Démonstration animée de la création de la colonne de calcul de l&#39;âge](../../assets/age.gif)
 
 ### Convertisseur de devises
 
@@ -47,7 +47,7 @@ L’exemple ci-dessous crée des `base\_grand\_total In AED`, en convertissant l
 
 Pour les clients Commerce, le champ `base\_currency\_code` stocke généralement les devises natives. Le champ `Spot Time` doit correspondre à la date utilisée dans vos mesures.
 
-![](../../assets/currency_converter.png)
+![Configuration de la colonne calculée du convertisseur de devises](../../assets/currency_converter.png)
 
 ## Colonnes calculées de type « un à plusieurs » {#onetomany}
 
@@ -59,7 +59,7 @@ Une colonne jointe déplace un attribut sur une table *vers* la table multiple. 
 
 Dans l’exemple ci-dessous, la dimension `Customer's group\_id` est intégrée dans le tableau `orders`.
 
-![](../../assets/joined_column.gif)
+![Démonstration animée de la création de tables de liaison de colonnes jointes](../../assets/joined_column.gif)
 
 ## Colonnes calculées multiples-à-un {#manytoone}
 
@@ -71,7 +71,7 @@ Ce type de colonne calculée renvoie le nombre de valeurs sur le tableau multipl
 
 Dans l’exemple ci-dessous, la dimension `Customer's lifetime number of canceled orders` est créée dans le tableau `customers` (avec un filtre pour les `orders.status`).
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![Démonstration animée de l’agrégation de plusieurs colonnes à une](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Somme {#sum}
 
@@ -95,7 +95,7 @@ Ce type de dimension peut déterminer, par exemple, si un client a déjà achet�
 
 Si vous avez des difficultés à vous souvenir de toutes les entrées lors de la création d’une colonne calculée, gardez cette carte de référence à portée de main lorsque vous créez :
 
-![](../../assets/merged_reference_map.png)
+![Mappage de référence montrant la configuration des colonnes calculées fusionnées](../../assets/merged_reference_map.png)
 
 ## Colonnes calculées avancées {#advanced}
 

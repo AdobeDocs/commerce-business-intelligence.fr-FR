@@ -4,9 +4,9 @@ description: Découvrez comment consolider des données provenant de différente
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Votre nouvelle colonne apparaît dans le tableau actuel avec un statut `Pending`
 
 Si vous avez des difficultés à vous souvenir de toutes les entrées lors de la création d’une colonne calculée, essayez de garder cette carte de référence à portée de main lorsque vous créez :
 
-![](../../assets/Calculated_Columns_Example.png)
+![Exemple de configuration de colonne calculée dans Data Warehouse Manager](../../assets/Calculated_Columns_Example.png)
 
 ## Documentation connexe
 

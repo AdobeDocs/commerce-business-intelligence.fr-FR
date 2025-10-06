@@ -4,18 +4,18 @@ description: Découvrez comment optimiser vos requêtes SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # Optimisation des requêtes SQL
 
-Le [!DNL SQL Report Builder] vous permet d’effectuer des requêtes et d’effectuer des itérations sur ces requêtes à tout moment. Cela s&#39;avère utile lorsque vous devez modifier une requête sans avoir à attendre la fin d&#39;un cycle de mise à jour avant de réaliser qu&#39;une colonne ou un rapport que vous avez créé doit être mis à jour.
+Le [!DNL SQL Report Builder] vous permet d’exécuter et de modifier vos requêtes quand vous le souhaitez. Cette fonctionnalité est utile si vous devez mettre à jour une requête immédiatement, au lieu d’attendre la fin d’un cycle de mise à jour avant de corriger une colonne ou un rapport.
 
-Avant l’exécution d’une requête, [[!DNL Commerce Intelligence] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=fr). Le coût prend en compte la durée et le nombre de ressources nécessaires pour exécuter une requête. Si ce coût est jugé trop élevé ou si le nombre de lignes renvoyées dépasse les limites [!DNL Commerce Intelligence], la requête échoue. Pour interroger votre [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), ce qui garantit que vous écrivez les requêtes les plus rationalisées possible, Adobe recommande ce qui suit.
+Avant l’exécution d’une requête, [[!DNL Commerce Intelligence] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Le coût prend en compte la durée et le nombre de ressources nécessaires pour exécuter une requête. Si ce coût est jugé trop élevé ou si le nombre de lignes renvoyées dépasse les limites [!DNL Commerce Intelligence], la requête échoue. Pour interroger votre [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), ce qui garantit que vous écrivez les requêtes les plus rationalisées possible, Adobe recommande ce qui suit.
 
 ## Utilisation de SELECT ou Sélection de toutes les colonnes
 
@@ -25,7 +25,7 @@ C’est pourquoi Adobe vous recommande d’éviter d’utiliser `SELECT *` dans 
 
 | **Au lieu de cela...** | **Essayez ceci !** |
 |-----|-----|
-| ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
+| ![Requête SQL utilisant l’astérisque SELECT](../../mbi/assets/Select_all_1.png) | ![Requête SQL sélectionnant des colonnes spécifiques](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ Découvrez comment réécrire une requête FULL OUTER JOIN :
 
 | **Au lieu de cela...** | **Essayez ceci !** |
 |-----|-----|
-| ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
+| ![Requête SQL avec jointure externe complète](../../mbi/assets/Full_Outer_Join_1.png) | ![Requête SQL avec jointure optimisée](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ Bien que vous puissiez inclure plusieurs jointures dans votre requête, n’oubl
 
 ## Utilisation de filtres
 
-Utilisez des filtres chaque fois que possible. Les clauses `WHERE` et `HAVING` filtrent vos résultats et ne vous donnent que les données réellement souhaitées.
+Utilisez des filtres chaque fois que possible. Les clauses `WHERE` et `HAVING` filtrent vos résultats et ne vous donnent que les données que vous voulez vraiment.
 
 ## Utilisation de filtres dans les clauses JOIN
 
@@ -59,7 +59,7 @@ Si vous utilisez un filtre lors de la jointure, veillez à l&#39;appliquer aux d
 
 | **Au lieu de cela...** | **Essayez ceci !** |
 |-----|-----|
-| ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
+| ![Requête SQL avec filtre de clause WHERE](../../mbi/assets/Join_filters_1.png) | ![Requête SQL avec filtre de clause ON](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -73,19 +73,19 @@ Les opérateurs de comparaison (>, &lt;, =, etc.) sont les moins chers, suivis d
 
 L’utilisation de `EXISTS` au lieu de `IN` dépend du type de résultats que vous essayez de renvoyer. Si une seule valeur vous intéresse, utilisez la clause `EXISTS` au lieu de `IN`. `IN` est utilisé avec des listes de valeurs séparées par des virgules, ce qui augmente le coût de calcul de la requête.
 
-Lorsque `IN` requêtes sont exécutées, le système doit d&#39;abord traiter la sous-requête (l&#39;instruction `IN`), puis la requête entière en fonction de la relation spécifiée dans l&#39;instruction `IN`. `EXISTS` est beaucoup plus efficace, car la requête n’a pas à être exécutée plusieurs fois : une valeur true/false est renvoyée lors de la vérification de la relation spécifiée dans la requête.
+Lorsque `IN` requêtes sont exécutées, le système doit d&#39;abord traiter la sous-requête (l&#39;instruction `IN`), puis la requête entière en fonction de la relation spécifiée dans l&#39;instruction `IN`. La requête `EXISTS` est beaucoup plus efficace, car il n’est pas nécessaire de l’exécuter plusieurs fois : une valeur true/false est renvoyée lors de la vérification de la relation spécifiée dans la requête.
 
 En d’autres termes, le système n’a pas à traiter autant de données lors de l’utilisation de `EXISTS`.
 
 | **Au lieu de cela...** | **Essayez ceci !** |
 |-----|-----|
-| ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
+| ![Requête SQL utilisant LEFT JOIN avec vérification NULL](../../mbi/assets/Exists_1.png) | ![Requête SQL utilisant la clause EXISTS](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
 ## Utilisation de ORDER BY
 
-`ORDER BY` est une fonction coûteuse dans SQL et peut augmenter considérablement le coût d’une requête. Si vous recevez un message d’erreur indiquant que le coût du module EXPLAIN de votre requête est trop élevé, essayez d’éliminer tous les `ORDER BY` de votre requête, sauf si nécessaire.
+La fonction `ORDER BY` est coûteuse en SQL et peut augmenter considérablement le coût d’une requête. Si vous recevez un message d’erreur indiquant que le coût du module EXPLAIN de votre requête est trop élevé, essayez d’éliminer tous les `ORDER BY` de votre requête, sauf si nécessaire.
 
 Cela ne veut pas dire que le `ORDER BY` ne peut pas être utilisé, mais simplement qu’il ne doit l’être que lorsque cela est nécessaire.
 
@@ -95,7 +95,7 @@ Il peut y avoir quelques situations où cette approche n’est pas conforme à c
 
 | **Au lieu de cela...** | **Essayez ceci !** |
 |-----|-----|
-| ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
+| ![Requête SQL avec GROUP BY avant le filtre](../../mbi/assets/Group_by_2.png) | ![Requête SQL avec filtre avant GROUP BY](../../mbi/assets/Group_by_1.png) |
 
 {style="table-layout:auto"}
 

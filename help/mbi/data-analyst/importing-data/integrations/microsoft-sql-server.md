@@ -4,9 +4,9 @@ description: Découvrez comment connecter votre base de données SQL Microsoft �
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/MicrosoftSQLServer-logo.png)
+![Logo SQL Server de Microsoft](../../../assets/MicrosoftSQLServer-logo.png)
 
 Cette rubrique explique comment connecter votre base de données [!DNL Microsoft SQL] à [!DNL Commerce Intelligence] dans un processus en quatre étapes. Ce processus nécessite une certaine expertise technique liée aux connexions au serveur et à SQL, et peut nécessiter l’assistance des développeurs de votre équipe.
 
-[!DNL Commerce Intelligence] prend en charge [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] et la plupart des autres fournisseurs de serveurs cloud. Si vous avez des questions sur votre hôte particulier, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) en nous demandant de fournir ces informations.
+[!DNL Commerce Intelligence] prend en charge [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] et la plupart des autres fournisseurs de serveurs cloud. Si vous avez des questions sur votre hôte particulier, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) en nous demandant de fournir ces informations.
 
 Votre système doit exécuter des requêtes SELECT sur votre base de données. Cette opération est d’abord effectuée pour obtenir un instantané de la structure de votre base de données, puis régulièrement, au fil du temps, pour maintenir vos données à jour. Vos mises à jour sont incrémentielles et Adobe limite la fréquence et l’heure des mises à jour afin d’éviter toute charge indésirable sur votre serveur.
 
@@ -41,7 +41,7 @@ Pour ce faire, la meilleure solution consiste à se connecter à votre serveur d
 
 1. Saisissez l’adresse IP, le nom d’utilisateur et le mot de passe du serveur dans [!DNL Commerce Intelligence] sous **[!UICONTROL Manage Data** > **Connections]**.
 
-   ![](../../../assets/manage-data-connections.png)
+   ![Page Gérer les connexions de données affichant les intégrations de bases de données](../../../assets/manage-data-connections.png)
 
 1. Cliquez sur **[!UICONTROL Add a Data Source]**.
 

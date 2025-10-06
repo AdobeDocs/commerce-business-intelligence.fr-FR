@@ -4,9 +4,9 @@ description: Découvrez comment les requêtes SQL sont traduites en colonnes cal
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Examinez un exemple spécifique de la manière dont une mesure `Total Revenue` p
 | `email NOT LIKE '%@magento.com'` | `filter` de mesure |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | `timestamp` des mesures (et `time range` de création de rapports) |
 
-Accédez au créateur de mesures en cliquant sur **[!UICONTROL Manage Data** > **&#x200B; Mesures &#x200B;**> **Créer une mesure]**. Vous devez d’abord sélectionner la table de `source` appropriée, qui est dans ce cas la table de `orders`. Ensuite, la mesure est configurée comme illustré ci-dessous :
+Accédez au créateur de mesures en cliquant sur **[!UICONTROL Manage Data** > ** Mesures **> **Créer une mesure]**. Vous devez d’abord sélectionner la table de `source` appropriée, qui est dans ce cas la table de `orders`. Ensuite, la mesure est configurée comme illustré ci-dessous :
 
 ![Agrégation des mesures](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ La requête pour cette agrégation peut ressembler à ce qui suit :
 
 La configuration de cette fonctionnalité dans [!DNL Commerce Intelligence] nécessite l’utilisation de votre gestionnaire Data Warehouse, où vous créez un chemin d’accès entre votre `orders` et `customers` tableau, puis créez une colonne appelée `Customer LTV` dans le tableau de votre client.
 
-Examinez comment établir un nouveau chemin entre le `customers` et le `orders`. L’objectif final est de créer une colonne agrégée dans le tableau `customers`. Par conséquent, accédez d’abord au tableau `customers` dans votre Data Warehouse, puis cliquez sur **[!UICONTROL Create a Column** > **&#x200B; Sélectionner une définition &#x200B;**> **SOMME]**.
+Examinez comment établir un nouveau chemin entre le `customers` et le `orders`. L’objectif final est de créer une colonne agrégée dans le tableau `customers`. Par conséquent, accédez d’abord au tableau `customers` dans votre Data Warehouse, puis cliquez sur **[!UICONTROL Create a Column** > ** Sélectionner une définition **> **SOMME]**.
 
 Vous devez ensuite sélectionner la table source. S’il existe un chemin d’accès vers votre tableau `orders`, sélectionnez-le simplement dans la liste déroulante. Cependant, si vous créez un chemin, cliquez sur **[!UICONTROL Create new path]** et l’écran ci-dessous s’affiche :
 
@@ -89,7 +89,7 @@ Ici, vous devez examiner attentivement la relation entre les deux tables que vou
 
 Une fois le chemin enregistré, vous pouvez créer la colonne `Customer LTV`. Voir ci-dessous :
 
-![](../../assets/Customer_LTV.gif)
+![Démonstration animée de l’analyse de la valeur de durée de vie du client à l’aide de SQL](../../assets/Customer_LTV.gif)
 
 Maintenant que vous avez créé la nouvelle colonne `Customer LTV` dans votre tableau `customers`, vous êtes prêt à créer une [agrégation des mesures](#aggregate) à l’aide de cette colonne (par exemple, pour trouver le LTV moyen par client). Vous pouvez également `group by` ou `filter` par la colonne calculée dans un rapport à l’aide des mesures existantes créées sur le tableau `customers`.
 

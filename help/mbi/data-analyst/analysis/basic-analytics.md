@@ -4,9 +4,9 @@ description: Découvrez comment comprendre et créer des bases pour l’analyse.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3130'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Si certains de ces calculs n’existent pas actuellement dans votre base de donn
 
 **Acceptez-vous les commandes d&#39;invités ?**
 
-*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez l’[équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour vous assurer que vos analyses client incluent tous les clients.*
+*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez l’[équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour vous assurer que vos analyses client incluent tous les clients.*
 
 *Vous n&#39;êtes pas sûr d&#39;accepter les commandes de clients ? Consultez [cette rubrique](../data-warehouse-mgr/guest-orders.md) pour en savoir plus !*
 
@@ -60,7 +60,7 @@ Dans ce tableau, chaque ligne représente un ordre. Les colonnes de ce tableau c
 * **[!UICONTROL Created_at]** : date à laquelle la commande a été créée ou passée.
 * **[!UICONTROL Customer_email]** : adresse électronique du client qui a passé la commande. Il peut également s’agir de l’identifiant unique du client.
 * **[!UICONTROL Customer's lifetime number of orders]** : une copie de la colonne portant le même nom dans votre tableau `Customers`.
-* **[!UICONTROL Customer's order number]** : numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous consultez correspond à la première commande d’un client, cette colonne contient la mention « 1 ». Toutefois, s’il s’agit de la 15e commande du client, cette colonne contient la mention « 15 » pour cette commande. Si cette dimension n’existe pas sur votre table de `Customers`, demandez de l’aide à la création auprès de l’équipe [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+* **[!UICONTROL Customer's order number]** : numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous consultez correspond à la première commande d’un client, cette colonne contient la mention « 1 ». Toutefois, s’il s’agit de la 15e commande du client, cette colonne contient la mention « 15 » pour cette commande. Si cette dimension n’existe pas sur votre table de `Customers`, demandez de l’aide à la création auprès de l’équipe [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 * **[!UICONTROL Customer's order number (previous-current)]** : concaténation de deux valeurs dans la colonne **[!UICONTROL Customer's order number]**. Elle est utilisée dans un exemple de rapport ci-dessous pour afficher le temps écoulé entre deux commandes. Par exemple, la durée entre la date de première commande d’un client et sa date de deuxième commande est représentée sous la forme « 1-2 » avec ce calcul.
 * **[!UICONTROL Coupon_code]** : indique les coupons utilisés pour chaque commande.
 * **[!UICONTROL Seconds since previous order]** : délai (en secondes) entre les commandes d’un client ou d’une cliente.
@@ -155,7 +155,7 @@ Voici quelques exemples courants de rapports et de mesures que vous pouvez trouv
    * **[!UICONTROL Time Interval]** : `By Month`
    * **[!UICONTROL Group By]** : `Customer's Order Number`, puis sélectionnez `2` et `3`
 
-  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![Graphique montrant la deuxième et la troisième analyse d’achat pour l’année dernière](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **Exemple de rapport 2** : nombre de clients réguliers l’année dernière
    * **[!UICONTROL Metric]** : `Distinct Customers`
@@ -244,9 +244,9 @@ Voici quelques exemples courants de rapports et de mesures que vous pouvez trouv
 * **Description** : moyenne du montant du chiffre d’affaires généré par les clients au cours de leurs 30 premiers jours en tant que client.
 * **Description de la mesure** : cette mesure effectue une **Moyenne** de `Customer's First 30 Day Revenue` à partir `customer_entity` tableau trié par `created_at`.
 * **Description du rapport** : moyenne historique du premier chiffre d’affaires sur 30 jours du client
-* **[!UICONTROL Metric]** : `Average First 30 Day Revenue`
-* **[!UICONTROL Time Range]** : `All Time`
-* **[!UICONTROL Time Interval]** : `None`
+   * **[!UICONTROL Metric]** : `Average First 30 Day Revenue`
+   * **[!UICONTROL Time Range]** : `All Time`
+   * **[!UICONTROL Time Interval]** : `None`
 
 ![Chiffre D’Affaires Moyen Des 30 Premiers Jours](../../assets/Avg_first_30_day_revenue.png)<!--{: width="929"}-->
 

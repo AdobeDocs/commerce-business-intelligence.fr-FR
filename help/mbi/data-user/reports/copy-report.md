@@ -4,9 +4,9 @@ description: Découvrez comment créer une copie d’un rapport.
 exl-id: c57783b4-32ae-4054-a85a-5ddf63cfd34b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ Souvent, vous souhaitez créer des graphiques définis de la même manière, où
 
 Dans ce cas, lancez l’`Chart Editor` et cliquez sur **[!UICONTROL Save As]** dans le coin supérieur droit. Le graphique existant est ainsi répliqué et ajouté à votre tableau de bord actuel avec le nouveau nom que vous sélectionnez, ce qui vous permet de modifier immédiatement les paramètres du nouveau graphique.
 
-![](../../assets/create-report-copy.png)
+![Éditeur de graphiques affichant l’option Enregistrer sous pour créer une copie d’un rapport](../../assets/create-report-copy.png)

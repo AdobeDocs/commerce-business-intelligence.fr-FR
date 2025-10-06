@@ -4,9 +4,9 @@ description: Découvrez comment analyser les données de votre rapport pour une 
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Certaines mesures ne peuvent simplement pas suivre la tendance au fil du temps, 
 
 Lors de l’utilisation d’une telle mesure dans vos rapports, vous remarquerez que l’ajout de cette mesure à un rapport définit automatiquement un `Time Interval` indépendant de `None` et de `Time Range` de `Global` :
 
-![](../assets/Metrics_without_timestamps.gif)
+![Rapport affichant la mesure avec l’intervalle de temps défini sur Aucun et la période définie sur Global](../assets/Metrics_without_timestamps.gif)
 
 ## Assignation d’un intervalle de temps indépendant à une mesure {#independenttimeinterval}
 
@@ -62,11 +62,11 @@ Ce type de rapport peut s&#39;avérer utile si vous souhaitez comparer les reven
 
 Maintenant, vous pouvez voir à quel point chaque mois a été impactant l’année dernière :
 
-![](../assets/Independent_Time_Int.png)
+![Graphique montrant le pourcentage du chiffre d’affaires par mois pour l’année précédente](../assets/Independent_Time_Int.png)
 
 ## Comparaison d’une même mesure sur différentes périodes {#difftimerange}
 
-Cet exemple utilise une dimension personnalisée appelée `Day number of the month`. Si vous souhaitez créer ce rapport et que cette dimension ne figure pas déjà dans votre Data Warehouse, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l’aide.
+Cet exemple utilise une dimension personnalisée appelée `Day number of the month`. Si vous souhaitez créer ce rapport et que cette dimension ne figure pas déjà dans votre Data Warehouse, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour obtenir de l’aide.
 
 Les deux exemples les plus courants dans cette catégorie sont (1) la comparaison des mesures de croissance (revenus d&#39;une année à l&#39;autre ou d&#39;un mois à l&#39;autre) et (2) une meilleure compréhension des tendances récentes des stocks ou des ventes d&#39;articles.
 
@@ -87,7 +87,7 @@ Pour démontrer ce cas d’utilisation, regardez le chiffre d’affaires quotidi
 
    Ne vous inquiétez pas si la mesure disparaît du rapport : la définition d’une option de temps indépendante masque automatiquement la mesure du rapport. Pour le réafficher, cliquez sur **[!UICONTROL Show]** en regard de la mesure.
 
-   ![](../assets/Different_Time_Ranges.gif)
+   ![Démonstration de la définition de différentes périodes pour les mesures dans un rapport](../assets/Different_Time_Ranges.gif)
 
    * Cliquez sur **[!UICONTROL Apply]** pour enregistrer les paramètres d’intervalle et de plage.
 
@@ -95,7 +95,7 @@ Pour démontrer ce cas d’utilisation, regardez le chiffre d’affaires quotidi
 
    * Dans la liste déroulante `Group By`, sélectionnez `Show All` et cliquez sur **[!UICONTROL Apply]**. Cela crée les valeurs de l’axe X pour le rapport :
 
-   ![](../assets/TO4.png)
+   ![Rapport présentant la comparaison des revenus, regroupés par jour et par numéro de mois](../assets/TO4.png)
 
    * Renommez les mesures. Dans cet exemple, la première mesure est `Revenue - 2015` et la seconde est `Revenue - 2014`.
 
@@ -136,7 +136,7 @@ Pour créer les formules, cliquez sur **[!UICONTROL Add Formula]**. Saisissez le
 
 * Pour le `last promo period` , saisissez `D / C` dans le champ `Formula` .
 
-  ![](../assets/Different_Time_Ranges_2.png)
+  ![Rapport affichant les calculs d&#39;approvisionnement pour différentes périodes](../assets/Different_Time_Ranges_2.png)
 
 * Enfin, personnalisez le rapport en masquant les mesures et en ajoutant une `SKU` ou une dimension similaire au rapport sous forme de `Group By`.
 

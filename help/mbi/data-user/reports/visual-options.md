@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les options de visualisation dans Visua
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ Le [!DNL Commerce Intelligence] [!DNL Visual Report Builder] propose 12 options 
 
 `Scalar` rapports s’affichent sous la forme d’une valeur numérique unique. Le plus souvent, il est utilisé pour afficher la valeur « en tout temps » d’une mesure clé telle que le chiffre d’affaires ou les commandes, ou pour comparer le chiffre d’affaires à ce jour par rapport au budget avec deux rapports scalaires distincts. Dans l’exemple ci-dessous, il s’agit simplement du nombre total de commandes pour l’intervalle de création de rapports donné :
 
-![](../../assets/blobid0.png)
+![Rapport scalaire présentant le nombre total de commandes sous la forme d&#39;une valeur numérique unique](../../assets/blobid0.png)
 
 Pour enregistrer un rapport sous forme de scalaire, configurez vos filtres et paramètres temporels, puis cliquez sur **[!UICONTROL Save]** ou **[!UICONTROL Update]** dans la section supérieure droite du rapport. Dans la liste déroulante `Type` , choisissez le nom Nombre : mesure pour enregistrer le rapport en tant que valeur affichée dans la barre latérale gauche.
 
-![](../../assets/blobid1.png)
+![Boîte de dialogue Enregistrer le rapport avec liste déroulante Type affichant l’option Nom de la mesure numérique](../../assets/blobid1.png)
 
 **Conditions requises** :
 
@@ -51,11 +51,11 @@ Pour enregistrer un rapport sous forme de scalaire, configurez vos filtres et pa
 
 Comme leur nom l’indique, les rapports `table` sont parfaits pour afficher des détails tabulaires. Lorsqu’il est nécessaire d’afficher de nombreux groupes par valeurs ou mesures dans un seul rapport, un tableau est souvent la meilleure solution. À titre d’exemple, vous trouverez ci-dessous un tableau des « Détails du client », présentant les commandes et les recettes regroupées par e-mail client :
 
-![](../../assets/blobid2.png)
+![Rapport de tableau présentant les détails des clients avec les commandes et les recettes par e-mail client](../../assets/blobid2.png)
 
 Tout comme pour les rapports scalaires, vous pouvez enregistrer un rapport sous la forme d’un tableau en cliquant sur **[!UICONTROL Save]** ou **[!UICONTROL Update]** dans le Report Builder, puis en sélectionnant l’option Tableau dans la liste déroulante `Type`.
 
-![](../../assets/blobid3.png)
+![Boîte de dialogue Enregistrer le rapport avec liste déroulante Type affichant l’option Tableau sélectionnée](../../assets/blobid3.png)
 
 **Conditions requises:**
 
@@ -65,13 +65,13 @@ Tout comme pour les rapports scalaires, vous pouvez enregistrer un rapport sous 
 
 Les graphiques `Line` sont le choix idéal pour comparer les performances de cohortes de mesures similaires. Par exemple, en analysant le chiffre d’affaires de deux régions sur la même période ou en comparant la croissance des commandes exécutées d’une année sur l’autre, comme illustré ci-dessous :
 
-![](../../assets/blobid0.png)
+![Graphique linéaire comparant deux mesures au fil du temps avec plusieurs lignes](../../assets/blobid0.png)
 
 Chaque mesure et formule ajoutée au rapport est représentée par sa propre ligne. Lors de la comparaison de mesures avec des unités et des échelles similaires, n’oubliez pas de cocher la case pour que `Multiple Y-Axes` affiche toutes les mesures à la même échelle.
 
 Pour enregistrer un rapport sous la forme d’un graphique en courbes, définissez le `Type` de rapport sur `Chart`, puis sélectionnez la visualisation appropriée dans le Report Builder, comme illustré ci-dessous :
 
-![](../../assets/blobid1.png)
+![Report Builder avec le type de graphique sélectionné et l’option de visualisation de graphique en courbes mise en surbrillance](../../assets/blobid1.png)
 
 **Conditions requises:**
 
@@ -81,13 +81,13 @@ Pour enregistrer un rapport sous la forme d’un graphique en courbes, définiss
 
 Les graphiques `Bar` affichent vos données sous la forme d’une série de barres horizontales. Ils sont particulièrement adaptés pour afficher les performances globales d’un nombre limité de mesures ou pour regrouper les données par valeurs. Par exemple, un graphique à barres peut être utilisé pour comparer les recettes par magasin :
 
-![](../../assets/blobid2.png)
+![Graphique à barres horizontales présentant la comparaison des recettes par magasin](../../assets/blobid2.png)
 
 Chaque combinaison de mesures, de regroupements par et d’intervalles de temps distincte s’affiche dans sa propre barre. Si vous disposez de deux mesures avec une `group by`, contenant trois valeurs de `group by` distinctes, votre rapport affiche six barres distinctes.
 
 Pour enregistrer un rapport sous la forme d’un graphique à barres, définissez le `Type` de rapport sur `Chart` et sélectionnez l’option `Bar` comme illustré ci-dessous :
 
-![](../../assets/blobid3.png)
+![Report Builder avec le type de graphique sélectionné et l’option de visualisation Barre mise en surbrillance](../../assets/blobid3.png)
 
 **Conditions requises:**
 
@@ -99,13 +99,13 @@ Les graphiques `Stacked bar` sont similaires à leurs frères de graphiques à b
 
 Par exemple, l’état ci-dessous comporte deux mesures de chiffre d’affaires identiques, l’une filtrée pour les premières commandes et l’autre pour les commandes répétées. Après avoir effectué un regroupement par magasin, vous pouvez voir la contribution totale au chiffre d’affaires de chaque magasin (représentée par la largeur totale de la barre) et la répartition du chiffre d’affaires de chaque magasin pour la première fois par rapport à la répétition.
 
-![](../../assets/blobid4.png)
+![Graphique à barres horizontales empilées présentant le chiffre d’affaires de la première fois et de la répétition par magasin](../../assets/blobid4.png)
 
 Assurez-vous que la case `Multiple Y-Axes` n’est pas cochée lors de la configuration d’un rapport comme ci-dessus.
 
 Pour enregistrer un rapport sous la forme d’un graphique à barres empilées, définissez le `Type` de rapport sur `Chart` et sélectionnez l’option Barres empilées dans Report Builder :
 
-![](../../assets/blobid5.png)
+![Option de visualisation Report Builder avec type de graphique sélectionné et barres empilées mise en surbrillance](../../assets/blobid5.png)
 
 **Conditions requises:**
 
@@ -117,11 +117,11 @@ Les graphiques `Column` représentent chaque point de données sous la forme d�
 
 Dans l’exemple ci-dessous, vous voyez deux mesures de chiffre d’affaires, l’une filtrée pour le premier chiffre d’affaires et l’autre pour le chiffre d’affaires renouvelé, avec une tendance dans le temps par mois :
 
-![](../../assets/blobid6.png)
+![Graphique à colonnes vertical présentant le chiffre d’affaires pour la première fois et répété par mois](../../assets/blobid6.png)
 
 Les rapports à colonnes peuvent être enregistrés en modifiant la `Type` du rapport sur `Chart` et en sélectionnant l’option de visualisation des colonnes :
 
-![](../../assets/blobid7.png)
+![Report Builder avec le type de graphique sélectionné et l’option de visualisation des colonnes mise en surbrillance](../../assets/blobid7.png)
 
 **Conditions requises:**
 
@@ -133,13 +133,13 @@ Les rapports à colonnes peuvent être enregistrés en modifiant la `Type` du ra
 
 En utilisant la même configuration de rapport que celle décrite dans la section `Column` ci-dessus, un rapport avec deux mesures de chiffre d’affaires (filtrées pour la première fois et répétées) ressemblerait à ce qui suit avec une visualisation de colonnes empilées :
 
-![](../../assets/blobid8.png)
+![Graphique à colonnes verticales empilées présentant le chiffre d’affaires pour la première fois et répété par mois](../../assets/blobid8.png)
 
 Là encore, il est important que la case à cocher `Multiple Y-Axes` soit décochée lors de l’affichage de plusieurs mesures avec la visualisation des colonnes empilées.
 
 Pour enregistrer un rapport en tant que colonne empilée, définissez le `Type` de rapport sur `Chart` et sélectionnez l’option `stacked column` :
 
-![](../../assets/blobid9.png)
+![Option de visualisation Report Builder avec type de graphique sélectionné et colonnes empilées mise en surbrillance](../../assets/blobid9.png)
 
 **Conditions requises:**
 
@@ -149,11 +149,11 @@ Pour enregistrer un rapport en tant que colonne empilée, définissez le `Type` 
 
 Les graphiques `Pie` conviennent mieux pour afficher une mesure unique avec un ou plusieurs groupes de garçons ou plusieurs mesures sans groupes de garçons. Dans les deux cas, l’intervalle de temps doit être défini sur aucun pour afficher les données dans un graphique en secteurs. Dans l’exemple ci-dessous, une mesure commandes uniques est Regrouper par nom de magasin pour afficher la répartition des commandes par magasin :
 
-![](../../assets/blobid10.png)
+![Graphique en secteurs montrant la répartition des commandes par nom de magasin](../../assets/blobid10.png)
 
 Pour enregistrer un rapport sous la forme d’un graphique en secteurs, définissez le `Type` de rapport sur `Chart` et sélectionnez l’option `pie` comme illustré ci-dessous :
 
-![](../../assets/blobid11.png)
+![Report Builder avec le type de graphique sélectionné et l’option de visualisation sous forme de graphique en secteurs mise en surbrillance](../../assets/blobid11.png)
 
 **Conditions requises:**
 
@@ -168,11 +168,11 @@ Les graphiques à `Area` sont presque identiques aux graphiques à colonnes empi
 
 En reprenant le même exemple de la section `stacked column` , le rapport ci-dessous montre le premier chiffre d’affaires par rapport au chiffre d’affaires répété avec la visualisation sous forme de graphique en aires :
 
-![](../../assets/blobid12.png)
+![Graphique en aires présentant les tendances des recettes pour la première fois et répétées au fil du temps](../../assets/blobid12.png)
 
 Pour enregistrer un rapport en tant que graphique en aires, définissez la `Type` sur `Chart` et sélectionnez l’option Aires :
 
-![](../../assets/blobid13.png)
+![Report Builder avec le type de graphique sélectionné et l’option de visualisation de graphique en aires mise en surbrillance](../../assets/blobid13.png)
 
 **Conditions requises:**
 
@@ -180,19 +180,19 @@ Pour enregistrer un rapport en tant que graphique en aires, définissez la `Type
 
 ## `Funnel`
 
-Les graphiques `Funnel` sont parfaits pour visualiser la conversion sur une séquence d’événements attendue. Vous pouvez par exemple analyser le chiffre d’affaires potentiel de votre entonnoir de ventes, du prospect à la vente conclue, ou mesurer la baisse des clients entre leur première et leur deuxième commande, leur deuxième et leur troisième commande, etc. Un exemple de ce dernier est illustré ci-dessous :
+Les graphiques `Funnel` sont parfaits pour visualiser la conversion sur une séquence d’événements attendue. Par exemple, l’analyse du chiffre d’affaires potentiel de votre funnel de ventes, du prospect à la vente conclue, ou la mesure de la baisse des clients entre leur première et leur deuxième commande, leur deuxième et leur troisième commande, etc. Un exemple de ce dernier est illustré ci-dessous :
 
-![](../../assets/blobid4.png)
+![Graphique Funnel montrant la conversion des clients sur plusieurs commandes séquentielles](../../assets/blobid4.png)
 
-Dans un rapport d’entonnoir, la valeur relative d’une étape donnée de l’entonnoir est reflétée par la hauteur de l’étape. La configuration du rapport détermine l’ordre d’affichage des étapes. Il existe deux manières de configurer un rapport d’entonnoir :
+Dans un rapport funnel, la valeur relative d’une étape donnée du funnel est reflétée par la hauteur de l’étape. La configuration du rapport détermine l’ordre d’affichage des étapes. Pour configurer un rapport funnel, deux méthodes sont possibles :
 
-* `Single metric with one group by` : - Ordre des étapes déterminé par le paramètre « Afficher le haut/bas » du groupe par. Par défaut, les étapes de l’entonnoir sont affichées dans l’ordre, de la plus grande à la plus petite valeur, mais vous pouvez également les trier par ordre alphabétique par nom de groupe.
+* `Single metric with one group by` : - Ordre des étapes déterminé par le paramètre « Afficher le haut/bas » du groupe par. Par défaut, les étapes de funnel sont affichées dans l’ordre, de la plus grande à la plus petite valeur, mais vous pouvez également les trier par ordre alphabétique par nom de groupe.
 
 * `Multiple metrics with no group by` : ordre des étapes déterminé par l’ordre dans lequel les mesures sont ajoutées au rapport.
 
-Pour enregistrer un rapport sous la forme d’un graphique en entonnoir, définissez le `Type` de rapport sur `Chart` et sélectionnez la visualisation appropriée dans le Report Builder.
+Pour enregistrer un rapport en tant que graphique funnel, définissez le `Type` de rapport sur `Chart` et sélectionnez la visualisation appropriée dans le Report Builder.
 
-![](../../assets/blobid5.png)
+![Report Builder avec le type de graphique sélectionné et l’option de visualisation funnel mise en surbrillance](../../assets/blobid5.png)
 
 **Conditions requises:**
 
@@ -205,13 +205,13 @@ Pour enregistrer un rapport sous la forme d’un graphique en entonnoir, défini
 
 Un `scatter plot` est utilisé pour examiner la relation d’une mesure avec deux variables différentes afin que vous puissiez facilement identifier les corrélations et les valeurs aberrantes. Il est préférable d’utiliser ce type de visualisation uniquement avec les dimensions numériques. Essayez avec la mesure Commandes et les dimensions `Customer's lifetime number of coupons` et `Customer's lifetime revenue` pour voir en quoi l’utilisation des coupons est liée au chiffre d’affaires. Vous pouvez choisir entre un graphique de dispersion avec et sans courbe de tendance :
 
-![](../../assets/scatter-plot-1.png)
+![Graphique de dispersion montrant la corrélation entre les mesures des clients](../../assets/scatter-plot-1.png)
 
-![sans tendance](../../assets/scatter-plot-2.png)
+![Graphique de dispersion sans courbe de tendance montrant la distribution des points de données](../../assets/scatter-plot-2.png)
 
-![](../../assets/scatter-plot-3.png)
+![Graphique de dispersion avec points de données et motif de corrélation](../../assets/scatter-plot-3.png)
 
-![Avec tendance](../../assets/scatter-plot-4.png)
+![Graphique de dispersion avec courbe de tendance montrant la corrélation entre les mesures](../../assets/scatter-plot-4.png)
 
 **Conditions requises:**
 
@@ -233,11 +233,11 @@ Un graphique `bubble` peut afficher jusqu’à quatre dimensions de données où
 
 Par exemple, le graphique suivant montre le nombre de clients (taille de la bulle) regroupés par une source d’acquisition spécifique (couleur de la bulle) et par état (différentes bulles dans une couleur spécifique), par rapport au chiffre d’affaires total et aux commandes sur la durée de vie moyenne.
 
-![](../../assets/bubble-1.png)
+![Graphique à bulles présentant le nombre de clients par source d’acquisition et par état par rapport au chiffre d’affaires et aux commandes](../../assets/bubble-1.png)
 
 Le graphique suivant montre le nombre de clients (taille de la bulle) regroupés par source d’acquisition (couleur de la bulle) et état (différentes bulles dans une couleur spécifique), par rapport à la valeur de durée de vie moyenne et au chiffre d’affaires total.
 
-![](../../assets/bubble-2.png)
+![Graphique à bulles présentant les mesures des clients par source et état d’acquisition](../../assets/bubble-2.png)
 
 **Conditions requises pour le graphique à bulles à série unique :**
 
@@ -265,7 +265,7 @@ Utilisez `heatmaps` pour visualiser les zones réactives dans vos données. Par 
 
 La carte thermique suivante affiche les commandes par jour de la semaine et par heure de la journée, sur plusieurs semaines.
 
-![](../../assets/heat-map.png)<!--{: width="650"}-->
+![Carte thermique indiquant l’intensité de la commande par jour de la semaine et par heure de la journée](../../assets/heat-map.png)<!--{: width="650"}-->
 
 **Conditions requises:**
 

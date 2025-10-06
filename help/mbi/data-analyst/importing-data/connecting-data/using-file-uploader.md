@@ -4,9 +4,9 @@ description: Découvrez comment placer toutes vos données dans un seul Data War
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Utilisez les campagnes publicitaires comme exemple. Si vous exécutez des campag
 ## Restrictions et exigences {#require}
 
 1. **Le seul format pris en charge pour les chargements de fichiers est `CSV` ou`comma separated values`**. Si vous travaillez dans Excel, vous pouvez utiliser la fonction Enregistrer sous pour enregistrer le fichier au format `.csv`.
-1. Les fichiers **`CSV`doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du chargement d’un fichier, [consultez cet article de support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=fr).
+1. Les fichiers **`CSV`doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du chargement d’un fichier, [consultez cet article de support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **La taille des fichiers ne peut pas dépasser 100MB**. Si le fichier est plus volumineux que cette taille, séparez le tableau en blocs et enregistrez-les en tant que fichiers individuels. Vous pouvez ajouter les données après le chargement du fichier initial.
 1. **Toutes les tables doivent avoir un`primary key`**. Il doit y avoir au moins une colonne dans votre tableau qui peut être utilisée comme `primary key`, ou un identifiant unique pour chaque ligne du tableau. Toute colonne désignée comme `primary key` ne peut *jamais* être nulle. Un `primary key` peut être aussi simple que l’ajout d’une colonne qui donne un nombre à chaque ligne, ou peut être constitué de deux colonnes concaténées pour former une colonne de valeurs uniques (par exemple, `campaign name` et `date`).
 
@@ -105,11 +105,11 @@ Un *Succès !* message s’affiche en haut de l’écran une fois le tableau enr
 
 Si vous avez besoin d’un visuel, examinez l’ensemble du processus :
 
-![](../../../assets/fileupload.gif)
+![Démonstration animée du processus de chargement de fichier montrant les données ajoutées](../../../assets/fileupload.gif)
 
 Les tableaux chargés s’affichent sous la section **Chargements de fichiers** de la liste des tableaux (dans les options Toutes les tables et Tables synchronisées) dans le gestionnaire Data Warehouse :
 
-![](../../../assets/upload-tables.png)
+![Interface de chargement de tables affichant les tables disponibles pour l&#39;importation de données](../../../assets/upload-tables.png)
 
 ## Mise à jour ou ajout de données à une table existante {#appending}
 

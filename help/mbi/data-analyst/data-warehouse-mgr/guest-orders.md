@@ -4,9 +4,9 @@ description: Découvrez l'impact des commandes d'invités sur vos données et le
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Dans la base de données commerciale type, il existe une table `orders` qui se j
 
 * **Si tous les clients sont enregistrés** et que les commandes des invités ne sont pas autorisées, cela signifie que chaque enregistrement de la table `orders` a une valeur dans la colonne `customer\_id`. Par conséquent, chaque commande est rattachée à la table `customers`.
 
-  ![](../../assets/guest-orders-4.png)
+  ![Tableau de données des commandes des invités affichant les informations sur le client](../../assets/guest-orders-4.png)
 
 * **Si les commandes de produits invités sont autorisées**, cela signifie que certaines commandes n&#39;ont pas de valeur dans la colonne `customer\_id`. Seuls les clients enregistrés reçoivent une valeur pour la colonne `customer\_id` dans le tableau `orders`. Les clients qui ne sont pas enregistrés reçoivent une valeur `NULL` (ou vide) pour cette colonne. Par conséquent, tous les enregistrements de commande n&#39;ont pas d&#39;enregistrements correspondants dans la table `customers`.
 
@@ -39,7 +39,7 @@ La méthode la plus optimale pour prendre en compte les commandes de produits in
 
 Vous remarquerez peut-être que le filtre `Customers we count` défini dans ce type de configuration comporte un filtre pour les `Customer's order number = 1`.
 
-![](../../assets/guest-orders-filter-set.png)
+![Configuration du jeu de filtres pour exclure les commandes des invités](../../assets/guest-orders-filter-set.png)
 
 Dans une situation sans commandes d’invités, chaque client existe sous la forme d’une ligne unique dans le tableau des clients (voir l’image 1). Une mesure telle que `New customers` peut simplement compter l’identifiant de cette table en fonction de `created\_at` date pour comprendre les nouveaux clients en fonction de la date d’enregistrement.
 

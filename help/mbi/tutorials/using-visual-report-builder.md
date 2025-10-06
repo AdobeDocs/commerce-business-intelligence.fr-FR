@@ -4,9 +4,9 @@ description: Découvrez comment analyser les données de votre rapport pour une 
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ Vous pouvez ajouter des mesures supplémentaires une fois la mesure initiale sé
 
 Supposons que vous souhaitiez créer un rapport qui nous indique le chiffre d’affaires moyen par commande. Dans ce cas, vous divisez la mesure `Revenue` par la mesure `Number of orders`.
 
-![](../assets/ave-rev-per-order.png)
+![Utilisation de Visual Report Builder](../assets/ave-rev-per-order.png)
 
 ## Étape 4 : définition des `Time Period` et des `Interval of Analysis` {#time}
 
 Pour vous concentrer sur une période particulière, vous pouvez définir la période de l’analyse. Vous pouvez également choisir des intervalles de temps pour segmenter les données (par exemple, par année, par trimestre ou par mois). Utilisez les menus situés dans le coin supérieur droit du graphique pour définir la période et l’intervalle.
 
-![](../assets/Time_Options_Report_Builder.png)
+![Utilisation de Visual Report Builder](../assets/Time_Options_Report_Builder.png)
 
 Lors de la définition d’une période spécifique, assurez-vous que la date de début se trouve au début de l’intervalle et la date de fin à la fin.
 
@@ -57,17 +57,17 @@ Vous pouvez choisir `None` pour empêcher la segmentation d’une mesure. Par ex
 
 Revenez à votre exemple de chiffre d’affaires moyen par commande et définissez le Regrouper par sur le code promotion. Vous voyez ici le chiffre d&#39;affaires moyen par commande pour les commandes avec et sans code promotion.
 
-![](../assets/Group_By_Report_Builder.png)
+![Utilisation de Visual Report Builder](../assets/Group_By_Report_Builder.png)
 
 Si les mesures incluses dans l’analyse sont basées sur différents tableaux de données, un pop-up vous permet de sélectionner la dimension de données correspondante dans chaque tableau. L’objectif ici est de trouver des dimensions qui partagent le type de valeurs pour la segmentation :
 
-![](../assets/Dimension_Editor.png)
+![Utilisation de Visual Report Builder](../assets/Dimension_Editor.png)
 
 ## Étape 6 : définition des `Metric Filters`, `Perspective` et `Time Interval` {#metric-specific}
 
-Pour chaque mesure ajoutée à l’analyse, vous pouvez ajouter des filtres, sélectionner la perspective de données appropriée et définir des options de `time interval`. Pour accéder à ces fonctionnalités, cliquez sur les icônes d’entonnoir (`Filter`), d’œil (`Perspective`) et d’horloge (`Time`) situées à côté des mesures incluses dans le rapport.
+Pour chaque mesure ajoutée à l’analyse, vous pouvez ajouter des filtres, sélectionner la perspective de données appropriée et définir des options de `time interval`. Pour accéder à ces fonctionnalités, cliquez sur les icônes funnel (`Filter`), Oeil (`Perspective`) et Horloge (`Time`) situées à côté des mesures incluses dans le rapport.
 
-![](../assets/Filters_Perspective_Interval_Report_builder.png)
+![Utilisation de Visual Report Builder](../assets/Filters_Perspective_Interval_Report_builder.png)
 
 ### `Filters`
 
@@ -83,7 +83,7 @@ L’utilisation de caractères génériques (`%` ou `_`) avec des instructions `
 
 L’ajout de plusieurs filtres permet un contrôle étroit des données du graphique. Par défaut, toutes les conditions de filtrage doivent être vraies pour qu’un élément de données soit inclus, mais vous pouvez créer des relations OU en modifiant la zone de texte Règles de filtrage .
 
-![](../assets/edit-filter-rules.png)
+![Utilisation de Visual Report Builder](../assets/edit-filter-rules.png)
 
 ### `Perspectives`
 
@@ -91,23 +91,23 @@ L’ajout de plusieurs filtres permet un contrôle étroit des données du graph
 
 - `Standard perspective` : la perspective standard affiche le résultat pour la date correspondante sur l’axe X (par exemple, le chiffre d’affaires de janvier). Il s’agit de la perspective que vous utilisez dans votre exemple de chiffre d’affaires moyen par commande.
 
-![](../assets/Standard.png)
+![Utilisation de Visual Report Builder](../assets/Standard.png)
 
 - `Amount` OU `Percent Change` par rapport à `Previous Period` perspective : cette perspective affiche le montant ou le pourcentage de changement d’un intervalle à l’autre et est utile pour mesurer le taux de changement des mesures en rapide évolution. Il est également possible de comparer l’intervalle à la même période l’année dernière pour montrer la croissance d’une année sur l’autre.
 
-![](../assets/Amt_or_Percent_Change.png)
+![Utilisation de Visual Report Builder](../assets/Amt_or_Percent_Change.png)
 
 - `Cumulative perspective` : la `cumulative perspective` affiche le montant cumulé ou en cours de la mesure sur la période. Il est souvent utilisé pour analyser le nombre total de clients et planifier la capacité future.
 
-![](../assets/Cumulative_Perspective.png)
+![Utilisation de Visual Report Builder](../assets/Cumulative_Perspective.png)
 
 - `Percent of First Value perspective` : cette perspective affiche les données sous la forme d’un pourcentage du premier intervalle inclus dans l’analyse. Cela s’avère utile pour mesurer l’efficacité d’actions spécifiques par rapport à la performance de la première période.
 
-![](../assets/Percent_of_First_Value.png)
+![Utilisation de Visual Report Builder](../assets/Percent_of_First_Value.png)
 
 - `Rolling averages window perspective` : la fenêtre des moyennes flottantes en perspective affiche la valeur de moyenne flottante d’une mesure sur la période spécifiée. L’intervalle doit être identique à celui défini au niveau du rapport. Par exemple, si l&#39;état affiche le dernier trimestre complet de revenus par semaine, vous pouvez définir la période de fenêtre moyenne glissante sur quatre semaines. Ainsi, les trois premières valeurs sont nulles et la quatrième valeur représente la moyenne des quatre premières semaines de revenus. Pour plus de clarté, veillez à désactiver la case à cocher `Multiple Y-Axes` si vous affichez la même mesure avec une moyenne glissante, comme dans l’exemple ci-dessous.
 
-![](../assets/rolling_avg_window.png)
+![Utilisation de Visual Report Builder](../assets/rolling_avg_window.png)
 
 ### Options de temps spécifiques aux mesures
 
@@ -131,7 +131,7 @@ Vous pouvez choisir d’enregistrer un graphique, un tableau ou un nombre (`scal
 
 Vous pouvez ensuite enregistrer le rapport en cliquant sur **[!UICONTROL Save to Dashboard]**.
 
-![](../assets/save-to-dashboard.png)
+![Utilisation de Visual Report Builder](../assets/save-to-dashboard.png)
 
 ## Sorties de rapport
 
@@ -139,14 +139,14 @@ Pour vous aider à choisir la sortie de rapport à sélectionner, reportez-vous 
 
 ### Graphique
 
-![](../assets/RB_Chart.png)
+![Utilisation de Visual Report Builder](../assets/RB_Chart.png)
 
 ### Tableau
 
-![](../assets/RB_Table.png)
+![Utilisation de Visual Report Builder](../assets/RB_Table.png)
 
 ### Nombre (`scalar`)
 
-![](../assets/RB_Scalar.png)
+![Utilisation de Visual Report Builder](../assets/RB_Scalar.png)
 
 Félicitations ! Vous avez terminé.

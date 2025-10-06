@@ -4,9 +4,9 @@ description: Découvrez comment utiliser vos données de rapport.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Il est temps d&#39;établir une liste d&#39;analyses et de mesures possibles pou
 
 * Durée moyenne depuis l&#39;enregistrement jusqu&#39;à la première date d&#39;achat par utilisation.
 
-Il révèle le temps moyen écoulé entre la date d’enregistrement et la première date d’achat des utilisateurs et donne une idée du comportement des utilisateurs à cette dernière étape de l’entonnoir de conversion.
+Il révèle le temps moyen écoulé entre la date d’enregistrement et la première date d’achat des utilisateurs et donne une idée du comportement des utilisateurs à cette dernière étape du funnel de conversion.
 
 ## Recherche des données
 
@@ -128,4 +128,4 @@ Vous souhaitez inclure un rapport dans une présentation ou un document ? Tout r
 
 Voir ci-dessous :
 
-![](../../assets/exp-rep-as-image.gif)
+![Démonstration animée de l&#39;export d&#39;un rapport sous forme de fichier image](../../assets/exp-rep-as-image.gif)
