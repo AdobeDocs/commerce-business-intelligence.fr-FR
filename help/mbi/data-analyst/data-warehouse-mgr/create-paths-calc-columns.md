@@ -26,7 +26,7 @@ Si vous connaissez ces informations, vous pouvez facilement créer un chemin d�
 
 ### Relations entre les tables {#relationships}
 
-Ce concept est traité dans l’article [ Comprendre et évaluer les relations entre les tables ](../../data-analyst/data-warehouse-mgr/table-relationships.md), mais un résumé rapide ne fait de mal à personne, n’est-ce pas ?
+Ce concept est traité dans l’article [&#x200B; Comprendre et évaluer les relations entre les tables &#x200B;](../../data-analyst/data-warehouse-mgr/table-relationships.md), mais un résumé rapide ne fait de mal à personne, n’est-ce pas ?
 
 Les tables peuvent être liées les unes aux autres de trois manières :
 

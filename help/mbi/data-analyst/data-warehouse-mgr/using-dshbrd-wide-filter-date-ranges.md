@@ -43,7 +43,7 @@ Lorsque vous spécifiez un filtre de date pour un tableau de bord, ce filtre est
 
 ## Stocker les filtres
 
-Pour analyser les performances d’un magasin spécifique, cliquez sur l’icône de magasins dans le coin supérieur droit (![ Filtre de magasin ](../../assets/store-filter.png)). Par défaut, `Store Filter` est défini sur `All Stores`, ce qui affiche les données de toutes les [ vues de magasin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=fr) disponibles sur votre site Commerce.
+Pour analyser les performances d’un magasin spécifique, cliquez sur l’icône de magasins dans le coin supérieur droit (![&#x200B; Filtre de magasin &#x200B;](../../assets/store-filter.png)). Par défaut, `Store Filter` est défini sur `All Stores`, ce qui affiche les données de toutes les [&#x200B; vues de magasin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=fr) disponibles sur votre site Commerce.
 
 >[!NOTE]
 >

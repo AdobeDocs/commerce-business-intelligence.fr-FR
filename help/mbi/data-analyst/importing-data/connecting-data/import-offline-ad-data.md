@@ -19,7 +19,7 @@ Le chargement de vos données de dépenses publicitaires vous permet de mesurer 
 
 La première étape de l’analyse et de la dépense des données consiste à obtenir les données. Comme la plupart des plateformes publicitaires permettent d’exporter des rapports, Adobe vous recommande d’exporter les données brutes de votre plateforme publicitaire et de les charger directement dans [!DNL Commerce Intelligence] sans aucune manipulation. Vous pouvez effectuer des opérations sur les données dans votre Data Warehouse, il n’est donc pas nécessaire de doubler d’efforts.
 
-Une fois que vous avez exporté les données relatives aux dépenses publicitaires, utilisez la fonction [`File Upload` ](../connecting-data/using-file-uploader.md) pour importer les données dans votre Data Warehouse. Vous pouvez charger de nouvelles données dans la même table de [!DNL Commerce Intelligence] au fil du temps.
+Une fois que vous avez exporté les données relatives aux dépenses publicitaires, utilisez la fonction [`File Upload` &#x200B;](../connecting-data/using-file-uploader.md) pour importer les données dans votre Data Warehouse. Vous pouvez charger de nouvelles données dans la même table de [!DNL Commerce Intelligence] au fil du temps.
 
 ## Sources hors ligne
 

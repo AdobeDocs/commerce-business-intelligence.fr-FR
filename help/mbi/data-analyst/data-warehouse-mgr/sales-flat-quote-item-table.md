@@ -72,7 +72,7 @@ La table `quote_item` (`sales_flat_quote_item` sur M1) contient des enregistreme
 
 `quote_item`
 
-* Rejoignez les `quote_item` pour créer des colonnes qui associent les détails du SKU parent configurable ou groupé au produit simple. [Contactez l’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l’aide sur la configuration de ces calculs, si vous créez dans le gestionnaire Data Warehouse.
+* Rejoignez les `quote_item` pour créer des colonnes qui associent les détails du SKU parent configurable ou groupé au produit simple. [Contactez l’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l’aide sur la configuration de ces calculs, si vous créez dans le gestionnaire Data Warehouse.
    * Chemin : `quote_item.parent_item_id` (plusieurs) => `quote_item.item_id` (un)
 
 `store`

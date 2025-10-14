@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Pour importer vos données [!DNL Linkshare] dans [!DNL Adobe Commerce Intelligence], vous devez effectuer deux opérations :
 
-1. [Exporter les données Linkshare dans ](#export)
+1. [Exporter les données Linkshare dans &#x200B;](#export)
 1. [Chargez la feuille de calcul dans  [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Exporter des données depuis Linkshare {#export}

@@ -33,13 +33,13 @@ Le tableau de bord `cohort analysis` comprend un ensemble de graphiques qui mont
 
 Ce tableau de bord peut également inclure des graphiques de cohortes qui analysent le chiffre d’affaires total des utilisateurs d’une source d’acquisition, d’un canal ou d’une population spécifique (par exemple, New York ou la Californie). L&#39;objectif est de montrer comment vous pouvez analyser le LTV pour des segments spécifiques de votre base d&#39;utilisateurs et voir si un groupe ou un autre produit un LTV plus élevé au fil du temps.
 
-Pour plus d’informations sur les cohortes, voir [ Exécution d’une analyse des cohortes ](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+Pour plus d’informations sur les cohortes, voir [&#x200B; Exécution d’une analyse des cohortes &#x200B;](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
 Si vous ne suivez actuellement pas la source d’acquisition des utilisateurs, reportez-vous à la section [Présentation des données Source de suivi d’acquisition des utilisateurs](../../data-analyst/analysis/google-track-user-acq.md).
 
 ## Résumé des e-mails
 
-Le tableau de bord `Email Summary` comprend un exemple d’ensemble de graphiques qui peuvent être utilisés dans un résumé automatisé d’e-mail quotidien. Pour plus d’informations sur la configuration des résumés d’e-mails[ voir ](../../data-user/export-data/email-summaries.md)création de résumés d’e-mail automatisés.  
+Le tableau de bord `Email Summary` comprend un exemple d’ensemble de graphiques qui peuvent être utilisés dans un résumé automatisé d’e-mail quotidien. Pour plus d’informations sur la configuration des résumés d’e-mails[&#x200B; voir &#x200B;](../../data-user/export-data/email-summaries.md)création de résumés d’e-mail automatisés.  
 
 ## Intégrité de la rétention
 

@@ -48,6 +48,6 @@ Grâce à ces nouvelles informations, vous pouvez mieux comprendre comment les u
 * [Suivre la source de référence des commandes via [!DNL Google Anaytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
 * [Suivre la source de référence des utilisateurs dans votre base de données](../analysis/google-track-user-acq.md)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../analysis/most-value-source-channel.md)
-* [Connecter votre  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Connecter votre  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Augmenter le retour sur investissement de vos campagnes publicitaires](../analysis/roi-ad-camp.md)
 * [Comment fonctionne  [!DNL Google Analytics] ’attribution UTM ?](../analysis/utm-attributes.md)

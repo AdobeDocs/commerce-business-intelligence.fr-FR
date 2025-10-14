@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Après avoir [connecté votre [!DNL Spree] boutique](../../../data-analyst/importing-data/integrations/spree.md), vous pouvez utiliser [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents de votre plateforme [!DNL Spree] à des fins d’analyse.
 
-Cette rubrique explore les principaux tableaux de données que vous pouvez importer depuis [!DNL Spree] dans votre compte [!DNL Commerce Intelligence], y compris des liens vers [ documentation supplémentaire ](https://guides.spreecommerce.org/developer/addresses.html#address) sur les données [!DNL Spree].
+Cette rubrique explore les principaux tableaux de données que vous pouvez importer depuis [!DNL Spree] dans votre compte [!DNL Commerce Intelligence], y compris des liens vers [&#x200B; documentation supplémentaire &#x200B;](https://guides.spreecommerce.org/developer/addresses.html#address) sur les données [!DNL Spree].
 
 | **Nom de la table** | **Description** |
 |-----|-----|

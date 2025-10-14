@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Pour connecter votre base de données [!DNL PostgreSQL] à [!DNL Commerce Intelligence] via un `SSH tunnel`, procédez comme suit :
 
-1. [Récupération de la clé  [!DNL Commerce Intelligence] ](#retrieve)
-1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] ](#allowlist)
+1. [Récupération de la clé  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
+1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
 1. [Créez un  [!DNL Linux]  pour  [!DNL Commerce Intelligence]](#linux)
 1. [Créez un  [!DNL PostgreSQL]  pour  [!DNL Commerce Intelligence]](#postgres)
 1. [Saisissez les informations de connexion et d’utilisateur dans  [!DNL Commerce Intelligence]](#finish)

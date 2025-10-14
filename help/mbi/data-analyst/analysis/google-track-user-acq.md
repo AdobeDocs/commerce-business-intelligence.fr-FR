@@ -91,7 +91,7 @@ C&#39;est intéressant, mais d&#39;une utilité limitée. Ce que vous souhaitez 
 
 * Le taux de croissance de ces chiffres au fil du temps
 * Le montant des revenus générés par chaque source d&#39;acquisition
-* Une [ analyse des cohortes ](https://en.wikipedia.org/wiki/Cohort_analysis) utilisateurs provenant de chaque source
+* Une [&#x200B; analyse des cohortes &#x200B;](https://en.wikipedia.org/wiki/Cohort_analysis) utilisateurs provenant de chaque source
 * Probabilité qu’un utilisateur de l’un de ces canaux revienne en tant que client à l’avenir
 
 Les requêtes nécessaires à ces analyses sont complexes. Avec ces informations, vous pouvez déterminer vos canaux d’acquisition les plus rentables et concentrer le temps et l’argent marketing en conséquence.

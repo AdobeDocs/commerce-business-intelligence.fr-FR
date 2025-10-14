@@ -75,4 +75,4 @@ Pour obtenir une vue d’ensemble complète de vos efforts de campagne, vous pou
 
 Chaque fichier (`Opens`, `Clicks` et `Sent`) doit être téléchargé vers [!DNL Commerce Intelligence] en tant que fichier distinct. Adobe vous recommande de nommer les fichiers à l’aide de la convention de nommage suivante : `MailChimp\_ACTION\_DATE`. Remplacez `ACTION` par `Open`, `Click` ou `Sent`, puis remplacez `DATE` par la date d’exportation.
 
-Lorsque vous êtes prêt à charger les fichiers, utilisez la fonction [`File Upload` pour ](../connecting-data/using-file-uploader.md) les données dans votre Data Warehouse.
+Lorsque vous êtes prêt à charger les fichiers, utilisez la fonction [`File Upload` pour &#x200B;](../connecting-data/using-file-uploader.md) les données dans votre Data Warehouse.

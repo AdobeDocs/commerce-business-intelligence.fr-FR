@@ -84,7 +84,7 @@ Il est donc possible de générer des rapports sur les ventes de produits soit a
 
 `sales_order_item`
 
-* Rejoignez les `sales_order_item` pour créer des colonnes qui associent les détails du SKU parent configurable ou groupé au produit simple. [Contactez l’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l’aide sur la configuration de ces calculs, si vous créez dans le gestionnaire Data Warehouse.
+* Rejoignez les `sales_order_item` pour créer des colonnes qui associent les détails du SKU parent configurable ou groupé au produit simple. [Contactez l’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l’aide sur la configuration de ces calculs, si vous créez dans le gestionnaire Data Warehouse.
    * Chemin : `sales_order_item.parent_item_id` (plusieurs) => `sales_order_item.item_id` (un)
 
 `store`
