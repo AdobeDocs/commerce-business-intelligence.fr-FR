@@ -88,7 +88,7 @@ Cette table permet de gérer les informations relatives à votre abonnement, tel
 
 ## Tableau des dépenses marketing
 
-Lors de l’analyse de vos dépenses marketing, vous pouvez inclure des [!DNL Facebook], des [!DNL Google AdWords] ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez l’équipe [Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
+Lors de l’analyse de vos dépenses marketing, vous pouvez inclure des [!DNL Facebook], des [!DNL Google AdWords] ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez l’équipe [Managed Services](https://business.adobe.com/fr/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
 
 **Dimensions**
 

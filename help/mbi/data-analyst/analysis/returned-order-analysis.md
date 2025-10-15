@@ -17,7 +17,7 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit une an
 
 ![Tableau de bord détaillé des retours indiquant les taux de retour et les raisons](../../assets/detailed-returns-dboard.png)
 
-Avant de commencer, vous devez être un client [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) et vous assurer que votre société utilise la table `enterprise\_rma` pour les retours.
+Avant de commencer, vous devez être un client [Adobe Commerce](https://business.adobe.com/fr/products/magento/magento-commerce.html) et vous assurer que votre société utilise la table `enterprise\_rma` pour les retours.
 
 Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 

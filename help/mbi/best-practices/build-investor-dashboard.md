@@ -64,7 +64,7 @@ Avec une intégration [!DNL Google Analytics], vous pouvez inclure des rapports 
 * Visites de site
 * Taux de conversion
 
-Avec les [services d’enrichissement des données de Commerce](https://business.adobe.com/products/magento/magento-commerce.html), vous pouvez inclure des rapports sur :
+Avec les [services d’enrichissement des données de Commerce](https://business.adobe.com/fr/products/magento/magento-commerce.html), vous pouvez inclure des rapports sur :
 
 * Clients uniques par état/région, âge, sexe.
 
