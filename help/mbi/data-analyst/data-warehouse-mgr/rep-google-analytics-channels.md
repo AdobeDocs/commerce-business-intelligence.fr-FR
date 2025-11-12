@@ -4,9 +4,9 @@ description: Découvrez comment répliquer des canaux Google Analytics à l’ai
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Par défaut, [!DNL Google] configure huit canaux différents. Les règles qui d�
 | Recherche organique | Trafic classé de manière organique dans les moteurs de recherche non payants. | MEDIUM = `organic` |
 | Référence | Trafic provenant d’un lien externe qui n’est pas une recherche organique ou de sites web qui ne sont pas des réseaux sociaux. | MEDIUM = `referral` |
 | Référencement Payant | Trafic dont le code de suivi UTM indique que le média est « cpc », « ppc » ou « paidsearch » ET qui est un réseau de distribution publicitaire qui ne correspond pas à « Content ». | Medium = `^(cpc|ppc|paidsearch)$`<br>AND Ad Distribution Network ≠ `Content` |
-| Social | Trafic de référence provenant de l’un des quelque 400 réseaux sociaux [&#128279;](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) et qui n’est pas balisé en tant que publicité. | Référencement vers Social Source = `Yes`<br>OU Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| Social | Trafic de référence provenant de l’un des quelque 400 réseaux sociaux [](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) et qui n’est pas balisé en tant que publicité. | Référencement vers Social Source = `Yes`<br>OU Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
 | E-mail | Trafic des sessions balisées avec le support « e-mail ». | Code de suivi UTM de Medium = `email` |
 | Affichage | Trafic comportant un code de suivi UTM sur lequel le support est display ou cpm. Inclut également les interactions AdWords où le réseau de distribution publicitaire correspond au « Contenu » | Medium = `^(display|cpm|banner)$`<br>OU réseau de distribution publicitaire = `Content`<br>ET format publicitaire ≠ `Text` |
 | Autres frais | Sessions d’autres canaux publicitaires (sans inclure le référencement payant) balisés avec un support de type « cpc », « ppc », « cpm », « cpv », « cpa », « cpp », « affiliate ». | MEDIUM = `^(cpv|cpa|cpp|content-text)$` |
@@ -46,7 +46,7 @@ Maintenant que vous savez que les canaux ne sont que des combinaisons de sources
 
 1. **Activer votre[!DNL Google ECommerce]intégration**
 
-   [Une fois activé](../importing-data/integrations/google-ecommerce.md), veillez à [synchroniser]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) les champs **medium** et **source** dans votre Data Warehouse. Une fois cette opération terminée, les données d’acquisition moyennes et sources sont importées dans votre Data Warehouse.
+   [Lorsque cette option est activée](../importing-data/integrations/google-ecommerce.md), veillez à [synchroniser](tour-dwm.md#syncing) les champs **moyen** et **source** dans votre Data Warehouse. Une fois cette opération terminée, les données d’acquisition moyennes et sources sont importées dans votre Data Warehouse.
 
 1. **Charger un mappage des regroupements de canaux Google**
 
