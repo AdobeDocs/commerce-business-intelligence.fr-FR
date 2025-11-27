@@ -4,9 +4,9 @@ description: Découvrez ce qu’est une cohorte qualitative, pourquoi vous pourr
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,6 @@ Cette rubrique aborde ce qu’est une cohorte qualitative, pourquoi vous pourrie
 ## Qu&#39;est-ce qu&#39;`qualitative cohorts` ? {#whatare}
 
 L’analyse des `Cohort` en général peut être définie de manière large comme l’analyse de groupes d’utilisateurs qui partagent des caractéristiques similaires tout au long de leur cycle de vie. Il vous permet d’identifier les tendances comportementales parmi différents groupes d’utilisateurs.
-
-Voir [&#x200B; Analyse des cohortes &#x200B;](https://www.cohortanalysis.com/).
 
 La plupart des analyses `cohort` dans [!DNL Commerce Intelligence] regroupent les utilisateurs par une date commune (par exemple, l’ensemble de tous les clients qui ont effectué leur premier achat au cours d’un mois donné). Un `qualitative cohort` est un peu différent : il s’agit d’un groupe d’utilisateurs et d’utilisatrices défini par une caractéristique qui n’est pas temporelle. Voici quelques exemples :
 
@@ -39,7 +37,7 @@ Cependant, si vous souhaitez analyser le comportement de cohorte de plusieurs se
 
 La création d’un rapport `qualitative cohort` dans le `Report Builder` implique la création par l’équipe d’analystes d’Adobe de [colonnes calculées avancées](../data-warehouse-mgr/creating-calculated-columns.md) dans les tables nécessaires.
 
-Pour les créer, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) (et consultez cet article !). Voici ce que vous devez savoir :
+Pour les créer, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (et consultez cet article !). Voici ce que vous devez savoir :
 
 * Le `metric` avec lequel vous souhaitez effectuer votre analyse des cohortes et le tableau qu’il utilise (exemple : `Revenue`, basé sur le tableau `orders`).
 

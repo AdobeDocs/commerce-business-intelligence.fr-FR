@@ -4,9 +4,9 @@ description: Découvrez l’analyse des groupes d’utilisateurs qui partagent d
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ Avez-vous déjà voulu étudier le comportement des différents sous-ensembles d
 ## Qu’est-ce que l’analyse des cohortes ? {#what}
 
 L’analyse des `Cohort` peut être définie de manière large comme l’analyse de groupes d’utilisateurs qui partagent des caractéristiques similaires tout au long de leur cycle de vie. Il vous permet d’identifier les tendances comportementales parmi différents groupes d’utilisateurs.
-
-Pour une introduction détaillée sur l’analyse des `cohort`, consultez [cette page](https://www.cohortanalysis.com/).
 
 Dans votre tableau de bord [!DNL Commerce Intelligence], il est facile de créer des `cohorts` utilisateur en fonction d’une date de `cohort` et d’une mesure dans votre compte.
 
@@ -167,7 +165,7 @@ Après avoir défini la mesure et la manière dont vous souhaitez l’analyser, 
 
 Juste au-dessus de la visualisation du rapport se trouve une liste déroulante des paramètres de `perspective`.
 
-Voir [&#x200B; Perspectives &#x200B;](#perspectives).
+Voir [ Perspectives ](#perspectives).
 
 ![Menu Cohorte en perspective présentant différentes options d’affichage](../../assets/Cohort_Perspective_Menu.png)
 

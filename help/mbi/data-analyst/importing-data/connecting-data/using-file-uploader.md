@@ -4,9 +4,9 @@ description: Découvrez comment placer toutes vos données dans un seul Data War
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Utilisez les campagnes publicitaires comme exemple. Si vous exécutez des campag
 ## Restrictions et exigences {#require}
 
 1. **Le seul format pris en charge pour les chargements de fichiers est `CSV` ou`comma separated values`**. Si vous travaillez dans Excel, vous pouvez utiliser la fonction Enregistrer sous pour enregistrer le fichier au format `.csv`.
-1. Les fichiers **`CSV`doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du chargement d’un fichier, [consultez cet article de support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=fr).
+1. Les fichiers **`CSV`doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du chargement d’un fichier, [consultez cet article de support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **La taille des fichiers ne peut pas dépasser 100MB**. Si le fichier est plus volumineux que cette taille, séparez le tableau en blocs et enregistrez-les en tant que fichiers individuels. Vous pouvez ajouter les données après le chargement du fichier initial.
 1. **Toutes les tables doivent avoir un`primary key`**. Il doit y avoir au moins une colonne dans votre tableau qui peut être utilisée comme `primary key`, ou un identifiant unique pour chaque ligne du tableau. Toute colonne désignée comme `primary key` ne peut *jamais* être nulle. Un `primary key` peut être aussi simple que l’ajout d’une colonne qui donne un nombre à chaque ligne, ou peut être constitué de deux colonnes concaténées pour former une colonne de valeurs uniques (par exemple, `campaign name` et `date`).
 
@@ -73,7 +73,7 @@ Certaines valeurs de votre fichier, telles que les codes postaux et les identifi
 
 Utilisez `US ZIP codes` comme exemple de modification de la mise en forme des nombres. Dans [!DNL Excel], mettez en surbrillance la colonne contenant `ZIP codes` et [modifiez le format des nombres](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) en `ZIP code`. Vous pouvez également sélectionner un format de nombre personnalisé, puis saisir des `Type` dans la fenêtre `00000`. Gardez à l&#39;esprit que cette méthode peut présenter des problèmes si certains codes sont formatés en `00000` et d&#39;autres en `00000-0000`.
 
-Le `Type` peut être [&#x200B; formaté différemment pour s’adapter à d’autres types de données](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us) tels que les identifiants. Si un `ID` comporte neuf chiffres, par exemple, le `Type` peut être `000000000` ou `000-000-000`. Cela changerait `123456` en `000-123-456`.
+Le `Type` peut être [ formaté différemment pour s’adapter à d’autres types de données](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us) tels que les identifiants. Si un `ID` comporte neuf chiffres, par exemple, le `Type` peut être `000000000` ou `000-000-000`. Cela changerait `123456` en `000-123-456`.
 
 Pour obtenir des ressources [!DNL Google Docs] et [!DNL Apple Numbers], reportez-vous à la liste [connexes](#related) au bas de cette page.
 
@@ -151,7 +151,6 @@ En outre, le téléchargement de fichiers n’est pas le seul moyen d’importer
 * [Importation de données hors ligne/autres données de dépenses publicitaires](../connecting-data/import-offline-ad-data.md)
 * [Données attendues[!DNL Google ECommerce]](../integrations/google-ecommerce-data.md)
 
-## Ressources Tierces
+## Ressource tierce
 
-* [Guide de formatage des données numériques](http://www.dummies.com/how-to/content/how-to-choose-a-number-format-in-your-numbers-spre.html)
-* [[!DNL Google Docs]  Guide de formatage des données &#x200B;](https://support.google.com/docs/answer/56470?hl=en)
+* [[!DNL Google Docs]  Guide de formatage des données ](https://support.google.com/docs/answer/56470?hl=en)

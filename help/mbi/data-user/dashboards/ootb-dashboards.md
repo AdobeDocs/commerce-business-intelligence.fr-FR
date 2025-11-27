@@ -4,9 +4,9 @@ description: Découvrez comment vérifier l’intégrité des mesures essentiell
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >La disponibilité de certains tableaux de bord dépend de votre jeu de données.
 
-Si vous avez des questions ou si vous souhaitez ajouter un package à votre compte, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l’aide.
+Si vous avez des questions ou si vous souhaitez ajouter un package à votre compte, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour obtenir de l’aide.
 
 ## Présentation opérationnelle
 
@@ -33,19 +33,19 @@ Le tableau de bord `cohort analysis` comprend un ensemble de graphiques qui mont
 
 Ce tableau de bord peut également inclure des graphiques de cohortes qui analysent le chiffre d’affaires total des utilisateurs d’une source d’acquisition, d’un canal ou d’une population spécifique (par exemple, New York ou la Californie). L&#39;objectif est de montrer comment vous pouvez analyser le LTV pour des segments spécifiques de votre base d&#39;utilisateurs et voir si un groupe ou un autre produit un LTV plus élevé au fil du temps.
 
-Pour plus d’informations sur les cohortes, voir [&#x200B; Exécution d’une analyse des cohortes &#x200B;](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+Pour plus d’informations sur les cohortes, voir [ Exécution d’une analyse des cohortes ](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
 Si vous ne suivez actuellement pas la source d’acquisition des utilisateurs, reportez-vous à la section [Présentation des données Source de suivi d’acquisition des utilisateurs](../../data-analyst/analysis/google-track-user-acq.md).
 
 ## Résumé des e-mails
 
-Le tableau de bord `Email Summary` comprend un exemple d’ensemble de graphiques qui peuvent être utilisés dans un résumé automatisé d’e-mail quotidien. Pour plus d’informations sur la configuration des résumés d’e-mails[&#x200B; voir &#x200B;](../../data-user/export-data/email-summaries.md)création de résumés d’e-mail automatisés.  
+Le tableau de bord `Email Summary` comprend un exemple d’ensemble de graphiques qui peuvent être utilisés dans un résumé automatisé d’e-mail quotidien. Pour plus d’informations sur la configuration des résumés d’e-mails[ voir ](../../data-user/export-data/email-summaries.md)création de résumés d’e-mail automatisés.  
 
 ## Intégrité de la rétention
 
 Le tableau de bord `Retention health` révèle le comportement d’achat répété de votre base d’utilisateurs.
 
-Le graphique `Time between orders` indique le temps écoulé moyen et/ou médian entre le premier et le deuxième ordre, le deuxième et le troisième ordre d’un utilisateur, etc. Vous pouvez [utiliser ces données pour configurer vos campagnes marketing par e-mail](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
+Le graphique `Time between orders` indique le temps écoulé moyen et/ou médian entre le premier et le deuxième ordre, le deuxième et le troisième ordre d’un utilisateur, etc. Vous pouvez envisager d’utiliser ces données pour configurer vos campagnes marketing par e-mail.
 
 Le graphique `Users by lifetime number of orders` répertorie le nombre total d’utilisateurs pour chaque nombre de commandes au cours de la durée de vie afin de fournir une vue d’ensemble du comportement d’achat répété.  
 
@@ -89,7 +89,7 @@ Le tableau de bord `Users to target` comprend des graphiques sous forme de table
 
 * Liste des principaux dépensiers qui ont été actifs au cours des `X` derniers jours (que vous pourriez vouloir récompenser)
 
-À l’aide de vos outils d’exportation de données, il est facile de [créer des listes d’e-mails d’utilisateurs ayant un comportement d’achat similaire pour le marketing cible](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
+Vous pouvez utiliser vos outils d’exportation de données pour créer des listes d’adresses électroniques d’utilisateurs ayant un comportement d’achat similaire pour le marketing cible.
 
 ## Activité utilisateur
 
@@ -97,4 +97,4 @@ Le tableau de bord `User activity` comprend des graphiques qui segmentent les ut
 
 Le graphique `% of cohort members who have purchased` est utile, car il indique le taux de conversion (de 0 à 1) des utilisateurs en fonction du moment où ils s’enregistrent (chaque ligne représente une cohorte d’utilisateurs). Il indique également quand ils effectuent leur premier achat (par exemple, au mois 1, 2, 3... après l’enregistrement). Cela peut vous montrer que 10 % des utilisateurs ont été activés au mois 1, tandis que ce nombre augmente au mois 2, 3, 4... et peut se stabiliser ultérieurement.
 
-En règle générale, les lignes de ce graphique deviennent horizontales au bout d’un certain temps. Cela indique que peu de membres de la cohorte supplémentaires effectuent une conversion organique après ce moment - la plupart des utilisateurs qui vont effectuer un achat l’ont déjà fait. À ce stade, il est très peu probable que ces membres convertissent leurs actions en acheteurs sans intervention. [Les contacter avec des promotions personnalisées ou des e-mails ciblés est un moyen à faible risque de démarrer la conversion de cette population.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+En règle générale, les lignes de ce graphique deviennent horizontales au bout d’un certain temps. Cela indique que peu de membres de la cohorte supplémentaires effectuent une conversion organique après ce moment - la plupart des utilisateurs qui vont effectuer un achat l’ont déjà fait. À ce stade, il est très peu probable que ces membres convertissent leurs actions en acheteurs sans intervention. Les contacter avec des promotions personnalisées ou des e-mails ciblés est un moyen à faible risque de démarrer la conversion de cette population.
