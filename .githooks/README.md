@@ -1,7 +1,7 @@
 ---
-source-git-commit: 199353c57dd1ca316c2a8b76fee1148d0e342299
+source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Ce répertoire contient des hooks de prévalidation qui optimisent automatiqueme
 
 ## Ce que font les crochets
 
-- **Détection automatique** fichiers image intermédiaires (PNG, JPG, JPEG, GIF, SVG)
+- **Détection automatique** fichiers image intermédiaires (PNG, JPG, JPEG, GIF)
 - **Exécuter des`image_optim`** pour compresser et optimiser les images
 - **Réorganiser automatiquement les images optimisées**
 - **Vérifiez que toutes les images validées** sont correctement optimisées.
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Instructions relatives aux images
 
 - **PNG** : à utiliser pour les captures d’écran et les éléments d’interface utilisateur (sera optimisé automatiquement)
-- **SVG** : à utiliser pour les icônes et les graphiques simples (optimisation désactivée par défaut)
+- **SVG** : à utiliser pour les icônes et les graphiques simples (non optimisés automatiquement par le hook de pré-validation)
 - **JPEG** : utiliser pour les photos (sera optimisé automatiquement)
 - **GIF** : à utiliser pour les animations (sera optimisé automatiquement)
 
-Les hooks de pré-validation optimisent automatiquement toutes les images lors de la validation.
+Les hooks de prévalidation optimisent automatiquement les images PNG, JPEG et GIF lors de la validation.
 
 ## Optimisation manuelle
 
@@ -138,10 +138,13 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 
 ## Formats d’image pris en charge
 
+Le hook de pré-validation traite automatiquement :
+
 - **PNG** (`.png`) - Compression sans perte et avec perte
 - **JPEG** (`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
 - **GIF** (`.gif`) - Animation et optimisation statique
-- **SVG** (`.svg`) - Optimisation vectorielle (désactivée par défaut)
+
+**Remarque** : l’optimisation du SVG est désactivée par défaut (peut rompre les graphiques vectoriels et les animations complexes). Les fichiers SVG ne sont pas automatiquement traités par le hook de pré-validation.
 
 ## Bonnes pratiques
 
