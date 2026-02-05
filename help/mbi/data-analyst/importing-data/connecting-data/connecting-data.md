@@ -66,7 +66,7 @@ Pour en savoir plus sur la prise en main du `Import API`, consultez le [site des
 Pour ajouter une intégration, cliquez sur **[!UICONTROL Manage Data** > **Connections]**, puis sur **[!UICONTROL Add a New Data Source]**. Cliquez sur l’icône de l’intégration à ajouter et suivez les instructions des rubriques d’aide pour configurer les éléments suivants :
 
 * [FAQ sur l’intégration](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Available ](../integrations/integrations.md)
+* [Available &#x200B;](../integrations/integrations.md)
 * [Consolidation des tables](../../../best-practices/consolidating-your-tables.md)
 * [Limitation de l&#39;accès à votre base de données](../../../administrator/account-management/restrict-db-access.md)
 
@@ -76,4 +76,4 @@ Pour ajouter une intégration, cliquez sur **[!UICONTROL Manage Data** > **Conne
 
 ## Surveiller l’intégrité de la mise à jour (facultatif)
 
-Une fois les sources connectées, vous pouvez automatiser un contrôle d’intégrité de base pour confirmer que les mises à jour complètes sont terminées. Utilisez l’API [ Update Cycle Status ](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) dans la documentation destinée aux développeurs pour récupérer le cycle de mise à jour terminé le plus récent pour votre client et l’afficher dans des tableaux de bord internes ou des alertes.
+Une fois les sources connectées, vous pouvez automatiser un contrôle d’intégrité de base pour confirmer que les mises à jour complètes sont terminées. Utilisez l’API [&#x200B; Update Cycle Status &#x200B;](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) dans la documentation destinée aux développeurs pour récupérer le cycle de mise à jour terminé le plus récent pour votre client et l’afficher dans des tableaux de bord internes ou des alertes.
