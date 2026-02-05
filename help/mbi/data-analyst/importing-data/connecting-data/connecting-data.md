@@ -4,9 +4,9 @@ description: Découvrez comment parcourir les tables disponibles pour synchronis
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,14 @@ Pour en savoir plus sur la prise en main du `Import API`, consultez le [site des
 Pour ajouter une intégration, cliquez sur **[!UICONTROL Manage Data** > **Connections]**, puis sur **[!UICONTROL Add a New Data Source]**. Cliquez sur l’icône de l’intégration à ajouter et suivez les instructions des rubriques d’aide pour configurer les éléments suivants :
 
 * [FAQ sur l’intégration](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Available &#x200B;](../integrations/integrations.md)
+* [Available ](../integrations/integrations.md)
 * [Consolidation des tables](../../../best-practices/consolidating-your-tables.md)
 * [Limitation de l&#39;accès à votre base de données](../../../administrator/account-management/restrict-db-access.md)
 
-**Vous ne voyez pas d’intégration souhaitée ?** Certaines intégrations doivent être activées pour être visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais qui n’est pas répertorié, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+**Vous ne voyez pas d’intégration souhaitée ?** Certaines intégrations doivent être activées pour être visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais qui n’est pas répertorié, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Si le statut d’erreur d’une intégration s’affiche** consultez la [section de dépannage](https://support.magento.com/hc/en-us/sections/360003078151) pour obtenir de l’aide.
+
+## Surveiller l’intégrité de la mise à jour (facultatif)
+
+Une fois les sources connectées, vous pouvez automatiser un contrôle d’intégrité de base pour confirmer que les mises à jour complètes sont terminées. Utilisez l’API [ Update Cycle Status ](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) dans la documentation destinée aux développeurs pour récupérer le cycle de mise à jour terminé le plus récent pour votre client et l’afficher dans des tableaux de bord internes ou des alertes.

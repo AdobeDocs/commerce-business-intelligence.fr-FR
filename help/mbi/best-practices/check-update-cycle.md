@@ -4,9 +4,9 @@ description: Découvrez comment vérifier l’état du cycle de mise à jour.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Lorsque vous vous connectez à votre tableau de bord [!DNL Adobe Commerce Intell
 
 ## Pourquoi dois-je vérifier le statut du cycle de mise à jour ?
 
-La vérification du cycle de mise à jour de l’état est utile lorsque vous auditez les données de votre compte [!DNL Commerce Intelligence]. Si vous constatez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez dans votre plateforme d’e-commerce ou dans votre [[!DNL Google] chiffre d’affaires d’e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=fr) vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
+La vérification du cycle de mise à jour de l’état est utile lorsque vous auditez les données de votre compte [!DNL Commerce Intelligence]. Si vous constatez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez dans votre plateforme d’e-commerce ou dans votre [[!DNL Google] chiffre d’affaires d’e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
 
 ## [!UICONTROL Read-Only] et [!UICONTROL Standard] utilisateurs
 
@@ -42,3 +42,34 @@ Si aucune mise à jour n’est en cours, un lien s’affiche pour forcer le dém
 >[!NOTE]
 >
 >Si des heures d’interruption sont définies (heure à laquelle vous ne souhaitez pas que [!DNL Commerce Intelligence] mettiez à jour vos données), forcer une mise à jour lance un cycle de mise à jour qui ne respecte pas les limites de ces heures d’interruption.
+
+
+## Vérifier l’état du cycle de mise à jour à l’aide de l’API
+
+Vous pouvez récupérer le cycle de mise à jour terminé le plus récent à l’aide de l’API **Update Cycle Status**.
+
+**Requête**
+
+```bash
+curl -sS -H "X-RJM-API-Key: <EXPORT-API-KEY>" \
+  https://api.rjmetrics.com/0.1/client/<CLIENT_ID>/fullupdatestatus
+```
+
+**Réponse (exemple)**
+
+```json
+{
+  "clientId": 194,
+  "lastCompletedUpdateJob": {
+    "id": 13554,
+    "type": { "id": 2, "name": "Full Update" },
+    "start": "2025-12-09 03:26:25",
+    "end": "2025-12-09 03:29:03",
+    "status": { "id": 4, "name": "Completed Successfully" }
+  },
+  "lastCompletedUpdateJobWithDataSync": null,
+  "timezoneAbbreviation": "EST"
+}
+```
+
+Pour les paramètres, l’authentification, les erreurs et les limites de débit, consultez [Mise à jour de l’API Cycle Status](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) dans la documentation destinée aux développeurs.
