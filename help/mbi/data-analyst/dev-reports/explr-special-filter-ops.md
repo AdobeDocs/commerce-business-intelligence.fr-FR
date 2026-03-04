@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Options de filtre
 
-Cette rubrique explore quelques `operators` spéciales utilisées dans `filters` lors de la [création d’un rapport](../../tutorials/using-visual-report-builder.md){: target="_blank"} ou de la [ d’une mesure](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}.
+Cette rubrique explore quelques `operators` spéciales utilisées dans `filters` lors de la [création d’un rapport](../../tutorials/using-visual-report-builder.md){: target="_blank"} ou de la [&#x200B; d’une mesure](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}.
 
 ## `Filter Operators`
 

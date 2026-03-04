@@ -34,7 +34,7 @@ Vous pouvez exporter des données brutes de deux manières différentes dans [!D
 
 Si vous souhaitez exporter le tableau à partir de [!UICONTROL Manage Data] onglet, vous avez besoin d’autorisations [Admin](../administrator/user-management/user-management.md).
 
-1. Cliquez sur **[!UICONTROL Manage Data** > ** Exporter les données **> **Exporter les données brutes]**.
+1. Cliquez sur **[!UICONTROL Manage Data** > **&#x200B; Exporter les données &#x200B;**> **Exporter les données brutes]**.
 1. Un `Export List` des exportations de données récemment créées s’affiche, le cas échéant. Cliquez sur **[!UICONTROL Add Export]** pour créer une exportation.
 1. La boîte de dialogue `New Raw Data Export` s’affiche. Ici, vous pouvez personnaliser votre exportation en sélectionnant ou en désélectionnant les colonnes et les filtres :
 

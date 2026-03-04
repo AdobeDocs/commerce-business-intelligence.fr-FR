@@ -17,7 +17,7 @@ Bien qu’Adobe recommande de connecter vos bases de données à l’aide d’un
 
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  base de données](#database)
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  VPN](#vpn)
-1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] ](#allowlist)
+1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
 1. [Saisissez la connexion et les informations de l’utilisateur VPN dans Commerce Intelligence](#finish)
 
 Outre les informations d’identification de la base de données, vous devez saisir les informations d’identification d’un utilisateur VPN pour conclure. Tout utilisateur VPN fonctionne, mais Adobe vous recommande de créer un utilisateur [!DNL Commerce Intelligence], car cela facilite le suivi des utilisateurs sur votre compte.

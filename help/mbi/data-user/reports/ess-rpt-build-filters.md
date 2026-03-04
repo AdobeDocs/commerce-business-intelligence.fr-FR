@@ -53,7 +53,7 @@ Un ou plusieurs filtres peuvent être ajoutés pour limiter les données utilis�
 
      Le rapport inclut désormais uniquement les clients et clientes réguliers, et le nombre d’enregistrements de clients récupérés pour le rapport a été réduit de 33 000 à 12 600.
 
-     ![ Rapport filtré ](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![&#x200B; Rapport filtré &#x200B;](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. Dans la barre latérale, cliquez sur l’icône de perspective (![icône de perspective](../../assets/magento-bi-btn-perspective.png)).
 

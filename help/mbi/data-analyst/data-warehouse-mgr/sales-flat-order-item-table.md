@@ -21,7 +21,7 @@ Le `sales_order_item` capture les détails de tous les [types de produits](https
 
 Prenons l’exemple d’un produit configurable tel qu’un t-shirt. Lorsqu’un client extrait, il sélectionne des options pour modifier la couleur et la taille. Si le client sélectionne une couleur de `blue` et une taille de `small`, il finit par acheter un produit simple comme `t-shirt-blue-small` qui renvoie au produit parent de `t-shirt`.
 
-Lorsqu&#39;un produit configurable est inclus dans une commande, deux lignes sont générées dans le tableau de `sales_order_item` : une pour le [ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-simple.html)simple`sku` et une pour le parent [configurable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html). Ces deux enregistrements de la table `sales_order_item` peuvent être mis en relation l&#39;un avec l&#39;autre à travers la jointure suivante :
+Lorsqu&#39;un produit configurable est inclus dans une commande, deux lignes sont générées dans le tableau de `sales_order_item` : une pour le [&#x200B; &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-simple.html)simple`sku` et une pour le parent [configurable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html). Ces deux enregistrements de la table `sales_order_item` peuvent être mis en relation l&#39;un avec l&#39;autre à travers la jointure suivante :
 
 * (simple) `sales_order_item.parent_item_id` => (configurable) `sales_order_item.item_id`
 
@@ -84,7 +84,7 @@ Il est donc possible de générer des rapports sur les ventes de produits soit a
 
 `sales_order_item`
 
-* Rejoignez les `sales_order_item` pour créer des colonnes qui associent les détails du SKU parent configurable ou groupé au produit simple. [Contactez l’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour obtenir de l’aide sur la configuration de ces calculs, si vous créez dans le gestionnaire Data Warehouse.
+* Rejoignez les `sales_order_item` pour créer des colonnes qui associent les détails du SKU parent configurable ou groupé au produit simple. [Contactez l’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour obtenir de l’aide sur la configuration de ces calculs, si vous créez dans le gestionnaire Data Warehouse.
    * Chemin : `sales_order_item.parent_item_id` (plusieurs) => `sales_order_item.item_id` (un)
 
 `store`

@@ -17,7 +17,7 @@ Dans une table de base de données, il peut y avoir des colonnes de données don
 
 Les statuts de commande peuvent changer, mais ils ne sont pas toujours dans un statut `pending`. Cela pourrait finir par devenir `complete` ou `cancelled`. Pour que votre Data Warehouse synchronise cette modification, de nouvelles valeurs doivent être recherchées dans la colonne.
 
-Comment cela s’intègre-t-il avec les [ méthodes de réplication ](../data-warehouse-mgr/cfg-replication-methods.md) qui ont été abordées ? Le traitement des nouvelles vérifications varie en fonction de la méthode de réplication choisie. La méthode de réplication `Modified\_At` est le meilleur choix pour traiter les valeurs qui changent, car les revérifications n’ont pas à être configurées. Les méthodes `Auto-Incrementing Primary Key` et `Primary Key Batch Monitoring` nécessitent de revérifier la configuration.
+Comment cela s’intègre-t-il avec les [&#x200B; méthodes de réplication &#x200B;](../data-warehouse-mgr/cfg-replication-methods.md) qui ont été abordées ? Le traitement des nouvelles vérifications varie en fonction de la méthode de réplication choisie. La méthode de réplication `Modified\_At` est le meilleur choix pour traiter les valeurs qui changent, car les revérifications n’ont pas à être configurées. Les méthodes `Auto-Incrementing Primary Key` et `Primary Key Batch Monitoring` nécessitent de revérifier la configuration.
 
 Lors de l’utilisation de l’une de ces méthodes, les colonnes modifiables doivent être marquées pour vérification. Pour ce faire, trois méthodes sont possibles :
 
@@ -56,7 +56,7 @@ Pour modifier la fréquence de revérification, cochez la case en regard des col
 
 ![Data Warehouse Manager affiche les options de configuration de revérification](../../assets/dwm-recheck.png)
 
-Il se peut que vous voyiez parfois des `Paused` dans la colonne `Changes?` . Cette valeur s&#39;affiche lorsque la méthode de réplication [ de la table](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) est définie sur `Paused`.
+Il se peut que vous voyiez parfois des `Paused` dans la colonne `Changes?` . Cette valeur s&#39;affiche lorsque la méthode de réplication [&#x200B; de la table](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) est définie sur `Paused`.
 
 [!DNL Adobe] vous recommande de consulter ces colonnes pour optimiser vos mises à jour et vous assurer que les colonnes modifiables sont à nouveau vérifiées. Si la fréquence de revérification d’une colonne est élevée compte tenu de la fréquence de modification des données, Adobe recommande de la diminuer pour optimiser vos mises à jour.
 

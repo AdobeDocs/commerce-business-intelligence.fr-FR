@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Connexion de [!DNL MySQL] via [!DNL SSH Tunnel]
 
-* [Récupération de la clé  [!DNL Commerce Intelligence] ](#retrieve)
-* [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] ](#allowlist)
+* [Récupération de la clé  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
+* [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
 * [Créez un utilisateur Linux pour  [!DNL Commerce Intelligence]](#linux)
 * [Créez un  [!DNL MySQL]  pour  [!DNL Commerce Intelligence]](#mysql)
 * [Saisissez les informations de connexion et d’utilisateur dans  [!DNL Commerce Intelligence]](#finish)
 
 ## ACCÉDER À
 
-* [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] via &#x200B;](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] via  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Pour connecter votre base de données [!DNL MySQL] à [!DNL Commerce Intelligence] via un `SSH tunnel`, procédez comme suit :

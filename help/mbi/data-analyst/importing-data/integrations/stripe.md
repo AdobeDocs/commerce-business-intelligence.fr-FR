@@ -22,7 +22,7 @@ Logo ![Stripe](../../../assets/stripe-logo.png)
 [!DNL Stripe] vous permet de gérer et de suivre les données de paiement et de facture de votre entreprise. La connexion de votre compte [!DNL Stripe] à [!DNL Commerce Intelligence] est un processus simple en deux étapes :
 
 1. [Ajoutez [!DNL Stripe] en tant que source de données dans  [!DNL Commerce Intelligence]](#stepone)
-1. [Autoriser l [!DNL Commerce Intelligence] accès à vos  [!DNL Stripe] ](#steptwo)
+1. [Autoriser l [!DNL Commerce Intelligence] accès à vos  [!DNL Stripe] &#x200B;](#steptwo)
 
 ## Ajouter des [!DNL Stripe] comme source de données {#stepone}
 
@@ -47,5 +47,5 @@ Après avoir cliqué sur **[!UICONTROL Connect with Stripe]**, une page de deman
 
 La [[!DNL Stripe] documentation de l’API](https://stripe.com/docs/api) peut être une ressource utile pour en savoir plus sur la façon dont [!DNL Stripe] est intégré à [!DNL Commerce Intelligence].
 
-* [Données  [!DNL Stripe] ](../integrations/stripe-data.md)
+* [Données  [!DNL Stripe] &#x200B;](../integrations/stripe-data.md)
 * [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
