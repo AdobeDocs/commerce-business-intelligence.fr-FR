@@ -17,4 +17,4 @@ Une intégration est une source de données. Les intégrations sont des applicat
 
 Cette section présente les intégrations disponibles que vous pouvez utiliser pour connecter diverses sources de données externes à [!DNL Commerce Intelligence].
 
-Pour supprimer une connexion ou une intégration, [contactez l’assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) et indiquez le nom de la connexion ou de l’intégration à supprimer.
+Pour supprimer une connexion ou une intégration, [contactez l’assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) et indiquez le nom de la connexion ou de l’intégration à supprimer.

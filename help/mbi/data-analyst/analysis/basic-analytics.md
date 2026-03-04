@@ -46,7 +46,7 @@ Si certains de ces calculs n’existent pas actuellement dans votre base de donn
 
 **Acceptez-vous les commandes d&#39;invités ?**
 
-*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez l’[équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour vous assurer que vos analyses client incluent tous les clients.*
+*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez l’[équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour vous assurer que vos analyses client incluent tous les clients.*
 
 *Vous n&#39;êtes pas sûr d&#39;accepter les commandes de clients ? Consultez [cette rubrique](../data-warehouse-mgr/guest-orders.md) pour en savoir plus !*
 
@@ -60,7 +60,7 @@ Dans ce tableau, chaque ligne représente un ordre. Les colonnes de ce tableau c
 * **[!UICONTROL Created_at]** : date à laquelle la commande a été créée ou passée.
 * **[!UICONTROL Customer_email]** : adresse électronique du client qui a passé la commande. Il peut également s’agir de l’identifiant unique du client.
 * **[!UICONTROL Customer's lifetime number of orders]** : une copie de la colonne portant le même nom dans votre tableau `Customers`.
-* **[!UICONTROL Customer's order number]** : numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous consultez correspond à la première commande d’un client, cette colonne contient la mention « 1 ». Toutefois, s’il s’agit de la 15e commande du client, cette colonne contient la mention « 15 » pour cette commande. Si cette dimension n’existe pas sur votre table de `Customers`, demandez de l’aide à la création auprès de l’équipe [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+* **[!UICONTROL Customer's order number]** : numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous consultez correspond à la première commande d’un client, cette colonne contient la mention « 1 ». Toutefois, s’il s’agit de la 15e commande du client, cette colonne contient la mention « 15 » pour cette commande. Si cette dimension n’existe pas sur votre table de `Customers`, demandez de l’aide à la création auprès de l’équipe [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
 * **[!UICONTROL Customer's order number (previous-current)]** : concaténation de deux valeurs dans la colonne **[!UICONTROL Customer's order number]**. Elle est utilisée dans un exemple de rapport ci-dessous pour afficher le temps écoulé entre deux commandes. Par exemple, la durée entre la date de première commande d’un client et sa date de deuxième commande est représentée sous la forme « 1-2 » avec ce calcul.
 * **[!UICONTROL Coupon_code]** : indique les coupons utilisés pour chaque commande.
 * **[!UICONTROL Seconds since previous order]** : délai (en secondes) entre les commandes d’un client ou d’une cliente.
@@ -88,7 +88,7 @@ Cette table permet de gérer les informations relatives à votre abonnement, tel
 
 ## Tableau des dépenses marketing
 
-Lors de l’analyse de vos dépenses marketing, vous pouvez inclure des [!DNL Facebook], des [!DNL Google AdWords] ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez l’équipe [Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
+Lors de l’analyse de vos dépenses marketing, vous pouvez inclure des [!DNL Facebook], des [!DNL Google AdWords] ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez l’équipe [Managed Services](https://business.adobe.com/fr/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
 
 **Dimensions**
 

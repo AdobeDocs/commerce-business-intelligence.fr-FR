@@ -71,7 +71,7 @@ Ce type d&#39;analyse est ce que les spécialistes du marketing des entreprises 
 
 La première étape pour segmenter vos mesures en fonction des dimensions ci-dessus est de vous assurer que vous suivez ces données dans votre base de données. Si elles ne sont pas suivies, rencontrez votre équipe technique et trouvez un moyen de commencer à suivre ces données.
 
-Une fois que vous avez confirmé que les données sont suivies dans votre base de données, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour intégrer les dimensions à vos mesures et graphiques [!DNL Commerce Intelligence]. Vous pouvez également utiliser l’outil *Gestion des champs* pour effectuer le suivi de ces champs dans [!DNL Commerce Intelligence].
+Une fois que vous avez confirmé que les données sont suivies dans votre base de données, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour intégrer les dimensions à vos mesures et graphiques [!DNL Commerce Intelligence]. Vous pouvez également utiliser l’outil *Gestion des champs* pour effectuer le suivi de ces champs dans [!DNL Commerce Intelligence].
 
 ## Connexe
 
