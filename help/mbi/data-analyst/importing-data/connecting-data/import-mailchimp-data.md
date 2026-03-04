@@ -2,9 +2,9 @@
 title: Importer les données MailChimp
 description: Découvrez comment importer des données MailChimp dans  [!DNL Commerce Intelligence].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -75,4 +75,4 @@ Pour obtenir une vue d’ensemble complète de vos efforts de campagne, vous pou
 
 Chaque fichier (`Opens`, `Clicks` et `Sent`) doit être téléchargé vers [!DNL Commerce Intelligence] en tant que fichier distinct. Adobe vous recommande de nommer les fichiers à l’aide de la convention de nommage suivante : `MailChimp\_ACTION\_DATE`. Remplacez `ACTION` par `Open`, `Click` ou `Sent`, puis remplacez `DATE` par la date d’exportation.
 
-Lorsque vous êtes prêt à charger les fichiers, utilisez la fonction [`File Upload` pour &#x200B;](../connecting-data/using-file-uploader.md) les données dans votre Data Warehouse.
+Lorsque vous êtes prêt à charger les fichiers, utilisez la fonction [`File Upload` pour ](../connecting-data/using-file-uploader.md) les données dans votre Data Warehouse.

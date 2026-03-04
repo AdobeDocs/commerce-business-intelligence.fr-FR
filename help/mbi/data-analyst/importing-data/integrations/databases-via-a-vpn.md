@@ -2,9 +2,9 @@
 title: Connexion de bases de données via un VPN
 description: Découvrez comment connecter des bases de données via un VPN au lieu du tunnel SSH.
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Bien qu’Adobe recommande de connecter vos bases de données à l’aide d’un
 
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  base de données](#database)
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  VPN](#vpn)
-1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Saisissez la connexion et les informations de l’utilisateur VPN dans Commerce Intelligence](#finish)
 
 Outre les informations d’identification de la base de données, vous devez saisir les informations d’identification d’un utilisateur VPN pour conclure. Tout utilisateur VPN fonctionne, mais Adobe vous recommande de créer un utilisateur [!DNL Commerce Intelligence], car cela facilite le suivi des utilisateurs sur votre compte.

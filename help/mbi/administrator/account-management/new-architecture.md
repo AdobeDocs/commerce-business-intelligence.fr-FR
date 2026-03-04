@@ -2,9 +2,9 @@
 title: Nouvelle architecture
 description: Découvrez les avantages de la transition vers une nouvelle architecture.
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
-source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Une fois cette opération terminée, vous savez quelles données vous devez sync
 
 ### Accès à l’aide
 
-L’équipe [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) peut effectuer votre nouvelle implémentation moyennant un coût supplémentaire. Contactez l’équipe chargée de votre compte [Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) et préparez-vous à fournir une liste des tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte
+L’équipe [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) peut effectuer votre nouvelle implémentation moyennant un coût supplémentaire. Contactez l’équipe chargée de votre compte [Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) et préparez-vous à fournir une liste des tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte
 
 ### Conservation de l’architecture existante
 

@@ -2,9 +2,9 @@
 title: Connecter Zendesk
 description: Découvrez comment consolider les rapports du Help Desk dans  [!DNL Commerce Intelligence].
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navig
 
 ## Ouvrez la page des informations d’identification de [!DNL Zendesk] dans [!DNL Commerce Intelligence] {#stepone}
 
-1. Accédez à la page `Integrations` sous **[!UICONTROL Manage Data** > **&#x200B; Sources de données &#x200B;**> **Intégrations]**.
+1. Accédez à la page `Integrations` sous **[!UICONTROL Manage Data** > ** Sources de données **> **Intégrations]**.
 1. Cliquez sur **[!UICONTROL Add Integration]**, situé dans la partie droite de l’écran.
 1. Cliquez sur l’icône [!DNL Zendesk] . La page des informations d’identification de [!DNL Zendesk] s’ouvre.
 
@@ -53,5 +53,5 @@ Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navig
 
 ## Connexe :
 
-* [Données  [!DNL Zendesk] &#x200B;](../integrations/exp-zendesk-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Données  [!DNL Zendesk] ](../integrations/exp-zendesk-data.md)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: Rapports du Help Desk pour Zendesk
 description: Découvrez vos canaux de recommandation les plus précieux.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Avant de commencer, vous devez connecter votre [[!DNL Zendesk]](../integrations/
 
 * **`[!DNL Zendesk] user's`** table
    * `User is agent? (Yes/No) `
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`, `email`
@@ -161,19 +161,19 @@ Avant de commencer, vous devez connecter votre [[!DNL Zendesk]](../integrations/
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date` moins `created_at`
 
 * **`Seconds to first response`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date` moins `created_at`
 
 * **`Requester's ticket number`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -181,7 +181,7 @@ Avant de commencer, vous devez connecter votre [[!DNL Zendesk]](../integrations/
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * &#x200B;
+   * 
       * `Column type` - « Même tableau > Calcul »
 
       * `Input columns` - `created_at`
@@ -191,7 +191,7 @@ Avant de commencer, vous devez connecter votre [[!DNL Zendesk]](../integrations/
       * `Datatype` - Entier
 
 * **`Ticket created_at (day of week)`**
-   * &#x200B;
+   * 
       * `Column type` - « Même tableau > Calcul »
 
       * `Input columns` - `created_at`
@@ -204,7 +204,7 @@ Avant de commencer, vous devez connecter votre [[!DNL Zendesk]](../integrations/
    * Sélectionnez une définition : `Count`
    * [!UICONTROL Create Path] :
    * [!UICONTROL Many] : `[!DNL Zendesk] tickets.email`
-   * &#x200B;
+   * 
      [!UICONTROL One]: `customer_entity.email`
 
    * Sélectionner un [!UICONTROL table] : `[!DNL Zendesk] tickets`
@@ -214,7 +214,7 @@ Avant de commencer, vous devez connecter votre [[!DNL Zendesk]](../integrations/
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * &#x200B;
+   * 
       * `Column type` - « Même tableau > Calcul »
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -401,7 +401,7 @@ Avant de commencer, vous devez connecter votre [[!DNL Zendesk]](../integrations/
 * `Chart Type` : `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: Users
 
 * `A` de mesure : `New users`

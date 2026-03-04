@@ -2,9 +2,9 @@
 title: Données Spree attendues
 description: Explorez les principaux tableaux de données que vous pouvez importer de Spree dans votre compte  [!DNL Commerce Intelligence] .
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Après avoir [connecté votre [!DNL Spree] boutique](../../../data-analyst/importing-data/integrations/spree.md), vous pouvez utiliser [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) pour effectuer facilement le suivi des champs de données pertinents de votre plateforme [!DNL Spree] à des fins d’analyse.
 
-Cette rubrique explore les principaux tableaux de données que vous pouvez importer depuis [!DNL Spree] dans votre compte [!DNL Commerce Intelligence], y compris des liens vers [&#x200B; documentation supplémentaire &#x200B;](https://guides.spreecommerce.org/developer/addresses.html#address) sur les données [!DNL Spree].
+Cette rubrique explore les principaux tableaux de données que vous pouvez importer depuis [!DNL Spree] dans votre compte [!DNL Commerce Intelligence], y compris des liens vers [ documentation supplémentaire ](https://guides.spreecommerce.org/developer/addresses.html#address) sur les données [!DNL Spree].
 
 | **Nom de la table** | **Description** |
 |-----|-----|
@@ -30,4 +30,4 @@ Cette rubrique explore les principaux tableaux de données que vous pouvez impor
 ## Connexe :
 
 * [Connexion  [!DNL Spree]](../integrations/spree.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

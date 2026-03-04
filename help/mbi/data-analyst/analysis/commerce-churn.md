@@ -2,9 +2,9 @@
 title: Attrition du Commerce
 description: Découvrez comment générer et analyser votre taux de résiliation Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -76,19 +76,19 @@ Colonnes à créer
 * **Taux de résiliation**
    * [!UICONTROL Metric] : Nouveaux clients (par date de première commande)
    * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric] : `New customers (by last order date)`
    * [!UICONTROL Filter] :
-   * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]&#x200B;**`^`**
+   * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric] : `New customers (by last order date)`
    * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula] : `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *`A` de mesure :`New customers cumulative`*

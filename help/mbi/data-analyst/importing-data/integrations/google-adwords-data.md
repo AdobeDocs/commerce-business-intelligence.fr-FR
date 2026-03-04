@@ -2,9 +2,9 @@
 title: Données Google Adwords attendues
 description: Découvrez comment utiliser Data Warehouse Manager pour effectuer facilement le suivi des champs de données pertinents à analyser.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -89,4 +89,4 @@ Grâce à ces données, vous pouvez commencer à créer des [mesures](../../../d
 
 Si vous ne disposez pas d’une table consolidée et que vous créez un beau tableau de bord sur la table `adwords`, vous devez répliquer les rapports ou créer des mesures en double pour comparer ces données à vos données [!DNL Facebook Ads]. L’utilisation d’un tableau consolidé vous permet d’incorporer facilement des données [!DNL Facebook Ads] à vos rapports [!DNL Adwords] existants. Vous pouvez également segmenter par plateforme publicitaire.
 
-Si vous avez déjà synchronisé les champs ci-dessus, [contactez-nous](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour consolider vos dépenses publicitaires.
+Si vous avez déjà synchronisé les champs ci-dessus, [contactez-nous](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour consolider vos dépenses publicitaires.

@@ -2,9 +2,9 @@
 title: Connecter Adobe Analytics
 description: Apprenez à rassembler l’accent mis sur le parcours client de bout en bout  [!DNL Adobe Analytics]  et l’accent mis sur l’e-commerce sur lequel vous vous appuyez [!DNL Commerce Intelligence].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -57,6 +57,6 @@ Les informations de connexion suivantes sont nécessaires :
 
 1. La suite de rapports sélectionnée s’affiche dans un tableau. Cliquez sur **[!UICONTROL Save]** pour confirmer votre sélection.
 
-1. Informez l’[!DNL Commerce Intelligence] [équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) que votre intégration est autorisée et qu’elle exécute le processus de connexion initial pour vous.
+1. Informez l’[!DNL Commerce Intelligence] [équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) que votre intégration est autorisée et qu’elle exécute le processus de connexion initial pour vous.
 
 Une fois le processus de connexion initial exécuté, votre tableau est disponible dans la page Data Warehouse, sous l’onglet `All Tables` . Sélectionnez les colonnes que vous souhaitez répliquer pour que les données apparaissent après la prochaine mise à jour complète.

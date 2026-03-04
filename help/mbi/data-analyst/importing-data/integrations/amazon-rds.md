@@ -2,9 +2,9 @@
 title: Connecter Amazon RDS
 description: Découvrez les étapes de connexion de votre instance RDS.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -55,6 +55,6 @@ Pour terminer la création de la connexion, vous avez besoin des informations su
 
 Si vous utilisez une connexion chiffrée, remplacez le bouton `Encrypted` de la page des informations d’identification de la base de données par `Yes`. Un formulaire supplémentaire s’affiche pour configurer le chiffrement :
 
-Formulaire d&#39;intégration ![SQL avec chiffrement activé affichant l&#39;option Oui &#x200B;](../../../assets/sql-integration-encrypted-yes.png)
+Formulaire d&#39;intégration ![SQL avec chiffrement activé affichant l&#39;option Oui ](../../../assets/sql-integration-encrypted-yes.png)
 
 

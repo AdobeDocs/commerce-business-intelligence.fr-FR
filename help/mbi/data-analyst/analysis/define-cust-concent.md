@@ -2,9 +2,9 @@
 title: Définir la concentration des clients
 description: Découvrez comment configurer un tableau de bord qui vous aide à mesurer la répartition du chiffre d’affaires total entre vos clients.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Colonnes à créer
 * Centile de chiffre d’affaires du client
 * [!UICONTROL Column type] : - `Same table > Calculation`
 * [!UICONTROL Inputs] : - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 &#x200B;**
+* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 **
 * [!UICONTROL Datatype] : - `Decimal`
 
 * `Sales_flat_order` table
@@ -76,7 +76,7 @@ Colonnes à créer
 * Centile de chiffre d’affaires du client
 * [!UICONTROL Column type] : - `Same table > Calculation`
 * [!UICONTROL Inputs] : - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 &#x200B;**
+* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 **
 * [!UICONTROL Datatype] : - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ Colonnes à créer
 * [!UICONTROL Metric] : `Total customer lifetime value`
 * [!UICONTROL Filter] : `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
+* 
   [!UICONTROL Regrouper par]: `Independent`
 * `A` de mesure : `Total customer lifetime revenue by percentile`
 * `B` de mesure : `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period] : `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by] : `Customer's revenue percentile`
 * Afficher en haut/en bas : `100% of Customer's revenue percentile Name`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 * **Top 10% de concentration**
@@ -117,12 +117,12 @@ Colonnes à créer
 
 * `A` de mesure : `Total customer lifetime revenue`
 * [!UICONTROL Time period] : `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Masquer le graphique
-* &#x200B;
+* 
   [!UICONTROL Regrouper par]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Concentration inférieure de 50 % avec un seul achat**
@@ -133,12 +133,12 @@ Colonnes à créer
 * [!UICONTROL Filter] :
 
 * [!UICONTROL Time period] : `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Masquer le graphique
-* &#x200B;
+* 
   [!UICONTROL Regrouper par]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Concentration inférieure de 10 %**
@@ -146,14 +146,14 @@ Colonnes à créer
 
 * `A` de mesure : `Total customer lifetime revenue`
 * [!UICONTROL Time period] : `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Masquer le graphique
-* &#x200B;
+* 
   [!UICONTROL Regrouper par]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.
 
-Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

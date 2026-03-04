@@ -2,9 +2,9 @@
 title: Analyse de la désintégration et de l’attrition de la probabilité de répétition
 description: Découvrez et comprenez comment s’écoule le temps entre les commandes et le moment où les clients sont censés résilier la commande.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Après avoir créé l’analyse ci-dessus et déterminé un seuil d’attrition,
 
 Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Vous souhaitez en savoir plus ? Consultez ce tutoriel pour découvrir le comportement d’achat au cours de la durée de vie des cohortes de clients en fonction de produits spécifiques qu’elles ont achetés.
 
-Cette bonne pratique est fournie par [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour plus d’informations.
+Cette bonne pratique est fournie par [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour plus d’informations.
 
 ### Connexe
 

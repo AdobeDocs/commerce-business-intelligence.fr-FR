@@ -2,9 +2,9 @@
 title: Dimensions de données recommandées pour la segmentation et le filtrage
 description: Découvrez les bonnes pratiques en matière de segmentation et de filtrage.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Ce type d&#39;analyse est ce que les spécialistes du marketing des entreprises 
 
 La première étape pour segmenter vos mesures en fonction des dimensions ci-dessus est de vous assurer que vous suivez ces données dans votre base de données. Si elles ne sont pas suivies, rencontrez votre équipe technique et trouvez un moyen de commencer à suivre ces données.
 
-Une fois que vous avez confirmé que les données sont suivies dans votre base de données, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour intégrer les dimensions à vos mesures et graphiques [!DNL Commerce Intelligence]. Vous pouvez également utiliser l’outil *Gestion des champs* pour effectuer le suivi de ces champs dans [!DNL Commerce Intelligence].
+Une fois que vous avez confirmé que les données sont suivies dans votre base de données, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour intégrer les dimensions à vos mesures et graphiques [!DNL Commerce Intelligence]. Vous pouvez également utiliser l’outil *Gestion des champs* pour effectuer le suivi de ces champs dans [!DNL Commerce Intelligence].
 
 ## Connexe
 

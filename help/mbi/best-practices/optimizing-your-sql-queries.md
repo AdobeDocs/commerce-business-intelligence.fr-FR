@@ -2,9 +2,9 @@
 title: Optimisation des requêtes SQL
 description: Découvrez comment optimiser vos requêtes SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Le [!DNL SQL Report Builder] vous permet d’exécuter et de modifier vos requêtes quand vous le souhaitez. Cette fonctionnalité est utile si vous devez mettre à jour une requête immédiatement, au lieu d’attendre la fin d’un cycle de mise à jour avant de corriger une colonne ou un rapport.
 
-Avant l’exécution d’une requête, [[!DNL Commerce Intelligence] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=fr). Le coût prend en compte la durée et le nombre de ressources nécessaires pour exécuter une requête. Si ce coût est jugé trop élevé ou si le nombre de lignes renvoyées dépasse les limites [!DNL Commerce Intelligence], la requête échoue. Pour interroger votre [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), ce qui garantit que vous écrivez les requêtes les plus rationalisées possible, Adobe recommande ce qui suit.
+Avant l’exécution d’une requête, [[!DNL Commerce Intelligence] estime son coût](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Le coût prend en compte la durée et le nombre de ressources nécessaires pour exécuter une requête. Si ce coût est jugé trop élevé ou si le nombre de lignes renvoyées dépasse les limites [!DNL Commerce Intelligence], la requête échoue. Pour interroger votre [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), ce qui garantit que vous écrivez les requêtes les plus rationalisées possible, Adobe recommande ce qui suit.
 
 ## Utilisation de SELECT ou Sélection de toutes les colonnes
 

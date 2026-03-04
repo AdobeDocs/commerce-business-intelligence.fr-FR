@@ -2,9 +2,9 @@
 title: Utilisation de la colonne Calculée de la différence de date
 description: Découvrez l’objectif et les utilisations de la colonne calculée Différence de date.
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%

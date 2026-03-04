@@ -2,9 +2,9 @@
 title: Création ou suppression de chemins d’accès pour les colonnes calculées
 description: Découvrez comment définir un chemin d’accès décrivant comment le tableau sur lequel vous créez une colonne est lié au tableau à partir duquel vous extrayez des informations.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -20,13 +20,13 @@ Lors de la [création de colonnes calculées](../data-warehouse-mgr/creating-cal
 1. Relation entre les tables de vos bases de données
 1. Les clés primaires et étrangères qui définissent cette relation
 
-Si vous connaissez ces informations, vous pouvez facilement créer un chemin d’accès en suivant les instructions de cette rubrique. Vous pouvez demander l’avis d’un expert technique de votre entreprise ou contacter l’équipe [Services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Si vous connaissez ces informations, vous pouvez facilement créer un chemin d’accès en suivant les instructions de cette rubrique. Vous pouvez demander l’avis d’un expert technique de votre entreprise ou contacter l’équipe [Services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Actualisations des relations entre les tables et des types de clés {#refresher}
 
 ### Relations entre les tables {#relationships}
 
-Ce concept est traité dans l’article [&#x200B; Comprendre et évaluer les relations entre les tables &#x200B;](../../data-analyst/data-warehouse-mgr/table-relationships.md), mais un résumé rapide ne fait de mal à personne, n’est-ce pas ?
+Ce concept est traité dans l’article [ Comprendre et évaluer les relations entre les tables ](../../data-analyst/data-warehouse-mgr/table-relationships.md), mais un résumé rapide ne fait de mal à personne, n’est-ce pas ?
 
 Les tables peuvent être liées les unes aux autres de trois manières :
 
@@ -79,7 +79,7 @@ Vous pouvez maintenant créer le chemin d’accès .
 
 * **[!DNL Commerce Intelligence]ne peut pas deviner les relations clé primaire/clé étrangère**. Vous ne souhaitez pas introduire de données incorrectes dans votre compte. Par conséquent, la création de chemins d’accès doit être effectuée manuellement.
 
-* **Actuellement, les chemins ne peuvent être spécifiés qu’entre deux tables différentes**. La logique que vous essayez de recréer implique-t-elle plus de deux tables ? Il peut alors être judicieux de (1) joindre les colonnes à une table intermédiaire d’abord, puis à la table « destination finale », ou (2) consulter l’équipe [Services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour trouver la meilleure approche pour atteindre vos objectifs.
+* **Actuellement, les chemins ne peuvent être spécifiés qu’entre deux tables différentes**. La logique que vous essayez de recréer implique-t-elle plus de deux tables ? Il peut alors être judicieux de (1) joindre les colonnes à une table intermédiaire d’abord, puis à la table « destination finale », ou (2) consulter l’équipe [Services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour trouver la meilleure approche pour atteindre vos objectifs.
 
 * **Une colonne ne peut être que la référence de clé étrangère d’UN chemin à la fois**. Par exemple, si `order_items.order_id` pointe vers `orders.id`, `order_items.order_id` ne pouvez pas pointer vers autre chose.
 

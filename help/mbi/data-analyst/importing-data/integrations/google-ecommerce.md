@@ -2,9 +2,9 @@
 title: Connecter Google ECommerce
 description: Découvrez vos canaux de recommandation les plus précieux.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -59,8 +59,8 @@ Pour identifier l’identifiant de profil [!DNL Google Analytics] d’un site we
 
 ## Connexe :
 
-* [Données  [!DNL Google ECommerce] &#x200B;](../integrations/google-ecommerce-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Données  [!DNL Google ECommerce] ](../integrations/google-ecommerce-data.md)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Configuration [!DNL Google ECommerce] suivi](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../../analysis/most-value-source-channel.md)
 * [Augmenter le retour sur investissement de vos campagnes publicitaires](../../analysis/roi-ad-camp.md)

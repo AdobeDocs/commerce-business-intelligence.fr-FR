@@ -2,9 +2,9 @@
 title: Services de migration des données
 description: Découvrez tout ce dont vous avez besoin pour soumettre une demande et commencer la migration.
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migration des données
 
-La migration vers un nouveau schéma de base de données, un nouveau serveur ou une nouvelle base de données de rapports ne doit pas nécessairement être stressante. L’[[!DNL Adobe] équipe Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) offre une assistance en matière de migration.
+La migration vers un nouveau schéma de base de données, un nouveau serveur ou une nouvelle base de données de rapports ne doit pas nécessairement être stressante. L’[[!DNL Adobe] équipe Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre une assistance en matière de migration.
 
 Pour garantir une transition aussi fluide que possible, veillez à fournir les informations les plus détaillées possible lors de l’envoi de votre demande de migration. Cette rubrique contient tout ce dont vous avez besoin pour envoyer une demande et commencer la migration. En nous fournissant une image complète de vos besoins, nous vous garantissons que votre projet est correctement défini et que l&#39;estimation est exacte.
 
@@ -67,7 +67,7 @@ Voici un aperçu d’un exemple :
 
 ## Comment soumettre une demande ? {#submitreq}
 
-Vous pouvez nous contacter en [soumettant une demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Vous pouvez nous contacter en [soumettant une demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Si vous avez suivi les étapes de la section précédente pour créer la feuille de calcul correspondant aux colonnes, n’oubliez pas de la joindre.
 

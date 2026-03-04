@@ -2,9 +2,9 @@
 title: Création de visualisations à partir de requêtes SQL
 description: Apprenez à vous familiariser avec la terminologie utilisée dans SQL Report Builder et à vous donner une base solide pour créer des visualisations SQL.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -98,4 +98,4 @@ Dans la liste déroulante, sélectionnez `Chart` comme `Type`, puis un tableau d
 
 ## Conclusion
 
-Vous voulez aller un peu plus loin ? Consultez les [&#x200B; bonnes pratiques relatives à l’optimisation des requêtes &#x200B;](../best-practices/optimizing-your-sql-queries.md).
+Vous voulez aller un peu plus loin ? Consultez les [ bonnes pratiques relatives à l’optimisation des requêtes ](../best-practices/optimizing-your-sql-queries.md).

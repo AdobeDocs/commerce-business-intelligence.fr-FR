@@ -2,9 +2,9 @@
 title: Configuration des méthodes de réplication
 description: Découvrez comment les tables sont organisées et comment les données des tables se comportent. Vous pouvez ainsi choisir la meilleure méthode de réplication pour vos tables.
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 0%
@@ -135,6 +135,6 @@ Pour terminer, vous avez rassemblé ce tableau qui compare les différentes mét
 ## Documentation connexe
 
 * [Comprendre les revérifications de données](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Modification de la base de données pour la prise en charge de &#x200B;](../../best-practices/mod-db-inc-replication.md)
+* [Modification de la base de données pour la prise en charge de ](../../best-practices/mod-db-inc-replication.md)
 * [Optimisation de votre base de données pour l’analyse](../../best-practices/opt-db-analysis.md)
 * [Réduction Du Temps De Mise À Jour](../../best-practices/reduce-update-cycle-time.md)

@@ -2,9 +2,9 @@
 title: Opérateurs de filtres spéciaux
 description: Découvrez quelques opérateurs spéciaux utilisés dans les filtres lors de la création d’un rapport ou d’une mesure.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Options de filtre
 
-Cette rubrique explore quelques `operators` spéciales utilisées dans `filters` lors de la [création d’un rapport](../../tutorials/using-visual-report-builder.md){: target="_blank"} ou de la [&#x200B; d’une mesure](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}.
+Cette rubrique explore quelques `operators` spéciales utilisées dans `filters` lors de la [création d’un rapport](../../tutorials/using-visual-report-builder.md){: target="_blank"} ou de la [ d’une mesure](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}.
 
 ## `Filter Operators`
 

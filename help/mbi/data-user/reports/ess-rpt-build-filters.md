@@ -2,9 +2,9 @@
 title: Filtres
 description: Découvrez comment utiliser les filtres.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Un ou plusieurs filtres peuvent être ajoutés pour limiter les données utilis�
 
      Le rapport inclut désormais uniquement les clients et clientes réguliers, et le nombre d’enregistrements de clients récupérés pour le rapport a été réduit de 33 000 à 12 600.
 
-     ![&#x200B; Rapport filtré &#x200B;](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![ Rapport filtré ](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. Dans la barre latérale, cliquez sur l’icône de perspective (![icône de perspective](../../assets/magento-bi-btn-perspective.png)).
 

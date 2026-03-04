@@ -2,9 +2,9 @@
 title: Tableaux de bord prêts à l’emploi
 description: Découvrez les tableaux de bord prêts à l’emploi pour fournir insight à votre entreprise.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->L’accès à ces tableaux de bord dépend de votre type de compte et de votre niveau d’accès. Si ces tableaux de bord ne s’affichent pas, contactez l’[assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+>L’accès à ces tableaux de bord dépend de votre type de compte et de votre niveau d’accès. Si ces tableaux de bord ne s’affichent pas, contactez l’[assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilité des rapports
 
@@ -133,7 +133,7 @@ Le tableau de bord Commandes fournit des informations sur le volume transactionn
 
 ## Produits
 
-Le tableau de bord Produits présente les performances générales des produits en termes de produits commandés, de leur valeur brute (VMG) et des principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, et à déterminer le succès et la popularité du produit. Votre boutique doit être [configurée pour effectuer le suivi des remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=fr) pour que ces graphiques soient renseignés.
+Le tableau de bord Produits présente les performances générales des produits en termes de produits commandés, de leur valeur brute (VMG) et des principaux produits achetés et remboursés. Il peut vous aider à équilibrer les achats et les retours, et à déterminer le succès et la popularité du produit. Votre boutique doit être [configurée pour effectuer le suivi des remboursements](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) pour que ces graphiques soient renseignés.
 
 >[!NOTE]
 >

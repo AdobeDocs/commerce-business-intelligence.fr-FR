@@ -2,9 +2,9 @@
 title: Tableaux de bord
 description: Découvrez comment créer et utiliser un tableau de bord.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -47,7 +47,7 @@ L’aspect des tableaux de bord que vous créez dépend entièrement de vous. Vo
 
    * Cliquez sur **[!UICONTROL Create]**.
 
-   ![&#x200B; nom du tableau de bord &#x200B;](../../assets/magento-bi-dashboard-create-name.png)
+   ![ nom du tableau de bord ](../../assets/magento-bi-dashboard-create-name.png)
 
    * Le nom de votre nouveau tableau de bord s’affiche dans le coin supérieur gauche. Cliquez sur la flèche vers le bas (![icône de flèche vers le bas](../../assets/magento-bi-btn-down.png)) pour afficher les options. Si vous avez créé un groupe, le nouveau tableau de bord s’affiche sous le groupe dans la liste.
 

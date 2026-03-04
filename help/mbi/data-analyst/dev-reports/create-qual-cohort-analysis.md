@@ -2,9 +2,9 @@
 title: Création d’une analyse qualitative des cohortes
 description: Découvrez ce qu’est une cohorte qualitative, pourquoi vous pourriez être intéressé par la création de cette analyse et comment la créer dans Commerce Intelligence.
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Cependant, si vous souhaitez analyser le comportement de cohorte de plusieurs se
 
 La création d’un rapport `qualitative cohort` dans le `Report Builder` implique la création par l’équipe d’analystes d’Adobe de [colonnes calculées avancées](../data-warehouse-mgr/creating-calculated-columns.md) dans les tables nécessaires.
 
-Pour les créer, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) (et consultez cet article !). Voici ce que vous devez savoir :
+Pour les créer, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (et consultez cet article !). Voici ce que vous devez savoir :
 
 * Le `metric` avec lequel vous souhaitez effectuer votre analyse des cohortes et le tableau qu’il utilise (exemple : `Revenue`, basé sur le tableau `orders`).
 

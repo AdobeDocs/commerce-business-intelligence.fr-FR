@@ -2,9 +2,9 @@
 title: Connecter QuickBooks
 description: Découvrez comment les finances de votre entreprise peuvent désormais s’intégrer à vos données de vente et de marketing, ce qui vous permet de suivre rapidement et facilement vos dépenses, d’identifier les dépenses excessives, etc.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -43,5 +43,5 @@ Après avoir cliqué sur **[!UICONTROL Connect to Quickbooks]**, connectez-vous 
 
 ## Connexe
 
-* [Données  [!DNL QuickBooks] &#x200B;](../integrations/quickbooks-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Données  [!DNL QuickBooks] ](../integrations/quickbooks-data.md)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

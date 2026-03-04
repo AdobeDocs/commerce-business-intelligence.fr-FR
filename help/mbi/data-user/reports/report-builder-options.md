@@ -2,9 +2,9 @@
 title: Choisir un Report Builder
 description: Découvrez comment choisir votre Report Builder.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Choisir un Report Builder
 
 >[!NOTE]
->&#x200B;>Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md).
+>>Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
 Maintenant que vous disposez d’un plus grand nombre d’options pour créer des analyses, il peut parfois être difficile de déterminer exactement la version du Report Builder qui correspond à vos besoins. Cette rubrique vous guide tout au long du choix de la meilleure manière de créer votre analyse.
 
@@ -28,14 +28,14 @@ L’intérêt du [!DNL SQL Report Builder] réside en partie dans le fait qu’i
 
 Le [!DNL SQL Report Builder] prend en charge des fonctions telles que [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) et [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html), que vous ne pouviez pas utiliser auparavant. Vous pouvez accéder au [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html), mais d’autres fonctions spécifiques à SQL incluent :
 
-* [`Bitwise aggregate` fonctions &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
+* [`Bitwise aggregate` fonctions ](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
 * [`CASE expression`](https://docs.aws.amazon.com/redshift/latest/dg/r_CASE_function.html)
 * [`JSON_EXTRACT_PATH_TEXT`](https://docs.aws.amazon.com/redshift/latest/dg/JSON_EXTRACT_PATH_TEXT.html)
 * [`LOG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LOG.html)
 * [`MONTHS_BETWEEN`](https://docs.aws.amazon.com/redshift/latest/dg/r_MONTHS_BETWEEN_function.html)
 * [`REPLACE`](https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html)
 * [`SQRT`](https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html)
-* [`concatenation` opérateur &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
+* [`concatenation` opérateur ](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
 
 ### Si vous voulez faire des tests...
 

@@ -2,9 +2,9 @@
 title: Tableaux de bord inclus
 description: Découvrez comment vérifier l’intégrité des mesures essentielles, telles que le chiffre d’affaires de durée de vie de l’utilisateur, le nombre d’achats répétés, etc., afin de créer une base solide pour l’exploration future.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >La disponibilité de certains tableaux de bord dépend de votre jeu de données.
 
-Si vous avez des questions ou si vous souhaitez ajouter un package à votre compte, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l’aide.
+Si vous avez des questions ou si vous souhaitez ajouter un package à votre compte, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour obtenir de l’aide.
 
 ## Présentation opérationnelle
 
@@ -33,13 +33,13 @@ Le tableau de bord `cohort analysis` comprend un ensemble de graphiques qui mont
 
 Ce tableau de bord peut également inclure des graphiques de cohortes qui analysent le chiffre d’affaires total des utilisateurs d’une source d’acquisition, d’un canal ou d’une population spécifique (par exemple, New York ou la Californie). L&#39;objectif est de montrer comment vous pouvez analyser le LTV pour des segments spécifiques de votre base d&#39;utilisateurs et voir si un groupe ou un autre produit un LTV plus élevé au fil du temps.
 
-Pour plus d’informations sur les cohortes, voir [&#x200B; Exécution d’une analyse des cohortes &#x200B;](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+Pour plus d’informations sur les cohortes, voir [ Exécution d’une analyse des cohortes ](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
 Si vous ne suivez actuellement pas la source d’acquisition des utilisateurs, reportez-vous à la section [Présentation des données Source de suivi d’acquisition des utilisateurs](../../data-analyst/analysis/google-track-user-acq.md).
 
 ## Résumé des e-mails
 
-Le tableau de bord `Email Summary` comprend un exemple d’ensemble de graphiques qui peuvent être utilisés dans un résumé automatisé d’e-mail quotidien. Pour plus d’informations sur la configuration des résumés d’e-mails[&#x200B; voir &#x200B;](../../data-user/export-data/email-summaries.md)création de résumés d’e-mail automatisés.  
+Le tableau de bord `Email Summary` comprend un exemple d’ensemble de graphiques qui peuvent être utilisés dans un résumé automatisé d’e-mail quotidien. Pour plus d’informations sur la configuration des résumés d’e-mails[ voir ](../../data-user/export-data/email-summaries.md)création de résumés d’e-mail automatisés.  
 
 ## Intégrité de la rétention
 

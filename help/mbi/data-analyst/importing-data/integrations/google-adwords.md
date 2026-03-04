@@ -2,9 +2,9 @@
 title: Connecter Google Adwords
 description: Découvrez comment mesurer le ROI de la campagne en associant votre coût publicitaire et la valeur client à vie (CLV) des utilisateurs acquise à partir de vos campagnes.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Plusieurs sites web peuvent être connectés à un seul compte [!DNL Google Anal
 
 ## Connexe
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Suivre la source de référence de commande via  [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Suivre la source de référence des utilisateurs dans votre base de données](../../analysis/google-track-user-acq.md)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../../analysis/most-value-source-channel.md)

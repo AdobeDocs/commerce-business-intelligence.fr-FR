@@ -2,9 +2,9 @@
 title: Connexion à Microsoft SQL Server
 description: Découvrez comment connecter votre base de données SQL Microsoft à  [!DNL Commerce Intelligence]  en quatre étapes.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Cette rubrique explique comment connecter votre base de données [!DNL Microsoft SQL] à [!DNL Commerce Intelligence] dans un processus en quatre étapes. Ce processus nécessite une certaine expertise technique liée aux connexions au serveur et à SQL, et peut nécessiter l’assistance des développeurs de votre équipe.
 
-[!DNL Commerce Intelligence] prend en charge [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] et la plupart des autres fournisseurs de serveurs cloud. Si vous avez des questions sur votre hôte particulier, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) en nous demandant de fournir ces informations.
+[!DNL Commerce Intelligence] prend en charge [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] et la plupart des autres fournisseurs de serveurs cloud. Si vous avez des questions sur votre hôte particulier, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) en nous demandant de fournir ces informations.
 
 Votre système doit exécuter des requêtes SELECT sur votre base de données. Cette opération est d’abord effectuée pour obtenir un instantané de la structure de votre base de données, puis régulièrement, au fil du temps, pour maintenir vos données à jour. Vos mises à jour sont incrémentielles et Adobe limite la fréquence et l’heure des mises à jour afin d’éviter toute charge indésirable sur votre serveur.
 

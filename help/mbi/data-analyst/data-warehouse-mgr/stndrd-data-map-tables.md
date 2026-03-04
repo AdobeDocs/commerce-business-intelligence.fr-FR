@@ -2,9 +2,9 @@
 title: Normaliser les données avec les tables de mappage
 description: Découvrez comment utiliser les tables de mappage.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Il est possible qu’une ressource technique vous aide à nettoyer les données 
 * Les pourcentages doivent être saisis sous forme de décimales.
 * Assurez-vous que tous les zéros de début ou de fin sont correctement conservés.
 
-Avant de vous lancer, Adobe vous recommande d’[&#x200B; exporter les données brutes du tableau](../../tutorials/export-raw-data.md). Examiner d’abord les données brutes signifie que vous pouvez explorer toutes les combinaisons possibles pour les données à nettoyer, en vous assurant ainsi que le tableau de mappage couvre tout.
+Avant de vous lancer, Adobe vous recommande d’[ exporter les données brutes du tableau](../../tutorials/export-raw-data.md). Examiner d’abord les données brutes signifie que vous pouvez explorer toutes les combinaisons possibles pour les données à nettoyer, en vous assurant ainsi que le tableau de mappage couvre tout.
 
-Pour créer une table de mappage, vous devez créer une feuille de calcul à deux colonnes qui suit les [&#x200B; règles de formatage pour les chargements de fichiers](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
+Pour créer une table de mappage, vous devez créer une feuille de calcul à deux colonnes qui suit les [ règles de formatage pour les chargements de fichiers](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
 
 Dans la première colonne, saisissez les valeurs stockées dans votre base de données avec **une seule valeur par ligne**. Par exemple, `pa` et `PA` ne peuvent pas se trouver sur la même ligne : chaque entrée doit avoir sa propre ligne. Voir ci-dessous pour un exemple.
 

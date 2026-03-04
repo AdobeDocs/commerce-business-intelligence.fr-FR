@@ -2,9 +2,9 @@
 title: Connecter les publicités Facebook
 description: Apprenez à analyser vos données sur les dépenses publicitaires et à voir si votre argent est dépensé efficacement.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Vous avez fait vos recherches, vous avez créé vos publicités, vous avez lanc�
 La connexion de vos données [!DNL Facebook Ad] à [!DNL Commerce Intelligence] est un processus simple en trois étapes :
 
 1. [Ajoutez [!DNL Facebook] en tant que source de données dans  [!DNL Commerce Intelligence]](#stepone)
-1. [Autoriser l [!DNL Commerce Intelligence] accès à vos  [!DNL Facebook Ads] &#x200B;](#steptwo)
+1. [Autoriser l [!DNL Commerce Intelligence] accès à vos  [!DNL Facebook Ads] ](#steptwo)
 1. [Sélectionner [!DNL Facebook Ads] Comptes pour extraire les données](#stepthree)
 
 ## Ajoutez [!DNL Facebook] comme source de données dans [!DNL Commerce Intelligence] {#stepone}
@@ -58,8 +58,8 @@ Assurez-vous du suivi des campagnes [!DNL Facebook] dans [!DNL Google Analytics]
 
 ## Connexe
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
-* [Connecter votre  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Connecter votre  [!DNL Google Adwords] ](../integrations/google-ecommerce.md)
 * [Suivre la source de référence de commande via  [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Suivre la source de référence des utilisateurs dans votre base de données](../../analysis/google-track-user-acq.md)
 * [Effectuez le suivi des données relatives aux appareils, aux navigateurs et aux systèmes d’exploitation dans votre base de données](../../analysis/track-usr-dev-browser.md)

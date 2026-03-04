@@ -2,9 +2,9 @@
 title: Modification en masse de graphiques dans des tableaux de bord
 description: Découvrez comment utiliser la fonction de modification en masse dans  [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 1%
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 La fonctionnalité de modification en masse facilite la modification des noms de graphique et des dates dans vos tableaux de bord. Par exemple, vous souhaitez que tous les graphiques d’un tableau de bord spécifique fassent référence à un seul magasin et génèrent des rapports sur une base mensuelle plutôt que trimestrielle. Plutôt que de tout modifier manuellement, laissez la fonction `bulk-editing` faire le travail. Dans cette rubrique, vous apprendrez à utiliser :
 
-* [La  [!DNL Find/Replace] &#x200B;](#findreplace)
+* [La  [!DNL Find/Replace] ](#findreplace)
 
-* [La  [!DNL Prepend Name] &#x200B;](#prepend)
+* [La  [!DNL Prepend Name] ](#prepend)
 
-* [La  [!DNL Change Dates] &#x200B;](#dates)
+* [La  [!DNL Change Dates] ](#dates)
 
 Cela dit, considérez ceci : *Ces changements doivent-ils être permanents ?* Dans le cas contraire, envisagez de cloner le tableau de bord, puis de modifier les dates dans le nouveau tableau de bord. Vous pouvez ainsi conserver votre tableau de bord d’origine tout en apportant les modifications dont vous avez besoin.
 

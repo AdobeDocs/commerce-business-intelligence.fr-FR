@@ -2,9 +2,9 @@
 title: Report Builder de cohorte
 description: Découvrez l’analyse des groupes d’utilisateurs qui partagent des caractéristiques similaires tout au long de leurs cycles de vie.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1597'
 ht-degree: 0%
@@ -165,7 +165,7 @@ Après avoir défini la mesure et la manière dont vous souhaitez l’analyser, 
 
 Juste au-dessus de la visualisation du rapport se trouve une liste déroulante des paramètres de `perspective`.
 
-Voir [&#x200B; Perspectives &#x200B;](#perspectives).
+Voir [ Perspectives ](#perspectives).
 
 ![Menu Cohorte en perspective présentant différentes options d’affichage](../../assets/Cohort_Perspective_Menu.png)
 

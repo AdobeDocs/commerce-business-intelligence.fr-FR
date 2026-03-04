@@ -2,9 +2,9 @@
 title: Stockage de données dans Adobe Commerce
 description: Découvrez comment les données sont générées, ce qui entraîne l’insertion d’une nouvelle ligne et comment les actions sont enregistrées dans la base de données Adobe Commerce.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 La plateforme [!DNL Adobe Commerce] enregistre et organise une grande variété de données commerciales précieuses sur des centaines de tables. Cette rubrique décrit :
 
 * comment ces données sont générées ;
-* ce qui entraîne l’insertion d’une nouvelle ligne dans l’un des [&#x200B; Tableaux Commerce principaux &#x200B;](../data-warehouse-mgr/common-mage-tables.md)
+* ce qui entraîne l’insertion d’une nouvelle ligne dans l’un des [ Tableaux Commerce principaux ](../data-warehouse-mgr/common-mage-tables.md)
 * comment les actions telles que l’achat ou la création d’un compte sont enregistrées dans la base de données [!DNL Adobe Commerce]
 
 Pour discuter de ces concepts, reportez-vous à l’exemple suivant :
@@ -79,7 +79,7 @@ Une fois la création du compte terminée, `Sammy Customer` est prêt à commenc
 
 (si vous disposez de Commerce 2.0 ou d’une version ultérieure)
 
-Outre la ligne unique de la table `Sales\_flat\_order`, lorsque `Sammy Customer` soumettez la commande, une ligne pour chaque élément unique de cet ordre est insérée dans la table [`sales\_flat\_order\_item` : &#x200B;](../data-warehouse-mgr/sales-flat-order-item-table.md)
+Outre la ligne unique de la table `Sales\_flat\_order`, lorsque `Sammy Customer` soumettez la commande, une ligne pour chaque élément unique de cet ordre est insérée dans la table [`sales\_flat\_order\_item` : ](../data-warehouse-mgr/sales-flat-order-item-table.md)
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|

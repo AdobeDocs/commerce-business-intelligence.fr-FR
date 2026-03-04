@@ -2,9 +2,9 @@
 title: Modification du tableau opérationnel d’une mesure
 description: Découvrez comment modifier le tableau de données qu’une mesure utilise pour effectuer son opération.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
@@ -25,6 +25,6 @@ Dans certains cas, vous pouvez décider de modifier le tableau de données qu’
 
    ![Liste déroulante de sélection de tableau présentant les tableaux disponibles](../../assets/change-metrics-2.png)
 
-1. Si la nouvelle table ne contient pas de colonne correspondante, vous pouvez la **créer dans votre table de données** ou [contacter l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) s’il s’agit d’une colonne de calcul ou d’une dimension créée par [!DNL Commerce Intelligence]. Vous pouvez également **supprimer la dimension de la mesure**. Pour supprimer une dimension dont vous n’avez plus besoin, revenez simplement à l’éditeur de la mesure et sélectionnez les dimensions à supprimer sous `Dimensions`.
+1. Si la nouvelle table ne contient pas de colonne correspondante, vous pouvez la **créer dans votre table de données** ou [contacter l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) s’il s’agit d’une colonne de calcul ou d’une dimension créée par [!DNL Commerce Intelligence]. Vous pouvez également **supprimer la dimension de la mesure**. Pour supprimer une dimension dont vous n’avez plus besoin, revenez simplement à l’éditeur de la mesure et sélectionnez les dimensions à supprimer sous `Dimensions`.
 
-   ![&#x200B; Menu déroulant de sélection de colonne opérationnelle &#x200B;](../../assets/change-metrics-3.png)
+   ![ Menu déroulant de sélection de colonne opérationnelle ](../../assets/change-metrics-3.png)

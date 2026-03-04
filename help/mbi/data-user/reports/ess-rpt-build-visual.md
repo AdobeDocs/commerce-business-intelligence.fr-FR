@@ -2,9 +2,9 @@
 title: Visual Report Builder
 description: Découvrez comment utiliser Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 0%
@@ -97,7 +97,7 @@ L&#39;exemple suivant montre comment créer un rapport simple, regrouper les don
      |-----|-----|
      | ![Icône de graphique linéaire](../../assets/magento-bi-btn-chart-line.png) | Graphique linéaire |
      | ![Icône de barre horizontale](../../assets/magento-bi-btn-chart-horz-bar.png) | Barre horizontale |
-     | ![&#x200B; Icône de barre empilée horizontale &#x200B;](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barres empilées horizontales |
+     | ![ Icône de barre empilée horizontale ](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barres empilées horizontales |
      | ![Icône de barre verticale](../../assets/magento-bi-btn-chart-vert-bar.png) | Barre verticale |
      | ![Icône de barre empilée verticale](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barres empilées verticales |
      | ![Icône de graphique en secteurs](../../assets/magento-bi-btn-chart-pie.png) | Secteurs |
@@ -124,4 +124,4 @@ L&#39;exemple suivant montre comment créer un rapport simple, regrouper les don
 
    * Dans le menu, choisissez `Dashboards` et cliquez sur le nom du tableau de bord courant pour afficher la liste. Cliquez ensuite sur le nom du tableau de bord dans lequel le rapport a été enregistré.
 
-     ![&#x200B; Rapport dans le tableau de bord &#x200B;](../../assets/magento-bi-report-builder-my-dashboard.png)
+     ![ Rapport dans le tableau de bord ](../../assets/magento-bi-report-builder-my-dashboard.png)

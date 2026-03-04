@@ -2,9 +2,9 @@
 title: Connexion  [!DNL MongoDB]  via un tunnel SSH
 description: Découvrez comment vous connecter via  [!DNL MongoDB]  tunnel SSH.
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Pour connecter votre base de données [!DNL MongoDB] à [!DNL Commerce Intelligence] via un tunnel SSH, vous devez effectuer les opérations suivantes :
 
-1. [Récupération de la clé  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
-1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+1. [Récupération de la clé  [!DNL Commerce Intelligence] ](#retrieve)
+1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Création d’un utilisateur Linux pour Commerce Intelligence](#linux)
 1. [Création d [!DNL MongoDB] un utilisateur pour Commerce Intelligence](#mongodb)
 1. [Saisissez les informations de connexion et d’utilisateur dans  [!DNL Commerce Intelligence]](#finish)
@@ -146,4 +146,4 @@ Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save Test]** pour terminer
 
 ### Connexe
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

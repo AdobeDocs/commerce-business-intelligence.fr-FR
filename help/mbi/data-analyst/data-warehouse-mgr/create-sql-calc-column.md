@@ -2,9 +2,9 @@
 title: Création et utilisation d'une colonne SQL calculée
 description: Découvrez comment créer des colonnes avancées sous la forme de colonnes de calcul SQL sur la nouvelle architecture de Adobe Commerce Intelligence.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Cette rubrique décrit l&#39;objectif et les utilisations du type de colonne `Ca
 
 Par le passé, les colonnes considérées comme `advanced` ne pouvaient être créées que par un analyste de l’équipe du succès client, ici à [!DNL Adobe Commerce Intelligence]. Désormais, toute la puissance est entre les mains de l’utilisateur final et des colonnes avancées peuvent être créées sous la forme de colonnes `SQL Calculation` sur la nouvelle architecture [!DNL Commerce Intelligence].
 
-Le type de colonne `Calculation`, désormais disponible sous forme d’option dans le gestionnaire Data Warehouse, est une même opération de table qui vous permet de transformer les colonnes d’une table à l’aide de la logique PostgreSQL. Vous trouverez sur le site web PostgreSQL `Calculation`ici[&#x200B; de la documentation sur les fonctions et opérateurs pouvant être utilisés dans le type de colonne &#x200B;](https://www.postgresql.org/docs/9.6/functions.html).
+Le type de colonne `Calculation`, désormais disponible sous forme d’option dans le gestionnaire Data Warehouse, est une même opération de table qui vous permet de transformer les colonnes d’une table à l’aide de la logique PostgreSQL. Vous trouverez sur le site web PostgreSQL `Calculation`ici[ de la documentation sur les fonctions et opérateurs pouvant être utilisés dans le type de colonne ](https://www.postgresql.org/docs/9.6/functions.html).
 
 Les différentes colonnes pouvant être créées avec la colonne `Calculation` sont presque illimitées, mais la plupart des colonnes peuvent être créées à l’aide d’instructions IF-THEN et de l’arithmétique de base, qui est utilisée dans les exemples ci-dessous.
 
