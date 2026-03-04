@@ -2,9 +2,9 @@
 title: Exporter les données brutes
 description: Découvrez comment exporter des enregistrements de votre  [!DNL Commerce Intelligence] Data Warehouse pour mieux comprendre ce qui alimente votre tableau de bord.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%

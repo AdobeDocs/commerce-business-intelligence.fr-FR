@@ -2,9 +2,9 @@
 title: Tableaux de bord prêts à l’emploi
 description: Découvrez les tableaux de bord prêts à l’emploi pour fournir insight à votre entreprise.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%

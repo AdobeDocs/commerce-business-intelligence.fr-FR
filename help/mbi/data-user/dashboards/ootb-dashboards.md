@@ -2,9 +2,9 @@
 title: Tableaux de bord inclus
 description: Découvrez comment vérifier l’intégrité des mesures essentielles, telles que le chiffre d’affaires de durée de vie de l’utilisateur, le nombre d’achats répétés, etc., afin de créer une base solide pour l’exploration future.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%

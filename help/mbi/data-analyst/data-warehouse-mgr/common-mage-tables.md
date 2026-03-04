@@ -2,9 +2,9 @@
 title: Tableaux Commerce courants
 description: Découvrez quelques-uns des tableaux les plus courants que  [!DNL Commerce Intelligence]  clients et clientes utilisent.
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%

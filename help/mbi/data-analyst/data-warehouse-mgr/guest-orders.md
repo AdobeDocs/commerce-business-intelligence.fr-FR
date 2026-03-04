@@ -2,9 +2,9 @@
 title: Commandes des invités
 description: Découvrez l'impact des commandes d'invités sur vos données et les options dont vous disposez pour comptabiliser correctement les commandes d'invités dans votre [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 0%

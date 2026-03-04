@@ -2,9 +2,9 @@
 title: table sales_order_item
 description: Découvrez comment utiliser la table sales_order_item.
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Le `sales_order_item` capture les détails de tous les [types de produits](https
 
 Prenons l’exemple d’un produit configurable tel qu’un t-shirt. Lorsqu’un client extrait, il sélectionne des options pour modifier la couleur et la taille. Si le client sélectionne une couleur de `blue` et une taille de `small`, il finit par acheter un produit simple comme `t-shirt-blue-small` qui renvoie au produit parent de `t-shirt`.
 
-Lorsqu&#39;un produit configurable est inclus dans une commande, deux lignes sont générées dans le tableau de `sales_order_item` : une pour le [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-simple.html?lang=fr)simple`sku` et une pour le parent [configurable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=fr). Ces deux enregistrements de la table `sales_order_item` peuvent être mis en relation l&#39;un avec l&#39;autre à travers la jointure suivante :
+Lorsqu&#39;un produit configurable est inclus dans une commande, deux lignes sont générées dans le tableau de `sales_order_item` : une pour le [&#x200B; &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-simple.html?lang=fr)simple`sku` et une pour le parent [configurable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=fr). Ces deux enregistrements de la table `sales_order_item` peuvent être mis en relation l&#39;un avec l&#39;autre à travers la jointure suivante :
 
 * (simple) `sales_order_item.parent_item_id` => (configurable) `sales_order_item.item_id`
 

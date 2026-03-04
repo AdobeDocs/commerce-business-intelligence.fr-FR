@@ -2,9 +2,9 @@
 title: Validation des données dans Mixpanel
 description: Découvrez comment vérifier que vous avez synchronisé toutes les données qui sont disponibles directement dans Mixpanel.
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 063112ebbafad195b0a80ee2b119ab32d879ae5b
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%
@@ -30,3 +30,4 @@ Lorsque [!DNL Adobe Commerce Intelligence] se connecte pour la première fois à
    ![Option Exporter un panneau mixte au format CSV dans le menu](../../../assets/export-csv-mixpanel.png)
 
 1. Envoyez le fichier `.csv` au gestionnaire de compte ou à l’analyste avec lequel vous travaillez sur ce processus de validation.
+

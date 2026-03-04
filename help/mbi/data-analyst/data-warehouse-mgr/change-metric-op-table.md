@@ -2,9 +2,9 @@
 title: Modification du tableau opérationnel d’une mesure
 description: Découvrez comment modifier le tableau de données qu’une mesure utilise pour effectuer son opération.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%

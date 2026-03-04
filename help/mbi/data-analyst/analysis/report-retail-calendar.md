@@ -2,9 +2,9 @@
 title: Reporting sur un calendrier de vente au détail
 description: Découvrez comment configurer la structure pour utiliser un calendrier de vente au détail 4 [!DNL Commerce Intelligence] 5-4 dans votre compte.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%

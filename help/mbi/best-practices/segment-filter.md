@@ -2,9 +2,9 @@
 title: Dimensions de données recommandées pour la segmentation et le filtrage
 description: Découvrez les bonnes pratiques en matière de segmentation et de filtrage.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 0%
