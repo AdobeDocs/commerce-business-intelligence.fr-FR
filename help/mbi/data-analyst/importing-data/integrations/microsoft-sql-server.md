@@ -4,9 +4,15 @@ description: Découvrez comment connecter votre base de données SQL Microsoft �
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/mJFBPJE334m7V8klJk-1xKAfsU4u4ObcwWDZzylJohM
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: 306
 ht-degree: 0%
 
 ---
@@ -17,11 +23,11 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-![Logo SQL Server de Microsoft](../../../assets/MicrosoftSQLServer-logo.png)
+![Logo SQL Server de ](../../../assets/MicrosoftSQLServer-logo.png)
 
 Cette rubrique explique comment connecter votre base de données [!DNL Microsoft SQL] à [!DNL Commerce Intelligence] dans un processus en quatre étapes. Ce processus nécessite une certaine expertise technique liée aux connexions au serveur et à SQL, et peut nécessiter l’assistance des développeurs de votre équipe.
 
-[!DNL Commerce Intelligence] prend en charge [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] et la plupart des autres fournisseurs de serveurs cloud. Si vous avez des questions sur votre hôte particulier, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) en nous demandant de fournir ces informations.
+[!DNL Commerce Intelligence] prend en charge [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] et la plupart des autres fournisseurs de serveurs cloud. Si vous avez des questions sur votre hôte particulier, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) en nous demandant de fournir ces informations.
 
 Votre système doit exécuter des requêtes SELECT sur votre base de données. Cette opération est d’abord effectuée pour obtenir un instantané de la structure de votre base de données, puis régulièrement, au fil du temps, pour maintenir vos données à jour. Vos mises à jour sont incrémentielles et Adobe limite la fréquence et l’heure des mises à jour afin d’éviter toute charge indésirable sur votre serveur.
 

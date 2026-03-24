@@ -4,20 +4,26 @@ description: Découvrez comment configurer des colonnes de données avec des val
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: 569
 ht-degree: 0%
 
 ---
 
 # Configuration des contrôles de données
 
-Dans une table de base de données, il peut y avoir des colonnes de données dont les valeurs peuvent être modifiées. Par exemple, dans un tableau `orders`, il peut y avoir une colonne appelée `status`. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur _en attente_. La commande est répliquée dans votre [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) avec cette valeur de `pending`.
+Dans une table de base de données, il peut y avoir des colonnes de données dont les valeurs peuvent être modifiées. Par exemple, dans un tableau `orders`, il peut y avoir une colonne appelée `status`. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur _en attente_. La commande est répliquée dans votre [](../data-warehouse-mgr/tour-dwm.md) avec cette valeur de `pending`.
 
 Les statuts de commande peuvent changer, mais ils ne sont pas toujours dans un statut `pending`. Cela pourrait finir par devenir `complete` ou `cancelled`. Pour que votre Data Warehouse synchronise cette modification, de nouvelles valeurs doivent être recherchées dans la colonne.
 
-Comment cela s’intègre-t-il avec les [&#x200B; méthodes de réplication &#x200B;](../data-warehouse-mgr/cfg-replication-methods.md) qui ont été abordées ? Le traitement des nouvelles vérifications varie en fonction de la méthode de réplication choisie. La méthode de réplication `Modified\_At` est le meilleur choix pour traiter les valeurs qui changent, car les revérifications n’ont pas à être configurées. Les méthodes `Auto-Incrementing Primary Key` et `Primary Key Batch Monitoring` nécessitent de revérifier la configuration.
+Comment cela s’intègre-t-il avec les [ méthodes de réplication ](../data-warehouse-mgr/cfg-replication-methods.md) qui ont été abordées ? Le traitement des nouvelles vérifications varie en fonction de la méthode de réplication choisie. La méthode de réplication `Modified\_At` est le meilleur choix pour traiter les valeurs qui changent, car les revérifications n’ont pas à être configurées. Les méthodes `Auto-Incrementing Primary Key` et `Primary Key Batch Monitoring` nécessitent de revérifier la configuration.
 
 Lors de l’utilisation de l’une de ces méthodes, les colonnes modifiables doivent être marquées pour vérification. Pour ce faire, trois méthodes sont possibles :
 
@@ -56,7 +62,7 @@ Pour modifier la fréquence de revérification, cochez la case en regard des col
 
 ![Data Warehouse Manager affiche les options de configuration de revérification](../../assets/dwm-recheck.png)
 
-Il se peut que vous voyiez parfois des `Paused` dans la colonne `Changes?` . Cette valeur s&#39;affiche lorsque la méthode de réplication [&#x200B; de la table](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) est définie sur `Paused`.
+Il se peut que vous voyiez parfois des `Paused` dans la colonne `Changes?` . Cette valeur s&#39;affiche lorsque la méthode de réplication [ de la table](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) est définie sur `Paused`.
 
 [!DNL Adobe] vous recommande de consulter ces colonnes pour optimiser vos mises à jour et vous assurer que les colonnes modifiables sont à nouveau vérifiées. Si la fréquence de revérification d’une colonne est élevée compte tenu de la fréquence de modification des données, Adobe recommande de la diminuer pour optimiser vos mises à jour.
 

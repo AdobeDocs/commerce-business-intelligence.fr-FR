@@ -4,9 +4,15 @@ description: Découvrez comment apporter des modifications en bloc à tous les r
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/6wixrQXkvGMF9c36wrGJ4Qj23HqJ--Mr0XMYMBhujjo
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: 449
 ht-degree: 0%
 
 ---
@@ -43,11 +49,11 @@ Lorsque vous spécifiez un filtre de date pour un tableau de bord, ce filtre est
 
 ## Stocker les filtres
 
-Pour analyser les performances d’un magasin spécifique, cliquez sur l’icône de magasins dans le coin supérieur droit (![&#x200B; Filtre de magasin &#x200B;](../../assets/store-filter.png)). Par défaut, `Store Filter` est défini sur `All Stores`, ce qui affiche les données de toutes les [&#x200B; vues de magasin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=fr) disponibles sur votre site Commerce.
+Pour analyser les performances d’un magasin spécifique, cliquez sur l’icône de magasins dans le coin supérieur droit (![ Filtre de magasin ](../../assets/store-filter.png)). Par défaut, `Store Filter` est défini sur `All Stores`, ce qui affiche les données de toutes les [ vues de magasin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) disponibles sur votre site Commerce.
 
 >[!NOTE]
 >
->Un filtre de magasin est activé ou désactivé pour l’ensemble d’un compte [!DNL Commerce Intelligence]. Si un tableau de bord contient des rapports qui ne sont pas affectés par le filtre (tels que des rapports qui ne sont pas créés sur des données [!DNL Adobe Commerce]), ces rapports ne sont pas mis à jour lorsque le filtre de magasin est appliqué. Vous pouvez [contacter l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) si vous pensez qu’un rapport doit être mis à jour en fonction de la sélection de la boutique ou si vous pensez que le filtre de votre boutique de comptes est désactivé par erreur.
+>Un filtre de magasin est activé ou désactivé pour l’ensemble d’un compte [!DNL Commerce Intelligence]. Si un tableau de bord contient des rapports qui ne sont pas affectés par le filtre (tels que des rapports qui ne sont pas créés sur des données [!DNL Adobe Commerce]), ces rapports ne sont pas mis à jour lorsque le filtre de magasin est appliqué. Vous pouvez [contacter l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si vous pensez qu’un rapport doit être mis à jour en fonction de la sélection de la boutique ou si vous pensez que le filtre de votre boutique de comptes est désactivé par erreur.
 
 Lorsque vous sélectionnez un magasin dans la `Store Filter`, le filtre conserve votre sélection lorsque vous naviguez entre les tableaux de bord. La conservation de votre sélection vous permet d’afficher les données du magasin sélectionné partout jusqu’à ce que vous sélectionniez `All Stores`.
 

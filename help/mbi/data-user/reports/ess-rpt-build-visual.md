@@ -4,9 +4,15 @@ description: Découvrez comment utiliser Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/GtOv-zjLrzhzmIiYOq-IPn2SY7hkf167FtES5iN1qtI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: 700
 ht-degree: 0%
 
 ---
@@ -97,7 +103,7 @@ L&#39;exemple suivant montre comment créer un rapport simple, regrouper les don
      |-----|-----|
      | ![Icône de graphique linéaire](../../assets/magento-bi-btn-chart-line.png) | Graphique linéaire |
      | ![Icône de barre horizontale](../../assets/magento-bi-btn-chart-horz-bar.png) | Barre horizontale |
-     | ![&#x200B; Icône de barre empilée horizontale &#x200B;](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barres empilées horizontales |
+     | ![ Icône de barre empilée horizontale ](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barres empilées horizontales |
      | ![Icône de barre verticale](../../assets/magento-bi-btn-chart-vert-bar.png) | Barre verticale |
      | ![Icône de barre empilée verticale](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barres empilées verticales |
      | ![Icône de graphique en secteurs](../../assets/magento-bi-btn-chart-pie.png) | Secteurs |
@@ -124,4 +130,4 @@ L&#39;exemple suivant montre comment créer un rapport simple, regrouper les don
 
    * Dans le menu, choisissez `Dashboards` et cliquez sur le nom du tableau de bord courant pour afficher la liste. Cliquez ensuite sur le nom du tableau de bord dans lequel le rapport a été enregistré.
 
-     ![&#x200B; Rapport dans le tableau de bord &#x200B;](../../assets/magento-bi-report-builder-my-dashboard.png)
+     ![ Rapport dans le tableau de bord ](../../assets/magento-bi-report-builder-my-dashboard.png)

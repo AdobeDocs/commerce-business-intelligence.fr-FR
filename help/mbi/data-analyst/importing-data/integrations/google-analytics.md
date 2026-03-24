@@ -4,9 +4,15 @@ description: Découvrez comment connecter Google Analytics à  [!DNL Commerce In
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/wSR5SWYSfmNZkzp5QxTUwv6QSsynXYofmRkKbvMsohs
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: 283
 ht-degree: 0%
 
 ---
@@ -17,7 +23,7 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-Logo ![Google Analytics](../../../assets/google-analytics-logo.png)
+Logo ![](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics] est le service d’analyse web le plus utilisé sur Internet. L’implémentation de [!DNL Google Analytics] sur votre site web vous permet de suivre la manière dont les visiteurs et visiteuses utilisent votre site, le contenu attrayant, l’endroit où ils quittent, etc. L’analyse de ces mesures dans [!DNL Commerce Intelligence], ainsi que d’autres données, améliore l’intégrité globale et la convivialité de votre site.
 
@@ -57,7 +63,7 @@ Pour identifier l’identifiant de profil [!DNL Google Analytics] d’un site we
 
 ## Connexe :
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Connexion  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analyse de l’activité du site web et des taux de conversion des clients](../../analysis/web-act-cust-conversion.md)
 * [Suivi des données d’acquisition des utilisateurs à l’aide  [!DNL Google Analytics]  cookies](../../analysis/google-track-user-acq.md)

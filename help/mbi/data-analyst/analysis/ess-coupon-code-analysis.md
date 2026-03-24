@@ -4,9 +4,15 @@ description: En savoir plus sur la performance des coupons de votre entreprise e
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/Wr-Lx6N-regGfzW3olk2hya-AybetR0w4Z2yFTWHeDM
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: 532
 ht-degree: 0%
 
 ---
@@ -48,7 +54,7 @@ La première étape consiste à créer une mesure en procédant comme suit :
 ## Création de votre tableau de bord
 
 * Une fois la mesure créée :
-   * Accédez à [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
+   * Accédez à **.[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]
    * Attribuez un nom tel que `_Coupon Analysis_` au tableau de bord.
 
 * C’est là que vous créez et ajoutez tous les rapports.
@@ -59,45 +65,45 @@ La première étape consiste à créer une mesure en procédant comme suit :
 
 >[!NOTE]
 >
->La [!UICONTROL Time Period]** de chaque rapport est répertoriée comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, par exemple `All time`, `Year-to-date` ou `Last 365 days`.
+>La ** de chaque rapport est répertoriée comme [!UICONTROL Time Period]. `All-time` N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, par exemple `All time`, `Year-to-date` ou `Last 365 days`.
 
 * **Commandes avec coupons**
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Orders`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Commandes sans coupons**
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Orders`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Chiffre d’affaires net des commandes avec coupons**
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Revenue`
       * Ajouter un filtre :
          * [`A`] `coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
 * **Remises sur coupons**
    * [!UICONTROL Metric] : `Coupon discount amount`
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
@@ -107,7 +113,7 @@ La première étape consiste à créer une mesure en procédant comme suit :
          * [`A`] `Customer's first order's coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
@@ -117,7 +123,7 @@ La première étape consiste à créer une mesure en procédant comme suit :
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
@@ -141,23 +147,23 @@ La première étape consiste à créer une mesure en procédant comme suit :
 
    * Créer une formule : `Gross revenue`
       * [!UICONTROL Formula] : `(B – C)`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Currency`
 
    * Créer une formule : **% de remise**
       * Formule : `(C / (B - C))`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * Créer une formule : `Average order discount`
       * [!UICONTROL Formula] : `(C / A)`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Intervalle]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Type de graphique]: `Table`
 
 * **Chiffre d’affaires moyen sur la durée de vie par coupon de première commande**
@@ -166,7 +172,7 @@ La première étape consiste à créer une mesure en procédant comme suit :
          * [`A`] `coupon_code` **EST**`[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Chart type] : `Number (scalar)`
 
@@ -176,10 +182,10 @@ La première étape consiste à créer une mesure en procédant comme suit :
          * [`A`] `Customer's first order's coupon_code` **N’EST PAS** `[NULL]`
 
    * [!UICONTROL Time period] : `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Intervalle]: `None`
    * [!UICONTROL Group by] : `Customer's first order's coupon_code`
-   * &#x200B;
+   * 
      [!UICONTROL Type de graphique]: **Column**
 
 * **Nouveaux clients par acquisition de coupon/hors coupon**

@@ -4,9 +4,15 @@ description: Découvrez quelques méthodes différentes pour évaluer les perfor
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: 1253
 ht-degree: 0%
 
 ---
@@ -99,7 +105,7 @@ Exécutez-vous des publicités spécifiques au produit ? Si tel est le cas, vous
 >
 >Cet exemple suppose que tous les coûts de campagne ont été utilisés exclusivement pour générer des achats de produit(s) spécifique(s). En supposant que l’intégralité du coût ait été dépensée pour générer des achats, le retour sur investissement qui en résulte prend en compte le pire scénario (coût le plus élevé par achat). Vous pouvez être sûr que votre retour sur investissement réel est supérieur à ce calcul. Exemple : en supposant que vous ayez dépensé 20 $ dans une campagne qui a généré 10 nouveaux utilisateurs et 10 achats, votre coût réel par achat est de 1 $. En supposant que tous les coûts aient servi à acquérir de nouveaux utilisateurs, le coût par achat est de 2 $.
 
-Avant de commencer, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
+Avant de commencer, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
 
 * Source de la commande (si vous suivez uniquement la source de référence au niveau de l’utilisateur, rejoignez la source de l’utilisateur).
 * Campagne de la commande (si vous suivez uniquement la source de référence au niveau de l’utilisateur, rejoignez la campagne de l’utilisateur)
@@ -135,6 +141,6 @@ Avant de commencer, [soumettez un ticket d’assistance](https://experienceleagu
 * [Suivre la source de référence des utilisateurs dans votre base de données](../analysis/google-track-user-acq.md)
 * [Effectuez le suivi des données relatives aux appareils, aux navigateurs et aux systèmes d’exploitation dans votre base de données](../analysis/track-usr-dev-browser.md)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../analysis/most-value-source-channel.md)
-* [Connecter votre  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Connecter votre  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Comment fonctionne  [!DNL Google Analytics] ’attribution UTM ?](../analysis/utm-attributes.md)
 * [Cinq bonnes pratiques pour le balisage UTM dans  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

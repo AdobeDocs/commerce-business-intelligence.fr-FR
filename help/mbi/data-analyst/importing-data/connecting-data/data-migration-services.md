@@ -4,16 +4,22 @@ description: Découvrez tout ce dont vous avez besoin pour soumettre une demande
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/q8FzCjuqcQC57WLd0201CV46es2CrbAjZx9FGFX-RFw
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: 685
 ht-degree: 0%
 
 ---
 
 # Migration des données
 
-La migration vers un nouveau schéma de base de données, un nouveau serveur ou une nouvelle base de données de rapports ne doit pas nécessairement être stressante. L’[[!DNL Adobe] équipe Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) offre une assistance en matière de migration.
+La migration vers un nouveau schéma de base de données, un nouveau serveur ou une nouvelle base de données de rapports ne doit pas nécessairement être stressante. L’[[!DNL Adobe] équipe Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre une assistance en matière de migration.
 
 Pour garantir une transition aussi fluide que possible, veillez à fournir les informations les plus détaillées possible lors de l’envoi de votre demande de migration. Cette rubrique contient tout ce dont vous avez besoin pour envoyer une demande et commencer la migration. En nous fournissant une image complète de vos besoins, nous vous garantissons que votre projet est correctement défini et que l&#39;estimation est exacte.
 
@@ -67,7 +73,7 @@ Voici un aperçu d’un exemple :
 
 ## Comment soumettre une demande ? {#submitreq}
 
-Vous pouvez nous contacter en [soumettant une demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Vous pouvez nous contacter en [soumettant une demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Si vous avez suivi les étapes de la section précédente pour créer la feuille de calcul correspondant aux colonnes, n’oubliez pas de la joindre.
 

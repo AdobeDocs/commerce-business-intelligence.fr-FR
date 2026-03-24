@@ -4,9 +4,15 @@ description: Découvrez comment comprendre et créer des bases pour l’analyse.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '3130'
+source-wordcount: 3130
 ht-degree: 0%
 
 ---
@@ -46,7 +52,7 @@ Si certains de ces calculs n’existent pas actuellement dans votre base de donn
 
 **Acceptez-vous les commandes d&#39;invités ?**
 
-*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez l’[équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour vous assurer que vos analyses client incluent tous les clients.*
+*Si tel est le cas, ce tableau peut ne pas contenir tous vos clients. Contactez l’[équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pour vous assurer que vos analyses client incluent tous les clients.*
 
 *Vous n&#39;êtes pas sûr d&#39;accepter les commandes de clients ? Consultez [cette rubrique](../data-warehouse-mgr/guest-orders.md) pour en savoir plus !*
 
@@ -60,7 +66,7 @@ Dans ce tableau, chaque ligne représente un ordre. Les colonnes de ce tableau c
 * **[!UICONTROL Created_at]** : date à laquelle la commande a été créée ou passée.
 * **[!UICONTROL Customer_email]** : adresse électronique du client qui a passé la commande. Il peut également s’agir de l’identifiant unique du client.
 * **[!UICONTROL Customer's lifetime number of orders]** : une copie de la colonne portant le même nom dans votre tableau `Customers`.
-* **[!UICONTROL Customer's order number]** : numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous consultez correspond à la première commande d’un client, cette colonne contient la mention « 1 ». Toutefois, s’il s’agit de la 15e commande du client, cette colonne contient la mention « 15 » pour cette commande. Si cette dimension n’existe pas sur votre table de `Customers`, demandez de l’aide à la création auprès de l’équipe [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+* **[!UICONTROL Customer's order number]** : numéro de commande séquentiel du client associé à la commande. Par exemple, si la ligne que vous consultez correspond à la première commande d’un client, cette colonne contient la mention « 1 ». Toutefois, s’il s’agit de la 15e commande du client, cette colonne contient la mention « 15 » pour cette commande. Si cette dimension n’existe pas sur votre table de `Customers`, demandez de l’aide à la création auprès de l’équipe [support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 * **[!UICONTROL Customer's order number (previous-current)]** : concaténation de deux valeurs dans la colonne **[!UICONTROL Customer's order number]**. Elle est utilisée dans un exemple de rapport ci-dessous pour afficher le temps écoulé entre deux commandes. Par exemple, la durée entre la date de première commande d’un client et sa date de deuxième commande est représentée sous la forme « 1-2 » avec ce calcul.
 * **[!UICONTROL Coupon_code]** : indique les coupons utilisés pour chaque commande.
 * **[!UICONTROL Seconds since previous order]** : délai (en secondes) entre les commandes d’un client ou d’une cliente.
@@ -88,7 +94,7 @@ Cette table permet de gérer les informations relatives à votre abonnement, tel
 
 ## Tableau des dépenses marketing
 
-Lors de l’analyse de vos dépenses marketing, vous pouvez inclure des [!DNL Facebook], des [!DNL Google AdWords] ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez l’équipe [Managed Services](https://business.adobe.com/fr/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
+Lors de l’analyse de vos dépenses marketing, vous pouvez inclure des [!DNL Facebook], des [!DNL Google AdWords] ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez l’équipe [](https://business.adobe.com/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
 
 **Dimensions**
 
@@ -237,7 +243,7 @@ Voici quelques exemples courants de rapports et de mesures que vous pouvez trouv
 >
 > **Masquer toutes les mesures**
 
-![&#x200B; Utilisation des coupons &#x200B;](../../assets/Customers_by_coupon_usage_formula.png)<!--{: width="929"}-->
+![ Utilisation des coupons ](../../assets/Customers_by_coupon_usage_formula.png)<!--{: width="929"}-->
 
 ### Chiffre d’affaires moyen sur les 30 premiers jours
 
@@ -451,7 +457,7 @@ Voici quelques exemples courants de rapports et de mesures que vous pouvez trouv
 >
 >Consultez [cet article](../analysis/most-value-source-channel.md) pour plus d’exemples de rapports utilisant une source d’acquisition.
 
-![Source d’acquisition](../../assets/acquisition_source.png)<!--{: width="929"}-->
+Source d’acquisition![](../../assets/acquisition_source.png)<!--{: width="929"}-->
 
 ### Clients par support d’acquisition et campagne d’acquisition
 
@@ -467,7 +473,7 @@ Voici quelques exemples courants de rapports et de mesures que vous pouvez trouv
 >
 >Pour le filtre de votre mesure `New Customers`, vous pouvez ajouter tout autre média considéré comme un média « payant » pour votre entreprise, tel que cpc ou référencement payant.
 
-![Medium d’acquisition](../../assets/acquisition_medium.png)<!--{: width="929"}-->
+Medium d’acquisition![](../../assets/acquisition_medium.png)<!--{: width="929"}-->
 
 ### Coût d’acquisition client (CAC) ou coût par acquisition (CPA)
 

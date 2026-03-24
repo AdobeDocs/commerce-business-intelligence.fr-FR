@@ -4,9 +4,15 @@ description: Découvrez comment utiliser les tables de mappage.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/ScOu9-YwG9T8nTMEow3QehHL8GcYeuNtUS0MHTf4GFU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: 775
 ht-degree: 0%
 
 ---
@@ -37,9 +43,9 @@ Il est possible qu’une ressource technique vous aide à nettoyer les données 
 * Les pourcentages doivent être saisis sous forme de décimales.
 * Assurez-vous que tous les zéros de début ou de fin sont correctement conservés.
 
-Avant de vous lancer, Adobe vous recommande d’[&#x200B; exporter les données brutes du tableau](../../tutorials/export-raw-data.md). Examiner d’abord les données brutes signifie que vous pouvez explorer toutes les combinaisons possibles pour les données à nettoyer, en vous assurant ainsi que le tableau de mappage couvre tout.
+Avant de vous lancer, Adobe vous recommande d’[ exporter les données brutes du tableau](../../tutorials/export-raw-data.md). Examiner d’abord les données brutes signifie que vous pouvez explorer toutes les combinaisons possibles pour les données à nettoyer, en vous assurant ainsi que le tableau de mappage couvre tout.
 
-Pour créer une table de mappage, vous devez créer une feuille de calcul à deux colonnes qui suit les [&#x200B; règles de formatage pour les chargements de fichiers](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
+Pour créer une table de mappage, vous devez créer une feuille de calcul à deux colonnes qui suit les [ règles de formatage pour les chargements de fichiers](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
 
 Dans la première colonne, saisissez les valeurs stockées dans votre base de données avec **une seule valeur par ligne**. Par exemple, `pa` et `PA` ne peuvent pas se trouver sur la même ligne : chaque entrée doit avoir sa propre ligne. Voir ci-dessous pour un exemple.
 

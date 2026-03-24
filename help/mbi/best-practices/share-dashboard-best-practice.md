@@ -4,9 +4,14 @@ description: Découvrez comment utiliser et partager vos tableaux de bord.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/krvwzmyk7zJ8Wk-XFKxi2iISq7DfVIN6dzPMjaTxmkU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: 377
 ht-degree: 0%
 
 ---
@@ -27,7 +32,7 @@ Pour supprimer tous les tableaux de bord en double :
 
 1. Synchronisez avec votre équipe et identifiez la personne qui doit gérer le tableau de bord.
 1. [Annulez votre partage](../data-user/dashboards/leave-dashboard.md) à partir de tous les tableaux de bord similaires, à l’exception de celui partagé par l’utilisateur principal.
-1. Si vous disposez d’une copie du tableau de bord, [&#x200B; la supprimer](../data-user/dashboards/deleting-dashboard.md).
+1. Si vous disposez d’une copie du tableau de bord, [ la supprimer](../data-user/dashboards/deleting-dashboard.md).
 1. Demander aux autres de supprimer leur version du tableau de bord.
 
 ## Créer un ensemble de tableaux de bord de base

@@ -4,9 +4,15 @@ description: Découvrez comment choisir votre Report Builder.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/xXSDN9dKTWp8SdeZHBmDYZhnNbxn8F-D6UvKa4qJlCI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: 644
 ht-degree: 0%
 
 ---
@@ -14,7 +20,7 @@ ht-degree: 0%
 # Choisir un Report Builder
 
 >[!NOTE]
->&#x200B;>Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md).
+>>Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
 Maintenant que vous disposez d’un plus grand nombre d’options pour créer des analyses, il peut parfois être difficile de déterminer exactement la version du Report Builder qui correspond à vos besoins. Cette rubrique vous guide tout au long du choix de la meilleure manière de créer votre analyse.
 
@@ -28,14 +34,14 @@ L’intérêt du [!DNL SQL Report Builder] réside en partie dans le fait qu’i
 
 Le [!DNL SQL Report Builder] prend en charge des fonctions telles que [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) et [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html), que vous ne pouviez pas utiliser auparavant. Vous pouvez accéder au [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html), mais d’autres fonctions spécifiques à SQL incluent :
 
-* [`Bitwise aggregate` fonctions &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
+* [`Bitwise aggregate` fonctions ](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
 * [`CASE expression`](https://docs.aws.amazon.com/redshift/latest/dg/r_CASE_function.html)
 * [`JSON_EXTRACT_PATH_TEXT`](https://docs.aws.amazon.com/redshift/latest/dg/JSON_EXTRACT_PATH_TEXT.html)
 * [`LOG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LOG.html)
 * [`MONTHS_BETWEEN`](https://docs.aws.amazon.com/redshift/latest/dg/r_MONTHS_BETWEEN_function.html)
 * [`REPLACE`](https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html)
 * [`SQRT`](https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html)
-* [`concatenation` opérateur &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
+* [`concatenation` opérateur ](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
 
 ### Si vous voulez faire des tests...
 
