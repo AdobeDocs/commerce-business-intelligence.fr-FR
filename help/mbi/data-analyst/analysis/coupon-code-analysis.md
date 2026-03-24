@@ -5,11 +5,21 @@ exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
 role: Admin, User
 feature: Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/uqVpwXs8XHpiPpXHmTgItkhDsHAGs-Ty5NSBK8KtO7s
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1243
@@ -43,8 +53,8 @@ Colonnes à créer, quelle que soit la politique de commandes des invités :
    * [!UICONTROL Inputs] :
       * `A` : `coupon\_code`
 
-   * 
-     [!UICONTROL, type de données]: `String`
+   * &#x200B;
+     [!UICONTROL , type de données]: `String`
    * [!UICONTROL Calculation] : casse lorsque la `A` est nulle, `No coupon` sinon `Coupon` fin
 
 * **\[INPUT\] customer\_id - code de coupon**
@@ -93,8 +103,8 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
       * [!UICONTROL Inputs] :
          * `A` : `Customer's first order included a coupon? (Coupon/No coupon)`
 
-      * 
-        [!UICONTROL, type de données]: `String`
+      * &#x200B;
+        [!UICONTROL , type de données]: `String`
       * [!UICONTROL Calculation] : **cas où A=&#39;Coupon&#39; puis &#39;Client acquisition de coupon&#39; sinon &#39;Client acquisition hors coupon&#39; fin**
 
    * **Pourcentage des commandes client avec coupon**
@@ -103,8 +113,8 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
          * `A` : `User's lifetime number of coupons used`
          * `B` : `User's lifetime number of orders`
 
-      * 
-        [!UICONTROL, type de données]: `Decimal`
+      * &#x200B;
+        [!UICONTROL , type de données]: `Decimal`
       * [!UICONTROL Calculation] : **cas où A est nul ou B est nul ou B=0 puis null Autrement extrémité A/B**
 
    * **Utilisation des coupons du client**
@@ -112,8 +122,8 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
       * [!UICONTROL Inputs] :
          * `A` : `Percent of customer's orders with coupon`
 
-      * 
-        [!UICONTROL, type de données]: `String`
+      * &#x200B;
+        [!UICONTROL , type de données]: `String`
       * [!UICONTROL Calculation] : **cas où A est nul puis nul quand A=0 puis &#39;Coupon jamais utilisé&#39; quand A&lt;0.5 puis &#39;Prix majoritairement complet&#39; quand A=0.5 puis &#39;50/50&#39; quand A=1 puis &#39;Coupons seulement&#39; quand A>0.5 puis &#39;Coupon majoritaire&#39; sinon fin &#39;Non défini&#39;**
 
 * `sales\_flat\_order` table
@@ -134,14 +144,14 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
    * **La première commande du client comportait un coupon ? (Coupon/Pas de coupon)** **-** créé par l’analyste dans le cadre de votre ticket \[COUPON ANALYSIS\]
    * **-**{::}**du coupon de la première commande du client créé par l’analyste dans le cadre de votre ticket \[ANALYSE DES COUPONS\]**
 
-* **Nombre à vie du client de coupons utilisés **{::}**-** créés par l’analyste dans le cadre de votre ticket \[ANALYSE DES COUPONS\]
+* **Nombre à vie du client de coupons utilisés &#x200B;**{::}**-** créés par l’analyste dans le cadre de votre ticket \[ANALYSE DES COUPONS\]
 * **Client d’acquisition de coupon ou Client d’acquisition hors coupon**
    * [!UICONTROL Column type] : `Same Table => CALCULATION`
    * [!UICONTROL Inputs] :
       * `A` : `Customer's first order included a coupon? (Coupon/No coupon)`
 
-   * 
-     [!UICONTROL, type de données]: `String`
+   * &#x200B;
+     [!UICONTROL , type de données]: `String`
    * [!UICONTROL Calculation] : **cas où A=&#39;Coupon&#39; puis &#39;Client acquisition de coupon&#39; sinon &#39;Client acquisition hors coupon&#39; fin**
 
 * **Pourcentage des commandes client avec coupon**
@@ -150,8 +160,8 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
       * `A` : `User's lifetime number of coupons used`
       * `B` : `User's lifetime number of orders`
 
-   * 
-     [!UICONTROL, type de données]: `Decimal`
+   * &#x200B;
+     [!UICONTROL , type de données]: `Decimal`
    * [!UICONTROL Calculation] : **cas où A est nul ou B est nul ou B=0 puis null Autrement extrémité A/B**
 
 * **Utilisation des coupons du client**
@@ -159,8 +169,8 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
    * [!UICONTROL Inputs] :
       * `A` : `Percent of customer's orders with coupon`
 
-   * 
-     [!UICONTROL, type de données]: `String`
+   * &#x200B;
+     [!UICONTROL , type de données]: `String`
    * [!UICONTROL Calculation] : **cas où A est nul puis nul quand A=0 puis &#39;Coupon jamais utilisé&#39; quand A&lt;0.5 puis &#39;Prix majoritairement complet&#39; quand A=0.5 puis &#39;50/50&#39; quand A=1 puis &#39;Coupons seulement&#39; quand A>0.5 puis &#39;Coupon majoritaire&#39; sinon fin &#39;Non défini&#39;**
 
 ## Mesures
@@ -196,10 +206,10 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 
 * `A` de mesure : `Coupon acquisitions`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `Coupon acquisitions customer` ou `Non coupon acquisition customer`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Pie`
 
 * **Nombre de clients avec et sans coupon**
@@ -218,9 +228,9 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 
 * `A` de mesure : `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period] : `X years ago to 90 days ago`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Scalar`
 
 * **Chiffre d’affaires moyen sur la durée de vie : Acq. non coupon. (90 ans et plus)**
@@ -230,9 +240,9 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 
 * `A` de mesure : `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period] : `X years ago to 90 days ago`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Scalar`
 
 * **Chiffre d’affaires moyen sur la durée de vie par coupon de première commande**
@@ -240,10 +250,10 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 
 * `A` de mesure : `Average lifetime revenue`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `Customer's first order's coupon`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Column`
 
 >[!NOTE]
@@ -259,7 +269,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
    * [!UICONTROL Filter] :
       * La première commande du client incluait un coupon (coupon/sans coupon) = coupon
       * Est la dernière commande du client ? = Non
-   * 
+   * &#x200B;
      [!UICONTROL Formule]: `B/A`
    * [!UICONTROL Format] : `Percentage %`
 
@@ -269,7 +279,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 * `B` de mesure : `Number of non last orders`
 * [!UICONTROL Formula] : `Repeat order probability`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `Customer's order number`
 * [!UICONTROL Chart type] : `Bar chart`
@@ -284,7 +294,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
       * La première commande du client incluait un coupon (coupon/sans coupon) = Aucun coupon
       * Est la dernière commande du client ? = Non
 
-   * 
+   * &#x200B;
      [!UICONTROL Formule]: `B/A`
    * [!UICONTROL Format] : `Percentage %`
 
@@ -294,7 +304,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 * `B` de mesure : `Number of non last orders`
 * [!UICONTROL Formula] : `Repeat order probability`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `Customer's order number`
 * [!UICONTROL Chart type] : `Bar chart`
@@ -315,7 +325,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
       * La première commande du client comprenait un coupon ? (Coupon/Pas de coupon) = Coupon
       * La commande a-t-elle appliqué un bon ? (Coupon/Pas de coupon) = Coupon
 
-   * 
+   * &#x200B;
      [!UICONTROL Formule]: `C/B`
    * [!UICONTROL Format] : `Percentage %`
 
@@ -324,9 +334,9 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 * `C` de mesure : `Number of repeat orders with coupon`
 * [!UICONTROL Formula] : `% of repeat orders with coupon`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Table` (peut transposer ce tableau pour une meilleure visualisation)
 
 * **Taux d&#39;utilisation des coupons des clients non-coupons acquis (commandes répétées)**
@@ -345,7 +355,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
       * La première commande du client comprenait un coupon ? (Coupon/Pas de coupon) = Pas de coupon
       * La commande a-t-elle appliqué un bon ? (Coupon/Pas de coupon) = Coupon
 
-   * 
+   * &#x200B;
      [!UICONTROL Formule]: `C/B`
    * [!UICONTROL Format] : `Percentage %`
 
@@ -354,9 +364,9 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 * `C` de mesure : `Number of repeat orders with coupon`
 * [!UICONTROL Formula] : `% of repeat orders with coupon`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Table` (peut transposer ce tableau pour une meilleure visualisation)
 
 * **Informations sur l’utilisation des coupons (premières commandes)**
@@ -365,7 +375,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
       * Numéro de commande du client = 1
       * Nombre de commandes avec ce coupon > 10
 
-   * 
+   * &#x200B;
      [!UICONTROL Metric]: `Revenue`
    * [!UICONTROL Filter] :
       * Numéro de commande du client = 1
@@ -377,7 +387,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
       * Nombre de commandes avec ce coupon > 10
 
    * [!UICONTROL Formula] : `B-C` (si C est négatif); B+C (si C est positif)
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Metric] : `Average order value`
@@ -391,10 +401,10 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 * [!UICONTROL Formula] : `Gross revenue from FTO`
 * `E` de mesure : `Average order value for FTO`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `coupon code`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Table`
 >[!NOTE]
 >
@@ -405,22 +415,22 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 
 * `A` de mesure : `Number or orders with coupon`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Scalar`
 
 * **Chiffre d’affaires net des commandes avec coupons (à tout moment)**
-   * 
+   * &#x200B;
      [!UICONTROL Metric]: `Revenue`
    * [!UICONTROL Filter] :
       * La commande a-t-elle appliqué un bon ? (Coupon/Pas de coupon) = Coupon
 
 * `A` de mesure : `Net revenue from orders with coupons`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Scalar`
 
 * **Remises sur coupons (à tout moment)**
@@ -428,9 +438,9 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 
 * `A` de mesure : `Coupon discount amount`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Scalar`
 
 * **Nombre de commandes avec et sans coupons**
@@ -438,7 +448,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 
 * `A` de mesure : `Number of orders`
 * [!UICONTROL Time period] : `Last 24 months`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `Order has coupon applied? (Coupon/No coupon)`
 * [!UICONTROL Chart type] : `Stacked column`
@@ -450,10 +460,10 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 
 * `A` de mesure : `New customers`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `Customer's coupon usage`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Pie`
 
 * **Informations sur l’utilisation des coupons**
@@ -461,7 +471,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
    * [!UICONTROL Filter] :
       * Nombre de commandes avec ce coupon > 10
 
-   * 
+   * &#x200B;
      [!UICONTROL Metric]: `Revenue`
    * [!UICONTROL Filter] :
       * Nombre de commandes avec ce coupon > 10
@@ -471,20 +481,20 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
       * Nombre de commandes avec ce coupon > 10
 
    * [!UICONTROL Formula] : `B-C` (si `C` est négatif) ; `B+C` (si `C` est positif)
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula] : `C/(B-C)` (si `C` est négatif) ; `C/(B+C)` (si `C` est positif)
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric] : `Average order value`
    * [!UICONTROL Filter] :
       * Nombre de commandes avec ce coupon > 10
 
-   * 
+   * &#x200B;
      [!UICONTROL Formule]: `C/A`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Metric] : `Distinct buyers`
@@ -500,10 +510,10 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 * [!UICONTROL Formula] : `Average order discount`
 * `H` de mesure : `Distinct buyers`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `coupon code`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Table`
 
 >[!NOTE]
@@ -512,7 +522,7 @@ Colonnes supplémentaires à créer si les commandes de produits invités NE son
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’image en haut de la page.
 
-Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

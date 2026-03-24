@@ -5,10 +5,18 @@ exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
 TQID: https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 904
@@ -20,7 +28,7 @@ ht-degree: 0%
 
 Que vous travailliez avec [!DNL Commerce Intelligence] depuis six mois ou six ans, il est essentiel que vous teniez un compte bien ordonné pour que votre entreprise puisse tirer le meilleur parti de la plateforme. Au fil du temps, il est naturel qu’il y ait des utilisateurs, des tableaux de bord, des rapports, des mesures et des colonnes dont on n’a plus besoin. Peut-être avez-vous créé un rapport à usage unique et l’avez-vous oublié, ou un utilisateur qui a quitté votre entreprise n’a jamais vu son compte désactivé.
 
-Grâce à la [dénomination claire et normalisée de tous les éléments](../best-practices/naming-elements.md)) de votre compte [!DNL Commerce Intelligence], les étapes d’audit de compte ci-dessous vous aident à réduire l’encombrement et les analyses inutiles pour vos utilisateurs et utilisatrices. Un autre avantage est [ cycles de mise à jour potentiellement plus rapides ](../best-practices/reduce-update-cycle-time.md).
+Grâce à la [dénomination claire et normalisée de tous les éléments](../best-practices/naming-elements.md)) de votre compte [!DNL Commerce Intelligence], les étapes d’audit de compte ci-dessous vous aident à réduire l’encombrement et les analyses inutiles pour vos utilisateurs et utilisatrices. Un autre avantage est [&#x200B; cycles de mise à jour potentiellement plus rapides &#x200B;](../best-practices/reduce-update-cycle-time.md).
 
 ## Étape 1 : Identifier Les Utilisateurs Non Actifs
 
@@ -106,7 +114,7 @@ Si vous décidez que la mesure n’est plus nécessaire, revenez à la page **[!
 
 La dernière étape consiste à évaluer les colonnes en cours de synchronisation dans votre Data Warehouse. Non seulement la désynchronisation des colonnes peut désencombrer votre compte, mais elle peut également potentiellement réduire le temps de mise à jour.
 
-Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intelligence]’assistance [](../guide-overview.md#Submitting-a-Support-Ticket). L’équipe d’assistance peut créer un rapport qui comprend toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour un utilisateur et qui ne sont pas utilisées dans les résumés d’e-mails, à l’exclusion des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide de sélection des colonnes à désynchroniser via le gestionnaire Data Warehouse.
+Si vous souhaitez poursuivre dans cette voie, contactez [!DNL Commerce Intelligence]’assistance [&#128279;](../guide-overview.md#Submitting-a-Support-Ticket). L’équipe d’assistance peut créer un rapport qui comprend toutes les colonnes qui ne sont utilisées dans aucun tableau de bord pour un utilisateur et qui ne sont pas utilisées dans les résumés d’e-mails, à l’exclusion des rapports SQL. Vous pouvez ensuite utiliser ce rapport comme guide de sélection des colonnes à désynchroniser via le gestionnaire Data Warehouse.
 
 >[!NOTE]
 >

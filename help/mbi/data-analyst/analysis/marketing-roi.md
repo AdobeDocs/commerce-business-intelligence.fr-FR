@@ -5,11 +5,21 @@ exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
 role: Admin,  User
 feature: Reports, Dashboards
 TQID: https://experienceleague.adobe.com/TJ0KsU551M5PkQcY-Ic0PuExtC9SCkO0MhZGdHL4N6g
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 529
@@ -27,7 +37,7 @@ Si vous dépensez de l&#39;argent dans la publicité en ligne, vous voulez suivr
 
 ![Tableau de bord marketing présentant les mesures de RSI et les performances des campagnes](../../assets/Marketing_dashboard_example.png)
 
-Avant de commencer, vous devez connecter vos comptes [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md) et [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) et importer des données supplémentaires sur les dépenses publicitaires en ligne. Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
+Avant de commencer, vous devez connecter vos comptes [[!DNL [Facebook Ads]]](../importing-data/integrations/facebook-ads.md), [[!DNL [Adwords]]](../importing-data/integrations/google-adwords.md) et [[!DNL [Google Ecommerce]]](../importing-data/integrations/google-ecommerce.md) et importer des données supplémentaires sur les dépenses publicitaires en ligne. Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Tables consolidées
 
@@ -48,9 +58,9 @@ Colonnes à créer
    * **`Order's GA campaign`**
       * Sélectionnez une définition : `Joined Column`
       * [!UICONTROL Create Path] :
-      * 
+      * &#x200B;
         [!UICONTROL Many]: `sales_flat_order.increment_id`
-      * 
+      * &#x200B;
         [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * Sélectionner un [!UICONTROL table] : `ecommerce####`
@@ -148,9 +158,9 @@ Colonnes à créer
 
 * `A` de mesure : dépenses publicitaires
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Ajouter des acquisitions de clients (à tout moment)**
@@ -164,9 +174,9 @@ Colonnes à créer
 
 * `A` de mesure : `Ad customer acquisitions`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Ajouter un retour sur investissement**
@@ -189,7 +199,7 @@ Colonnes à créer
       * Logique de filtre : ([`A`] OU [`B`] OU [`C`]) ET [`D`]
 
    * [!UICONTROL Formula] : `((C - (A / B)) / (A / B))`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Percentage`
 
 * `A` de mesure : `Ad Spend (hide)`
@@ -197,20 +207,20 @@ Colonnes à créer
 * `C` de mesure : `Average LTV (hide)`
 * [!UICONTROL Formula] : `Ads ROI`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Commandes par support ga**
-   * 
+   * &#x200B;
      [!UICONTROL Metric]: `Orders`
 
 * `A` de mesure : `Orders`
 * [!UICONTROL Time period] : `All time`
 * [!UICONTROL Interval] : `By Month`
 * [!UICONTROL Group by] : `Order's medium`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Area`
 
 * **Retour sur investissement publicitaire par campagne**
@@ -241,15 +251,15 @@ Colonnes à créer
       * Logique de filtre : ([`A`] OU [`B`] OU [`C`]) ET [`D`]
 
    * [!UICONTROL Formula] : `(A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula] : `(C - (A / B))`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula] : `((C - (A / B)) / (A / B))`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric] : `Ad Clicks`
@@ -257,36 +267,36 @@ Colonnes à créer
    * [!UICONTROL Metric] : `Ad Impressions`
 
    * [!UICONTROL Formula] : `(H / I)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula] : `(A / H)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Currency`
 
 * `A` de mesure : `Ad Spend` (masquer)
 * `B` de mesure : `Ad customer acquisitions`
 * `C` de mesure : `Average LTV`
 * `D` de mesure : `Average lifetime # of orders`
-* 
+* &#x200B;
   [!UICONTROL Formule]: `CAC`
 * [!UICONTROL Formula] : `Avg return`
 * [!UICONTROL Formula] : `Ads ROI`
 * `H` de mesure : `adClicks`
 * `I` de mesure : `Impressions`
-* 
+* &#x200B;
   [!UICONTROL Formule]: `CTR`
-* 
+* &#x200B;
   [!UICONTROL Formule]: `CPC`
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Regrouper par]: `campaign` (Utiliser la campagne « Première commande du client » pour les mesures du tableau des dépenses non publicitaires)
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Table`
 
-Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Connexe
 

@@ -5,9 +5,16 @@ exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Developer, User
 feature: Reports
 TQID: https://experienceleague.adobe.com/DIg4HPkxaY4eCXZvTS8j4eO8C-d-yqPgBkrvFD5L0ms
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 760
@@ -35,13 +42,13 @@ Lorsque les paramètres UTM sont spécifiés sur l’URL, ils sont analysés et 
 
 ### Attribution du dernier clic
 
-L’attribution Dernier clic est le modèle d’attribution le plus couramment utilisé par [!DNL Google Analytics]. Dans ce cas, le cookie [!DNL Google Analytics] représente les paramètres UTM de la source la plus récente avant l’événement de conversion. Il est [ enregistré dans la base de données](../../data-analyst/analysis/google-track-user-acq.md). Le cookie [!DNL Google Analytics] ne remplace les paramètres UTM précédents que si l’utilisateur clique sur une nouvelle URL contenant un nouveau jeu de paramètres UTM.
+L’attribution Dernier clic est le modèle d’attribution le plus couramment utilisé par [!DNL Google Analytics]. Dans ce cas, le cookie [!DNL Google Analytics] représente les paramètres UTM de la source la plus récente avant l’événement de conversion. Il est [&#x200B; enregistré dans la base de données](../../data-analyst/analysis/google-track-user-acq.md). Le cookie [!DNL Google Analytics] ne remplace les paramètres UTM précédents que si l’utilisateur clique sur une nouvelle URL contenant un nouveau jeu de paramètres UTM.
 
 Prenons l’exemple d’un utilisateur qui visite d’abord un site web via [!DNL Google Analytics] *référencement payant*, puis le renvoie via *recherche organique* et revient finalement au site web *directement* ou via un lien *e-mail* **sans paramètres UTM** avant l’événement de conversion. Dans cet exemple, le cookie [!DNL Google Analytics] indique que la source de l’utilisateur est organique (organique), puisqu’il s’agit de la dernière source avant la conversion. Le *chemin* de l’utilisateur avant que cet événement de conversion final ne soit ignoré. Si, au lieu de cela, l’utilisateur a visité le site web à partir d’un lien e-mail avec UTM, le cookie [!DNL Google Analytics] dira que la source est « e-mail ». Par conséquent, si des paramètres UTM existent dans le cookie et que l’utilisateur accède à via direct, le cookie [!DNL Google Analytics] affiche les paramètres UTM plutôt que « direct ».
 
 >[!NOTE]
 >
->Les paramètres des cookies [!DNL Google Analytics] d’un utilisateur spécifique sont effacés à l’expiration du cookie [ou ](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)’un utilisateur efface ses cookies dans le navigateur.*
+>Les paramètres des cookies [!DNL Google Analytics] d’un utilisateur spécifique sont effacés à l’expiration du cookie [ou &#x200B;](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)’un utilisateur efface ses cookies dans le navigateur.*
 
 ### Attribution du premier clic
 
@@ -71,6 +78,6 @@ Voici où vous demandez : « Combien de revenus ai-je tirés du référencement 
 * [Suivre la source de référence des utilisateurs dans votre base de données](../analysis/google-track-user-acq.md)
 * [Effectuez le suivi des données relatives aux appareils, aux navigateurs et aux systèmes d’exploitation dans votre base de données](../analysis/google-track-user-acq.md)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../analysis/most-value-source-channel.md)
-* [Connecter votre  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Connecter votre  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Augmenter le retour sur investissement de vos campagnes publicitaires](../analysis/roi-ad-camp.md)
 * [Cinq bonnes pratiques pour le balisage UTM dans  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

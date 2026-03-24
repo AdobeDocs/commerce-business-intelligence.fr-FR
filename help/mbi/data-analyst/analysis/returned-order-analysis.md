@@ -5,11 +5,20 @@ exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 434
@@ -23,7 +32,7 @@ Cette rubrique explique comment configurer un tableau de bord qui fournit une an
 
 ![Tableau de bord détaillé des retours indiquant les taux de retour et les raisons](../../assets/detailed-returns-dboard.png)
 
-Avant de commencer, vous devez être un client [](https://business.adobe.com/products/magento/magento-commerce.html) et vous assurer que votre société utilise la table `enterprise\_rma` pour les retours.
+Avant de commencer, vous devez être un client [&#128279;](https://business.adobe.com/products/magento/magento-commerce.html) et vous assurer que votre société utilise la table `enterprise\_rma` pour les retours.
 
 Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -67,9 +76,9 @@ Colonnes à créer
 * **`Order's created at`**
 * Sélectionnez une définition : `Joined Column`
 * [!UICONTROL Create Path] :
-* 
+* &#x200B;
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* 
+* &#x200B;
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Sélectionner un [!UICONTROL table] : `sales_flat_order`
@@ -88,9 +97,9 @@ Colonnes à créer
 * **`return_date_requested`**
 * Sélectionnez une définition : `Joined Column`
 * [!UICONTROL Create Path] :
-   * 
+   * &#x200B;
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * 
+   * &#x200B;
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Sélectionner un [!UICONTROL table] : `enterprise_rma`
@@ -163,14 +172,14 @@ Colonnes à créer
 
 * Formule : probabilité d’ordre de répétition
 * [!UICONTROL Formula] : `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `Customer's order number`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Bar`
 
 * **Temps moyen de retour (toute heure)**
@@ -178,9 +187,9 @@ Colonnes à créer
 * [!UICONTROL Metric] : `Avg time between order and return`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Number`
 
 * **Pourcentage de commandes avec retour**
@@ -194,11 +203,11 @@ Colonnes à créer
 
 * Formule : % de commandes avec retour
 * [!UICONTROL Formula] : `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Chart Type] : `Number - % of orders with return`
 
@@ -208,7 +217,7 @@ Colonnes à créer
 
 * [!UICONTROL Time period] : `All time`
 * [!UICONTROL Interval] : `By month`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Line`
 
 * **Clients ayant effectué un retour et n’ayant pas effectué de nouvel achat**
@@ -219,11 +228,11 @@ Colonnes à créer
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
-* 
+* &#x200B;
   [!UICONTROL Regrouper par]: `Customer_email`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Table`
 
 * **Taux de retour par article**
@@ -236,14 +245,14 @@ Colonnes à créer
 
 * [!UICONTROL Formula] : `Return %`
 * [!UICONTROL Formula] : `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period] : `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervalle]: `None`
 * [!UICONTROL Group by] : `product_sku AND/OR product_name`
-* 
+* &#x200B;
   [!UICONTROL Type de graphique]: `Table`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.

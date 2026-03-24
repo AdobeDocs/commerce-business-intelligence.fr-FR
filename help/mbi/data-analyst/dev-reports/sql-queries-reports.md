@@ -5,11 +5,22 @@ exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 TQID: https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 942
@@ -59,7 +70,7 @@ Examinez un exemple spécifique de la manière dont une mesure `Total Revenue` p
 | `email NOT LIKE '%@magento.com'` | `filter` de mesure |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | `timestamp` des mesures (et `time range` de création de rapports) |
 
-Accédez au créateur de mesures en cliquant sur **[!UICONTROL Manage Data** > ** Mesures **> **Créer une mesure]**. Vous devez d’abord sélectionner la table de `source` appropriée, qui est dans ce cas la table de `orders`. Ensuite, la mesure est configurée comme illustré ci-dessous :
+Accédez au créateur de mesures en cliquant sur **[!UICONTROL Manage Data** > **&#x200B; Mesures &#x200B;**> **Créer une mesure]**. Vous devez d’abord sélectionner la table de `source` appropriée, qui est dans ce cas la table de `orders`. Ensuite, la mesure est configurée comme illustré ci-dessous :
 
 ![Agrégation des mesures](../../assets/Metric_aggregation.png)
 
@@ -81,7 +92,7 @@ La requête pour cette agrégation peut ressembler à ce qui suit :
 
 La configuration de cette fonctionnalité dans [!DNL Commerce Intelligence] nécessite l’utilisation de votre gestionnaire Data Warehouse, où vous créez un chemin d’accès entre votre `orders` et `customers` tableau, puis créez une colonne appelée `Customer LTV` dans le tableau de votre client.
 
-Examinez comment établir un nouveau chemin entre le `customers` et le `orders`. L’objectif final est de créer une colonne agrégée dans le tableau `customers`. Par conséquent, accédez d’abord au tableau `customers` dans votre Data Warehouse, puis cliquez sur **[!UICONTROL Create a Column** > ** Sélectionner une définition **> **SOMME]**.
+Examinez comment établir un nouveau chemin entre le `customers` et le `orders`. L’objectif final est de créer une colonne agrégée dans le tableau `customers`. Par conséquent, accédez d’abord au tableau `customers` dans votre Data Warehouse, puis cliquez sur **[!UICONTROL Create a Column** > **&#x200B; Sélectionner une définition &#x200B;**> **SOMME]**.
 
 Vous devez ensuite sélectionner la table source. S’il existe un chemin d’accès vers votre tableau `orders`, sélectionnez-le simplement dans la liste déroulante. Cependant, si vous créez un chemin, cliquez sur **[!UICONTROL Create new path]** et l’écran ci-dessous s’affiche :
 

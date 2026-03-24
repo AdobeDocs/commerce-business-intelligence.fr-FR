@@ -5,11 +5,21 @@ exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
 role: Admin, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager, Dashboards
 TQID: https://experienceleague.adobe.com/DFlzL9E95teiWI31j7qWRU8Ab6GkbFX7iPPdaxGq48A
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 398
@@ -25,7 +35,7 @@ De nombreux facteurs peuvent s’ajouter à une durée de mise à jour déjà lo
 
 ## Réduire la fréquence de revérification
 
-Dans une table de base de données, il peut y avoir des colonnes de données dont les valeurs peuvent être modifiées. Par exemple, dans une table **orders** il peut y avoir une colonne appelée **status**. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur `pending`. La commande est répliquée dans votre [](../data-analyst/data-warehouse-mgr/tour-dwm.md) avec cette valeur de `pending`.
+Dans une table de base de données, il peut y avoir des colonnes de données dont les valeurs peuvent être modifiées. Par exemple, dans une table **orders** il peut y avoir une colonne appelée **status**. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur `pending`. La commande est répliquée dans votre [&#128279;](../data-analyst/data-warehouse-mgr/tour-dwm.md) avec cette valeur de `pending`.
 
 Les colonnes modifiables doivent être [revérifiées pour les valeurs mises à jour](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) au fil du temps. Par défaut, [!DNL Commerce Intelligence] vérifie à nouveau ces colonnes à chaque mise à jour, mais si une grande quantité de données doit être vérifiée et répliquée, cela peut avoir un impact négatif sur la durée de votre mise à jour. Au lieu d’exécuter des vérifications à chaque mise à jour, Adobe recommande de définir la fréquence de vérification sur quotidienne, hebdomadaire ou mensuelle.
 

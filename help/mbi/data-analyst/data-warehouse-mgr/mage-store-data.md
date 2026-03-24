@@ -5,11 +5,21 @@ exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 964
@@ -22,7 +32,7 @@ ht-degree: 2%
 La plateforme [!DNL Adobe Commerce] enregistre et organise une grande variété de données commerciales précieuses sur des centaines de tables. Cette rubrique décrit :
 
 * comment ces données sont générées ;
-* ce qui entraîne l’insertion d’une nouvelle ligne dans l’un des [ Tableaux Commerce principaux ](../data-warehouse-mgr/common-mage-tables.md)
+* ce qui entraîne l’insertion d’une nouvelle ligne dans l’un des [&#x200B; Tableaux Commerce principaux &#x200B;](../data-warehouse-mgr/common-mage-tables.md)
 * comment les actions telles que l’achat ou la création d’un compte sont enregistrées dans la base de données [!DNL Adobe Commerce]
 
 Pour discuter de ces concepts, reportez-vous à l’exemple suivant :
@@ -85,7 +95,7 @@ Une fois la création du compte terminée, `Sammy Customer` est prêt à commenc
 
 (si vous disposez de Commerce 2.0 ou d’une version ultérieure)
 
-Outre la ligne unique de la table `Sales\_flat\_order`, lorsque `Sammy Customer` soumettez la commande, une ligne pour chaque élément unique de cet ordre est insérée dans la table [`sales\_flat\_order\_item` : ](../data-warehouse-mgr/sales-flat-order-item-table.md)
+Outre la ligne unique de la table `Sales\_flat\_order`, lorsque `Sammy Customer` soumettez la commande, une ligne pour chaque élément unique de cet ordre est insérée dans la table [`sales\_flat\_order\_item` : &#x200B;](../data-warehouse-mgr/sales-flat-order-item-table.md)
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|

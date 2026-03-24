@@ -5,11 +5,21 @@ exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
 TQID: https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1442
@@ -45,7 +55,7 @@ La méthode de réplication `Modified At` utilise une colonne datetime, qui est 
 
 Outre ces critères, Adobe recommande d’**indexer** la colonne `datetime` utilisée pour la réplication `Modified At`, car cela permet d’optimiser la vitesse de réplication.
 
-Lors de l’exécution de la mise à jour, les données nouvelles ou modifiées sont identifiées en recherchant les lignes qui contiennent une valeur dans la colonne `datetime` qui se sont produites après la mise à jour la plus récente. Lorsque de nouvelles lignes sont découvertes, elles sont répliquées vers votre Data Warehouse. Si des lignes existent dans le [Gestionnaire ](../data-warehouse-mgr/tour-dwm.md), elles sont remplacées par les valeurs actuelles de la base de données.
+Lors de l’exécution de la mise à jour, les données nouvelles ou modifiées sont identifiées en recherchant les lignes qui contiennent une valeur dans la colonne `datetime` qui se sont produites après la mise à jour la plus récente. Lorsque de nouvelles lignes sont découvertes, elles sont répliquées vers votre Data Warehouse. Si des lignes existent dans le [Gestionnaire &#x200B;](../data-warehouse-mgr/tour-dwm.md), elles sont remplacées par les valeurs actuelles de la base de données.
 
 Par exemple, un tableau peut avoir une colonne appelée `modified\_at` qui indique la dernière fois que les données ont été modifiées. Si la mise à jour la plus récente s’exécutait mardi à midi, elle recherche toutes les lignes ayant une valeur `modified\_at` supérieure à mardi à midi. Toutes les lignes découvertes qui ont été créées ou modifiées depuis mardi midi sont répliquées vers le Data Warehouse.
 
@@ -141,6 +151,6 @@ Pour terminer, vous avez rassemblé ce tableau qui compare les différentes mét
 ## Documentation connexe
 
 * [Comprendre les revérifications de données](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Modification de la base de données pour la prise en charge de ](../../best-practices/mod-db-inc-replication.md)
+* [Modification de la base de données pour la prise en charge de &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [Optimisation de votre base de données pour l’analyse](../../best-practices/opt-db-analysis.md)
 * [Réduction Du Temps De Mise À Jour](../../best-practices/reduce-update-cycle-time.md)
