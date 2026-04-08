@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: ad4dda927f0b1b2eba9596d7adfd1419676cf03d
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -38,11 +38,11 @@ Chaque ligne du tableau `enterprise_rma` (souvent appelée `magento_rma` dans Ad
 
 | **Nom de la colonne** | **Description** |
 |---|---|
-| `entity\_id` | Identifiant unique de la table. Chaque `entity\_id` représente une demande de retour. |
-| `date\_requested` | Date à laquelle le retour a été demandé. |
+| `entity_id` | Identifiant unique de la table. Chaque `entity_id` représente une demande de retour. |
+| `date_requested` | Date à laquelle le retour a été demandé. |
 | `status` | Statut du retour. Les valeurs incluent &#39;received&#39;, &#39;pending&#39;, &#39;authorized&#39;, entre autres. |
-| `order\_id` | Clé étrangère associée à la table `sales\_flat\_order`. |
-| `customer\_id` | Clé étrangère associée à la table `customer\_entity`. |
+| `order_id` | Clé étrangère associée à la table `sales_flat_order`. |
+| `customer_id` | Clé étrangère associée à la table `customer_entity`. |
 
 {style="table-layout:auto"}
 
@@ -50,9 +50,9 @@ Chaque ligne du tableau `enterprise_rma` (souvent appelée `magento_rma` dans Ad
 
 | **Nom de la colonne** | **Description** |
 |---|---|
-| `Order's created\_at` | Il s’agit de la date de la commande d’origine. Vous pouvez l’utiliser pour obtenir le temps entre la commande et la demande de retour. |
+| `Order's created_at` | Il s’agit de la date de la commande d’origine. Vous pouvez l’utiliser pour obtenir le temps entre la commande et la demande de retour. |
 | `Customer's order number` | Numéro de commande du client associé à la commande d&#39;origine. |
-| `Seconds between order's created\_at and return's date\_requested` | Nombre de secondes écoulées entre la date de commande et la demande de retour. |
+| `Seconds between order's created_at and return's date_requested` | Nombre de secondes écoulées entre la date de commande et la demande de retour. |
 | `Return's total value` | Il s&#39;agit du montant monétaire total qui est renvoyé. Il s&#39;agit de la somme du montant de retour individuel de chaque article retourné. |
 
 {style="table-layout:auto"}
@@ -61,7 +61,7 @@ Chaque ligne du tableau `enterprise_rma` (souvent appelée `magento_rma` dans Ad
 
 | **Nom de la mesure** | **Description** | **Construction** |
 |---|---|---|
-| `Number of returns` | Nombre de retours demandés. | `Operation` colonne : `entity id`<br>`Operation` : `Count`<br>`Timestamp` Colonne : `date requested` |
+| `Number of returns` | Nombre de retours demandés. | `Operation` colonne : `entity_id`<br>`Operation` : `Count`<br>`Timestamp` Colonne : `date requested` |
 | `Total returned amount` | Montant monétaire total renvoyé. | `Operation `Colonne : `Return's total value`<br>`Operation` : Somme <br>`Timestamp` Colonne : date demandée |
 | `Average returned amount` | Montant monétaire moyen renvoyé. | `Operation` ` Column: Return's total value`<br>`Operation` : `Average`<br>`Timestamp` Colonne : `date requested` |
 | `Average time to return` | Durée moyenne entre la commande et le retour. | `Operation` Colonne : secondes entre la date de création de la commande et la date de retour demandée<br>`Operation` : `Average`<br>`Timestamp` Colonne : `date requested` |
