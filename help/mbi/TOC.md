@@ -5,7 +5,7 @@ user-guide-title: Guide de l’utilisateur de Commerce Intelligence
 breadcrumb-title: Guide de l’utilisateur de Commerce Intelligence
 role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: 994fd98dac3dd8693b79c7497bba7bb6df27edf6
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%
