@@ -4,9 +4,15 @@ description: Améliorez la visibilité des données, rationalisez les rapports, 
 role: Admin, User
 feature: User Management
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b6935462-7263-4ced-a703-60de6a5aeb2did: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: 948
 ht-degree: 0%
 
 ---
@@ -414,7 +420,7 @@ Pour configurer des groupes d’utilisateurs :
 
 1. Groupes par défaut :
 
-   - [!UICONTROL **None]** : groupe de secours pour les utilisateurs qui ne sont pas encore mappés à un groupe spécifique. Ces utilisateurs ne verront aucune donnée tant qu’ils ne seront pas affectés à un groupe approprié.
+   - ** : groupe de secours pour les utilisateurs qui ne sont pas encore mappés à un groupe spécifique. [!UICONTROL **None] Ces utilisateurs ne verront aucune donnée tant qu’ils ne seront pas affectés à un groupe approprié.
 
    - [!UICONTROL **All**] : permet un accès illimité à toutes les données (généralement réservées aux utilisateurs administrateurs).
 
