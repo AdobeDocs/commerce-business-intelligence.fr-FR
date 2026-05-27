@@ -26,7 +26,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1237
+source-wordcount: 1244
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Data Warehouse Manager vous permet non seulement d’afficher et de gérer facil
    Si vous synchronisez une table qui provient directement de votre base de données, il est possible que `Primary Keys` ne soit pas indiqué. Dans ce cas, contactez votre administrateur de base de données pour demander qu&#39;une ou plusieurs clés primaires soient ajoutées à la table.
 1. Lorsque vous avez terminé, cliquez sur le bouton ![button](../../assets/button.png).
 
-Un *Succès !* message s’affiche et le statut passe à `Pending` pour les colonnes sélectionnées. Une fois la prochaine mise à jour complète terminée, les tableaux et colonnes nouvellement synchronisés pourront être utilisés dans les rapports. Vous pouvez également définir de nouvelles [méthodes de réplication](./cfg-replication-methods.md) après la synchronisation initiale.
+Un *Succès !* Un message s’affiche et le statut passe à `Pending` pour les colonnes sélectionnées. Une fois la prochaine mise à jour complète terminée, les tableaux et colonnes nouvellement synchronisés pourront être utilisés dans les rapports. Vous pouvez également définir de nouvelles [méthodes de réplication](./cfg-replication-methods.md) après la synchronisation initiale.
 
 Voici un aperçu rapide de l’ensemble du processus :
 

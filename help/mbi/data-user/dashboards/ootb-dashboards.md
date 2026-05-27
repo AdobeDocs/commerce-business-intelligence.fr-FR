@@ -23,7 +23,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 956
+source-wordcount: 973
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Si vous ne suivez actuellement pas la source d’acquisition des utilisateurs, r
 
 ## Résumé des e-mails
 
-Le tableau de bord `Email Summary` comprend un exemple d’ensemble de graphiques qui peuvent être utilisés dans un résumé automatisé d’e-mail quotidien. Pour plus d’informations sur la configuration des résumés d’e-mails[&#x200B; voir &#x200B;](../../data-user/export-data/email-summaries.md)création de résumés d’e-mail automatisés.  
+Le tableau de bord `Email Summary` comprend un exemple d’ensemble de graphiques qui peuvent être utilisés dans un résumé automatisé d’e-mail quotidien. Pour plus d’informations sur la configuration des résumés d’e-mails[&#128279;](../../data-user/export-data/email-summaries.md) voir création de résumés d’e-mail automatisés.  
 
 ## Intégrité de la rétention
 

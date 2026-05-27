@@ -25,7 +25,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 877
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ Lorsque [!DNL Advanced User Management] est activé, seuls les utilisateurs admi
     <td></td>
   </tr>
   <tr>
-    <td rowspan="4">Tableaux de bord  - Partager</td>
+    <td rowspan="4">Tableaux de bord - Partager</td>
     <td>Partager le tableau de bord avec des utilisateurs sur plusieurs rôles</td>
     <td></td>
     <td>✓</td>
@@ -433,7 +433,7 @@ Pour configurer des groupes d’utilisateurs :
 
 1. Groupes par défaut :
 
-   - ** : groupe de secours pour les utilisateurs qui ne sont pas encore mappés à un groupe spécifique. [!UICONTROL **None] Ces utilisateurs ne verront aucune donnée tant qu’ils ne seront pas affectés à un groupe approprié.
+   - ** : groupe de secours pour les utilisateurs qui ne sont pas encore mappés à un groupe spécifique. [!UICONTROL **None]Ces utilisateurs ne verront aucune donnée tant qu’ils ne seront pas affectés à un groupe approprié.
 
    - [!UICONTROL **All**] : permet un accès illimité à toutes les données (généralement réservées aux utilisateurs administrateurs).
 

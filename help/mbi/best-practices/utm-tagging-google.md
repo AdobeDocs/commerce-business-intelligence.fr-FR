@@ -22,8 +22,8 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 450
-ht-degree: 0%
+source-wordcount: 461
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ Les URL avec balisage `UTM` peuvent être fastidieuses. Au lieu d’essayer de l
 
 Il est important de se rappeler que la balise `utm\_source=adwords` est une balise différente de `utm\_source=Adwords`. Pensez à tout mettre en minuscules.
 
-### &#x200B;4. Stockez les valeurs de paramètre UTM dans votre base de données
+### &#x200B;4. Stocker les valeurs de paramètre UTM dans votre base de données
 
 Chaque fois qu’une transaction ou un événement se produit, vous devez évaluer les performances de vos activités marketing. Pour ce faire, lisez les valeurs des valeurs des paramètres UTM du [[!DNL Google Analytics]  cookie dans votre base de données](../data-analyst/analysis/google-track-user-acq.md).
 

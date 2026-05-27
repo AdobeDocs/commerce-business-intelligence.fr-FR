@@ -134,7 +134,7 @@ Commencez par la requête ci-dessous :
 
 >[!NOTE]
 >
->La seule différence par rapport à la requête que vous avez démarrée précédemment est l’ajout du « coupon\_code » en tant que group by._
+>La seule différence par rapport à la requête que vous avez démarrée précédemment est l’ajout du « coupon\_code » comme group by._
 
 En utilisant la même mesure de `Total Revenue` que celle que vous avez créée précédemment, vous êtes maintenant prêt à créer votre rapport de chiffre d’affaires segmenté par code de coupon. Examinez le gif ci-dessous, qui montre comment configurer ce rapport visuel en examinant les données de septembre à novembre :
 

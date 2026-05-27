@@ -19,8 +19,8 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 751
-ht-degree: 1%
+source-wordcount: 791
+ht-degree: 3%
 
 ---
 
@@ -80,11 +80,11 @@ Supposons que vous utilisiez une base de données SQL et que vous ayez une table
 
 | ID | E-MAIL | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
-| 1 | john@abc.com | 24/01/2012 | google | organique |
-| 2 | jim@abc.com | 24/01/2012 | google | cpc |
-| 3 | joe@def.com | 25/01/2012 | direct | - |
-| 4 | jess@ghi.com | 26/01/2012 | recommandation | techcrunch.com |
-| 5 | jen@ghi.net | 30/01/2012 | autres frais | organique |
+| 1 | john@abc.com | 2012-01-24 | google | organique |
+| 2 | jim@abc.com | 2012-01-24 | google | cpc |
+| 3 | joe@def.com | 2012-01-25 | direct | - |
+| 4 | jess@ghi.com | 2012-01-26 | recommandation | techcrunch.com |
+| 5 | jen@ghi.net | 2012-01-30 | autres frais | organique |
 | ... | ... | ... | ... | ... |
 
 Pour commencer, vous pouvez compter le nombre d’utilisateurs provenant de chaque canal de référence en exécutant la requête suivante sur votre base de données :

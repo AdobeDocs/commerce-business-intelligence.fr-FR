@@ -55,7 +55,7 @@ Ces autorisations permettent aux utilisateurs d’effectuer certaines actions ou
 | **Créer une liste de rapports dépendants** | ✔ |   |   |
 | **Accéder au résumé du système** | ✔ |   |   |
 | **Accéder aux paramètres de fuseau horaire** | ✔ |   |   |
-| **Accéder à la facturation** | ✔ | **✔ |   |
+| **Accéder à la facturation** | ✔ | ✔** |   |
 | **Contactez l’assistance** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}

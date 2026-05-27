@@ -23,7 +23,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 472
+source-wordcount: 483
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Colonnes à créer
 * Centile de chiffre d’affaires du client
 * [!UICONTROL Column type] : - `Same table > Calculation`
 * [!UICONTROL Inputs] : - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 &#x200B;**
+* [!UICONTROL Calculation] : - **&#x200B; cas où A est nul puis nul else (A/B)*fin 100 &#x200B;**
 * [!UICONTROL Datatype] : - `Decimal`
 
 * `Sales_flat_order` table
@@ -93,8 +93,8 @@ Colonnes à créer
 * Centile de chiffre d’affaires du client
 * [!UICONTROL Column type] : - `Same table > Calculation`
 * [!UICONTROL Inputs] : - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation] : - **cas où A est nul puis nul else (A/B)* fin 100 &#x200B;**
-* [!UICONTROL Datatype] : - `Decimal`
+* [!UICONTROL Calculation] : - **&#x200B; cas où A est nul puis nul else (A/B)*fin 100 &#x200B;**
+* [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
@@ -111,29 +111,29 @@ Colonnes à créer
 ## Rapports
 
 * **Concentration client**
-* [!UICONTROL Metric] : `Total customer lifetime value`
-* [!UICONTROL Filter] : `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]: `Total customer lifetime value`
+* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* [!UICONTROL Metric] : `Total customer lifetime value`
-* [!UICONTROL Filter] : `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]: `Total customer lifetime value`
+* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
 * &#x200B;
   [!UICONTROL Regrouper par]: `Independent`
 * `A` de mesure : `Total customer lifetime revenue by percentile`
 * `B` de mesure : `Total customer lifetime revenue (ungrouped)`
-* [!UICONTROL Time period] : `All time`
+* [!UICONTROL Time period]: `All time`
 * &#x200B;
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by] : `Customer's revenue percentile`
+* [!UICONTROL Group by]: `Customer's revenue percentile`
 * Afficher en haut/en bas : `100% of Customer's revenue percentile Name`
 * &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 * **Top 10% de concentration**
-* [!UICONTROL Filter] : `Customer's revenue percentile <= 10`
+* [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
 
 * `A` de mesure : `Total customer lifetime revenue`
-* [!UICONTROL Time period] : `All time`
+* [!UICONTROL Time period]: `All time`
 * &#x200B;
   [!UICONTROL Interval]: `None`
 * Masquer le graphique
@@ -147,9 +147,9 @@ Colonnes à créer
 * `A` de mesure : `Total customer lifetime revenue`
 * `Customer's revenue percentile <= 50`
 * `Customer's lifetime number of orders = 1`
-* [!UICONTROL Filter] :
+* [!UICONTROL Filter]:
 
-* [!UICONTROL Time period] : `All time`
+* [!UICONTROL Time period]: `All time`
 * &#x200B;
   [!UICONTROL Interval]: `None`
 * Masquer le graphique
@@ -159,10 +159,10 @@ Colonnes à créer
   [!UICONTROL Chart type]: `Table`
 
 * **Concentration inférieure de 10 %**
-* [!UICONTROL Filter] : `Customer's revenue percentile > 90`
+* [!UICONTROL Filter]: `Customer's revenue percentile > 90`
 
 * `A` de mesure : `Total customer lifetime revenue`
-* [!UICONTROL Time period] : `All time`
+* [!UICONTROL Time period]: `All time`
 * &#x200B;
   [!UICONTROL Interval]: `None`
 * Masquer le graphique

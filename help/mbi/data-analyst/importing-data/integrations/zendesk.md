@@ -23,8 +23,8 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 261
-ht-degree: 0%
+source-wordcount: 270
+ht-degree: 1%
 
 ---
 
@@ -66,7 +66,7 @@ Pour terminer ce processus, vous devez ouvrir deux fenêtres ou onglets de navig
 
 1. Saisissez le préfixe de votre site [!DNL Zendesk] et l’adresse e-mail de connexion dans la page des informations d’identification [!DNL Zendesk] de [!DNL Commerce Intelligence].
 1. Saisissez votre jeton API.
-1. Cliquez sur **[!UICONTROL Save & Connect]**. Si la connexion est réussie, un *Connexion réussie !* message s’affiche en haut de l’écran.
+1. Cliquez sur **[!UICONTROL Save & Connect]**. Si la connexion est réussie, un *Connexion réussie !* Le message s’affiche en haut de l’écran.
 
 ## Connexe :
 
