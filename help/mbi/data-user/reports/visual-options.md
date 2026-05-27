@@ -5,27 +5,14 @@ exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/--LLmz-9wQO3mIGhG4v-FGKcm1hnsj-YQJpPvyOR2x8
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1823
+source-wordcount: 1830
 ht-degree: 0%
 
 ---
@@ -34,7 +21,7 @@ ht-degree: 0%
 
 La sélection de la visualisation appropriée pour un jeu de données donné est un élément essentiel du processus analytique. Chaque ensemble de données a une histoire à raconter, mais l’effet de cette histoire est accentué par son impact visuel et sa lisibilité.
 
-Le [!DNL Commerce Intelligence] [!DNL Visual Report Builder] propose 12 options de visualisation distinctes, chacune ayant ses propres avantages et cas d’utilisation. Cette rubrique présente les différentes options de visualisation disponibles dans [!DNL Commerce Intelligence], y compris les configurations de rapport requises, le cas échéant, et un exemple de cas d’utilisation. Les visualisations suivantes sont disponibles dans [!DNL Commerce Intelligence] :
+Le [!DNL Visual Report Builder] [!DNL Commerce Intelligence] propose 12 options de visualisation distinctes, chacune ayant ses propres avantages et cas d’utilisation. Cette rubrique présente les différentes options de visualisation disponibles dans [!DNL Commerce Intelligence], y compris les configurations de rapport requises, le cas échéant, et un exemple de cas d’utilisation. Les visualisations suivantes sont disponibles dans [!DNL Commerce Intelligence] :
 
 * `Scalar`
 * `Table`
@@ -62,8 +49,8 @@ Pour enregistrer un rapport sous forme de scalaire, configurez vos filtres et pa
 
 **Conditions requises** :
 
-* `Time interval` : `None`
-* `Group by` : `None`
+* `Time interval`: `None`
+* `Group by`: `None`
 * Une seule mesure
 
 ## `Table`
@@ -176,7 +163,7 @@ Pour enregistrer un rapport sous la forme d’un graphique en secteurs, définis
 
 **Conditions requises:**
 
-* `Time interval` : `None`
+* `Time interval`: `None`
 * L’un des éléments suivants :
    * `Single metric with one or more group bys`
    * `Multiple metrics with no group bys`
@@ -215,7 +202,7 @@ Pour enregistrer un rapport en tant que graphique funnel, définissez le `Type` 
 
 **Conditions requises:**
 
-* `Time interval` : `None`
+* `Time interval`: `None`
 * L’un des éléments suivants :
    * `Single metric with one group by`
    * `Multiple metrics with no group by`
@@ -238,7 +225,7 @@ Option 1 :
 
 * Deux `metrics`
 * Un `group by`
-* `Time interval` : `None`
+* `Time interval`: `None`
 
 Option 2 :
 
@@ -264,7 +251,7 @@ Option 1
 
 * Trois `metrics`
 * Un `group by`
-* `Time interval` : `None`
+* `Time interval`: `None`
 
 Option 2
 
@@ -276,7 +263,7 @@ Option 2
 
 * Trois `metrics`
 * Deux `group by`
-* `Time interval` : `None`
+* `Time interval`: `None`
 
 ## `Heatmap`
 
@@ -292,7 +279,7 @@ Option 1
 
 * Un `metric`
 * Deux `group by`
-* `Time interval` : `None`
+* `Time interval`: `None`
 
 Option 2
 
