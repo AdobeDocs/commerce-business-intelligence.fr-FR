@@ -24,7 +24,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 748
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Après avoir créé l’utilisateur dédié pour [!DNL Commerce Intelligence] da
 
    ![Ajout d’un formulaire à clé publique avec le champ de texte de clé et le bouton Envoyer](../assets/paste-public-key.png)
 
-## Fournir des informations d’identification [!DNL Commerce Intelligence] `MySQL` Essentials
+## Fournir des informations d’identification `MySQL` [!DNL Commerce Intelligence] Essentials
 
 1. Mettez à jour votre `.magento/services.yaml`.
 
@@ -166,7 +166,7 @@ L’interface utilisateur du projet fournit une chaîne d’accès SSH. Cette ch
 
 **Entrées:**
 
-[!UICONTROL Encryption Type] : `SSH Tunnel`
+[!UICONTROL Encryption Type]: `SSH Tunnel`
 
 [!UICONTROL Remote Address] : `ssh.us-3.magento.cloud` [de l’étape précédente]
 
