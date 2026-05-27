@@ -21,7 +21,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 08a466710b782238003c6bdb8cefacd07134291c
 workflow-type: tm+mt
-source-wordcount: 269
+source-wordcount: 271
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Chaque ligne du tableau `enterprise_rma_item_entity` (souvent appelée `magento_
 
 `sales_flat_order_item`
 
-* Créer des colonnes jointes sur le  `enterprise_rma_item_entity` la table via la jointure suivante :
+* Créez des colonnes jointes sur la table `enterprise_rma_item_entity` via la jointure suivante :
 
 * Commerce 1.x : `enterprise_rma_item_entity.order_item_id ` (plusieurs) => `sales_flat_order_item.item_id` (un)
 * Commerce 2.x : `magento_rma_item_entity.order_item_id ` (plusieurs) => `sales_order_item.item_id` (un)

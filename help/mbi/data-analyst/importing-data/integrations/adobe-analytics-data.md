@@ -23,7 +23,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 418
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Une table par suite de rapports connectée appelée `report-suite-<ID>` (où `<I
 Le schéma de ce tableau est composé des mesures et des dimensions que vous avez sélectionnées lors du processus de configuration de l’intégration. Plusieurs colonnes supplémentaires sont également générées par [!DNL Commerce Intelligence], à des fins d’identification.
 
 Par exemple, si vous avez sélectionné la mesure et la dimension suivantes lors de la configuration :
-- `Metric` : `Page views`
-- `Dimension` : `Page`
+- `Metric`: `Page views`
+- `Dimension`: `Page`
 
 Le tableau contient les colonnes suivantes :
 

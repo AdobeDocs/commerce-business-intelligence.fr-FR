@@ -25,7 +25,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1293
+source-wordcount: 1400
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Les pourcentages doivent être saisis sous forme de décimales. Par exemple :
 
 Certaines valeurs de votre fichier, telles que les codes postaux et les identifiants, peuvent commencer ou se terminer par des zéros. Pour vous assurer que les zéros sont correctement conservés et chargés, vous pouvez modifier le type de mise en forme (par exemple, [de nombre à texte](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)) ou appliquer la mise en forme des nombres.
 
-Utilisez `US ZIP codes` comme exemple de modification de la mise en forme des nombres. Dans [!DNL Excel], mettez en surbrillance la colonne contenant `ZIP codes` et [modifiez le format des nombres](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) en `ZIP code`. Vous pouvez également sélectionner un format de nombre personnalisé, puis saisir des `Type` dans la fenêtre `00000`. Gardez à l&#39;esprit que cette méthode peut présenter des problèmes si certains codes sont formatés en `00000` et d&#39;autres en `00000-0000`.
+Utilisez `US ZIP codes` comme exemple de modification de la mise en forme des nombres. Dans [!DNL Excel], mettez en surbrillance la colonne contenant `ZIP codes` et [modifiez le format des nombres](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) en `ZIP code`. Vous pouvez également sélectionner un format de nombre personnalisé, puis saisir des `00000` dans la fenêtre `Type`. Gardez à l&#39;esprit que cette méthode peut présenter des problèmes si certains codes sont formatés en `00000` et d&#39;autres en `00000-0000`.
 
 Le `Type` peut être [&#x200B; formaté différemment pour s’adapter à d’autres types de données](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us) tels que les identifiants. Si un `ID` comporte neuf chiffres, par exemple, le `Type` peut être `000000000` ou `000-000-000`. Cela changerait `123456` en `000-123-456`.
 
@@ -120,7 +120,7 @@ Maintenant que votre feuille de calcul est correctement formatée et [!DNL Comme
 
 1. Cliquez sur **[!UICONTROL Save Table]**.
 
-Un *Succès !* message s’affiche en haut de l’écran une fois le tableau enregistré.
+Un *Succès !* Le message s’affiche en haut de l’écran une fois le tableau enregistré.
 
 Si vous avez besoin d’un visuel, examinez l’ensemble du processus :
 
@@ -152,7 +152,7 @@ Vous avez de nouvelles données à ajouter à un fichier que vous avez déjà ch
 
 1. Cliquez sur **[!UICONTROL Open]** pour démarrer le chargement.
 
-   Une fois le chargement terminé, [!DNL Commerce Intelligence] validera la structure de données dans le fichier . Un *Succès !* message s’affiche en haut de l’écran une fois le tableau enregistré.
+   Une fois le chargement terminé, [!DNL Commerce Intelligence] validera la structure de données dans le fichier . Un *Succès !* Le message s’affiche en haut de l’écran une fois le tableau enregistré.
 
 ## Disponibilité des données {#availability}
 
@@ -172,4 +172,4 @@ En outre, le téléchargement de fichiers n’est pas le seul moyen d’importer
 
 ## Ressource tierce
 
-* [[!DNL Google Docs]  Guide de formatage des données &#x200B;](https://support.google.com/docs/answer/56470?hl=en)
+* [Guide de formatage des données [!DNL Google Docs]](https://support.google.com/docs/answer/56470?hl=en)

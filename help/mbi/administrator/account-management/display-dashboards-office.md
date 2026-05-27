@@ -20,7 +20,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
 workflow-type: tm+mt
-source-wordcount: 220
+source-wordcount: 229
 ht-degree: 0%
 
 ---
@@ -33,10 +33,10 @@ Voici la liste recommandée des éléments dont vous avez besoin pour l’option
 
 1. **Un téléviseur ou un moniteur avec entrée HDMI** vers lequel diffuser.
 
-1. **Un dongle compatible wifi exécutant un système d&#39;exploitation léger, comme [!DNL Chrome] système d&#39;exploitation ou Raspberry Pi.** Votre dongle doit avoir une sortie HDMI qui se connecte à votre écran et affiche toujours vos tableaux de bord sélectionnés. Une machine dédiée exécutant son propre système d’exploitation est supérieure à une configuration comme [!DNL Chromecast], où vous seriez limité à diffuser le même tableau de bord sur tous les écrans connectés. Le dongle est mieux monté derrière votre écran.
+1. **Un dongle compatible wifi exécutant un système d&#39;exploitation léger, comme [!DNL Chrome] OS ou Raspberry Pi.** Votre dongle doit avoir une sortie HDMI qui se connecte à votre écran et affiche toujours vos tableaux de bord sélectionnés. Une machine dédiée exécutant son propre système d’exploitation est supérieure à une configuration comme [!DNL Chromecast], où vous seriez limité à diffuser le même tableau de bord sur tous les écrans connectés. Le dongle est mieux monté derrière votre écran.
 
 1. **Clavier et souris USB** pour contrôler votre dongle.
 
-1. **Extension de navigateur permettant de faire pivoter plusieurs onglets à la fois.** Cela vous permet de configurer les tableaux de bord sélectionnés que vous affichez dans un onglet unique. Adobe recommande l’extension [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) si vous utilisez [!DNL Chrome].
+1. **Extension de navigateur permettant de faire pivoter plusieurs onglets à la fois.** Vous pouvez ainsi configurer les tableaux de bord sélectionnés qui s’affichent dans un onglet unique. Adobe recommande l’extension [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) si vous utilisez [!DNL Chrome].
 
 Une fois que vous disposez du matériel ci-dessus, vous pouvez ouvrir une fenêtre de navigateur à l’écran avec un tableau de bord spécifique que vous souhaitez afficher dans chaque onglet. Enfin, configurez votre navigateur pour qu’il effectue une rotation dans chaque tableau de bord à la fréquence souhaitée.

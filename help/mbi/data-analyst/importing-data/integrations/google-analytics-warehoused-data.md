@@ -23,7 +23,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 355
+source-wordcount: 374
 ht-degree: 0%
 
 ---
@@ -50,8 +50,8 @@ Le schéma de ce tableau est composé des mesures et des dimensions que vous ave
 
 Si, par exemple, vous avez sélectionné les mesures et dimensions suivantes lors de la configuration :
 
-* `Metrics` : `ga:users`
-* `Dimensions` : `ga:month`
+* `Metrics`: `ga:users`
+* `Dimensions`: `ga:month`
 
 Le tableau ressemble à l’exemple ci-dessous.
 

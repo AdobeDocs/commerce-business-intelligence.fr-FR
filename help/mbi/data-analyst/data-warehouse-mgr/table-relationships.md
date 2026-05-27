@@ -22,7 +22,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1041
+source-wordcount: 1066
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ La compréhension des relations est essentielle au maintien de l’intégrité d
 
 Il existe trois types de relations entre deux tables :
 
-1. [`un-à-un`](#onetoone)
-1. [« un à plusieurs »](#onetomany)
-1. [« plusieurs à plusieurs »](#manytomany)
+1. [`one-to-one`](#onetoone)
+1. [`one-to-many`](#onetomany)
+1. [`many-to-many`](#manytomany)
 
 ### `One-to-One` {#onetoone}
 
