@@ -22,8 +22,8 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 964
-ht-degree: 2%
+source-wordcount: 962
+ht-degree: 3%
 
 ---
 
@@ -47,9 +47,9 @@ Satisfait de tous les paramètres de `Throwback Bellbottoms`, l&#39;employé cli
 
 | **`entity\_id`** | **`entity\_type\_id`** | **`attribute\_set\_id`** | **`sku`** | **`created\_at`** |
 |---|---|---|---|---|
-| 205 | 4 | 8 | Pantalon10 | 22/09/2016 09:15:43 |
-| 206 | 4 | 8 | Pantalon11 | 22/09/2016 09:18:17 |
-| 207 | 4 | 12 | Chemises6 | 22/09/2016 09:24:02 |
+| 205 | 4 | 8 | Pantalon10 | 2016/09/22 09:15:43 |
+| 206 | 4 | 8 | Pantalon11 | 2016/09/22 09:18:17 |
+| 207 | 4 | 12 | Chemises6 | 2016/09/22 09:24:02 |
 
 * `entity_id` - Il s’agit de la clé primaire de la table `catalog_product_entity`, ce qui signifie que chaque ligne de la table doit avoir une `entity_id` différente. Chaque `entity_id` de ce tableau ne peut être associé qu’à un seul produit et chaque produit ne peut être associé qu’à un seul `entity_id`
    * La ligne supérieure du tableau ci-dessus, `entity_id` = 205, est la nouvelle ligne créée pour « Throwback Bellbottoms ». Lorsque `entity_id` = 205 apparaît sur la plateforme Commerce, il fait référence au produit « Throwback Bellbottoms »
@@ -81,7 +81,7 @@ Une fois la création du compte terminée, `Sammy Customer` est prêt à commenc
 
 | **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
-| 227 | 214 | 94,85 | 23/09/2016 15:41:39 |
+| 227 | 214 | 94,85 | 2016/09/23 15:41:39 |
 
 * `entity_id` : il s’agit de la clé primaire de la table `sales_flat_order`.
    * Lorsque Sammy Customer a passé cette commande et que la ligne ci-dessus a été écrite dans la table `sales_flat_order`, la commande a été affectée `entity_id` = 227.

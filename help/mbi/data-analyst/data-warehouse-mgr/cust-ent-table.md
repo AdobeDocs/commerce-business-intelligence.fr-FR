@@ -26,7 +26,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 604
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Cette table ne contient pas les enregistrements des clients qui passent une comm
 | `email` | Adresse e-mail associée au compte |
 | `entity_id` (PC) | Identifiant unique de la table. Généralement utilisé dans les jointures avec le `customer_id` dans d&#39;autres tables de l&#39;instance |
 | `group_id` | Clé étrangère associée à la table `customer_group`. Rejoignez `customer_group.customer_group_id` pour déterminer le groupe de clients associé au compte enregistré |
-| `store_id` | Clé étrangère associée à la table `store`. Rejoignez `store`.`store_id` de déterminer quelle vue de magasin Commerce est associée au compte enregistré |
+| `store_id` | Clé étrangère associée à la table `store`. Rejoindre à `store`.`store_id` pour déterminer quelle vue de magasin Commerce est associée au compte enregistré : |
 
 {style="table-layout:auto"}
 
@@ -54,10 +54,10 @@ Cette table ne contient pas les enregistrements des clients qui passent une comm
 | **Nom de la colonne** | **Description** |
 |---|---|
 | `Customer's first 30 day revenue` | Total du chiffre d&#39;affaires total pour toutes les commandes passées par ce client dans les 30 jours suivant la date de première commande du client. Calculé en joignant `customer_entity.entity_id` à `sales_order.customer_id` et en additionnant le champ `base_grand_total` pour toutes les commandes où `sales_order.Seconds between customer's first order date and this order` ≤ 2592000, qui correspond au nombre de secondes dans 30 jours |
-| `Customer's first order date` | Date et heure de la première commande passée par ce client. Calculé en joignant `customer_entity.entity_id` à `sales_order.customer_id` et en renvoyant la `sales_order` minimale.valeur `created_at` |
+| `Customer's first order date` | Date et heure de la première commande passée par ce client. Calculé en joignant `customer_entity.entity_id` à `sales_order.customer_id` et en renvoyant la `sales_order` minimale.`created_at` valeur |
 | `Customer's first order's billing region` | Région de facturation associée à la première commande du client. Calculé en joignant `customer_entity.entity_id` à `sales_order.customer_id` et en renvoyant la `Billing address region` où `sales_order.Customer's order number` = 1 |
 | `Customer's first order's coupon_code` | Code promotionnel associé à la première commande du client. Calculé en joignant `customer_entity.entity_id` à `sales_order.customer_id` et en renvoyant la `sales_order.coupon_code` où `sales_order.Customer's order number` = 1 |
-| `Customer's group code` | Nom du groupe du client enregistré. Calculé en joignant les `customer_entity.group_id` aux `customer_group`.`customer_group_id` et renvoi du champ `customer_group_code` |
+| `Customer's group code` | Nom du groupe du client enregistré. Calculé en joignant `customer_entity.group_id` à `customer_group`.`customer_group_id` et renvoi du champ `customer_group_code` |
 | `Customer's lifetime number of coupons` | Nombre total de coupons appliqués à toutes les commandes passées par ce client. Calculé en joignant des `customer_entity.entity_id` à des `sales_order.customer_id` et en comptant le nombre de commandes pour lesquelles le `sales_order.coupon_code` n&#39;est pas `NULL` |
 | `Customer's lifetime number of orders` | Nombre total de commandes passées par ce client. Calculé en joignant des `customer_entity.entity_id` à des `sales_order.customer_id` et en comptant le nombre de lignes dans le tableau `sales_order` |
 | `Customer's lifetime revenue` | Somme du chiffre d&#39;affaires total pour toutes les commandes passées par ce client. Calculé en joignant `customer_entity.entity_id` à `sales_order.customer_id` et en additionnant le champ `base_grand_total` pour toutes les commandes passées par ce client |

@@ -24,7 +24,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: 613
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ La table `quote` (`sales_flat_quote` sur M1) contient des enregistrements sur ch
 | `is_active` | Champ booléen qui renvoie « 1 » si le panier a été créé par un client et n’a pas encore été converti en commande. Renvoie « 0 » pour les paniers convertis ou les paniers créés via l’administration |
 | `items_qty` | Somme de la quantité totale de tous les articles inclus dans le panier |
 | `reserved_order_id` | `Foreign key` associé à la table `sales_order`. Rejoignez `sales_order.increment_id` pour déterminer les détails de commande associés à un panier converti. Pour les paniers qui ne sont pas associés à une commande convertie, la `reserved_order_id` reste `NULL` |
-| `store_id` | `Foreign key` associé à la table `store`. Rejoignez `store`.`store_id` de déterminer quelle vue de magasin Commerce est associée au panier |
+| `store_id` | `Foreign key` associé à la table `store`. Rejoindre à `store`.`store_id` pour déterminer quelle vue de magasin Commerce est associée au panier |
 
 {style="table-layout:auto"}
 

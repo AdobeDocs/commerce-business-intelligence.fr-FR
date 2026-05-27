@@ -25,7 +25,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1823
+source-wordcount: 1830
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 La sélection de la visualisation appropriée pour un jeu de données donné est un élément essentiel du processus analytique. Chaque ensemble de données a une histoire à raconter, mais l’effet de cette histoire est accentué par son impact visuel et sa lisibilité.
 
-Le [!DNL Commerce Intelligence] [!DNL Visual Report Builder] propose 12 options de visualisation distinctes, chacune ayant ses propres avantages et cas d’utilisation. Cette rubrique présente les différentes options de visualisation disponibles dans [!DNL Commerce Intelligence], y compris les configurations de rapport requises, le cas échéant, et un exemple de cas d’utilisation. Les visualisations suivantes sont disponibles dans [!DNL Commerce Intelligence] :
+Le [!DNL Visual Report Builder] [!DNL Commerce Intelligence] propose 12 options de visualisation distinctes, chacune ayant ses propres avantages et cas d’utilisation. Cette rubrique présente les différentes options de visualisation disponibles dans [!DNL Commerce Intelligence], y compris les configurations de rapport requises, le cas échéant, et un exemple de cas d’utilisation. Les visualisations suivantes sont disponibles dans [!DNL Commerce Intelligence] :
 
 * `Scalar`
 * `Table`
@@ -62,8 +62,8 @@ Pour enregistrer un rapport sous forme de scalaire, configurez vos filtres et pa
 
 **Conditions requises** :
 
-* `Time interval` : `None`
-* `Group by` : `None`
+* `Time interval`: `None`
+* `Group by`: `None`
 * Une seule mesure
 
 ## `Table`
@@ -176,7 +176,7 @@ Pour enregistrer un rapport sous la forme d’un graphique en secteurs, définis
 
 **Conditions requises:**
 
-* `Time interval` : `None`
+* `Time interval`: `None`
 * L’un des éléments suivants :
    * `Single metric with one or more group bys`
    * `Multiple metrics with no group bys`
@@ -215,7 +215,7 @@ Pour enregistrer un rapport en tant que graphique funnel, définissez le `Type` 
 
 **Conditions requises:**
 
-* `Time interval` : `None`
+* `Time interval`: `None`
 * L’un des éléments suivants :
    * `Single metric with one group by`
    * `Multiple metrics with no group by`
@@ -238,7 +238,7 @@ Option 1 :
 
 * Deux `metrics`
 * Un `group by`
-* `Time interval` : `None`
+* `Time interval`: `None`
 
 Option 2 :
 
@@ -264,7 +264,7 @@ Option 1
 
 * Trois `metrics`
 * Un `group by`
-* `Time interval` : `None`
+* `Time interval`: `None`
 
 Option 2
 
@@ -276,7 +276,7 @@ Option 2
 
 * Trois `metrics`
 * Deux `group by`
-* `Time interval` : `None`
+* `Time interval`: `None`
 
 ## `Heatmap`
 
@@ -292,7 +292,7 @@ Option 1
 
 * Un `metric`
 * Deux `group by`
-* `Time interval` : `None`
+* `Time interval`: `None`
 
 Option 2
 

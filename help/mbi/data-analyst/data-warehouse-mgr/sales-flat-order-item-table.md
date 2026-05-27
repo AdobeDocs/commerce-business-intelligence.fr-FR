@@ -26,7 +26,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 811
+source-wordcount: 889
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Le `sales_order_item` capture les détails de tous les [types de produits](https
 
 Prenons l’exemple d’un produit configurable tel qu’un t-shirt. Lorsqu’un client extrait, il sélectionne des options pour modifier la couleur et la taille. Si le client sélectionne une couleur de `blue` et une taille de `small`, il finit par acheter un produit simple comme `t-shirt-blue-small` qui renvoie au produit parent de `t-shirt`.
 
-Lorsqu&#39;un produit configurable est inclus dans une commande, deux lignes sont générées dans le tableau de `sales_order_item` : une pour le [&#x200B; &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-simple.html?lang=fr)simple`sku` et une pour le parent [configurable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=fr). Ces deux enregistrements de la table `sales_order_item` peuvent être mis en relation l&#39;un avec l&#39;autre à travers la jointure suivante :
+Lorsqu&#39;un produit configurable est inclus dans une commande, deux lignes sont générées dans le tableau de `sales_order_item` : une pour le `sku` [simple](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-simple.html?lang=fr) et une pour le parent [configurable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=fr). Ces deux enregistrements de la table `sales_order_item` peuvent être mis en relation l&#39;un avec l&#39;autre à travers la jointure suivante :
 
 * (simple) `sales_order_item.parent_item_id` => (configurable) `sales_order_item.item_id`
 
