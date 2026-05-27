@@ -5,25 +5,15 @@ exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/IX5oaIr8tbUUeA3ZrIQNUMnG8ApXMBS1hcpecqFW8kg
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: beb7a3c1-66ab-4786-b879-7621375b3c40id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 450
-ht-degree: 0%
+source-wordcount: 461
+ht-degree: 1%
 
 ---
 
@@ -31,7 +21,7 @@ ht-degree: 0%
 
 Le tracking `UTM` est une convention de balisage des URL qui vous permet d’analyser la provenance de vos utilisateurs et utilisatrices. Si vous regardez sur les URL sur lesquelles vous cliquez dans la plupart des e-mails marketing ou des bannières publicitaires, vous verrez le balisage UTM. Ce sont ces longs liens qui se terminent par des choses comme `utm\_source` et `utm\_medium`.
 
-[!DNL Google Analytics] utilise le balisage `UTM` pour savoir d’où vient votre trafic. Certaines de ces informations proviennent du [&#x200B; référent HTTP &#x200B;](https://en.wikipedia.org/wiki/HTTP_referer), mais le reste vous devez vous fournir des paramètres de `UTM`. Lorsque vous voyez `google adwords` ou `email marketing`, cela signifie que ces paramètres de `UTM` sont enregistrés à partir du clic sur le lien d’origine, puis stockés dans les cookies des utilisateurs. Ensuite, [!DNL Google Analytics] utilise ces données pour [attribuer des comportements intéressants](../data-analyst/analysis/google-track-user-acq.md) sur votre site. Comprendre à quoi servent ces paramètres vous aide à comprendre la meilleure façon de configurer et d’utiliser le balisage UTM.
+[!DNL Google Analytics] utilise le balisage `UTM` pour savoir d’où vient votre trafic. Certaines de ces informations proviennent du [ référent HTTP ](https://en.wikipedia.org/wiki/HTTP_referer), mais le reste vous devez vous fournir des paramètres de `UTM`. Lorsque vous voyez `google adwords` ou `email marketing`, cela signifie que ces paramètres de `UTM` sont enregistrés à partir du clic sur le lien d’origine, puis stockés dans les cookies des utilisateurs. Ensuite, [!DNL Google Analytics] utilise ces données pour [attribuer des comportements intéressants](../data-analyst/analysis/google-track-user-acq.md) sur votre site. Comprendre à quoi servent ces paramètres vous aide à comprendre la meilleure façon de configurer et d’utiliser le balisage UTM.
 
 ## Bonnes pratiques relatives au balisage UTM
 
@@ -49,7 +39,7 @@ Les URL avec balisage `UTM` peuvent être fastidieuses. Au lieu d’essayer de l
 
 Il est important de se rappeler que la balise `utm\_source=adwords` est une balise différente de `utm\_source=Adwords`. Pensez à tout mettre en minuscules.
 
-### &#x200B;4. Stockez les valeurs de paramètre UTM dans votre base de données
+### &#x200B;4. Stocker les valeurs de paramètre UTM dans votre base de données
 
 Chaque fois qu’une transaction ou un événement se produit, vous devez évaluer les performances de vos activités marketing. Pour ce faire, lisez les valeurs des valeurs des paramètres UTM du [[!DNL Google Analytics]  cookie dans votre base de données](../data-analyst/analysis/google-track-user-acq.md).
 
