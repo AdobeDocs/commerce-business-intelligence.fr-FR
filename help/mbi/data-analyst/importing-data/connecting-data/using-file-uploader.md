@@ -5,27 +5,14 @@ exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/pdmp5wyeWdjrebZlZ9j4u3OJBb-LpADk6Uib-bWy1Vc
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1293
+source-wordcount: 1400
 ht-degree: 0%
 
 ---
@@ -43,7 +30,7 @@ Utilisez les campagnes publicitaires comme exemple. Si vous exécutez des campag
 ## Restrictions et exigences {#require}
 
 1. **Le seul format pris en charge pour les chargements de fichiers est `CSV` ou`comma separated values`**. Si vous travaillez dans Excel, vous pouvez utiliser la fonction Enregistrer sous pour enregistrer le fichier au format `.csv`.
-1. Les fichiers **`CSV`doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du chargement d’un fichier, [consultez cet article de support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=fr).
+1. Les fichiers **`CSV`doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du chargement d’un fichier, [consultez cet article de support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **La taille des fichiers ne peut pas dépasser 100MB**. Si le fichier est plus volumineux que cette taille, séparez le tableau en blocs et enregistrez-les en tant que fichiers individuels. Vous pouvez ajouter les données après le chargement du fichier initial.
 1. **Toutes les tables doivent avoir un`primary key`**. Il doit y avoir au moins une colonne dans votre tableau qui peut être utilisée comme `primary key`, ou un identifiant unique pour chaque ligne du tableau. Toute colonne désignée comme `primary key` ne peut *jamais* être nulle. Un `primary key` peut être aussi simple que l’ajout d’une colonne qui donne un nombre à chaque ligne, ou peut être constitué de deux colonnes concaténées pour former une colonne de valeurs uniques (par exemple, `campaign name` et `date`).
 
@@ -90,9 +77,9 @@ Les pourcentages doivent être saisis sous forme de décimales. Par exemple :
 
 Certaines valeurs de votre fichier, telles que les codes postaux et les identifiants, peuvent commencer ou se terminer par des zéros. Pour vous assurer que les zéros sont correctement conservés et chargés, vous pouvez modifier le type de mise en forme (par exemple, [de nombre à texte](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)) ou appliquer la mise en forme des nombres.
 
-Utilisez `US ZIP codes` comme exemple de modification de la mise en forme des nombres. Dans [!DNL Excel], mettez en surbrillance la colonne contenant `ZIP codes` et [modifiez le format des nombres](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) en `ZIP code`. Vous pouvez également sélectionner un format de nombre personnalisé, puis saisir des `Type` dans la fenêtre `00000`. Gardez à l&#39;esprit que cette méthode peut présenter des problèmes si certains codes sont formatés en `00000` et d&#39;autres en `00000-0000`.
+Utilisez `US ZIP codes` comme exemple de modification de la mise en forme des nombres. Dans [!DNL Excel], mettez en surbrillance la colonne contenant `ZIP codes` et [modifiez le format des nombres](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) en `ZIP code`. Vous pouvez également sélectionner un format de nombre personnalisé, puis saisir des `00000` dans la fenêtre `Type`. Gardez à l&#39;esprit que cette méthode peut présenter des problèmes si certains codes sont formatés en `00000` et d&#39;autres en `00000-0000`.
 
-Le `Type` peut être [&#x200B; formaté différemment pour s’adapter à d’autres types de données](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us) tels que les identifiants. Si un `ID` comporte neuf chiffres, par exemple, le `Type` peut être `000000000` ou `000-000-000`. Cela changerait `123456` en `000-123-456`.
+Le `Type` peut être [ formaté différemment pour s’adapter à d’autres types de données](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us) tels que les identifiants. Si un `ID` comporte neuf chiffres, par exemple, le `Type` peut être `000000000` ou `000-000-000`. Cela changerait `123456` en `000-123-456`.
 
 Pour obtenir des ressources [!DNL Google Docs] et [!DNL Apple Numbers], reportez-vous à la liste [connexes](#related) au bas de cette page.
 
@@ -120,7 +107,7 @@ Maintenant que votre feuille de calcul est correctement formatée et [!DNL Comme
 
 1. Cliquez sur **[!UICONTROL Save Table]**.
 
-Un *Succès !* message s’affiche en haut de l’écran une fois le tableau enregistré.
+Un *Succès !* Le message s’affiche en haut de l’écran une fois le tableau enregistré.
 
 Si vous avez besoin d’un visuel, examinez l’ensemble du processus :
 
@@ -152,7 +139,7 @@ Vous avez de nouvelles données à ajouter à un fichier que vous avez déjà ch
 
 1. Cliquez sur **[!UICONTROL Open]** pour démarrer le chargement.
 
-   Une fois le chargement terminé, [!DNL Commerce Intelligence] validera la structure de données dans le fichier . Un *Succès !* message s’affiche en haut de l’écran une fois le tableau enregistré.
+   Une fois le chargement terminé, [!DNL Commerce Intelligence] validera la structure de données dans le fichier . Un *Succès !* Le message s’affiche en haut de l’écran une fois le tableau enregistré.
 
 ## Disponibilité des données {#availability}
 
@@ -172,4 +159,4 @@ En outre, le téléchargement de fichiers n’est pas le seul moyen d’importer
 
 ## Ressource tierce
 
-* [[!DNL Google Docs]  Guide de formatage des données &#x200B;](https://support.google.com/docs/answer/56470?hl=en)
+* [Guide de formatage des données [!DNL Google Docs]](https://support.google.com/docs/answer/56470?hl=en)
