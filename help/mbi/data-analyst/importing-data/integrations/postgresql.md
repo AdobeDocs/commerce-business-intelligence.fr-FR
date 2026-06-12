@@ -125,4 +125,4 @@ Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save & Test]** pour termin
 ## Connexe {#related}
 
 * [Vérification de la clé hôte SSH](ssh-host-key-verification.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
