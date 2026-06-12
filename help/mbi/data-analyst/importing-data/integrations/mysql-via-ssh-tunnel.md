@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 615
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -36,13 +36,13 @@ ht-degree: 0%
 
 ## ACCÉDER À
 
-* [[!DNL MySQL] via &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] via `direct connection`](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] via  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Pour connecter votre base de données [!DNL MySQL] à [!DNL Commerce Intelligence] via un `SSH tunnel`, procédez comme suit :
 
-1. Récupérer le [!DNL Commerce Intelligence] `public key`
-1. Autoriser l&#39;accès au [!DNL Commerce Intelligence] `IP address`
+1. Récupérer le `public key` [!DNL Commerce Intelligence]
+1. Autoriser l&#39;accès au `IP address` [!DNL Commerce Intelligence]
 1. Créer un utilisateur `Linux` pour [!DNL Commerce Intelligence]
 1. Créer un utilisateur `MySQL` pour [!DNL Commerce Intelligence]
 1. Saisissez les informations de connexion et d’utilisateur dans [!DNL Commerce Intelligence]
@@ -133,6 +133,11 @@ Dans la section `SSH Connection` :
 
 Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save & Test]** pour terminer la configuration.
 
-## Connexe :
+>[!NOTE]
+>
+>Pour l’inscription de la clé de l’hôte SSH, l’actualisation, les messages d’erreur et le dépannage, consultez [Vérification de la clé de l’hôte SSH](ssh-host-key-verification.md).
 
+## Connexe {#related}
+
+* [Vérification de la clé hôte SSH](ssh-host-key-verification.md)
 * [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)

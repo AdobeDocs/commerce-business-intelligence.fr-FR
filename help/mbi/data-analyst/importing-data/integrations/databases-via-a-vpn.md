@@ -20,16 +20,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 414
 ht-degree: 0%
 
 ---
 
 # Connexion de bases de données via un VPN
 
-Bien qu’Adobe recommande de connecter vos bases de données à l’aide d’une `SSH tunnel`, vous pouvez également utiliser une connexion `VPN` chiffrée pour garantir la sécurité. Un `VPN` peut être utilisé pour n’importe laquelle de vos intégrations de base de données. Pour simplifier les choses, le processus est à peu près identique à la configuration d’un `SSH tunnel` :
+Bien qu’Adobe recommande de connecter vos bases de données à l’aide d’une `SSH tunnel`, vous pouvez également utiliser une connexion `VPN` chiffrée pour garantir la sécurité. Pour l’inscription de la clé de l’hôte SSH, les erreurs et le dépannage sur les connexions du tunnel SSH, consultez [Vérification de la clé de l’hôte SSH](ssh-host-key-verification.md). Un `VPN` peut être utilisé pour n’importe laquelle de vos intégrations de base de données. Pour simplifier les choses, le processus est à peu près identique à la configuration d’un `SSH tunnel` :
 
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  base de données](#database)
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  VPN](#vpn)
@@ -66,10 +66,10 @@ Saisissez les informations suivantes dans cette page, en commençant par la sect
 * `Username` : nom d’utilisateur de la base de données [!DNL Commerce Intelligence]
 * `Password` : mot de passe de l’utilisateur de la base de données [!DNL Commerce Intelligence]
 * `Port` : port de la base de données sur le serveur. Les valeurs par défaut sont les suivantes :
-   * `MicrosoftSQL` : `1433`
-   * `MongoDB` : `27017`
-   * `MySQL` : `3306`
-   * `PostgreSQL` : `5432`
+   * `MicrosoftSQL`: `1433`
+   * `MongoDB`: `27017`
+   * `MySQL`: `3306`
+   * `PostgreSQL`: `5432`
 * `Host` : par défaut, il s’agit de localhost `127.0.0.1`, mais il peut également s’agir de l’adresse IP publique de votre serveur ou d’une adresse réseau local.
 * `Database Name (optional)` : si vous n&#39;avez autorisé l&#39;accès qu&#39;à une seule base de données (cela est spécifié lors de l&#39;étape de création des utilisateurs de la base de données), saisissez ici le nom de cette base de données.
 
@@ -79,7 +79,7 @@ Dans la section `Encryption Connection` :
 * `Gateway Address` : adresse IP du serveur VPN
 * `Group Name` : nom du groupe utilisé pour l’authentification de groupe
 * `Group Secret` : mot de passe correspondant au groupe.
-* `Username` : nom d’utilisateur de l’[!DNL Commerce Intelligence] `VPN`
-* `Password` : mot de passe de l’utilisateur [!DNL Commerce Intelligence] `VPN`
+* `Username` : nom d’utilisateur de l’`VPN` [!DNL Commerce Intelligence]
+* `Password` : mot de passe de l’utilisateur `VPN` [!DNL Commerce Intelligence]
 
 Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save & Test]** pour terminer la configuration.

@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 566
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Pour connecter votre base de données [!DNL PostgreSQL] à [!DNL Commerce Intell
 1. [Créez un  [!DNL PostgreSQL]  pour  [!DNL Commerce Intelligence]](#postgres)
 1. [Saisissez les informations de connexion et d’utilisateur dans  [!DNL Commerce Intelligence]](#finish)
 
-## Récupération du [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
+## Récupération du [!DNL public key] [!DNL Commerce Intelligence] {#retrieve}
 
 Le `public key` est utilisé pour autoriser l’utilisateur [!DNL Commerce Intelligence] [!DNL Linux]. Vous allez maintenant créer l’utilisateur et importer la clé.
 
@@ -108,7 +108,7 @@ Saisissez les informations suivantes dans cette page, en commençant par la sect
 * `Username` : nom d’utilisateur RJMetrics Postgres (doit être rjmetric)
 * `Password` : mot de passe RJMetrics Postgres
 * `Port` : port PostgreSQL sur votre serveur (5432 par défaut)
-* `Host` : 127.0.0.1
+* `Host`: 127.0.0.1
 
 Sous `SSH Connection` :
 
@@ -116,8 +116,13 @@ Sous `SSH Connection` :
 * `Username` : votre nom d&#39;utilisateur SSH (doit être rjmetric)
 * `SSH Port` : port SSH sur votre serveur (22 par défaut)
 
-Lorsque vous avez terminé, cliquez sur **Enregistrer et tester** pour terminer la configuration.
+Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save & Test]** pour terminer la configuration.
 
-### Connexe
+>[!NOTE]
+>
+>Pour l’inscription de la clé de l’hôte SSH, l’actualisation, les messages d’erreur et le dépannage, consultez [Vérification de la clé de l’hôte SSH](ssh-host-key-verification.md).
 
+## Connexe {#related}
+
+* [Vérification de la clé hôte SSH](ssh-host-key-verification.md)
 * [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)

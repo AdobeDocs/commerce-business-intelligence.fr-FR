@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 503
+source-wordcount: 516
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Lors de l’ajout des adresses IP [!DNL Commerce Intelligence], veillez à ajout
 
 >[!NOTE]
 >
->Cette étape n’est nécessaire que si vous utilisez une connexion chiffrée. Pour plus d’informations sur la procédure à suivre, reportez-vous à la rubrique de configuration de la base de données que vous utilisez (MySQL, par exemple). L’utilisateur `Linux` nous permet de créer un `SSH tunnel`, qui est la méthode la plus sûre pour envoyer des données sur Internet.
+>Cette étape n’est nécessaire que si vous utilisez une connexion chiffrée. Pour plus d’informations sur la procédure à suivre, reportez-vous à la rubrique de configuration de la base de données que vous utilisez (MySQL, par exemple). L’utilisateur `Linux` nous permet de créer un `SSH tunnel`, qui est la méthode la plus sûre pour envoyer des données sur Internet. Pour l’inscription de la clé de l’hôte SSH, les erreurs et le dépannage, consultez [Vérification de la clé de l’hôte SSH](ssh-host-key-verification.md).
 
 ## Créer un utilisateur de base de données pour [!DNL Commerce Intelligence]
 

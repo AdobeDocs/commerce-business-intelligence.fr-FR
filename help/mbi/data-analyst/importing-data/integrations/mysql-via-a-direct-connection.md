@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 376
+source-wordcount: 399
 ht-degree: 0%
 
 ---
@@ -36,12 +36,13 @@ ht-degree: 0%
 
 ## Atteindre
 
-* [[!DNL MySQL] via &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] via `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)
+* [Vérification de la clé hôte SSH](../integrations/ssh-host-key-verification.md)
 * [[!DNL MySQL] via  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
->[!DNL Adobe] vous recommande d’utiliser [SSH](../integrations/mysql-via-ssh-tunnel.md) ou une autre forme de chiffrement pour sécuriser vos données ! Si cette option n&#39;est pas disponible, vous pouvez tout de même [!DNL Commerce Intelligence] connecter directement à votre base de données à l&#39;aide des instructions de cette rubrique.
+>[!DNL Adobe] vous recommande d’utiliser [SSH](../integrations/mysql-via-ssh-tunnel.md) ou une autre forme de chiffrement pour sécuriser vos données ! Pour la vérification de la clé hôte SSH, voir [Vérification de la clé hôte SSH](../integrations/ssh-host-key-verification.md). Si cette option n&#39;est pas disponible, vous pouvez tout de même [!DNL Commerce Intelligence] connecter directement à votre base de données à l&#39;aide des instructions de cette rubrique.
 
 Cette rubrique vous guide tout au long de la connexion directe de votre base de données [!DNL MySQL] à [!DNL Commerce Intelligence]. Ces paramètres peuvent également être utilisés avec [!DNL Adobe Commerce] ou toute autre base de données eCommerce utilisant MySQL.
 

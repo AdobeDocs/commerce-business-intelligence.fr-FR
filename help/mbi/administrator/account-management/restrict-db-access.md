@@ -16,16 +16,16 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 204
+source-wordcount: 225
 ht-degree: 0%
 
 ---
 
 # Restreindre l’accès
 
-Lorsque vous créez un tunnel SSH vers votre serveur, il n&#39;est pas nécessaire que [!DNL Adobe Commerce Intelligence] ayez accès à autre chose qu&#39;à la base de données. Si vous ne souhaitez pas que le [!DNL Commerce Intelligence] dispose d’un accès complet au serveur hébergeant votre base de données, vous pouvez restreindre l’accès en forçant l’utilisateur [!DNL Commerce Intelligence Linux] à accéder à un shell [bash limité](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
+Lorsque vous créez un tunnel SSH vers votre serveur, il n&#39;est pas nécessaire que [!DNL Adobe Commerce Intelligence] ayez accès à autre chose qu&#39;à la base de données. Pour l’inscription de la clé de l’hôte SSH, les erreurs et le dépannage, consultez [Vérification de la clé de l’hôte SSH](../../data-analyst/importing-data/integrations/ssh-host-key-verification.md). Si vous ne souhaitez pas que le [!DNL Commerce Intelligence] dispose d’un accès complet au serveur hébergeant votre base de données, vous pouvez restreindre l’accès en forçant l’utilisateur [!DNL Commerce Intelligence Linux] à accéder à un shell [bash limité](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
 
 Vous avez peut-être deviné d’après son nom, mais un shell bash restreint est utilisé pour configurer un environnement plus contrôlé que le shell standard. Ce qui est important à propos de ce type de shell, c’est que les utilisateurs shell restreints ne peuvent pas accéder aux fonctions système ni effectuer des modifications.
 

@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 661
+source-wordcount: 686
 ht-degree: 0%
 
 ---
@@ -145,9 +145,9 @@ Pour conclure, vous devez saisir les informations de connexion et d’utilisateu
 
 Saisissez les informations suivantes dans cette page, en commençant par la section `Database Connection` :
 
-* `Host` : `127.0.0.1`
+* `Host`: `127.0.0.1`
 * `Username` : nom d’utilisateur [!DNL Commerce Intelligence] [!DNL MongoDB] (doit être `rjmetric`)
-* `Password` : mot de passe de l’[!DNL Commerce Intelligence] [!DNL MongoDB]
+* `Password` : mot de passe de l’[!DNL MongoDB] [!DNL Commerce Intelligence]
 * `Port` : port de MongoDB sur votre serveur (`27017` par défaut)
 * `Database Name` (facultatif) : si vous n&#39;avez autorisé l&#39;accès qu&#39;à une seule base de données, indiquez son nom ici.
 
@@ -157,8 +157,13 @@ Dans la section `SSH Connection` :
 * `Username` : nom d’utilisateur [!DNL Commerce Intelligence] Linux (SSH) (doit être rjmetric)
 * `SSH Port` : port SSH sur votre serveur (22 par défaut)
 
-Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save Test]** pour terminer la configuration.
+Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save & Test]** pour terminer la configuration.
 
-### Connexe
+>[!NOTE]
+>
+>Pour l’inscription de la clé de l’hôte SSH, l’actualisation, les messages d’erreur et le dépannage, consultez [Vérification de la clé de l’hôte SSH](ssh-host-key-verification.md).
 
+## Connexe {#related}
+
+* [Vérification de la clé hôte SSH](ssh-host-key-verification.md)
 * [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
