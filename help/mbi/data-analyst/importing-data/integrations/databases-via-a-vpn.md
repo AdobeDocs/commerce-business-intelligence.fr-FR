@@ -5,35 +5,25 @@ exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 414
 ht-degree: 0%
 
 ---
 
 # Connexion de bases de données via un VPN
 
-Bien qu’Adobe recommande de connecter vos bases de données à l’aide d’une `SSH tunnel`, vous pouvez également utiliser une connexion `VPN` chiffrée pour garantir la sécurité. Un `VPN` peut être utilisé pour n’importe laquelle de vos intégrations de base de données. Pour simplifier les choses, le processus est à peu près identique à la configuration d’un `SSH tunnel` :
+Bien qu’Adobe recommande de connecter vos bases de données à l’aide d’une `SSH tunnel`, vous pouvez également utiliser une connexion `VPN` chiffrée pour garantir la sécurité. Pour l’inscription de la clé de l’hôte SSH, les erreurs et le dépannage sur les connexions du tunnel SSH, consultez [Vérification de la clé de l’hôte SSH](ssh-host-key-verification.md). Un `VPN` peut être utilisé pour n’importe laquelle de vos intégrations de base de données. Pour simplifier les choses, le processus est à peu près identique à la configuration d’un `SSH tunnel` :
 
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  base de données](#database)
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  VPN](#vpn)
-1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Saisissez la connexion et les informations de l’utilisateur VPN dans Commerce Intelligence](#finish)
 
 Outre les informations d’identification de la base de données, vous devez saisir les informations d’identification d’un utilisateur VPN pour conclure. Tout utilisateur VPN fonctionne, mais Adobe vous recommande de créer un utilisateur [!DNL Commerce Intelligence], car cela facilite le suivi des utilisateurs sur votre compte.
@@ -66,10 +56,10 @@ Saisissez les informations suivantes dans cette page, en commençant par la sect
 * `Username` : nom d’utilisateur de la base de données [!DNL Commerce Intelligence]
 * `Password` : mot de passe de l’utilisateur de la base de données [!DNL Commerce Intelligence]
 * `Port` : port de la base de données sur le serveur. Les valeurs par défaut sont les suivantes :
-   * `MicrosoftSQL` : `1433`
-   * `MongoDB` : `27017`
-   * `MySQL` : `3306`
-   * `PostgreSQL` : `5432`
+   * `MicrosoftSQL`: `1433`
+   * `MongoDB`: `27017`
+   * `MySQL`: `3306`
+   * `PostgreSQL`: `5432`
 * `Host` : par défaut, il s’agit de localhost `127.0.0.1`, mais il peut également s’agir de l’adresse IP publique de votre serveur ou d’une adresse réseau local.
 * `Database Name (optional)` : si vous n&#39;avez autorisé l&#39;accès qu&#39;à une seule base de données (cela est spécifié lors de l&#39;étape de création des utilisateurs de la base de données), saisissez ici le nom de cette base de données.
 
@@ -79,7 +69,7 @@ Dans la section `Encryption Connection` :
 * `Gateway Address` : adresse IP du serveur VPN
 * `Group Name` : nom du groupe utilisé pour l’authentification de groupe
 * `Group Secret` : mot de passe correspondant au groupe.
-* `Username` : nom d’utilisateur de l’[!DNL Commerce Intelligence] `VPN`
-* `Password` : mot de passe de l’utilisateur [!DNL Commerce Intelligence] `VPN`
+* `Username` : nom d’utilisateur de l’`VPN` [!DNL Commerce Intelligence]
+* `Password` : mot de passe de l’utilisateur `VPN` [!DNL Commerce Intelligence]
 
 Lorsque vous avez terminé, cliquez sur **[!UICONTROL Save & Test]** pour terminer la configuration.
