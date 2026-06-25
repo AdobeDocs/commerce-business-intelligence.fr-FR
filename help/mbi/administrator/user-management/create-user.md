@@ -18,7 +18,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 245
 ht-degree: 0%
@@ -55,3 +55,4 @@ Si vous devez renvoyer l’invitation, sur la [page de connexion](https://dashbo
 >[!IMPORTANT]
 >
 >Chaque compte dispose d’un nombre contracté de licences, ou places. Si vous avez atteint votre limite ou souhaitez en savoir plus, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+

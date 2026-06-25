@@ -19,7 +19,7 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 201
 ht-degree: 0%
@@ -43,3 +43,4 @@ Si vous avez uniquement besoin que les tableaux de bord de cet utilisateur soien
 1. Utilisez l’adresse e-mail de l’utilisateur supprimé pour créer un nouvel utilisateur [!DNL Commerce Intelligence].
 1. [Notifier l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) après avoir créé l’utilisateur. La prise en charge transfère les tableaux de bord vers votre compte .
 1. Une fois que l’assistance Adobe vous a notifié du transfert, vous pouvez supprimer à nouveau l’utilisateur.
+
