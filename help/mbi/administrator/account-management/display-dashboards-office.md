@@ -18,7 +18,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
@@ -40,4 +40,5 @@ Voici la liste recommandée des éléments dont vous avez besoin pour l’option
 1. **Extension de navigateur permettant de faire pivoter plusieurs onglets à la fois.** Vous pouvez ainsi configurer les tableaux de bord sélectionnés qui s’affichent dans un onglet unique. Adobe recommande l’extension [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) si vous utilisez [!DNL Chrome].
 
 Une fois que vous disposez du matériel ci-dessus, vous pouvez ouvrir une fenêtre de navigateur à l’écran avec un tableau de bord spécifique que vous souhaitez afficher dans chaque onglet. Enfin, configurez votre navigateur pour qu’il effectue une rotation dans chaque tableau de bord à la fréquence souhaitée.
+
 
