@@ -1,7 +1,6 @@
 ---
 title: Limitation de l'accès à votre base de données
 description: Découvrez comment restreindre l’accès, en limitant l’accès au serveur qui héberge votre base de données.
-exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
 TQID: https://experienceleague.adobe.com/O2cS-hbhjqktc4LpJD6agxgIwabrypgCY9fnJTCR2XM
@@ -16,12 +15,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 225
 ht-degree: 0%
 
 ---
+
 
 # Restreindre l’accès
 
@@ -32,7 +33,6 @@ Vous avez peut-être deviné d’après son nom, mais un shell bash restreint es
 Pour restreindre l’utilisateur ou l’utilisatrice [!DNL Commerce Intelligence Linux], vous devez effectuer deux opérations :
 
 1. Définissez la variable d’environnement PATH sur la chaîne vide. Cela signifie que l’utilisateur ne peut pas accéder aux exécutables système.
-
 1. Vérifiez que le shell exécuté est `bash -r`
 
 Ces deux opérations peuvent être effectuées dans le fichier `authorized_keys` du répertoire de `dir/.ssh` principal de l’utilisateur dans le cadre de la commande exécutée lorsque l’utilisateur se connecte. Voici à quoi cela ressemble :
@@ -44,5 +44,3 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ```
 
 Une fois cette opération terminée, l’utilisateur que vous avez créé pour [!DNL Commerce Intelligence] ne peut pas apporter de modifications à votre système.
-
-

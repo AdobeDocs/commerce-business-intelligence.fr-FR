@@ -1,7 +1,6 @@
 ---
 title: Utilisateur de données
 description: Découvrez comment utiliser les données pour prendre des décisions commerciales plus éclairées et créer des rapports et des tableaux de bord.
-exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/-sqS1qaDbWwGY2Hy13sSqw4sdnxZYGQqiEn5wVcF5lo
@@ -20,18 +19,21 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
+source-git-commit: 1e8d1a7b6807eb23a7784133ca2d1aea219386b7
 workflow-type: tm+mt
 source-wordcount: 86
 ht-degree: 0%
 
 ---
 
+
 # Utilisateur de données
 
 Vous utilisez des données pour prendre des décisions commerciales. Il se peut que vous receviez des rapports et des tableaux de bord d’un analyste de données de votre équipe, mais vous souhaitez également savoir comment créer ces rapports et tableaux de bord.
 
 Cette section explique comment :
+
 * acquérir et afficher des données dans des [!DNL Commerce Intelligence] à l’aide de rapports et de tableaux de bord
 * partagez ces données avec les parties prenantes par e-mail et au moyen de fichiers `.csv`
 
@@ -40,5 +42,3 @@ Cette section explique comment :
 * [Création de rapports](../mbi/data-user/reports/rpt-fundamentals.md)
 * [Création de tableaux de bord](../mbi/data-user/dashboards/ess-dashboards.md)
 * [Partage de données](../mbi/data-user/export-data/share-data.md)
-
-

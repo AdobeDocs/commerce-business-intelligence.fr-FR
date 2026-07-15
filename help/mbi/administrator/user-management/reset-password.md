@@ -1,7 +1,6 @@
 ---
 title: Réinitialiser le mot de passe
 description: Découvrez comment réinitialiser le mot de passe d’un utilisateur.
-exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,12 +18,14 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
-source-wordcount: 88
+source-wordcount: 89
 ht-degree: 0%
 
 ---
+
 
 # Réinitialiser votre mot de passe
 
@@ -32,6 +33,4 @@ Pour réinitialiser votre mot de passe, cliquez sur **[!UICONTROL Reset Password
 
 Vous pouvez également modifier votre mot de passe dans [!DNL Commerce Intelligence] à l’aide de la page **[!UICONTROL Personal Settings]** .
 
-Si vous réinitialisez votre mot de passe et que votre compte reste verrouillé, suivez [ces conseils](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=fr) pour identifier le problème.
-
-
+Si vous réinitialisez votre mot de passe et que votre compte reste verrouillé, suivez [ces conseils](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout) pour identifier le problème.

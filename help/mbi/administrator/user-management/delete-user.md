@@ -1,7 +1,6 @@
 ---
 title: Suppression ou réactivation d’un utilisateur Adobe Commerce Intelligence
 description: Découvrez comment supprimer un  [!DNL Commerce Intelligence] .
-exl-id: 0590275d-3329-40fb-8be1-4a700438338d
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,12 +18,14 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 0590275d-3329-40fb-8be1-4a700438338d
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 201
 ht-degree: 0%
 
 ---
+
 
 # Suppression d’un utilisateur [!DNL Adobe Commerce Intelligence]
 
@@ -43,5 +44,3 @@ Si vous avez uniquement besoin que les tableaux de bord de cet utilisateur soien
 1. Utilisez l’adresse e-mail de l’utilisateur supprimé pour créer un nouvel utilisateur [!DNL Commerce Intelligence].
 1. [Notifier l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) après avoir créé l’utilisateur. La prise en charge transfère les tableaux de bord vers votre compte .
 1. Une fois que l’assistance Adobe vous a notifié du transfert, vous pouvez supprimer à nouveau l’utilisateur.
-
-
