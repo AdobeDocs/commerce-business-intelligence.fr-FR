@@ -23,7 +23,7 @@ Cette section contient les modifications apportées au cours des 60 derniers jou
   </thead>
   <tbody>
     <tr>
-      <td><p>Nouvelle <a href="https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">vérification de la clé hôte SSH</a> la rubrique documente l’enregistrement et le test de l’inscription, l’actualisation des clés hôtes SSH, le comportement de la migration, le dépannage des erreurs et quand contacter l’assistance. Les rubriques relatives à l'intégration du tunnel SSH sont désormais liées à ce guide.</p>
+      <td><p>Nouvelle <a href="https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">vérification de la clé hôte SSH</a> la rubrique documente l’enregistrement et le test de l’inscription, l’actualisation des clés hôtes SSH, le comportement de la migration, le dépannage des erreurs et quand contacter l’assistance. Les rubriques relatives à l'intégration du tunnel SSH sont désormais liées à ce guide.</p>
 </td>
       <td>
         Feedback
