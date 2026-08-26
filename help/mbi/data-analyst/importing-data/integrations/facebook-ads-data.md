@@ -84,4 +84,4 @@ Ce tableau contient les mêmes informations que le tableau `facebook_ads_insight
 ## Connexe
 
 * [Connexion  [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

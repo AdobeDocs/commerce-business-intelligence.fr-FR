@@ -50,4 +50,4 @@ Cette rubrique explore les principaux tableaux de données que vous pouvez impor
 ## Connexe
 
 * [Connexion à Zendesk](../integrations/zendesk.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
