@@ -5,38 +5,28 @@ exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
 TQID: https://experienceleague.adobe.com/8n0DUwkiI1BVF5612vCd4jFWx7jwWlfOHg2K3hgWkco
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 511
 ht-degree: 0%
 
 ---
 
 # Exporter les données brutes
 
-Grâce aux exportations de données brutes, vous pouvez exporter des enregistrements de votre Data Warehouse pour mieux comprendre ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider [à identifier les incohérences de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=fr).
+Grâce aux exportations de données brutes, vous pouvez exporter des enregistrements de votre Data Warehouse pour mieux comprendre ce qui alimente votre tableau de bord. En outre, les exportations de données brutes peuvent vous aider [à identifier les incohérences de données](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies).
 
 Les exportations de données brutes donnent accès à des colonnes et dimensions supplémentaires, générées par la dénormalisation et la pré-agrégation des mesures pertinentes. Par exemple, `User's first order date` est une dimension que vous pouvez exporter pour chaque utilisateur dans [!DNL Commerce Intelligence], même si elle n’est pas disponible dans votre base de données.
 
 Ce tutoriel aborde les sujets suivants :
 
 * [Sélection des données à exporter](#select)
-* [Téléchargement de l’exportation (](#download)
+* [Téléchargement de l’export (fichier `.csv`)](#download)
 * [Accès aux exportations historiques](#historical)
 
 ## Etape 1 : sélection des données à exporter {#select}
@@ -50,7 +40,7 @@ Vous pouvez exporter des données brutes de deux manières différentes dans [!D
 
 Si vous souhaitez exporter le tableau à partir de [!UICONTROL Manage Data] onglet, vous avez besoin d’autorisations [Admin](../administrator/user-management/user-management.md).
 
-1. Cliquez sur **[!UICONTROL Manage Data** > **&#x200B; Exporter les données &#x200B;**> **Exporter les données brutes]**.
+1. Cliquez sur **[!UICONTROL Manage Data** > ** Exporter les données **> **Exporter les données brutes]**.
 1. Un `Export List` des exportations de données récemment créées s’affiche, le cas échéant. Cliquez sur **[!UICONTROL Add Export]** pour créer une exportation.
 1. La boîte de dialogue `New Raw Data Export` s’affiche. Ici, vous pouvez personnaliser votre exportation en sélectionnant ou en désélectionnant les colonnes et les filtres :
 

@@ -5,24 +5,15 @@ exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/AM-l7yCwm00r5uqmqD-z34GN3rubycbTnWeTQ4oHI8k
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +54,9 @@ En gardant à l’esprit les mesures ci-dessus, examinez un exemple impliquant d
 
 | **Nom du produit** | **Probabilité de répétition** | **Nombre de commandes au cours de la durée de vie moyenne** | **Chiffre d’affaires moyen sur la durée de vie** | **Délai médian jusqu’à la prochaine commande** |
 |-----|-----|-----|-----|-----|
-| Brasseur de café à tasse unique | 94,98 % | 7,92 | 549,82 $ | 57,01 jours |
-| Capsules de café | 93,82 % | 8,68 | 479,98 $ | 63,48 jours |
-| Grains de café | 41,92 % | 6,07 | 99,82 $ | 27,31 jours |
+| Brasseur de café à tasse unique | 94.98% | 7,92 | $549.82 | 57,01 jours |
+| Capsules de café | 93.82% | 8,68 | $479.98 | 63,48 jours |
+| Grains de café | 41.92% | 6,07 | $99.82 | 27,31 jours |
 
 {style="table-layout:auto"}
 
@@ -97,4 +88,4 @@ Outre l’analyse du comportement de rachat de vos clients, vous pouvez égaleme
 
 Une fois que vous avez identifié la raison de l’attrition, vous pouvez utiliser votre analyse pour créer une campagne `reactivation`. Grâce à ces données, vous pouvez identifier les utilisateurs qui sont devenus inactifs, le temps écoulé depuis leur dernière visite, leur dernier achat, etc. Cela vous permet de prendre des décisions exploitables qui incitent vos clients à revenir.
 
-Pour obtenir de l’aide sur l’analyse, [contactez l’assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Pour obtenir de l’aide sur l’analyse, [contactez l’assistance technique](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

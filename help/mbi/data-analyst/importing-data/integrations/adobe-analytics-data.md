@@ -1,30 +1,19 @@
 ---
 title: Données [!DNL Adobe Analytics] attendues
-description: Découvrez les étapes de connexion de votre instance RDS.
+description: Examinez les champs de données que Commerce Intelligence importe d’Adobe Analytics à l’aide de l’API de création de rapports d’Analytics 2.0 afin de savoir à quoi vous attendre dans vos rapports.
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/vA-1cABpxQNwI8xTF4Elkgv2geudkp5tnBH1l6-PZiY
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 418
-ht-degree: 0%
+source-wordcount: 443
+ht-degree: 1%
 
 ---
 
@@ -51,8 +40,8 @@ Le tableau contient les colonnes suivantes :
 | `_id` | Cette colonne est la clé primaire. |
 | `_item_hash` | Identifiant unique [!DNL Commerce Intelligence]. Cette colonne est créée par [!DNL Commerce Intelligence]. |
 | `_updated_at` | Cette colonne contient la dernière mise à jour de la ligne de données. Il est créé par [!DNL Commerce Intelligence]. |
-| `start_date` | Date de début des données incluses dans la ligne. `start_date` est toujours 00:00 du même jour dans une ligne. |
-| `end_date` | Date de fin des données incluses dans la ligne. `end_date` correspond toujours à 23 :59 du même jour dans une ligne. |
+| `start_date` | Date de début des données incluses dans la ligne. `start_date` correspond toujours à 00:00 du même jour dans une ligne. |
+| `end_date` | Date de fin des données incluses dans la ligne. `end_date` est toujours à 23 h 59 du même jour dans une ligne. |
 | `page_views` | Mesure sélectionnée : nombre total de pages vues pour la période identifiée. |
 | `page` | Dimension sélectionnée : noms de page individuels avec vues suivies. |
 
@@ -65,6 +54,6 @@ Cette section décrit les limites de l’intégration [!DNL Adobe Analytics] pou
 | Limitation | Description |
 | --- | --- |
 | `Historical data period` | Comme avec d’autres intégrations tierces, l’intégration [!DNL Adobe Analytics] extrait une quantité limitée de données historiques, puis continue à tenir à jour les données. La période historique est configurée sur 2 semaines. |
-| `Empty component combinations` | Certaines combinaisons de mesures et de dimensions ne contiennent aucune donnée. Si une telle combinaison est sélectionnée pour la réplication, [!DNL Commerce Intelligence] exclut la colonne de la table répliquée. Pour éviter de sélectionner une telle combinaison, vous pouvez d&#39;abord créer un rapport dans le [[!DNL Adobe Analytics] &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr) afin de vérifier que vous obtenez les données attendues. |
+| `Empty component combinations` | Certaines combinaisons de mesures et de dimensions ne contiennent aucune donnée. Si une telle combinaison est sélectionnée pour la réplication, [!DNL Commerce Intelligence] exclut la colonne de la table répliquée. Pour éviter de sélectionner une telle combinaison, vous pouvez d&#39;abord créer un rapport dans le [[!DNL Adobe Analytics] ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/home) afin de vérifier que vous obtenez les données attendues. |
 | `Re-authorization cadence` | Une réautorisation de l’intégration [!DNL Adobe Analytics] est requise toutes les deux semaines. Pour réautoriser, accédez à la page Modifier de l’intégration et cliquez sur **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
 | `One dimension per row` | [!DNL Adobe Analytics] fournit des données de mesure pour une dimension à la fois. Si vous sélectionnez plusieurs dimensions lors de la configuration, chaque ligne de votre tableau [!DNL Commerce Intelligence] contient une seule valeur de dimension et des valeurs nulles pour chaque autre dimension. |

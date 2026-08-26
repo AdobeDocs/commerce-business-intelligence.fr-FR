@@ -1,27 +1,18 @@
 ---
 title: Réinitialiser le mot de passe
-description: Découvrez comment réinitialiser le mot de passe d’un utilisateur.
+description: Réinitialisez le mot de passe de votre compte Commerce Intelligence depuis la page de connexion. Suivez le lien envoyé par e-mail pour créer un nouveau mot de passe et récupérer l’accès à vos tableaux de bord.
 role: Admin, User
 feature: User Management
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b6935462-7263-4ced-a703-60de6a5aeb2d
-subfeature_v2:
-  - id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b6935462-7263-4ced-a703-60de6a5aeb2d
+subfeature_v2: id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 89
+source-wordcount: 108
 ht-degree: 0%
 
 ---
@@ -33,4 +24,4 @@ Pour réinitialiser votre mot de passe, cliquez sur **[!UICONTROL Reset Password
 
 Vous pouvez également modifier votre mot de passe dans [!DNL Commerce Intelligence] à l’aide de la page **[!UICONTROL Personal Settings]** .
 
-Si vous réinitialisez votre mot de passe et que votre compte reste verrouillé, suivez [ces conseils](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout) pour identifier le problème.
+Si vous réinitialisez votre mot de passe et que votre compte reste verrouillé, suivez [ces conseils](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout) pour identifier le problème.

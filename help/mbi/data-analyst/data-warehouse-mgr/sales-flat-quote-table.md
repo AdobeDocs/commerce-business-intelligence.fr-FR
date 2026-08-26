@@ -1,30 +1,18 @@
 ---
 title: Citation en table
-description: Découvrez comment utiliser la table des devis.
+description: Consultez le schéma de la table des devis dans Commerce Intelligence, qui suit chaque panier. Découvrez les recommandations d’Adobe pour gérer la taille des tables au fil du temps.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/Q-46fusr2IS4ZQDrR8IjHEttueSBpT2-LQBtsejMEC4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 613
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -81,14 +69,14 @@ La table `quote` (`sales_flat_quote` sur M1) contient des enregistrements sur ch
 `customer_entity`
 
 * Rejoignez `customer_entity` tableau pour créer des colonnes au niveau du client associées au client qui a créé le panier.
-   * Chemin : `quote.customer_id` (plusieurs) => `customer_entity.entity_id` (un)
+  * Chemin : `quote.customer_id` (plusieurs) => `customer_entity.entity_id` (un)
 
 `sales_order`
 
 * Rejoignez `sales_order` tableau pour créer des colonnes qui renvoient les détails des commandes associés à un panier converti.
-   * Chemin : `quote.reserved_order_id` (plusieurs) => `sales_order.increment_id` (un)
+  * Chemin : `quote.reserved_order_id` (plusieurs) => `sales_order.increment_id` (un)
 
 `store`
 
 * Rejoignez `store` tableau pour créer des colonnes qui renvoient des détails liés à la boutique Commerce associée au panier.
-   * Chemin : `quote.store_id` (plusieurs) => `store.store_id` (un)
+  * Chemin : `quote.store_id` (plusieurs) => `store.store_id` (un)
