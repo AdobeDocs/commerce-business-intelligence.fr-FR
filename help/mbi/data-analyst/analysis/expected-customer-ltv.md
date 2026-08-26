@@ -4,11 +4,19 @@ description: Découvrez comment configurer un tableau de bord qui vous aide à c
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
 source-wordcount: 540
@@ -30,54 +38,54 @@ Avant de commencer, vous devez vous familiariser avec le [créateur de rapports 
 
 Colonnes à créer dans la table **commandes** si vous utilisez des mois de **30 jours** :
 
-* [!UICONTROL Column name]: `Months between first order and this order`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Months between first order and this order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input] : A = `Seconds between customer's first order date and this order`
-* 
-  [!UICONTROL Datatype]: `Integer`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * **Définition:**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
-* [!UICONTROL Column name]: `Months since order`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Months since order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input] : A = `created_at`
-* 
-  [!UICONTROL Datatype]: `Integer`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * Définition : `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
 Colonnes à créer sur le tableau **`orders`** si vous utilisez **mois de calendrier** :
 
-* [!UICONTROL Column name]: `Calendar months between first order and this order`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Calendar months between first order and this order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column inputs]:
   * `A` = `created_at`
   * `B` = `Customer's first order date`
 
-* 
-  [!UICONTROL Datatype]: `Integer`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * Définition : `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
-* [!UICONTROL Column name]: `Calendar months since order`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Calendar months since order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
-* 
-  [!UICONTROL Datatype]: `Integer`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * **Définition:**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
-* [!UICONTROL Column name]: `Is in current month? (Yes/No)`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Is in current month? (Yes/No)`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input] : A = `created_at`
-* 
-  [!UICONTROL Datatype]: `String`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `String`
 * Définition : `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
 ## Mesures
@@ -108,55 +116,55 @@ Mesures à créer
   * `Calendar months between first order and this order` `<= X` (choisissez un nombre raisonnable pour X, par exemple 24 mois)
   * `Is in current month?` = `No`
 
-* 
-  [!UICONTROL Metric]: `Revenue`
+* &#x200B;
+  [!UICONTROL Metric]&#x200B;: `Revenue`
 * [!UICONTROL Filter]:
 
 * `B` de mesure : `All time customers (hide)`
   * `Is in current month?` = `No`
 
-* [!UICONTROL Metric]: `New customers by first order date`
+* [!UICONTROL Metric]&#x200B;: `New customers by first order date`
 * [!UICONTROL Filter]:
 
 * `C` de mesure : `All time customers by month since first order (hide)`
   * `Calendar months since order` `<= X`
   * `Is in current month?` = `No`
 
-* [!UICONTROL Metric]: `New customers by first order date`
+* [!UICONTROL Metric]&#x200B;: `New customers by first order date`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]: `Expected revenue`
-* [!UICONTROL Formula]: `A / (B - C)`
-* 
-  [!UICONTROL Format]: `Currency`
+* [!UICONTROL Formula]&#x200B;: `Expected revenue`
+* [!UICONTROL Formula]&#x200B;: `A / (B - C)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 Autres détails du graphique
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * Intervalle de temps : `None`
 * [!UICONTROL Group by] : `Calendar months between first order and this order` - tout afficher
 * Remplacez la `group by` de la mesure `All time customers` par Indépendant à l’aide de l’icône en forme de crayon située en regard de la `group by`
 * Modifiez les champs de `Show top/bottom` comme suit :
-  * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
-  * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
-  * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
+  * [!UICONTROL Revenue]&#x200B;: `Top 24 sorted by Calendar months between first order and this order`
+  * [!UICONTROL All time customers]&#x200B;: `Top 24 sorted by All time customers`
+  * [!UICONTROL All time customers by month since first order]&#x200B;: `Top 24 sorted by All time customers by month since first order`
 
 **Chiffre d’affaires moyen par mois, par cohorte**
 
 * `A` de mesure : `Revenue`
-* 
-  [!UICONTROL Metric view]: `Cohort`
-* [!UICONTROL Cohort date]: `Customer's first order date`
-* [!UICONTROL Perspective]: `Average value per cohort member`
+* &#x200B;
+  [!UICONTROL Metric view]&#x200B;: `Cohort`
+* [!UICONTROL Cohort date]&#x200B;: `Customer's first order date`
+* [!UICONTROL Perspective]&#x200B;: `Average value per cohort member`
 
 **Chiffre d’affaires moyen cumulé par mois, par cohorte**
 
 * `A` de mesure : `Revenue`
-* 
-  [!UICONTROL Metric view]: `Cohort`
-* [!UICONTROL Cohort date]: `Customer's first order date`
-* [!UICONTROL Perspective]: `Cumulative average value per cohort member`
+* &#x200B;
+  [!UICONTROL Metric view]&#x200B;: `Cohort`
+* [!UICONTROL Cohort date]&#x200B;: `Customer's first order date`
+* [!UICONTROL Perspective]&#x200B;: `Cumulative average value per cohort member`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’image en haut de la page.
 
-Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

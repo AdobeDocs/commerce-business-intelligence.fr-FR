@@ -5,11 +5,23 @@ exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/V34xz5uwqrCn716FqG5byQ6wnLwkZUccBXgJMqiSdR4
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
 source-wordcount: 767
@@ -120,15 +132,15 @@ Saisissez vos informations de [!DNL Commerce Intelligence] dans l’écran [!UIC
 
 [!UICONTROL Integration Name] : [choisissez un nom pour votre instance [!DNL Commerce Intelligence]]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[!UICONTROL Nom d&#39;utilisateur]: `mbi`
+[!UICONTROL Nom d&#39;utilisateur]&#x200B;: `mbi`
 
 [!UICONTROL Password] : [ mot de passe de saisie affiché dans la section précédente]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes] : [laisser vide s’il n’existe aucun préfixe de tableau]
 
@@ -138,7 +150,7 @@ Saisissez vos informations de [!DNL Commerce Intelligence] dans l’écran [!UIC
 
 **Entrées:**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone] : [choisissez le fuseau horaire pour lequel vous souhaitez que vos données s’affichent]
 
@@ -154,13 +166,13 @@ L’interface utilisateur du projet fournit une chaîne d’accès SSH. Cette ch
 
 **Entrées:**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address] : `ssh.us-3.magento.cloud` [de l’étape précédente]
 
 [!UICONTROL Username] : `vfbfui4vmfez6-master-7rqtwti—mymagento` [de l’étape précédente]
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## Enregistrez votre intégration.
 
