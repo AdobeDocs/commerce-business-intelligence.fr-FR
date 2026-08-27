@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 283
+source-wordcount: 295
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Pour identifier l’identifiant de profil [!DNL Google Analytics] d’un site we
 
 ## Connexe :
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Connexion  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analyse de l’activité du site web et des taux de conversion des clients](../../analysis/web-act-cust-conversion.md)
 * [Suivi des données d’acquisition des utilisateurs à l’aide  [!DNL Google Analytics]  cookies](../../analysis/google-track-user-acq.md)

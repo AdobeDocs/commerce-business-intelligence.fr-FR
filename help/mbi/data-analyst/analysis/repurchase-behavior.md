@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +63,9 @@ En gardant à l’esprit les mesures ci-dessus, examinez un exemple impliquant d
 
 | **Nom du produit** | **Probabilité de répétition** | **Nombre de commandes au cours de la durée de vie moyenne** | **Chiffre d’affaires moyen sur la durée de vie** | **Délai médian jusqu’à la prochaine commande** |
 |-----|-----|-----|-----|-----|
-| Brasseur de café à tasse unique | 94,98 % | 7,92 | 549,82 $ | 57,01 jours |
-| Capsules de café | 93,82 % | 8,68 | 479,98 $ | 63,48 jours |
-| Grains de café | 41,92 % | 6,07 | 99,82 $ | 27,31 jours |
+| Brasseur de café à tasse unique | 94.98% | 7,92 | $549.82 | 57,01 jours |
+| Capsules de café | 93.82% | 8,68 | $479.98 | 63,48 jours |
+| Grains de café | 41.92% | 6,07 | $99.82 | 27,31 jours |
 
 {style="table-layout:auto"}
 
@@ -97,4 +97,4 @@ Outre l’analyse du comportement de rachat de vos clients, vous pouvez égaleme
 
 Une fois que vous avez identifié la raison de l’attrition, vous pouvez utiliser votre analyse pour créer une campagne `reactivation`. Grâce à ces données, vous pouvez identifier les utilisateurs qui sont devenus inactifs, le temps écoulé depuis leur dernière visite, leur dernier achat, etc. Cela vous permet de prendre des décisions exploitables qui incitent vos clients à revenir.
 
-Pour obtenir de l’aide sur l’analyse, [contactez l’assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Pour obtenir de l’aide sur l’analyse, [contactez l’assistance technique](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

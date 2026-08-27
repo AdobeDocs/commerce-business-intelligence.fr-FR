@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Lorsque vous spécifiez un filtre de date pour un tableau de bord, ce filtre est
 
 ## Stocker les filtres
 
-Pour analyser les performances d’un magasin spécifique, cliquez sur l’icône de magasins dans le coin supérieur droit (![&#x200B; Filtre de magasin &#x200B;](../../assets/store-filter.png)). Par défaut, `Store Filter` est défini sur `All Stores`, ce qui affiche les données de toutes les [&#x200B; vues de magasin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=fr) disponibles sur votre site Commerce.
+Pour analyser les performances d’un magasin spécifique, cliquez sur l’icône de magasins dans le coin supérieur droit (![&#x200B; Filtre de magasin &#x200B;](../../assets/store-filter.png)). Par défaut, `Store Filter` est défini sur `All Stores`, ce qui affiche les données de toutes les [&#x200B; vues de magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-views) disponibles sur votre site Commerce.
 
 >[!NOTE]
 >
->Un filtre de magasin est activé ou désactivé pour l’ensemble d’un compte [!DNL Commerce Intelligence]. Si un tableau de bord contient des rapports qui ne sont pas affectés par le filtre (tels que des rapports qui ne sont pas créés sur des données [!DNL Adobe Commerce]), ces rapports ne sont pas mis à jour lorsque le filtre de magasin est appliqué. Vous pouvez [contacter l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) si vous pensez qu’un rapport doit être mis à jour en fonction de la sélection de la boutique ou si vous pensez que le filtre de votre boutique de comptes est désactivé par erreur.
+>Un filtre de magasin est activé ou désactivé pour l’ensemble d’un compte [!DNL Commerce Intelligence]. Si un tableau de bord contient des rapports qui ne sont pas affectés par le filtre (tels que des rapports qui ne sont pas créés sur des données [!DNL Adobe Commerce]), ces rapports ne sont pas mis à jour lorsque le filtre de magasin est appliqué. Vous pouvez [contacter l’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) si vous pensez qu’un rapport doit être mis à jour en fonction de la sélection de la boutique ou si vous pensez que le filtre de votre boutique de comptes est désactivé par erreur.
 
 Lorsque vous sélectionnez un magasin dans la `Store Filter`, le filtre conserve votre sélection lorsque vous naviguez entre les tableaux de bord. La conservation de votre sélection vous permet d’afficher les données du magasin sélectionné partout jusqu’à ce que vous sélectionniez `All Stores`.
 

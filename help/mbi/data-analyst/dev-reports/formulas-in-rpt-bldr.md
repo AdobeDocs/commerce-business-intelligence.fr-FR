@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 560
 ht-degree: 0%
 
 ---
@@ -82,4 +82,4 @@ Dans cet exemple, vous avez utilisé la perspective `Stacked Columns` pour affic
 
 Avez-vous remarqué dans les exemples ci-dessus que les `timestamp`, `groupings`, `perspectives` et `filters` de la formule sont hérités de ses mesures d’entrée ? N’oubliez pas que les formules peuvent être utilisées pour utiliser des options de temps `perspectives` et [&#x200B; indépendantes](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"} comme les mesures le peuvent.
 
-Si vous avez d’autres questions sur l’utilisation des formules dans le `Report Builder`, [contactez l’assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Si vous avez d’autres questions sur l’utilisation des formules dans le `Report Builder`, [contactez l’assistance technique](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 968
+source-wordcount: 969
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Après avoir créé l’analyse ci-dessus et déterminé un seuil d’attrition,
 
 Si vous proposez plusieurs produits, vous vous demandez probablement comment les clients qui achètent un produit spécifique se comportent différemment au fil du temps par rapport aux autres clients. Vous souhaitez en savoir plus ? Consultez ce tutoriel pour découvrir le comportement d’achat au cours de la durée de vie des cohortes de clients en fonction de produits spécifiques qu’elles ont achetés.
 
-Cette bonne pratique est fournie par [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour plus d’informations.
+Cette bonne pratique est fournie par [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contactez l’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) pour plus d’informations.
 
 ### Connexe
 

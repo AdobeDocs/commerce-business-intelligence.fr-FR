@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 231
+source-wordcount: 244
 ht-degree: 0%
 
 ---
@@ -41,6 +41,6 @@ Dans certains cas, vous pouvez décider de modifier le tableau de données qu’
 
    ![Liste déroulante de sélection de tableau présentant les tableaux disponibles](../../assets/change-metrics-2.png)
 
-1. Si la nouvelle table ne contient pas de colonne correspondante, vous pouvez la **créer dans votre table de données** ou [contacter l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) s’il s’agit d’une colonne de calcul ou d’une dimension créée par [!DNL Commerce Intelligence]. Vous pouvez également **supprimer la dimension de la mesure**. Pour supprimer une dimension dont vous n’avez plus besoin, revenez simplement à l’éditeur de la mesure et sélectionnez les dimensions à supprimer sous `Dimensions`.
+1. Si la nouvelle table ne contient pas de colonne correspondante, vous pouvez la **créer dans votre table de données** ou [contacter l’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) s’il s’agit d’une colonne de calcul ou d’une dimension créée par [!DNL Commerce Intelligence]. Vous pouvez également **supprimer la dimension de la mesure**. Pour supprimer une dimension dont vous n’avez plus besoin, revenez simplement à l’éditeur de la mesure et sélectionnez les dimensions à supprimer sous `Dimensions`.
 
    ![&#x200B; Menu déroulant de sélection de colonne opérationnelle &#x200B;](../../assets/change-metrics-3.png)

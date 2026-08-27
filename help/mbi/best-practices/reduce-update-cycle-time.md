@@ -1,6 +1,6 @@
 ---
 title: Réduction De La Durée Du Cycle De Mise À Jour
-description: Découvrez comment réduire la durée du cycle de mise à jour.
+description: Réduisez la durée du cycle de mise à jour de Commerce Intelligence afin que vos tableaux de bord reflètent plus rapidement les dernières données. Découvrez ce qui affecte la vitesse de synchronisation et comment l’améliorer.
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
 role: Admin, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager, Dashboards
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 427
 ht-degree: 0%
 
 ---
@@ -59,4 +59,4 @@ En plus de réévaluer la fréquence des vérifications, les méthodes de répli
 
 ## Conclusion
 
-Si le temps nécessaire à la mise à jour semble toujours lent, même après l’implémentation de ces recommandations, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Si le temps nécessaire à la mise à jour semble toujours lent, même après l’implémentation de ces recommandations, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

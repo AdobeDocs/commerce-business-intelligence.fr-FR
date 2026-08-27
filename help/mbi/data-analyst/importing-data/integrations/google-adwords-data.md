@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: 603
 ht-degree: 0%
 
 ---
@@ -107,4 +107,4 @@ Grâce à ces données, vous pouvez commencer à créer des [mesures](../../../d
 
 Si vous ne disposez pas d’une table consolidée et que vous créez un beau tableau de bord sur la table `adwords`, vous devez répliquer les rapports ou créer des mesures en double pour comparer ces données à vos données [!DNL Facebook Ads]. L’utilisation d’un tableau consolidé vous permet d’incorporer facilement des données [!DNL Facebook Ads] à vos rapports [!DNL Adwords] existants. Vous pouvez également segmenter par plateforme publicitaire.
 
-Si vous avez déjà synchronisé les champs ci-dessus, [contactez-nous](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour consolider vos dépenses publicitaires.
+Si vous avez déjà synchronisé les champs ci-dessus, [contactez-nous](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) pour consolider vos dépenses publicitaires.

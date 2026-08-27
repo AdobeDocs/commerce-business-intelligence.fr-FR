@@ -1,6 +1,6 @@
 ---
 title: Accès aux tableaux de bord partagés
-description: Découvrez comment accéder aux tableaux de bord partagés.
+description: Découvrez comment les nouveaux utilisateurs peuvent accéder rapidement aux tableaux de bord partagés avec eux dans Commerce Intelligence, afin que votre équipe puisse se mettre rapidement à niveau sans étapes de configuration supplémentaires.
 exl-id: 528b8a2e-f13c-4ce8-ab8e-13864f50761a
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 67
+source-wordcount: 86
 ht-degree: 0%
 
 ---

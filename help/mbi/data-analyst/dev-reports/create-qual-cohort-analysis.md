@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 846
+source-wordcount: 861
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Cependant, si vous souhaitez analyser le comportement de cohorte de plusieurs se
 
 La création d’un rapport `qualitative cohort` dans le `Report Builder` implique la création par l’équipe d’analystes d’Adobe de [colonnes calculées avancées](../data-warehouse-mgr/creating-calculated-columns.md) dans les tables nécessaires.
 
-Pour les créer, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) (et consultez cet article !). Voici ce que vous devez savoir :
+Pour les créer, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) (et consultez cet article !). Voici ce que vous devez savoir :
 
 * Le `metric` avec lequel vous souhaitez effectuer votre analyse des cohortes et le tableau qu’il utilise (exemple : `Revenue`, basé sur le tableau `orders`).
 

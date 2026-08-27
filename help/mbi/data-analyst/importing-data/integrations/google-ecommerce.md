@@ -1,6 +1,6 @@
 ---
 title: Connecter Google ECommerce
-description: Découvrez vos canaux de recommandation les plus précieux.
+description: Connectez les données Google Ecommerce à Commerce Intelligence pour suivre vos canaux de recommandation les plus précieux et analyser les recettes avec vos autres sources de données.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 305
+source-wordcount: 341
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Pour identifier l’identifiant de profil [!DNL Google Analytics] d’un site we
 ## Connexe :
 
 * [Données  [!DNL Google ECommerce] &#x200B;](../integrations/google-ecommerce-data.md)
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
-* [Configuration [!DNL Google ECommerce] suivi](https://support.google.com/analytics/answer/1009612?hl=en)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Configuration [!DNL Google ECommerce] tracking](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../../analysis/most-value-source-channel.md)
 * [Augmenter le retour sur investissement de vos campagnes publicitaires](../../analysis/roi-ad-camp.md)

@@ -1,6 +1,6 @@
 ---
 title: Citation en table
-description: Découvrez comment utiliser la table des devis.
+description: Consultez le schéma de la table des devis dans Commerce Intelligence, qui suit chaque panier. Découvrez les recommandations d’Adobe pour gérer la taille des tables au fil du temps.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 613
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -81,14 +81,14 @@ La table `quote` (`sales_flat_quote` sur M1) contient des enregistrements sur ch
 `customer_entity`
 
 * Rejoignez `customer_entity` tableau pour créer des colonnes au niveau du client associées au client qui a créé le panier.
-   * Chemin : `quote.customer_id` (plusieurs) => `customer_entity.entity_id` (un)
+  * Chemin : `quote.customer_id` (plusieurs) => `customer_entity.entity_id` (un)
 
 `sales_order`
 
 * Rejoignez `sales_order` tableau pour créer des colonnes qui renvoient les détails des commandes associés à un panier converti.
-   * Chemin : `quote.reserved_order_id` (plusieurs) => `sales_order.increment_id` (un)
+  * Chemin : `quote.reserved_order_id` (plusieurs) => `sales_order.increment_id` (un)
 
 `store`
 
 * Rejoignez `store` tableau pour créer des colonnes qui renvoient des détails liés à la boutique Commerce associée au panier.
-   * Chemin : `quote.store_id` (plusieurs) => `store.store_id` (un)
+  * Chemin : `quote.store_id` (plusieurs) => `store.store_id` (un)

@@ -1,6 +1,6 @@
 ---
 title: Vérification du statut du cycle de mise à jour
-description: Découvrez comment vérifier l’état du cycle de mise à jour.
+description: Vérifiez le statut de votre dernier cycle de mise à jour Commerce Intelligence directement depuis votre tableau de bord. Découvrez comment les autorisations de compte affectent ce que vous pouvez afficher.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Developer, User
 feature: Dashboards
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 357
+source-wordcount: 373
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Lorsque vous vous connectez à votre tableau de bord [!DNL Adobe Commerce Intell
 
 ## Pourquoi dois-je vérifier le statut du cycle de mise à jour ?
 
-La vérification du cycle de mise à jour de l’état est utile lorsque vous auditez les données de votre compte [!DNL Commerce Intelligence]. Si vous constatez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez dans votre plateforme d’e-commerce ou dans votre [[!DNL Google] chiffre d’affaires d’e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=fr) vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
+La vérification du cycle de mise à jour de l’état est utile lorsque vous auditez les données de votre compte [!DNL Commerce Intelligence]. Si vous constatez [résultats qui ne répondent pas à vos attentes](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) par exemple, les ventes quotidiennes dans [!DNL Commerce Intelligence] ne correspondent pas à ce que vous voyez dans votre plateforme d’e-commerce ou dans votre [[!DNL Google] chiffre d’affaires d’e-commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies) vous pouvez vérifier le dernier point de données pour voir si le problème est résolu une fois une mise à jour terminée.
 
 ## [!UICONTROL Read-Only] et [!UICONTROL Standard] utilisateurs
 

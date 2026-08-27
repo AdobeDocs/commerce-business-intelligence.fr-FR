@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 326
+source-wordcount: 327
 ht-degree: 0%
 
 ---
@@ -73,6 +73,6 @@ Les informations de connexion suivantes sont nécessaires :
 
 1. La suite de rapports sélectionnée s’affiche dans un tableau. Cliquez sur **[!UICONTROL Save]** pour confirmer votre sélection.
 
-1. Informez l’[!DNL Commerce Intelligence] [équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) que votre intégration est autorisée et qu’elle exécute le processus de connexion initial pour vous.
+1. Informez l’[!DNL Commerce Intelligence] [équipe d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) que votre intégration est autorisée et qu’elle exécute le processus de connexion initial pour vous.
 
 Une fois le processus de connexion initial exécuté, votre tableau est disponible dans la page Data Warehouse, sous l’onglet `All Tables` . Sélectionnez les colonnes que vous souhaitez répliquer pour que les données apparaissent après la prochaine mise à jour complète.

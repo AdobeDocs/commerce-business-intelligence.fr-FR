@@ -21,10 +21,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 483
-ht-degree: 0%
+source-wordcount: 640
+ht-degree: 11%
 
 ---
 
@@ -111,36 +111,36 @@ Colonnes à créer
 ## Rapports
 
 * **Concentration client**
-* [!UICONTROL Metric]: `Total customer lifetime value`
-* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]&#x200B;: `Total customer lifetime value`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile IS NOT NULL`
 
-* [!UICONTROL Metric]: `Total customer lifetime value`
-* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]&#x200B;: `Total customer lifetime value`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile IS NOT NULL`
 
 * &#x200B;
-  [!UICONTROL Regrouper par]: `Independent`
+  [!UICONTROL Regrouper par]&#x200B;: `Independent`
 * `A` de mesure : `Total customer lifetime revenue by percentile`
 * `B` de mesure : `Total customer lifetime revenue (ungrouped)`
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Customer's revenue percentile`
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's revenue percentile`
 * Afficher en haut/en bas : `100% of Customer's revenue percentile Name`
 * &#x200B;
-  [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 * **Top 10% de concentration**
-* [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile <= 10`
 
 * `A` de mesure : `Total customer lifetime revenue`
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]&#x200B;: `None`
 * Masquer le graphique
 * &#x200B;
-  [!UICONTROL Regrouper par]: `Email`
+  [!UICONTROL Regrouper par]&#x200B;: `Email`
 * &#x200B;
-  [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **Concentration inférieure de 50 % avec un seul achat**
 
@@ -149,28 +149,28 @@ Colonnes à créer
 * `Customer's lifetime number of orders = 1`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]&#x200B;: `None`
 * Masquer le graphique
 * &#x200B;
-  [!UICONTROL Regrouper par]: `Email`
+  [!UICONTROL Regrouper par]&#x200B;: `Email`
 * &#x200B;
-  [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **Concentration inférieure de 10 %**
-* [!UICONTROL Filter]: `Customer's revenue percentile > 90`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile > 90`
 
 * `A` de mesure : `Total customer lifetime revenue`
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]&#x200B;: `None`
 * Masquer le graphique
 * &#x200B;
-  [!UICONTROL Regrouper par]: `Email`
+  [!UICONTROL Regrouper par]&#x200B;: `Email`
 * &#x200B;
-  [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.
 
-Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez simplement contacter l’équipe des services professionnels, [contactez l’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

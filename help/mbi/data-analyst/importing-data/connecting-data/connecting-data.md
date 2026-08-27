@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Pour ajouter une intégration, cliquez sur **[!UICONTROL Manage Data** > **Conne
 * [Consolidation des tables](../../../best-practices/consolidating-your-tables.md)
 * [Limitation de l&#39;accès à votre base de données](../../../administrator/account-management/restrict-db-access.md)
 
-**Vous ne voyez pas d’intégration souhaitée ?** Certaines intégrations doivent être activées pour être visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais qui n’est pas répertorié, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+**Vous ne voyez pas d’intégration souhaitée ?** Certaines intégrations doivent être activées pour être visibles dans votre compte. Si vous recherchez quelque chose comme [!DNL Facebook] mais qui n’est pas répertorié, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 **Si le statut d’erreur d’une intégration s’affiche** consultez la [section de dépannage](https://support.magento.com/hc/en-us/sections/360003078151) pour obtenir de l’aide.
 
 ## Surveiller l’intégrité de la mise à jour (facultatif)
 
-Une fois les sources connectées, vous pouvez automatiser un contrôle d’intégrité de base pour confirmer que les mises à jour complètes sont terminées. Utilisez l’API [&#x200B; Update Cycle Status &#x200B;](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) dans la documentation destinée aux développeurs pour récupérer le cycle de mise à jour terminé le plus récent pour votre client et l’afficher dans des tableaux de bord internes ou des alertes.
+Une fois les sources connectées, vous pouvez automatiser un contrôle d’intégrité de base pour confirmer que les mises à jour complètes sont terminées. Utilisez l’API [&#x200B; Update Cycle Status &#x200B;](https://developer.adobe.com/commerce/services/reporting/update-cycle/) dans la documentation destinée aux développeurs pour récupérer le cycle de mise à jour terminé le plus récent pour votre client et l’afficher dans des tableaux de bord internes ou des alertes.
 

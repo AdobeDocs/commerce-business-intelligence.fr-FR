@@ -1,6 +1,6 @@
 ---
 title: Présentation de Adobe Commerce Intelligence
-description: En savoir plus sur Adobe Commerce Intelligence.
+description: Prise en main de Adobe Commerce Intelligence, anciennement Magento Business Intelligence. Découvrez ce que la plateforme offre et comment commencer à explorer vos données.
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -25,9 +25,9 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 252
+source-wordcount: 275
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Connectez, consolidez et transformez vos données. Visualisez, analysez et obten
 
 Les tableaux de bord standard incluent le retour sur investissement marketing, la valeur client sur la durée de vie, la segmentation client, les KPI pour les dirigeants et les investisseurs, l’analyse des cohortes et l’analyse de marchandisage.
 
-Lorsque vous [activez](../getting-started/onpremise-activation.md) votre compte [!DNL Commerce Intelligence], vous connectez votre base de données [!DNL Adobe Commerce] à [!DNL Commerce Intelligence] et accédez immédiatement à cinq tableaux de bord contenant environ 100 rapports. Ces rapports sont conçus pour fournir des informations sur vos données et répondre à des questions telles que *Comment mes commandes augmentent-elles mois après mois ?*, *Qui sont mes clients les plus fidèles ?*, et *Ma stratégie de coupon fonctionne-t-elle ?*.
+Lorsque vous [activez](../getting-started/onpremise-activation.md) votre compte [!DNL Commerce Intelligence], vous connectez votre base de données [!DNL Adobe Commerce] à [!DNL Commerce Intelligence] et accédez immédiatement à cinq tableaux de bord contenant environ 100 rapports. Ces rapports sont conçus pour fournir des informations sur vos données et répondre à des questions telles que *Comment mes commandes augmentent-elles mois après mois ?*, *Qui sont mes clients les plus fidèles ?* et *Ma stratégie de coupons fonctionne-t-elle ?*.

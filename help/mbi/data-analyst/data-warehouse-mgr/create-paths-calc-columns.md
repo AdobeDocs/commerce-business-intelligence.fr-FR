@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1030
+source-wordcount: 1032
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Lors de la [création de colonnes calculées](../data-warehouse-mgr/creating-cal
 1. Relation entre les tables de vos bases de données
 1. Les clés primaires et étrangères qui définissent cette relation
 
-Si vous connaissez ces informations, vous pouvez facilement créer un chemin d’accès en suivant les instructions de cette rubrique. Vous pouvez demander l’avis d’un expert technique de votre entreprise ou contacter l’équipe [Services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Si vous connaissez ces informations, vous pouvez facilement créer un chemin d’accès en suivant les instructions de cette rubrique. Vous pouvez demander l’avis d’un expert technique de votre entreprise ou contacter l’équipe [Services professionnels](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Actualisations des relations entre les tables et des types de clés {#refresher}
 
@@ -96,7 +96,7 @@ Vous pouvez maintenant créer le chemin d’accès .
 
 * **[!DNL Commerce Intelligence]ne peut pas deviner les relations clé primaire/clé étrangère**. Vous ne souhaitez pas introduire de données incorrectes dans votre compte. Par conséquent, la création de chemins d’accès doit être effectuée manuellement.
 
-* **Actuellement, les chemins ne peuvent être spécifiés qu’entre deux tables différentes**. La logique que vous essayez de recréer implique-t-elle plus de deux tables ? Il peut alors être judicieux de (1) joindre les colonnes à une table intermédiaire d’abord, puis à la table « destination finale », ou (2) consulter l’équipe [Services professionnels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour trouver la meilleure approche pour atteindre vos objectifs.
+* **Actuellement, les chemins ne peuvent être spécifiés qu’entre deux tables différentes**. La logique que vous essayez de recréer implique-t-elle plus de deux tables ? Il peut alors être judicieux de (1) joindre les colonnes à une table intermédiaire d’abord, puis à la table « destination finale », ou (2) consulter l’équipe [Services professionnels](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) pour trouver la meilleure approche pour atteindre vos objectifs.
 
 * **Une colonne ne peut être que la référence de clé étrangère d’UN chemin à la fois**. Par exemple, si `order_items.order_id` pointe vers `orders.id`, `order_items.order_id` ne pouvez pas pointer vers autre chose.
 

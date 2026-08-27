@@ -1,6 +1,6 @@
 ---
 title: Formatage et importation de données financières
-description: Découvrez comment formater et importer des données financières.
+description: Découvrez les bonnes pratiques de formatage et d’importation des données financières dans Commerce Intelligence, afin que votre entrepôt de données reste précis et facile à analyser.
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 286
+source-wordcount: 301
 ht-degree: 0%
 
 ---

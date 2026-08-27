@@ -18,9 +18,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 277
+source-wordcount: 286
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Si plusieurs mesures dans [!DNL Commerce Intelligence] doivent être filtrées de la même manière (en filtrant les ordres de test, par exemple), vous pouvez créer des ensembles de filtres enregistrés et les appliquer aux mesures. Cela vous permet de gagner du temps, car vous n’avez pas à ajouter de filtres individuels lors de la création ou de la modification d’une mesure.
 
-Voir la [vidéo de formation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=fr) pour plus d’informations.
+Voir la [vidéo de formation](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/mbi/filter-sets) pour plus d’informations.
 
 >[!NOTE]
 >

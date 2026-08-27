@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
 workflow-type: tm+mt
-source-wordcount: 1400
+source-wordcount: 1370
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Utilisez les campagnes publicitaires comme exemple. Si vous exécutez des campag
 ## Restrictions et exigences {#require}
 
 1. **Le seul format pris en charge pour les chargements de fichiers est `CSV` ou`comma separated values`**. Si vous travaillez dans Excel, vous pouvez utiliser la fonction Enregistrer sous pour enregistrer le fichier au format `.csv`.
-1. Les fichiers **`CSV`doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème. Si vous rencontrez cette erreur lors du chargement d’un fichier, [consultez cet article de support technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=fr).
+1. Les fichiers **`CSV`doivent utiliser`UTF-8 encoding`**. La plupart du temps, ce n&#39;est pas un problème.
 1. **La taille des fichiers ne peut pas dépasser 100MB**. Si le fichier est plus volumineux que cette taille, séparez le tableau en blocs et enregistrez-les en tant que fichiers individuels. Vous pouvez ajouter les données après le chargement du fichier initial.
 1. **Toutes les tables doivent avoir un`primary key`**. Il doit y avoir au moins une colonne dans votre tableau qui peut être utilisée comme `primary key`, ou un identifiant unique pour chaque ligne du tableau. Toute colonne désignée comme `primary key` ne peut *jamais* être nulle. Un `primary key` peut être aussi simple que l’ajout d’une colonne qui donne un nombre à chaque ligne, ou peut être constitué de deux colonnes concaténées pour former une colonne de valeurs uniques (par exemple, `campaign name` et `date`).
 

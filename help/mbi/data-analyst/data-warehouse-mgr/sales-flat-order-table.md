@@ -1,6 +1,6 @@
 ---
 title: table sales_order
-description: Découvrez comment utiliser la table sales_order.
+description: Explorez la structure de la table sales_order dans Commerce Intelligence Data Warehouse. Découvrez comment chaque ligne représente un ordre et où les divisions personnalisées se produisent.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -24,9 +24,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1215
 ht-degree: 0%
 
 ---
@@ -105,21 +105,21 @@ Ce tableau inclut toutes les commandes client, que ces commandes aient été tra
 `customer_entity`
 
 * Rejoignez `customer_entity` tableau pour créer de nouvelles colonnes au niveau du client associées au client qui a passé la commande.
-   * Chemin : `sales_order.customer_id` (plusieurs) => `customer_entity.entity_id` (un)
+  * Chemin : `sales_order.customer_id` (plusieurs) => `customer_entity.entity_id` (un)
 
 `customer_group`
 
 * Rejoignez `customer_group` tableau pour créer des colonnes qui renvoient le nom du groupe de clients du client qui a passé la commande.
-   * Chemin : `sales_order.customer_group_id` (plusieurs) => `customer_group.customer_group_id` (un)
+  * Chemin : `sales_order.customer_group_id` (plusieurs) => `customer_group.customer_group_id` (un)
 
 `sales_order_address`
 
 * Rejoignez `sales_order_address` tableau pour créer des colonnes qui renvoient les emplacements de facturation et d’expédition associés à la commande. Deux chemins de jonction sont possibles, selon que les informations de facturation ou d’expédition sont requises.
-   * Chemins d’accès :
-      * Expédition : `sales_order.shipping_address_id`(plusieurs) => `sales_order_address.entity_id` (un)
-      * Facturation : `sales_order.billing_address_id`(plusieurs) => `sales_order_address.entity_id` (un)
+  * Chemins d’accès :
+    * Expédition : `sales_order.shipping_address_id`(plusieurs) => `sales_order_address.entity_id` (un)
+    * Facturation : `sales_order.billing_address_id`(plusieurs) => `sales_order_address.entity_id` (un)
 
 `store`
 
 * Rejoignez `store` tableau pour créer des colonnes qui renvoient des détails liés au magasin Commerce associé à la commande.
-   * Chemin : `sales_order.store_id` (plusieurs) => `store.store_id` (un)
+  * Chemin : `sales_order.store_id` (plusieurs) => `store.store_id` (un)

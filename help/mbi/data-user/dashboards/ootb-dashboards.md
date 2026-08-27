@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 973
+source-wordcount: 974
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >La disponibilité de certains tableaux de bord dépend de votre jeu de données.
 
-Si vous avez des questions ou si vous souhaitez ajouter un package à votre compte, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour obtenir de l’aide.
+Si vous avez des questions ou si vous souhaitez ajouter un package à votre compte, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) pour obtenir de l’aide.
 
 ## Présentation opérationnelle
 

@@ -24,10 +24,10 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1120
-ht-degree: 6%
+source-wordcount: 1156
+ht-degree: 13%
 
 ---
 
@@ -80,10 +80,10 @@ Regardez de plus près l’un des exemples mentionnés précédemment dans cet a
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
 | 1 | voir | 60 | 2017-05-05 00:00:00 | 2000 | 10,2 |
-| 2 | gg | 40 | 23 00:00:00 2017-05 | 900 | 4,6 |
+| 2 | gg | 40 | 2017-05-23 00:00:00 | 900 | 4,6 |
 | 3 | aaa | 22 | 2017-06-12 00:00:00 | 400 | 2,5 |
-| 4 | voir | 350 | 30 00:00:00 2017-06 | 14500 | 35 |
-| 5 | fff | 280 | 2017-07-10 :00: | 10200 | 28,5 |
+| 4 | voir | 350 | 2017-06-30 00:00:00 | 14500 | 35 |
+| 5 | fff | 280 | 2017-07-10 00:00:00 | 10200 | 28,5 |
 
 `Ad source: Facebook`
 
@@ -95,7 +95,7 @@ Regardez de plus près l’un des exemples mentionnés précédemment dans cet a
 |--- |--- |--- |--- |--- |--- |
 | 1 | aaa | 25 | 2017-05-01 00:00:00 | 1200 | 5 |
 | 2 | ddd | 12 | 2017-05-15 00:00:00 | 800 | 2,5 |
-| 3 | aaa | 40 | 22/05/2017 00:00:00 | 2000 | 7 |
+| 3 | aaa | 40 | 2017-05-22 00:00:00 | 2000 | 7 |
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1,2 |
 
@@ -144,19 +144,19 @@ L’enregistrement de la requête ci-dessus en tant que `Data Warehouse View` cr
 | **1** | [!DNL Facebook] | 2017-05-01 00:00:00 | aaa | 5 | 1200 | 25 |
 | **1** | [!DNL Google AdWords] | 2017-05-05 00:00:00 | voir | 10,2 | 2000 | 60 |
 | **2** | [!DNL Facebook] | 2017-05-15 00:00:00 | ddd | 2,5 | 800 | 12 |
-| **2** | [!DNL Google AdWords] | 23 00:00:00 2017-05 | gg | 4,6 | 900 | 40 |
-| **3** | [!DNL Facebook] | 22/05/2017 00:00:00 | aaa | 7 | 2000 | 40 |
+| **2** | [!DNL Google AdWords] | 2017-05-23 00:00:00 | gg | 4,6 | 900 | 40 |
+| **3** | [!DNL Facebook] | 2017-05-22 00:00:00 | aaa | 7 | 2000 | 40 |
 | **3** | [!DNL Google AdWords] | 2017-06-12 00:00:00 | aaa | 2,5 | 400 | 22 |
 | **4** | [!DNL Facebook] | 2017-06-08 00:00:00 | aaa | 10 | 6000 | 110 |
-| **4** | [!DNL Google AdWords] | 30 00:00:00 2017-06 | voir | 35 | 14500 | 350 |
+| **4** | [!DNL Google AdWords] | 2017-06-30 00:00:00 | voir | 35 | 14500 | 350 |
 | **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1,2 | 300 | 5 |
-| **5** | [!DNL Google AdWords] | 2017-07-10 :00: | fff | 28,5 | 10200 | 280 |
+| **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28,5 | 10200 | 280 |
 
 Au lieu de créer un ensemble distinct de mesures marketing pour chaque source publicitaire, vous pouvez créer un seul ensemble de mesures à l’aide du tableau ci-dessus pour capturer toutes vos publicités.
 
 **Vous recherchez de l’aide supplémentaire ?**
 
-L’écriture de code SQL et la création de `Data Warehouse Views` ne sont pas incluses avec le support technique. Cependant, l’[équipe Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) offre une assistance pour la création de vues. Pour tout, de la migration d’une base de données héritée vers une nouvelle base de données à la création d’une vue Data Warehouse unique à des fins d’analyse spécifique, l’équipe d’assistance peut vous aider.
+L’écriture de code SQL et la création de `Data Warehouse Views` ne sont pas incluses avec le support technique. Cependant, l’[équipe Services](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) offre une assistance pour la création de vues. Pour tout, de la migration d’une base de données héritée vers une nouvelle base de données à la création d’une vue Data Warehouse unique à des fins d’analyse spécifique, l’équipe d’assistance peut vous aider.
 
 Habituellement, la création d&#39;un nouveau `Data Warehouse View` dans le but de consolider 2-3 tableaux structurés de manière similaire nécessite cinq heures de service, ce qui se traduit par environ 1 250 $ de travail. Voici toutefois quelques facteurs communs qui peuvent accroître les investissements attendus :
 

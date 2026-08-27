@@ -1,6 +1,6 @@
 ---
 title: Utilisation d’un rapport
-description: Découvrez comment utiliser vos données de rapport.
+description: Utilisez les rapports Commerce Intelligence pour répondre aux questions commerciales, du suivi du chiffre d’affaires mensuel par rapport à l’année dernière à la mesure des coûts d’acquisition de campagne.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 995
+source-wordcount: 1012
 ht-degree: 0%
 
 ---

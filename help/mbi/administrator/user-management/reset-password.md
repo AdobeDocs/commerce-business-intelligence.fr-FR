@@ -1,6 +1,6 @@
 ---
 title: Réinitialiser le mot de passe
-description: Découvrez comment réinitialiser le mot de passe d’un utilisateur.
+description: Réinitialisez le mot de passe de votre compte Commerce Intelligence depuis la page de connexion. Suivez le lien envoyé par e-mail pour créer un nouveau mot de passe et récupérer l’accès à vos tableaux de bord.
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 89
+source-wordcount: 108
 ht-degree: 0%
 
 ---

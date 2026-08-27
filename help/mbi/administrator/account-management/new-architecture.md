@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 390
+source-wordcount: 409
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Une fois cette opération terminée, vous savez quelles données vous devez sync
 
 ### Accès à l’aide
 
-L’équipe [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) peut effectuer votre nouvelle implémentation moyennant un coût supplémentaire. Contactez l’équipe chargée de votre compte [&#128279;](../../guide-overview.md#Submitting-a-Support-Ticket) et préparez-vous à fournir une liste des tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte
+L’équipe [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) peut effectuer votre nouvelle implémentation moyennant un coût supplémentaire. Contactez l’équipe chargée de votre compte [&#128279;](../../guide-overview.md#Submitting-a-Support-Ticket) et préparez-vous à fournir une liste des tableaux de bord/rapports que vous souhaitez créer en priorité dans le nouveau compte
 
 ### Conservation de l’architecture existante
 

@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 313
+source-wordcount: 321
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Vous suivez une série d’étapes pour [!DNL Commerce Intelligence] permettre d
 
 1. Cliquez sur **[!UICONTROL Save Connections]**.
 
-   Si la connexion est réussie, un *Connexion réussie !* message s’affiche en haut de la page.
+   Si la connexion est réussie, un *Connexion réussie !* Un message s’affiche en haut de la page.
 
 ## Quelle est la prochaine étape ? {#next}
 
@@ -74,7 +74,7 @@ Assurez-vous du suivi des campagnes [!DNL Facebook] dans [!DNL Google Analytics]
 
 ## Connexe
 
-* [Réauthentification des intégrations](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=fr)
+* [Réauthentification des intégrations](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Connecter votre  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
 * [Suivre la source de référence de commande via  [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Suivre la source de référence des utilisateurs dans votre base de données](../../analysis/google-track-user-acq.md)

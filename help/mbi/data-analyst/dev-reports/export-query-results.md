@@ -1,6 +1,6 @@
 ---
 title: Exporter les résultats de ma requête
-description: Découvrez comment exporter vos résultats de données.
+description: Exportez les résultats d’une requête SQL dans Commerce Intelligence dans un fichier CSV téléchargeable afin d’analyser et de partager les données en dehors de la plateforme.
 exl-id: 7c5672af-ca60-47c5-9054-ff36e2887497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 26
+source-wordcount: 45
 ht-degree: 0%
 
 ---

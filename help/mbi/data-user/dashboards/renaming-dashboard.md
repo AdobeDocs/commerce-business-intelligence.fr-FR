@@ -1,6 +1,6 @@
 ---
 title: Renommer des tableaux de bord
-description: Découvrez comment supprimer un graphique du tableau de bord.
+description: Renommez un tableau de bord Commerce Intelligence à partir du menu Options du tableau de bord lorsque son nom actuel ne tient plus, en le mettant à jour en quelques étapes rapides.
 exl-id: 45c67f3c-4660-4bb5-ba10-55ed666525f4
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,14 +17,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 9ebcff62d51b4f2c7885abd4705870a5428c08ef
 workflow-type: tm+mt
-source-wordcount: 84
+source-wordcount: 97
 ht-degree: 1%
 
 ---
 
-# Suppression d’un graphique d’un tableau de bord
+# Renommer un tableau de bord
 
 >[!NOTE]
 >

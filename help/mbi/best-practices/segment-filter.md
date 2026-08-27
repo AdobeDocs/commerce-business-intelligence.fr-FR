@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 911
+source-wordcount: 927
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Ce type d&#39;analyse est ce que les spécialistes du marketing des entreprises 
 
 La première étape pour segmenter vos mesures en fonction des dimensions ci-dessus est de vous assurer que vous suivez ces données dans votre base de données. Si elles ne sont pas suivies, rencontrez votre équipe technique et trouvez un moyen de commencer à suivre ces données.
 
-Une fois que vous avez confirmé que les données sont suivies dans votre base de données, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) pour intégrer les dimensions à vos mesures et graphiques [!DNL Commerce Intelligence]. Vous pouvez également utiliser l’outil *Gestion des champs* pour effectuer le suivi de ces champs dans [!DNL Commerce Intelligence].
+Une fois que vous avez confirmé que les données sont suivies dans votre base de données, [contactez l’équipe d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) pour intégrer les dimensions à vos mesures et graphiques [!DNL Commerce Intelligence]. Vous pouvez également utiliser l’outil *Gestion des champs* pour effectuer le suivi de ces champs dans [!DNL Commerce Intelligence].
 
 ## Connexe
 

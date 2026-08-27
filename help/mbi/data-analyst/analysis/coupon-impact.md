@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1382
-ht-degree: 1%
+source-wordcount: 1422
+ht-degree: 2%
 
 ---
 
@@ -63,8 +63,8 @@ Consultez quelques exemples de données pour les mesures d’acquisition de coup
 
 | **Acquisition des clients** | **Nombre de nouveaux clients** | **Chiffre d’affaires moyen sur la durée de vie** | **Nombre d’ordres répétés** | **Nombre de commandes répétées avec coupon** | **% des commandes répétées avec coupon** |
 |-----|-----|-----|-----|-----|-----|
-| Coupon | 1 206 | 356,91 $ | 2 570 | 1 248 | 48,56 % |
-| Sans coupon | 11 561 | 498,30 $ | 20 145 | 3 251 | 16,14 % |
+| Coupon | 1 206 | $356.91 | 2 570 | 1 248 | 48.56% |
+| Sans coupon | 11 561 | $498.30 | 20 145 | 3 251 | 16.14% |
 
 {style="table-layout:auto"}
 
@@ -126,9 +126,9 @@ Maintenant, regardez un exemple impliquant trois coupons différents utilisés p
 
 | **Bon** | **Premières commandes (FTO)** | **Chiffre d’affaires brut des FTO** | **Remises appliquées aux FTO** | **Chiffre d’affaires net des FTO** | **Valeur de commande moyenne pour FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25 % de réduction sur 100 $ ou plus** | 56 | 8 531,04 $ | 2 132,76 $ | 6 398,28 $ | 152,34 $ |
-| **10 $ de réduction** | 87 | 3 707,07 $ | 426,10 $ | 3 280,97 $ | 42,61 $ |
-| **20 % de réduction** | 145 | 10 975,05 $ | 2 195,01 $ | 8 780,04 $ | 75,69 $ |
+| **25 % de réduction sur 100 $ ou plus** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **10 $ de réduction** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20 % de réduction** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style="table-layout:auto"}
 
@@ -154,9 +154,9 @@ Maintenant que vous avez examiné les commandes elles-mêmes, examinez les clien
 
 | **Bon de première commande du client** | **Nombre de clients** | **Nombre moyen de commandes sur la durée de vie** | **Chiffre d’affaires moyen sur la durée de vie** |
 |-----|-----|-----|-----|
-| **25 % de réduction sur 100 $ ou plus** | 56 | 2,8 | 554,54 $ |
-| **10 $ de réduction** | 87 | 1,9 | 115,50 $ |
-| **20 % de réduction** | 145 | 1,3 | 103,75 $ |
+| **25 % de réduction sur 100 $ ou plus** | 56 | 2,8 | $554.54 |
+| **10 $ de réduction** | 87 | 1,9 | $115.50 |
+| **20 % de réduction** | 145 | 1,3 | $103.75 |
 
 {style="table-layout:auto"}
 
@@ -166,4 +166,4 @@ Le plus grand nombre de clients ont été acquis grâce au coupon « 20 % de ré
 
 ## Conclusion {#wrapup}
 
-Vous pouvez créer une multitude d’analyses pour mieux comprendre comment vos clients utilisent les coupons. Avez-vous déjà pensé à analyser comment vos clients utilisent vos coupons ou le temps qu&#39;il faut pour que les coupons soient utilisés ? Que diriez-vous de trouver le montant de remise optimal ? Quel montant encourage les acheteurs réguliers, une valeur de commande moyenne plus élevée et un chiffre d’affaires plus élevé tout au long de la durée de vie ? Pour obtenir de l’aide sur ce type de questions, [contactez l’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr).
+Vous pouvez créer une multitude d’analyses pour mieux comprendre comment vos clients utilisent les coupons. Avez-vous déjà pensé à analyser comment vos clients utilisent vos coupons ou le temps qu&#39;il faut pour que les coupons soient utilisés ? Que diriez-vous de trouver le montant de remise optimal ? Quel montant encourage les acheteurs réguliers, une valeur de commande moyenne plus élevée et un chiffre d’affaires plus élevé tout au long de la durée de vie ? Pour obtenir de l’aide sur ce type de questions, [contactez l’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

@@ -22,10 +22,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 2%
+source-wordcount: 962
+ht-degree: 11%
 
 ---
 
@@ -140,7 +140,7 @@ Voici un exemple :
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
 | `1` | 2015-01-01 00:00:00 | 30 | 33,57 |
-| `2` | 2015-01-02 :00: | 50 | 55,93 |
+| `2` | 2015-01-02 00:00:00 | 50 | 55,93 |
 
 {style="table-layout:auto"}
 
@@ -161,7 +161,7 @@ Voici un exemple :
 
 | **`id`** | **`timestamp\_UTC`** | **`timestamp\_ET`** |
 |-----|-----|-----|
-| `1` | 2015-01-01 00:00:00 | 31/12/2014 19:00:00 |
+| `1` | 2015-01-01 00:00:00 | 2014-12-31 19:00:00 |
 | `2` | 2015-01-01 12:00:00 | 2015-01-01 07:00:00 |
 
 {style="table-layout:auto"}
@@ -179,7 +179,7 @@ Pour créer ce type de colonne calculée, vous devez connaître les informations
 
 Ne vous inquiétez pas. Ce n&#39;est pas parce que ce n&#39;est pas répertorié ici que ce n&#39;est pas possible. L’équipe Adobe d’analystes de Data Warehouse peut vous aider.
 
-Pour définir une nouvelle colonne calculée, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=fr) avec des détails sur ce que vous souhaitez créer exactement.
+Pour définir une nouvelle colonne calculée, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) avec des détails sur ce que vous souhaitez créer exactement.
 
 ## Documentation connexe
 
