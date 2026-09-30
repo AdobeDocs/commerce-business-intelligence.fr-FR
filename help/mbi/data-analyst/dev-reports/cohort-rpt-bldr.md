@@ -7,26 +7,35 @@ feature: Commerce Tables, Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/SJ-Wbd0AU-cmliKRZgK4g60KuhVRIP9LfAEJ--IyugY
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: 5f3efe67f45baea20445cc78e12cf6d0d2b59563
 workflow-type: tm+mt
-source-wordcount: 1597
+source-wordcount: '1604'
 ht-degree: 0%
-
 ---
-
 # Report Builder de cohorte
 
 Avez-vous déjà voulu étudier le comportement des différents sous-ensembles de vos utilisateurs au fil du temps ? Par exemple, vous êtes-vous déjà demandé si les utilisateurs qui s’inscrivent pendant une période de promotion ont un chiffre d’affaires moyen sur toute leur vie plus élevé que ceux qui ne s’inscrivent pas ? Si la réponse est `Yes`, alors le `Cohort Report Builder` est l&#39;outil parfait pour vous. [!DNL Adobe Commerce Intelligence] est optimisé pour effectuer cette analyse et la rendre pertinente pour votre entreprise.
@@ -81,7 +90,7 @@ Les `Cohorts` sont regroupées par horodatage, comme **date d’enregistrement**
 >
 >Vous ne pouvez pas utiliser le même horodatage que celui sur lequel la mesure est basée pour la date `cohort`. Pour une analyse qui le requiert, vous pouvez utiliser l’`Standard report builder` à la place.
 
-#### &#x200B;2. Période de `Cohort`
+#### &#x200B;2. période de `Cohort`
 
 Choisissez la période par laquelle regrouper les `cohorts`. En d’autres termes, quelle partie de l’horodatage que vous avez sélectionné ci-dessus est la plus importante : le `week`, le `month`, le `quarter` ou le `year` ? Votre rapport affiche les données dans l’intervalle que vous sélectionnez ici
 
@@ -91,7 +100,7 @@ Ces paramètres vous aident à n’afficher que les `cohorts` qui vous intéress
 
 Par défaut, la `cohort` actuelle n’est pas incluse, sauf si vous modifiez la quantité minimale de données requise pour chaque `cohort` à `0`. Dans ce cas, les `cohort` de la période en cours ne contiennent que des données partielles.
 
-#### &#x200B;5. Période Après `Cohort` Occurrence
+#### &#x200B;5. Intervalle De Temps Après `Cohort` Occurrence
 
 Cette fonctionnalité vous permet de définir la période des données que vous affichez pour la `cohorts` sélectionnée. Par exemple, si vous souhaitez afficher 24 `cohorts` mensuelles basées sur `customer's first order date`, mais que vous ne vous intéressez qu’aux 3 premiers mois de données pour chaque `cohort`, vous pouvez définir la `number of cohorts to view` sur `24` et la `time range after cohort occurrence` sur `3`.
 
@@ -193,7 +202,7 @@ Maintenant que vous avez passé en revue la création d’une analyse de `cohort
 
 ![L’`cohorts` utilisateur augmente au fil du temps](../../assets/cohort1.gif)
 
-Dans cet exemple, vous avez analysé la mesure `Revenue`, regroupé vos cohortes par `customer's first order date` et sélectionné les 8 `cohorts` les plus récentes (définies dans le menu `Time Period`) à inclure dans l’analyse. Pour voir comment les cohortes ont augmenté au fil du temps, vous avez utilisé la `Cumulative Average Value per Cohort Member` `perspective`.
+Dans cet exemple, vous avez analysé la mesure `Revenue`, regroupé vos cohortes par `customer's first order date` et sélectionné les 8 `cohorts` les plus récentes (définies dans le menu `Time Period`) à inclure dans l’analyse. Pour voir comment les cohortes ont augmenté au fil du temps, vous avez utilisé la `perspective` `Cumulative Average Value per Cohort Member`.
 
 ### Je veux savoir, en moyenne, combien de commandes un utilisateur passe à différents moments de sa vie.
 
