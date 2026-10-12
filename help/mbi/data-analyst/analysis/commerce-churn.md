@@ -4,27 +4,36 @@ description: Découvrez comment générer et analyser votre taux de résiliation
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/jtS4f7MMpKa8LrKDOvGOqNJfrl-MhR9vhEMQZa-B42o
+TQID: 'https://experienceleague.adobe.com/jtS4f7MMpKa8LrKDOvGOqNJfrl-MhR9vhEMQZa-B42o'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 338
-ht-degree: 2%
-
+source-wordcount: '409'
+ht-degree: 19%
 ---
-
 # Taux de résiliation
 
 Cette rubrique explique comment calculer un **taux de résiliation** pour vos clients **Commerce**. Contrairement aux SaaS ou aux sociétés d’abonnement traditionnelles, les clients commerciaux ne disposent généralement pas d’un **concret « événement de perte de clientèle »** pour vous montrer qu’ils ne doivent plus compter parmi vos clients actifs. Pour cette raison, les instructions ci-dessous vous permettent de définir un client comme « résilié » en fonction d’un temps déterminé écoulé depuis sa dernière commande.
@@ -39,15 +48,15 @@ Colonnes à créer
 
 * **`customer_entity`** table
 * **`Customer's last order date`**
-   * Sélectionner un [!UICONTROL definition] : `Max`
-   * Sélectionner un [!UICONTROL table] : `sales_flat_order`
-   * Sélectionner un [!UICONTROL column] : `created_at`
-   * `sales_flat_order.customer_id = customer_entity.entity_id`
-   * [!UICONTROL Filter] : `Orders we count`
+  * Sélectionner un [!UICONTROL definition] : `Max`
+  * Sélectionner un [!UICONTROL table] : `sales_flat_order`
+  * Sélectionner un [!UICONTROL column] : `created_at`
+  * `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * **`Seconds since customer's last order date`**
-   * Sélectionner un [!UICONTROL definition] : `Age`
-   * Sélectionner un [!UICONTROL column] : `Customer's last order date`
+  * Sélectionner un [!UICONTROL definition] : `Age`
+  * Sélectionner un [!UICONTROL column] : `Customer's last order date`
 
 >[!NOTE]
 >
@@ -56,7 +65,7 @@ Colonnes à créer
 ## Mesures
 
 * **Nouveaux clients (par date de première commande)**
-   * Clients comptabilisés
+  * Clients comptabilisés
 
 >[!NOTE]
 >
@@ -66,10 +75,10 @@ Colonnes à créer
 * Cette mesure effectue un **Nombre**
 * Dans la colonne **`entity_id`**
 * Classé par l’horodatage **`Customer's first order date`**
-* [!UICONTROL Filter] :
+* [!UICONTROL Filter]:
 
 * **Nouveaux clients (par date de dernière commande)**
-   * Clients comptabilisés
+  * Clients comptabilisés
 
   >[!NOTE]
   >
@@ -79,7 +88,7 @@ Colonnes à créer
 * Cette mesure effectue un **Nombre**
 * Dans la colonne **`entity_id`**
 * Classé par l’horodatage **`Customer's last order date`**
-* [!UICONTROL Filter] :
+* [!UICONTROL Filter]:
 
 >[!NOTE]
 >
@@ -88,26 +97,26 @@ Colonnes à créer
 ## Rapports
 
 * **Taux de résiliation**
-   * [!UICONTROL Metric] : Nouveaux clients (par date de première commande)
-   * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-     [!UICONTROL Perspective]: `Cumulative`
-   * [!UICONTROL Metric] : `New customers (by last order date)`
-   * [!UICONTROL Filter] :
-   * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]&#x200B;**`^`**
-   * `Lifetime number of orders Greater Than 0`
+  * [!UICONTROL Metric] : Nouveaux clients (par date de première commande)
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
+  * [!UICONTROL Filter]:
+  * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]&#x200B;**`^`**
+  * `Lifetime number of orders Greater Than 0`
 
-   * [!UICONTROL Metric] : `New customers (by last order date)`
-   * [!UICONTROL Filter] : `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-     [!UICONTROL Perspective]: Cumulative
-   * [!UICONTROL Formula] : `(B / ((A + B) - C)`
-   * &#x200B;
-     [!UICONTROL Format]: Percentage
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: Cumulative
+  * [!UICONTROL Formula]&#x200B;: `(B / ((A + B) - C)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: Percentage
 
-* *de mesure : `A` `New customers cumulative`*
-* *de mesure : `B` `Churned customers by last order date`*
-* *de mesure : `C` `Customers by last order date cumulative`*
+* `A` de mesure : `New customers cumulative`**
+* `B` de mesure : `Churned customers by last order date`**
+* `C` de mesure : `Customers by last order date cumulative`**
 * *`Formula`:`Repeat order probability`*
 * *`Time period`:`All time (or custom range)`*
 * *`Group by`:`Customer's order number`*

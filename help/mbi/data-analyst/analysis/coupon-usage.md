@@ -4,28 +4,37 @@ description: Découvrez comment analyser l’utilisation des coupons pour acqué
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/daD-KtQU4wgz2hcTnuJ93rop8fbl8siAjXeK8IwU0Ao
+TQID: 'https://experienceleague.adobe.com/daD-KtQU4wgz2hcTnuJ93rop8fbl8siAjXeK8IwU0Ao'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1177
-ht-degree: 0%
-
+source-wordcount: '1178'
+ht-degree: 2%
 ---
-
 # Utilisation des coupons
 
 Vous êtes-vous déjà demandé comment l&#39;offre de coupons affecte votre entreprise ? Vous voulez savoir quels coupons aident ou nuisent à la performance ? Cette rubrique explore les analyses qui vous donnent une bonne idée de l’utilisation des coupons par vos clients en répondant aux questions suivantes :
@@ -82,18 +91,18 @@ Maintenant que vous savez quels indicateurs examiner, prenez l’exemple de troi
 
 | **Bon** | **de commandes** | **Chiffre d’affaires brut** | **Remises brutes sur coupons** | **Chiffre d’affaires net** | **Pourcentage de remise** |
 |-----|-----|-----|-----|-----|-----|
-| **10 % de réduction** | 79 | 19 757,02 $ | 1 975,70 $ | 17 781,32 $ | 10 % |
-| **20 $ de réduction sur 100 $ et** | 101 | 13 928,91 $ | 2 020,00 $ | 11 908,91 $ | 14,50 % |
-| **10 $ de réduction** | 201 | 14 542,35 $ | 2 010,00 $ | 12 532,35 $ | 13,82 % |
+| **10 % de réduction** | 79 | $19,757.02 | $1,975.70 | $17,781.32 | 10.00% |
+| **20 $ de réduction sur 100 $ et** | 101 | $13,928.91 | $2,020.00 | $11,908.91 | 14.50% |
+| **10 $ de réduction** | 201 | $14,542.35 | $2,010.00 | $12,532.35 | 13.82% |
 
 {style="table-layout:auto"}
 
 
 | **Bon** | **Moy. valeur nette de commande** | **Moy. remise de commande** | **Acheteurs distincts** | **Moy. chiffre d’affaires cumulé** |
 |-----|-----|-----|-----|-----|
-| **10 % de réduction** | 225,08 $ | 25,01 $ | 79 | 361,50 $ |
-| **20 $ de réduction sur 100 $ et** | 117,91 $ | 20 $ | 95 | 218,76 $ |
-| **10 $ de réduction** | 62,35 $ | 10 $ | 199 | 84,27 $ |
+| **10 % de réduction** | $225.08 | $25.01 | 79 | $361.50 |
+| **20 $ de réduction sur 100 $ et** | $117.91 | $20.00 | 95 | $218.76 |
+| **10 $ de réduction** | $62.35 | $10.00 | 199 | $84.27 |
 
 {style="table-layout:auto"}
 

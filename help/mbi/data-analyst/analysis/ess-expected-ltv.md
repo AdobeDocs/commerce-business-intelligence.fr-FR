@@ -4,27 +4,36 @@ description: Découvrez comment créer des analyses pour comprendre la valeur de
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk
+TQID: 'https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 338
-ht-degree: 0%
-
+source-wordcount: '392'
+ht-degree: 13%
 ---
-
 # Analyse de la valeur de durée de vie attendue
 
 Prévoir la valeur à vie des clients lorsqu&#39;ils passent plus de commandes est l&#39;un des aspects les plus importants de toute entreprise, quelle que soit sa taille.
@@ -37,18 +46,18 @@ Vous trouverez ci-dessous les étapes de création d&#39;analyses pour comprendr
 
 La première étape consiste à créer une mesure en procédant comme suit :
 * Accéder à **[!UICONTROL Manage Data > Metrics]**
-   * Affichez le **[!UICONTROL Avg lifetime revenue]** existant.
+  * Affichez le **[!UICONTROL Avg lifetime revenue]** existant.
 
   >[!NOTE]
   >
   >Le tableau sur lequel cette mesure est construite (probablement `customer_entity` ou `sales_order` selon la capacité de votre magasin à accepter le passage en caisse des invités).
 
-   * Cliquez sur **[!UICONTROL Create New Metric]** et sélectionnez le tableau ci-dessus.
-   * Cette mesure effectue une **Médiane** sur la colonne `Customer's lifetime revenue`, classée par `created_at`.
-      * [!UICONTROL Filters] :
-         * Ajouter le `Customers we count (Saved Filter Set)` (ou la `Registered accounts we count`)
+  * Cliquez sur **[!UICONTROL Create New Metric]** et sélectionnez le tableau ci-dessus.
+  * Cette mesure effectue une **Médiane** sur la colonne `Customer's lifetime revenue`, classée par `created_at`.
+    * [!UICONTROL Filters]:
+      * Ajouter le `Customers we count (Saved Filter Set)` (ou la `Registered accounts we count`)
 
-   * Attribuez un nom à la mesure, par exemple `Median lifetime revenue`.
+  * Attribuez un nom à la mesure, par exemple `Median lifetime revenue`.
 
 ## Création de votre tableau de bord
 
@@ -65,41 +74,41 @@ Une fois la mesure créée, vous pouvez **créer un tableau de bord** en procéd
 >Au **[!UICONTROL Time Period:]**, la période de chaque rapport est répertoriée comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, par exemple `All time`, `Year-to-date` ou `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
-   * [!UICONTROL Metric] : `Avg lifetime revenue`
-   * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-     [!UICONTROL Intervalle]: `None`
-   * [!UICONTROL Chart Type] : `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Intervalle]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-   * [!UICONTROL Metric] : `Avg lifetime revenue`
-      * Ajouter un [!UICONTROL filters] :
-         * [`A`] `Customer's group code` **Différent De** `Not Logged In`
-         * [`B`] `Customer's lifetime number of orders` **Supérieur À**`0`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+    * Ajouter un [!UICONTROL filters] :
+      * [`A`] `Customer's group code` **Différent De** `Not Logged In`
+      * [`B`] `Customer's lifetime number of orders` **Supérieur À**`0`
 
-   * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-     [!UICONTROL Intervalle]: `None`
-   * [!UICONTROL Chart Type] : `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Intervalle]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
-   * `1` de mesure : `Avg lifetime revenue`
-   * `2` de mesure : `Median lifetime revenue`
-   * [!UICONTROL Time period] : `All time`
-   * [!UICONTROL Interval] : `By Month`
-   * &#x200B;
-     [!UICONTROL Type de graphique]: `Line`
-   * Décocher la `Multiple Y-Axes`
+  * `1` de mesure : `Avg lifetime revenue`
+  * `2` de mesure : `Median lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * &#x200B;
+    [!UICONTROL Type de graphique]&#x200B;: `Line`
+  * Décocher la `Multiple Y-Axes`
 
 * **LTV par nombre de commandes sur la durée de vie**
-   * `1` de mesure : `Avg lifetime revenue`
-   * `2` de mesure : `New customers`
-   * [!UICONTROL Time period] : `All time`
-   * &#x200B;
-     [!UICONTROL Intervalle]: `None`
-   * [!UICONTROL Group by] : `Customer's lifetime number of orders`
-   * &#x200B;
-     [!UICONTROL Type de graphique]: `Line`
+  * `1` de mesure : `Avg lifetime revenue`
+  * `2` de mesure : `New customers`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Intervalle]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's lifetime number of orders`
+  * &#x200B;
+    [!UICONTROL Type de graphique]&#x200B;: `Line`
 
   >[!NOTE]
   >

@@ -1,29 +1,37 @@
 ---
-title: Désencombrement  [!DNL Commerce Intelligence]  compte
-description: Découvrez comment nettoyer votre  [!DNL Commerce Intelligence] .
+title: Désencombrement de votre compte [!DNL Commerce Intelligence]
+description: Découvrez comment nettoyer votre compte [!DNL Commerce Intelligence].
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-TQID: https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE
+TQID: 'https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 9e444628-408e-5d74-8cd4-c552f0d5d47f
+    internal-label: Accounts
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 907
+source-wordcount: '909'
 ht-degree: 0%
-
 ---
-
 # Nettoyer votre compte [!DNL Adobe Commerce Intelligence]
 
 Que vous travailliez avec [!DNL Commerce Intelligence] depuis six mois ou six ans, il est essentiel que vous teniez un compte bien ordonné pour que votre entreprise puisse tirer le meilleur parti de la plateforme. Au fil du temps, il est naturel qu’il y ait des utilisateurs, des tableaux de bord, des rapports, des mesures et des colonnes dont on n’a plus besoin. Peut-être avez-vous créé un rapport à usage unique et l’avez-vous oublié, ou un utilisateur qui a quitté votre entreprise n’a jamais vu son compte désactivé.
