@@ -74,41 +74,41 @@ Une fois la mesure créée, vous pouvez **créer un tableau de bord** en procéd
 >Au **[!UICONTROL Time Period:]**, la période de chaque rapport est répertoriée comme `All-time`. N’hésitez pas à modifier ce paramètre en fonction de vos besoins d’analyse. Adobe recommande que tous les rapports de ce tableau de bord couvrent la même période, par exemple `All time`, `Year-to-date` ou `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL Intervalle]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Intervalle]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * Ajouter un [!UICONTROL filters] :
       * [`A`] `Customer's group code` **Différent De** `Not Logged In`
       * [`B`] `Customer's lifetime number of orders` **Supérieur À**`0`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL Intervalle]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Intervalle]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
   * `1` de mesure : `Avg lifetime revenue`
   * `2` de mesure : `Median lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * [!UICONTROL Interval]: `By Month`
-  * 
-    [!UICONTROL Type de graphique]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * &#x200B;
+    [!UICONTROL Type de graphique]&#x200B;: `Line`
   * Décocher la `Multiple Y-Axes`
 
 * **LTV par nombre de commandes sur la durée de vie**
   * `1` de mesure : `Avg lifetime revenue`
   * `2` de mesure : `New customers`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL Intervalle]: `None`
-  * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-  * 
-    [!UICONTROL Type de graphique]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Intervalle]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's lifetime number of orders`
+  * &#x200B;
+    [!UICONTROL Type de graphique]&#x200B;: `Line`
 
   >[!NOTE]
   >

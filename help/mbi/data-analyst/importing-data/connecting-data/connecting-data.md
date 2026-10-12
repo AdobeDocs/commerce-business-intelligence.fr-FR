@@ -110,5 +110,5 @@ Pour ajouter une intégration, cliquez sur **[!UICONTROL Manage Data** > **Conne
 
 ## Surveiller l’intégrité de la mise à jour (facultatif)
 
-Une fois les sources connectées, vous pouvez automatiser un contrôle d’intégrité de base pour confirmer que les mises à jour complètes sont terminées. Utilisez l’API [ Update Cycle Status ](https://developer.adobe.com/commerce/services/reporting/update-cycle/) dans la documentation destinée aux développeurs pour récupérer le cycle de mise à jour terminé le plus récent pour votre client et l’afficher dans des tableaux de bord internes ou des alertes.
+Une fois les sources connectées, vous pouvez automatiser un contrôle d’intégrité de base pour confirmer que les mises à jour complètes sont terminées. Utilisez l’API [&#x200B; Update Cycle Status &#x200B;](https://developer.adobe.com/commerce/services/reporting/update-cycle/) dans la documentation destinée aux développeurs pour récupérer le cycle de mise à jour terminé le plus récent pour votre client et l’afficher dans des tableaux de bord internes ou des alertes.
 

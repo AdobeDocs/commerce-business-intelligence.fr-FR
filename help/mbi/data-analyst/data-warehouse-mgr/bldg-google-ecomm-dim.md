@@ -43,7 +43,7 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md).
 
-Maintenant que vous avez terminé [connexion de votre compte[!DNL Google ECommerce] ](../../data-analyst/importing-data/integrations/google-ecommerce.md), que pouvez-vous faire avec ces données dans [!DNL Commerce Intelligence] ? Cette rubrique vous guide tout au long de la création de dimensions qui lient vos données eCommerce à vos données de commande et de client.
+Maintenant que vous avez terminé [connexion de votre compte[!DNL Google ECommerce] &#x200B;](../../data-analyst/importing-data/integrations/google-ecommerce.md), que pouvez-vous faire avec ces données dans [!DNL Commerce Intelligence] ? Cette rubrique vous guide tout au long de la création de dimensions qui lient vos données eCommerce à vos données de commande et de client.
 
 Les dimensions couvertes vous permettent de créer des analyses qui [répondent à des questions essentielles sur vos canaux et campagnes marketing](../../data-analyst/analysis/most-value-source-channel.md). Quel pourcentage du chiffre d’affaires provient de chaque source ? Comment la valeur à vie [!DNL Facebook] clients acquis se compare-t-elle à celle des clients [!DNL Google] ?
 
@@ -76,7 +76,7 @@ Voici les dimensions couvertes :
 
 ## Création des dimensions
 
-Pour créer des dimensions, ouvrez le [Gestionnaire ](../data-warehouse-mgr/tour-dwm.md) en cliquant sur **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
+Pour créer des dimensions, ouvrez le [Gestionnaire &#x200B;](../data-warehouse-mgr/tour-dwm.md) en cliquant sur **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
 
 ### Table des commandes, première session
 

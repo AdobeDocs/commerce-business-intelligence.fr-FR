@@ -49,7 +49,7 @@ ht-degree: 0%
 >
 >Nécessite des [autorisations d’administrateur](../../../administrator/user-management/user-management.md).
 
-![Logo SQL Server de ](../../../assets/MicrosoftSQLServer-logo.png)
+![Logo SQL Server de &#x200B;](../../../assets/MicrosoftSQLServer-logo.png)
 
 Cette rubrique explique comment connecter votre base de données [!DNL Microsoft SQL] à [!DNL Commerce Intelligence] dans un processus en quatre étapes. Ce processus nécessite une certaine expertise technique liée aux connexions au serveur et à SQL, et peut nécessiter l’assistance des développeurs de votre équipe.
 

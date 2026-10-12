@@ -120,7 +120,7 @@ Cette table permet de gérer les informations relatives à votre abonnement, tel
 
 ## Tableau des dépenses marketing
 
-Lors de l’analyse de vos dépenses marketing, vous pouvez inclure des [!DNL Facebook], des [!DNL Google AdWords] ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez l’équipe [](https://business.adobe.com/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
+Lors de l’analyse de vos dépenses marketing, vous pouvez inclure des [!DNL Facebook], des [!DNL Google AdWords] ou d’autres sources dans vos analyses. Si vous disposez de plusieurs sources de dépenses marketing, contactez l’équipe [&#128279;](https://business.adobe.com/products/magento/fully-managed-service.html) pour obtenir de l’aide sur la configuration d’un tableau consolidé pour vos campagnes marketing.
 
 **Dimensions**
 
@@ -269,7 +269,7 @@ Voici quelques exemples courants de rapports et de mesures que vous pouvez trouv
 >
 > **Masquer toutes les mesures**
 
-![ Utilisation des coupons ](../../assets/Customers_by_coupon_usage_formula.png)<!--{: width="929"}-->
+![&#x200B; Utilisation des coupons &#x200B;](../../assets/Customers_by_coupon_usage_formula.png)<!--{: width="929"}-->
 
 ### Chiffre d’affaires moyen sur les 30 premiers jours
 
@@ -483,7 +483,7 @@ Voici quelques exemples courants de rapports et de mesures que vous pouvez trouv
 >
 >Consultez [cet article](../analysis/most-value-source-channel.md) pour plus d’exemples de rapports utilisant une source d’acquisition.
 
-Source d’acquisition](../../assets/acquisition_source.png)<!--{: width="929"}-->![
+Source d’acquisition&rbrack;(../../assets/acquisition_source.png)<!--{: width="929"}-->!&lbrack;
 
 ### Clients par support d’acquisition et campagne d’acquisition
 
@@ -499,7 +499,7 @@ Source d’acquisition](../../assets/acquisition_source.png)<!--{: width="929"}-
 >
 >Pour le filtre de votre mesure `New Customers`, vous pouvez ajouter tout autre média considéré comme un média « payant » pour votre entreprise, tel que cpc ou référencement payant.
 
-Medium d’acquisition](../../assets/acquisition_medium.png)<!--{: width="929"}-->![
+Medium d’acquisition&rbrack;(../../assets/acquisition_medium.png)<!--{: width="929"}-->!&lbrack;
 
 ### Coût d’acquisition client (CAC) ou coût par acquisition (CPA)
 

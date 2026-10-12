@@ -50,7 +50,7 @@ Si vous n’effectuez pas déjà le suivi des sources d’acquisition d’utilis
 
 ### (Option 1) Suivre les données de la source de référence des commandes via [!DNL Google Analytics E-Commerce]
 
-Si vous utilisez [!DNL Google Analytics E-Commerce] pour suivre les données de commande et de vente, vous pouvez utiliser le [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) pour synchroniser les données de la source de référence de chaque commande. Vous pouvez ainsi segmenter le chiffre d’affaires et les commandes par source de référence (par exemple, `utm_source` ou `utm_medium`). Vous pouvez également vous faire une idée des sources d’acquisition de clients grâce à [!DNL Commerce Intelligence] dimensions personnalisées telles que `User's first order source`.
+Si vous utilisez [!DNL Google Analytics E-Commerce] pour suivre les données de commande et de vente, vous pouvez utiliser le [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) pour synchroniser les données de la source de référence de chaque commande. Vous pouvez ainsi segmenter le chiffre d’affaires et les commandes par source de référence (par exemple, `utm_source` ou `utm_medium`). Vous pouvez également vous faire une idée des sources d’acquisition de clients grâce à [!DNL Commerce Intelligence] dimensions personnalisées telles que `User's first order source`.
 
 ### (Option 2) Enregistrement des données sources d&#39;acquisition des [!DNL Google Analytics] dans votre base de données
 
@@ -114,7 +114,7 @@ C&#39;est intéressant, mais d&#39;une utilité limitée. Ce que vous souhaitez 
 
 * Le taux de croissance de ces chiffres au fil du temps
 * Le montant des revenus générés par chaque source d&#39;acquisition
-* Une [ analyse des cohortes ](https://en.wikipedia.org/wiki/Cohort_analysis) utilisateurs provenant de chaque source
+* Une [&#x200B; analyse des cohortes &#x200B;](https://en.wikipedia.org/wiki/Cohort_analysis) utilisateurs provenant de chaque source
 * Probabilité qu’un utilisateur de l’un de ces canaux revienne en tant que client à l’avenir
 
 Les requêtes nécessaires à ces analyses sont complexes. Avec ces informations, vous pouvez déterminer vos canaux d’acquisition les plus rentables et concentrer le temps et l’argent marketing en conséquence.

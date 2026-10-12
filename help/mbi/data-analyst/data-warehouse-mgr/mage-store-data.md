@@ -46,7 +46,7 @@ ht-degree: 4%
 La plateforme [!DNL Adobe Commerce] enregistre et organise une grande variété de données commerciales précieuses sur des centaines de tables. Cette rubrique décrit :
 
 * comment ces données sont générées ;
-* ce qui entraîne l’insertion d’une nouvelle ligne dans l’un des [ Tableaux Commerce principaux ](../data-warehouse-mgr/common-mage-tables.md)
+* ce qui entraîne l’insertion d’une nouvelle ligne dans l’un des [&#x200B; Tableaux Commerce principaux &#x200B;](../data-warehouse-mgr/common-mage-tables.md)
 * comment les actions telles que l’achat ou la création d’un compte sont enregistrées dans la base de données [!DNL Adobe Commerce]
 
 Pour discuter de ces concepts, reportez-vous à l’exemple suivant :
@@ -93,7 +93,7 @@ Peu après l&#39;ajout des trois nouveaux produits, un nouveau client, `Sammy Cu
 
 Une fois la création du compte terminée, `Sammy Customer` est prêt à commencer à effectuer un achat. Sur le site web, le client ajoute deux paires de `Throwback Bellbottoms` et une `V-Neck T-Shirt` au panier. Satisfait des sélections, le client passe en caisse et soumet la commande, créant ainsi l&#39;entrée suivante dans le tableau [commande client à commandes fixes](../data-warehouse-mgr/sales-flat-order-table.md) :
 
-| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
+| **`entity id`** | **`customer id**` | &#x200B;**`subtotal`**&#x200B; | &#x200B;**`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94,85 | 2016/09/23 15:41:39 |
 
@@ -109,7 +109,7 @@ Une fois la création du compte terminée, `Sammy Customer` est prêt à commenc
 
 (si vous disposez de Commerce 2.0 ou d’une version ultérieure)
 
-Outre la ligne unique de la table `Sales\_flat\_order`, lorsque `Sammy Customer` soumettez la commande, une ligne pour chaque élément unique de cet ordre est insérée dans la table [`sales\_flat\_order\_item` : ](../data-warehouse-mgr/sales-flat-order-item-table.md)
+Outre la ligne unique de la table `Sales\_flat\_order`, lorsque `Sammy Customer` soumettez la commande, une ligne pour chaque élément unique de cet ordre est insérée dans la table [`sales\_flat\_order\_item` : &#x200B;](../data-warehouse-mgr/sales-flat-order-item-table.md)
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|

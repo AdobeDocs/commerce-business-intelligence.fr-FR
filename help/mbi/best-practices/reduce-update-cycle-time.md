@@ -49,7 +49,7 @@ De nombreux facteurs peuvent s’ajouter à une durée de mise à jour déjà lo
 
 ## Réduire la fréquence de revérification
 
-Dans une table de base de données, il peut y avoir des colonnes de données dont les valeurs peuvent être modifiées. Par exemple, dans une table **orders** il peut y avoir une colonne appelée **status**. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur `pending`. La commande est répliquée dans votre [](../data-analyst/data-warehouse-mgr/tour-dwm.md) avec cette valeur de `pending`.
+Dans une table de base de données, il peut y avoir des colonnes de données dont les valeurs peuvent être modifiées. Par exemple, dans une table **orders** il peut y avoir une colonne appelée **status**. Lorsqu’une commande est initialement écrite dans la base de données, la colonne d’état peut contenir la valeur `pending`. La commande est répliquée dans votre [&#128279;](../data-analyst/data-warehouse-mgr/tour-dwm.md) avec cette valeur de `pending`.
 
 Les colonnes modifiables doivent être [revérifiées pour les valeurs mises à jour](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) au fil du temps. Par défaut, [!DNL Commerce Intelligence] vérifie à nouveau ces colonnes à chaque mise à jour, mais si une grande quantité de données doit être vérifiée et répliquée, cela peut avoir un impact négatif sur la durée de votre mise à jour. Au lieu d’exécuter des vérifications à chaque mise à jour, Adobe recommande de définir la fréquence de vérification sur quotidienne, hebdomadaire ou mensuelle.
 

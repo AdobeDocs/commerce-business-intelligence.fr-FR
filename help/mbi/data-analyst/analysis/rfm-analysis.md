@@ -64,132 +64,132 @@ Colonnes à créer
 
 * **`Sales_flat_order/customer_entity`** table
 * `Customer's last order date`
-* [!UICONTROL Column type]: `Many to one > Max`
-* [!UICONTROL Pat]: `sales_flat_order.customer_id > customer_entity.entity_id`
+* [!UICONTROL Column type]&#x200B;: `Many to one > Max`
+* [!UICONTROL Pat]&#x200B;: `sales_flat_order.customer_id > customer_entity.entity_id`
 * [!UICONTROL column] sélectionné : `created_at`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
-* 
+* &#x200B;
       Secondes écoulées depuis la date de la dernière commande du client
   * [!UICONTROL Column type] : - « Même tableau > Âge
 * [!UICONTROL column] sélectionné : `Customer's last order date`
 
 * (entrée) Référence du nombre
-* [!UICONTROL Column type]: `Same table > Calculation`
-* 
-  [!UICONTROL Entrées]: `entity_id`
-* [!UICONTROL Calculation]: `**case when A is null then null else 1 end**`
-* 
-  [!UICONTROL, type de données]: `Integer`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
+* &#x200B;
+  [!UICONTROL Entrées]&#x200B;: `entity_id`
+* [!UICONTROL Calculation]&#x200B;: `**case when A is null then null else 1 end**`
+* &#x200B;
+  [!UICONTROL , type de données]&#x200B;: `Integer`
 
 * **Référence du nombre** table (il s&#39;agit du fichier que vous avez chargé avec le numéro « 1 »)
 * Nombre de clients
-* [!UICONTROL Column type]: `Many to One > Count Distinct`
+* [!UICONTROL Column type]&#x200B;: `Many to One > Count Distinct`
 * [!UICONTROL Path] : `ales_flat_order.(input) reference > Count reference.Primary Key` OU `customer_entity.(input)reference > Count Reference`. `Primary Key`
 * [!UICONTROL column] sélectionné : `sales_flat_order.customer_email` OU `customer_entity.entity_id`
 
 * Table **Customer_entity**
 * Nombre de clients
-* [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]&#x200B;: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path] : `customer_entity`.(entrée) référence > Concentration des clients. `Primary Key`
 * [!UICONTROL column] sélectionné : `Number of customers`
 
 * (entrée) `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Customer's lifetime revenue`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Customer's lifetime revenue`
 
 * Classement par chiffre d’affaires cumulé du client
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* 
-  [!UICONTROL, type de données]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `case when A is null then null else (B-(A-1)) end`
+* &#x200B;
+  [!UICONTROL , type de données]&#x200B;: `Integer`
 
 * Score monétaire du client (en centiles)
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [!UICONTROL, type de données]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
+* &#x200B;
+  [!UICONTROL , type de données]&#x200B;: `Integer`
 
 * (entrée) Classement par nombre de commandes sur la durée de vie du client
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Customer's lifetime number of orders`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Customer's lifetime number of orders`
 
 * Classement par nombre de commandes sur la durée de vie du client
-* 
-  [!UICONTROL Type de colonne]: – "Même tableau > Calcul"
+* &#x200B;
+  [!UICONTROL Type de colonne]&#x200B;: – "Même tableau > Calcul"
 * [!UICONTROL Inputs] : - **(entrée) Classement par nombre de commandes sur la durée de vie du client**, **nombre de clients**
 * [!UICONTROL Calculation] : - **cas où A est nul puis nul autrement (B-(A-1)) fin**
 * [!UICONTROL Datatype] : - Entier
 
 * Score de fréquence du client (par centiles)
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [!UICONTROL, type de données]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
+* &#x200B;
+  [!UICONTROL , type de données]&#x200B;: `Integer`
 
 * Classement par secondes depuis la date de la dernière commande du client
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Seconds since customer's last order date`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Seconds since customer's last order date`
 
 * Score de récence du client (par centiles)
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
-* 
-  [!UICONTROL, type de données]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
+* &#x200B;
+  [!UICONTROL , type de données]&#x200B;: `Integer`
 
 * Score de récence du client (par centiles)
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
-* [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
-* 
-  [!UICONTROL, type de données]: String
+* [!UICONTROL Calculation]&#x200B;: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
+* &#x200B;
+  [!UICONTROL , type de données]&#x200B;: String
 
 * **Référence du nombre** tableau
-* [!UICONTROL Number of customers]: `(RFM > 0)`
-* [!UICONTROL Column type]: `Many to One > Count Distinct`
+* [!UICONTROL Number of customers]&#x200B;: `(RFM > 0)`
+* [!UICONTROL Column type]&#x200B;: `Many to One > Count Distinct`
 * [!UICONTROL Path] : `sales_flat_order.(input) reference > Customer Concentration. Primary Key` OU `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * [!UICONTROL column] sélectionné : `sales_flat_order.customer_email` OU `customer_entity.entity_id`
 * [!UICONTROL Filter] : `Customer's RFM score (by percentile)` Est Différent De 000
 
 * Table **Customer_entity**
-* [!UICONTROL Number of customers]: `(RFM > 0)`
-* [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
-* [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
+* [!UICONTROL Number of customers]&#x200B;: `(RFM > 0)`
+* [!UICONTROL Column type]&#x200B;: `One to Many > JOINED_COLUMN`
+* [!UICONTROL Path]&#x200B;: `customer_entity.(input) reference > Customer Concentration.Primary Key`
 * [!UICONTROL column] sélectionnés : - `Number of customers`
 
 * `(R+F+M)` du score de récence du client
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs] : - `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
-* [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
-* 
-  [!UICONTROL, type de données]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
+* &#x200B;
+  [!UICONTROL , type de données]&#x200B;: `Integer`
 
 * (input) Classement par score RFM global du client
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Customer's recency score (R+F+M)`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Customer's recency score (R+F+M)`
 * [!UICONTROL Filter] : `Customer's RFM score (by percentile)` Est Différent De 000
 
 * Classement par score RFM global du client
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer's overall RFM score`, `Number of customers (RFM > 0)`
-* [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* 
-  [!UICONTROL, type de données]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `case when A is null then null else (B-(A-1)) end`
+* &#x200B;
+  [!UICONTROL , type de données]&#x200B;: `Integer`
 
 * Groupe RFM du client
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
-* 
-  [!UICONTROL, type de données]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
+* &#x200B;
+  [!UICONTROL , type de données]&#x200B;: `Integer`
 
 >[!NOTE]
 >
@@ -207,51 +207,51 @@ Aucune nouvelle mesure!
 
 * **Clients par regroupement RFM**
 * `A` de mesure : `New customers`
-* [!UICONTROL Metric]: `New customers`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentiles) Not Equal to 000`
+* [!UICONTROL Metric]&#x200B;: `New customers`
+* [!UICONTROL Filter]&#x200B;: `Customer's RFM score (by percentiles) Not Equal to 000`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
 * Masquer le graphique
-* [!UICONTROL Group by]: `Customer's RFM group`
-* 
-  [!UICONTROL Regrouper par]: `Email`
-* 
-  [!UICONTROL Chart type]: `Table`
+* [!UICONTROL Group by]&#x200B;: `Customer's RFM group`
+* &#x200B;
+  [!UICONTROL Regrouper par]&#x200B;: `Email`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **Clients avec cinq scores de récence**
 * `A` de mesure : `New customers`
-* [!UICONTROL Metric]: `New customers`
-* [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
+* [!UICONTROL Metric]&#x200B;: `New customers`
+* [!UICONTROL Filter]&#x200B;: `Customer's recency score (by percentiles) Equal to 5`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 * Masquer le graphique
-* 
-  [!UICONTROL Regrouper par]: `Email`
-* [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL Regrouper par]&#x200B;: `Email`
+* [!UICONTROL Group by]&#x200B;: `Customer's RFM score (R+F+M)`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **Clients avec un score de récence**
 * `A` de mesure : `New customers`
-* [!UICONTROL Metric]: `New customers`
-* [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
+* [!UICONTROL Metric]&#x200B;: `New customers`
+* [!UICONTROL Filter]&#x200B;: `Customer's recency score (by percentiles) Equal to 1`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 * Masquer le graphique
-* 
-  [!UICONTROL Regrouper par]: `Email`
-* [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL Regrouper par]&#x200B;: `Email`
+* [!UICONTROL Group by]&#x200B;: `Customer's RFM score (R+F+M)`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus, mais les trois tableaux générés ne sont que des exemples des types de segmentation de clients que vous pouvez effectuer.

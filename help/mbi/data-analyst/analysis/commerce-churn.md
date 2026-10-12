@@ -52,7 +52,7 @@ Colonnes à créer
   * Sélectionner un [!UICONTROL table] : `sales_flat_order`
   * Sélectionner un [!UICONTROL column] : `created_at`
   * `sales_flat_order.customer_id = customer_entity.entity_id`
-  * [!UICONTROL Filter]: `Orders we count`
+  * [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * **`Seconds since customer's last order date`**
   * Sélectionner un [!UICONTROL definition] : `Age`
@@ -98,21 +98,21 @@ Colonnes à créer
 
 * **Taux de résiliation**
   * [!UICONTROL Metric] : Nouveaux clients (par date de première commande)
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: `Cumulative`
-  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
   * [!UICONTROL Filter]:
-  * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]**`^`**
+  * Secondes écoulées depuis la date de la dernière commande du client >= [Votre limite auto-définie pour les clients résiliés ]&#x200B;**`^`**
   * `Lifetime number of orders Greater Than 0`
 
-  * [!UICONTROL Metric]: `New customers (by last order date)`
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: Cumulative
-  * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-  * 
-    [!UICONTROL Format]: Percentage
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: Cumulative
+  * [!UICONTROL Formula]&#x200B;: `(B / ((A + B) - C)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: Percentage
 
 * `A` de mesure : `New customers cumulative`**
 * `B` de mesure : `Churned customers by last order date`**

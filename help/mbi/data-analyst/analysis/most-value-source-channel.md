@@ -38,7 +38,7 @@ ht-degree: 0%
 
 Vous avez fait des recherches sur votre audience, vous avez créé votre campagne, vous avez investi dans quelques canaux marketing. Maintenant qu’un certain temps s’est écoulé, quelles sont les performances de ces canaux ? Quel canal a attiré le plus de nouveaux utilisateurs ? Quelle est la source qui a le plus contribué à votre chiffre d&#39;affaires total ?
 
-Avec [!DNL Adobe Commerce Intelligence], vous pouvez facilement segmenter votre chiffre d’affaires et vos utilisateurs et utilisatrices par source de référence, qu’il s’agisse de champs de données [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) ou personnalisés. Cette segmentation vous permet de trouver les canaux les plus performants et de mieux investir votre budget marketing.
+Avec [!DNL Adobe Commerce Intelligence], vous pouvez facilement segmenter votre chiffre d’affaires et vos utilisateurs et utilisatrices par source de référence, qu’il s’agisse de champs de données [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) ou personnalisés. Cette segmentation vous permet de trouver les canaux les plus performants et de mieux investir votre budget marketing.
 
 Cette rubrique explore certains rapports que vous pouvez utiliser pour découvrir vos canaux marketing les plus précieux :
 
@@ -56,7 +56,7 @@ Pour créer les analyses de cette rubrique, vous devez accéder aux données sou
 
 L’évaluation des performances des sources de recommandation est essentielle pour déterminer vos canaux les plus précieux. Ce rapport montre le nombre d’utilisateurs nouvellement inscrits, par source d’acquisition, au fil du temps, ce qui vous permet de suivre les performances des sources de référence dans l’acquisition de nouveaux utilisateurs inscrits.
 
-Pour créer ce rapport dans le [](../../tutorials/using-visual-report-builder.md), ajoutez la mesure **Nouveaux utilisateurs** (ou une mesure équivalente qui comptabilise le nombre de nouveaux utilisateurs au fil du temps) au rapport. Procédez ensuite comme suit :
+Pour créer ce rapport dans le [&#128279;](../../tutorials/using-visual-report-builder.md), ajoutez la mesure **Nouveaux utilisateurs** (ou une mesure équivalente qui comptabilise le nombre de nouveaux utilisateurs au fil du temps) au rapport. Procédez ensuite comme suit :
 
 1. Définissez la [!UICONTROL Time Period] sur la période d&#39;enregistrement à analyser.
 1. Définissez la [!UICONTROL Interval] sur mensuelle.
@@ -118,7 +118,7 @@ Voici une présentation visuelle :
 
 L’état Valeur moyenne de la commande vous indique, en moyenne, combien d’utilisateurs acquis auprès d’une source particulière dépensent lors de la commande. Ce rapport ne vous indique toutefois pas si ces mêmes utilisateurs sont des clients réguliers. Mais avec les sources Commandes répétées par les utilisateurs, vous pouvez voir si les utilisateurs d&#39;une source particulière font plus ou moins d&#39;achats répétés.
 
-Pour créer ce rapport dans le [](../../tutorials/using-visual-report-builder.md), ajoutez la mesure **Nombre de commandes** puis procédez comme suit :
+Pour créer ce rapport dans le [&#128279;](../../tutorials/using-visual-report-builder.md), ajoutez la mesure **Nombre de commandes** puis procédez comme suit :
 
 1. Définissez la [!UICONTROL Time Period] sur la période d&#39;enregistrement à analyser.
 1. Définissez la [!UICONTROL Time Interval] sur mensuelle.

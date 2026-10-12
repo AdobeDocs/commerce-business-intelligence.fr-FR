@@ -67,7 +67,7 @@ La méthode de réplication `Modified At` utilise une colonne datetime, qui est 
 
 Outre ces critères, Adobe recommande d’**indexer** la colonne `datetime` utilisée pour la réplication `Modified At`, car cela permet d’optimiser la vitesse de réplication.
 
-Lors de l’exécution de la mise à jour, les données nouvelles ou modifiées sont identifiées en recherchant les lignes qui contiennent une valeur dans la colonne `datetime` qui se sont produites après la mise à jour la plus récente. Lorsque de nouvelles lignes sont découvertes, elles sont répliquées vers votre Data Warehouse. Si des lignes existent dans le [Gestionnaire ](../data-warehouse-mgr/tour-dwm.md), elles sont remplacées par les valeurs actuelles de la base de données.
+Lors de l’exécution de la mise à jour, les données nouvelles ou modifiées sont identifiées en recherchant les lignes qui contiennent une valeur dans la colonne `datetime` qui se sont produites après la mise à jour la plus récente. Lorsque de nouvelles lignes sont découvertes, elles sont répliquées vers votre Data Warehouse. Si des lignes existent dans le [Gestionnaire &#x200B;](../data-warehouse-mgr/tour-dwm.md), elles sont remplacées par les valeurs actuelles de la base de données.
 
 Par exemple, un tableau peut avoir une colonne appelée `modified\_at` qui indique la dernière fois que les données ont été modifiées. Si la mise à jour la plus récente s’exécutait mardi à midi, elle recherche toutes les lignes ayant une valeur `modified\_at` supérieure à mardi à midi. Toutes les lignes découvertes qui ont été créées ou modifiées depuis mardi midi sont répliquées vers le Data Warehouse.
 

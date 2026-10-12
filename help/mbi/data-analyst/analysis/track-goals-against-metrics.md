@@ -80,48 +80,48 @@ Il est utile de combiner des valeurs statiques et des graphiques visuels lors de
 
 * **Chiffre d’affaires restant pour atteindre la cible**
 * `A` de mesure : `Revenue`
-* 
-  [!UICONTROL Metric]: `Revenue`
+* &#x200B;
+  [!UICONTROL Metric]&#x200B;: `Revenue`
 
 * `B` de mesure : `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
-* [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
-  [!UICONTROL Formule]: `(B-A)`
-* 
-  [!UICONTROL Format]: `Number`
+* [!UICONTROL Formula]&#x200B;: `Revenue left to achieve target`
+* &#x200B;
+  [!UICONTROL Formule]&#x200B;: `(B-A)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Number`
 
 * [!UICONTROL Time period] : (quelle que soit la période pertinente que vous souhaitez)
-* 
-  [!UICONTROL Interval]: `Month`
-* 
-  [!UICONTROL Type de graphique]: `Scalar`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* &#x200B;
+  [!UICONTROL Type de graphique]&#x200B;: `Scalar`
 
 * **Cibles de chiffre d’affaires**
 * `A` de mesure : `Revenue`
-* 
-  [!UICONTROL Metric]: `Revenue`
+* &#x200B;
+  [!UICONTROL Metric]&#x200B;: `Revenue`
 
 * `B` de mesure : `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
 * `C` de mesure : `Revenue (amount change since previous year)` (masquer)
-* 
-  [!UICONTROL Metric]: `Revenue`
-* [!UICONTROL Perspective]: `Amount change vs. Previous year`
+* &#x200B;
+  [!UICONTROL Metric]&#x200B;: `Revenue`
+* [!UICONTROL Perspective]&#x200B;: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula] : (ce mois-ci l&#39;année dernière)
-* 
-  [!UICONTROL Formule]: `(A-C)`
-* 
-  [!UICONTROL Format]: `Currency`
+* &#x200B;
+  [!UICONTROL Formule]&#x200B;: `(A-C)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 * Désactiver `Multiple Y-Axes`
 * [!UICONTROL Time period] : (quelle que soit la période pertinente que vous souhaitez)*
-* 
-  [!UICONTROL Interval]: `Month`
-* [!UICONTROL Chart Type]: `Line Chart`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* [!UICONTROL Chart Type]&#x200B;: `Line Chart`
 
 Une fois que vous avez terminé les états ci-dessus pour les objectifs de chiffre d&#39;affaires, vous pouvez créer des états identiques pour les objectifs relatifs aux commandes, aux comptes enregistrés ou à toute autre valeur que vous avez incluse dans le téléchargement du fichier d&#39;objectifs.
 

@@ -73,7 +73,7 @@ L’aspect des tableaux de bord que vous créez dépend entièrement de vous. Vo
 
    * Cliquez sur **[!UICONTROL Create]**.
 
-   ![ nom du tableau de bord ](../../assets/magento-bi-dashboard-create-name.png)
+   ![&#x200B; nom du tableau de bord &#x200B;](../../assets/magento-bi-dashboard-create-name.png)
 
    * Le nom de votre nouveau tableau de bord s’affiche dans le coin supérieur gauche. Cliquez sur la flèche vers le bas (![icône de flèche vers le bas](../../assets/magento-bi-btn-down.png)) pour afficher les options. Si vous avez créé un groupe, le nouveau tableau de bord s’affiche sous le groupe dans la liste.
 
@@ -89,7 +89,7 @@ L’aspect des tableaux de bord que vous créez dépend entièrement de vous. Vo
 
 1. Cliquez sur **[!UICONTROL Create Report]** pour afficher la **[!UICONTROL Report Builder Options]**.
 
-   ![Options ](../../assets/magento-bi-report-builder.png)
+   ![Options &#x200B;](../../assets/magento-bi-report-builder.png)
 
 ## Organiser les éléments sur un tableau de bord
 
