@@ -4,36 +4,50 @@ description: Découvrez comment connecter des bases de données via un VPN au li
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk
+TQID: 'https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 414
-ht-degree: 0%
-
+source-wordcount: '422'
+ht-degree: 1%
 ---
-
 # Connexion de bases de données via un VPN
 
 Bien qu’Adobe recommande de connecter vos bases de données à l’aide d’une `SSH tunnel`, vous pouvez également utiliser une connexion `VPN` chiffrée pour garantir la sécurité. Pour l’inscription de la clé de l’hôte SSH, les erreurs et le dépannage sur les connexions du tunnel SSH, consultez [Vérification de la clé de l’hôte SSH](ssh-host-key-verification.md). Un `VPN` peut être utilisé pour n’importe laquelle de vos intégrations de base de données. Pour simplifier les choses, le processus est à peu près identique à la configuration d’un `SSH tunnel` :
 
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  base de données](#database)
 1. [Créer un utilisateur  [!DNL Commerce Intelligence]  VPN](#vpn)
-1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+1. [Autoriser l’accès à l’adresse  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Saisissez la connexion et les informations de l’utilisateur VPN dans Commerce Intelligence](#finish)
 
 Outre les informations d’identification de la base de données, vous devez saisir les informations d’identification d’un utilisateur VPN pour conclure. Tout utilisateur VPN fonctionne, mais Adobe vous recommande de créer un utilisateur [!DNL Commerce Intelligence], car cela facilite le suivi des utilisateurs sur votre compte.
@@ -66,10 +80,10 @@ Saisissez les informations suivantes dans cette page, en commençant par la sect
 * `Username` : nom d’utilisateur de la base de données [!DNL Commerce Intelligence]
 * `Password` : mot de passe de l’utilisateur de la base de données [!DNL Commerce Intelligence]
 * `Port` : port de la base de données sur le serveur. Les valeurs par défaut sont les suivantes :
-   * `MicrosoftSQL`: `1433`
-   * `MongoDB`: `27017`
-   * `MySQL`: `3306`
-   * `PostgreSQL`: `5432`
+  * `MicrosoftSQL`: `1433`
+  * `MongoDB`: `27017`
+  * `MySQL`: `3306`
+  * `PostgreSQL`: `5432`
 * `Host` : par défaut, il s’agit de localhost `127.0.0.1`, mais il peut également s’agir de l’adresse IP publique de votre serveur ou d’une adresse réseau local.
 * `Database Name (optional)` : si vous n&#39;avez autorisé l&#39;accès qu&#39;à une seule base de données (cela est spécifié lors de l&#39;étape de création des utilisateurs de la base de données), saisissez ici le nom de cette base de données.
 

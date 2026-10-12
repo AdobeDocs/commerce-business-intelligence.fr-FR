@@ -1,40 +1,50 @@
 ---
 title: Modification en masse de graphiques dans des tableaux de bord
-description: Découvrez comment utiliser la fonction de modification en masse dans  [!DNL Commerce Intelligence].
+description: Découvrez comment utiliser la fonction de modification en masse dans [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-TQID: https://experienceleague.adobe.com/FcFTKq9TvldFwo7nl-bGRyup1uxscjrnOutJcA-h-5c
+TQID: 'https://experienceleague.adobe.com/FcFTKq9TvldFwo7nl-bGRyup1uxscjrnOutJcA-h-5c'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 260
+source-wordcount: '261'
 ht-degree: 1%
-
 ---
-
 # Modification en masse de graphiques dans les tableaux de bord
 
 La fonctionnalité de modification en masse facilite la modification des noms de graphique et des dates dans vos tableaux de bord. Par exemple, vous souhaitez que tous les graphiques d’un tableau de bord spécifique fassent référence à un seul magasin et génèrent des rapports sur une base mensuelle plutôt que trimestrielle. Plutôt que de tout modifier manuellement, laissez la fonction `bulk-editing` faire le travail. Dans cette rubrique, vous apprendrez à utiliser :
 
-* [La  [!DNL Find/Replace] &#x200B;](#findreplace)
+* [La  [!DNL Find/Replace] ](#findreplace)
 
-* [La  [!DNL Prepend Name] &#x200B;](#prepend)
+* [La  [!DNL Prepend Name] ](#prepend)
 
-* [La  [!DNL Change Dates] &#x200B;](#dates)
+* [La  [!DNL Change Dates] ](#dates)
 
-Cela dit, considérez ceci : *Ces changements doivent-ils être permanents ?* Dans le cas contraire, envisagez de cloner le tableau de bord, puis de modifier les dates dans le nouveau tableau de bord. Vous pouvez ainsi conserver votre tableau de bord d’origine tout en apportant les modifications dont vous avez besoin.
+Cela dit, tenez compte de ceci : *ces modifications doivent-elles être permanentes ?* Si ce n’est pas le cas, envisagez de cloner le tableau de bord, puis de modifier les dates dans le nouveau tableau de bord. Vous pouvez ainsi conserver votre tableau de bord d’origine tout en apportant les modifications dont vous avez besoin.
 
 >[!NOTE]
 >

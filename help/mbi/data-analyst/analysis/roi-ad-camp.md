@@ -4,29 +4,41 @@ description: Découvrez quelques méthodes différentes pour évaluer les perfor
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+TQID: 'https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 1cf9e104-5756-5a15-85a5-38be6a065d7f
+    internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1265
+source-wordcount: '1265'
 ht-degree: 0%
-
 ---
-
 # Campagnes Advertising et retour sur investissement
 
 [!DNL Adobe Commerce Intelligence] vous permet de [associer facilement les données sur les coûts publicitaires et les données sur les recettes](../../data-analyst/importing-data/integrations/google-adwords.md) à partir de votre base de données. Vous pouvez ainsi identifier les campagnes qui présentent le retour sur investissement (ROI) le plus élevé. Cette rubrique explore quelques méthodes différentes pour évaluer les performances de votre campagne.
@@ -115,7 +127,7 @@ Exécutez-vous des publicités spécifiques au produit ? Si tel est le cas, vous
 >
 >Cet exemple suppose que tous les coûts de campagne ont été utilisés exclusivement pour générer des achats de produit(s) spécifique(s). En supposant que l’intégralité du coût ait été dépensée pour générer des achats, le retour sur investissement qui en résulte prend en compte le pire scénario (coût le plus élevé par achat). Vous pouvez être sûr que votre retour sur investissement réel est supérieur à ce calcul. Exemple : en supposant que vous ayez dépensé 20 $ dans une campagne qui a généré 10 nouveaux utilisateurs et 10 achats, votre coût réel par achat est de 1 $. En supposant que tous les coûts aient servi à acquérir de nouveaux utilisateurs, le coût par achat est de 2 $.
 
-Avant de commencer, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
+Avant de commencer, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) pour joindre les dimensions suivantes à votre tableau d’éléments de ligne (`sales\_flat\_order\_item, order\_item`) :
 
 * Source de la commande (si vous suivez uniquement la source de référence au niveau de l’utilisateur, rejoignez la source de l’utilisateur).
 * Campagne de la commande (si vous suivez uniquement la source de référence au niveau de l’utilisateur, rejoignez la campagne de l’utilisateur)
@@ -151,6 +163,6 @@ Avant de commencer, [soumettez un ticket d’assistance](https://experienceleagu
 * [Suivre la source de référence des utilisateurs dans votre base de données](../analysis/google-track-user-acq.md)
 * [Effectuez le suivi des données relatives aux appareils, aux navigateurs et aux systèmes d’exploitation dans votre base de données](../analysis/track-usr-dev-browser.md)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../analysis/most-value-source-channel.md)
-* [Connecter votre  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Connecter votre  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Comment fonctionne  [!DNL Google Analytics] ’attribution UTM ?](../analysis/utm-attributes.md)
 * [Cinq bonnes pratiques pour le balisage UTM dans  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

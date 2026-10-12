@@ -4,35 +4,46 @@ description: Découvrez comment configurer un tableau de bord qui fournit une an
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g
+TQID: 'https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 601
+source-wordcount: '601'
 ht-degree: 25%
-
 ---
-
 # Commandes retournées
 
 Cette rubrique explique comment configurer un tableau de bord qui fournit une analyse détaillée des retours de votre magasin.
 
 ![Tableau de bord détaillé des retours indiquant les taux de retour et les raisons](../../assets/detailed-returns-dboard.png)
 
-Avant de commencer, vous devez être un client [&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) et vous assurer que votre société utilise la table `enterprise\_rma` pour les retours.
+Avant de commencer, vous devez être un client [](https://business.adobe.com/products/magento/magento-commerce.html) et vous assurer que votre société utilise la table `enterprise\_rma` pour les retours.
 
 Cette analyse contient [colonnes calculées avancées](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -76,10 +87,10 @@ Colonnes à créer
 * **`Order's created at`**
 * Sélectionnez une définition : `Joined Column`
 * [!UICONTROL Create Path]:
-* &#x200B;
-  [!UICONTROL Many]&#x200B;: `enterprise_rma.order_id`
-* &#x200B;
-  [!UICONTROL One]&#x200B;: `sales_flat_order.entity_id`
+* 
+  [!UICONTROL Many]: `enterprise_rma.order_id`
+* 
+  [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Sélectionner un [!UICONTROL table] : `sales_flat_order`
 * Sélectionner un [!UICONTROL column] : `created_at`
@@ -97,10 +108,10 @@ Colonnes à créer
 * **`return_date_requested`**
 * Sélectionnez une définition : `Joined Column`
 * [!UICONTROL Create Path]:
-  * &#x200B;
-    [!UICONTROL Many]&#x200B;: `enterprise_rma_item_entity.rma_entity_id`
-  * &#x200B;
-    [!UICONTROL One]&#x200B;: `enterprise_rma.entity_id`
+  * 
+    [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+  * 
+    [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Sélectionner un [!UICONTROL table] : `enterprise_rma`
 * Sélectionner un [!UICONTROL column] : `date_requested`
@@ -128,28 +139,28 @@ Colonnes à créer
 * Cette mesure effectue un **Nombre**
 * Dans la colonne **`entity_id`**
 * Commandé par le **`date_requested`**
-* [!UICONTROL Filter]&#x200B;: `Returns we count`
+* [!UICONTROL Filter]: `Returns we count`
 
 * **Éléments renvoyés**
 * Dans le tableau **`enterprise_rma_item_entity`**
 * Cette mesure effectue une **Somme**
 * Dans la colonne **`qty_approved`**
 * Commandé par le **`return date_requested`**
-* [!UICONTROL Filter]&#x200B;: `Returns we count`
+* [!UICONTROL Filter]: `Returns we count`
 
 * **Valeur totale de l’élément renvoyé**
 * Dans le tableau **`enterprise_rma_item_entity`**
 * Cette mesure effectue une **Somme**
 * Dans la colonne **`Returned item total value (qty_returned * price)`**
 * Commandé par le **`return date_requested`**
-* [!UICONTROL Filter]&#x200B;: `Returns we count`
+* [!UICONTROL Filter]: `Returns we count`
 
 * **Temps moyen entre la commande et le retour**
 * Dans le tableau **`enterprise_rma`**
 * Cette mesure effectue une **Moyenne**
 * Dans la colonne **`Time between order's created_at and date_requested`**
 * Commandé par le **`date_requested`**
-* [!UICONTROL Filter]&#x200B;: `Returns we count`
+* [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
@@ -159,102 +170,102 @@ Colonnes à créer
 
 * **Probabilité de commande répétée après un retour**
 * `A` de mesure : `Number of orders with returns`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is in current month? = No`
 
 * `B` de mesure : `Non-last orders with returns`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
   * `Is customer's last order? (1=yes/0=no) = 0`
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * Formule : probabilité d’ordre de répétition
-* [!UICONTROL Formula]&#x200B;: `B / A`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percentage`
+* [!UICONTROL Formula]: `B / A`
+* 
+  [!UICONTROL Format]: `Percentage`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalle]&#x200B;: `None`
-* [!UICONTROL Group by]&#x200B;: `Customer's order number`
-* &#x200B;
-  [!UICONTROL Type de graphique]&#x200B;: `Bar`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalle]: `None`
+* [!UICONTROL Group by]: `Customer's order number`
+* 
+  [!UICONTROL Type de graphique]: `Bar`
 
 * **Temps moyen de retour (toute heure)**
 * `A` de mesure : `Avg time between order and return`
-* [!UICONTROL Metric]&#x200B;: `Avg time between order and return`
+* [!UICONTROL Metric]: `Avg time between order and return`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalle]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL Type de graphique]&#x200B;: `Number`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalle]: `None`
+* 
+  [!UICONTROL Type de graphique]: `Number`
 
 * **Pourcentage de commandes avec retour**
 * `A` de mesure : `Number of orders`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 
 * `B` de mesure : `Orders w/ return`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * Formule : % de commandes avec retour
-* [!UICONTROL Formula]&#x200B;: `B / A`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percentage`
+* [!UICONTROL Formula]: `B / A`
+* 
+  [!UICONTROL Format]: `Percentage`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalle]&#x200B;: `None`
-* [!UICONTROL Chart Type]&#x200B;: `Number - % of orders with return`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalle]: `None`
+* [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **Chiffre d’affaires renvoyé par mois**
 * `A` de mesure : `Returned item total value`
-* [!UICONTROL Metric]&#x200B;: `Returned item total value`
+* [!UICONTROL Metric]: `Returned item total value`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* [!UICONTROL Interval]&#x200B;: `By month`
-* &#x200B;
-  [!UICONTROL Type de graphique]&#x200B;: `Line`
+* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Interval]: `By month`
+* 
+  [!UICONTROL Type de graphique]: `Line`
 
 * **Clients ayant effectué un retour et n’ayant pas effectué de nouvel achat**
 * `A` de mesure : `Number of orders with returns`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is customer's last order? (1=yes/0=no) = 1`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalle]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL Regrouper par]&#x200B;: `Customer_email`
-* &#x200B;
-  [!UICONTROL Type de graphique]&#x200B;: `Table`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalle]: `None`
+* 
+  [!UICONTROL Regrouper par]: `Customer_email`
+* 
+  [!UICONTROL Type de graphique]: `Table`
 
 * **Taux de retour par article**
 * `A` de mesure : `Returned items` (masquer)
 * [!UICONTROL Metric] : éléments renvoyés
 
 * `B` de mesure : `Items sold` (masquer)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]&#x200B;: `Return %`
-* [!UICONTROL Formula]&#x200B;: `B / A`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percentage`
+* [!UICONTROL Formula]: `Return %`
+* [!UICONTROL Formula]: `B / A`
+* 
+  [!UICONTROL Format]: `Percentage`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalle]&#x200B;: `None`
-* [!UICONTROL Group by]&#x200B;: `product_sku AND/OR product_name`
-* &#x200B;
-  [!UICONTROL Type de graphique]&#x200B;: `Table`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalle]: `None`
+* [!UICONTROL Group by]: `product_sku AND/OR product_name`
+* 
+  [!UICONTROL Type de graphique]: `Table`
 
 Après avoir compilé tous les rapports, vous pouvez les organiser selon vos besoins dans le tableau de bord. Le résultat peut ressembler à l’exemple de tableau de bord ci-dessus.
 
-Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez contacter l’équipe des services professionnels, [contactez l’assistance technique](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Si vous avez des questions lors de la création de cette analyse ou si vous souhaitez contacter l’équipe des services professionnels, [contactez l’assistance technique](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

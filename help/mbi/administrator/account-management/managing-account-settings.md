@@ -6,26 +6,37 @@ role: Admin, User
 feature: Accounts
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b6935462-7263-4ced-a703-60de6a5aeb2d
+    internal-label: Administration
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 9e444628-408e-5d74-8cd4-c552f0d5d47f
+    internal-label: Accounts
 subfeature_v2:
   - id: a763c1a2-1d0a-40d7-9617-8139636fd12e
+    internal-label: Access management
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+    internal-label: Administration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 352
+source-wordcount: '354'
 ht-degree: 0%
-
 ---
-
 # Personnalisation des paramètres de votre compte
 
 >[!NOTE]
@@ -38,7 +49,7 @@ Dans votre compte [!DNL Commerce Intelligence], vous pouvez personnaliser les pa
 
 * **[!UICONTROL Currency:]** Il s’agit de la *devise par défaut* pour toutes les valeurs monétaires de votre compte. Chaque fois qu’une valeur décimale ou monétaire est synchronisée dans votre Data Warehouse, ce paramètre détermine le symbole placé avant cette valeur dans vos rapports.
 
-* **[!UICONTROL Blackout Hours:]** Ce paramètre garantit que, aux heures sélectionnées de la journée, votre Data Warehouse n’accède pas à vos bases de données connectées. Toutes les heures sont exprimées à zéro heure et en heure standard de l&#39;Est (EST). Par exemple, si vous ne souhaitez pas que votre base de données de production soit accessible entre 9:0000 EST et 13:00 EST, vous devez saisir le tableau de chiffres suivant : **9, 10, 11, 12**.
+* **[!UICONTROL Blackout Hours:]** Ce paramètre garantit que, aux heures sélectionnées de la journée, votre Data Warehouse n’accède pas à vos bases de données connectées. Toutes les heures sont exprimées à zéro heure et en heure standard de l&#39;Est (EST). Par exemple, si vous ne souhaitez pas que votre base de données de production soit accessible entre 9 h 00 EST et 13 h 00 EST, vous devez saisir le tableau de chiffres suivant : **9, 10, 11, 12**.
 
 * **[!UICONTROL Forced update hours:]** Ce paramètre garantit qu’une mise à jour Data Warehouse commence automatiquement dans votre compte *au cours des heures* que vous avez spécifiées. Comme pour les heures d&#39;arrêt de la surveillance, elles sont également en ET. Par exemple, si vous souhaitez que les mises à jour de Data Warehouse commencent automatiquement à **minuit** et **midi** EST, vous devez saisir le tableau de chiffres suivant : **0, 12**.
 

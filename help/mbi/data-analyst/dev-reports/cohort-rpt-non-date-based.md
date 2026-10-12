@@ -4,27 +4,38 @@ description: Découvrez comment regrouper des utilisateurs en fonction d’une a
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc
+TQID: 'https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 462
-ht-degree: 0%
-
+source-wordcount: '474'
+ht-degree: 1%
 ---
-
 # [!DNL Cohort Report Builder] pour les cohortes non basées sur la date
 
 Le [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) est très utile pour aider les commerçants à étudier comment différents sous-ensembles d’utilisateurs se comportent au fil du temps. Auparavant, la `Cohort Report Builder` était optimisée pour regrouper les utilisateurs selon un `cohort date` commun (par exemple, l’ensemble de tous les clients qui ont effectué leur premier achat au cours d’un mois donné). La fonctionnalité `Non-Date Based Cohort` vous permet désormais de regrouper les utilisateurs par activité ou attribut similaire. Examinez quelques cas d’utilisation de cette fonctionnalité.
@@ -73,7 +84,7 @@ Cinq spécifications sont nécessaires pour créer un rapport de cohorte :
 
 Les `Cohorts` sont regroupées selon une caractéristique de comportement, dans cet exemple `Customer's first order GA source`. Les options disponibles ici sont des colonnes déjà désignées comme `groupable` pour la mesure.
 
-#### &#x200B;2. Sélection des cohortes
+#### &#x200B;2. Sélection de cohortes
 
 Vous pouvez afficher tous les résultats pour la caractéristique donnée. Comme cela peut entraîner de nombreuses `cohorts`, vous pouvez sélectionner les `cohorts` spécifiques (qui correspondent aux différentes valeurs disponibles pour les `Customer's first order GA source`) dont vous avez besoin.
 

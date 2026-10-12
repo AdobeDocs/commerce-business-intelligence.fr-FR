@@ -1,34 +1,50 @@
 ---
-title: 'Activer votre  [!DNL Adobe Commerce Intelligence] '
-description: Découvrez qui contacter pour activer votre  [!DNL Commerce Intelligence] .
+title: Activer votre compte [!DNL Adobe Commerce Intelligence]
+description: Découvrez qui contacter pour activer votre compte [!DNL Commerce Intelligence].
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-TQID: https://experienceleague.adobe.com/V34xz5uwqrCn716FqG5byQ6wnLwkZUccBXgJMqiSdR4
+TQID: 'https://experienceleague.adobe.com/V34xz5uwqrCn716FqG5byQ6wnLwkZUccBXgJMqiSdR4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 767
+source-wordcount: '769'
 ht-degree: 0%
-
 ---
-
 # Activer votre compte [!DNL Commerce Intelligence] pour les abonnements On-Premise et de démarrage
 
 Pour activer les [!DNL Commerce Intelligence] pour les abonnements on-premise, commencez par créer un compte [!DNL Commerce Intelligence], saisissez vos informations de paramètres, puis connectez-[!DNL Commerce Intelligence] à votre base de données [!DNL Commerce]. <!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
@@ -41,7 +57,7 @@ Pour créer votre compte, contactez l’équipe chargée de votre compte Adobe o
 
 Une fois votre compte créé, recherchez dans votre e-mail un e-mail de notification de compte provenant de l’adresse [!DNL The Magento BI Team@rjmetrics.com]. Utilisez le lien fourni dans l’e-mail pour accéder à votre compte [!DNL Commerce Intelligence] et créer votre mot de passe. Accédez à votre boîte de réception et vérifiez votre adresse e-mail.
 
-Si vous n’avez pas reçu d’e-mail, [contactez l’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Si vous n’avez pas reçu d’e-mail, [contactez l’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ![Écran Créer un mot de passe pour le nouveau compte Commerce Intelligence](../assets/create-account-4.png)
 
@@ -132,15 +148,15 @@ Saisissez vos informations de [!DNL Commerce Intelligence] dans l’écran [!UIC
 
 [!UICONTROL Integration Name] : [choisissez un nom pour votre instance [!DNL Commerce Intelligence]]
 
-[!UICONTROL Host]&#x200B;: `mbi.internal`
+[!UICONTROL Host]: `mbi.internal`
 
-[!UICONTROL Port]&#x200B;: `3306`
+[!UICONTROL Port]: `3306`
 
-[!UICONTROL Nom d&#39;utilisateur]&#x200B;: `mbi`
+[!UICONTROL Nom d&#39;utilisateur]: `mbi`
 
 [!UICONTROL Password] : [ mot de passe de saisie affiché dans la section précédente]
 
-[!UICONTROL Database Name]&#x200B;: `main`
+[!UICONTROL Database Name]: `main`
 
 [!UICONTROL Table Prefixes] : [laisser vide s’il n’existe aucun préfixe de tableau]
 
@@ -150,7 +166,7 @@ Saisissez vos informations de [!DNL Commerce Intelligence] dans l’écran [!UIC
 
 **Entrées:**
 
-[!UICONTROL Database Timezone]&#x200B;: `UTC`
+[!UICONTROL Database Timezone]: `UTC`
 
 [!UICONTROL Desired Timezone] : [choisissez le fuseau horaire pour lequel vous souhaitez que vos données s’affichent]
 
@@ -166,13 +182,13 @@ L’interface utilisateur du projet fournit une chaîne d’accès SSH. Cette ch
 
 **Entrées:**
 
-[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
+[!UICONTROL Encryption Type]: `SSH Tunnel`
 
 [!UICONTROL Remote Address] : `ssh.us-3.magento.cloud` [de l’étape précédente]
 
 [!UICONTROL Username] : `vfbfui4vmfez6-master-7rqtwti—mymagento` [de l’étape précédente]
 
-[!UICONTROL Port]&#x200B;: `22`
+[!UICONTROL Port]: `22`
 
 ## Enregistrez votre intégration.
 
@@ -189,7 +205,7 @@ Une fois la configuration terminée, [connectez-vous](../getting-started/sign-in
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 >[!NOTE]
 >

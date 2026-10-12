@@ -4,42 +4,56 @@ description: Découvrez les tenants et aboutissants de l’utilisation de SQL Re
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-TQID: https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A
+TQID: 'https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Optimization
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1448
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # Utilisation de [!DNL SQL Report Builder]
 
 >[!NOTE]
 >
 >Nécessite des [autorisations d’administrateur](../../administrator/user-management/user-management.md) pour créer et modifier des graphiques SQL. `Standard` utilisateurs peuvent réorganiser ces graphiques sur les tableaux de bord et `Read-only` les utilisateurs bénéficient de la même expérience que les graphiques traditionnels. En outre, les utilisateurs `Read-only` n’ont pas accès au texte de la requête.
 
-Voir la [vidéo de formation](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/mbi/sql-report-builder) pour en savoir plus.
+Voir la [vidéo de formation](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder) pour en savoir plus.
 
 [!DNL SQL], ou langage de requête structuré, est un langage de programmation utilisé pour communiquer avec des bases de données. Dans [!DNL Commerce Intelligence], [!DNL SQL] est utilisé pour interroger ou récupérer des données à partir de votre Data Warehouse. Examinez les rapports de votre tableau de bord : en coulisses, chacun est alimenté par une requête [!DNL SQL].
 
 Vous pouvez utiliser l’[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) pour interroger directement votre Data Warehouse, afficher les résultats et les transformer en graphique. Vous pouvez commencer à créer un rapport avec le [!DNL SQL Report Builder] en cliquant sur **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-Voir la [vidéo de formation](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/mbi/sql-report-builder) pour en savoir plus.
+Voir la [vidéo de formation](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder) pour en savoir plus.
 
 Le [!DNL SQL Report Builder] vous permet d’interroger directement votre Data Warehouse, d’afficher les résultats et de les transformer rapidement en graphique. Le meilleur aspect de l’utilisation de [!DNL SQL] pour créer des rapports est que vous n’avez pas besoin d’attendre les cycles de mise à jour pour effectuer une itération sur les colonnes que vous créez. Si les résultats ne s’affichent pas correctement, vous pouvez rapidement modifier et réexécuter la requête jusqu’à ce que les éléments correspondent à vos attentes.
 
@@ -149,7 +163,7 @@ Les colonnes calculées créées à l’aide de [!DNL SQL] ne dépendent pas des
 
 La plupart du temps, les différences de résultats peuvent être attribuées aux cycles de mise à jour. Si [!DNL Commerce Intelligence] est en train de répliquer les données de votre base de données vers votre Data Warehouse, il se peut que vous obteniez des résultats différents même si vous utilisez la même requête.
 
-Les problèmes de connexion peuvent également entraîner des incohérences. Accédez à la page `Connections` en cliquant sur **[!DNL Manage Data** > **Connections]** pour l’extraire. L’intégration de base de données en question génère-t-elle une erreur ? Si tel est le cas, vous devrez peut-être [réauthentifier l’intégration](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations) pour que les choses fonctionnent à nouveau.
+Les problèmes de connexion peuvent également entraîner des incohérences. Accédez à la page `Connections` en cliquant sur **[!DNL Manage Data** > **Connections]** pour l’extraire. L’intégration de base de données en question génère-t-elle une erreur ? Si tel est le cas, vous devrez peut-être [réauthentifier l’intégration](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations) pour que les choses fonctionnent à nouveau.
 
 Si toutes vos intégrations sont connectées avec succès et que vous n’êtes pas au milieu d’un cycle de mise à jour, une autre erreur peut se produire.
 

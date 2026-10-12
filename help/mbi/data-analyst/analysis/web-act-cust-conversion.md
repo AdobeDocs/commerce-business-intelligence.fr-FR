@@ -4,27 +4,37 @@ description: Découvrez comment configurer un tableau de bord qui suivra l’act
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
 role: Admin, User
 feature: Reports, Data Integration
-TQID: https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4
+TQID: 'https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: '756'
 ht-degree: 0%
-
 ---
-
 # Analyse de l’activité du site web
 
 [!DNL Adobe Commerce Intelligence] vous permet d’intégrer facilement vos données de coûts publicitaires au reste de vos données. Cela vous permet non seulement de comprendre l’activité de votre site web, mais également d’obtenir le pourcentage de visiteurs et visiteuses sur votre site web qui deviennent un utilisateur ou une utilisatrice enregistré(e) ou effectuent un achat.
@@ -33,7 +43,7 @@ Cette rubrique explique comment configurer un tableau de bord qui suivra l’act
 
 ## Conditions préalables
 
-**Importer vos données de coût publicitaire** - Connecter [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md) à [!DNL Adobe Commerce Intelligence] - synchronise automatiquement vos dépenses [!DNL AdWords] dans Commerce Intelligence.
+**Importer vos données de coût publicitaire** - Connecter [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) à [!DNL Adobe Commerce Intelligence] - synchronise automatiquement vos dépenses [!DNL AdWords] dans Commerce Intelligence.
 
 **Suivre les données du canal d’acquisition d’utilisateurs** - Pour lier vos données [!DNL Google AdWords] à des commandes spécifiques dans votre base de données, vous devez [suivre l’acquisition d’utilisateurs](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Vous pouvez ainsi connecter chaque commande à une source et un support utm.
 
@@ -93,25 +103,25 @@ Cette collection de rapports est créée à l’aide des éléments suivants :
 1. Ajoutez les mesures suivantes :
 
 * `New users`
-   * Cliquez sur **[!UICONTROL Hide]** sous le nom de la mesure
+  * Cliquez sur **[!UICONTROL Hide]** sous le nom de la mesure
 
 * `Number of orders`
-   * Ajoutez un filtre pour `Customer's order number` = 1 et cliquez sur **[!UICONTROL Apply]**
-   * Renommez la mesure en cliquant sur son nom, en l’appelant `Number of first orders`, puis en cliquant sur **[!UICONTROL Hide]**
+  * Ajoutez un filtre pour `Customer's order number` = 1 et cliquez sur **[!UICONTROL Apply]**
+  * Renommez la mesure en cliquant sur son nom, en l’appelant `Number of first orders`, puis en cliquant sur **[!UICONTROL Hide]**
 
 * `Number of orders`
-   * **[!UICONTROL Hide]** la mesure
+  * **[!UICONTROL Hide]** la mesure
 
 * `Users`
-   * **[!UICONTROL Hide]** la mesure
-   * Remplacez la période par `24 months ago to now` et l’intervalle par `by month`.
-   * Ajoutez les formules suivantes en cliquant sur **[!UICONTROL Formula]**.
-   * A/D puis cliquez sur **[!UICONTROL Apply]**
-   * Renommer le `Registration conversion` de formule
-   * B/D puis cliquez sur **[!UICONTROL Apply]**
-   * Renommer le `First order conversion` de formule
-   * C/D, puis cliquez sur **[!UICONTROL Apply]**
-   * Renommer le `Any order conversion` de formule
+  * **[!UICONTROL Hide]** la mesure
+  * Remplacez la période par `24 months ago to now` et l’intervalle par `by month`.
+  * Ajoutez les formules suivantes en cliquant sur **[!UICONTROL Formula]**.
+  * A/D puis cliquez sur **[!UICONTROL Apply]**
+  * Renommer le `Registration conversion` de formule
+  * B/D puis cliquez sur **[!UICONTROL Apply]**
+  * Renommer le `First order conversion` de formule
+  * C/D, puis cliquez sur **[!UICONTROL Apply]**
+  * Renommer le `Any order conversion` de formule
 
 * Attribuez maintenant un nom à votre rapport, comme `Conversion by month`, puis cliquez sur **[!UICONTROL Save]**.
 

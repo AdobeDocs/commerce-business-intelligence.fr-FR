@@ -4,25 +4,34 @@ description: Découvrez combien d’utilisateurs se connectent réellement via d
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
 role: Admin, User
 feature: Reports, Dashboards
-TQID: https://experienceleague.adobe.com/-j-LqjbuqLjdmDWNGxAERaDJNMapTMn7uDar1HsshSc
+TQID: 'https://experienceleague.adobe.com/-j-LqjbuqLjdmDWNGxAERaDJNMapTMn7uDar1HsshSc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 432
+source-wordcount: '439'
 ht-degree: 0%
-
 ---
-
 # Suivi des [!UICONTROL Google Analytics]
 
 Avec [!UICONTROL Google Analytics], vous pouvez [enregistrer les informations sur la source de référence](../analysis/google-track-user-acq.md) pour comprendre d’où viennent vos utilisateurs les plus précieux. Cette rubrique décrit la plateforme (par exemple, un appareil ou un navigateur) sur laquelle travaillent vos utilisateurs. Vous pourrez ainsi comprendre combien d’utilisateurs se connectent réellement via des appareils mobiles et comment cela affecte la valeur de durée de vie de ces utilisateurs.
@@ -34,7 +43,7 @@ Chaque fois qu’une requête est envoyée à votre site web, le navigateur de l
 1. `Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_8\_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36`
 1. `Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0`
 1. `Mozilla/5.0 (iPhone; U; CPU iPhone OS 4\_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7`
-1,` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
+1.` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
 1. `Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 
 Si vous regardez attentivement, vous verrez que la chaîne contient des informations sur le système d’exploitation de l’utilisateur, son navigateur et le nom de l’appareil qu’il utilise (s’il porte un nom). Bien que les chaînes User-Agent varient considérablement d’une plateforme à l’autre et même d’une version à l’autre d’une même plateforme, il est généralement vrai que le nom de la plateforme existe quelque part dans . Par exemple, #1 ci-dessus est un Mac avec le navigateur Chrome, #2 ci-dessus est un ordinateur Windows avec le navigateur Firefox, #3 est un iPhone, #4 est un iPad et #5 est un appareil Android.
@@ -60,6 +69,6 @@ Grâce à ces nouvelles informations, vous pouvez mieux comprendre comment les u
 * [Suivre la source de référence des commandes via [!DNL Google Anaytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
 * [Suivre la source de référence des utilisateurs dans votre base de données](../analysis/google-track-user-acq.md)
 * [Découvrez vos sources et canaux d’acquisition les plus précieux.](../analysis/most-value-source-channel.md)
-* [Connecter votre  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Connecter votre  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Augmenter le retour sur investissement de vos campagnes publicitaires](../analysis/roi-ad-camp.md)
 * [Comment fonctionne  [!DNL Google Analytics] ’attribution UTM ?](../analysis/utm-attributes.md)
