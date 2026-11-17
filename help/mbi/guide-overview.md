@@ -69,7 +69,7 @@ Outre les workflows basés sur les rôles ci-dessus, ce guide contient égalemen
 
 ## Comment obtenir de l’aide
 
-Contactez l&#39;équipe d&#39;assistance [](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) si vous avez des questions et souhaitez bénéficier de certains de vos services professionnels ou si vous rencontrez des problèmes avec votre compte.
+Contactez l&#39;équipe d&#39;assistance [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) si vous avez des questions et souhaitez bénéficier de certains de vos services professionnels ou si vous rencontrez des problèmes avec votre compte.
 
 ### Politiques de service
 
